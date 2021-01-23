@@ -17,7 +17,7 @@
   background-color: pink;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: Tahoma(15px + 2vmin);
@@ -30,7 +30,7 @@
   margin: 25px 50px 25px 50px;
   padding: 25px 50px 25px 50px;
   letter-spacing: 3px;
-  word-spacing:5px;
+  word-spacing: 5px;
 }
 
 .App-link {
@@ -42,6 +42,6 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }

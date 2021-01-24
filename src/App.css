@@ -14,26 +14,24 @@
 }
 
 .App-header {
-  background-color: pink;
+  background-color: rgb(20, 0, 109);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: Tahoma(15px + 2vmin);
-  color: rgb(4, 117, 161);
+  color: rgb(252, 232, 59);
   border-width: 5px;
   border-style: dotted;	
-  background-image:url("https://www.freepik.com/free-photo/3d-hyperspace-background-with-warp-tunnel-effect_8879794.htm#page=1&query=space&position=16");
-  background-attachment: fixed;
-  margin: 25px 50px 25px 50px;
-  padding: 25px 50px 25px 50px;
-  letter-spacing: 3px;
-  word-spacing: 5px;
+  margin: 25px;
+  outline-color: rgb(0, 0, 0); outline-style: ridge; outline-width: 7px;
+  padding: 25px ;
+  letter-spacing: 2px;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #f57979;
 }
 
 @keyframes App-logo-spin {
@@ -41,6 +39,6 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
 }

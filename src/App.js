@@ -10,7 +10,7 @@ function App() {
           Klongkwan Wanngam
         </h1>
         <p>
-          Pigleg Got A
+          Klongkwan Got A
         </p>
         <a
           className="App-link"

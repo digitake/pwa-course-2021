@@ -1,6 +1,6 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
-Repo: <url>
+Repo: https://github.com/Alonner/pwa-course-2021
 
 1. 1620700177 Alonner
 2. 1620700961 gaharax

@@ -1,6 +1,6 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
-Repo: <url>
+Repo: https://github.com/kumfiless/pwa-course-2021
 
 1. รหัสนักศึกษา username
 2. รหัสนักศึกษา username

@@ -7,10 +7,10 @@ function App() {
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          Line1
+          Line1 context
         </div>
         <div className="App-chatroom-text">
-          Line2
+          Line2 context
         </div>
       </div>
       <div className="App-textbox">

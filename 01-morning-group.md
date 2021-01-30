@@ -1,10 +1,10 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
-Repo: https://github.com/Thanaphat1150/pwa-course-2021
+Repo: <url>
 
-1. 1620701690 Thanaphat1150
-2. 1620701589 Kittapas24
-3. 1620701258 1620701258-krittaporn
-4. 1620701050 Baron3333
+1. รหัสนักศึกษา username
+2. รหัสนักศึกษา username
+3. รหัสนักศึกษา username
+4. รหัสนักศึกษา username
 
 ----------------------------

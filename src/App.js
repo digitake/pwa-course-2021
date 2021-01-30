@@ -7,15 +7,33 @@ function App() {
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          Line1
+          VIP Live
         </div>
         <div className="App-chatroom-text">
-          Line2
+          Lion
         </div>
+        <div className="App-chatroom-text">
+          Chat
+        </div>
+        
+    
+      </div>
+      <div className="App-chatroom">
+        <div className="App-chatroom-text">
+          VIP Live
+        </div>
+        <div className="App-chatroom-text">
+          Lion
+        </div>
+        <div className="App-chatroom-text">
+          Chat
+        </div>
+        
+    
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input"/>
-        <div className="App-textbox-send">Send!</div>
+        <div className="App-textbox-send">ส่ง</div>
       </div>
     </div>
   );

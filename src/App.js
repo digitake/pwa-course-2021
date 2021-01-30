@@ -7,15 +7,15 @@ function App() {
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          Line1
+          ข้อความ 1
         </div>
         <div className="App-chatroom-text">
-          Line2
+          ข้อความ 2
         </div>
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input"/>
-        <div className="App-textbox-send">Send!</div>
+        <div className="App-textbox-send">ส่ง!</div>
       </div>
     </div>
   );

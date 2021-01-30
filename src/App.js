@@ -4,13 +4,14 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+        User
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          Line1
+          Chat Line1
         </div>
         <div className="App-chatroom-text">
-          Line2
+          Chat Line2
         </div>
       </div>
       <div className="App-textbox">

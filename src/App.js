@@ -4,6 +4,9 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+      <div className="App-Text">
+          NAME
+        </div>
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
@@ -12,6 +15,10 @@ function App() {
         <div className="App-chatroom-text">
           Line2
         </div>
+        <div className="App-chatroom-text">
+          IAMjohn
+        </div>
+
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input"/>

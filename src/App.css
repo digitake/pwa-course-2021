@@ -1,5 +1,11 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  max-width: 400px;
+  height: 100%;
+  margin: auto;
 }
 
 .App-logo {
@@ -7,15 +13,9 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #2b2828;
-  min-height: 100vh;
+  flex: 1;
+  background-color: #ff4747;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +24,39 @@
   color: rgb(0, 255, 98);
 }
 
-.App-link {
-  color: #fb6661;
+.App-chatroom {
+  flex: 12;
+  background-color: rgb(255, 166, 188);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-chatroom-text {
+  margin: 8px;
+  background-color: rgb(253, 108, 10);
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.App-textbox {
+  flex: 1;
+  background-color: rgb(197, 11, 135);
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+}
+
+.App-textbox-input {
+  flex: 5;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.App-textbox-send {
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }

@@ -1,10 +1,10 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
-Repo: <url>
+Repo: https://github.com/natchaphonforstudy/pwa-course-2021
 
-1. รหัสนักศึกษา username
-2. รหัสนักศึกษา username
-3. รหัสนักศึกษา username
-4. รหัสนักศึกษา username
+1. 1620701795 natchaphonforstudy
+2. 1620701894 Ratpakorn
+3. 1620702132 TeerathepS
+
 
 ----------------------------

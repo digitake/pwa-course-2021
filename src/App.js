@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import logo from './dog.jpg';
-=======
->>>>>>> 778385579ddf447a65241eb146d59ad73290a5af
 import './App.css';
 
 function App() {

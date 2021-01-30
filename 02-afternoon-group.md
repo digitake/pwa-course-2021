@@ -1,6 +1,6 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
-Repo: <url>
+Repo: <https://github.com/nottae12/pwa-course-2021>
 
 1. 1620703825 nottae12
 2. 1620704112 OosnowoO

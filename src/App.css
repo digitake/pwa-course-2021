@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: center;git checkout -b digitake-main main
+  git pull https://github.com/digitake/pwa-course-2021.git main
 }
 
 .App-logo {

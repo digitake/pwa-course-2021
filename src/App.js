@@ -1,25 +1,23 @@
-import logo from './food.jpg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">    
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h3>Klongkwan Wanngam</h3>
-        <h2>1620704005</h2>
-        <p>
-          Mobile dev
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">
+      <div className="App-header">
+      </div>
+      <div className="App-chatroom">
+        <div className="App-chatroom-text">
+          Line1
+        </div>
+        <div className="App-chatroom-text">
+          Line2
+        </div>
+      </div>
+      <div className="App-textbox">
+        <input type="text" className="App-textbox-input"/>
+        <div className="App-textbox-send">Send!</div>
+      </div>
+
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './iconfinder_Streamline-78_185098.png';
 import './App.css';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          จาวาส คลิป
         </a>
       </header>
     </div>

@@ -2,9 +2,9 @@
 
 Repo: <url>
 
-1. รหัสนักศึกษา username
-2. รหัสนักศึกษา username
-3. รหัสนักศึกษา username
+1. 1620705374 kengpopra
+2. 1620705515 2410T
+3. 1620704542 Pooncharat-patsen
 4. รหัสนักศึกษา username
 
 ----------------------------

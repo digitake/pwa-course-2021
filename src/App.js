@@ -7,10 +7,16 @@ function App() {
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          งง
+         Hello there 
         </div>
         <div className="App-chatroom-text">
-          Line2
+          Heyyo
+        </div>
+        <div className="App-chatroom-text">
+          oh yeah
+        </div>
+        <div className="App-chatroom-text">
+        oh no
         </div>
       </div>
       <div className="App-textbox">

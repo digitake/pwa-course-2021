@@ -30,9 +30,10 @@
 }
 
 .App-chatroom-text {
-  margin: 8px;
-  background-color: rgb(255, 167, 215);
-  color: #0f3522;
+  margin: 20px;
+  background-color: yellow;
+  font-size: 30;
+  color : blueviolet
 }
 
 .App-textbox {

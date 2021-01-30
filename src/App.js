@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './1335dab7fa551a2d3a1109096781bb3f.jpg';
 import './App.css';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          จาวาสคริป
         </a>
       </header>
     </div>

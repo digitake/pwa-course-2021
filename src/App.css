@@ -29,7 +29,6 @@
   background-color: silver;
 }
 
-<<<<<<< HEAD
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -37,11 +36,6 @@
   to {
     transform: rotate(-360deg);
   }
-=======
-.App-chatroom-text {
-  margin: 8px;
-  background-color: rgb(201, 138, 138);
->>>>>>> 778385579ddf447a65241eb146d59ad73290a5af
 }
 
 .App-textbox {

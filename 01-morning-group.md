@@ -2,6 +2,14 @@
 
 ----------------------------
 
+Repo: <https://github.com/Kittapas24/pwa-course-2021>
+
+1. 1620701589 Kittapas24
+2. 1620701690 Thanaphat1150
+3. 1620701258 krittaporn
+
+----------------------------
+
 Repo: <https://github.com/ssealz/pwa-course-2021>
 
 1. 1620704690 ssealz

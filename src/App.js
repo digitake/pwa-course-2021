@@ -1,23 +1,22 @@
-import logo from './1335dab7fa551a2d3a1109096781bb3f.jpg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          จาวาสคริป
-        </a>
-      </header>
+      <div className="App-header">
+      </div>
+      <div className="App-chatroom">
+        <div className="App-chatroom-text">
+          Line1
+        </div>
+        <div className="App-chatroom-text">
+          Line2
+        </div>
+      </div>
+      <div className="App-textbox">
+        <input type="text" className="App-textbox-input"/>
+        <div className="App-textbox-send">Send!</div>
+      </div>
     </div>
   );
 }

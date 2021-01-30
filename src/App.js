@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          จาวาส คลิป
+          จาวา สคลิป
         </a>
       </header>
     </div>

@@ -1,10 +1,10 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
-Repo: <url>
+Repo: <https://github.com/baimee/pwa-course-2021/pull/1>
 
-1. รหัสนักศึกษา username
-2. รหัสนักศึกษา username
-3. รหัสนักศึกษา username
-4. รหัสนักศึกษา username
-
+1. 1620700821 baimee
+2. 1620702041 AkisawaZZ
+3. 1620701142 Noraphat-thod
+4. 1620703833 Assadawut999
+5. 1620700946 CGNinja
 ----------------------------

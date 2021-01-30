@@ -1,10 +1,10 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
-Repo: <url>
+Repo: <https://github.com/Kittapas24/pwa-course-2021>
 
-1. รหัสนักศึกษา username
-2. รหัสนักศึกษา username
-3. รหัสนักศึกษา username
-4. รหัสนักศึกษา username
+1. 1620701589 Kittapas24
+2. 1620701690 Thanaphat1150
+3. 1620701258 krittaporn
+4. 1620701050 Nattapong เพื่อนยังไม่ได้สมัคร GitHub (รอการอัพเดท)
 
 ----------------------------

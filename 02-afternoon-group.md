@@ -1,10 +1,8 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
-Repo: <url>
+Repo: https://github.com/Krittanan5770/pwa-course-2021
 
-1. รหัสนักศึกษา username
-2. รหัสนักศึกษา username
-3. รหัสนักศึกษา username
-4. รหัสนักศึกษา username
+1. 1620705770 Krittanan5770
+2. 1620705788 chatmongkol55
 
 ----------------------------

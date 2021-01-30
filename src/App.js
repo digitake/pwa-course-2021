@@ -10,7 +10,31 @@ function App() {
           Line1
         </div>
         <div className="App-chatroom-text">
-          Line2
+          Line2  
+        </div>
+        <div className="App-chatroom-text">
+          Line3
+        </div>
+        <div className="App-chatroom-text">
+          Line4
+        </div>
+        <div className="App-chatroom-text">
+          Line3
+        </div>
+        <div className="App-chatroom-text">
+          Line4
+        </div>
+        <div className="App-chatroom-text">
+          Line5
+        </div>
+        <div className="App-chatroom-text">
+          Line6
+        </div>
+        <div className="App-chatroom-text">
+          Line7
+        </div>
+        <div className="App-chatroom-text">
+          Line8
         </div>
         <div className="App-chatroom-text">
           Line3

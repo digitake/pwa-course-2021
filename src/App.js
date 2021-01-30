@@ -12,6 +12,15 @@ function App() {
         <div className="App-chatroom-text">
           Line2 context
         </div>
+        <div className="App-chatroom-text">
+          Line3 context
+        </div>
+        <div className="App-chatroom-text">
+          Line4 context
+        </div>
+        <div className="App-chatroom-text">
+          Line5 context
+        </div>
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input"/>

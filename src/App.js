@@ -7,19 +7,19 @@ function App() {
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          Line1 context
+          Love
         </div>
         <div className="App-chatroom-text">
-          Line2 context
+          Or
         </div>
         <div className="App-chatroom-text">
-          Line3 context
+          Not
         </div>
         <div className="App-chatroom-text">
-          Line4 context
+          So Many
         </div>
         <div className="App-chatroom-text">
-          Line5 context
+          Cure 
         </div>
       </div>
       <div className="App-textbox">

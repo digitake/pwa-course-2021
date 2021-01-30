@@ -29,6 +29,12 @@
   background-color: #B4C5F8;
 }
 
+.App-chatroom-text {
+  margin: 8px;
+  height: 50%;
+  background-color: #5b84ff;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -59,4 +65,5 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  
 }

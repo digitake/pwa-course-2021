@@ -15,28 +15,58 @@
 
 .App-header {
   flex: 1;
-  background-color: #331a12;
+  background-color: #3b5998;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 5, 5);
+  color: rgb(255, 255, 255);
 }
 
 .App-chatroom {
   flex: 12;
-  background-color: silver;
+  background-color: rgba(245, 245, 245, 0.877);
 }
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: rgb(201, 138, 138);
+  background-color: rgb(65, 137, 219);
+  text-align: left;
+  color: #ffffff;
 }
+
+.App-chatroom-sender-text {
+  margin: 8px;
+  background-color: rgb(226, 226, 226);
+  text-align: right;
+  color: black;
+}
+
+.App-chatroom-name-text {
+  text-align: left;
+  color: rgb(238, 238, 238);
+  font-weight: bold;
+}
+
+.App-chatroom-sender-name-text {
+  text-align: right;
+  color: black;
+  font-weight: bold;
+}
+
+.App-chatroom-seen-text {
+  margin: 0px;
+  background-color: rgb(226, 226, 226);
+  text-align: right;
+  color: rgb(78, 78, 78);
+  font-size: smaller;
+}
+
 
 .App-textbox {
   flex: 1;
-  background-color: gray;
+  background-color:rgb(65, 137, 219);
   justify-content: center;
   align-items: stretch;
   display: flex;

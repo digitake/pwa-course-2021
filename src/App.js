@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+        App Chat
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">

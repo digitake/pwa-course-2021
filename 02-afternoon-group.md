@@ -2,8 +2,8 @@
 
 Repo: <url>
 
-1. รหัสนักศึกษา username
-2. รหัสนักศึกษา username
+1. 1600702920 tanapas
+2. 1600700700 Amornpiwat
 3. รหัสนักศึกษา username
 4. รหัสนักศึกษา username
 

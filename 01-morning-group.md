@@ -1,10 +1,10 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
-Repo: <url>
+Repo: https://github.com/digitake/pwa-course-2021
 
-1. รหัสนักศึกษา username
-2. รหัสนักศึกษา username
-3. รหัสนักศึกษา username
-4. รหัสนักศึกษา username
+1. 000000001 abcd
+2. 000000002 edfg
+3. 000000003 dkdjdf
+4. 000000004 testtest
 
 ----------------------------

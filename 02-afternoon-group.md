@@ -1,10 +1,9 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
-Repo: <url>
+Repo: https://github.com/talessmall/pwa-course-2021
 
-1. รหัสนักศึกษา username
-2. รหัสนักศึกษา username
-3. รหัสนักศึกษา username
-4. รหัสนักศึกษา username
+1. 1620705473 talessmall
+2. 1620705382 Judicarry-hub
+3. 1620705713 chachawan23032
 
 ----------------------------

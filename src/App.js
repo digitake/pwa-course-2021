@@ -7,10 +7,16 @@ function App() {
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          Line1
+          Samurai
         </div>
         <div className="App-chatroom-text">
-          Line2
+          Ronin
+        </div>
+        <div className="App-chatroom-text">
+          Miko
+        </div>
+        <div className="App-chatroom-text">
+          Karumpee
         </div>
       </div>
       <div className="App-textbox">

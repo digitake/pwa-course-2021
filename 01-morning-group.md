@@ -7,5 +7,5 @@ Repo: <https://github.com/baimee/pwa-course-2021/pull/1>
 3. 1620701142 Noraphat-thod
 4. 1620703833 Assadawut999
 5. 1620700946 CGNinja
-.
+
 ----------------------------

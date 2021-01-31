@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+      Chatroom
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
@@ -17,6 +18,7 @@ function App() {
         </div>
         <div className="App-chatroom-text">
           Line4
+        
         </div>
         <div className="App-chatroom-text">
           Line5

@@ -1,6 +1,6 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
-Repo: <url>
+Repo: https://github.com/janjao937/pwa-course-2021
 
 1. 1620703643 janjao937
 2. 1620703452 tanawut19

@@ -19,10 +19,7 @@ function App() {
           Line4
         </div>
         <div className="App-chatroom-text">
-          yodravee kusolkumbot
-        </div>
-        <div className="App-chatroom-text">
-          sec 2611
+          sec 2513
         </div>
 
       </div>

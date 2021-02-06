@@ -1,4 +1,3 @@
-import logo from './ss02.png';
 import './App.css';
 import { useState } from 'react'
 
@@ -17,14 +16,14 @@ function App() {
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          {text}
+          Line1
         </div>
         <div className="App-chatroom-text">
-          {text}
+          Line2
         </div>
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange}/>
+        <input type="text" className="App-textbox-input"/>
         <div className="App-textbox-send">Send!</div>
       </div>
     </div>

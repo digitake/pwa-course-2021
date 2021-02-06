@@ -4,14 +4,14 @@ import './App.css';
 function App() {
 
   const [text, setText] = useState("");
-  const [lines, setLines] = useState(["Hello world!"]);
+  const [lines, setLines] = useState(["as" ,"sdad"]);
 
   const onChangeHandler = (event) => {
       setText(event.target.value);
   };
 
   const onSendHandler = (event) => {
-    setLines(lines => [...lines, text]);
+    setLines(lines => [lines, text]);
     setText("");
   };
 
@@ -35,10 +35,8 @@ function App() {
         }
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input"/>
-        <div className="App-textbox-send">Send!</div>
         <input type="text" className="App-textbox-input" onChange={onChangeHandler} value={text}/>
-        <div className="App-textbox-send" onClick={onSendHandler}>Send!</div>
+        <div className="App-textbox-send">Send!</div>
       </div>
     </div>
   );

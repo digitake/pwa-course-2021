@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+        FaceBug
       </div>
       <div className="App-chatroom">
        {

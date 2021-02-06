@@ -1,19 +1,14 @@
 
-import logo from './lel.jpg';
-
 import './App.css';
 import{useState}from 'react'
 
-
-
-import{useState}from 'react'
 
 function App() 
 {
 
 const [text, setText] = useState("")
 
-const [lines, setLines] = useState(["Let's Talk!"]);
+const [lines, setLines] = useState([""]);
 
 
 const onTextChange = (event) => {
@@ -24,20 +19,15 @@ const onSend = (event) =>{
   setLines(lines => [...lines, text]);
   setText("");
 }
-
-
-
   return (
     <div className="App">
       <div className="App-header">
       </div>
       <div className="App-chatroom">
         {
-
-
           lines.map(x =>{
-        return<div className="App-chatroom-text">
-          {x}
+        return <div className="App-chatroom-text">
+           {x}
         </div>
           })
         }

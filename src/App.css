@@ -36,7 +36,7 @@
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(238, 212, 66);
+  background-color: rgb(255, 232, 100);
   justify-content: center;
   align-items: stretch;
   display: flex;

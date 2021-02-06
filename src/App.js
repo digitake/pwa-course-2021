@@ -1,4 +1,6 @@
 import './App.css';
+
+=======
 import{useState}from 'react'
 
 function App() 
@@ -17,22 +19,27 @@ const onSend = (event) =>{
   setText("");
 }
 
+
   return (
     <div className="App">
       <div className="App-header">
       </div>
       <div className="App-chatroom">
         {
-          lines.map(x =>{
-        return<div className="App-chatroom-text">
-          {x}
-        </div>
+
+          lines.map((value, index) =>{
+            return <div key={index} className="App-chatroom-text">
+                     {value}
+                   </div>
+
           })
         }
 
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input" value ={text} onChange= {onTextChange}/>
+
+        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} value={text}/>
+
         <div className="App-textbox-send" onClick ={onSend}>Send!</div>
       </div>
     </div>

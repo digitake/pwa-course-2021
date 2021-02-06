@@ -15,28 +15,44 @@
 
 .App-header {
   flex: 1;
+<<<<<<< HEAD
   background-color: #4d31ca;
+=======
+  background-color: #d48bc2;
+>>>>>>> 3bd140ff70dd92caa163e04b2042c7ae0753d4b4
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(192, 54, 146);
+  color: rgb(0, 0, 0);
 }
 
 .App-chatroom {
   flex: 12;
+<<<<<<< HEAD
   background-color: rgb(192, 166, 226);
+=======
+  background-color: rgb(219, 191, 191);
+>>>>>>> 3bd140ff70dd92caa163e04b2042c7ae0753d4b4
 }
 
 .App-chatroom-text {
   margin: 8px;
+<<<<<<< HEAD
   background-color: rgb(154, 145, 243);
+=======
+  background-color: rgb(155, 146, 146);
+>>>>>>> 3bd140ff70dd92caa163e04b2042c7ae0753d4b4
 }
 
 .App-textbox {
   flex: 1;
+<<<<<<< HEAD
   background-color: rgb(153, 122, 153);
+=======
+  background-color: rgb(129, 117, 117);
+>>>>>>> 3bd140ff70dd92caa163e04b2042c7ae0753d4b4
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -55,4 +71,5 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
 }

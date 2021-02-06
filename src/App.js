@@ -4,7 +4,7 @@ import './App.css';
 function App() {
 
   const [text, setText] = useState("");
-  const [lines, setLines] = useState(["Hello world!"]);
+  const [lines, setLines] = useState(["Hi I am Ninekea"]);
 
   const onChangeHandler = (event) => {
       setText(event.target.value);

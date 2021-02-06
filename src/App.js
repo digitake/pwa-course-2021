@@ -1,30 +1,43 @@
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [text, setText] = useState("")
+  const [lines, setLines] = useState([
+    ""]);
+
+  const onTextChange = (event) =>{
+    setText(event.target.value);
+  }
+
+  const onSend = () =>{
+    setLines([...lines, text])
+    setText("");
+  };
+
+  const keypress = (event) => {
+    if (event.which === 13){
+      onSend();
+    }
+  }
+
   return (
     <div className="App">
       <div className="App-header">
       </div>
       <div className="App-chatroom">
-        <div className="App-chatroom-text">
-          Line1
-        </div>
-        <div className="App-chatroom-text">
-          Line2
-        </div>
-        <div className="App-chatroom-text">
-          Line3
-        </div>
-        <div className="App-chatroom-text">
-          Line4
-        </div>
-        <div className="App-chatroom-text">
-          Hi!
-        </div>
+        {
+          lines.map(x =>{
+            return <div className="App-chatroom-text">
+              {x}
+              </div>
+          })
+        }
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input"/>
-        <div className="App-textbox-send">Send!</div>
+        <input type="text" className="App-textbox-input" 
+        value = {text} onChange= {onTextChange} onKeyPress={keypress}/>
+        <div className="App-textbox-send"onClick={onSend}>Send!</div>
       </div>
     </div>
   );

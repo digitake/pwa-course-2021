@@ -6,7 +6,7 @@ function App() {
 
   const [text, setText] = useState("");
 
-  const [lines, setLines] = useState(["msg1"]);
+  const [lines, setLines] = useState(["NaCub"]);
 
   const onTextChange = (event) => {
     setText(event.target.value);
@@ -33,7 +33,7 @@ function App() {
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} value={text}/>
-        <div className="App-textbox-send" onClick={onSendHandler}>Send!</div>
+        <div className="App-textbox-send">Send!</div>
       </div>
     </div>
   );

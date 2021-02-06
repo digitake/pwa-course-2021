@@ -1,7 +1,26 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
+Repo: https://github.com/baimee/pwa-course-2021
 
-Repo: <https://github.com/Barrower990/pwa-course-2021>
+1. 1620700821 baimee
+2. 1620702041 AkisawaZZ
+3. 1620701142 Noraphat-thod
+4. 1620703833 Assadawut999
+5. 1620700946 CGNinja
+
+----------------------------
+
+Repo: https://github.com/kumfiless/pwa-course-2021
+
+1. 1620706273 kumfiless
+2. 1620706398 kennykung2
+3. 1620706562 Gook123
+4. 1620706810 toke6310
+5. 1620706455 soulburstz
+
+----------------------------
+
+Repo: https://github.com/Barrower990/pwa-course-2021
 
 1. 1620704922 Barrower990   sec.2513
 2. 1620704971 ThanatipLnwza sec.2613
@@ -27,7 +46,7 @@ Repo: https://github.com/natchaphonforstudy/pwa-course-2021
 
 ----------------------------
 
-Repo: <https://github.com/Kittapas24/pwa-course-2021>
+Repo: https://github.com/Kittapas24/pwa-course-2021
 
 1. 1620701589 Kittapas24
 2. 1620701690 Thanaphat1150
@@ -35,7 +54,7 @@ Repo: <https://github.com/Kittapas24/pwa-course-2021>
 
 ----------------------------
 
-Repo: <https://github.com/ssealz/pwa-course-2021>
+Repo: https://github.com/ssealz/pwa-course-2021
 
 1. 1620704690 ssealz
 2. 1620702058 WisarutBU

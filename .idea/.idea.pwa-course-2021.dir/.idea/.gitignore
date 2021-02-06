@@ -7,7 +7,3 @@
 /.idea.pwa-course-2021.iml
 /projectSettingsUpdater.xml
 # Datasource local storage ignored files
-/../../../../../../../../:\Program\JetBrains\Code\pwa-course-2021\.idea\.idea.pwa-course-2021.dir\.idea/dataSources/
-/dataSources.local.xml
-# Editor-based HTTP Client requests
-/httpRequests/

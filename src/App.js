@@ -18,7 +18,10 @@ function App() {
           {text}
         </div>
         <div className="App-chatroom-text">
-
+          This is your chat mate
+        </div>
+        <div className="App-chatroom-text">
+          {text}
         </div>
       </div>
       <div className="App-textbox">

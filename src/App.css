@@ -21,12 +21,15 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 219, 225);
 }
 
 .App-chatroom {
   flex: 12;
   background-color: rgb(208, 216, 218);
+  background-image: url("s2.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .App-chatroom-text {

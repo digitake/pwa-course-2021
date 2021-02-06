@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const[text, setText] = useState("");
 
-  const [lines, setLines] = useState(["msg1"]);
+  const [lines, setLines] = useState(["msg1", "msg2", "msg3"]);
 
   const onTextChange = (event) => {
     setText(event.target.value);
@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+      MIYAWAKI SAKURA
       </div>
       <div className="App-chatroom">
         {

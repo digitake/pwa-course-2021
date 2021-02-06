@@ -5,7 +5,7 @@ function App() {
 
   const [text, setText] = useState("");
 
-  const[lines, setLines] = useState(["msg1", "msg2", "msg3"]);
+  const[lines, setLines] = useState(["msg1"]);
 
   const onTextChange = (event) => {
     setText(event.target.value);
@@ -13,6 +13,7 @@ function App() {
 
   const onSend = () => {
     setLines(lines => [...lines, text]);
+    setText("")
   }
 
   return (

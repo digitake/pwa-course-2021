@@ -15,7 +15,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #e5fc7f;
+  background-color: #0077ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,19 +26,29 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: rgba(199, 198, 198, 0.418);
+  background-color: #0077ff;
+  background-image: url("1080566.jpg");
+  background-size: 1200px;
+  background-position : center;
+  opacity: 0.8;
 }
 
-.App-chatroom-text-left  { 
+.App-chatroom-text  { 
   margin: 8px;
-  background-color: rgb(197, 189, 189);
-  color : rgb(48, 100, 100);
-  font-size: 20px;
+  color : rgb(255, 255, 255);
+  background-color: #0077ff;
+  font-size: 15px;
+  text-align: right;
+}
+.App-chatroom-name {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  background-color: #0077ff;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(224, 220, 220);
+  background-color: #0077ff;
   justify-content: center;
   align-items: stretch;
   color: rgb(255, 255, 255);

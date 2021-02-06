@@ -64,7 +64,6 @@ Repo: https://github.com/Thanaphat1150/pwa-course-2021
 
 
 
-=======
 Repo: https://github.com/baimee/pwa-course-2021
 
 1. 1620700821 baimee
@@ -73,7 +72,6 @@ Repo: https://github.com/baimee/pwa-course-2021
 4. 1620703833 Assadawut999
 5. 1620700946 CGNinja
 
->>>>>>> 7e4d01b2a8f93a9aa761a832f34757c5c6568060
 ----------------------------
 
 Repo: https://github.com/kumfiless/pwa-course-2021
@@ -109,6 +107,7 @@ Repo: https://github.com/natchaphonforstudy/pwa-course-2021
 1. 1620701795 natchaphonforstudy
 2. 1620701894 Ratpakorn
 3. 1620702132 TeerathepS
+4. 1600700924 chatchaiphat924
 
 ----------------------------
 

@@ -26,7 +26,7 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: rgba(199, 198, 198, 0.418);
+  background-image: url(https://images.pexels.com/photos/3507116/pexels-photo-3507116.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
 }
 
 .App-chatroom-text {

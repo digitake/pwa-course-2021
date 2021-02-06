@@ -1,21 +1,24 @@
 import './App.css';
-import { useState } from 'react';
 
+=======
+import{useState}from 'react'
 
-function App() {
+function App() 
+{
 
-  const [text, setText] = useState("");
+const [text, setText] = useState("")
 
-  const [lines, setLines] = useState(["NaCub"]);
+const [lines, setLines] = useState(["Let's Talk!"]);
 
-  const onTextChange = (event) => {
-    setText(event.target.value);
-  };
+const onTextChange = (event) => {
+  setText(event.target.value);
+}
 
-  const onSend = () => {
-    setLines(lines => [...lines, text]);
-    setText("");
-  };
+const onSend = (event) =>{
+  setLines(lines => [...lines, text]);
+  setText("");
+}
+
 
   return (
     <div className="App">
@@ -23,16 +26,20 @@ function App() {
       </div>
       <div className="App-chatroom">
         {
+
           lines.map((value, index) =>{
             return <div key={index} className="App-chatroom-text">
                      {value}
                    </div>
+
           })
         }
 
       </div>
       <div className="App-textbox">
+
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} value={text}/>
+
         <div className="App-textbox-send" onClick ={onSend}>Send!</div>
       </div>
     </div>

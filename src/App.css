@@ -25,8 +25,9 @@
   }
   
   .App-chatroom {
-    flex: 12;
+    flex: 11;
     background-color: silver;
+    background-image: url(Mogu.png);
   }
   
   .App-chatroom-text {

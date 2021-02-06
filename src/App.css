@@ -21,12 +21,16 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  font-weight: bold;
+  color: rgb(0, 46, 11);
 }
 
 .App-chatroom {
   flex: 12;
-  background-color:#F7F7F7;
+  background-image: url(cat.jpg);
+  background-size: 140%;
+  background-position: center;
+  background-color: rgba(240, 206, 206, 0.418);
 }
 
 .App-chatroom-text {
@@ -34,10 +38,12 @@
   background-color:#DFE3EE;
   color : rgb(48, 100, 100);
   font-size: 20px;
+  font-weight: bold;
+  
 }
 
-.App-textbox {
-  flex: 1;
+.App-textbox { 
+  flex: 1; 
   background-color: rgb(224, 220, 220);
   justify-content: center;
   align-items: stretch;

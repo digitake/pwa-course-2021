@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          PWA Rocket
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+        REACT CHAT
+      </div>
+      <div className="panel-footer">
+      </div>
+      <div className="input-group">
+      </div>
+      <div className="App-chatroom">
+        <div className="App-chatroom-text">
+          Line1
+        </div>
+        <div className="App-chatroom-text">
+          Line2
+        </div>
+        <div className="App-chatroom-text">
+          Line3
+        </div>
+      </div>
+      <input id="btn-input" type="text"className="form-control-input-sm" placeholder="Type your message here..." />
+      <span className="input-group-btn">
+        <button className="btnbtn-primarybtn-sm"id="btn-chat">Send your message</button>
+      </span>
     </div>
   );
 }

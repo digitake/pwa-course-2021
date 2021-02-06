@@ -4,27 +4,33 @@ import './App.css';
 function App() {
 
   const[text, setText] = useState("");
+ 
+  const[lines, setLines] = useState(["msg1"])
 
   const onTextChange = (event) => {
     setText(event.target.value)
   };
 
-
+  const onSend = () =>{
+    setLines(lines => [...lines,text]);
+    setText("");
+  };
   return (
     <div className="App">
       <div className="App-header">
       </div>
       <div className="App-chatroom">
-        <div className="App-chatroom-text">
-          {text}
+        {
+          lines.map(x =>{
+            return<div className="App-chatroom-text">
+              {x}
+              </div>
+          })
+         }
         </div>
-        <div className="App-chatroom-text">
-          {text}
-        </div>
-      </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" value = {text} onChange={onTextChange}/>
-        <div className="App-textbox-send">Send!</div>
+        <div className="App-textbox-send" onclick={onSend}>Send!</div>
       </div>
     </div>
   );

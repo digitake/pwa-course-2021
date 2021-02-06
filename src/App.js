@@ -1,13 +1,9 @@
 import logo from './lel.jpg';
 import './App.css';
-
+import{useState}from 'react'
 function App() {
 
-const [text, setText] = useState("aaaaaaaa");
-
-const onTextChange = (event) => {
-  
-}
+const [text, setText] = useState("aaaaaaaa")
 
   return (
     <div className="App">

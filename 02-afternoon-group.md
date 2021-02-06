@@ -1,5 +1,14 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
+Repo: <https://github.com/nottae12/pwa-course-2021>
+
+1. 1620703825 nottae12
+2. 1620704112 OosnowoO
+3. 1620703478 pongtanatsira
+4. 1620704005 klongkwan
+
+-----------------------------
+
 Repo: https://github.com/Alonner/pwa-course-2021
 
 1. 1620700177 Alonner
@@ -58,5 +67,3 @@ Repo: https://github.com/janjao937/pwa-course-2021
 2. 1620703452 tanawut19
 3. 1620703791 newpuwinwin 
 4. 1620703783 annop-onph
-
-----------------------------

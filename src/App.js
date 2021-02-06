@@ -2,6 +2,13 @@ import logo from './lel.jpg';
 import './App.css';
 
 function App() {
+
+const [text, setText] = useState("aaaaaaaa");
+
+const onTextChange = (event) => {
+  
+}
+
   return (
     <div className="App">
       <div className="App-header">
@@ -12,6 +19,9 @@ function App() {
         </div>
         <div className="App-chatroom-text">
           Line2
+        </div>
+        <div className="App-chatroom-text">
+          Line3
         </div>
       </div>
       <div className="App-textbox">

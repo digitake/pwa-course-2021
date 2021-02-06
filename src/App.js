@@ -1,6 +1,12 @@
 import './App.css';
+import {useState} from 'react' ;
 
 function App() {
+
+  const [text,setText] = useState("");
+  const  onTextChange = (event) =>{
+    setText(event.target.value);
+  };
   return (
     <div className="App">
       <div className="App-header">
@@ -20,7 +26,8 @@ function App() {
         </div>
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input"/>
+        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange}
+        />
         <div className="App-textbox-send">ส่ง</div>
       </div>
     </div>

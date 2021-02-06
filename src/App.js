@@ -10,13 +10,7 @@ function App() {
           Line1
         </div>
         <div className="App-chatroom-text">
-          Line2  
-        </div>
-        <div className="App-chatroom-text">
-          Line3
-        </div>
-        <div className="App-chatroom-text">
-          Line4
+          Line2
         </div>
       </div>
       <div className="App-textbox">

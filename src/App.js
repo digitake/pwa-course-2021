@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import 'logo.svg'
 
 function App() {
 
@@ -12,9 +13,10 @@ function App() {
   };
 
   const onSend = () =>{
-    setLines(lines => [...lines,text]);
+    setLines(lines => [...lines, text]);
     setText("");
   };
+
   return (
     <div className="App">
       <div className="App-header">
@@ -30,7 +32,7 @@ function App() {
         </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" value = {text} onChange={onTextChange}/>
-        <div className="App-textbox-send" onclick={onSend}>Send!</div>
+        <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
     </div>
   );

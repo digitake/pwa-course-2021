@@ -33,7 +33,7 @@ function App() {
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} value={text}/>
-        <div className="App-textbox-send">Send!</div>
+        <div className="App-textbox-send" onClick ={onSend}>Send!</div>
       </div>
     </div>
   );

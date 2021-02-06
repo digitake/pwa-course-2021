@@ -6,7 +6,7 @@ function App()
 
 const [text, setText] = useState("")
 
-const [lines, setLines] = useState(["Let's Talk"]);
+const [lines, setLines] = useState(["Let's Talk!"]);
 
 const onTextChange = (event) => {
   setText(event.target.value);

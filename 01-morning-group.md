@@ -1,6 +1,7 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Repo: <https://github.com/chatchaiphat924/pwa-course-2021>
 
 1. 1600700924 chatchaiphat usami
@@ -17,6 +18,16 @@ Repo: https://github.com/baimee/pwa-course-2021
 5. 1620700946 CGNinja
 >>>>>>> 7e4d01b2a8f93a9aa761a832f34757c5c6568060
 
+=======
+Repo: https://github.com/baimee/pwa-course-2021
+
+1. 1620700821 baimee
+2. 1620702041 AkisawaZZ
+3. 1620701142 Noraphat-thod
+4. 1620703833 Assadawut999
+5. 1620700946 CGNinja
+
+>>>>>>> 7e4d01b2a8f93a9aa761a832f34757c5c6568060
 ----------------------------
 
 Repo: https://github.com/kumfiless/pwa-course-2021

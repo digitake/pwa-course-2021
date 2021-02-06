@@ -31,6 +31,7 @@
 
 .App-chatroom-text {
   margin: 10px;
+  background-size: auto;
   background-color: rgb(78, 80, 76);
   color: white;
   font-size: 30;

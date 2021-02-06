@@ -21,8 +21,8 @@ function App() {
           Line3
         </div>
       </div>
-      <input id="btn-input" type="text"className="form-control-input-sm" placeholder="Type your message here..." />
-      <span className="input-group-btn">
+        <input id="btn-input" type="text"className="form-control-input-sm" placeholder="Type your message here..." />
+        <span className="input-group-btn">
         <button className="btnbtn-primarybtn-sm"id="btn-chat">Send your message</button>
       </span>
     </div>

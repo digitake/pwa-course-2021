@@ -19,7 +19,7 @@ function App() {
           ภัสโสดค้าบ
         </div>
         <div className="App-chatroom-text">
-          เฟิสสเปิ๊ดก๊าดฬ
+          เฟิสสเปิ๊ดก๊าด
         </div>
       </div>
       <div className="App-textbox">

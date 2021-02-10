@@ -23,8 +23,10 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+        Chatroom
       </div>
       <div className="App-chatroom">
+        
         {
           lines.map(x => {
             return <div className="App-chatroom-text">

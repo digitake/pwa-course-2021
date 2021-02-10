@@ -15,30 +15,40 @@
 
 .App-header {
   flex: 1;
-  background-color: #e5fc7f;
+  background-color: #80c7f0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  color: rgb(68, 117, 250);
 }
 
 .App-chatroom {
   flex: 12;
   background-color: rgba(199, 198, 198, 0.418);
+  background-image: url(Daco_4881365.png) ;
+}
+
+.App-chatroom2 {
+  flex: 12;
+  background-color: rgba(139, 129, 129, 0);
+  color : rgb(19, 0, 128);
+  font-weight: 600;
 }
 
 .App-chatroom-text {
   margin: 8px;
   background-color: rgb(197, 189, 189);
-  color : rgb(48, 100, 100);
+  color : rgb(1, 30, 110);
   font-size: 20px;
+  text-align-last: right;
+  font-weight: 600;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(224, 220, 220);
+  background-color: rgba(48, 164, 241, 0.534);
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -53,8 +63,12 @@
 .App-textbox-send {
   flex: 1;
   height: 100%;
-  vertical-align: middle;
+  background-color: burlywood;
+  vertical-align: super;
   justify-content: center;
   align-items: center;
   display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 1000;
+  color: rgb(52, 1, 255);
 }

@@ -25,6 +25,9 @@ onSend();
   return (
     <div className="App">
       <div className="App-header">
+      <div className="App-chatroom2">
+          GI472 Pheeraphat Chocokviriyapanya
+        </div>
       </div>
       <div className="App-chatroom">
         {
@@ -34,12 +37,6 @@ onSend();
               </div>
           })
         }
-        <div className="App-chatroom-text">
-          Start Chat
-        </div>
-        <div className="App-chatroom-text">
-          GI472
-        </div>
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input"

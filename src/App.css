@@ -15,18 +15,20 @@
 
 .App-header {
   flex: 1;
-  background-color: #e5fc7f;
+  background-color: #792ac2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  color: rgb(14, 0, 0);
+  
 }
 
 .App-chatroom {
   flex: 12;
-  background-color: rgba(199, 198, 198, 0.418);
+  background-color: rgba(93, 75, 173, 0.418);
+  background-image: url(sad.jpg);
 }
 
 .App-chatroom-text {
@@ -34,12 +36,13 @@
   background-color: rgb(197, 189, 189);
   color : rgb(48, 100, 100);
   font-size: 20px;
+  text-align: left;
 }
 
 .App-textbox {
   flex: 1;
   background-color: rgb(224, 220, 220);
-  justify-content: center;
+  justify-content: left;
   align-items: stretch;
   display: flex;
 }
@@ -53,8 +56,12 @@
 .App-textbox-send {
   flex: 1;
   height: 100%;
-  vertical-align: middle;
-  justify-content: center;
+  background-color: #792ac2;
+  vertical-align: center;
+  justify-content: right;
   align-items: center;
   display: flex;
+  font-family: fantasy;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
 }

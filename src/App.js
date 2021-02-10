@@ -23,6 +23,9 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+      <div className="App-chatroom2">
+          GI472 Varinkarn Kumtanasan
+        </div>
       </div>
       <div className="App-chatroom">
         {

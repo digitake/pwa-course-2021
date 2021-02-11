@@ -1,4 +1,4 @@
-import logo from './dog.jpg';
+
 import './App.css';
 import { useState, usestate } from 'react';
 

@@ -26,12 +26,12 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: rgba(112, 112, 112, 0);
+  background-color: rgb(230, 230, 230);
 }
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: rgb(168, 166, 166);
+  background-color: rgb(143, 209, 182);
   color : rgb(0, 0, 0);
   font-size: 20px;
 }

@@ -46,21 +46,21 @@
   color: #ffffff;
 }
 
-.btnbtn-primarybtn-sm{
+.App-textbox-send{
   background-color: rgb(1, 133, 122);
   color: #ffffff;
   align-items: center;
   box-sizing: border-box;
   justify-content: center;
-  width: 400px;
-  height: 40px
-  
+  width: 50px;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  display: flex;
 }
 
-.form-control-input-sm{
-  flex: 0.5;
+.App-textbox-Input{
+  flex: 5;
   height: 100%;
   box-sizing: border-box;
-  max-width: 400px;
 }
-

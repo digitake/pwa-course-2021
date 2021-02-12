@@ -7,11 +7,9 @@ function App() {
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          Line1
+          Chat Group
         </div>
-        <div className="App-chatroom-text">
-          Line2
-        </div>
+          
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input"/>

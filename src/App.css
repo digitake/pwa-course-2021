@@ -27,7 +27,7 @@
 .App-chatroom {
   flex: 12
   ;
-  background-color: rgba(255, 101, 247, 0.418);
+  background-color: Trgba(255, 101, 247, 0.418);
   background-image: url(111.jpg);
   background-size: 400px;
 }

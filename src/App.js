@@ -6,6 +6,7 @@ function App() {
 
   const [lines, setLines] = useState(["Hello KumFile", "How are you?", "Right now I stay at capital city", "I relexed from my traveling", "I will Say Hi again later!!!!!!"]);
 
+
   const onTextChange = (event) => {
     setText(event.target.value);
   };
@@ -18,9 +19,11 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+      MIYAWAKI SAKURA
       </div>
       <div className="App-chatroom">
         {
+
           lines.map (x=>{
             return <div className= "App-chatroom-text">
               {x}

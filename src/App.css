@@ -15,13 +15,14 @@
 
 .App-header {
   flex: 1;
+  background-color: #5c8fd1;
   background-image:url("Head-Title.jpg");
   display: flex;
   flex-direction: column;
   align-items:flex-start;
   justify-content:center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 219, 225);
 }
 
 .App-chatroom {
@@ -29,7 +30,7 @@
   background-image: url("elena.jpg");
   background-size: cover;
   background-position: center;
-  background-blend-mode: screen ;
+  background-blend-mode: screen;
 }
 
 .App-chatroom-text {
@@ -43,7 +44,10 @@
 
 .App-textbox {
   flex: 1;
+
+  background-color: rgb(128, 213, 252);
   background-image: url(Send-Button.jpg);
+
   justify-content: center;
   align-items: stretch;
   display: flex;

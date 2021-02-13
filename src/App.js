@@ -1,4 +1,5 @@
 import './App.css';
+
 import {useState} from 'react';
 
 function App() {
@@ -20,9 +21,14 @@ function App() {
       onSend();
     }
   };
+
   return (
     <div className="App">
       <div className="App-header">
+      </div>
+      <div className ="panel-footer">
+      </div>
+      <div className ="input-group">
       </div>
       <div className="App-chatroom">
 
@@ -41,6 +47,7 @@ function App() {
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
 
       </div>
+
 
     </div>
   );

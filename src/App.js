@@ -22,6 +22,7 @@ function App() {
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
+
           Only Fan
         </div>
         <div className="App-chatroom-text">
@@ -35,6 +36,7 @@ function App() {
         </div>
         <div className="App-chatroom-text">
           Here 
+
         </div>
         </div>
         <div className="App-chatroom-text">

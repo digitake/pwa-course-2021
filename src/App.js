@@ -2,6 +2,7 @@ import './App.css';
 import {useState} from 'react';
 
 function App() {
+
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
   
@@ -19,12 +20,12 @@ function App() {
       onSend();
     }
   };
-
   return (
     <div className="App">
       <div className="App-header">
       </div>
       <div className="App-chatroom">
+
         {
           lines.map(x => {
             return <div className="App-chatroom-text">
@@ -38,9 +39,12 @@ function App() {
         value={text} onChange={onTextChange} onKeyPress={keyPress}/>
         
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
+
       </div>
+
     </div>
   );
 }
+// ctrl+alt+p to open command then run npm start to open localhost:300 
 
 export default App;

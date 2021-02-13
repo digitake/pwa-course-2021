@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
+  max-width: 450px;
   height: 100%;
   margin: auto;
 }
@@ -27,6 +27,7 @@
 .App-chatroom {
   flex: 12;
   background-color: rgba(0, 61, 141, 0.863);
+  
 }
 
 .App-chatroom-text {
@@ -45,7 +46,7 @@
 }
 
 .App-textbox-input {
-  flex: 5;
+  flex: 4.5;
   height: 100%;
   box-sizing: border-box;
 }

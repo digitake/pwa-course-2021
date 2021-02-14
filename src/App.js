@@ -3,17 +3,16 @@ import { useState } from 'react';
 
 function App() {
 
-  const [text, setText] = useState("")
+  const [text, setText] = useState("");
+  const [lines, setLines] = useState(["Hello world!"]);
 
-  const [lines, setLines] = useState(["Welcome!!!"])
-
-  const onTextChange = (event) => {
-    setText(event.target.value);
+  const onChangeHandler = (event) => {
+      setText(event.target.value);
   };
 
-  const onSend = () => {
+  const onSendHandler = (event) => {
     setLines(lines => [...lines, text]);
-    setText("")
+    setText("");
   };
 
   return (
@@ -22,17 +21,16 @@ function App() {
       </div>
       <div className="App-chatroom">
         {
-          lines.map(x =>{
-            return <div className="App-chatroom-text">
-                      {x}
-                    </div>   
+          lines.map((value, index) => {
+            return <div key={index} className="App-chatroom-text">
+                {value}
+              </div>
           })
         }
-        
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange}/>
-        <div className="App-textbox-send" onClick={onSend}>Send!</div>
+        <input type="text" className="App-textbox-input" onChange={onChangeHandler} value={text}/>
+        <div className="App-textbox-send" onClick={onSendHandler}>Send!</div>
       </div>
     </div>
   );

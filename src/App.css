@@ -27,12 +27,7 @@
 
 .App-chatroom {
   flex: 12;
-<<<<<<< HEAD
-  background-color: rgb(208, 216, 218);
-  background-image: url("design/s2.jpg");
-=======
   background-image: url("elena.jpg");
->>>>>>> 0067d312f59b7e4bd178e057e873bf826b4c1790
   background-size: cover;
   background-position: center;
   background-blend-mode: screen;

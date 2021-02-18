@@ -15,41 +15,55 @@
 
 .App-header {
   flex: 1;
-  background-color: #3353dfec;
+  background-color: 
+  
+  
+  5c8fd1;
+  background-image:url("Picture/Head-Title.jpg");
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items:flex-start;
+  justify-content:center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 219, 225);
 }
 
 .App-chatroom {
   flex: 12;
-  background-color: rgb(118, 176, 252);
-  background-image: url(shiori.png);
+  background-image: url("Picture/elena.jpg");
   background-size: cover;
   background-position: center;
+  background-blend-mode: screen;
 }
 
 .App-chatroom-text {
-  margin: 8px;
-  background-color: rgba(255, 255, 255, 0.281);
+  margin: 50px;
+  background-color: rgb(40, 4, 41);
+  background-clip:content-box;
+  font-size: calc(3px + 2vmin);
+  
   color: rgb(255, 255, 255);
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(241, 240, 141);
+
+  background-color: rgb(128, 213, 252);
+  background-image: url(Picture/Send-Button.jpg);
+
   justify-content: center;
   align-items: stretch;
   display: flex;
+  color: aliceblue;
+
 }
 
 .App-textbox-input {
-  flex: 5;
+  flex: 4;
   height: 100%;
   box-sizing: border-box;
+  background-color: rgb(47, 15, 51);
+  color: aliceblue;
 }
 
 .App-textbox-send {
@@ -59,4 +73,6 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  color: aliceblue;
+
 }

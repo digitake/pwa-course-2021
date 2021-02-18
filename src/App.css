@@ -56,7 +56,7 @@
 }
 
 .App-textbox-input {
-  flex: 5;
+  flex: 4;
   height: 100%;
   box-sizing: border-box;
   background-color: rgb(47, 15, 51);

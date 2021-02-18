@@ -15,42 +15,52 @@
 
 .App-header {
   flex: 1;
-  background-color: #fdc2ec;
+  background-color: #5c8fd1;
+  background-image:url("Picture/Head-Title.jpg");
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(20px + 2vmin);
-  color: rgb(202, 0, 175);
+  align-items:flex-start;
+  justify-content:center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 219, 225);
 }
 
 .App-chatroom {
   flex: 12;
-  background-color: rgb(255, 223, 248);
-  background-image: url('https://cdn.discordapp.com/attachments/404284576060407810/807475839406702612/ddd.jpg');
-  background-size: 100%;
+  background-image: url("Picture/elena.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
 }
 
 .App-chatroom-text {
-  margin: 20px;
-  height: 30px;
-  background-color: rgb(252, 227, 245);
-  font-size: calc(1px + 2vmin);
-  color: rgb(255, 35, 255);
+  margin: 50px;
+  background-color: rgb(40, 4, 41);
+  background-clip:content-box;
+  font-size: calc(3px + 2vmin);
+  
+  color: rgb(255, 255, 255);
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(255, 88, 199);
+
+  background-color: rgb(128, 213, 252);
+  background-image: url(Picture/Send-Button.jpg);
+
   justify-content: center;
   align-items: stretch;
   display: flex;
+  color: aliceblue;
+
 }
 
 .App-textbox-input {
   flex: 4;
   height: 100%;
   box-sizing: border-box;
+  background-color: rgb(47, 15, 51);
+  color: aliceblue;
 }
 
 .App-textbox-send {
@@ -60,4 +70,6 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  color: aliceblue;
+
 }

@@ -1,12 +1,8 @@
 
 import React, { useState } from 'react';
-
-
 import './App.css';
-import { useState, usestate } from 'react';
 
 function App() {
-
 
   const [text, setText] = useState("");
   const [lines, setLines] = useState([""]);
@@ -19,8 +15,6 @@ function App() {
     setLines(lines => [...lines, text]);
     setText("");
   };
-
- 
 
   return (
     <div className="App">

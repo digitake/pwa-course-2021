@@ -16,7 +16,7 @@
 .App-header {
   flex: 1;
   background-color: #5c8fd1;
-  background-image:url("Head-Title.jpg");
+  background-image:url("Picture/Head-Title.jpg");
   display: flex;
   flex-direction: column;
   align-items:flex-start;
@@ -46,7 +46,7 @@
   flex: 1;
 
   background-color: rgb(128, 213, 252);
-  background-image: url(Send-Button.jpg);
+  background-image: url(Picture/Send-Button.jpg);
 
   justify-content: center;
   align-items: stretch;

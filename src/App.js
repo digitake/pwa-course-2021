@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const[text, setText] = useState("");
 
-  const [lines, setLines] = useState(["Hello KumFile", "How are you?", "Right now I stay at capital city", "I relexed from my traveling", "I will Say Hi again later!!!!!!jajaja"]);
+  const [lines, setLines] = useState(["Hello KumFile", "How are you?", "Right now I stay at capital city", "I relexed from my traveling", "I will Say Hi again later!!!!!!jajaja hahaha hahah"]);
 
 
   const onTextChange = (event) => {
@@ -19,7 +19,6 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-      MIYAWAKI SAKURA
       </div>
       <div className="App-chatroom">
         {

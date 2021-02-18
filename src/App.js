@@ -23,7 +23,9 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-      Chat room
+
+        App Chatroom
+
       </div>
       <div className="App-chatroom">
         {

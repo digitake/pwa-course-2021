@@ -1,61 +1,61 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  max-width: 400px;
-  height: 100%;
-  margin: auto;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    flex: 1;
+    background-color: #331a12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    
+  }
+  
+  .App-chatroom {
+    flex: 11;
+    background-color: silver;
+    background-image: url(Mogu.png);
+  }
+  
+  .App-chatroom-text {
+    margin: 8px;
+    background-color: rgb(201, 138, 138);
+  }
+  
+  .App-textbox {
+    flex: 1;
+    background-color: gray;
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+  }
+  
+  .App-textbox-input {
+    flex: 5;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .App-textbox-send {
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  flex: 1;
-  background-color: rgb(255, 234, 42);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(20px + 2vmin);
-  color: rgb(250, 84, 84);
-}
-
-.App-chatroom {
-  flex: 12;
-  background-color: rgb(94, 97, 247);
-
-  background-image: url(Tankidle.png);  
-}
-
-.App-chatroom-text {
-  margin: 8px;
-  background-color: rgb(185, 241, 255);
-  color: #0f3522;
-}
-
-.App-textbox {
-  flex: 1;
-  background-color: rgb(255, 28, 28);
-  justify-content: center;
-  align-items: stretch;
-  display: flex;
-}
-
-.App-textbox-input {
-  flex: 5;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.App-textbox-send {
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}

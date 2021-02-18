@@ -27,6 +27,8 @@
 .App-chatroom {
   flex: 12;
   background-color: rgb(94, 97, 247);
+
+  background-image: url(Tankidle.png);  
 }
 
 .App-chatroom-text {

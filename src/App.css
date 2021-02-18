@@ -33,7 +33,7 @@
 
   background-color: rgb(70, 70, 70);
   
-  background-image: url();
+  /*background-image: url(../src/logo1.png);  สำหรับพื้นหลัง*/
 }
 
 .App-chatroom-text {

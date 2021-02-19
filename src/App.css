@@ -6,6 +6,7 @@
   height: 100%;
   margin: auto;
   background-image: url(coo.jpg);
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {

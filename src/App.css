@@ -7,6 +7,7 @@
   margin: auto;
   background-image: url(coo.jpg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (max-width: 768px) {

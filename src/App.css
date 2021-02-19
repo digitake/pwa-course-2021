@@ -25,30 +25,25 @@
 }
 
 .App-chatroom {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   flex: 12
   ;
   background-color: rgba(255, 101, 247, 0.418);
   background-image: url(111.jpg);
   background-size: 400px;
-=======
 
-=======
->>>>>>> 57f19fd3a246a644c9363826a2c9d1cb83ec7710
+
   flex: 12;
   background-color: rgba(179, 178, 178, 0.418);
   background-image: url(funny-cat.jpeg);
   background-size: 500px;
-<<<<<<< HEAD
+
 
   background-color: rgb(0, 190, 73);
   background-image:url(unknown.png)
 
 
->>>>>>> 1e5320a41d22e3c4a29550d9dca27533b9248ffd
-=======
->>>>>>> 57f19fd3a246a644c9363826a2c9d1cb83ec7710
+
 }
 
 .App-chatroom-text {

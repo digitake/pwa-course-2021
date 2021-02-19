@@ -1,40 +1,44 @@
+import React, { useState } from 'react';
 import './App.css';
-import { useState } from 'react';
+import {useState} from 'react';
 
-function App() 
-{
-  const [text, setText] = useState("");
 
-  const [line, setLine] = useState(["nsg1"]);
+function App() {
 
-  const onTextChanged = (event) =>
-  {
+  const [text, setText] = useState("")
+
+  const [lines, setLines] = useState(["msg1" , "msg2" , "msg3" , "msg4" , "msg5"]);
+
+  const onTextChange = (event) => {
     setText(event.target.value);
-  }
+  };
 
-  const onSend = () =>{
-    setLine(line => [...line, text]);
+  const onSend = () => {
+    setLines(lines => [...lines, text]);
     setText("");
-  }
+  };
 
   return (
     <div className="App">
       <div className="App-header">
+        Chater
       </div>
       <div className="App-chatroom">
-        {
-          line.map(x=>{
-            return <div className="App-chatroom-text">
-          {x}
-        </div>
-          })
-        }
+      {
+        lines.map(x =>{
+          return <div className="App-chatroom-text">
+                  {x}
+                  </div>
+        }) 
+      }
+    
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input"value={text} onChange={onTextChanged}/>
-        <div className="App-textbox-send"onClick={onSend}>Send!</div>
+        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange}/>
+        <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
     </div>
+    
   );
 }
 

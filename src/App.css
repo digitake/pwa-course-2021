@@ -48,10 +48,11 @@
   flex: 5;
   height: 100%;
   box-sizing: border-box;
+  font-size: x-large;
 }
 
 .App-textbox-send {
-  flex: 1;
+  flex: 2;
   height: 100%;
   vertical-align: middle;
   justify-content: center;

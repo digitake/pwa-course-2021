@@ -21,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App col-6">
       <div className="App-header">
       </div>
       <div className="App-chatroom">

@@ -8,6 +8,14 @@
   margin: auto;
 }
 
+
+@media (max-width: 768px) {
+  .App {
+    max-width:100%;
+    background-color: red;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -20,10 +28,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-
   color: rgb(0, 0, 0);
-
 }
 
 .App-chatroom {

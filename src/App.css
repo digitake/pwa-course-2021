@@ -5,6 +5,7 @@
   text-align: center;
   height: 100%;
   margin: auto;
+  background-image: url(coo.jpg);
 }
 
 @media (max-width: 768px) {

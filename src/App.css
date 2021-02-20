@@ -15,33 +15,41 @@
 
 .App-header {
   flex: 1;
-  background-color: #fa0e06;
+  background-color: #efb2f5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(20px + 2vmin);
-  color: rgb(0, 0, 0);
-  font-weight: 500;
-}
-
+  font-size: calc(10px + 2vmin);
+  color: rgb(68, 117, 250);
+  
 .App-chatroom {
   flex: 12;
   background-color: rgba(199, 198, 198, 0.418);
-  background-image: url(Cat.png);
+
+  background-image: url(Lunaaaaa.jpg);
+
 }
+
+.App-chatroom2 {
+  flex: 12;
+  background-color: rgba(255, 255, 255, 0);
+  color : rgb(0, 0, 0);
+  font-weight: 1000;
+  font-size: x-large;
 
 .App-chatroom-text {
   margin: 8px;
   background-color: rgb(255, 255, 255);
   color : rgb(0, 0, 0);
   font-size: 20px;
+  text-align: right;
   font-weight: 600;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(243, 200, 230);
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -51,17 +59,18 @@
   flex: 5;
   height: 100%;
   box-sizing: border-box;
+  font-size: x-small;
 }
 
 .App-textbox-send {
   flex: 2;
-  background-color: rgb(1, 23, 219);
   height: 100%;
+  background-color: burlywood;
   vertical-align: super;
   justify-content: center;
   align-items: center;
   display: flex;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 1000;
-  color: aliceblue;
+  color: rgb(52, 1, 255);
 }

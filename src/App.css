@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: right;
   text-align: right;
-  max-width: 400px;
+  max-width: 1920px;
   height: 100%;
   margin: auto;
 }
@@ -26,8 +26,7 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: rgba(199, 198, 198, 0.418);
-  background-image: url(shiba.png);
+  
 }
 
 .App-chatroom-text {
@@ -46,16 +45,99 @@
 }
 
 .App-textbox-input {
-  flex: 5;
+  flex: 3;
   height: 100%;
   box-sizing: border-box;
 }
 
 .App-textbox-send {
-  flex: 1;
+  flex: 0.5;
   height: 100%;
   vertical-align: middle;
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+/*<768px*/
+@media(max-width: 600px){
+  .App{
+    background-repeat: center;
+    background-position: center;
+    background-image: url(shiba.png);
+    background-size: contain;
+  }
+
+  .App-header {
+    flex: 0.75;
+    background-color: #ff844f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(243, 10, 10);
+  }
+
+  .App-textbox-input {
+    flex: 2;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .App-textbox-send {
+    flex: 0.4;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .App-textbox {
+    flex: 0.75;
+    background-color: rgb(224, 220, 220);
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+  }
+}
+@media(min-width:601px) and (max-width:1080px){
+  .App{
+    background-repeat: repeat;
+    background-position: center;
+    background-image: url(Jesus.png);
+    background-size: contain;
+  }
+
+  .App-header {
+    flex: 1;
+    background-color: #00661f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(243, 10, 10);
+  }
+}
+
+@media(min-width:1081px){
+  .App{
+    background-repeat: repeat;
+    background-position: center;
+    background-image: url(sea.png);
+    background-size: cover;
+  }
+
+  .App-header {
+    flex: 1;
+    background-color: #f57ca0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(243, 10, 10);
+  }
 }

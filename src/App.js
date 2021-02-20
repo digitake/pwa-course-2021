@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import {useState} from 'react';
+
 
 function App() {
   const [text, setText] = useState("");
@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="App col-6">
       <div className="App-header">
+        ChinaTown
         
       </div>
       <div className="App-chatroom">

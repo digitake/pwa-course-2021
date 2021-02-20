@@ -10,13 +10,23 @@
 @media (min-width: 768px) {
 
   .App {
-    background-image: url(coo.jpg);
+    background-image: url(555.gif);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 
 }
+@media (max-width: 768px) {
 
+  .App {
+    background-image: url(555.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -24,19 +34,22 @@
 
 .App-header {
   flex: 1;
-  background-color: #f13000;
+  background-color: #e02d0db0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(0, 0, 0);
+  color: rgb(216, 196, 15);
+  font-size: 40px;
+
 }
 
 .App-chatroom {
   flex: 12;
 
-  background-color: rgba(170, 158, 212, 0.418);
+  background-color: rgba(255, 255, 255, 0);
   background-image: url();
+  
 
 }
 

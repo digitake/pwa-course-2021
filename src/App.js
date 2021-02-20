@@ -1,48 +1,45 @@
 import React, { useState } from 'react';
 import './App.css';
-import {useState} from 'react';
 
 function App() {
+
   const [text, setText] = useState("");
-  const [lines, setLines] = useState([]);
-  
-  const onTextChange = (event) => {
-    setText(event.target.value);
+  const [lines, setLines] = useState(["sdad","dasd"]);
+
+  const onChangeHandler = (event) => {
+      setText(event.target.value);
   };
 
-  const onSend = () =>{
-    setLines([...lines, text]);
+  const onSendHandler = (event) => {
+    setLines(lines => [...lines, text]);
     setText("");
   };
 
-  const keyPress = (event) => {
-    if (event.which === 13){
-      onSend();
-    }
-  };
 
   return (
     <div className="App">
       <div className="App-header">
-        Chater
       </div>
       <div className="App-chatroom">
+        <div className="App-chatroom-text">
+          Line1
+        </div>
+        <div className="App-chatroom-text">
+          Line2
+        </div>
         {
-          lines.map(x => {
-            return <div className="App-chatroom-text">
-                    {x}
-                   </div>
+          lines.map((value, index) => {
+            return <div key={index} className="App-chatroom-text">
+                {value}
+              </div>
           })
         }
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input" 
-        value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        
-        <div className="App-textbox-send" onClick={onSend}>Send!</div>
+        <input type="text" className="App-textbox-input" onChange={onChangeHandler} value={text}/>
+        <div className="App-textbox-send" onClick={onSendHandler}>Send!</div>
       </div>
     </div>
-    
   );
 }
 

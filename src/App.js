@@ -25,7 +25,7 @@ const keyPress = (event) => {
   return (
     <div className="App">
       <div className="App-header pink-text">
-        Hello
+        UsersName
       </div>
       <div className="App-chatroom">
         {

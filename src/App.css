@@ -10,9 +10,9 @@
 @media (min-width: 768px) {
 
   .App {
-    background-image: url(coo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: rgb(15, 240, 228);
+    width: 95%;
+    height: 95%;
   }
 
 }

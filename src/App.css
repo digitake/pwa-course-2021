@@ -8,6 +8,14 @@
   margin: auto;
 }
 
+
+@media (max-width: 768px) {
+  .App {
+    max-width:100%;
+    background-color: red;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -15,28 +23,57 @@
 
 .App-header {
   flex: 1;
+<<<<<<< HEAD
   background-color: #d9ff00;
+=======
+  background-color: #f13000;
+>>>>>>> bbb743eb72155c59d3401cd8bc428d1730447dee
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   font-size: calc(10px + 2vmin);
   color: rgb(209, 29, 29);
+=======
+  color: rgb(0, 0, 0);
+>>>>>>> bbb743eb72155c59d3401cd8bc428d1730447dee
 }
 
 .App-chatroom {
   flex: 12;
+<<<<<<< HEAD
   background-color: rgb(0, 0, 0);
+=======
+
+  background-color: rgba(170, 158, 212, 0.418);
+  background-image: url();
+
+>>>>>>> bbb743eb72155c59d3401cd8bc428d1730447dee
 }
 
 .App-chatroom-text {
   margin: 8px;
+<<<<<<< HEAD
   background-color: rgb(238, 238, 238);
+=======
+
+  background-color: rgb(206, 87, 87);
+
+  color : rgb(48, 100, 100);
+  font-size: 20px;
+>>>>>>> bbb743eb72155c59d3401cd8bc428d1730447dee
 }
 
 .App-textbox {
   flex: 1;
+<<<<<<< HEAD
   background-color: rgb(255, 0, 0);
+=======
+
+  background-color: rgb(255, 0, 0);
+
+>>>>>>> bbb743eb72155c59d3401cd8bc428d1730447dee
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -55,5 +92,9 @@
   justify-content: center;
   align-items: center;
   display: flex;
+<<<<<<< HEAD
   cursor: pointer;
 }
+=======
+}
+>>>>>>> bbb743eb72155c59d3401cd8bc428d1730447dee

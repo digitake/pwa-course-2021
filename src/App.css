@@ -6,8 +6,8 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
+  
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -15,7 +15,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #ff9260;
+  background-color: rgb(250, 131, 76);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,29 +26,29 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: rgba(199, 198, 198, 0.418);
-  background-image: url(shiba.png);
 }
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: rgb(197, 189, 189);
   color : rgb(48, 100, 100);
   font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(224, 220, 220);
+  background-color: rgb(253, 200, 176);
   justify-content: center;
   align-items: stretch;
   display: flex;
+  background-image:url(BG_Moblie_Text_Send.png);
+  background-position: center;
 }
 
 .App-textbox-input {
   flex: 5;
   height: 100%;
   box-sizing: border-box;
+  background-image:url(BG_Moblie_Text.png);
 }
 
 .App-textbox-send {
@@ -59,3 +59,33 @@
   align-items: center;
   display: flex;
 }
+
+  @media(orientation: landscape){
+    .App {
+      background-image: url(BG_Moblie.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-color: powderblue;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .App{
+      background-image: url(BG_Moblie.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-color: mintcream;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  
+  /*768 - 1024 */
+  @media (min-width: 768px) and (max-width: 1024px){
+    .App{
+      background-image: url(BG_Moblie.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-color: mistyrose;
+    }
+  }

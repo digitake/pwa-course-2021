@@ -15,8 +15,10 @@
 
 .App-header {
   flex: 1;
-  background-color: #3B5998;
   display: flex;
+  background-color:#DFE3EE;
+  background: rgb(68,146,195);
+  background: linear-gradient(90deg, rgba(68,146,195,1) 0%, rgba(35,100,156,1) 100%);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -29,31 +31,35 @@
   flex: 12;
   background-size: 140%;
   background-position: center;
-  background-color: lightgray;
+  background-color: rgb(0, 15, 25);
 }
 
 .App-chatroom-text  { 
   margin: 8px;
-  background-color:#DFE3EE;
-  color : rgb(48, 100, 100);
   font-size: 20px;
   font-weight: bold;
-  
+  color: white;
+  background-color: #001d36;
+  border: 1px solid none;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .App-textbox { 
   flex: 1; 
-  background-color: rgb(224, 220, 220);
   justify-content: center;
   align-items: stretch;
   color: rgb(255, 255, 255);
   display: flex;
+  border: 1px solid white;
 }
 
 .App-textbox-input {
   flex: 5;
   height: 100%;
   box-sizing: border-box;
+  color: white;
+  background-color: rgb(0, 35, 65);
 }
 
 .App-textbox-send {
@@ -64,7 +70,9 @@
   align-items: center;
   display: flex;
   color: #F7F7F7;
-  background-color: #3B5998;
+  background-color:#DFE3EE;
+  background: rgb(68,146,195);
+  background: linear-gradient(90deg, rgba(68,146,195,1) 0%, rgba(35,100,156,1) 100%);
 }
 
 @media (min-width: 768px){
@@ -81,8 +89,11 @@
   }
 
   .App-chatroom-text {
+    color: black;
     background-color: rgb(236, 236, 236);
     font-size: 16px;
     font-weight: normal;
   }
+  
+
 }

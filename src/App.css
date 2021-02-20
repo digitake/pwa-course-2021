@@ -6,6 +6,25 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
+  background-image: url(confuse.png);
+  background-position: center ;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+
+@media (min-width: 768px) {
+  .App {
+    width:95%;
+    background-color: rgb(18, 228, 147);
+  }
+}
+
+@media (min-width: 1024px) {
+  .App {
+    width:95%;
+    background-color: rgb(0, 59, 10);
+  }
 }
 
 .App-logo {
@@ -15,30 +34,36 @@
 
 .App-header {
   flex: 1;
-  background-color: rgb(30, 129, 11);
+  background-color: #0de91f;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .App-chatroom {
   flex: 12;
-  background-color: rgb(9, 207, 214);
+
+  background-color: rgba(170, 158, 212, 0.418);
+  background-image: url();
+
 }
 
 .App-chatroom-text {
-  margin: 7px;
-  background-color: rgb(20, 16, 231);
-  color: rgb(255, 255, 255);
-  font-size: 16px;
+  margin: 8px;
+
+  background-color: rgb(206, 87, 87);
+
+  color : rgb(48, 100, 100);
+  font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(255, 251, 0);
+
+  background-color: rgba(0, 255, 234, 0.644);
+
   justify-content: center;
   align-items: stretch;
   display: flex;

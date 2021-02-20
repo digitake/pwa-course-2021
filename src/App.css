@@ -6,13 +6,24 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
+  background-image: url(confuse.png);
+  background-position: center ;
+  background-size: 50%;
+  background-repeat: no-repeat;
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .App {
-    max-width:100%;
-    background-color: red;
+    width:95%;
+    background-color: rgb(18, 228, 147);
+  }
+}
+
+@media (min-width: 1024px) {
+  .App {
+    width:95%;
+    background-color: rgb(0, 59, 10);
   }
 }
 
@@ -23,7 +34,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #f13000;
+  background-color: #0de91f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +62,7 @@
 .App-textbox {
   flex: 1;
 
-  background-color: rgb(255, 0, 0);
+  background-color: rgba(0, 255, 234, 0.644);
 
   justify-content: center;
   align-items: stretch;

@@ -8,6 +8,13 @@
   margin: auto;
 }
 
+@media (min-width: 768px)
+{
+  .App{
+    background-color: mediumaquamarine;
+    width:95;
+  }
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

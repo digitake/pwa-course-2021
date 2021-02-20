@@ -22,10 +22,10 @@ function App() {
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          Line1
+          
         </div>
         <div className="App-chatroom-text">
-          Line2
+          
         </div>
         {
           lines.map((value, index) => {

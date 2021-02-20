@@ -11,6 +11,18 @@
  
 }
 
+.App-logo{
+
+  background-image: url(mango.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  
+  
+}
+
+
 @media (min-width: 768px){
  
   .App{
@@ -69,6 +81,8 @@
   flex: 5;
   height: 100%;
   box-sizing: border-box;
+  background-color: #ebe99e;
+  
 }
 
 .App-textbox-send {

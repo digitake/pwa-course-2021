@@ -3,9 +3,18 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
   height: 100%;
   margin: auto;
+  /*background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;*/
+  background-color: black;
+}
+
+@media(max-width: 768px) {
+  .App{
+    background-color: gray;
+  }
 }
 
 .App-logo {
@@ -16,7 +25,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #1a354d;
+  background-color: #FECC48;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,6 +38,7 @@
 
 .App-chatroom {
   flex: 12;
+  margin: 24px;
   background-color: rgb(73, 83, 104);
 }
 
@@ -37,8 +47,16 @@
   background-color: rgb(184, 226, 197);
 }
 
-.App-textbox {
+.App-send-zone {
+  display: flex;
   flex: 1;
+  justify-content: space-around;
+  background-color: #FECC48;
+}
+
+.App-textbox {
+
+  margin: 0.5%;
   background-color: rgb(255, 177, 177);
   justify-content: center;
   align-items: stretch;
@@ -49,14 +67,35 @@
   flex: 5;
   height: 100%;
   box-sizing: border-box;
+  background-color: #ddd089;
 }
 
 .App-textbox-send {
   flex: 1;
-  height: 100%;
+  margin: 0.5%;
   vertical-align: middle;
   justify-content: center;
   align-items: center;
   display: flex;
   cursor: pointer;
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+@media(max-width: 768px) {
+  [class*="col-"]{
+    width: 100%;
+  
+  }
 }

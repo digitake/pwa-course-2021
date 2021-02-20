@@ -17,7 +17,7 @@
   }
 }
 
-@media (min-width :786px ) {
+@media (max-width :786px ) {
   .App {
     background-color: red;
     background-image: url(cat.jpg);

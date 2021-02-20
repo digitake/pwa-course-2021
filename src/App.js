@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import {useState} from 'react';
 
@@ -22,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="App col-6">
+    <div className="App">
       <div className="App-header">
         Miyawaki Sakura
       </div>

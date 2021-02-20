@@ -6,15 +6,22 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
-  background-image: url(Baby-coo.jpg);
+  background-image: url(Games.jpg);
+  background-size: 600px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
-
-@media (max-width: 768px) {
+@media (min-width: 700px) {
+  .App {
+    max-width:90%;
+    background-color: rgb(230, 233, 35);
+  }
+}
+@media (min-width: 950px) {
   .App {
     max-width:100%;
-    background-color: red;
+    background-color: rgb(35, 203, 233);
   }
 }
 
@@ -25,7 +32,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #f13000;
+  background-color: #3d14f5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +43,7 @@
 .App-chatroom {
   flex: 12;
 
-  background-color: rgba(170, 158, 212, 0.418);
+  background-color: rgba(217, 231, 252, 0.418);
   background-image: url();
 
 }
@@ -44,7 +51,7 @@
 .App-chatroom-text {
   margin: 8px;
 
-  background-color: rgb(206, 87, 87);
+  background-color: rgb(144, 218, 101);
 
   color : rgb(48, 100, 100);
   font-size: 20px;
@@ -53,7 +60,7 @@
 .App-textbox {
   flex: 1;
 
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(252, 8, 0);
 
   justify-content: center;
   align-items: stretch;

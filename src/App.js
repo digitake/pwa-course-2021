@@ -14,9 +14,6 @@ const [lines, setLines] = useState([""]);
 const onTextChange = (event) => {
   setText(event.target.value);
 }
-/*const onDragEnter = (event) => {
-  onSend;
-}*/
 
 const onSend = (event) =>{
   setLines(lines => [...lines, text]);
@@ -37,14 +34,18 @@ const onSend = (event) =>{
     
       </div>
       <div className="App-send-zone">
+      <div className="App-textbox-Name" onClick ={onSend} >Name</div>
         <div className="App-textbox">
+          
           <input type="text" className="App-textbox-input" value ={text} onChange= {onTextChange}/>
-
-          <div className="App-textbox-send" onClick ={onSend}>Send</div>
-
+          
         </div>
-      </div>
+      <div className="App-textbox-Sticker" onClick ={onSend} >Sticker</div>
+      <div className="App-textbox-send" onClick ={onSend} >Send </div>
       
+      
+      </div>
+
     </div>
   );
 }

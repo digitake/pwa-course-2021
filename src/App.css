@@ -8,10 +8,12 @@
   margin: auto;
 }
 
-.App-logo {
+
+.App-logo
+ {
   height: 40vmin;
-  pointer-events: none;
-}
+  pointer-events : none;
+ }
 
 .App-header {
   flex: 1;

@@ -6,6 +6,20 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
+  background: url(dog.jpg);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .App {
+    width:100%;
+    height:75%;
+    background-image: url(dog2.jpg);
+    background-size: 210%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 .App-logo {
   height: 40vmin;
@@ -14,7 +28,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #a11cad;
+  background-color: #4b3fb4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,19 +39,18 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: rgba(22, 117, 129, 0.418);
 }
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: rgb(110, 151, 226);
-  color : rgb(48, 100, 100);
+  color : rgb(107, 27, 27);
+  background-color:rgb(208, 185, 252) ;
   font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(224, 220, 220);
+  background-color: rgb(137, 112, 247);
   justify-content: center;
   align-items: stretch;
   display: flex;

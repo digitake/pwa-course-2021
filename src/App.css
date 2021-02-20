@@ -6,7 +6,7 @@
   max-width: 450px;
   height: 100%;
   margin: auto;
-  background-image: url(Daisy-header2-400x240.png);
+  background-image: url(backgroundimage.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #535353;
-    background-image: none;
+    background-image: url(backgroundimage.png);
     margin-top: 24px;
     margin-bottom: 24px;
   }

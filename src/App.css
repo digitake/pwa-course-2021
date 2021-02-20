@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
+  color: rgb(250, 228, 228);
 }
 
 .App-chatroom {
@@ -31,17 +31,14 @@
 
 .App-chatroom-text {
   margin: 8px;
-
-  background-color: rgb(54, 247, 205);
-  color : rgb(19, 19, 19);
-
+  background-color: rgb(250, 202, 202);
+  color : rgb(62, 112, 112);
   font-size: 20px;
-
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(224, 220, 220);
+  background-color: rgb(206, 204, 204);
   justify-content: center;
   align-items: stretch;
   display: flex;

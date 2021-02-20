@@ -3,19 +3,15 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 450px;
-  height: 100%;
+  max-width: 1080px;
+  height: 1080px;
   margin: auto;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 .App-header {
   flex: 1;
-  background-color: #ff0000;
+  background-color: #4e3f3f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,9 +22,10 @@
 
 .App-chatroom {
   flex: 12;
-
-  background-color: rgb(0, 26, 255);
-
+  background-image: url(sta.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 
 }
 
@@ -64,3 +61,18 @@
   align-items: center;
   display: flex;
 }
+
+@media (min-width: 768px)
+ {   
+   .App 
+   {     
+     background-repeat: no-repeat;    
+     background-position: center;    
+     background-color: #f01d1d;    
+     background-image: url(sta.jpg);  
+    }      
+   .App-textbox
+    {  
+    flex: 2   
+    } 
+  }

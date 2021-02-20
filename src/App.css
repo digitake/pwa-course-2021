@@ -6,6 +6,29 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
+  background-image: url(origin.png);
+  background-repeat: no-repeat;
+  background-position: center ;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .App {
+    max-width:100%;
+    background-color: red;
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .App {
+    width: 95%;
+    background-color: rgb(255, 112, 68);
+    background-image: url(ying.png);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-position: center ;
+  }
 }
 
 .App-logo {

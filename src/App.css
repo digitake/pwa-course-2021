@@ -26,9 +26,8 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: rgb(102, 100, 100);
+  background-color: rgb(0, 0, 0);
 }
-
 .App-chatroom-text {
   margin: 10px;
   background-size: auto;
@@ -38,7 +37,7 @@
 }
 
 .App-textbox {
-  flex: 1;
+  flex: 0.5;
   background-color: rgb(53, 52, 52);
   justify-content: center;
   align-items: stretch;
@@ -47,7 +46,7 @@
 
 .App-textbox-input {
   flex: 5;
-  height: 80%;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -62,4 +61,26 @@
 .App-Text{
   font-size: 20;
   color: white;
+}
+@media(max-width: 1080px){
+  .App-chatroom{
+    background-image: url(Nepture.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media(min-width: 768px){
+  .App{
+    max-width: 100%;
+  }
+  .App-chatroom{
+    background-image: url(Loading.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  .App-textbox{
+    flex:1;
+  }
 }

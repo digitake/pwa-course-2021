@@ -6,24 +6,16 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
-  background-image: url(confuse.png);
+  background-image: url(Games.jpg);
   background-position: center ;
-  background-size: 50%;
+  background-size: 90%;
   background-repeat: no-repeat;
-}
-
-
-@media (min-width: 768px) {
-  .App {
-    width:95%;
-    background-color: rgb(18, 228, 147);
-  }
 }
 
 @media (min-width: 1024px) {
   .App {
+    background-color: rgb(9, 0, 59);
     width:95%;
-    background-color: rgb(0, 59, 10);
   }
 }
 
@@ -33,12 +25,7 @@
   width: 95%;
   }
 }
-@media (min-width: 992px) {
-  .App {
-    background-color: #aaa;
-    width: 100%;
-  }
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -46,7 +33,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #0de91f;
+  background-color: #ab0de9;
   display: flex;
   flex-direction: column;
   align-items: center;

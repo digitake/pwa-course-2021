@@ -22,6 +22,7 @@ const onSend = (event) =>{
   return (
     <div className="App">
       <div className="App-header">
+        mango
       </div>
       <div className="App-chatroom">
         {

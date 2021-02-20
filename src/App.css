@@ -15,7 +15,7 @@
  
   .App{
 
-    background-image: url(bg_galaxy.jpg);
+    
     width: 95%;
   
   }
@@ -25,7 +25,7 @@
 
   .App{
 
-    background-color:  rgb(73, 83, 104);
+    background-color:  #242424;
     
   }
 }
@@ -39,7 +39,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #1a354d;
+  background-color: #FECC48;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,12 +54,12 @@
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: rgb(184, 226, 197);
+  background-color: #E9E87F;
 }
 
 .App-textbox {
   flex: 1;
-  background-color:rgb(184, 226, 197);
+  background-color:#FECC48;
   justify-content: center;
   align-items: stretch;
   display: flex;

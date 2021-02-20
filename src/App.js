@@ -11,18 +11,26 @@ const onTextChange = (event) =>{
   setText(event.target.value)
 };
 
-const onSent = () => {
+const onSend = () => {
   SetLine(Line => [...Lines, text])
   setText("");
 }
+
+const keyPress = (event) => {
+  if (event.which === 13){
+    onSend();
+  }
+};
+
   return (
     <div className="App">
-      <div className="App-header">
+      <div className="App-header pink-text">
+        Hello
       </div>
       <div className="App-chatroom">
         {
 
-          lines.map(x => {
+          Lines.map(x => {
             return <div className="App-chatroom-text">
                     {x}
                    </div>

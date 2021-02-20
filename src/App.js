@@ -1,5 +1,6 @@
 import './App.css';
 import {useState} from 'react';
+
 function App() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
@@ -11,7 +12,6 @@ function App() {
     setText("");
   };
   const keyPress = (event) => {
-
     if (event.which === 13){
       onSend();
     }

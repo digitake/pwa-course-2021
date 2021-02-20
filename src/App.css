@@ -1,8 +1,8 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  justify-content: right;
+  text-align: right;
   max-width: 400px;
   height: 100%;
   margin: auto;
@@ -15,7 +15,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #e5fc7f;
+  background-color: #ff9260;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +27,7 @@
 .App-chatroom {
   flex: 12;
   background-color: rgba(199, 198, 198, 0.418);
+  background-image: url(shiba.png);
 }
 
 .App-chatroom-text {

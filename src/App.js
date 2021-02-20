@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import {useState} from 'react';
 
 function App() {
   const [text, setText] = useState("")
@@ -20,7 +21,6 @@ function App() {
       onSend();
     }
   }
-
   return (
     <div className="App">
       <div className="App-header">

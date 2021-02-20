@@ -11,8 +11,8 @@
 
 @media (min-width: 768px) {
   .App {
-    max-width:100%;
-    background-color: red;
+    background-color: rgb(21, 243, 225);
+    width: 50%;
   }
 }
 

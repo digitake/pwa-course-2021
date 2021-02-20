@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './App.css';
 import {useState} from 'react';
 
@@ -24,7 +23,6 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        Chater
       </div>
       <div className="App-chatroom">
         {
@@ -42,7 +40,6 @@ function App() {
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
     </div>
-    
   );
 }
 

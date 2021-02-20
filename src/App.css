@@ -69,6 +69,10 @@
 .App-chatroom {
   flex: 12;
 
+<<<<<<< HEAD
+=======
+  background-color: rgba(70, 70, 70, 0);
+>>>>>>> dcaa91ba2f4dc5d477d928f5f3bda887411eaab8
   
   
   /*background-image: url(../src/logo1.png);  สำหรับพื้นหลัง*/
@@ -78,7 +82,7 @@
   margin: 8px;
 
 
-  background-color: rgb(246, 252, 205);
+  background-color: hsl(212, 100%, 66%);
   color:black;
   font: size 16px;
 

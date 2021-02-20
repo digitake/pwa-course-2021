@@ -15,19 +15,24 @@
 
 .App-header {
   flex: 1;
+  
   background-color: #efb2f5;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
+
+  color: rgb(68, 117, 250);
 }
 
 .App-chatroom {
   flex: 12;
   background-color: rgba(199, 198, 198, 0.418);
+
   background-image: url(Lunaaaaa.jpg);
+
 }
 
 .App-chatroom2 {
@@ -36,6 +41,7 @@
   color : rgb(0, 0, 0);
   font-weight: 1000;
   font-size: x-large;
+
 }
 
 .App-chatroom-text {
@@ -49,7 +55,9 @@
 
 .App-textbox {
   flex: 1;
+
   background-color: rgb(243, 200, 230);
+
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -65,8 +73,12 @@
 .App-textbox-send {
   flex: 2;
   height: 100%;
-  vertical-align: middle;
+  background-color: burlywood;
+  vertical-align: super;
   justify-content: center;
   align-items: center;
   display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 1000;
+  color: rgb(52, 1, 255);
 }

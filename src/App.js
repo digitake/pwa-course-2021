@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import {useState} from 'react';
+
 
 function App() {
   const [text, setText] = useState("");
@@ -39,7 +39,7 @@ function App() {
         <input type="text" className="App-textbox-input" 
         value={text} onChange={onTextChange} onKeyPress={keyPress}/>
         
-        <div className="App-textbox-send" onClick={onSend}>Send!</div>
+        <div className="App-textbox-send" onClick={onSend}></div>
       </div>
     </div>
   );

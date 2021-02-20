@@ -7,12 +7,24 @@
   margin: auto;
 }
 
+@media (max-width: 768px) {
+
+  .App {
+    background-image: url(Picture/Elaina2.jpg);
+    
+    background-position: auto;
+    
+  }
+
+}
+
 @media (min-width: 768px) {
 
   .App {
-    background-image: url(coo.jpg);
+    background-image: url(Picture/Elaina1.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
+    background-position: auto;
   }
 
 }
@@ -24,17 +36,19 @@
 
 .App-header {
   flex: 1;
-  background-color: #f13000;
+  background-image: url(Picture/Head-Title.jpg);
+  background-repeat: no-repeat;
+  background-color: #19041d;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: rgb(0, 0, 0);
+
 }
 
 .App-chatroom {
   flex: 12;
-
   background-color: rgba(170, 158, 212, 0.418);
   background-image: url();
 
@@ -42,23 +56,19 @@
 
 .App-chatroom-text {
   margin: 8px;
-
-  background-color: rgb(206, 87, 87);
-
+  background-color: rgb(255, 255, 255);
   color : rgb(48, 100, 100);
   font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
-
-  background-color: rgb(255, 0, 0);
-
+  background-color: rgb(26, 3, 41);
+  background-position: right;
   justify-content: center;
   align-items: stretch;
   display: flex;
   color: aliceblue;
-
 }
 
 .App-textbox-input {
@@ -70,6 +80,9 @@
 }
 
 .App-textbox-send {
+  background-image: url(Picture/Send-Button.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   flex: 1;
   height: 100%;
   vertical-align: middle;

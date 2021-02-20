@@ -9,7 +9,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .App {
     max-width:100%;
     background-color: red;

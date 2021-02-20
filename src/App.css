@@ -7,11 +7,23 @@
   margin: auto;
 }
 
+@media(min-width: 786px){
+  .App{
+    background-color: blue;
+    background-image: url(koro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:80%;
+  }
+}
 
-@media (min-width: 768px) {
+@media (min-width :786px ) {
   .App {
     background-color: red;
-    width: 90%;
+    background-image: url(cat.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70%;
   }
 }
 
@@ -35,6 +47,7 @@
 
   background-color: rgba(170, 158, 212, 0.418);
   background-image: url();
+  margin: 24px;
 
 }
 

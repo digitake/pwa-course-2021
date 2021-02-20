@@ -34,7 +34,7 @@ const onSend = (event) =>{
     
       </div>
       <div className="App-textbox col-6">
-        <input type="text" className="App-textbox-input col-2" value ={text} onChange= {onTextChange}/>
+        <input type="text" className="App-textbox-input col" value ={text} onChange= {onTextChange}/>
 
         <div className="App-textbox-send col-2" onClick ={onSend}>Send!</div>
 

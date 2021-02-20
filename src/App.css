@@ -8,6 +8,29 @@
   margin: auto;
 }
 
+
+@media (max-width:786px){
+  [class*="col-"]{
+    width: 100;
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    background-color: rgb(255, 112, 212);
+    width: 80%;
+  }
+}
+
+@media(min-width: 1280px){
+  .App{
+    background-image: url(ppp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

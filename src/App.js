@@ -4,29 +4,34 @@ import { useState } from 'react';
 function App() {
 
 const [text , setText] = useState("");
-
 const [Lines, SetLine] = useState([]);
 
 const onTextChange = (event) =>{
   setText(event.target.value)
 };
 
-const onSent = () => {
+const onSend = () => {
   SetLine(Line => [...Lines, text])
   setText("");
 }
+
+const keyPress =(event) =>{
+  if(event.while ===13){
+    onSend();
+  }
+}
+
   return (
     <div className="App">
       <div className="App-header">
+        Welcome to my App
       </div>
       <div className="App-chatroom">
         {
-
-          lines.map(x => {
+          Lines.map(x => {
             return <div className="App-chatroom-text">
                     {x}
                    </div>
-
           })
         }
       </div>

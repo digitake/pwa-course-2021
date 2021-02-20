@@ -26,11 +26,11 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: #0077ff;
-  background-image: url("1080566.jpg");
-  background-size: 1200px;
-  background-position : center;
-  opacity: 0.8;
+  background-image: url(1080566.jpg);
+    background-size: 2500px;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 95%;
 }
 
 .App-chatroom-text  { 
@@ -68,4 +68,43 @@
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+@media (max-width: 1080px){
+
+  .App-chatroom {
+    background-image: url(1080566.jpg);
+    background-size: 2500px;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 95%;
+  }
+
+  .App-header {
+    flex: 1;
+    background-color: #0a0349;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+  }
+
+  .App-textbox {
+    flex: 1;
+    background-color: #0a0349;
+    justify-content: center;
+    align-items: stretch;
+    color: rgb(255, 255, 255);
+    display: flex;
+  }
+
+  .App-chatroom-text  { 
+    margin: 8px;
+    color : rgb(255, 255, 255);
+    background-color: #2a1e94;
+    font-size: 15px;
+    text-align: right;
+  }
 }

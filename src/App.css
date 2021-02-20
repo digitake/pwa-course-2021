@@ -7,9 +7,79 @@
   height: 100%;
   margin: auto;
 }
-@media (max-width: 768px){
+@media (min-width: 500px){
   .App{
     max-width:100%;
+    background-image: url(funny-cat.jpeg);
+    background-position:top center;
+    background-size: 1000px;
+    background-repeat: no-repeat;
+  }
+  .App-header {
+    flex: 1;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+  }
+  .App-chatroom-text {
+    margin: 8px;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 20px;
+  }
+}
+@media (min-width: 1000px){
+  .App{
+    max-width:100%;
+    background-image: url(cat-2.jpg);
+    background-position:top center;
+    background-size: 1500px;
+    background-repeat: no-repeat;
+  }
+  .App-header {
+    flex: 1;
+    background-color: #ffee00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+  }
+  .App-chatroom-text {
+    margin: 8px;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 30px;
+  }
+}
+@media (min-width: 1500px){
+  .App{
+    max-width:100%;
+    background-image: url(cat-3.jpg);
+    background-position:top center;
+    background-size: 2000px;
+    background-repeat: no-repeat;
+  }
+  .App-header {
+    flex: 1;
+    background-color: #0ac76f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+  }
+  .App-chatroom-text {
+    margin: 8px;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 40px;
   }
 }
 
@@ -18,7 +88,7 @@
   pointer-events: none;
 }
 
-.App-header {
+/*.App-header {
   flex: 1;
   background-color: #0ac76f;
   display: flex;
@@ -27,22 +97,23 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 255, 255);
-}
+}*/
 
 .App-chatroom {
   flex: 12;
   background-color: rgba(179, 178, 178, 0.418);
-  background-image: url(funny-cat.jpeg);
   background-size: 500px;
+  background-repeat: no-repeat;
+  background-position:  center;
+  
 }
 
-.App-chatroom-text {
+/*.App-chatroom-text {
   margin: 8px;
-  
   background-color: rgb(77, 77, 77);
   color : rgb(255, 255, 255);
   font-size: 20px;
-}
+}*/
 
 .App-textbox {
   flex: 1;

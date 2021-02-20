@@ -6,6 +6,21 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
+
+  
+}
+
+@media (min-width : 1080){
+  .App{
+    width: 95%;
+    background-color: #FFE5B4;
+  }
+}
+@media (min-width : 720){
+  .App{
+    width: 95%;
+    background-color: #FFC0CB;
+  }
 }
 
 .App-logo {

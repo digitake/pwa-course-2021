@@ -8,6 +8,18 @@
   margin: auto;
 }
 
+@media (min-width : 1200px){
+  .App{
+    display: block;
+  }
+}
+
+@media (min-width : 1600px){
+  .App{
+    display:contents;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -21,12 +33,38 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
+  color:rgb(0, 0, 0);
 }
+
+
+@media (min-width : 1200px){
+  .App-header{
+    background-color: black;
+  }
+}
+
+@media (min-width : 1600px){
+  .App-header{
+    background-color: green;
+  }
+}
+
 
 .App-chatroom {
   flex: 12;
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(255, 21, 21);
+}
+
+@media (min-width : 1200px){
+  .App-chatroom{
+    background-color: blue;
+  }
+}
+
+@media (min-width : 1600px){
+  .App-chatroom{
+    background-color: green;
+  }
 }
 
 .App-chatroom-text {

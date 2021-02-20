@@ -3,9 +3,15 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
   height: 100%;
   margin: auto;
+}
+
+@media (min-width: 768px){
+ .App{
+   background-color: cornflowerblue;
+   width: 80%;
+ } 
 }
 
 .App-logo {
@@ -16,10 +22,9 @@
 .App-header {
   flex: 1;
   background-color: #5c8fd1;
-  background-image:url("Head-Title.jpg");
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items:center;
   justify-content:center;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 219, 225);
@@ -27,7 +32,7 @@
 
 .App-chatroom {
   flex: 12;
-  background-image: url("elena.jpg");
+  background-image: url("design/s2.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: screen;
@@ -47,7 +52,6 @@
 
   background-color: rgb(128, 213, 252);
   background-image: url(Send-Button.jpg);
-
   justify-content: center;
   align-items: stretch;
   display: flex;

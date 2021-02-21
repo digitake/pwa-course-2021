@@ -58,4 +58,33 @@
     align-items: center;
     display: flex;
   }
+  @media(max-width:768px){
+    .App-chatroom {
+      flex: 11;
+      background-color: rgb(255, 0, 0);
+      background-image: url(Mogu.png);
+      background-size: cover;
+    }
+    .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
 
+  }
+  .App-header {
+    flex: 1;
+    background-color: #4400ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 136, 0);
+
+  }
+
+  }

@@ -1,5 +1,4 @@
 import './App.css';
-
 import {useState} from 'react';
 
 function App() {
@@ -11,12 +10,11 @@ function App() {
   };
 
   const onSend = () =>{
-
-    setLine([...lines, text]);
+    setLines([...lines, text]);
     setText("");
   };
 
-  const KeyPress = (event) => {
+  const keyPress = (event) => {
     if (event.which === 13) {
       onSend();
     }
@@ -33,17 +31,14 @@ function App() {
             return <div className="App-chatroom-text">
               {x}
               </div>
-
           })
         }
-      </div>
-      <div className="App-textbox">
+    </div>
+    <div className="App-textbox">
+      <input type="text" className="App-textbox-Input" 
+      value={text} onChange={onTextChange} onKeyPress={keyPress}/>
 
-        <input type="text" className="App-textbox-Input" 
-        value={text} onChange={onTextChange} onKeyPress={KeyPress}/>
-
-        <div className="App-textbox-send" onClick={onSend}>Send</div>
-
+      <div className="App-textbox-send" onClick={onSend}>Send</div>
       </div>
     </div>
   );

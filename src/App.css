@@ -33,26 +33,19 @@
 
 .App-chatroom {
   flex: 12;
-
   background-color: rgba(170, 158, 212, 0.418);
-  
-
 }
 
 .App-chatroom-text {
   margin: 8px;
-
   background-color: rgb(206, 87, 87);
-
   color : rgb(48, 100, 100);
   font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
-
   background-color: rgb(255, 0, 0);
-
   justify-content: center;
   align-items: stretch;
   display: flex;

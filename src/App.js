@@ -16,6 +16,9 @@ const onSend = () => {
   setLines(line => [...lines,text]);
   setText("")
 }
+
+    
+
   return (
     <div className="App">
       <div className="App-header">

@@ -27,18 +27,39 @@
   pointer-events: none;
 }
 
+.frame {
+  width: 390px;
+  height: 110px;
+  
+  
+}
+
 .App-header {
-  flex: 1;
+
   background-image: url(appheader.png);
+  width: 500px;
+  flex: 1.5;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color:rgb(0, 0, 0);
+
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*font-size: calc(10px + 2vmin);*/
+  /*color:rgb(0, 0, 0);*/
 }
+
+/*.App-header2 {*/
+/*  width: 34px;*/
+/*  height: 34px;*/
+/*  overflow: visible;*/
+/*  background-image: url(pruekProfile.jpg);*/
+/*  background-size: cover;*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: center;*/
+/*  border-radius: 50px;*/
+/*}*/
 
 /*
 @media (min-width : 1200px){
@@ -55,8 +76,13 @@
 */
 
 .App-chatroom {
+  width: 497px;
   flex: 12;
-  background-color: rgb(255, 21, 21);
+  background-image: url(BGapp.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #222;
 }
 
 /*
@@ -74,12 +100,12 @@
 */
 
 .App-chatroom-text {
-  margin: 8px;
+  margin: 15px;
   background-color: rgb(255, 255, 255);
 }
 
 .App-textbox {
-  flex: 1;
+  flex: 0.5;
   background-color: rgb(91, 255, 118);
   justify-content: center;
   align-items: stretch;

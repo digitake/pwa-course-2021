@@ -17,7 +17,7 @@ const onSend = () => {
   setText("")
 }
 
-//Test
+    
 
   return (
     <div className="App">

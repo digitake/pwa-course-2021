@@ -8,17 +8,10 @@
   margin: auto;
 }
 
-
 @media (max-width: 700px) {
   .App {
     max-width:100%;
     background-color: #207972;
-  }
-}
-
-@media (max-width: 700px) {
-  .App-header {
-    color: black;
   }
 }
 
@@ -37,6 +30,14 @@
   color: rgb(255, 253, 253);
 }
 
+@media (max-width: 700px) {
+  .App-header {
+    max-width:100%;
+    background-color: #0d87c8;
+    color: #ece7a4;
+  }
+}
+
 .App-chatroom {
   flex: 12;
   background-color: rgba(170, 158, 212, 0.42);
@@ -45,8 +46,16 @@
 .App-chatroom-text {
   margin: 8px;
   background-color: rgb(224, 211, 116);
-  color : rgb(49, 5, 62);
+  color : rgb(0, 0, 0);
   font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .App-chatroom-text{
+    max-width:100%;
+    background-color: #031a1a;
+    color: #ffffff;
+  }
 }
 
 .App-textbox {
@@ -55,6 +64,12 @@
   justify-content: center;
   align-items: stretch;
   display: flex;
+}
+
+@media (max-width: 700px) {
+  .App-textbox {
+    background-color: #ff0000;
+  }
 }
 
 .App-textbox-input {

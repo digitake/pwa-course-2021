@@ -6,7 +6,7 @@ function App() {
 
 const [text,setText] = useState("");
 
-const [lines, setLines] = useState(["kapo1","kapo2","kapo3"]);
+const [lines, setLines] = useState(["msg1","msg2","msg3"]);
 
 const onTextChange = (event) => {
   setText(event.target.value);

@@ -53,8 +53,18 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: rgb(19, 223, 70);
+  background-image: url(cas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
+  font-size: calc(10px + 2vmin);
+  color:rgb(0, 0, 0);
+
 }
+
 
 /*
 @media (min-width : 1200px){

@@ -9,10 +9,16 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .App {
     max-width:100%;
-    background-color: red;
+    background-color: #207972;
+  }
+}
+
+@media (max-width: 700px) {
+  .App-header {
+    color: black;
   }
 }
 
@@ -23,29 +29,29 @@
 
 .App-header {
   flex: 1;
-  background-color: #f13000;
+  background-color: #152b53;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 253, 253);
 }
 
 .App-chatroom {
   flex: 12;
-  background-color: rgba(170, 158, 212, 0.418);
+  background-color: rgba(170, 158, 212, 0.42);
 }
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: rgb(206, 87, 87);
-  color : rgb(48, 100, 100);
+  background-color: rgb(224, 211, 116);
+  color : rgb(49, 5, 62);
   font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(30, 219, 157);
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -65,3 +71,4 @@
   align-items: center;
   display: flex;
 }
+

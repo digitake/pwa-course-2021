@@ -23,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+          Fantasma Ver 2.0
       </div>
       <div className="App-chatroom">
         {

@@ -1,44 +1,46 @@
+import React, { useState } from 'react';
 import './App.css';
-import {useState} from 'react';
+
 
 function App() {
-  const [text, setText] = useState("");
-  const [lines, setLines] = useState([]);
-  
-  const onTextChange = (event) => {
+
+const [text,setText] = useState("Type Ready to start!");
+
+const [lines, setLines] = useState(["Welcome to my Lobby"]);
+
+const onTextChange = (event) => {
     setText(event.target.value);
-  };
+};
 
-  const onSend = () =>{
-    setLines([...lines, text]);
-    setText("");
-  };
+const onSend = () => {
+  setLines(line => [...lines,text]);
+    setText("")
+}
 
-  const keyPress = (event) => {
-    if (event.which === 13){
-      onSend();
-    }
-  };
+    
 
   return (
-    <div className="App">
+    <div className="App col-12">
       <div className="App-header">
-          Fantasma Ver 2.0
-      </div>
+          <div className="profile-read-tar"></div>
+          <div className="profile-read-pruek"></div>
+          <div className="profile-read-phai"></div>
+          </div>
       <div className="App-chatroom">
         {
-          lines.map(x => {
-            return <div className="App-chatroom-text">
-                    {x}
-                   </div>
+          lines.map(x=>{
+          return <div className="App-chatroom-text">
+              {x}
+          </div>
           })
         }
+
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input" 
-        value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        
-        <div className="App-textbox-send" onClick={onSend}>Send!</div>
+          <div className="App-Botton col-1"></div>
+        <input type="text" className="App-textbox-input col-10" value = {text} onChange={onTextChange}/>
+        <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
+            
       </div>
     </div>
   );

@@ -1,19 +1,15 @@
+/*IPHONE*/
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
   height: 100%;
   margin: auto;
 }
 
-@media (max-width: 700px) {
-  .App {
-    max-width:100%;
-    background-color: #207972;
-  }
-}
+/*Ipad*/
+
 
 .App-logo {
   height: 40vmin;
@@ -21,69 +17,138 @@
 }
 
 .App-header {
-  flex: 1;
-  background-color: #152b53;
+  /*background-image: linear-gradient(to right, gray(5), white);*/
+  background-image: url("BGapp.jpg");
+  flex : 1;
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgb(255, 253, 253);
+  flex-direction: row;
+  align-items: flex-end;
+  /*justify-content: center;*/
+  /*font-size: calc(10px + 2vmin);*/
 }
 
-@media (max-width: 700px) {
-  .App-header {
-    max-width:100%;
-    background-color: #8bb2c6;
-    color: #ece7a4;
+.profile-read-tar {
+  width: 45px;
+  height: 45px;
+  overflow: visible;
+  background-image: url(tarProfile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+}
+
+.profile-read-pruek {
+  width: 45px;
+  height: 45px;
+  overflow: visible;
+  background-image: url(pruekProfile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+}
+
+.profile-read-phai {
+  width: 45px;
+  height: 45px;
+  overflow: visible;
+  background-image: url(phaiProfile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 19px;
+}
+
+
+
+/*
+@media (min-width : 1200px){
+  .App-header{
+    background-color: black;
+  }
+}
+
+@media (min-width : 1600px){
+  .App-header{
+    background-color: green;
+  }
+}
+*/
+
+.App-Botton{
+  height: 100%;
+  background-image: url("botton.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+@media (min-width : 1600px){
+  .App-header{
+    background-color: green;
   }
 }
 
 .App-chatroom {
-  flex: 12;
-  background-color: rgba(170, 158, 212, 0.42);
+  flex: 10;
+  background-image: url(BGapp.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-chatroom-text {
-  margin: 8px;
-  background-color: rgb(224, 211, 116);
-  color : rgb(0, 0, 0);
-  font-size: 20px;
-}
-
-@media (max-width: 700px) {
-  .App-chatroom-text{
-    max-width:100%;
-    background-color: #031a1a;
-    color: #ffffff;
+/*
+@media (min-width : 1200px){
+  .App-chatroom{
+    background-color: blue;
   }
 }
 
+@media (min-width : 1600px){
+  .App-chatroom{
+    background-color: green;
+  }
+}
+*/
+
+.App-chatroom-text {
+  margin: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
 .App-textbox {
-  flex: 1;
-  background-color: rgb(30, 219, 157);
+  background-color: rgb(253, 4, 4);
   justify-content: center;
   align-items: stretch;
   display: flex;
 }
 
-@media (max-width: 700px) {
-  .App-textbox {
-    background-color: #ff0000;
-  }
-}
-
 .App-textbox-input {
-  flex: 5;
   height: 100%;
   box-sizing: border-box;
 }
 
 .App-textbox-send {
-  flex: 1;
   height: 100%;
   vertical-align: middle;
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
 }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.68%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 

@@ -8,6 +8,8 @@ const [text,setText] = useState("Type Ready to start!");
 
 const [lines, setLines] = useState(["Welcome to my Lobby"]);
 
+
+
 const onTextChange = (event) => {
     setText(event.target.value);
 };
@@ -25,6 +27,8 @@ const onSend = () => {
           <div className="profile-read-tar"></div>
           <div className="profile-read-pruek"></div>
           <div className="profile-read-phai"></div>
+          <div className="Chat-header"></div>
+          <div className="RoomName">Room123</div>
           </div>
       <div className="App-chatroom">
         {

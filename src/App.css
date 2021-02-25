@@ -77,6 +77,20 @@
 }
 */
 
+.App-Botton{
+  height: 100%;
+  background-image: url("botton.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+@media (min-width : 1600px){
+  .App-header{
+    background-color: green;
+  }
+}
+
 .App-chatroom {
   flex: 10;
   background-image: url(BGapp.jpg);

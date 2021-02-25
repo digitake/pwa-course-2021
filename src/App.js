@@ -4,17 +4,16 @@ import './App.css';
 
 function App() {
 
-const [text,setText] = useState("");
+const [text,setText] = useState("Type Ready to start!");
 
-const [lines, setLines] = useState(["Welcome to my house"]);
+const [lines, setLines] = useState(["Welcome to my Lobby"]);
 
 const onTextChange = (event) => {
-  setText(event.target.value);
+    setText(event.target.value);
 };
 
 const onSend = () => {
   setLines(line => [...lines,text]);
-  setText("Type Ready to start!")
     setText("")
 }
 
@@ -31,13 +30,14 @@ const onSend = () => {
         {
           lines.map(x=>{
           return <div className="App-chatroom-text">
-          {x}
+              {x}
           </div>
           })
         }
 
       </div>
       <div className="App-textbox">
+          <div className="App-Botton col-1"></div>
         <input type="text" className="App-textbox-input col-10" value = {text} onChange={onTextChange}/>
         <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
             

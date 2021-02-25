@@ -29,6 +29,7 @@ function App() {
     <div className="App">
       <div className="App-header">
 
+
       <div className="App-chatroom2">
 
           GI472 <br></br> Varinkarn Kumtanasan <br></br> Pheeraphat Chocokviriyapanya <br></br>Tunwarat Kaewphang <br></br> Nattida Mee-nguen
@@ -36,6 +37,7 @@ function App() {
         </div>
       </div>
       <div className="App-chatroom">
+        
         {
           lines.map(x => {
             return <div className="App-chatroom-text">

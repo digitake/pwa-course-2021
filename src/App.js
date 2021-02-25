@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
 
-const [text,setText] = useState("Type Ready to start!");
+const [text,setText] = useState("");
 
 const [lines, setLines] = useState(["Welcome to my Lobby"]);
 
@@ -22,6 +22,9 @@ const onSend = () => {
   return (
     <div className="App col-12">
       <div className="App-header">
+          <div className="profile-read-ju-on"></div>
+          <div className="RoomName">Room Ju-on</div>
+          <div className="RoomID">RID 123456</div>
           <div className="profile-read-tar"></div>
           <div className="profile-read-pruek"></div>
           <div className="profile-read-phai"></div>
@@ -37,8 +40,8 @@ const onSend = () => {
 
       </div>
       <div className="App-textbox">
-          <div className="App-Botton col-1"></div>
-        <input type="text" className="App-textbox-input col-10" value = {text} onChange={onTextChange}/>
+          <div className="App-Botton col-3"></div>
+        <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-10" value = {text} onChange={onTextChange}/>
         <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
             
       </div>

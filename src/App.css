@@ -1,4 +1,4 @@
-/*IPHONE*/
+
 .App {
   display: flex;
   flex-direction: column;
@@ -8,7 +8,6 @@
   margin: auto;
 }
 
-/*Ipad*/
 
 
 .App-logo {
@@ -18,23 +17,15 @@
 
 
 .App-header {
-  /*background-image: linear-gradient(to right, gray(5), white);*/
   background-image: url("BGapp.jpg");
-  flex : 1;
-  text-align: center;
-  font-size: 10;
-  color:rgb(255, 255, 255)
-  
-  /*display: flex;
-  flex-direction: row;
-  align-items: flex-end;  
-  /*justify-content: center;*/
-  /*font-size: calc(10px + 2vmin);*/
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  text-align: left;
 }
 
 .profile-read-tar {
-  width: 45px;
-  height: 45px;
+  
   overflow: visible;
   background-image: url(tarProfile.jpg);
   background-size: cover;
@@ -47,9 +38,10 @@
 
 }
 
+
+
 .profile-read-pruek {
-  width: 45px;
-  height: 45px;
+  
   overflow: visible;
   background-image: url(pruekProfile.jpg);
   background-size: cover;
@@ -62,51 +54,38 @@
 }
 
 .profile-read-phai {
-  width: 45px;
-  height: 45px;
+  
   overflow: visible;
   background-image: url(phaiProfile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 19px;
-  position: absolute;
-  top: 25px;
-  right: 50px;
+  border-radius: 50px;
+  
 }
 
+.profile-read-ju-on {
 
+  background-image: url(Ju-onProfile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #3de73d;
+  border-radius: 50px;
+  position: relative;
+  
 
-
-
-
-
-/*
-@media (min-width : 1200px){
-  .App-header{
-    background-color: black;
-  }
 }
-@media (min-width : 1600px){
-  .App-header{
-    background-color: rgb(37, 138, 233);
-  }
-}
-*/
 
 .App-Botton{
-  height: 100%;
   background-image: url("botton.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
 }
 
-@media (min-width : 1600px){
-  .App-header{
-    background-color: green;
-  }
-}
 
 .App-chatroom {
   flex: 10;
@@ -116,19 +95,57 @@
   background-size: cover;
 }
 
+.RoomName{
+  color: #ffffff;
+  position: relative;
+  }
 
-/*
-@media (min-width : 1200px){
-  .App-chatroom{
-    background-color: rgb(211, 24, 186);
-  }
+.RoomID{
+  color: #ffffff;
+  position: relative;
 }
-@media (min-width : 950px){
-  .App-chatroom{
-    background-color: rgb(106, 112, 209);
-  }
-}
-*/
+
+
+/* For Study next time*/
+/*.chat-form{*/
+/*  display: grid;*/
+/*  grid: 51px/32px 1fr;*/
+/*  align-content: center;*/
+/*  align-items: center;*/
+/*  grid-gap: 15px;*/
+/*  grid-area: chat-form;*/
+/*  border-radius: 0 0 10px 0;*/
+/*  border-top: 1px white;*/
+/*  padding-left: 30px;*/
+/*  padding-right: 30px;*/
+/*}*/
+
+/*.text {*/
+/*  letter-spacing: 0px;*/
+/*  line-height: 1.2;*/
+/*  color: white;*/
+/*  font-weight: 400;*/
+/*  font-style: oblique;*/
+/*  font-family: "Irish Grover", serif;*/
+/*}*/
+
+/*.chat-form-input{*/
+/*  outline: none;*/
+/*  padding: 15px;*/
+/*  border:  2px white;*/
+/*  color: black;*/
+/*  border-radius: 6px;*/
+/*  font-size: 1.4rem;*/
+/*}*/
+
+
+/*.text{*/
+/*  font-size: 1.5rem;*/
+/*  padding-left: 30px;*/
+/*  outline: none;*/
+/*  */
+/*}*/
+
 
 .App-chatroom-text {
   margin: 15px;
@@ -166,3 +183,162 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+
+@media  (max-width: 760px){
+  /* IPHONE */
+  .profile-read-tar{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+}
+
+  .profile-read-ju-on{
+    width: 50px;
+    height: 50px;
+    left : 30px;
+    bottom : 5px;
+  }
+
+  .profile-read-pruek{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 120px;
+  }
+  .profile-read-phai{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 70px;
+  }
+  .App-header{
+    flex : 0.7;
+    flex-direction: row;
+  }
+  .App-Botton{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .RoomName{
+    font-size: 1.2rem;
+    left: 45px;
+    bottom: 35px;
+  }
+  
+  .RoomID{
+    font-size: 0.7rem;
+    bottom: 10px;
+    right: 82px;
+  }
+}
+
+@media  (max-width: 1500px) and (min-width: 761px){
+  /* IPAD */
+
+  .profile-read-ju-on{
+    width: 70px;
+    height: 70px;
+    left : 40px;
+    bottom : 10px;
+  }
+
+  .profile-read-tar{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    
+  }
+  .profile-read-pruek{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 150px;
+
+  }
+  .profile-read-phai{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 90px;
+
+  }
+  .App-header{
+    flex :1;
+    flex-direction: row;
+
+  }
+
+  .App-Botton{
+    width: 50px;  
+    height: 50px;
+
+  }
+
+  .RoomName{
+    font-size: 2.2rem;
+    left: 60px;
+    bottom: 45px;
+  }
+
+  .RoomID{
+    font-size: 1rem;
+    bottom: 10px;
+    right: 175px;
+  }
+}
+
+@media  (min-width: 1501px){
+  /* PC */
+
+  .profile-read-ju-on{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left : 700px;
+    top : 20px;
+  }
+  .profile-read-tar{
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+
+  }
+  .profile-read-pruek{
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+
+  }
+  .profile-read-phai{
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .App-header{
+    height: 10%;    
+    flex-direction: column;
+  }
+
+  .App-Botton{
+    width: 55px;
+    height: 55px;
+  }
+
+  .RoomName{
+    position: fixed;
+    font-size: 2.2rem;
+    left: 850px;
+    top: 10px;
+  }
+
+  .RoomID{
+    position: fixed;
+    font-size: 1rem;
+    left: 920px;
+    top: 90px;
+  }
+}

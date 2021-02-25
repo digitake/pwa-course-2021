@@ -28,14 +28,14 @@ function App() {
       }
        
         <div className="App-chatroom-text">
-          Line1
+          
           {text}
         </div>
         <div className="App-chatroom-text">
-          Line2
+          
         </div>
         <div className="App-chatroom-text">
-          Line3
+          
         </div>
       </div>
       <div className="App-textbox">

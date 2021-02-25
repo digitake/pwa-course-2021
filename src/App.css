@@ -6,6 +6,17 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
+  background-image: url(1335dab7fa551a2d3a1109096781bb3f.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width : 768px){
+  .App{
+    width: 95%;
+    background-color: rgb(96, 184, 96);
+    background-image: url();
+   }
 }
 
 .App-logo {
@@ -26,7 +37,6 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: silver;
 }
 
 .App-chatroom-text {
@@ -56,3 +66,9 @@
   align-items: center;
   display: flex;
 }
+
+/* @media (max-width: 768px){
+[class*="col-"]{
+  width: 100%
+  }
+} */

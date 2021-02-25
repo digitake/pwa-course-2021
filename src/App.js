@@ -6,7 +6,7 @@ function App() {
 
 const [text,setText] = useState("");
 
-const [lines, setLines] = useState(["mas1","msg2","msg3"]);
+const [lines, setLines] = useState(["Welcome to my house"]);
 
 const onTextChange = (event) => {
   setText(event.target.value);
@@ -14,15 +14,19 @@ const onTextChange = (event) => {
 
 const onSend = () => {
   setLines(line => [...lines,text]);
-  setText("")
+  setText("Type Ready to start!")
+    setText("")
 }
 
     
 
   return (
-    <div className="App">
+    <div className="App col-12">
       <div className="App-header">
-      </div>
+          <div className="profile-read-tar"></div>
+          <div className="profile-read-pruek"></div>
+          <div className="profile-read-phai"></div>
+          </div>
       <div className="App-chatroom">
         {
           lines.map(x=>{
@@ -34,8 +38,9 @@ const onSend = () => {
 
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input" value = {text} onChange={onTextChange}/>
-        <div className="App-textbox-send" onClick={onSend}>Send!</div>
+        <input type="text" className="App-textbox-input col-10" value = {text} onChange={onTextChange}/>
+        <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
+            
       </div>
     </div>
   );

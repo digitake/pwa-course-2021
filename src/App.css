@@ -1,65 +1,67 @@
+/*IPHONE*/
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
   height: 100%;
   margin: auto;
 }
 
-/*
-@media (min-width : 1200px){
-  .App{
-    display: block;
-  }
-}
+/*Ipad*/
 
-@media (min-width : 1600px){
-  .App{
-    display:contents;
-  }
-}
-*/
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-.frame {
-  width: 390px;
-  height: 110px;
-  
-  
-}
-
 .App-header {
+  /*background-image: linear-gradient(to right, gray(5), white);*/
+  background-image: url("BGapp.jpg");
+  flex : 1;
 
-  background-image: url(appheader.png);
-  width: 500px;
-  flex: 1.5;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*align-items: center;*/
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   /*justify-content: center;*/
   /*font-size: calc(10px + 2vmin);*/
-  /*color:rgb(0, 0, 0);*/
 }
 
-/*.App-header2 {*/
-/*  width: 34px;*/
-/*  height: 34px;*/
-/*  overflow: visible;*/
-/*  background-image: url(pruekProfile.jpg);*/
-/*  background-size: cover;*/
-/*  background-repeat: no-repeat;*/
-/*  background-position: center;*/
-/*  border-radius: 50px;*/
-/*}*/
+.profile-read-tar {
+  width: 45px;
+  height: 45px;
+  overflow: visible;
+  background-image: url(tarProfile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+}
+
+.profile-read-pruek {
+  width: 45px;
+  height: 45px;
+  overflow: visible;
+  background-image: url(pruekProfile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+}
+
+.profile-read-phai {
+  width: 45px;
+  height: 45px;
+  overflow: visible;
+  background-image: url(phaiProfile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 19px;
+}
+
+
 
 /*
 @media (min-width : 1200px){
@@ -76,13 +78,11 @@
 */
 
 .App-chatroom {
-  width: 497px;
-  flex: 12;
+  flex: 10;
   background-image: url(BGapp.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid #222;
 }
 
 /*
@@ -105,21 +105,18 @@
 }
 
 .App-textbox {
-  flex: 0.5;
-  background-color: rgb(91, 255, 118);
+  background-color: rgb(253, 4, 4);
   justify-content: center;
   align-items: stretch;
   display: flex;
 }
 
 .App-textbox-input {
-  flex: 5;
   height: 100%;
   box-sizing: border-box;
 }
 
 .App-textbox-send {
-  flex: 2;
   height: 100%;
   vertical-align: middle;
   justify-content: center;
@@ -127,4 +124,17 @@
   display: flex;
   cursor: pointer;
 }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.68%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 

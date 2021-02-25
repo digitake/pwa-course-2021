@@ -8,6 +8,16 @@
   margin: auto;
 }
 
+@media (min-width: 768px){
+  .App{
+    max-width: 100%;
+    background-color: rgb(190, 3, 134);
+    background-image: url(f0cb1ab5f276758d4c8db6a1be6529e7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,45 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap');
 .App {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   height: 100%;
   margin: auto;
-  background-color: rgb(214, 250, 217);
-  
+  font-size: 22px;
+  font-family: 'Prompt', sans-serif;
 }
+
+@media (min-width: 100px) {
+  .App {
+    background-image: url(background_01.gif);
+  }
+}
+
 
 @media (min-width: 768px) {
-  .App{
-    height: 90%;
-    width: 90%;
-  background-image: url(dog.jpg);
-  background-repeat: no-repeat;
-  background-position:  center;
-  }
-
-}
-
-@media (min-width: 1024px) {
-  .App{
-    height: 100%;
-    width: 40%;
-
-  background-image: url(logo1.png);
-  background-repeat: no-repeat;
-  background-position:  center;
-  }
-
-}
-
-@media (min-width: 1500px){
-  .App{
-    height: 100%;
-    width: 25%;
-
-  background-image: url(logo1.png);
-  background-repeat: no-repeat;
-  background-position:  center;
+  .App {
+    background-image: url(background_01.gif);
+    width: 98%;
   }
 }
 
@@ -56,7 +38,7 @@
 .App-header {
   flex: 1;
 
-  background-color: #000000;
+  background-color: #4998ffd5;
 
   display: flex;
   flex-direction: column;
@@ -67,24 +49,29 @@
 }
 
 .App-chatroom {
-  flex: 12;
+  flex: 10;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   background-color: rgba(70, 70, 70, 0);
 >>>>>>> dcaa91ba2f4dc5d477d928f5f3bda887411eaab8
   
+=======
+  background-color: rgba(255, 0, 0, 0);
+>>>>>>> 81a0ec9fcf73b8abc9109689fced113ea0b6d49f
   
   /*background-image: url(../src/logo1.png);  สำหรับพื้นหลัง*/
 }
 
 .App-chatroom-text {
   margin: 8px;
+  
 
 
-  background-color: hsl(212, 100%, 66%);
-  color:black;
-  font: size 16px;
+  background-color: hsl(212, 100%, 76%);
+  color:rgb(255, 255, 255);
+  font: size 22px;
 
 }
 
@@ -98,10 +85,18 @@
   display: flex;
 }
 
-.App-textbox-input {
-  flex: 5;
+@media (min-width: 100px) {
+  .App-textbox-input {
+  flex: 3 ;
   height: 100%;
   box-sizing: border-box;
+  }
+}
+
+@media (min-width: 768px) {
+  .App-textbox-input {
+    flex: 6;
+  }
 }
 
 .App-textbox-send {

@@ -21,12 +21,15 @@ const onSend = () => {
 
   return (
     <div className="App col-12">
+     
       <div className="App-header">
+          <div className="text">Room123</div>
+          <div className="text2">Room1234</div>
           <div className="profile-read-tar"></div>
           <div className="profile-read-pruek"></div>
           <div className="profile-read-phai"></div>
-          </div>
-      <div className="App-chatroom">
+      </div>
+        <div className="App-chatroom">
         {
           lines.map(x=>{
           return <div className="App-chatroom-text">
@@ -34,14 +37,15 @@ const onSend = () => {
           </div>
           })
         }
-
       </div>
+     
       <div className="App-textbox">
           <div className="App-Botton col-1"></div>
         <input type="text" className="App-textbox-input col-10" value = {text} onChange={onTextChange}/>
         <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
-            
       </div>
+        <div class={"move-me"}>
+        </div>
     </div>
   );
 }

@@ -17,15 +17,12 @@
 }
 
 .App-header {
-  /*background-image: linear-gradient(to right, gray(5), white);*/
   background-image: url("BGapp.jpg");
   flex : 1;
-
+  color: azure;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  /*justify-content: center;*/
-  /*font-size: calc(10px + 2vmin);*/
 }
 
 .profile-read-tar {
@@ -37,6 +34,9 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50px;
+  position: relative;
+  left: 1990px;
+  top: 5px;
 }
 
 .profile-read-pruek {
@@ -48,9 +48,12 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50px;
+  position: relative;
+  left: 1995px;
+  top: 5px;
 }
 
-.profile-read-phai {
+.profile-read-phai{
   width: 45px;
   height: 45px;
   overflow: visible;
@@ -59,9 +62,10 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 19px;
+  position: relative;
+  left: 2000px;
+  top: 5px;
 }
-
-
 
 /*
 @media (min-width : 1200px){
@@ -85,13 +89,15 @@
   background-position: left;
 }
 
-@media (min-width : 1600px){
+@media (min-width : 1600px)
+{
   .App-header{
     background-color: green;
   }
 }
 
-.App-chatroom {
+.App-chatroom 
+{
   flex: 10;
   background-image: url(BGapp.jpg);
   background-position: center;
@@ -113,24 +119,28 @@
 }
 */
 
-.App-chatroom-text {
+.App-chatroom-text
+{
   margin: 15px;
   background-color: rgb(255, 255, 255);
 }
 
-.App-textbox {
+.App-textbox 
+{
   background-color: rgb(253, 4, 4);
   justify-content: center;
   align-items: stretch;
   display: flex;
 }
 
-.App-textbox-input {
+.App-textbox-input 
+{
   height: 100%;
   box-sizing: border-box;
 }
 
-.App-textbox-send {
+.App-textbox-send 
+{
   height: 100%;
   vertical-align: middle;
   justify-content: center;
@@ -151,4 +161,12 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+.text{
+  font-size: 2em;
+  color: azure;
+  position: relative;
+  left: 1000px;
+  bottom: 50px;
+}
 

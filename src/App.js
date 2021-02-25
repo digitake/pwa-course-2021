@@ -23,8 +23,9 @@ const onSend = () => {
     <div className="App col-12">
      
       <div className="App-header">
-          <div className="text">Room123</div>
-          <div className="text2">Room1234</div>
+          <div className="RoomName">Room123</div>
+          <div className="Status">Online - Tar,Pruek,Phai</div>
+          <div className="Ju-on"></div>
           <div className="profile-read-tar"></div>
           <div className="profile-read-pruek"></div>
           <div className="profile-read-phai"></div>

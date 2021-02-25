@@ -31,7 +31,6 @@ const onSend = () => {
           <div className="profile-read-pruek"></div>
           <div className="profile-read-phai"></div>
           <div className="Chat-header"></div>
-          <div className="RoomName">Room123</div>
           </div>
       <div className="App-chatroom">
         {

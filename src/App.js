@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
 
-const [text,setText] = useState("Type Ready to start!");
+const [text,setText] = useState("");
 
 const [lines, setLines] = useState(["Welcome to my Lobby"]);
 
@@ -21,16 +21,15 @@ const onSend = () => {
 
   return (
     <div className="App col-12">
-     
       <div className="App-header">
-          <div className="RoomName">Room123</div>
-          <div className="Status">Online - Tar,Pruek,Phai</div>
-          <div className="Ju-on"></div>
+          <div className="profile-read-ju-on"></div>
+          <div className="RoomName">Room Ju-on</div>
+          <div className="RoomID">RID 123456</div>
           <div className="profile-read-tar"></div>
           <div className="profile-read-pruek"></div>
           <div className="profile-read-phai"></div>
-      </div>
-        <div className="App-chatroom">
+          </div>
+      <div className="App-chatroom">
         {
           lines.map(x=>{
           return <div className="App-chatroom-text">
@@ -38,15 +37,14 @@ const onSend = () => {
           </div>
           })
         }
+
       </div>
-     
       <div className="App-textbox">
-          <div className="App-Botton col-1"></div>
-        <input type="text" className="App-textbox-input col-10" value = {text} onChange={onTextChange}/>
+          <div className="App-Botton col-3"></div>
+        <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-10" value = {text} onChange={onTextChange}/>
         <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
+            
       </div>
-        <div class={"move-me"}>
-        </div>
     </div>
   );
 }

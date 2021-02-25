@@ -35,7 +35,7 @@
 
 .App-header {
 
-  background-image: url(appheader.png);
+  border-image: url(llll.jpg);
   width: 500px;
   flex: 1.5;
   background-repeat: no-repeat;

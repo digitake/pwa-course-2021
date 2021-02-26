@@ -8,6 +8,16 @@
   margin: auto;
 }
 
+@media (min-width: 768px) {
+
+  .App {
+    background-color: rgb(0, 0, 0);
+    width: 95%;
+    height: 95%;
+  }
+
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

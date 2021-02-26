@@ -1,4 +1,5 @@
 .App {
+  background-color: rgb(207, 238, 250);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,24 +8,19 @@
   margin: auto;
 }
 
-@media (max-width: 768px) {
-
-  .App {
-    background-image: url(Picture/Elaina2.jpg);
-    
-    background-position: auto;
-    
-  }
-
-}
-
 @media (min-width: 768px) {
 
   .App {
-    background-image: url(Picture/Elaina1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: auto;
+    background-color: rgb(207, 238, 250);
+  }
+  .App-header1{
+    background-color: rgb(255, 255, 255);
+    background-position: left;
+  }
+
+  .App-header3{
+    background-color: rgb(255, 255, 255);
+    background-position: right;
   }
 
 }
@@ -35,52 +31,113 @@
 }
 
 .App-header {
-  flex: 1;
-  background-image: url(Picture/Head-Title.jpg);
+  background-color: rgb(255, 255, 255);
+  background-position: center;
   background-repeat: no-repeat;
-  background-color: #19041d;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
   justify-content: center;
-  color: rgb(0, 0, 0);
+  align-items: center;
+  display: flex;
+}
+
+.App-header1 {
+  background-image: url(design/Design\ Chi\ CHi\ App-08.png);
+  
+  background-position: left;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 
 }
 
-.App-chatroom {
-  flex: 12;
-  background-color: rgba(170, 158, 212, 0.418);
-  background-image: url();
+.App-header2 {
+  background-image: url(design/Design\ Chi\ CHi\ App-09.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 
+}
+
+.App-header3 {
+  background-image: url(design/Design\ Chi\ CHi\ App-10.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.App-chatroom {
+  color: rgb(182, 234, 255);
+  flex: 12;
 }
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: rgb(255, 255, 255);
-  color : rgb(48, 100, 100);
-  font-size: 20px;
+  background-color: rgb(108, 165, 250);
+  background-size: 30%;
+  color : rgb(23, 24, 24);
+  font-size: 30px;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(26, 3, 41);
+  background-color: rgb(255, 255, 255);
   background-position: right;
   justify-content: center;
   align-items: stretch;
   display: flex;
-  color: aliceblue;
+  color: rgb(228, 222, 222);
 }
 
 .App-textbox-input {
   flex: 4;
   height: 100%;
   box-sizing: border-box;
-  background-color: rgb(47, 15, 51);
-  color: aliceblue;
+  color: rgb(6, 87, 119);
 }
 
 .App-textbox-send {
-  background-image: url(Picture/Send-Button.jpg);
+  background-image: url(design/Design\ Chi\ CHi\ App-03.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.App-textbox-send1 {
+  background-image: url(design/Design\ Chi\ CHi\ App-04.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.App-textbox-send2 {
+  background-image: url(design/Design\ Chi\ CHi\ App-05.png);
   background-position: center;
   background-repeat: no-repeat;
   flex: 1;

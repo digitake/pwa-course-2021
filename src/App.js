@@ -18,6 +18,7 @@ function App() {
     if (event.which === 13){
       onSend();
     }
+
   };
 
   return (
@@ -32,11 +33,15 @@ function App() {
           })
         }
       </div>
+      <div className="App-textbox-icon" ><i class="fas fa-microphone-alt"></i> 
+      <i class="fas fa-file-upload hide-when-small"></i>
+      <i class="fas fa-plus hide-when-big"></i>
+      <i class="fas fa-images hide-when-small"></i> 
+      <i class="fas fa-camera"></i> </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" 
         value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        
-        <div className="App-textbox-send" onClick={onSend}>Send!</div>
+        <div className="App-textbox-send" onClick={onSend}> <i class="far fa-paper-plane"></i> </div>
       </div>
     </div>
   );

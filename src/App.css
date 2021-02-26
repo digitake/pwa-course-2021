@@ -10,9 +10,9 @@
 @media (min-width: 768px) {
 
   .App {
-    background-color: rgb(15, 240, 228);
-    width: 95%;
-    height: 95%;
+    background-color: rgb(255, 159, 164);
+    width: 75%;
+    height: 100%;
   }
 
 }

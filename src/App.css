@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
+  /* max-width: 400px; */
   height: 100%;
   margin: auto;
   background-image: url(1335dab7fa551a2d3a1109096781bb3f.jpg);
@@ -18,6 +18,7 @@
     background-image: url();
    }
 }
+
 
 .App-logo {
   height: 40vmin;

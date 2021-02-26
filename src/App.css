@@ -3,18 +3,23 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
+  /* max-width: 400px; */
   height: 100%;
   margin: auto;
+  background-image: url(1335dab7fa551a2d3a1109096781bb3f.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-@media (min-width: 768px)
-{
+@media (min-width : 768px){
   .App{
-    background-color: mediumaquamarine;
-    width:95;
-  }
+    width: 95%;
+    background-color: rgb(96, 184, 96);
+    background-image: url();
+   }
 }
+>>>>>
+>> digitake-main
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -22,7 +27,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #1e1763;
+  background-color: #29388d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +38,6 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: silver;
 }
 
 .App-chatroom-text {
@@ -63,3 +67,9 @@
   align-items: center;
   display: flex;
 }
+
+/* @media (max-width: 768px){
+[class*="col-"]{
+  width: 100%
+  }
+} */

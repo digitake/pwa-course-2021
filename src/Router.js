@@ -13,13 +13,13 @@ function Router(){
                 </Route>
                 <Route path='/'>
                     <App />
-                        <div>
-                            <Link to="friend-list">
-                                <button>
-                                    Go To FriendList
-                                </button>
-                            </Link>
-                        </div>            
+                    <div>
+                        <Link to="friend-list">
+                            <button>
+                                Go To FriendList
+                            </button>
+                        </Link>
+                    </div>            
                 </Route>   
             </Switch>
         </BrowserRouter>    

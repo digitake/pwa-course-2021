@@ -9,10 +9,11 @@
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .App {
+
     max-width:100%;
-    background-color: red;
+    background-color: rgb(226, 134, 134);
   }
 }
 
@@ -23,7 +24,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #f13000;
+  background-color: #ff8480;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,22 +37,25 @@
 
   background-color: rgba(170, 158, 212, 0.418);
   background-image: url();
-
+  background-image: url("tenor (1).gif");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .App-chatroom-text {
-  margin: 8px;
+  margin: 10px;
 
-  background-color: rgb(206, 87, 87);
+  background-color: rgb(255, 255, 255);
 
-  color : rgb(48, 100, 100);
-  font-size: 20px;
+  color : rgb(0, 0, 0);
+  font-size: 26px;
+  
 }
 
 .App-textbox {
   flex: 1;
 
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 116, 116);
 
   justify-content: center;
   align-items: stretch;

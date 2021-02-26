@@ -7,7 +7,7 @@ function Router() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/friend-liist">
+        <Route path="/friend-list">
           <FriendList />
         </Route>
         <Route path="/">

@@ -1,5 +1,6 @@
 import './App.css';
 import {useState} from 'react';
+import { Link } from 'react-router-dom'
 
 function App() {
   const [text, setText] = useState("");
@@ -23,6 +24,11 @@ function App() {
   return (
     <div className="App col-6">
       <div className="App-header">
+        <Link to="/friend-list">
+          <button>
+            Friend List
+          </button>
+        </Link>
       </div>
       <div className="App-chatroom">
         {

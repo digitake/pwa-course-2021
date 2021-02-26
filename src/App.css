@@ -8,40 +8,59 @@
   margin: auto;
 }
 
+
+@media (min-width: 768px) {
+  .App {
+    max-width:100%;
+    background-color: rgb(104, 79, 85);
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+ 
 }
 
 .App-header {
   flex: 1;
-  background-color: #e7fc7f;
+  background-color: #e7b6c9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 10px solid transparent;
+  padding: 15px;
+ 
 }
 
 .App-chatroom {
   flex: 12;
-  background-color: rgba(199, 198, 198, 0.418);
+
+  background-color: rgba(212, 178, 212, 0.418);
+ 
 }
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: rgb(197, 189, 189);
-  color : rgb(48, 100, 100);
+
+  background-color: rgb(247, 211, 232);
+
+  color : rgb(167, 99, 161);
   font-size: 20px;
+  background-image: url(2.jpg);
+
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(224, 220, 220);
-  justify-content: center;
+
+  background-color: rgb(156, 94, 128);
   align-items: stretch;
   display: flex;
+  
+
 }
 
 .App-textbox-input {

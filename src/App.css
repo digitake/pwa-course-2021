@@ -3,9 +3,18 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
   height: 100%;
   margin: auto;
+}
+
+@media (min-width: 768px) {
+
+  .App {
+    background-color: rgb(15, 240, 228);
+    width: 95%;
+    height: 95%;
+  }
+
 }
 
 .App-logo {
@@ -15,28 +24,36 @@
 
 .App-header {
   flex: 1;
-  background-color: #ffcadb;
+  background-color: #f13000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .App-chatroom {
   flex: 12;
-  background-color: rgb(255, 239, 239);
+
+  background-color: rgba(170, 158, 212, 0.418);
+  background-image: url();
+
 }
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: rgb(253, 226, 235);
+
+  background-color: rgb(206, 87, 87);
+
+  color : rgb(48, 100, 100);
+  font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: #ffcadb;
+
+  background-color: rgb(255, 0, 0);
+
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -55,5 +72,24 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  cursor: pointer;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }

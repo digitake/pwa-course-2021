@@ -8,25 +8,9 @@
 
   height: 100%;
   margin: auto;
-<<<<<<< HEAD
-}
-/*
-@media {max-width: 1080px;}{
-  .App{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 3px;
-    margin-bottom: 2.5px;
-  }
-}
-*/
-=======
   background-image: url(food.jpg);
   background-repeat: no-repeat;
   background-position: center;
->>>>>>> 805eeea9b44c6c8fdcd990de2e7866f3244fbd56
 
 
 }
@@ -91,8 +75,6 @@
 }
 
 
-<<<<<<< HEAD
-=======
 @media (min-width: 768px)
 
 {
@@ -110,4 +92,3 @@
 
  
 
->>>>>>> 805eeea9b44c6c8fdcd990de2e7866f3244fbd56

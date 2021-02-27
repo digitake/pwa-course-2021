@@ -22,6 +22,7 @@
 
 @media (max-width: 1024px){
   .App{
+    max-width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(wall.jpg);

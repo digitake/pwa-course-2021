@@ -7,6 +7,7 @@
   height: 100%;
   margin: auto;
 }
+/*
 @media {max-width: 1080px;}{
   .App{
     text-align: center;
@@ -17,6 +18,8 @@
     margin-bottom: 2.5px;
   }
 }
+*/
+
 
 .App-logo {
   height: 40vmin;

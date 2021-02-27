@@ -3,29 +3,42 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 400px;
   height: 100%;
   margin: auto;
-  background-image: none;
-  background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center;
+ 
 }
 
-@media(min-width: 400px){
+.App-logo{
 
+  background-image: url(mango.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  
+  
+}
+
+
+@media (min-width: 768px){
+ 
   .App{
-    background-color: rgb(173, 192, 235);
+
+    
     width: 95%;
+  
   }
 }
 
-
-@media(min-width: 768px){
+@media (min-width: 480px){
 
   .App{
-    background-color: rgb(73, 83, 104);
-    width: 100%;
+
+    background-color:  #242424;
+    
   }
 }
 
@@ -38,14 +51,11 @@
 
 .App-header {
   flex: 1;
-  background-color: #1a354d;
+  background-color: #FECC48;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-
-  color: rgb(5, 5, 5);
 
 }
 
@@ -53,19 +63,18 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: rgb(218, 255, 255);
-  margin: 24px;
+  
 }
 
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: rgb(184, 226, 197);
+  background-color: #E9E87F;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(255, 177, 177);
+  background-color:#FECC48;
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -75,6 +84,8 @@
   flex: 5;
   height: 100%;
   box-sizing: border-box;
+  background-color: #ebe99e;
+  
 }
 
 .App-textbox-send {
@@ -86,27 +97,4 @@
   display: flex;
   cursor: pointer;
 }
-
-.col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-
-  @media(max-width: 768px) {
-    [class*="col-"]{
-      width: 100%;
-  
-    }
-  }
-
-
-
 

@@ -20,7 +20,7 @@
   }
 }
 
-@media (max-width: 1024px){
+/*@media (max-width: 1024px){
   .App{
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +28,7 @@
     background-size: 125%;
     background-color: rgb(29, 29, 29);
   }
-}
+}*/
 
 .App-logo {
   height: 40vmin;

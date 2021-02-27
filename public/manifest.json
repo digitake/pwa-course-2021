@@ -1,25 +1,30 @@
 {
-  "short_name": "Mango Talk",
-  "name": "Create React App Sample",
+  "short_name": "Mango",
+  "name": "Mango Application Chat",
   "icons": [
     {
-      "src": "mango.png",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+
+      "src": "mango-64.png",
+      "type": "image/png",
+      "sizes": "64x64 32x32 24x24 16x16"
+      
     },
     {
-      "src": "logo192.png",
+      "src": "mango-192.png",
+
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+
+      "src": "mango-512.png",
+
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#FECC48",
+  "background_color": "#242424"
 }

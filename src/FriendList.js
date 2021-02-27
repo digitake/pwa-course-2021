@@ -6,7 +6,7 @@ function FriendList() {
      <div className = "App bg">
 
          <Link to="/">
-             <img src="ppp.jpg" alt="ppp.jpg" width="100px" height="100px"/>
+             <img src="ppp.jpg" alt="ppp.jpg" width="85px" height="85px"/>
          </Link>
      </div>
  );

@@ -1,4 +1,5 @@
 import './App.css';
+import { Link } from 'react-router-dom';
 
 import {useState} from 'react';
 
@@ -25,6 +26,11 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+      <div>
+        <Link to="/">
+            <img src="back"  alt="ย้อนกลับ"/>
+        </Link>
+        </div>
       </div>
       <div className ="panel-footer">
       </div>
@@ -50,6 +56,7 @@ function App() {
 
 
     </div>
+    
   );
 }
 // ctrl+alt+p to open command then run npm start to open localhost:300 

@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-            <Link to="/friend-list" className="Button">
+            <Link to="/friend" className="Button">
                 <button>
                   Go To
                 </button>

@@ -1,5 +1,4 @@
 import {Link} from 'react-router-dom';import Login from './Login';
-import Profile from './Register';
 import './App.css';
 import { useState } from 'react';
 import LinkTo from './Components/LinkManager';
@@ -27,6 +26,8 @@ function App() {
   return (
     <div className="App">
       <div className="App-navigator">
+        <LinkTo value='Welcome' to='/loading' />
+        <LinkTo value='Insert Password' to='/insert-password' />
         <LinkTo value='Register' to='/register' />
         <LinkTo value='Login' to='/login' />
         <LinkTo value='Feed' to='/feed' />

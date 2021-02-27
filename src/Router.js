@@ -6,11 +6,19 @@ import Feed from './Feed';
 import Settings from './Settings';
 import InsepectProfile from './InsepectProfile';
 import ProfileSetting from './ProfileSetting';
+import Loading from './Loading';
+import InsertPasssword from './InsertPassword';
 
 function Router() {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path='/loading'>
+                    <Loading />
+                </Route>
+                <Route path='/insert-password'>
+                    <InsertPasssword />
+                </Route>
                 <Route path="/register">
                     <Register />
                 </Route>

@@ -4,7 +4,7 @@ import './LinkManager.css';
 function LinkTo(props) {
     return (
         <Link to={props.to}>
-            <button >
+            <button>
                 {props.value}
             </button>
         </Link>

@@ -1,6 +1,9 @@
 button{
-    border: 1px solid black;
+    border: 1px solid lightgray;
     font-weight: bold;
     background-color: white;
     color: black;
+    width: auto;
+    padding: 5px;
+    font-size: 15px;
 }

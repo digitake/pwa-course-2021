@@ -71,6 +71,16 @@
   align-items: center;
   display: flex;
 }
+.App-button-friend{
+  flex: 1;
+  height: 100%;
+  vertical-align: left;
+  justify-content: left;
+  align-items: left;
+  display: flex;
+
+
+}
 @media(min-width:760px)
 {
   .App {
@@ -108,3 +118,4 @@
   }
   
 }
+ 

@@ -1,5 +1,6 @@
 import './App.css';
 import {useState} from 'react';
+import{Link} from 'react-router-dom';
 
 function App() {
   const [text, setText] = useState("");
@@ -26,6 +27,15 @@ function App() {
 
 
         App Chatroom
+        <div className="App-textbox-send">
+          
+            <Link to="/friend-list">
+            <button>
+                Go to Friend list
+            </button>
+            </Link>
+       
+        </div>
       </div>
       <div className="App-chatroom">
         {
@@ -39,8 +49,11 @@ function App() {
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" 
         value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-
+         
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
+      
+        
+        
       </div>
     </div>
   );

@@ -1,8 +1,11 @@
 import './App.css';
+import { Link } from 'react-router-dom';
 
 import {useState} from 'react';
 
+
 function App() {
+  
 
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
@@ -52,6 +55,8 @@ function App() {
     </div>
   );
 }
+
+
 // ctrl+alt+p to open command then run npm start to open localhost:300 
 
 export default App;

@@ -25,6 +25,11 @@ const keyPress =(event) =>{
     <div className="App">
       <div className="App-header">
         Welcome to my App
+
+        <link to="/friend-list">
+            Go to FriendList
+        </link>
+
       </div>
       <div className="App-chatroom">
         {

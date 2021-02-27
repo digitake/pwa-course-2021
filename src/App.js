@@ -24,7 +24,7 @@ function App() {
           <div id="myDropdown" class="dropdown-content">
             
          <a href="#"><Link to="/friend-list"> </Link></a>
-         <a href="#">Link 2</a>
+         <a href="#"><Link to="/shop"> </Link></a>
          <a href="#">Link 3</a>
           </div>
         </div>

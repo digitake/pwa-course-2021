@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
 import FriendList from './FriendList';
+import Shop from "./Shop";
 
 function Router() {
 
@@ -10,6 +11,9 @@ function Router() {
                 <Route path="/friend-list">
                     <FriendList />    
                 </Route>
+                <Route path="/shop">
+                    <Shop />
+                </Route>  
                 <Route path="/">
                     <App />
                 </Route>

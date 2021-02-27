@@ -21,7 +21,7 @@ return (
            <div className="friendlist">
                <Link to="/">
                 <img src={backButton}></img>
-                </Link>
+              </Link>
             </div>
         </div>
     </div>

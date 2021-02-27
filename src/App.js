@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function App() {
 
@@ -24,6 +25,11 @@ function App() {
         <div className="App-chatroom-text">
           Line1
         </div>
+        <Link to="/Friend-List">
+          <button>
+            Go FriendList
+          </button>
+        </Link>
         <div className="App-chatroom-text">
           Line2
         </div>

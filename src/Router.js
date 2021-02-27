@@ -1,4 +1,4 @@
-import { browserRouter, Switch, Router } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
 import FriendList from './FriendList';
 

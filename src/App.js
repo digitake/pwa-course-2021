@@ -32,7 +32,11 @@ const onSend = (event) =>{
         </div>
           })
         }
-    
+      </div>
+      <div Link to ="/friend-list">
+            <Link to="/friend-list">
+                <img src ="mam"/>
+            </Link>
       </div>
       <div className="App-textbox ">
         <input type="text" className="App-textbox-input" value ={text} onChange= {onTextChange}/>

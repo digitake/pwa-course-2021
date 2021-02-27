@@ -27,7 +27,6 @@ function ProjectMain(){
                         </th>
     
                     </tr>
-
                     <tr>
                         <th>
                             <img src= "add new.png" alt = "add new.png" width="100px" height="100px"/> 

@@ -2,6 +2,7 @@
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import App from './App';
 import FriendList from'./FriendList';
+import ProfileSetting from "./ProfileSetting";
 
 function Router(){
     return(
@@ -10,9 +11,13 @@ function Router(){
                 <Route path="/friend-list">
                     <FriendList />
                 </Route>
+                <Route path="/profile-setting">
+                    <ProfileSetting />
+                </Route>
                 <Route path="/">
                      <App />
                 </Route>
+                
             </Switch>
         </BrowserRouter>
     )

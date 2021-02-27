@@ -18,8 +18,8 @@
   height: 10px;
   pointer-events: none;
 }
-.App-header-img{
-  max-width: 10%;
+.App-header-button{
+  max-width: 20%;
   height: 25%;
 }
 .App-header {

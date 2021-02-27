@@ -1,6 +1,5 @@
 import './App.css';
 import {useState} from 'react';
-import homeicon from './home-icon.png';
 import { Link } from 'react-router-dom';
 
 function App() {
@@ -26,14 +25,19 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <div className="App-header-img">
+        <div className="App-header-button">
                 <Link to ="/friend-list">
                   <button>
-                    home
+                    Insepect Profile
+                  </button>
+                </Link>
+                <Link to ="/profile-setting">
+                  <button>
+                    Profile Setting
                   </button>
                 </Link>
         </div>
-       Neptune Cat
+       Neptune Chat
       </div>
       <div className="App-chatroom">
         {

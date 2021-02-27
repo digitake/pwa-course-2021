@@ -28,8 +28,6 @@ const keyPress =(event) =>{
       <div className="App-header">
         Welcome to my App
       </div>
-      
-
       <div className="App-chatroom">
         {
           Lines.map(x => {

@@ -5,7 +5,7 @@ function FriendList() {
         <div>
             Friend list
             <Link to ="/">
-                <img src = "lel.jpg"/>
+                <img src ="lel.jpg"/>
             </Link>
             </div>
     );

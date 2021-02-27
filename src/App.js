@@ -36,7 +36,14 @@ function App() {
                 <button>
                     Go to friendlist
                 </button>
-            </Link>
+      </Link>
+
+      <Link to = "/profile">
+                
+                <button>
+                    Go to profile
+                </button>
+      </Link>
         
       <div className="App-chatroom2">
 

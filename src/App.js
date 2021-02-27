@@ -1,5 +1,6 @@
 import './App.css';
 import {useState} from 'react';
+import{Link} from 'react-router-dom'
 function App() {
 
   const [text,setText] = useState("");
@@ -43,11 +44,17 @@ function App() {
           })
           }
         </div>
+
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
         <div className="App-textbox-send" onClick={onSend}>ส่ง</div>
       </div>
+      <Link to="/friend-list">
+      <div className="App-header">
+          Goto Friend List
+        </div>
+            </Link>
     </div>
   );
 }

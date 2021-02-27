@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 
 function App() {
@@ -22,6 +23,11 @@ function App() {
       <div className="App-header">
         Chatroom
       </div>
+      <Link to="/friend-list">
+      <button>
+      Go friend-list
+      </button>
+      </Link>
       <div className="App-chatroom">
       {
         lines.map(x =>{

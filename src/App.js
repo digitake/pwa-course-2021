@@ -26,16 +26,24 @@ const keyPress = (event) => {
   return (
     
     <div className="App">
+      
       <div className="App-header white-text">
         
-      <div className="FriendList-Button">
+        <div className="ChatHeader">
           <Link to="/friend-list">
            <button>
              FriendList
            </button>
-          </Link></div>
-       UsersName
+          </Link>
+          <div className= "ChatName-Header">
+            UsersName
+          </div>
+        </div>
+
+        
       </div>
+      
+
       <div className="App-chatroom">
         {
 

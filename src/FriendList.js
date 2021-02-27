@@ -1,12 +1,16 @@
 import { Link } from 'react-router-dom';
+import './App.css';
 
 function FriendList() {
  return(
-     <div>
-       FriendList
-       <Link to="/" className="img">
-             <img src="ppp.jpg"/>
-       </Link>
+     <div className = "App bg">
+      
+        
+         FriendList
+         <Link to="/" className="img">
+             <img src="ppp.jpg" alt="ppp.jpg"/>
+         </Link>
+       
      </div>
  );
     

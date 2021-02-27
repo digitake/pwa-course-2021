@@ -8,7 +8,6 @@ function FriendList(){
                 <button>
                     Go Chatroom
                 </button>
-                <img src="origin.png"/>
             </Link>
         </div>
     );

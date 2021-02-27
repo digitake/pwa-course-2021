@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import {Link} from 'react-router-dom';
 
 function App() {
 
@@ -22,14 +23,10 @@ const keyPress =(event) =>{
 }
 
   return (
+
     <div className="App">
       <div className="App-header">
         Welcome to my App
-
-        <link to="/friend-list">
-            Go to FriendList
-        </link>
-
       </div>
       <div className="App-chatroom">
         {
@@ -46,8 +43,16 @@ const keyPress =(event) =>{
         value={text} onChange={onTextChange} onKeyPress={keyPress}/>
         
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
-
       </div>
+
+        <div>
+        <Link to="/friend-list">
+                <button>
+                    Go Chatroom
+                </button>
+        </Link>
+        </div>
+
     </div>
   );
 }

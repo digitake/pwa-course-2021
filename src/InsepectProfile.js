@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import inProfile from "./desgin/InsepectProfile.jpg";
 
-function FriendList(){
+function InsepectProfile(){
     return(
         <div align="center">
             <h1>Insepect Profile</h1>
@@ -20,4 +20,4 @@ function FriendList(){
     )
 };
 
-export default FriendList;
+export default InsepectProfile;

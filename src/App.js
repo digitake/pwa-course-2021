@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <div className="App-header">
         <div className="App-header-button">
-                <Link to ="/friend-list">
+                <Link to ="/insepect-profile">
                   <button>
                     Insepect Profile
                   </button>

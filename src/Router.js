@@ -1,15 +1,15 @@
 /* import router components เข้ามาเพื่อเตรียมใช้งาน */
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import App from './App';
-import FriendList from'./FriendList';
+import InsepectProfile from'./InsepectProfile';
 import ProfileSetting from "./ProfileSetting";
 
 function Router(){
     return(
         <BrowserRouter>
             <Switch>
-                <Route path="/friend-list">
-                    <FriendList />
+                <Route path="/insepect-profile">
+                    <InsepectProfile />
                 </Route>
                 <Route path="/profile-setting">
                     <ProfileSetting />

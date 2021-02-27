@@ -11,7 +11,7 @@ function ProfileSetting(){
                     Go to Chatroom
                 </button>
             </Link>
-            <Link to="/friend-list">
+            <Link to="/insepect-profile">
                 <button>
                     Go to Insepect Profile
                 </button>

@@ -1,5 +1,7 @@
 import './App.css';
 import {useState} from 'react';
+import homeicon from './home-icon.png';
+import { Link } from 'react-router-dom';
 
 function App() {
 
@@ -24,7 +26,14 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-       whatever do you send!
+        <div className="App-header-img">
+                <Link to ="/friend-list">
+                  <button>
+                    home
+                  </button>
+                </Link>
+        </div>
+       Neptune Cat
       </div>
       <div className="App-chatroom">
         {

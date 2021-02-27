@@ -1,12 +1,13 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
+import FriendList from './FriendList';
 
 function Router() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path='/Hello'>
-                    <Test />
+                <Route path='/friend-list'>
+                    <FriendList />
                 </Route>
                 <Route path='/'>
                     <App />
@@ -14,16 +15,6 @@ function Router() {
             </Switch>
 
         </BrowserRouter>
-    );
-}
-
-function Test(props) {
-    return (
-        <div>
-            <h1>
-            HELLO WORLD
-            </h1>
-        </div>
     );
 }
 

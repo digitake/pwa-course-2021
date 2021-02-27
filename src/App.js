@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import LinkTo from './Components/LinkManager';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div className="App">
+      <LinkTo value='FriendList' to='/friend-list' />
       <div className="App-header">
         Neptune Chat
       </div>

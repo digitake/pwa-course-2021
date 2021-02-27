@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import './App.css';
-
+import  { Link } from 'react-router-dom';
 function App() {
 
   const [text, setText] = useState("");
@@ -19,8 +19,21 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+          <div id="myDropdown" class="dropdown-content">
+            
+         <a href="#"><Link to="/friend-list"> </Link></a>
+         <a href="#">Link 2</a>
+         <a href="#">Link 3</a>
+          </div>
+        </div>
       </div>
-      <div className="App-chatroom">
+
+      
+
+     
+    <div className="App-chatroom">
         {
 
           lines.map((value, index) => {
@@ -35,7 +48,10 @@ function App() {
         <div className="App-textbox-send" onClick={onSendHandler}>ส่ง!</div>
 
       </div>
+      
     </div>
+
+    
   );
 }
 

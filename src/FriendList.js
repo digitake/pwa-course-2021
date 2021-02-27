@@ -1,7 +1,17 @@
+import { Link } from 'react-router-dom'
+import backButton from './logo1.png'
+import './FriendList.css';
+
 function FriendList() {
     return (
-        <div>
-            Friend List
+        <div className="friendlist">
+            
+            <Link to="/">
+
+            <img src={backButton}></img>
+            
+
+            </Link>
         </div>
     )
 }

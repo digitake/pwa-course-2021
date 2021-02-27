@@ -1,5 +1,6 @@
-import { BrowserRouter, Switch, Router, Route}   from 'react-router-dom';
+import { BrowserRouter, Switch, Route}   from 'react-router-dom';
 import App from './App'
+import FriendList from './FriendList';
 
 
 function Router() {    
@@ -7,7 +8,7 @@ function Router() {
         <BrowserRouter>
           <Switch>
           <Route path = "/friend-list">
-              <FirendList />
+              <FriendList />
                 </Route>
               <Route path = "/">
                 <App />
@@ -16,4 +17,5 @@ function Router() {
         </BrowserRouter>
     )
 };
-  export default Router;  
+  export default Router;
+  

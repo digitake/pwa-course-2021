@@ -1,6 +1,8 @@
-function FirendList(){
+function FriendList(){
     return(
     <div>
-        Firend List
+        Friend List
     </div>)
 }
+
+export default FriendList;

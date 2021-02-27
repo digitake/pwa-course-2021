@@ -4,7 +4,7 @@ function FriendList() {
  return(
      <div>
        FriendList
-       <Link to="/">
+       <Link to="/" className="img">
              <img src="ppp.jpg"/>
        </Link>
      </div>

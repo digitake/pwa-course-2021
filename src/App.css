@@ -12,6 +12,14 @@
 
 }
 
+img {
+  border-radius: 50%;
+  border: 5px solid rgb(238, 32, 32);
+  padding: 3px;
+  height: 100px;
+  width: 100px;
+}
+
 .FriendList-Button {
 
   flex: 1;

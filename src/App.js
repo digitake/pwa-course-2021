@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 function App() {
 
   const [text, setText] = useState("");
-  const [lines, setLines] = useState(["sdad","dasd"]);
+  const [lines, setLines] = useState(["Please Enter Your Massage",""]);
 
   const onChangeHandler = (event) => {
       setText(event.target.value);

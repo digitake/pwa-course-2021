@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Rounter from './Rounter';
+import Router from './Router';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Rounter />
+    <Router />
   </React.StrictMode>,
   document.getElementById('root')
 );

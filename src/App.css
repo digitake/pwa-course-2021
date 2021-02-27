@@ -2,43 +2,13 @@
 
 .App {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  max-width: 500px;
-  height: 100%;
-  margin: auto;
-  background-color: rgb(196, 253, 174);
-
-}
-
-.ChatName-Header{
-margin-top: 7px;
-margin-left: 20px;
-}
-
-.bg{
-  background-color: rgb(49, 49, 49);
-}
-
-img {
-  border-radius: 50%;
-  border: 5px solid rgb(238, 32, 32);
-  padding: 3px;
-}
-
-.ChatHeader {
-
-  flex: 1;
-  height: 100%;
-  vertical-align: text-top;
-  justify-content: left;
-  align-items: stretch;
-  display: flex;
   margin-top: 8px;
   margin-left: 20px;
   margin-right: 25px;
   margin-bottom: -30px;
+
+  background-color: rgb(36, 36, 36);
+
 }
 
 /*@media (max-width: 768px) {
@@ -60,57 +30,61 @@ img {
   flex: 1;
 
 
-  background-color: #7dc2fa;
-
+  background-color: #fd33ec;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  font-size: calc(10px + 2vmin);
-
-  color: rgb(255, 255, 255);
-
+ 
 }
-
 .white-text{
   color: white;
-}
 
-.App-chatroom {
-  flex: 12;
-
-  background-color: rgba(137, 252, 152, 0.342);
-}
-.App-chatroom-text {
-  margin: 8px;
-
-  background-color: rgb(154, 195, 255);
-  color : rgb(49, 49, 49);
-  font-size: 20px;
-}
-
-.App-textbox {
-  flex: 1;
-  
-  background-color: rgb(154, 195, 255);
-
-  justify-content: center;
-  align-items: stretch;
-  display: flex;
-}
-
-.App-textbox-input {
-  flex: 5;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.App-textbox-send {
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
+ flex-direction: column;
   align-items: center;
-  display: flex;
-  cursor: pointer;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
+
+.image-button{
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.image-between{
+  padding: 10px;
+}
+
+.img {
+  border-radius: 50%;
+  border: 5px solid rgb(255, 255, 255);
+  padding: 3px;
+  height: 100px;
+  width: 100px;
+}
+
+.space{
+  flex: .1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 3vmin);
+  color: rgb(255, 255, 255);
+}
+
+.rcorners1 {
+
+  border-radius: 100px;
+  background: #b10000;
+
+  width: 120px;
+  height: 1px;  
+  margin: 0;
+  
+ 
+
+  width: 100%;
+  border-collapse: collapse;
+  border: 0px solid black;
+
+}
+

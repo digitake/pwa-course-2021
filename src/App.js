@@ -1,11 +1,10 @@
 import './App.css';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function App() {
 
 const [text , setText] = useState("");
-
 const [Lines, SetLine] = useState([]);
 
 const onTextChange = (event) =>{
@@ -17,41 +16,26 @@ const onSend = () => {
   setText("");
 }
 
-const keyPress = (event) => {
-  if (event.which === 13){
+const keyPress =(event) =>{
+  if(event.while ===13){
     onSend();
   }
-};
+}
 
   return (
-    
-    <div className="App">
-      
-      <div className="App-header white-text">
-        
-        <div className="ChatHeader">
-          <Link to="/friend-list">
-           <button>
-             FriendList
-           </button>
-          </Link>
-          <div className= "ChatName-Header">
-            UsersName
-          </div>
-        </div>
 
-        
+    <div className="App">
+      <div className="App-header">
+        Welcome to my App
       </div>
       
 
       <div className="App-chatroom">
         {
-
           Lines.map(x => {
             return <div className="App-chatroom-text">
                     {x}
                    </div>
-
           })
         }
       </div>
@@ -61,8 +45,16 @@ const keyPress = (event) => {
         value={text} onChange={onTextChange} onKeyPress={keyPress}/>
         
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
-
       </div>
+
+        <div>
+        <Link to="/friend-list">
+                <button>
+                    Go Chatroom
+                </button>
+        </Link>
+        </div>
+
     </div>
   );
 }

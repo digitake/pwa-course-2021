@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function App() {
   const [text, setText] = useState("");
@@ -20,7 +21,11 @@ function App() {
     <div className="App">
       <div className="App-header">
       <div className="App-Text">
-          KasiditR
+            <Link to = "/friend-list">
+                <button>
+                  KasiditR
+                </button>
+            </Link>
         </div>
       </div>
       <div className="App-chatroom">

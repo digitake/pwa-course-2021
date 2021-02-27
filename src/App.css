@@ -1,4 +1,5 @@
 .App {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,89 +7,18 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
-}
-@media (min-width: 500px){
-  .App{
-    max-width:100%;
-    background-image: url(funny-cat.jpeg);
-    background-position:top center;
-    background-size: 1000px;
-    background-repeat: no-repeat;
-  }
-  .App-header {
-    flex: 1;
-    background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: rgb(255, 255, 255);
-  }
-  .App-chatroom-text {
-    margin: 8px;
-    background-color: rgb(77, 77, 77);
-    color : rgb(255, 255, 255);
-    font-size: 20px;
-  }
-}
-@media (min-width: 1000px){
-  .App{
-    max-width:100%;
-    background-image: url(cat-2.jpg);
-    background-position:top center;
-    background-size: 1500px;
-    background-repeat: no-repeat;
-  }
-  .App-header {
-    flex: 1;
-    background-color: #ffee00;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: rgb(0, 0, 0);
-  }
-  .App-chatroom-text {
-    margin: 8px;
-    background-color: rgb(77, 77, 77);
-    color : rgb(255, 255, 255);
-    font-size: 30px;
-  }
-}
-@media (min-width: 1500px){
-  .App{
-    max-width:100%;
-    background-image: url(cat-3.jpg);
-    background-position:top center;
-    background-size: 2000px;
-    background-repeat: no-repeat;
-  }
-  .App-header {
-    flex: 1;
-    background-color: #0ac76f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: rgb(255, 255, 255);
-  }
-  .App-chatroom-text {
-    margin: 8px;
-    background-color: rgb(77, 77, 77);
-    color : rgb(255, 255, 255);
-    font-size: 40px;
-  }
+
 }
 
-.App-logo {
+
+.App-logo
+ {
   height: 40vmin;
-  pointer-events: none;
-}
-
-/*.App-header {
+  pointer-events : none;
+ }
+@media (max-width : 300px)
+{
+.App-header {
   flex: 1;
   background-color: #0ac76f;
   display: flex;
@@ -97,15 +27,39 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 255, 255);
-}*/
+}
+}
+
+@media (min-width : 301px)
+{
+.App-header {
+  flex: 1;
+  background-color: #e71010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+}}
 
 .App-chatroom {
+  
+  flex: 12
+  ;
+  background-color: rgba(255, 101, 247, 0.418);
+  background-image: url(111.png);
+  background-size: 100%;
+
   flex: 12;
   background-color: rgba(179, 178, 178, 0.418);
-  background-size: 500px;
-  background-repeat: no-repeat;
-  background-position:  center;
-  
+  background-image: url(funny-cat.jpeg);
+  background-size: 600px;
+
+
+
+
+
 }
 
 /*.App-chatroom-text {
@@ -137,3 +91,21 @@
   align-items: center;
   display: flex;
 }
+@media (min-width : 600px)
+{.App{max-width: 100%;}
+   .App-chatroom
+   {
+  background-color: rgba(255, 101, 247, 0.418);
+  background-image: url(111.png);
+  background-size: 100%;
+background-repeat:  no-repeat;
+background-position:center ;
+
+   }
+  
+}
+
+.link-button
+{
+  
+   color: cornsilk;}

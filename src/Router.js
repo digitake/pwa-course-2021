@@ -1,17 +1,19 @@
-import {BrowserRouter,Switch,Route} from 'react-router-dom';
-import  App  from "./App";
-function Router ()
-{
-    return(
 
-        <BrowserRouter>
-        <Switch>
-          <Route path="/">
-            <App/>
-          </Route>)
+import {BrowserRouter,Switch,Route} from 'react-router-dom';
+import App from './App';
+import FriendList from './friendList'
+function  Router() {
+    return(
+       <BrowserRouter>
+          <Switch>
+              <Route path="/friend-list">
+                  <FriendList/>
+              </Route>
+              <Route path="/">
+                  <App/>
+              </Route>
           </Switch>
-          </BrowserRouter>
-          
-          )
- };
+       </BrowserRouter>
+    )
+};
 export default Router;

@@ -1,4 +1,4 @@
-import {RouterBrowser,Switch,Route, BrowserRouter} from 'react-router-dom';
+import {RouterBrowser,Switch,Route} from 'react-router-dom';
 import App from './App';
 
 function Router () {

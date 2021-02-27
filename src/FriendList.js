@@ -4,16 +4,13 @@ import './App.css';
 function FriendList() {
  return(
      <div className = "App bg">
-      
-        
-         FriendList
-         <Link to="/" className="img">
-             <img src="ppp.jpg" alt="ppp.jpg"/>
+
+         <Link to="/">
+             <img src="ppp.jpg" alt="ppp.jpg" width="100px" height="100px"/>
          </Link>
-       
      </div>
  );
-    
+
 };
 
 export default FriendList;

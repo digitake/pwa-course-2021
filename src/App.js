@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';import Login from './Login';
+import Profile from './Register';
 import './App.css';
 import { useState } from 'react';
 import LinkTo from './Components/LinkManager';
@@ -47,6 +49,13 @@ function App() {
         <input placeholder='Type something...' type="text" className="App-textbox-input" value={text} onKeyPress={onKeyPress} onChange={onTextChange} />
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
+        <div>
+            <Link to="/Register">
+        <button>
+            Go to Register
+        </button>
+        </Link>
+        </div>
     </div>
   );
 }

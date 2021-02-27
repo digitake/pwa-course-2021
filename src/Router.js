@@ -1,21 +1,25 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
-import FriendList from './FriendList';
 import Feed from './Feed';
 import Settings from './Settings';
+import InsepectProfile from './InsepectProfile';
+import ProfileSetting from './ProfileSetting';
 
 function Router() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path='/friend-list'>
-                    <FriendList />
-                </Route>
                 <Route path='/feed'>
                     <Feed />
                 </Route>
                 <Route path='/settings'>
                     <Settings />
+                </Route>
+                <Route path="/insepect-profile">
+                    <InsepectProfile />
+                </Route>
+                <Route path="/profile-setting">
+                    <ProfileSetting />
                 </Route>
                 <Route path='/'>
                     <App />

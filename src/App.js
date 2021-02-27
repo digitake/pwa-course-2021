@@ -27,6 +27,8 @@ function App() {
       <div className="App-navigator">
         <LinkTo value='Feed' to='/feed' />
         <LinkTo value='Settings' to='/settings' />
+        <LinkTo value='Profile Setting' to='/profile-setting' />
+        <LinkTo value='Insepect Profile' to='/insepect-profile' />
       </div>
       <div className="App-header">
         Neptune Chat

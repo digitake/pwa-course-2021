@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-<<<<<<< HEAD
-=======
-import Router from './Router';
->>>>>>> 4a71a42d6e53fe7bf3a6ce6f2ec1c7c308d3c876
 import reportWebVitals from './reportWebVitals';
 import Router from './Router';
 

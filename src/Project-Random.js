@@ -44,9 +44,9 @@ function ProjectMain(){
                    <img src= "profile.png" alt = "profile.png" width="100px" height="100px"/> 
             </Link>
             
-            <Link to="/" className="image-between">
-                <img src= "friend list.png" alt = "profile.png" width="100px" height="100px"/> 
-            </Link>
+            <Link to="/AllChat" className="image-between">
+                 <img src= "friend list.png" alt = "profile.png" width="100px" height="100px"/> 
+             </Link>
 
             <Link to="/" className="image-between">
                 <img src= "dice.png" alt = "profile.png" width="100px" height="100px"/> 

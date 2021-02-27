@@ -3,10 +3,27 @@
   flex-direction: column;
   justify-content: right;
   text-align: right;
-  max-width: 400px;
+  max-width: 600px;
   height: 100%;
   margin: auto;
 }
+
+@media(max-width:1000px){
+  .App{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(shiba.png);
+}
+}
+@media(min-width:1001px)and (max-width:1920px){
+  .App{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(download.jpg);
+    background-repeat: repeat ;
+}
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -27,7 +44,6 @@
 .App-chatroom {
   flex: 12;
   background-color: rgba(199, 198, 198, 0.418);
-  background-image: url(shiba.png);
 }
 
 .App-chatroom-text {

@@ -95,5 +95,8 @@
     font-weight: normal;
   }
   
+  .App-navigator{
+    align-self: center;
+  }
 
 }

@@ -24,7 +24,10 @@ function App() {
 
   return (
     <div className="App">
-      <LinkTo value='FriendList' to='/friend-list' />
+      <div className="App-navigator">
+        <LinkTo value='Feed' to='/feed' />
+        <LinkTo value='Settings' to='/settings' />
+      </div>
       <div className="App-header">
         Neptune Chat
       </div>

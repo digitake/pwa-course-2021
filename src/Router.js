@@ -1,22 +1,21 @@
-/**ดึงส่นประกอบจำเป็นมาใช่งานเพื่อสร้าง Component สำหรับ Router */
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import App from './App';
-import FriendList from './FriendList'
+import FriendList from './FriendList';
 
-/** สร้าง Component */
-function Router() {
+function Router()
+{
     return (
-    <BrowserRouter>
+     <BrowserRouter>
         <Switch>
-            <Route path="/friend-list">
+            <Route path = "/friend-list">
                 <FriendList />
-            </Route> 
-            <Route path="/">
+            </Route>
+            <Route path = "/">
                 <App />
             </Route>
         </Switch>
-    </BrowserRouter>
+     </BrowserRouter>
     );
 };
 
-export default Router; /** ส่ง Component ออกไปให้โลกได้ใช้งาน */
+export default Router;

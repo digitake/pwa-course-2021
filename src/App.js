@@ -22,7 +22,15 @@ const onSend = (event) =>{
 }
   return (
     <div className="App">
-      <div className="App-header">
+      <div className="App-header App-logo ">
+        
+      </div>
+      <div className ="App-BackButton">
+         <Link to = "/friend-list">
+            <button>
+              Friends
+            </button>  
+         </Link>
       </div>
       <div className="App-chatroom">
         {
@@ -33,15 +41,10 @@ const onSend = (event) =>{
           })
         }
       </div>
-        <div Link to="/friend-list">
-         <Link to="/friend-list">
-               <img src="07_1.png"/> 
-         </Link>
-       </div>
-      <div className="App-textbox">
+      <div className="App-textbox ">
         <input type="text" className="App-textbox-input" value ={text} onChange= {onTextChange}/>
 
-        <div className="App-textbox-send" onClick ={onSend}>Send!</div>
+        <div className="App-textbox-send " onClick ={onSend}>Send!</div>
 
       </div>
     </div>

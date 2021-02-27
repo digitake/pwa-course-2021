@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';import Login from './Login';
+import Profile from './Register';
 import './App.css';
 import {useState} from 'react';
 
@@ -38,6 +40,13 @@ function App() {
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
         <div className="App-textbox-send" onClick={onSend}>Send</div>
       </div>
+        <div>
+            <Link to="/Register">
+        <button>
+            Go to Register
+        </button>
+        </Link>
+        </div>
     </div>
   );
 }

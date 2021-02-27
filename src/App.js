@@ -1,7 +1,7 @@
 
 import './App.css';
-import{useState}from 'react';
-import { Link } from 'react-router-dom';
+import{useState}from 'react'
+import {Link} from 'react-router-dom';
 
 
 function App() 
@@ -22,12 +22,14 @@ const onSend = (event) =>{
 }
   return (
     <div className="App">
-      <div className ="App-BackButton">
-        <Link to="/friend-list">
-          <button>
-            <img src="back.jpg"/>
-          </button>
-        </Link>  
+      <div className="App-header App-logo ">
+      </div>
+      <div className="Friend-button">
+             <Link to = "/friend-list">
+               <button>
+                 Friends
+               </button>
+             </Link>
       </div>
       <div className="App-header App-logo">
       </div>
@@ -49,7 +51,7 @@ const onSend = (event) =>{
 
       </div>
     </div>
-  );
+    );
 }
 
 

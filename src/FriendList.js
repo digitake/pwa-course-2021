@@ -1,16 +1,13 @@
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function FriendList() {
-    return(
+    return (
         <div>
-            FriendList
-            <Link to="/">
-                <button>
-                    GoChatRoom
-                </button>
-            </Link>     
-        </div>
-        
+            Friend list
+            <Link to ="/">
+                <img src ="lel.jpg"/>
+            </Link>
+            </div>
     );
 };
 

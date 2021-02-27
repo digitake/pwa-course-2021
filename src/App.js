@@ -1,6 +1,7 @@
 
 import './App.css';
 import{useState}from 'react'
+import { Link } from 'react-router-dom';
 
 
 function App() 
@@ -31,8 +32,12 @@ const onSend = (event) =>{
         </div>
           })
         }
-    
       </div>
+        <div Link to="/friend-list">
+         <Link to="/friend-list">
+               <img src="07_1.png"/> 
+         </Link>
+       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" value ={text} onChange= {onTextChange}/>
 

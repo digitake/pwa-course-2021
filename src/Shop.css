@@ -31,12 +31,25 @@
     }
   }
 
-.shop-header {
+    .shop-money {
+    width: 150px;
+    height: 30px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    background-color: white;
     padding: 10px;
+    position: absolute;
+    left: 130px;
+    top: 15px;
+    font-size: 30px;
+  }
+
+.shop-header {
+    padding: 5px;
     text-align: left;
     background: #0000005d;
     color: white;
-    font-size: 10px;
+    font-size: 1px;
   }
   
   .shop-center {

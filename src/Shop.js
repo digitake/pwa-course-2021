@@ -27,6 +27,12 @@ function Shop() {
                     <img src={backButton}></img>
                   </Link>
                 </div>
+
+                <div class="shop-header">
+                    <div class="shop-money">
+                    
+                    </div>  
+                </div>
             </div>
         </div>
             

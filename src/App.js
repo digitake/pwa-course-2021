@@ -24,10 +24,10 @@ const onSend = (event) =>{
     <div className="App">
       <div className="App-header App-logo ">
       </div>
-      <div className="FriendButton">
+      <div className="Friend-button">
              <Link to = "/friend-list">
                <button>
-                 Friend
+                 Friends
                </button>
              </Link>
       </div>

@@ -1,5 +1,6 @@
 import { BrowserRouter , Switch, Route } from 'react-router-dom' ;
 import App from './App';
+import FriendList from './FriendList';
 
 function Router(){
 
@@ -7,7 +8,14 @@ function Router(){
         <BrowserRouter>
         <Switch>
             
+            <Route path="/FriendList">
+
+                <FriendList />
+                
+            </Route>
+
             <Route path="/">
+
             <App/>
 
             </Route>

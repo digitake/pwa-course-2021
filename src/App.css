@@ -12,6 +12,16 @@
 
 }
 
+.FriendList-Button {
+
+   flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .App {
     max-width: 95%;
@@ -43,7 +53,7 @@
 
 }
 
-.pink-text{
+.white-text{
   color: white;
 }
 

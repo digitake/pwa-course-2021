@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function App() {
 
@@ -23,9 +24,17 @@ const keyPress = (event) => {
 };
 
   return (
+    
     <div className="App">
-      <div className="App-header pink-text">
-        UsersName
+      <div className="App-header white-text">
+        
+      <div className="FriendList-Button">
+          <Link to="/friend-list">
+           <button>
+             FriendList
+           </button>
+          </Link></div>
+       UsersName
       </div>
       <div className="App-chatroom">
         {

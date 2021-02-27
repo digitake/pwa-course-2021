@@ -12,13 +12,6 @@
   .App {
     max-width:90%;
   }
-  .HeadFunction{
-  background-position:left 200%;
-  background-position:right 5%;
-  background-position:top 1%;
-  background-position:bottom 93.62%;
-  background-size: 8px;
-  }
 }
 @media (min-width: 950px) {
   .App {

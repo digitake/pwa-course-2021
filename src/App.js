@@ -21,6 +21,9 @@ const onSend = (event) =>{
 }
   return (
     <div className="App">
+      <div className="App-header App-logo ">
+
+      </div>
       <div className="Friend-button">
              <Link to = "/friend-list">
                <button>
@@ -28,10 +31,6 @@ const onSend = (event) =>{
                </button>
              </Link>
       </div>
-      <div className="App-header App-logo ">
-
-      </div>
-      
       <div className="App-chatroom">
         {
           lines.map(x =>{

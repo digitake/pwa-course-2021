@@ -3,28 +3,28 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
+  max-width: 414px;
   height: 100%;
   margin: auto;
-  background-image: url(Games.jpg);
-  background-size: 600px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 @media (min-width: 700px) {
   .App {
     max-width:90%;
-    background-color: rgb(230, 233, 35);
+  }
+  .HeadFunction{
+  background-position:left 200%;
+  background-position:right 5%;
+  background-position:top 1%;
+  background-position:bottom 93.62%;
+  background-size: 8px;
   }
 }
 @media (min-width: 950px) {
   .App {
     max-width:100%;
-    background-color: rgb(35, 203, 233);
   }
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -39,26 +39,24 @@
   justify-content: center;
   color: rgb(0, 0, 0);
 }
-.App-chatroom {
-  flex: 12;
-  background-color: rgba(217, 231, 252, 0.418);
 
+.App-chatroom 
+{
+  flex: 12;
+  background-color:#2D2C67
 }
 
-.App-chatroom-text {
+.App-chatroom-text 
+{
   margin: 8px;
-
+  
   background-color: rgb(144, 218, 101);
-
   color : rgb(48, 100, 100);
   font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
-
-  background-color: rgb(252, 8, 0);
-
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -68,13 +66,30 @@
   flex: 5;
   height: 100%;
   box-sizing: border-box;
+  image-rendering: auto;
 }
 
 .App-textbox-send {
   flex: 1;
   height: 100%;
+  background-color: rgb(252, 8, 0);
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 5px;
   vertical-align: middle;
   justify-content: center;
   align-items: center;
   display: flex;
+}
+.btn {
+  background-color: DodgerBlue;
+  grid: flex;
+  border: none; 
+  color: white;
+  padding: 8px 5px; /* Some padding */
+  font-size: 15px; /* Set a font size */ 
+}
+.btn:hover{
+  color:RoyalBlue;
 }

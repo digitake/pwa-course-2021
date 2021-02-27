@@ -1,10 +1,17 @@
-import { BrowserRoute, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import App from './App';
 
 function Router() {
 
-    return {
+    return (
         <BrowserRouter>
-        
+        <Switch>
+            <Route path="/">
+            <App />
+            </Route>
+        </Switch>
         </BrowserRouter>
-    }
-}
+    )
+};
+
+export default Router;

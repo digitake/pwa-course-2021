@@ -23,10 +23,10 @@ function App() {
         Chatroom
       </div>
       <Link to="/friend-list">
-                <button>
-                    FriendList
-                </button>
-            </Link>
+        <button>
+        FriendList
+        </button>
+      </Link>
       <div className="App-chatroom">
       {
         lines.map(x =>{

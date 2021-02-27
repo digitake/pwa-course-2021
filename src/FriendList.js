@@ -5,9 +5,7 @@ function FriendList() {
      <div>
        FriendList
        <Link to="/">
-           <button>
-             Go Chatroom
-           </button>
+             <img src="ppp.jpg"/>
        </Link>
      </div>
  );

@@ -21,12 +21,12 @@ function App() {
     <div className="App">
       <div className="App-header">
       </div>
+
       <div className="App-chatroom">
         <div className="App-chatroom-text">
           
         </div>
         <div className="App-chatroom-text">
-          
         </div>
         {
           lines.map((value, index) => {

@@ -1,7 +1,7 @@
 
 import './App.css';
 import{useState}from 'react'
-
+import {Link} from 'react-router-dom';
 
 function App() 
 {
@@ -21,8 +21,14 @@ const onSend = (event) =>{
 }
   return (
     <div className="App">
+      <div className="Friend-button">
+             <Link to = "/friend-list">
+               <button>
+                 Friends
+               </button>
+             </Link>
+      </div>
       <div className="App-header App-logo ">
-        
       </div>
       <div className="App-chatroom">
         {

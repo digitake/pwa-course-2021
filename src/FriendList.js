@@ -5,7 +5,9 @@ function FriendList(){
         <div>
             Friend List
             <Link to="/">
-                <img src = "logoNetflix.png"/>
+              <button>
+                  Back
+               </button>
             </Link>
         </div>
     );

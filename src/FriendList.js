@@ -1,13 +1,12 @@
-import {Link}  from "react-router-dom";
-import './FriendList.css';
-import  nepture  from "./FriendList.jpg";
-function FriendList(){
-    return(
+import LinkTo from './Components/LinkManager'
+
+function FriendList() {
+    return (
         <div>
-            <Link to = "/chat-room">
-                <img src={nepture} alt="Nepture"/>
-            </Link>
+            <LinkTo value="home" to="/" />
+            <h1>FriendList</h1>
         </div>
-    )
-};
+    );
+}
+
 export default FriendList;

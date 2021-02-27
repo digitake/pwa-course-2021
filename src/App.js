@@ -1,47 +1,46 @@
 import './App.css';
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from 'react';
+import LinkTo from './Components/LinkManager';
 
 function App() {
-  const [text, setText] = useState("");
+
+  const [text, setText] = useState('');
   const [lines, setLines] = useState([]);
-  const onTextChange = (event)=>{
-    setText(event.target.value);
-  };
-  const onSend = () =>{
+
+  const onSend = () => {
     setLines([...lines, text]);
     setText("");
+  }
+
+  const onTextChange = (event) => {
+    setText(event.target.value);
   };
-  const keyPress = (event)=>{
-    if(event.which === 13 ){
+
+  const onKeyPress = (event) => {
+    if (event.which === 13) {
       onSend();
     }
   }
+
   return (
     <div className="App">
+      <LinkTo value='FriendList' to='/friend-list' />
       <div className="App-header">
-      <div className="App-Text">
-            <Link to = "/friend-list">
-                <button>
-                  KasiditR
-                </button>
-            </Link>
-        </div>
+        Neptune Chat
       </div>
       <div className="App-chatroom">
-        <div className="App-chatroom-text">
-         { lines.map(x =>{
-            return <div className="App-chatroom-text">
-              {x}
+        {
+          lines.map(msg => {
+            return <div key={msg} className="App-chatroom-text">
+              {msg}
             </div>
           })
         }
-        </div>
+
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input" 
-        value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        <div className="App-textbox-send" onClick={onSend} >Send!</div>
+        <input placeholder='Type something...' type="text" className="App-textbox-input" value={text} onKeyPress={onKeyPress} onChange={onTextChange} />
+        <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
     </div>
   );

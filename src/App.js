@@ -26,7 +26,7 @@ const keyPress =(event) =>{
 
     <div className="App">
       <div className="App-header">
-        Welcome to my App
+        Welcome to My App
       </div>
       <div className="App-chatroom">
         {
@@ -51,6 +51,14 @@ const keyPress =(event) =>{
                     Go Chatroom
                 </button>
         </Link>
+
+        <Link to="/AllChat">
+                <button>
+                    Go All-Chat
+                </button>
+        </Link>
+
+
         </div>
 
     </div>

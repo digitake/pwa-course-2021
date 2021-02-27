@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-
+import {Link} from 'react-router-dom'
 
 function App() {
 
@@ -21,7 +21,14 @@ function App() {
     <div className="App">
       <div className="App-header">
       </div>
-
+      <div>
+         <Link to = "/Friend-List" >
+         <button>
+           Go FriendList
+         </button>
+      </Link>
+      </div>
+     
       <div className="App-chatroom">
         <div className="App-chatroom-text">
           

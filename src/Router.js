@@ -6,9 +6,9 @@ function Router() {
     return(
         <BrowserRouter>
           <Switch>
-              <Router path = "/">
+              <Route path = "/">
                 <App />
-              </Router>
+              </Route>
           </Switch>
         </BrowserRouter>
     )

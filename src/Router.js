@@ -1,5 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
+import Register from './Register';
+import Login from './Login';
 import Feed from './Feed';
 import Settings from './Settings';
 import InsepectProfile from './InsepectProfile';
@@ -9,6 +11,12 @@ function Router() {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path="/register">
+                    <Register />
+                </Route>
+                <Route path="/login">
+                    <Login />
+                </Route>
                 <Route path='/feed'>
                     <Feed />
                 </Route>

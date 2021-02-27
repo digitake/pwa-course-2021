@@ -27,6 +27,8 @@ function App() {
   return (
     <div className="App">
       <div className="App-navigator">
+        <LinkTo value='Register' to='/register' />
+        <LinkTo value='Login' to='/login' />
         <LinkTo value='Feed' to='/feed' />
         <LinkTo value='Settings' to='/settings' />
         <LinkTo value='Profile Setting' to='/profile-setting' />

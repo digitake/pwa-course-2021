@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import prosetting from './desgin/Profile Setting (Light Mode).jpg'
+import prosetting from './Design/Profile Setting (Light Mode).jpg'
 
 function ProfileSetting(){
     return(

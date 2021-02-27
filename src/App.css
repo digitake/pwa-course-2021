@@ -66,12 +66,12 @@
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: #E9E87F;
+  background-color: #e9e77f00;
 }
 
 .App-textbox {
   flex: 1;
-  background-color:#FECC48;
+  background-color:#fecd48;
   justify-content: center;
   align-items: stretch;
   display: flex;

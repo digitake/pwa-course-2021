@@ -1,11 +1,12 @@
 import './App.css';
 import {useState} from 'react';
+import {Link} from 'react-router-dom';
 
 function App() {
 
   const [text,setText] = useState("");
 
-  const[lines,setlines] = useState(["msg1","msg2","msg3"]);
+  const[lines,setlines] = useState(["App chatroom"]);
 
   const onTextChange = (event) => {setText(event.target.value);};
 
@@ -17,6 +18,11 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+      <Link to="/friend-list" className="my-button">
+                <button>
+                    Go Friend-list
+                </button>
+            </Link>
       </div>
       <div className="App-chatroom">
         {
@@ -28,7 +34,11 @@ function App() {
       }
        
         <div className="App-chatroom-text">
-          
+        <Link to="/support-list" className="my-button">
+                <button>
+                    Go support-list
+                </button>
+            </Link>
           {text}
         </div>
         <div className="App-chatroom-text">

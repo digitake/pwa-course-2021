@@ -31,8 +31,13 @@ function App() {
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" 
+<<<<<<< HEAD
         value={text} onChange={onTextChange}onKeyPress={keyPress}/>
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
+=======
+        value = {text} onChange= {onTextChange} onKeyPress={keypress}/>
+        <div className="App-textbox-send"onClick={onSend}>Pow!</div>
+>>>>>>> 3c35731c9e5198a828f564d987929f81e6d5989b
       </div>
     </div>
   );

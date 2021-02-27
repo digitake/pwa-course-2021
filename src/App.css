@@ -20,7 +20,7 @@
   }
 }
 
-/*@media (max-width: 1024px){
+@media (max-width: 1024px){
   .App{
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +28,7 @@
     background-size: 125%;
     background-color: rgb(29, 29, 29);
   }
-}*/
+}
 
 .App-logo {
   height: 40vmin;
@@ -50,7 +50,7 @@
   flex: 12;
   /*background-color: rgba(198, 198, 199, 1.0);*/
 
-  background-image: url(girl_kitten_flower_141058_1920x1080.jpg);
+  /*background-image: url(wall.jpg);*/
 
 }
 

@@ -3,7 +3,9 @@ import {Link} from 'react-router-dom';
 function FriendList() {
     return (
         <div>
-            Friend list
+           <div className="App-header App-logo ">
+        
+           </div>
             <Link to ="/">
                <button>
                  Black

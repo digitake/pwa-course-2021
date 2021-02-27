@@ -2,7 +2,7 @@
 function  ChatRoom() {
     return (
         <div>
-            Chat Room
+            Gm Room bra bra
         </div>
     );  
 };

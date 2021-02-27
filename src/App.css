@@ -10,9 +10,22 @@
 @media (min-width: 768px) {
 
   .App {
-    background-image: url(coo.jpg);
+    background-image: url(shiori.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    
+  }
+
+}
+@media (max-width: 768px) {
+
+  .App {
+    background-image: url(shiori.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
   }
 
 }
@@ -24,44 +37,17 @@
 
 .App-header {
   flex: 1;
-<<<<<<< HEAD
-  background-color: 
-  
-  
-  5c8fd1;
-  background-image:url("Picture/Head-Title.jpg");
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  justify-content:center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(255, 219, 225);
-=======
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(0, 0, 0);
->>>>>>> 0e288e4226d73217af9418f2059f16c9cf3f2dc2
+  color: rgb(228, 129, 248);
+  font-size: 35px;
+  background-color: rgba(142, 120, 221, 0.507);
 }
 
 .App-chatroom {
   flex: 12;
-<<<<<<< HEAD
-  background-image: url("Picture/elena.jpg");
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: screen;
-}
-
-.App-chatroom-text {
-  margin: 50px;
-  background-color: rgb(40, 4, 41);
-  background-clip:content-box;
-  font-size: calc(3px + 2vmin);
-  
-  color: rgb(255, 255, 255);
-=======
 
   background-color: rgba(170, 158, 212, 0.418);
   background-image: url();
@@ -71,27 +57,21 @@
 .App-chatroom-text {
   margin: 8px;
 
-  background-color: rgb(206, 87, 87);
+  background-color: rgba(192, 99, 99, 0.596);
 
-  color : rgb(48, 100, 100);
+  color : rgb(212, 231, 231);
   font-size: 20px;
->>>>>>> 0e288e4226d73217af9418f2059f16c9cf3f2dc2
 }
 
 .App-textbox {
   flex: 1;
 
-<<<<<<< HEAD
-  background-color: rgb(128, 213, 252);
-  background-image: url(Picture/Send-Button.jpg);
-=======
-  background-color: rgb(255, 0, 0);
->>>>>>> 0e288e4226d73217af9418f2059f16c9cf3f2dc2
+  background-color: rgba(255, 0, 0, 0);
 
   justify-content: center;
   align-items: stretch;
   display: flex;
-  color: aliceblue;
+  color : rgb(212, 231, 231);
 
 }
 
@@ -99,7 +79,7 @@
   flex: 4;
   height: 100%;
   box-sizing: border-box;
-  background-color: rgb(47, 15, 51);
+  background-color: rgba(55, 19, 59, 0.774);
   color: aliceblue;
 }
 
@@ -110,10 +90,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
-<<<<<<< HEAD
-  color: aliceblue;
-
-=======
+  background-color: rgb(55, 19, 59);
 }
 
 .col-1 {width: 8.33%;}
@@ -134,5 +111,4 @@
   [class*="col-"] {
     width: 100%;
   }
->>>>>>> 0e288e4226d73217af9418f2059f16c9cf3f2dc2
 }

@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const[text, setText] = useState("");
 
-  const [lines, setLines] = useState(["Hello KumFile", "How are you?", "Right now I stay at capital city", "I relexed from my traveling", "I will Say Hi again later!!!!!!jajaja hahaha hahah"]);
+  const [lines, setLines] = useState(["Hello Gooky",]);
 
 
   const onTextChange = (event) => {
@@ -18,7 +18,8 @@ function App() {
 
   return (
     <div className="App">
-        
+      <div className= "App-header">
+        Shiorin
       </div>
       <div className="App-chatroom">
         {
@@ -33,7 +34,7 @@ function App() {
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" value = {text} onChange ={onTextChange}/>
-        <div className="App-textbox-send" onClick = {onSend}></div>
+        <div className="App-textbox-send" onClick = {onSend}>Send</div>
       </div>
     </div>
   );

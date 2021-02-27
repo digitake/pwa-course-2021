@@ -1,6 +1,7 @@
 
 import './App.css';
 import{useState}from 'react'
+import { Link } from 'react-router-dom';
 
 
 function App() 
@@ -24,6 +25,13 @@ const onSend = (event) =>{
       <div className="App-header App-logo ">
         
       </div>
+      <div className ="App-BackButton">
+         <Link to = "/friend-list">
+            <button>
+              Friends
+            </button>  
+         </Link>
+      </div>
       <div className="App-chatroom">
         {
           lines.map(x =>{
@@ -32,11 +40,6 @@ const onSend = (event) =>{
         </div>
           })
         }
-      </div>
-      <div Link to ="/friend-list">
-            <Link to="/friend-list">
-                <img src ="mam"/>
-            </Link>
       </div>
       <div className="App-textbox ">
         <input type="text" className="App-textbox-input" value ={text} onChange= {onTextChange}/>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import './App.css';
 import {useState} from 'react';
 import{Link} from 'react-router-dom'
@@ -41,8 +42,20 @@ function App() {
           return <div className="App-chatroom-text">
                   {x}
                   </div>
-          })
-          }
+
+
+                        }
+                    )
+                    
+          }  
+           <Link to = "/friend-list">
+    <div className = "link-button">
+             
+                 Go To Chatroom
+                 </div> 
+                 </Link>
+                 
+              
         </div>
 
       </div>

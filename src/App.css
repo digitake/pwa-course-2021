@@ -5,16 +5,16 @@
   text-align: center;
   height: 100%;
   margin: auto;
+  background-image: url(coo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-@media (min-width: 768px) {
-
+@media (max-width: 768px) {
   .App {
-    background-image: url(coo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    
+    background-color: red;
   }
-
 }
 
 .App-logo {

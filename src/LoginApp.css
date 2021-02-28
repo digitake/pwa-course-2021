@@ -1,7 +1,6 @@
  .LoginApp {
 /* LogoApplication */
 
-
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -12,12 +11,20 @@ height: 896px;
 margin: auto;
 
 
-background-color: url(LogIn.png) ;
+background-image: url(/src/AppchatUpdate/LogoApplication.png);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 background-position: center ;
-background-size: 50%;
+background-size: 100%;
 background-repeat: no-repeat;
 
 }
+
+@media (min-width : 1080px){
+    .App{
+      width: 95%;
+      background-color: #98ff98;
+    }
+  }
 
 
 

@@ -6,8 +6,7 @@ function App() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
-const [text , setText] = useState("");
-const [Lines, SetLine] = useState([]);
+
 
   const keyPress = (event) => {
     if (event.which === 13){
@@ -20,11 +19,7 @@ const onSend = () => {
   setText("");
 }
 
-const keyPress =(event) =>{
-  if(event.while ===13){
-    onSend();
-  }
-}
+
 
   return (
 

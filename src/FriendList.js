@@ -23,7 +23,28 @@ function  FriendList() {
             <button>
              Go to Chatroom
              </button>
-            </Link>
+          </Link>
+          <Link to="/home">
+            <button>
+             Go to home
+             </button>
+          </Link>
+          <Link to="/doc-work">
+            <button>
+             Go to Document Work
+             </button>
+          </Link>
+          <Link to="/photo-list">
+            <button>
+             Go to Photo-List
+             </button>
+          </Link>
+          <Link to="/cradit">
+            <button>
+             Go to cradit
+            </button>
+          </Link>
+            
         </div>
       </div>
         

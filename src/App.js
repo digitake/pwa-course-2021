@@ -20,13 +20,12 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+         Group Box Chat
       </div>
-
-      <div>
-      <Link to = "/">
-      <button>
-        Go LoginApp
-      </button>
+      
+      <div className = "AppUndo">
+      <Link to = "/HomePage">
+        <img src = "Union(1).png" alt = "" /> 
       </Link>
       </div>
      

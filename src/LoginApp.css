@@ -1,0 +1,23 @@
+ .LoginApp {
+/* LogoApplication */
+
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+position: relative;
+width: 414px;
+height: 896px;
+margin: auto;
+
+
+background-color: url(LogIn.png) ;
+background-position: center ;
+background-size: 50%;
+background-repeat: no-repeat;
+
+}
+
+
+

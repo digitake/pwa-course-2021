@@ -6,7 +6,8 @@ function LoginApp(){
         <div className = "LogoApp">
             
             <div className = "AppLogin">
-                <Link to = '/Chat-Room'>
+
+                <Link to = '/LoginPage'>
                     <img src="ButtonLogin.png"  alt = "" />
                     
                 </Link>

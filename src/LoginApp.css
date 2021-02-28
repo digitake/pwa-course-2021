@@ -29,5 +29,19 @@ left: 226px;
 top: 770px;
 }
 
+.Login{
+position: relative;
+width: 414px;
+height: 896px;
+margin: auto;
+background-image: url(/src/AppchatUpdate/Log\ In.png);
+}
 
+.Undo{
+position: absolute;
+width: 28.54px;
+height: 23.84px;
+left: 14px;
+top: 58px;
 
+}

@@ -23,13 +23,7 @@ function App() {
       </div>
 
       <div>
-         <Link to = "/Friend-List" >
-         <button>
-           Go FriendList
-         </button>
-      </Link>
-
-      <Link to = "/Login-App">
+      <Link to = "/">
       <button>
         Go LoginApp
       </button>

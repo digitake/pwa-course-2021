@@ -5,13 +5,14 @@ import {Link} from 'react-router-dom'
 function Register(){
     return(
     <div >
-        <div>
-        Friend List
-        <Link to = "/Chatt-Room">
+        <div className = "AppRegister">
+    
+        <Link to = "/">
         <button>
             Go ChatRoom
         </button>
         </Link>
+
 
         </div>
     </div>

@@ -13,7 +13,7 @@ function LoginApp(){
                 </Link>
             </div>
             <div className = "AppRegister">
-                <Link>
+                <Link to = "/Register">
                 <img src = "ButtonRegister.png" alt = "" />
                     
                 </Link>

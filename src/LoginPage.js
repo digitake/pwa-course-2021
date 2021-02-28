@@ -8,21 +8,14 @@ function LoginPage() {
         <div className = "Login">
 
             <div className = "Undo">
-                <Link to = "/">
+             <Link to = "/">
                 <img src = "Union.png"  alt = ""/>
-                </Link>
+             </Link>
             </div>  
-            <div>
-                <Link to = "/AppChat">
-                <button>
-                    Go chatroom
-                </button>
-                </Link>
-            </div>
             <div className = "SingIn" >
-            <Link to = "/AppChat" >
-            <img src = "ButtonSingIn.png" alt = "" />
-            </Link>
+             <Link to = "/Chat-Room" >
+                 <img src = "ButtonSingIn.png" alt = "" />
+             </Link>
             </div>
 
         </div>

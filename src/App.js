@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import './App.css';
-import {useState} from 'react';
+
+import './App.css'
+import {useState} from 'react'
 import{Link} from 'react-router-dom'
 function App() {
 
@@ -25,16 +25,16 @@ function App() {
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          VIP Live
+          Hello Welcome!!
         </div>
         <div className="App-chatroom-text">
-          Lion 
+          ( This is a cat chat ) 
         </div>
         <div className="App-chatroom-text">
-          Cat 
+          Only cat can chat it 
         </div>
         <div className="App-chatroom-text">
-          Fisher Man 
+          Good Luck Meaow ^^ 
         </div>
         <div className="App-chatroom-text">
           {
@@ -42,32 +42,24 @@ function App() {
           return <div className="App-chatroom-text">
                   {x}
                   </div>
-
-
                         }
-                    )
-                    
+                    )      
           }  
-           <Link to = "/friend-list">
-    <div className = "link-button">
-             
-                 Go To Chatroom
-                 </div> 
-                 </Link>
-                 
-              
         </div>
-
-      </div>
-      <div className="App-textbox">
-        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        <div className="App-textbox-send" onClick={onSend}>ส่ง</div>
       </div>
       <Link to="/friend-list">
-      <div className="App-header">
+        <div className="App-chatroom">
+      <div className="Goto-Friend">
           Goto Friend List
         </div>
+        </div>
             </Link>
+      <div className="App-textbox">
+        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
+        <div className="App-textbox-send" onClick={onSend}>
+          ส่ง
+          </div>
+      </div>
     </div>
   );
 }

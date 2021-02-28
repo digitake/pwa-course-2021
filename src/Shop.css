@@ -39,9 +39,20 @@
     background-color: white;
     padding: 10px;
     position: absolute;
-    left: 130px;
     top: 15px;
     font-size: 30px;
+  }
+
+  @media (min-width: 100px) {
+    .shop-money {
+      left: 80px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .shop-money {
+      left: 130px;
+    }
   }
 
 .shop-header {

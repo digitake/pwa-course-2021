@@ -9,6 +9,11 @@ function RegisterNextStep() {
                 <img src = "Union.png"  alt = ""/>
              </Link>
              </div>
+             <div className = "SingUP">
+            <Link to = "/Chat-Room">
+                <img src = "ButtonSingUP.png" alt = "" />
+            </Link>
+             </div>
         </div>
     )
 

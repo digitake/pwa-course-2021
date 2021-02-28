@@ -17,7 +17,6 @@ function LoginPage() {
                  <img src = "ButtonSingIn.png" alt = "" />
              </Link>
             </div>
-
         </div>
     )
 }

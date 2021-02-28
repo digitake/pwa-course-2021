@@ -5,7 +5,6 @@ import {Link} from 'react-router-dom'
 function Register(){
     return(
     <div className = "Register">
-
         <div className = "Undo">
              <Link to = "/">
                 <img src = "Union.png"  alt = ""/>
@@ -13,10 +12,11 @@ function Register(){
         </div>
 
         <div className = "RegisterNextStep">
-            <Link to = "/RegisterNextStep">
+        <Link to = "/RegisterNextStep">
             <img src = "ButtonNext.png" alt = "" /> 
-            </Link>
+        </Link>
         </div>
+        
     </div>
     )
 }

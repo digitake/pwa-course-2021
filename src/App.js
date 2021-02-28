@@ -21,12 +21,18 @@ function App() {
     <div className="App">
       <div className="App-header">
       </div>
-      
+
       <div>
          <Link to = "/Friend-List" >
          <button>
            Go FriendList
          </button>
+      </Link>
+
+      <Link to = "/Login-App">
+      <button>
+        Go LoginApp
+      </button>
       </Link>
       </div>
      

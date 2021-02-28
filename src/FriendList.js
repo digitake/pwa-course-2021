@@ -4,10 +4,10 @@ import {Link} from 'react-router-dom'
 
 function FriendList(){
     return(
-    <div className = "LoginApp">
+    <div >
         <div>
         Friend List
-        <Link to = "/">
+        <Link to = "/Chatt-Room">
         <button>
             Go ChatRoom
         </button>

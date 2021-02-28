@@ -4,7 +4,7 @@ function  FriendList() {
     return(
       <div className="Friend">
         <div className="Friend-header">
-        My Friend List
+             My Friend List
         </div>
         <div className="Friend-chatroom">
           <div className="Friend-chatroom-text">
@@ -21,8 +21,8 @@ function  FriendList() {
           </div>
           <Link to="/">
             <button>
-                Go to Chatroom
-                </button>
+             Go to Chatroom
+             </button>
             </Link>
         </div>
       </div>

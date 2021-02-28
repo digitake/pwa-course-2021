@@ -11,14 +11,14 @@
 }
 @media(min-width:1280px){
   .App{
-    background-image: url(bubz.png);
+    
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 @media(max-width: 768px){
 .App{
-background-color: blanchedalmond;
+background-color: rgb(48, 48, 48);
 width: 80% ;
 }
 }
@@ -32,13 +32,13 @@ width: 80% ;
   flex: 1;
 
 
-  background-color: #fd33ec;
+  background-color: #3a3a3a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(233, 1, 1);
+  color: rgb(255, 255, 255);
 
 }
 

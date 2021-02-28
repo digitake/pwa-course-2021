@@ -4,20 +4,20 @@ function  FriendList() {
     return(
       <div className="Friend">
         <div className="Friend-header">
-        Cat Chat
+        My Friend List
         </div>
         <div className="Friend-chatroom">
           <div className="Friend-chatroom-text">
-             Hello Welcome!!
+             Lion
           </div>
           <div className="Friend-chatroom-text">
-            ( This is a cat chat ) 
+             Tiger 
           </div>
           <div className="Friend-chatroom-text">
-            Only cat can chat it 
+             Cat
           </div>
           <div className="Friend-chatroom-text">
-            Good Luck Meaow ^^ 
+             Hayina
           </div>
           <Link to="/">
             <button>

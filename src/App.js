@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import  { Link } from 'react-router-dom';
+import shopButton from './shop_button.png'
+import friendButton from './friendList_button.png'
 function App() {
 
   const [text, setText] = useState("");
@@ -23,8 +25,8 @@ function App() {
           <button onclick="myFunction()" class="dropbtn">Dropdown</button>
           <div id="myDropdown" class="dropdown-content">
             
-         <a href="#"><Link to="/friend-list"> </Link></a>
-         <a href="#"><Link to="/shop"> </Link></a>
+         <a href="#"><Link to="/friend-list"> <img src={shopButton}></img> </Link></a>
+         <a href="#"><Link to="/shop"> <img src={friendButton}></img> </Link></a>
          <a href="#">Link 3</a>
           </div>
         </div>

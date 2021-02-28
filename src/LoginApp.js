@@ -3,22 +3,18 @@ import './LoginApp.css'
 
 function LoginApp(){
     return(
-        <div className = "LoginApp">
+        <div className = "LogoApp">
             
             <div className = "AppLogin">
-                Login Page
                 <Link to = '/Chat-Room'>
-                    <button>
-                        Go chatroom
-                    </button>
+                    <img src="ButtonLogin.png"  alt = "" />
+                    
                 </Link>
             </div>
             <div className = "AppRegister">
-                Register Page
                 <Link>
-                <button>
-                       Go register
-                    </button>
+                <img src = "ButtonRegister.png" alt = "" />
+                    
                 </Link>
             </div>
 

@@ -2,7 +2,7 @@ import './LoginApp.css'
 import {Link} from 'react-router-dom'
 
 
-function FriendList(){
+function Register(){
     return(
     <div >
         <div>
@@ -17,4 +17,4 @@ function FriendList(){
     </div>
     )
 }
-export default FriendList;
+export default Register;

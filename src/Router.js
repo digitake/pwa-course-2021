@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch, Route}   from 'react-router-dom';
 import App from './App'
-import FriendList from './FriendList';
+import FriendList from './Rigister';
 import LoginApp from './LoginApp'
 
 
@@ -13,7 +13,7 @@ function Router() {
             <LoginApp />
 
           </Route>
-          <Route path = "/friend-list">
+          <Route path = "/Register">
               <FriendList />
                 </Route>
 

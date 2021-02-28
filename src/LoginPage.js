@@ -9,7 +9,7 @@ function LoginPage() {
 
             <div className = "Undo">
                 <Link to = "/">
-                <img scr = "Union.png"  alt = ""/>
+                <img src = "Union.png"  alt = ""/>
                 </Link>
             </div>  
             <div>
@@ -19,12 +19,10 @@ function LoginPage() {
                 </button>
                 </Link>
             </div>
-            <div>
-                <Link to = "/" >
-                <button>
-                    Go Login
-                </button>
-                </Link>
+            <div className = "SingIn" >
+            <Link to = "/AppChat" >
+            <img src = "ButtonSingIn.png" alt = "" />
+            </Link>
             </div>
 
         </div>

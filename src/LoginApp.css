@@ -39,9 +39,17 @@ background-image: url(/src/AppchatUpdate/Log\ In.png);
 
 .Undo{
 position: absolute;
-width: 28.54px;
-height: 23.84px;
-left: 14px;
+width: 28.55px;
+height: 23.85px;
+left: 13px;
 top: 58px;
 
+}
+
+.SingIn{
+position: absolute;
+left: 8.7%;
+right: 8.45%;
+top: 35.27%;
+bottom: 58.93%;
 }

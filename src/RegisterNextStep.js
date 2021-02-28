@@ -10,7 +10,7 @@ function RegisterNextStep() {
              </Link>
              </div>
              <div className = "SingUP">
-            <Link to = "/Chat-Room">
+            <Link to = "/HomePage">
                 <img src = "ButtonSingUP.png" alt = "" />
             </Link>
              </div>

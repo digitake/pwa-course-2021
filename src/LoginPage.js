@@ -13,7 +13,7 @@ function LoginPage() {
              </Link>
             </div>  
             <div className = "SingIn" >
-             <Link to = "/Chat-Room" >
+             <Link to = "/HomePage" >
                  <img src = "ButtonSingIn.png" alt = "" />
              </Link>
             </div>

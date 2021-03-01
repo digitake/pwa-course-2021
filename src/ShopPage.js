@@ -1,10 +1,9 @@
-
 import { Link } from "react-router-dom";
 
-function FriendList(){
+function ShopPage(){
     return(
         <div>
-            Friend List
+            Shop Page
             <Link to="/">
               <button>
                   Back
@@ -15,4 +14,4 @@ function FriendList(){
     );
 };
 
-export default FriendList;
+export default ShopPage;

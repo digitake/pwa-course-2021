@@ -21,10 +21,17 @@ const onSend = (event) =>{
 }
   return (
     <div className="App">
-      <div className="Friend-button">
+      <div className="Friend-Button">
              <Link to = "/friend-list">
                <button>
                  Friends
+               </button>
+             </Link>
+      </div>
+      <div className="Shop-Button">
+             <Link to = "/shop-page">
+               <button>
+                 Shop
                </button>
              </Link>
       </div>

@@ -42,6 +42,13 @@ const onSend = (event) =>{
                </button>
              </Link>
       </div>
+      <div className="Game-Button">
+             <Link to = "/game-page">
+               <button>
+                 Game
+               </button>
+             </Link>
+      </div>
       <div className="App-header App-logo ">
 
       </div>

@@ -4,6 +4,7 @@ import  App  from "./App";
 import FriendList from "./FriendList";
 import ShopPage from "./ShopPage";
 import ProfilePage from "./ProfilePage";
+import GamePage from "./GamePage";
 
 // Create Component
 function Router()  {
@@ -21,6 +22,10 @@ function Router()  {
 
             <Route path="/profile-page">
               <ProfilePage />
+            </Route>
+
+            <Route path="/game-page">
+              <GamePage />
             </Route>
 
             <Route path="/">

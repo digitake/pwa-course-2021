@@ -6,6 +6,9 @@ function App() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
+  const onTextChange = (event) =>{
+    setText(event.target.value)
+  };
 
   const keyPress = (event) => {
     if (event.which === 13){
@@ -14,7 +17,7 @@ function App() {
   };
 
 const onSend = () => {
-  SetLine(Line => [...Lines, text])
+  setLines(lines => [...lines, text])
   setText("");
 }
 
@@ -28,7 +31,7 @@ const onSend = () => {
       </div>
       <div className="App-chatroom">
         {
-          Lines.map(x => {
+          lines.map(x => {
             return <div className="App-chatroom-text">
                     {x}
                    </div>
@@ -38,7 +41,7 @@ const onSend = () => {
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" 
         value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        
+
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
 

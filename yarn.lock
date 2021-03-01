@@ -3545,11 +3545,6 @@
 "human-signals@^1.1.1":
   "version" "1.1.1"
 
-"i@^0.3.6":
-  "integrity" "sha1-2WyScyB28HJxG2sQ/X1PZa2O4j0="
-  "resolved" "https://registry.npmjs.org/i/-/i-0.3.6.tgz"
-  "version" "0.3.6"
-
 "iconv-lite@0.4.24":
   "version" "0.4.24"
   dependencies:
@@ -6294,11 +6289,6 @@
 
 "react-is@^17.0.1":
   "version" "17.0.1"
-
-"react-npm@^2.6.1":
-  "integrity" "sha512-hPR2ncAQ7QS47tPD4IFmU6jNWrfKUMHjWtu3fu+hbvbIERNVjuZSWy1a00a/J75M0ZvkOwL2AhXTTnO51ffXNA=="
-  "resolved" "https://registry.npmjs.org/react-npm/-/react-npm-2.6.1.tgz"
-  "version" "2.6.1"
 
 "react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^17.0.1", "react@>=15", "react@17.0.1":
   "version" "17.0.1"

@@ -10,9 +10,9 @@ function FriendList(){
             </button>
             </Link>
      <div>
-     <Link to="/">
+     <Link to="/home">
             <button>
-                Go to Chatroom
+                Go to Home
             </button>
             </Link>
      </div>

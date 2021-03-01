@@ -81,6 +81,32 @@
 
 
 }
+.App-middle-home{
+  flex: 10;
+  background-color: rgb(247, 218, 132);
+ 
+  background-size:cover;
+ 
+
+}
+
+.App-button-home {
+  
+  background-image: url(Mogu.png);
+  background-size:cover;
+  background-color: rgb(255, 115, 0);
+  flex: 20;
+  height: 150px;
+  width: 150px;
+  
+
+ 
+  
+  border-style:groove ;
+  
+  float: middle;
+ 
+}
 
 
 

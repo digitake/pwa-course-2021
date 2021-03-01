@@ -3,6 +3,7 @@
 import {BrowserRouter,Switch, Route } from 'react-router-dom'
 import App from './App'
 import FriendList from './FriendList';
+import PageDrawing from './PageDrawing';
 
 function Router(){
     return(
@@ -10,6 +11,9 @@ function Router(){
         <Switch>
             <Route path="/friend-list">
                 <FriendList />
+            </Route>
+            <Route path="/PageDrawing">
+                <PageDrawing />
             </Route>
             <Route path="/">
                 <App />

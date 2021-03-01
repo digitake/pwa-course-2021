@@ -1,0 +1,83 @@
+.PageDrawing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+  }
+  
+  .PageDrawing-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .PageDrawing-header {
+    flex: 1;
+    background-color: #ff00d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+  }
+  
+  .PageDrawing-chatroom {
+    flex: 12;
+  }
+  
+  .PageDrawing-chatroom-text {
+    margin: 8px;
+    background-color: rgb(255, 242, 242);
+    color : rgb(48, 100, 100);
+    font-size: 20px;
+  }
+  
+  .PageDrawing-textbox {
+    flex: 1;
+    background-color: rgb(255, 164, 232);
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+  }
+  
+  .PageDrawing-textbox-input {
+    flex: 5;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .PageDrawing-textbox-send {
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  @media(max-width: 768px){
+    .PageDrawing{
+    background-image:url(BGPT.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  }
+  
+  @media(min-width: 768px) and (max-width: 1024px){
+    .PageDrawing{
+      background-image:url(BGPT.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-color: rgb(225, 253, 255);
+    }
+  }
+  
+  @media(orientation: landscape){
+    .PageDrawing{
+    background-image:url(BGPT.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: rgb(226, 255, 225);
+    }
+  }

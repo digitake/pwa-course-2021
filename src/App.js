@@ -32,9 +32,9 @@ function App() {
                    </div>
           })
         }
-        <Link to ="/friend-list">
+        <Link to ="/PageDrawing">
           <botton>
-            Go to FriendList
+            Go to PageDrawing
           </botton>
         </Link>
       </div>

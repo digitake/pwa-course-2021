@@ -2,13 +2,12 @@ import { Link } from 'react-router-dom';
 
 function  FriendList() {
     return (
-        <div>
-            Friend List
-            <Link to='/'>
-                <button>
-                    Go chatroom
-                </button>
-            </Link>
+              <div className="App-header">
+              <Link to='/friend-list'>
+                  <button>
+                      Go Friend list
+                  </button>
+              </Link>
         </div>
     );  
 };

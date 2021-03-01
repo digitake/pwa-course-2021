@@ -1,4 +1,4 @@
-import './App.css';
+import './project/Protheme.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -26,12 +26,12 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-            <Link to='/friend-list'>
-                <button>
-                    Go Friend list
-                </button>
-            </Link>
-      </div>
+              <Link to='/friend-list'>
+                  <button>
+                      Go Friend list
+                  </button>
+              </Link>
+        </div>
       <div className="App-chatroom">
         {
           lines.map(x =>{

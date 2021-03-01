@@ -2,6 +2,8 @@ import {BrowserRouter, Switch , Route} from 'react-router-dom';
 import App from './App';
 import FriendList from './FriendList';
 import ChatRoom from './ChatRoom';
+import Bruh from './project/Bruh';
+
 
 function Router() {
 
@@ -16,6 +18,9 @@ function Router() {
                 </Route>
                 <Route path="/chatroom">
                     <ChatRoom />
+                </Route>
+                <Route path="/bruh">
+                    <Bruh />
                 </Route>
             </Switch>
         </BrowserRouter>

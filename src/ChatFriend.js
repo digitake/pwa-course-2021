@@ -24,8 +24,6 @@ function AllChatInterface() {
                    So Hungry pls back to home 
                 </div>
 
-
-
                   <div className = "FriendPic">              
                      <img src= "cat.png" alt = "profile.png" width="100px" height="105px"/>
                     </div>

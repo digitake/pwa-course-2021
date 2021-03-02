@@ -19,9 +19,11 @@ function MainNote() {
             <span class="circles">  </span>
             </div>
             
+            
             <div className = "circlesbox2">
             <span class="circles">  </span>
             </div>
+
 
             <div className = "circlesbox3">
             <Link to="/" className="image-between">
@@ -30,6 +32,7 @@ function MainNote() {
             </div>
 
             </div>
+
 
             <div className = "notebot">
             

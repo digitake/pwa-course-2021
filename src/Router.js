@@ -22,6 +22,11 @@ function Router(){
             <Route path="/random-main">
                 <ProjectRandom />
             </Route>
+
+            <Route path="/profile">
+                <MainProfile />
+            </Route>
+
             
             
             <Route path="/Note">

@@ -4,6 +4,7 @@ import FriendList from './FriendList';
 import ProjectRandom from './Project-Random';
 import AllChatInterface from './ChatFriend';
 import MainNote from './Note';
+import MainProfile from './profile';
 
 function Router(){
 

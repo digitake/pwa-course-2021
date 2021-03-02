@@ -4,6 +4,10 @@ import './App.css';
 import  { Link } from 'react-router-dom';
 import shopButton from './shop_button.png'
 import friendButton from './friendList_button.png'
+import './onClick.js'
+
+
+
 function App() {
 
   const [text, setText] = useState("");
@@ -18,10 +22,14 @@ function App() {
     setText("");
   };
 
+  
   return (
+
+
     <div className="App">
       <div className="App-header">
         <div class="dropdown">
+          <script src onClick></script>
           <button onclick="myFunction()" class="dropbtn">Dropdown</button>
           <div id="myDropdown" class="dropdown-content">
             
@@ -30,7 +38,8 @@ function App() {
          <a href="#">Link 3</a>
           </div>
         </div>
-      </div>
+        
+    </div>
 
       
 
@@ -54,6 +63,7 @@ function App() {
     </div>
 
     
+
   );
 }
 

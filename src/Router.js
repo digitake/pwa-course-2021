@@ -1,5 +1,5 @@
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
-import App from'./InClassRoom/App';
+import App from'./App';
 import FriendList from './InClassRoom/FriendList';
 
 function Router() {

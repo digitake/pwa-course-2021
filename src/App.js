@@ -25,8 +25,8 @@ function App() {
           <button onclick="myFunction()" class="dropbtn">Dropdown</button>
           <div id="myDropdown" class="dropdown-content">
             
-         <a href="#"><Link to="/friend-list"> <img src={shopButton}></img> </Link></a>
-         <a href="#"><Link to="/shop"> <img src={friendButton}></img> </Link></a>
+         <a href="#"><Link to="/friend-list"> <img src={friendButton}></img> </Link></a>
+         <a href="#"><Link to="/shop"> <img src={shopButton}></img> </Link></a>
          <a href="#">Link 3</a>
           </div>
         </div>

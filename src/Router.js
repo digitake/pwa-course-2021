@@ -1,6 +1,6 @@
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import App from'./App';
-import FriendList from './FriendList';
+import FriendList from './InClassRoom/FriendList';
 
 function Router() {
 

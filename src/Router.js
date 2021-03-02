@@ -3,6 +3,7 @@ import App from './App';
 import FriendList from './FriendList';
 import ProjectRandom from './Project-Random';
 import AllChatInterface from './ChatFriend';
+import MainProfile from './profile';
 
 function Router(){
 
@@ -21,6 +22,11 @@ function Router(){
             <Route path="/random-main">
                 <ProjectRandom />
             </Route>
+
+            <Route path="/profile">
+                <MainProfile />
+            </Route>
+
             
             <Route path="/">
                 <App />

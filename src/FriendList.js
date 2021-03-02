@@ -4,11 +4,12 @@ function FriendList(){
     return(
         <div className="App-chatroom-text ">
             FriendList
-            <Link to="/">
+      <div className="App-pic-right">   <Link to="/">
             <button>
                 Go to Chatroom
             </button>
             </Link>
+            </div> 
      <div>
      <Link to="/home">
             <button>

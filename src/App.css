@@ -223,11 +223,12 @@
 }
 
 .circles {
-  height: 110px;
-  width: 110px;
+  height: 130px;
+  width: 130px;
   background-color: rgb(192, 28, 28);
   border-radius: 50%;
   display: inline-block;
+  border: 7px solid rgb(255, 255, 255);
 }
 
 .noteheader{
@@ -246,14 +247,27 @@
 
 
 .circlesbox1{
+  margin-top: 10px;
+  margin-left: -50px;
+  margin-right: 5px;
+  width: 90%;
   
+
+}
+
+.circlesbox2{
+  margin-top: -150px;
+  margin-left: 150px;
+  margin-right: 5px;
   width: 90%;
 
 
 }
 
-.circlesbox2{
-  
+.circlesbox3{
+  margin-top: 10px;
+  margin-left: -50px;
+  margin-right: 5px;
   width: 90%;
 
 

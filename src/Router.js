@@ -1,5 +1,5 @@
 import {BrowserRouter, Switch , Route} from 'react-router-dom';
-import ChatRoom from './ChatRoom';
+import ChatRoom from './InClassRoom/ChatRoom';
 import ProFriend from './project/ProFriend';
 
 
@@ -8,11 +8,11 @@ function Router() {
     return(
         <BrowserRouter>
             <Switch>
-                <Route path="/chatroom">
-                    <ChatRoom />
-                </Route>
                 <Route path="/ProFriend">
                     <ProFriend />
+                </Route>
+                <Route path="/">
+                    <ChatRoom />
                 </Route>
             </Switch>
         </BrowserRouter>

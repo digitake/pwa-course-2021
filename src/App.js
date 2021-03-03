@@ -49,6 +49,13 @@ const onSend = (event) =>{
         }
     
       </div>
+      <div className="Game-Button">
+            <Link to = "game">
+              <button>
+                Game
+              </button>
+            </Link>
+      </div>
       <div className="App-textbox ">
         <input type="text" className="App-textbox-input" value ={text} onChange= {onTextChange}/>
 

@@ -5,6 +5,8 @@ import FriendList from "./FriendList";
 import ShopPage from "./ShopPage";
 import Game from "./Game";
 import Menu from "./Menu";
+import ProfilePage from "./ProfilePage";
+import GamePage from "./GamePage";
 
 // Create Component
 function Router()  {
@@ -19,13 +21,17 @@ function Router()  {
             <Route path="/shop-page">
               <ShopPage />
             </Route>
-
-            <Route path="/game">
-              <Game />
-            </Route>
-
+            
             <Route path="/Menu">
               <Menu />
+            </Route>
+
+            <Route path="/profile-page">
+              <ProfilePage />
+            </Route>
+
+            <Route path="/game-page">
+              <GamePage />
             </Route>
 
             <Route path="/">
@@ -37,7 +43,6 @@ function Router()  {
 
     )
 };
-
 
 export default Router; //Run Router
 

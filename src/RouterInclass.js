@@ -1,5 +1,5 @@
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
-import T from'./project/T';
+import App from'./InClassRoom/App';
 import FriendList from './InClassRoom/FriendList';
 
 function Router() {
@@ -7,11 +7,11 @@ function Router() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path= "/test">
+                <Route path= "/friend">
                     <FriendList />
                 </Route>
                 <Route path = "/">
-                    <T />
+                    <App />
                 </Route>
             </Switch>
         </BrowserRouter>

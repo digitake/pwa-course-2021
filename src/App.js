@@ -48,7 +48,7 @@ const onSend = (event) =>{
               <img src= "Back-32.png"/>
              </Link>
              <Link to ="/menu">
-             <img src= "setting32.png" align ="right"/> 
+             <img src= "down32.png" align ="right"/> 
              </Link>
         </div>
       </div>

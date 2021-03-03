@@ -49,10 +49,8 @@ const onSend = (event) =>{
                </button>
              </Link>
       </div>
-      <div className="App-header App-logo ">
-
+       <div className="App-header App-logo ">
       </div>
-      
       <div className="App-chatroom">
         {
           lines.map(x =>{

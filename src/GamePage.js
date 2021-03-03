@@ -1,10 +1,10 @@
 
 import { Link } from "react-router-dom";
 
-function FriendList(){
+function GamePage(){
     return(
         <div>
-            Friend List
+            Game Page
             <Link to="/">
               <button>
                   Back
@@ -15,4 +15,4 @@ function FriendList(){
     );
 };
 
-export default FriendList;
+export default GamePage;

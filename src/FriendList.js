@@ -12,19 +12,19 @@ function FriendList(){
             </div>
             <div className= "FriendList-header2">
                  สมชาย
-                 <Link to="/">
+                 <Link to="/profile-page">
                      <img src = "profile-user-64.png" align="Left" />
                  </Link>
             </div>
             <div className= "FriendList-header3">
                  สมศรี
-                 <Link to="/">
+                 <Link to="/profile-page">
                 <img src = "profile-user-64.png"  align= "Left"/>
                 </Link>
             </div>
             <div className= "FriendList-header4">
                  สมศักดิ์
-                 <Link to="/">
+                 <Link to="/profile-page">
                 <img src = "profile-user-64.png"  align= "Left"/>
                 </Link>
             </div>

@@ -29,15 +29,6 @@ const onSend = (event) =>{
              </Link>
       </div>
       <div className="App-header App-logo ">
-
-      </div>
-      <div className="Friend-button">
-             <Link to = "/friend-list">
-               <button>
-                 Friends
-               </button>
-             </Link>
-
       </div>
       <div className="App-chatroom">
         {

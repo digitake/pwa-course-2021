@@ -1,17 +1,19 @@
 import {BrowserRouter, Switch , Route} from 'react-router-dom';
-import App from './App';
+import Prologin from './project/Prologin';
 import FriendList from './FriendList';
 
+
 function Router() {
-    return (
+
+    return(
         <BrowserRouter>
             <Switch>
-                <Route path = "/FriendList">
-                    <FriendList />
-                </Route>
-                <Route path = "/">
-                    <App />
-                </Route>
+              <Route path="/FriendList">
+                  <FriendList />
+              </Route>
+              <Route path="/Prologin">
+                  <Prologin />
+              </Route>
             </Switch>
         </BrowserRouter>
     )

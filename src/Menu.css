@@ -47,11 +47,6 @@
     display: flex;
     flex-direction: column;
   }
-
-  .Menu-back-button{
-      -ms-text-underline-position: alphabetic;
-  }
-
   
   .Menu-box{
     flex: 8;

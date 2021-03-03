@@ -1,0 +1,44 @@
+.Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 550px;
+    height: 87%;
+    margin: auto;
+    
+  }
+
+.MainProfilely {
+    height: 350px;
+    width: 350px;
+    position: ;
+    margin-top: -2000px;
+    left: 785px;
+}
+
+.Background-Profile {
+    height: 400px;
+    width: 400px;
+    margin-top: -700px;
+    left: 760px;
+    
+}
+
+.Text-box {
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 500px;
+    left: 765px;
+}
+
+.Background-Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 550px;
+    height: 1084px;
+    margin: auto;
+}

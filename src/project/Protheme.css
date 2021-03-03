@@ -50,7 +50,7 @@
 
   .text{
     font-size: 24px;
-    margin-top: -45px;
+    margin-top: -40px;
     color: rgb(255, 255, 255);
     flex: 1;
     justify-content: center;
@@ -70,7 +70,7 @@
   .Textinline{
     color: rgb(255, 255, 255);
     left: 10px;
-    font-size: 24px;
+    font-size: 18px;
     position: absolute;
   }
   .Textline{
@@ -138,11 +138,11 @@
   }
   .Profile{
     margin-top: -90px;
-    margin-left: -350px;
+    margin-left: -450px;
     margin-right: 0px;
     clip-path: circle();
     width: 75%;
-    height: 95%;
+    height: 75%;
   }
 
   

@@ -7,12 +7,10 @@ function Prologin() {
         <img className="Prologin-header-logo" src="/images/boxchat.jpg" />
       </header>
       <div className="signin-logo">
-        <button>
          <img src="/images/sign.jpg" />
-        </button>
       </div>
-      <div>
-        <p>You have account?</p>
+      <div className="registery-logo">
+         <img src="/images/register.jpg" />
       </div>
     </div>
   );

@@ -13,14 +13,22 @@
   width: 350px;
   height: 280px;
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 780px;
 }
 
-.signin-logo img{
+.signin-logo img {
   position: absolute;
-  top: 500px;
-  left: 810px;
+  top: 450px;
+  left: 820px;
   max-width: 100%;
   width: 15%;  
+}
+
+.registery-logo img {
+  max-height: 100%;
+  height: 8%;
+  position: absolute;
+  top: 590px;
+  left: 835px;
 }

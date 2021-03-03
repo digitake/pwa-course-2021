@@ -3,7 +3,7 @@ import App from './App';
 
 function Router() {
     
-    return(
+    return (
         <BrowserRouter>
             <Switch>
                 <Route path="/">

@@ -1,0 +1,30 @@
+{
+  "short_name": "Mango",
+  "name": "Mango Application Chat",
+  "icons": [
+    {
+
+      "src": "mango-64.png",
+      "type": "image/png",
+      "sizes": "64x64 32x32 24x24 16x16"
+      
+    },
+    {
+      "src": "mango-192.png",
+
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+
+      "src": "mango-512.png",
+
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FECC48",
+  "background_color": "#242424"
+}

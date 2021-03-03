@@ -13,20 +13,41 @@ function FriendList(){
             <div className= "FriendList-header2">
                  สมชาย
                  <Link to="/profile-page">
-                     <img src = "profile-user-64.png" align="Left" />
+                     <img src = "profile-user-64.png"  />
                  </Link>
+                 <div className= "Chat-Button">
+                    <Link to = "/" >
+                     <button>
+                     Chat  
+                     </button>
+                    </Link>
+                </div>
             </div>
             <div className= "FriendList-header3">
                  สมศรี
                  <Link to="/profile-page">
-                <img src = "profile-user-64.png"  align= "Left"/>
+                <img src = "profile-user-64.png"  />
                 </Link>
+                <div className= "Chat-Button">
+                    <Link to = "/" >
+                     <button>
+                     Chat  
+                     </button>
+                    </Link>
+                </div>
             </div>
             <div className= "FriendList-header4">
                  สมศักดิ์
                  <Link to="/profile-page">
-                <img src = "profile-user-64.png"  align= "Left"/>
+                <img src = "profile-user-64.png"  />
                 </Link>
+                <div className= "Chat-Button">
+                    <Link to = "/" >
+                     <button>
+                     Chat  
+                     </button>
+                    </Link>
+                </div>
             </div>
             <div className= "FriendList-chatroom"> 
             </div>

@@ -20,6 +20,7 @@
 
 }
 
+
 @media (min-width: 768px){
  
   .App{
@@ -41,7 +42,6 @@
 
 
 
-
 .App-header {
   flex: 1;
   background-color: #FECC48;
@@ -49,12 +49,25 @@
   flex-direction: column;
   justify-content: center;
 
+
+}
+
+.Back-Button{
+  background-image: url(mango.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Menu-Button {
+  text-align: right;
 }
 
 .App-chatroom {
   flex: 12;
   
 }
+
 
 .App-chatroom-text {
   margin: 8px;

@@ -5,7 +5,7 @@ function ProfilePage(){
     return(
         <div>
             Profile Page
-            <Link to="/">
+            <Link to="/friend-list">
               <button>
                   Back
                </button>

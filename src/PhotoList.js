@@ -49,9 +49,9 @@ function  PhotoList() {
           </div>
           
           <div class="Link">
-           <Link to="/friend-list">
+           <Link to="/cradit">
                 <button>
-                Go to Friend-List
+                Go to Cradit-List
                 </button>
             </Link>
             </div>

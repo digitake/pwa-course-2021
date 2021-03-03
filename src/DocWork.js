@@ -4,9 +4,9 @@ function  DocWork() {
     return(
         <div>
             Document-Work
-          <Link to="/">
+          <Link to="/cradit">
             <button>
-             Go to Friend-List
+             Go to Cradit-List
              </button>
             </Link>
         </div>

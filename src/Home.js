@@ -4,9 +4,9 @@ function  Home() {
     return(
       <div>
           Home
-          <Link to="/friend-list">
+          <Link to="/cradit">
             <button>
-             Go to Friend-List
+             Go to Cradit-List
              </button>
             </Link>
         </div>

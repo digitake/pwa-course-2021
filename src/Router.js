@@ -1,20 +1,23 @@
-import {BrowserRouter,Switch,Route} from 'react-router-dom';
+
+
+import {RouterBrowser,Switch,Route, BrowserRouter} from 'react-router-dom';
 import App from './App';
-import Chatroom from './Chatroom';
+import MainPage from './MainPage' ;
 
 function Router() {
-    return (
+    return(
         <BrowserRouter>
             <Switch>
-                <Route path="/Chatroom">
-                 <Chatroom/>
+                <Route path="/a">
+                    <MainPage />
                 </Route>
                 <Route path="/">
-                    <App/>
-                 </Route>
-             </Switch>
-            </BrowserRouter>
+                    <App />
+                </Route>
+            </Switch>
+        </BrowserRouter>
     )
-};
+} ;
+
 
 export default Router;

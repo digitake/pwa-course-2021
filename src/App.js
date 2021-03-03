@@ -41,11 +41,14 @@ const onSend = (event) =>{
                  Game
                </button>
              </Link>
-      </div>
+      </div> 
       <div className="App-header App-logo ">
-        <div className="Friend-Button">
+        <div className="Friend-Button Menu-Button">
              <Link to = "/friend-list">
               <img src= "Back-32.png"/>
+             </Link>
+             <Link to ="/menu">
+             <img src= "setting32.png" align ="right"/> 
              </Link>
         </div>
       </div>
@@ -58,13 +61,6 @@ const onSend = (event) =>{
           })
         }
     
-      </div>
-      <div className="Game-Button">
-            <Link to = "game">
-              <button>
-                Game
-              </button>
-            </Link>
       </div>
       <div className="App-textbox ">
         <input type="text" className="App-textbox-input" value ={text} onChange= {onTextChange}/>

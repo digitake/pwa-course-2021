@@ -49,6 +49,7 @@
   flex-direction: column;
   justify-content: center;
 
+
 }
 
 .Back-Button{
@@ -56,6 +57,10 @@
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.Menu-Button {
+  text-align: right;
 }
 
 .App-chatroom {

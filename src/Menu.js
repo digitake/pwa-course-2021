@@ -5,12 +5,12 @@ import{useState}from 'react'
 function Menu(){
     return(
         <div className="Menu">
-            <div className="BackButton">
-                <Link to="/">
-                <button>
-                Back
-                </button>
-                </Link>
+            <div className="App-header App-logo ">
+            <div className="Setting-Back-Button">
+             <Link to = "/">
+              <img src= "Back-32.png"/>
+             </Link>
+            </div>
             </div>
             <div className="Game-header Game-logo">
             </div> 
@@ -26,4 +26,4 @@ function Menu(){
     );
 };
 
-export default Game;
+export default Menu;

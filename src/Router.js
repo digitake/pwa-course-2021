@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import  App  from "./App";
 import FriendList from "./FriendList";
 import ShopPage from "./ShopPage";
-import Game from "./Game";
 import Menu from "./Menu";
 import ProfilePage from "./ProfilePage";
 import GamePage from "./GamePage";
@@ -21,8 +20,8 @@ function Router()  {
             <Route path="/shop-page">
               <ShopPage />
             </Route>
-            
-            <Route path="/Menu">
+
+            <Route path="/menu">
               <Menu />
             </Route>
 

@@ -27,6 +27,11 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+      <div>
+        <Link to="/">
+            <img src="back"  alt="ย้อนกลับ"/>
+        </Link>
+        </div>
       </div>
       <div className ="panel-footer">
       </div>
@@ -52,6 +57,7 @@ function App() {
 
 
     </div>
+    
   );
 }
 

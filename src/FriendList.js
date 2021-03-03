@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 
 function FriendList() {
@@ -10,6 +11,7 @@ function FriendList() {
                 </button>
             </Link>
         </div>
+n
     )
 };
 

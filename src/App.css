@@ -87,7 +87,9 @@
   cursor: pointer;
 }
 
-
+.Friend-Button{
+  text-align: left;
+}
 
 .Shop-Button{
   text-align: left;

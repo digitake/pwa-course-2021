@@ -9,7 +9,7 @@ function ProFriend() {
     <div className="App-header">
       <div className="circlesbox4">  
         <Link to='/ProSetting'>
-          <img src="3Line.png" alt="3Line.png" width="50px" height="50px"/>         
+          <img src="/Project/ProFriend/3Line.png" alt="/Project/ProFriend/3Line.png" width="50px" height="50px"/>         
         </Link>
       </div>
       <div className="text">
@@ -18,7 +18,7 @@ function ProFriend() {
       <div className="Profile">    
         <Link to='/ProProfile'>
           <button>
-            <img src="Sui.jpg" alt="Sui.jpg" width="75px" height="75px" />
+            <img src="/Project/ProFriend/Sui.jpg" alt="/Project/ProFriend/Sui.jpg" width="75px" height="75px" />
           </button>
         </Link>
        </div>
@@ -30,7 +30,7 @@ function ProFriend() {
       <div className="circlesbox1">    
         <Link to='/ProChatroom'>
           <button>
-            <img src="sad.png" alt="sad.png" width="100px" height="100px" />
+            <img src="/Project/ProFriend/sad.png" alt="/Project/ProFriend/sad.png" width="100px" height="100px" />
           </button>
         </Link> 
         <div className="text1">
@@ -40,7 +40,7 @@ function ProFriend() {
       <div className="circlesbox2">    
         <Link to='/ProChatroom'>
           <button>
-            <img src="sad.png" alt="sad.png" width="100px" height="100px"/>
+            <img src="/Project/ProFriend/sad.png" alt="/Project/ProFriend/sad.png" width="100px" height="100px"/>
           </button>
         </Link> 
         <div className="text1">
@@ -50,7 +50,7 @@ function ProFriend() {
       <div className="circlesbox3">    
       <Link to='/ProChatroom'>
           <button>
-            <img src="nono.jpg" alt="nono.jpg" width="100px" height="100px" />
+            <img src="/Project/ProFriend/nono.jpg" alt="/Project/ProFriend/nono.jpg" width="100px" height="100px" />
           </button>
       </Link> 
           <div className="text1">

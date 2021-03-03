@@ -1,5 +1,5 @@
 import {BrowserRouter, Switch , Route} from 'react-router-dom';
-import ChatRoom from './InClassRoom/ChatRoom';
+import ChatRoom from './project/ChatRoom';
 import ProFriend from './project/ProFriend';
 
 

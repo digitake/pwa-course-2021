@@ -16,7 +16,7 @@
   background-image: url(mango.png);
   background-size: 40px;
   background-repeat: no-repeat;
-  background-position: center; /*asdsa*/
+  background-position: center; 
   
   
   
@@ -95,5 +95,12 @@
   cursor: pointer;
 }
 
+.Friend-Button{
+  text-align: left;
+}
+
+.Shop-Button{
+  text-align: left;
+}
 
 

@@ -28,10 +28,7 @@ function FriendList(){
                 <img src = "profile-user-64.png"  align= "Left"/>
                 </Link>
             </div>
-
-
-            <div className= "FriendList-chatroom">
-                
+            <div className= "FriendList-chatroom"> 
             </div>
         </div>
 

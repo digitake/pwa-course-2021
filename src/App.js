@@ -21,13 +21,6 @@ const onSend = (event) =>{
 }
   return (
     <div className="App">
-      <div className="Friend-Button">
-             <Link to = "/friend-list">
-               <button>
-                 Friends
-               </button>
-             </Link>
-      </div>
       <div className="Shop-Button">
              <Link to = "/shop-page">
                <button>
@@ -49,7 +42,12 @@ const onSend = (event) =>{
                </button>
              </Link>
       </div>
-       <div className="App-header App-logo ">
+      <div className="App-header App-logo ">
+        <div className="Friend-Button">
+             <Link to = "/friend-list">
+              <img src= "Back-32.png"/>
+             </Link>
+        </div>
       </div>
       <div className="App-chatroom">
         {
@@ -67,8 +65,9 @@ const onSend = (event) =>{
         <div className="App-textbox-send " onClick ={onSend}>Send!</div>
 
       </div>
-    </div>
+     </div>
     );
 }
+
 
 export default App;

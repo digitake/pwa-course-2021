@@ -1,14 +1,11 @@
-import './App.css';
-import {useState} from 'react';
+
+import './App.css'
+import {useState} from 'react'
+import{Link} from 'react-router-dom'
 function App() {
 
   const [text,setText] = useState("");
-<<<<<<< HEAD
-  const [lines,setLines] = useState([
-    "","","",""]);
-=======
   const [lines,setLines] = useState(["","","",""]);
->>>>>>> 9f58801dc41f0fe52c4bd3606a9014597b7e508d
   const onTextChange = (event) => {
     setText(event.target.value);
   };
@@ -24,14 +21,20 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+        Cat Chat
       </div>
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-<<<<<<< HEAD
-          พิมข้อความ
+          Hello Welcome!!
         </div>
         <div className="App-chatroom-text">
-          
+          ( This is a cat chat ) 
+        </div>
+        <div className="App-chatroom-text">
+          Only cat can chat it 
+        </div>
+        <div className="App-chatroom-text">
+          Good Luck Meaow ^^ 
         </div>
         <div className="App-chatroom-text">
           {
@@ -39,61 +42,23 @@ function App() {
           return <div className="App-chatroom-text">
                   {x}
                   </div>
-          })
-          }
+                        }
+                    )      
+          }  
         </div>
-
-
       </div>
-      <div className="App-chatroom">
-        <div className="App-chatroom-text">
-          
-=======
-
-          Only Fan
+      <Link to="/cradit">
+        <div className="App-chatroom">
+      <div className="Goto-Friend">
+          Goto Cradit List
         </div>
-        <div className="App-chatroom-text">
-          Here 
         </div>
->>>>>>> 9f58801dc41f0fe52c4bd3606a9014597b7e508d
-        </div>
-      <div className="App-chatroom">
-
-        <div className="App-chatroom-text">
-<<<<<<< HEAD
-          
-        </div>
-        <div className="App-chatroom-text">
-          
-        </div>
-
-
-      </div>
+            </Link>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        <div className="App-textbox-send" onClick={onSend}>ส่งข้อความ</div>
-=======
-          VIP Room
-        </div>
-        <div className="App-chatroom-text">
-          Here 
-
-        </div>
-        </div>
-        <div className="App-chatroom-text">
-          {
-          lines.map(x => {
-          return <div className="App-chatroom-text">
-                  {x}
-                  </div>
-          })
-
-          }
-      </div>
-      <div className="App-textbox">
-        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        <div className="App-textbox-send" onClick={onSend}>ส่ง</div>
->>>>>>> 9f58801dc41f0fe52c4bd3606a9014597b7e508d
+        <div className="App-textbox-send" onClick={onSend}>
+          ส่ง
+          </div>
       </div>
     </div>
   );

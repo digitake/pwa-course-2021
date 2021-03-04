@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import FriendList from './FriendList';
 import Setting from './Setting';
 import PrivateChatRoom from './PrivateChatRoom';
+import profiles from './profiles';
 function Router() {
 
     return (
@@ -11,6 +12,9 @@ function Router() {
             <FriendList/>
          </Route>
          <Route path="/setting">
+            <Setting/>
+         </Route>
+         <Route path="/profiles">
             <Setting/>
          </Route>
         <Route path="/PrivateChat">

@@ -27,6 +27,11 @@ function PrivateChatRoom() {
         FriendList
         </button>
       </Link>
+      <Link to="/setting">
+        <button>
+        Settings
+        </button>
+      </Link>
       <div className="App-chatroom">
       {
         lines.map(x =>{

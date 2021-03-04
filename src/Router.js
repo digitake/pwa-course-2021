@@ -1,7 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import App from './App';
 import FriendList from './FriendList';
 import Setting from './Setting';
+import PrivateChatRoom from './PrivateChatRoom';
 function Router() {
 
     return (
@@ -14,7 +14,7 @@ function Router() {
             <Setting/>
          </Route>
         <Route path="/">
-            <App />
+            <PrivateChatRoom />
             </Route>
         </Switch>
         </BrowserRouter>

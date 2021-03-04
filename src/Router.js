@@ -1,29 +1,33 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import App from './App';
-import Register from './Register';
-import Login from './Login';
 import Feed from './Feed';
 import Settings from './Settings';
 import InsepectProfile from './InsepectProfile';
 import ProfileSetting from './ProfileSetting';
-import Loading from './Loading';
-import InsertPasssword from './InsertPassword';
+import Main from './Pages/Main';
+import NeptuneLogin from './Pages/NeptuneLogin';
+import NeptuneRegister from './Pages/NeptuneRegister';
+import NeptunePin from './Pages/NeptunePin';
+import NeptuneWelcome from './Pages/NeptuneWelcome';
+import NeptuneChat from './Pages/NeptuneChat';
 
 function Router() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path='/loading'>
-                    <Loading />
+                <Route path='/home'>
+                    <Main />
                 </Route>
-                <Route path='/insert-password'>
-                    <InsertPasssword />
+                <Route path="/chat">
+                    <NeptuneChat />
+                </Route>
+                <Route path='/login'>
+                    <NeptuneLogin />
                 </Route>
                 <Route path="/register">
-                    <Register />
+                    <NeptuneRegister />
                 </Route>
-                <Route path="/login">
-                    <Login />
+                <Route path="/pin">
+                    <NeptunePin />
                 </Route>
                 <Route path='/feed'>
                     <Feed />
@@ -37,8 +41,8 @@ function Router() {
                 <Route path="/profile-setting">
                     <ProfileSetting />
                 </Route>
-                <Route path='/'>
-                    <App />
+                <Route path="/">
+                    <NeptuneWelcome />
                 </Route>
             </Switch>
 

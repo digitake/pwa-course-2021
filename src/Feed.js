@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class Feed extends Component {
     render() {
         return (
-            <Link to="/">
+            <Link to="/home">
                 <div className='Feed'>
                     <img src={FeedImg} />
                 </div>

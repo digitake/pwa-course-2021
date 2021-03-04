@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'; import Login from './Login';
+import { Link } from 'react-router-dom';
 import './App.css';
 import { useState } from 'react';
 import LinkTo from './Components/LinkManager';

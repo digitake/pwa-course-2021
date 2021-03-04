@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 class Settings extends Component {
     render() {
         return (
-            <Link to="/">
+            <Link to="/home">
                 <div className='settings'>
                     <img src={SettingsImg} />
                 </div>

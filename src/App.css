@@ -68,6 +68,7 @@
 }
 
 .App-textbox-input {
+  margin: 0px;
   flex: 3;
   height: 100%;
   box-sizing: border-box;

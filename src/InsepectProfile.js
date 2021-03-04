@@ -1,20 +1,11 @@
 import { Link } from 'react-router-dom';
 import inProfile from "./design/InsepectProfile.jpg";
 
-function InsepectProfile(){
-    return(
+function InsepectProfile() {
+    return (
         <div align="center">
-            <h1>Insepect Profile</h1>
-            <img src={inProfile} width="480" height="852"></img>
-            <Link to ="/">
-                <button>
-                    Go to Chatroom
-                </button>
-            </Link>
-            <Link to ="/profile-setting">
-                <button>
-                Go to Profile Setting
-                </button>
+            <Link to="/home">
+                <img src={inProfile} width="480" height="852"></img>
             </Link>
         </div>
     )

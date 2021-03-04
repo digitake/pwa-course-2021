@@ -24,7 +24,7 @@ function Router(){
     <FriendList />
     </Route>
 
-    
+
 
 <Route path = "/pap-friendList">
     <PapFriendList />

@@ -125,7 +125,6 @@
     display: flex;
     cursor: pointer;
 }
-.Private
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -199,7 +198,9 @@
         display: inline-block;
         width: 60px;
         height: 34px;
-        flex-direction: column;
+        top:75%;
+        left:1%;
+        margin: 10px;
     }
 
     .switch input {
@@ -244,6 +245,43 @@
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
+    }
+
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    .Private{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:12.5%;
+        top:80.6%;
+    }
+    .AllowHint{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:12.5%;
+        top:85%;
+    }
+    .AllowJoin{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:12.5%;
+        top:89.3%;
+    }
+    .PlayerName{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:12.5%;
+        top:93.6%;
     }
 }
 
@@ -309,6 +347,9 @@
         display: inline-block;
         width: 60px;
         height: 34px;
+        top:75%;
+        left:1%;
+        margin: 10px;
     }
 
     .switch input {
@@ -353,6 +394,43 @@
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
+    }
+
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+   
+    .Private{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:7.5%;
+        top:81.3%;
+    }
+    .AllowHint{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:7.5%;
+        top:85.6%;
+    }
+    .AllowJoin{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:7.5%;
+        top:90%;
+    }
+    .PlayerName{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:7.5%;
+        top:94.3%;
     }
 }
 
@@ -419,7 +497,7 @@
         height: 34px;
         top:75%;
         left:1%;
-        margin: 5px;
+        margin: 10px;
     }
 
     .switch input {
@@ -472,5 +550,34 @@
 
     .slider.round:before {
         border-radius: 50%;
+    }
+    
+    .Private{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:4.5%;
+        top:81.3%;
+    }
+    .AllowHint{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:4.5%;
+        top:85.3%;
+    }
+    .AllowJoin{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:4.5%;
+        top:89.3%;
+    }
+    .PlayerName{
+        font-size: 60%;
+        color: white;
+        position: fixed;
+        left:4.5%;
+        top:93.3%;
     }
 }

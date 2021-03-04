@@ -1,24 +1,21 @@
 import './Profiles.css';
-
+import { FiFacebook,FiInstagram,FiTwitter } from "react-icons/fi";
 
 function profiles() {
     
     return (
 <div className="Header">
-            <div className="Container">
+            <div className="contain">
                 Profiles
                <ul className="Function">
                    <li className="Function-link">
-                   <a href="#"><FiBell/>Facebook</a>
+                   <a href="#"><FiFacebook/>Facebook</a>
                    </li>
                    <li className="Function-link">
-                   <a href="#"><BiPaintRoll/>Instagram</a>
+                   <a href="#"><FiInstagram/>Instagram</a>
                    </li>
                    <li className="Function-link">
-                   <a href="#"><BiPalette/>Spotify</a>
-                   </li>
-                   <li className="Function-link">
-                   <a href="#"><FiInfo/>Line</a>
+                   <a href="#"><FiTwitter/>Twitter</a>
                    </li>
                    </ul> 
         <div className="App-contents">

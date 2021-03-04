@@ -10,8 +10,8 @@ function  Router() {
     return(
        <BrowserRouter>
        <Switch>
-              <Route path="/home">
-                  <Home/>
+              <Route path="/chat-room">
+                  <App/>
               </Route>
               <Route path="/photo-list">
                   <PhotoList/>
@@ -26,7 +26,7 @@ function  Router() {
                   <FriendList/>
               </Route>
               <Route path="/">
-                  <App/>
+                  <Home/>
               </Route>
         </Switch>
        </BrowserRouter>

@@ -11,12 +11,12 @@ function  Cradit() {
             </Link>
             <Link to="/">
             <button>
-             Go to Chatroom
+             Go to Home
              </button>
           </Link>
-          <Link to="/home">
+          <Link to="/chat-room">
             <button>
-             Go to home
+             Go to Chat Room
              </button>
           </Link>
           <Link to="/doc-work">

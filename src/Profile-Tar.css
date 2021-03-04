@@ -1,6 +1,9 @@
 .textpro{
     text-align: center;
-    size: 50px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    
 }
  .Propic{
   overflow: visible;
@@ -30,5 +33,8 @@
      bottom: 30px;
      font-size: 30px;
 
+ }
+ .Profilebon{
+     background-color: black;
  }
  

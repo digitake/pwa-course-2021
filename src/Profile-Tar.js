@@ -9,11 +9,12 @@ function Profiletar() {
      Back to chat
      </button>
      </Link>
-      <div className="textpro">Profile</div>
+     <div className="textpro">Profile</div>
       <div className="bgpro">
       <div className="Propic"></div>
       <div className="textname">Ratpakorn Suntornsarathul
      </div>
+     
       </div>
       
      </div>

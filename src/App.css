@@ -1,90 +1,154 @@
 .App {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    max-width: 400px;
-    height: 100%;
-    margin: auto;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 400px;
+  height: 100%;
+  margin: auto;
+
+}
+
+.App-logo {
+height: 40vmin;
+pointer-events: none;
+}
+
+.App-header {
+flex: 2;
+background-color: #ffc400;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: calc(10px + 2vmin);
+
+color: rgb(0, 0, 0);
+
+}
+
+.App-chatroom {
+flex: 12;
+background-image: url(Mogu.png);
+background-size:cover;
+
+
+
+}
+
+.App-chatroom-text {
+margin: 8px;
+
+background-color: rgb(255, 167, 2);
+
+color : rgb(0, 3, 3);
+font-size: 20px;
+border-style:groove ;
+}
+
+.App-textbox {
+flex: 1;
+
+background-color: rgb(255, 115, 0);
+
+justify-content: center;
+align-items: stretch;
+display: flex;
+border-style:groove ;
+}
+
+.App-textbox-input {
+flex: 5;
+height: 100%;
+box-sizing: border-box;
+}
+
+.App-textbox-send {
+flex: 1;
+height: 100%;
+vertical-align: middle;
+justify-content: center;
+align-items: center;
+display: flex;
+}
   
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
   
-  .App-header {
-    flex: 1;
-    background-color: #331a12;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+  
+
+  
+  .App-login-head{
+    background-color: #fc531a;
+width: 10;
+font-size:40px ;
+flex: 4;
+
+text-align: center;
+
     
-  }
-  
-  .App-chatroom {
-    flex: 11;
-    background-color: silver;
-    background-image: url(Mogu.png);
-  }
-  
-  .App-chatroom-text {
-    margin: 8px;
-    background-color: rgb(201, 138, 138);
-  }
-  
-  .App-textbox {
-    flex: 1;
-    background-color: gray;
-    justify-content: center;
-    align-items: stretch;
-    display: flex;
-  }
-  
-  .App-textbox-input {
-    flex: 5;
-    height: 100%;
-    box-sizing: border-box;
-  }
-  
-  .App-textbox-send {
-    flex: 1;
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-  @media(max-width:768px){
-    .App-chatroom {
-      flex: 11;
-      background-color: rgb(255, 0, 0);
-      background-image: url(Mogu.png);
-      background-size: cover;
-    }
-    .App {
+}
+.App-PapFriendList-body{
+  background-color: #fc9b7a;
+width:100%;
+height:50px ;
+border: 3px solid;
+text-align: center;
+}
+
+.App-colum{
+  flex:0.1;
+  background-color: #fc531a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:760px)
+{
+  .App {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    max-width: 400px;
+    max-width:100%;
     height: 100%;
-    margin: auto;
+    margin: cover;
+
 
   }
   .App-header {
     flex: 1;
-    background-color: #4400ff;
+    background-color: #ff6600;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: rgb(255, 136, 0);
+    font-size: 50px;
+
+    color: rgb(0, 0, 0);
 
   }
 
+  .App-chatroom-text {
+    margin: 20px;
+
+    background-color: rgb(255, 167, 2);
+
+    color : rgb(0, 3, 3);
+    font-size: 30px;
+    border-style:groove ;
   }
+}

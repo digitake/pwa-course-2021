@@ -3,6 +3,7 @@ import './Eye_LoadingScene.css';
 
 function Eye_LoadingScene(){
     return(
+        <Link to="/App">
         <div className="App col-12">
             <div className="EyeBG">
                 <div className="Text_Fantasma">Fantasma</div>
@@ -11,6 +12,7 @@ function Eye_LoadingScene(){
                 </div>
             </div>
         </div>
+        </Link>
     );
 };
 

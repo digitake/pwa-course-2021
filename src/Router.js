@@ -15,11 +15,11 @@ function Router(){
                 <Route path="/friend-list">
                     <FriendList />
                 </Route>
-                <Route path="/EnterApp_3ofghost">
-                    <EnterApp_3ofghost />
+                <Route path="/App">
+                    <App />
                 </Route>
                 <Route path="/">
-                    <App/>
+                    <EnterApp_3ofghost />
                 </Route>
             </Switch>
         </BrowserRouter>

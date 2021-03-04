@@ -1,8 +1,10 @@
 import './App.css';
-import {useState} from 'react';
 import{Link} from 'react-router-dom';
+import {useState} from 'react';
+import Back from './Back.png';
 
-function App() {
+
+function GroupChat() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
@@ -23,19 +25,28 @@ function App() {
 
   return (
     <div className="App">
-      <div className="App-header">
+    
+      <div className= "App-chat-friend">
+    
+          <div className= "App-head-chatFriend">
+             <Link to="/home" >
+               <img src={Back}/>
+               </Link> 
+               </div>
+               <div className= "App-head-chatFriend">
+               
+     <div className= "App-head-chatFriend">
+    
+     </div>
+               </div>
+               Group Chat
+               <div className= "App-head-chatFriend">
+             
+</div>
+<div className= "App-head-chatFriend">
 
-
-        App Chatroom(ClassWork)
-        <div className="App-textbox-send">
-          
-            <Link to="/friend-list">
-            <button>
-                Go to Friend list
-            </button>
-            </Link>
-       
-        </div>
+</div>
+            
       </div>
       <div className="App-chatroom">
         {
@@ -59,4 +70,4 @@ function App() {
   );
 }
 
-export default App;
+export default GroupChat;

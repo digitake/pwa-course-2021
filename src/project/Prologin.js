@@ -8,7 +8,7 @@ function Prologin() {
          <img className="Prologin-header-logo" src="/Project/Prologin/boxchat.jpg" alt = "/Project/Prologin/boxchat.jpg" />
       </header>
       <div className="signin-logo">
-        <Link to="/">
+        <Link to="/ProFriend">
            <img src= "/Project/Prologin/sign.jpg" alt = "/Project/Prologin/sign.jpg" />
         </Link>
       </div>

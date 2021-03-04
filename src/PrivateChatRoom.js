@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './PrivateChatRoom.css';
 import { Link } from 'react-router-dom';
 
-function App() {
+function PrivateChatRoom() {
 
   const [text, setText] = useState("")
 
@@ -46,4 +46,4 @@ function App() {
   );
 }
 
-export default App;
+export default PrivateChatRoom;

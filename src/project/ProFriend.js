@@ -17,9 +17,7 @@ function ProFriend() {
       </div>
       <div className="Profile">    
         <Link to='/ProProfile'>
-          <button>
-            <img src="Sui.jpg" alt="Sui.jpg" width="75px" height="75px" />
-          </button>
+            <img src="Sui.jpg" alt="Sui.jpg" width="75px" height="75px" />          
         </Link>
        </div>
     </div>
@@ -29,34 +27,28 @@ function ProFriend() {
     <div className="App-chatroom">    
       <div className="circlesbox1">    
         <Link to='/ProChatroom'>
-          <button>
             <img src="sad.png" alt="sad.png" width="100px" height="100px" />
-          </button>
         </Link> 
-        <div className="text1">
+      </div>
+      <div className="text1">
         Pepe1
        </div>
-      </div>
       <div className="circlesbox2">    
         <Link to='/ProChatroom'>
-          <button>
-            <img src="sad.png" alt="sad.png" width="100px" height="100px"/>
-          </button>
+            <img src="sad.png" alt="sad.png" width="100px" height="100px"/>       
         </Link> 
-        <div className="text1">
+      </div>
+      <div className="text2">
         Pepe2
        </div>
-      </div>
       <div className="circlesbox3">    
       <Link to='/ProChatroom'>
-          <button>
             <img src="nono.jpg" alt="nono.jpg" width="100px" height="100px" />
-          </button>
       </Link> 
-          <div className="text1">
+        </div>
+        <div className="text3">
           Noel
           </div>
-        </div>
     </div>
 </div>
   );

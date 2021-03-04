@@ -26,7 +26,7 @@ function App() {
       <div className="App-header">
 
 
-        App Chatroom
+        App Chatroom(ClassWork)
         <div className="App-textbox-send">
           
             <Link to="/friend-list">

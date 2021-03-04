@@ -101,21 +101,6 @@ text-align: center;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(min-width:760px)
 {
   .App {
@@ -126,8 +111,8 @@ text-align: center;
     max-width:100%;
     height: 100%;
     margin: cover;
-
-
+    
+  
   }
   .App-header {
     flex: 1;
@@ -137,18 +122,19 @@ text-align: center;
     align-items: center;
     justify-content: center;
     font-size: 50px;
-
+  
     color: rgb(0, 0, 0);
-
+   
   }
 
   .App-chatroom-text {
     margin: 20px;
-
+  
     background-color: rgb(255, 167, 2);
-
+  
     color : rgb(0, 3, 3);
     font-size: 30px;
     border-style:groove ;
   }
+  
 }

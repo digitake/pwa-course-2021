@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './PrivateChatRoom.css';
 import { Link } from 'react-router-dom';
+import { FiMicOff,FiLogOut,FiMoreVertical,FiClipboard,FiSearch } from "react-icons/fi";
 
 function PrivateChatRoom() {
 
@@ -21,6 +22,23 @@ function PrivateChatRoom() {
     <div className="App">
       <div className="App-header">
         Private Chatroom
+        <ul className="Function">
+        <li className="Function-link">
+          <a href="#"><FiSearch />Search</a>
+        </li>
+        <li className="Function-link">
+          <a href="#"><FiClipboard/>Note</a>
+        </li>
+        <li className="Function-link">
+          <a href="#"><FiMicOff/>Mute Chat</a>
+        </li>
+        <li className="Function-link">
+          <a href="#"><FiLogOut/>Leave</a>
+        </li>
+        </ul>
+        <div className="Mobile-menu">
+
+        </div>
       </div>
       <Link to="/friend-list">
         <button>

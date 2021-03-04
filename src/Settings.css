@@ -1,20 +1,20 @@
-.contain{
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.App{
   max-width: 414px;
-  height: 100%;
-  margin: auto;
+  margin: 0 auto;
   background-color:#2D2C67
 }
+.App-Header{
+  background: #3d14f5;
+  color:aliceblue;
+  height: 80px;
+  }
 @media (min-width: 700px) {
-    .contain {
+    .App {
       max-width:90%;
     }
   }
   @media (min-width: 950px) {
-    .contain {
+    .App {
       max-width:100%;
     }
   }

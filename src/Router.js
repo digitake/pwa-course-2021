@@ -10,7 +10,7 @@ function Router() {
         <Route path="/friend-list">
             <FriendList/>
          </Route>
-         <Route path="/Frist-Page">
+         <Route path="/setting">
             <Setting/>
          </Route>
         <Route path="/">

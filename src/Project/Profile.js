@@ -1,21 +1,34 @@
 import './Profile.css'
+import { Link } from 'react-router-dom';
 
 function Profile() {
     return (
-    <div className="Main">
+    <div className="Profile">
+             <header className="Main-BackGround">
+                <img className="Main-BackGrounder" src="/Photo/k2.png" alt = "/Photo/k2.png" />
+             </header>
         <div>
-            <img className= "Background-Main" src="/photo/k2.png"/>
+            <img className="Sub-Profile" src="/Photo/k3.png" alt = "/Photo/k3.png" />
         </div>
         <div>
-             <img className="Background-Profile" src="/Photo/k3.png" />
+            <img className="Main-Profile" src="/Photo/k1.png" alt = "/Photo/k1.png" />
         </div>
         <div>
-             <img className="Text-box" src="/Photo/k4.png" />   
+            <img className="namely" src="/Photo/k4.png" alt = "/Photo/k4.png" />
         </div>
-      <header className="Profilely">
-            <img className="MainProfilely" src="/Photo/k1.png" />
-      </header>
+        <p className="usernamely">username</p> 
+        <div>
+            <Link to="/">
+            <img className="GoGoBack" src="/Photo/k6.png" alt = "/Photo/k6.png" />
+            </Link>
+        </div>
+        <div>
+            <Link to="/">
+            <img className="GoSetting" src="/Photo/k5.png" alt = "/Photo/k5.png" />
+            </Link>
+        </div>
     </div>
+    
     );
 } 
 

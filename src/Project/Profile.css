@@ -1,4 +1,4 @@
-.Main{
+.Profile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,39 +6,61 @@
     max-width: 550px;
     height: 87%;
     margin: auto;
-    
+    background-color: rgb(31, 103, 211);
   }
 
-.MainProfilely {
-    height: 350px;
-    width: 350px;
-    position: ;
-    margin-top: -2000px;
-    left: 785px;
+ .Main-BackGrounder {
+    height: 845px;
+    width: 550px;
+    position: relative;
+    top: 690px;
+    left: auto;
+    opacity: 0.8;
+  }
+
+.Sub-Profile {
+    height: 420px;
+    width: 420px;
+    position: relative;
+    top:  -130px;
+    left: auto;
 }
 
-.Background-Profile {
-    height: 400px;
-    width: 400px;
-    margin-top: -700px;
-    left: 760px;
-    
+.Main-Profile {
+    height: 380px;
+    width: 380px;
+    position: relative;
+    top:  -535px;
+    left: auto;
 }
 
-.Text-box {
-    height: 200px;
-    width: 400px;
-    position: absolute;
-    top: 500px;
-    left: 765px;
+.namely {
+    height: 250px;
+    width:  350px;
+    position: relative;
+    top:  -420px;
+    left: auto;
 }
 
-.Background-Main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    max-width: 550px;
-    height: 1084px;
-    margin: auto;
+.usernamely {
+    position: relative;
+    top:  -830px;
+    left: auto;
+    font-size: 54px;
+}
+
+.GoGoBack {
+    height: 50px;
+    width:  50px;
+    position: relative;
+    top:  -1380px;
+    left: -240px;
+}
+
+.GoSetting {
+    height: 80px;
+    width:  80px;
+    position: relative;
+    top:  -1085px;
+    left: 110px;
 }

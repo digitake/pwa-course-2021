@@ -5,7 +5,6 @@ import './App.css';
 function App() {
 
 const [text,setText] = useState("");
-
 const [lines, setLines] = useState(["Welcome to my Lobby"]);
 
 const onTextChange = (event) => {
@@ -48,7 +47,8 @@ const onSend = () => {
 
       </div>
       <div className="App-textbox">
-          <div className="App-Botton col-3"></div>
+          <div className="App-Botton col-1">
+          </div>
         <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-10" value = {text} onChange={onTextChange}/>
         <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
             

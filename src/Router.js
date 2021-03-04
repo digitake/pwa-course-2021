@@ -1,16 +1,16 @@
 ﻿import {BrowserRouter, Switch, Route} from "react-router-dom";
 import App from "./App";
-import FriendList from "./FriendList";
+import LobbySetting from "./LobbySetting";
 
 function Router() {
     
     return(
         <BrowserRouter>
           <Switch>
-              <Route path="/friend-list">
-                  <FriendList />
+              <Route path="/LobbySetting">
+                  <LobbySetting />
               </Route>
-              <Route path="/">
+              <Route path="/App">
                   <App />
               </Route>
           </Switch>  

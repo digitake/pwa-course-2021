@@ -30,8 +30,6 @@
   border-radius: 50px;
 }
 
-
-
 .profile-read-pruek {
   overflow: visible;
   background-image: url(pruekProfile.jpg);
@@ -88,48 +86,6 @@
   color: #ffffff;
   position: relative;
 }
-
-
-/* For Study next time*/
-/*.chat-form{*/
-/*  display: grid;*/
-/*  grid: 51px/32px 1fr;*/
-/*  align-content: center;*/
-/*  align-items: center;*/
-/*  grid-gap: 15px;*/
-/*  grid-area: chat-form;*/
-/*  border-radius: 0 0 10px 0;*/
-/*  border-top: 1px white;*/
-/*  padding-left: 30px;*/
-/*  padding-right: 30px;*/
-/*}*/
-
-/*.text {*/
-/*  letter-spacing: 0px;*/
-/*  line-height: 1.2;*/
-/*  color: white;*/
-/*  font-weight: 400;*/
-/*  font-style: oblique;*/
-/*  font-family: "Irish Grover", serif;*/
-/*}*/
-
-/*.chat-form-input{*/
-/*  outline: none;*/
-/*  padding: 15px;*/
-/*  border:  2px white;*/
-/*  color: black;*/
-/*  border-radius: 6px;*/
-/*  font-size: 1.4rem;*/
-/*}*/
-
-
-/*.text{*/
-/*  font-size: 1.5rem;*/
-/*  padding-left: 30px;*/
-/*  outline: none;*/
-/*  */
-/*}*/
-
 
 .App-chatroom-text {
   margin: 15px;

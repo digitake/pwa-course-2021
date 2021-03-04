@@ -1,0 +1,297 @@
+﻿
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-header {
+    background-image: url("BGapp.jpg");
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    text-align: left;
+}
+
+.profile-read-tar {
+    overflow: visible;
+    background-image: url(tarProfile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.profile-read-pruek {
+    overflow: visible;
+    background-image: url(pruekProfile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.profile-read-phai {
+    overflow: visible;
+    background-image: url(phaiProfile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+
+}
+
+.profile-read-ju-on {
+    background-image: url(Ju-onProfile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #3de73d;
+    border-radius: 50px;
+    position: relative;
+}
+
+.App-Botton{
+    background-image: url("botton.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position : fixed;
+    left: 1px;
+    top: 1000px;
+}
+
+
+.App-chatroom {
+    flex: 10;
+    background-image: url(BGapp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.RoomName{
+    color: #ffffff;
+    position: relative;
+}
+
+.RoomID{
+    color: #ffffff;
+    position: relative;
+}
+
+.App-chatroom-text {
+    margin: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.App-textbox {
+    background-color: rgb(253, 4, 4);
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+    position: fixed;
+    margin: 1px;
+    left: 4.5%;
+    top:1000px;
+    height: 2.6%;
+    width: 97%;
+}
+
+.App-textbox-input {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.App-textbox-send {
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.68%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media  (max-width: 760px){
+    /* IPHONE */
+    .profile-read-tar{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 20px;
+    }
+
+    .profile-read-ju-on{
+        width: 50px;
+        height: 50px;
+        left : 30px;
+        bottom : 5px;
+    }
+
+    .profile-read-pruek{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 120px;
+    }
+    .profile-read-phai{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 70px;
+    }
+    .App-header{
+        flex : 0.7;
+        flex-direction: row;
+    }
+    .App-Botton{
+        width: 40px;
+        height: 40px;
+    }
+
+    .RoomName{
+        font-size: 1.2rem;
+        left: 45px;
+        bottom: 35px;
+    }
+
+    .RoomID{
+        font-size: 0.7rem;
+        bottom: 10px;
+        right: 82px;
+    }
+}
+
+@media  (max-width: 1500px) and (min-width: 761px){
+   
+    /* IPAD */
+    .profile-read-ju-on{
+        width: 70px;
+        height: 70px;
+        left : 40px;
+        bottom : 25%;
+    }
+
+    .profile-read-tar{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 30px;
+
+    }
+    .profile-read-pruek{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 150px;
+
+    }
+    .profile-read-phai{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 90px;
+
+    }
+    .App-header{
+        flex :1;
+        flex-direction: row;
+
+    }
+
+    .App-Botton{
+        bottom: 50px;
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .RoomName{
+        font-size: 2.2rem;
+        left: 60px;
+        bottom: 45%;
+    }
+
+    .RoomID{
+        font-size: 1rem;
+        bottom: 40px;
+        right: 125px;
+    }
+}
+
+@media  (min-width: 1501px){
+    
+    /* PC */
+    .profile-read-ju-on{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left : 700px;
+        top : 20px;
+    }
+    .profile-read-tar{
+        margin: 5px;
+        width: 60px;
+        height: 60px;
+
+    }
+    .profile-read-pruek{
+        margin: 5px;
+        width: 60px;
+        height: 60px;
+
+    }
+    .profile-read-phai{
+        margin: 5px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .App-header{
+        height: 10%;
+        flex-direction: column;
+    }
+
+    .App-Botton{
+        width: 55px;
+        height: 55px;
+    }
+
+    .RoomName{
+        position: fixed;
+        font-size: 2.2rem;
+        left: 850px;
+        top: 10px;
+    }
+
+    .RoomID{
+        position: fixed;
+        font-size: 1rem;
+        left: 920px;
+        top: 90px;
+    }
+}

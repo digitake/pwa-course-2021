@@ -25,11 +25,6 @@ function App() {
     <div className="App">
       <div className="App-header">
         Miyawaki Sakura
-        <Link to="/friend-list">
-          <button>
-            Go Test
-          </button>
-        </Link>
       </div>
       <div className="App-chatroom">
         {

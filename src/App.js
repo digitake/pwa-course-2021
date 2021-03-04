@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
+import {Link} from 'react-router-dom'
 
 function App() {
 
   const [text, setText] = useState("");
-  const [lines, setLines] = useState(["sdad","dasd"]);
+  const [lines, setLines] = useState(["Please Enter Your Massage",""]);
 
   const onChangeHandler = (event) => {
       setText(event.target.value);
@@ -19,13 +20,20 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+         Group Box Chat
       </div>
+      
+      <div className = "AppUndo">
+      <Link to = "/HomePage">
+        <img src = "Union(1).png" alt = "" /> 
+      </Link>
+      </div>
+     
       <div className="App-chatroom">
         <div className="App-chatroom-text">
           
         </div>
         <div className="App-chatroom-text">
-          
         </div>
         {
           lines.map((value, index) => {

@@ -1,6 +1,7 @@
 import {BrowserRouter, Switch , Route} from 'react-router-dom';
+import ProFriend from './project/ProFriend';
 import Prologin from './project/Prologin';
-import FriendList from './FriendList';
+import Prosetting from './project/Prosetting';
 
 
 function Router() {
@@ -8,12 +9,15 @@ function Router() {
     return(
         <BrowserRouter>
             <Switch>
-              <Route path="/FriendList">
-                  <FriendList />
-              </Route>
-              <Route path="/Prologin">
-                  <Prologin />
-              </Route>
+                <Route path = "/Prosetting">
+                    <Prosetting />
+                </Route>
+                <Route path = "/ProFriend">
+                    <ProFriend />
+                </Route>
+                <Route path = "/Prologin">
+                    <Prologin />
+                </Route>
             </Switch>
         </BrowserRouter>
     )

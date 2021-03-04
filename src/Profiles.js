@@ -1,10 +1,10 @@
 import './Profiles.css';
 import { FiFacebook,FiInstagram,FiTwitter } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 function profiles() {
-    
     return (
-<div className="Header">
+    <div className="Header">
             <div className="contain">
                 Profiles
                <ul className="Function">
@@ -28,5 +28,6 @@ function profiles() {
             </div>
         </div>
     );
-};
-export default Profiles;
+}
+
+export default profiles;

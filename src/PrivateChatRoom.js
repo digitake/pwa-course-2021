@@ -50,6 +50,11 @@ function PrivateChatRoom() {
         <FiSettings/>Settings
         </button>
       </Link>
+      <Link to="/profiles">
+        <button>
+        <FiUsers/>Profile
+        </button>
+      </Link>
       <div className="App-chatroom">
       {
         lines.map(x =>{

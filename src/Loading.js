@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import  loading  from "./Design/Loading.jpg";
+import  loading  from "./design/Loading.jpg";
 import "./Loading.css";
 function Loading(){
     return(

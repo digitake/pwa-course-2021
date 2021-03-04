@@ -1,6 +1,6 @@
 import './Feed.css';
 import { Component } from 'react';
-import FeedImg from './Design/Feed.jpg';
+import FeedImg from './design/Feed.jpg';
 import { Link } from 'react-router-dom';
 
 class Feed extends Component {

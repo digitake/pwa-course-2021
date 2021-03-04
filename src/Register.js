@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import register from './Design/Register.jpg'
+import register from './design/Register.jpg'
 
 function Register() {
   return (

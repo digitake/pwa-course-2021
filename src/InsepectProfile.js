@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import inProfile from "./Design/InsepectProfile.jpg";
+import inProfile from "./design/InsepectProfile.jpg";
 
 function InsepectProfile(){
     return(

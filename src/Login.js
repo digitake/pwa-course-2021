@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import login from './Design/Log in.jpg'
+import login from './design/Log in.jpg'
 
 function Login() {
   return (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import  lobby  from "./Design/Lobby.jpg";
+import  lobby  from "./design/Lobby.jpg";
 import "./Lobby.css";
 function Lobby(){
     return(

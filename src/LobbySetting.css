@@ -1,5 +1,5 @@
 ﻿
-.App {
+.LoadingSetting {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,12 +8,12 @@
     margin: auto;
 }
 
-.App-logo {
+.LoadingSetting-logo {
     height: 40vmin;
     pointer-events: none;
 }
 
-.App-header {
+.LoadingSetting-header {
     background-image: url("BGapp.jpg");
     display: flex;
     align-items: flex-end;
@@ -21,7 +21,7 @@
     text-align: left;
 }
 
-.profile-read-tar {
+.LoadingSetting-profile-read-tar {
     overflow: visible;
     background-image: url(tarProfile.jpg);
     background-size: cover;
@@ -30,7 +30,7 @@
     border-radius: 50px;
 }
 
-.profile-read-pruek {
+.LoadingSetting-profile-read-pruek {
     overflow: visible;
     background-image: url(pruekProfile.jpg);
     background-size: cover;
@@ -39,7 +39,7 @@
     border-radius: 50px;
 }
 
-.profile-read-phai {
+.LoadingSetting-profile-read-phai {
     overflow: visible;
     background-image: url(phaiProfile.jpg);
     background-size: cover;
@@ -49,7 +49,7 @@
 
 }
 
-.profile-read-ju-on {
+.LoadingSetting-profile-read-ju-on {
     background-image: url(Ju-onProfile.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,41 +61,44 @@
     position: relative;
 }
 
-.App-Botton{
+.LoadingSetting-Botton{
     background-image: url("botton.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
     position : fixed;
     left: 1px;
     top: 1000px;
+    
 }
 
 
-.App-chatroom {
+.LoadingSetting-chatroom {
     flex: 10;
     background-image: url(BGapp.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
 }
 
-.RoomName{
+.LoadingSetting-RoomName{
     color: #ffffff;
     position: relative;
 }
 
-.RoomID{
+.LoadingSetting-RoomID{
     color: #ffffff;
     position: relative;
 }
 
-.App-chatroom-text {
+.LoadingSetting-chatroom-text {
     margin: 15px;
     background-color: rgb(255, 255, 255);
 }
 
-.App-textbox {
+.LoadingSetting-textbox {
     background-color: rgb(253, 4, 4);
     justify-content: center;
     align-items: stretch;
@@ -108,12 +111,12 @@
     width: 97%;
 }
 
-.App-textbox-input {
+.LoadingSetting-textbox-input {
     height: 100%;
     box-sizing: border-box;
 }
 
-.App-textbox-send {
+.LoadingSetting-textbox-send {
     height: 100%;
     vertical-align: middle;
     justify-content: center;
@@ -138,160 +141,334 @@
 
 @media  (max-width: 760px){
     /* IPHONE */
-    .profile-read-tar{
+    .LoadingSetting-profile-read-tar{
         position: absolute;
         width: 40px;
         height: 40px;
         right: 20px;
     }
 
-    .profile-read-ju-on{
+    .LoadingSetting-profile-read-ju-on{
         width: 50px;
         height: 50px;
         left : 30px;
         bottom : 5px;
     }
 
-    .profile-read-pruek{
+    .LoadingSetting-profile-read-pruek{
         position: absolute;
         width: 40px;
         height: 40px;
         right: 120px;
     }
-    .profile-read-phai{
+    .LoadingSetting-profile-read-phai{
         position: absolute;
         width: 40px;
         height: 40px;
         right: 70px;
     }
-    .App-header{
+    .LoadingSetting-header{
         flex : 0.7;
         flex-direction: row;
     }
-    .App-Botton{
+    .LoadingSetting-Botton{
+        position: fixed;
         width: 40px;
         height: 40px;
+        left: 1%;
+        top: 1000px;
     }
 
-    .RoomName{
+    .LoadingSetting-RoomName{
         font-size: 1.2rem;
         left: 45px;
         bottom: 35px;
     }
 
-    .RoomID{
+    .LoadingSetting-RoomID{
         font-size: 0.7rem;
         bottom: 10px;
         right: 82px;
+    }
+
+    /*button*/
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        flex-direction: column;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
     }
 }
 
 @media  (max-width: 1500px) and (min-width: 761px){
    
     /* IPAD */
-    .profile-read-ju-on{
+    .LoadingSetting-profile-read-ju-on{
         width: 70px;
         height: 70px;
         left : 40px;
         bottom : 25%;
     }
 
-    .profile-read-tar{
+    .LoadingSetting-profile-read-tar{
         position: absolute;
         width: 50px;
         height: 50px;
         right: 30px;
 
     }
-    .profile-read-pruek{
+    .LoadingSetting-profile-read-pruek{
         position: absolute;
         width: 50px;
         height: 50px;
         right: 150px;
 
     }
-    .profile-read-phai{
+    .LoadingSetting-profile-read-phai{
         position: absolute;
         width: 50px;
         height: 50px;
         right: 90px;
 
     }
-    .App-header{
+    .LoadingSetting-header{
         flex :1;
         flex-direction: row;
 
     }
 
-    .App-Botton{
+    .LoadingSetting-Botton{
         bottom: 50px;
         width: 50px;
         height: 50px;
 
     }
 
-    .RoomName{
+    .LoadingSetting-RoomName{
         font-size: 2.2rem;
         left: 60px;
         bottom: 45%;
     }
 
-    .RoomID{
+    .LoadingSetting-RoomID{
         font-size: 1rem;
         bottom: 40px;
         right: 125px;
+    }
+
+    /*button*/
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
     }
 }
 
 @media  (min-width: 1501px){
     
     /* PC */
-    .profile-read-ju-on{
+    .LoadingSetting-profile-read-ju-on{
         width: 80px;
         height: 80px;
         position: absolute;
         left : 700px;
         top : 20px;
     }
-    .profile-read-tar{
+    .LoadingSetting-profile-read-tar{
         margin: 5px;
         width: 60px;
         height: 60px;
 
     }
-    .profile-read-pruek{
+    .LoadingSetting-profile-read-pruek{
         margin: 5px;
         width: 60px;
         height: 60px;
 
     }
-    .profile-read-phai{
+    .LoadingSetting-profile-read-phai{
         margin: 5px;
         width: 60px;
         height: 60px;
     }
 
-    .App-header{
+    .LoadingSetting-header{
         height: 10%;
         flex-direction: column;
     }
 
-    .App-Botton{
+    .LoadingSetting-Botton{
+        position: fixed;
         width: 55px;
         height: 55px;
+        top: 1000px;
+        left:1%;
     }
 
-    .RoomName{
+    .LoadingSetting-RoomName{
         position: fixed;
         font-size: 2.2rem;
         left: 850px;
         top: 10px;
     }
 
-    .RoomID{
+    .LoadingSetting-RoomID{
         position: fixed;
         font-size: 1rem;
         left: 920px;
         top: 90px;
+    }
+    
+    /*button*/
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        top:80%;
+        right:45%;
+        flex-direction: column;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
     }
 }

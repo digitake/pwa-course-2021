@@ -16,39 +16,51 @@ function LobbySetting() {
         setLines(line => [...lines,text]);
         setText("")
     }
-
+   
     return (
-        <div className="App col-12">
-            <div className="App-header">
-                <div className="profile-read-ju-on">
+        <div className="LoadingSetting col-12">
+            <div className="LoadingSetting-header">
+                <div className="LoadingSetting-profile-read-ju-on">
                 </div>
-                <div className="RoomName">
+                <div className="LoadingSetting-RoomName">
                     Room Ju-on
                 </div>
-                <div className="RoomID">
+                <div className="LoadingSetting-RoomID">
                     RID 123456
                 </div>
-                <div className="profile-read-tar">
+                <div className="LoadingSetting-profile-read-tar">
                 </div>
-                <div className="profile-read-pruek">
+                <div className="LoadingSetting-profile-read-pruek">
                 </div>
-                <div className="profile-read-phai">
+                <div className="LoadingSetting-profile-read-phai">
                 </div>
             </div>
-            <div className="App-chatroom">
+            <div className="LoadingSetting-chatroom">
                 {
                     lines.map(x=>{
-                        return <div className="App-chatroom-text">
+                        return <div className="LoadingSetting-chatroom-text">
                             {x}
                         </div>
                     })
                 }
+                <label className="switch">
+                    <input type="checkbox"/>
+                    <span className="slider round">
+                    </span>
+                </label>
+
+                <label className="switch">
+                    <input type="checkbox"/>
+                    <span className="slider round">
+                    </span>
+                </label>
+
             </div>
-            <div className="App-textbox">
-                <div className="App-Botton col-1">
+            <div className="LoadingSetting-textbox">
+                <div className="LoadingSetting-Botton col-1">
                 </div>
-                <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-10" value = {text} onChange={onTextChange}/>
-                <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
+                <input type="text" placeholder="Type Ready to Start!" className="LoadingSetting-textbox-input col-10" value = {text} onChange={onTextChange}/>
+                <div className="LoadingSetting-textbox-send col-2" onClick={onSend}>Send!</div>
             </div>
         </div>
     );

@@ -19,11 +19,12 @@ function  FriendList() {
           <div className="Friend-chatroom-text">
              Hayina
           </div>
-          <Link to="/">
+          <Link to="/cradit">
             <button>
-             Go to Chatroom
-             </button>
-            </Link>
+             Go to Cradit-List
+            </button>
+          </Link>
+            
         </div>
       </div>
         

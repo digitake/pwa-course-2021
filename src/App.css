@@ -1,15 +1,6 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  margin: auto;
-  background-color: rgb(255, 200, 255);
-  background-image: url(design/s2.jpg);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: rgb(207, 238, 250);
+  
 }
 
 @media (min-width: 768px) {

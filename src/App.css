@@ -71,16 +71,8 @@
   align-items: center;
   display: flex;
 }
-.App-button-friend{
-  flex: 1;
-  height: 100%;
-  vertical-align: left;
-  justify-content: left;
-  align-items: left;
-  display: flex;
 
-
-}
+/*Boonyakit Code **/
 .App-middle-home{
   flex: 10;
   background-color: rgb(247, 218, 132);
@@ -114,7 +106,7 @@
  
   
 }
-.App-pic-left{
+.App-pic-home{
 
   height: 150px;
  /* width: 150px;*/

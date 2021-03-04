@@ -31,7 +31,7 @@ function App() {
           
             <Link to="/friend-list">
             <button>
-                Go to Friend list
+                Go to Friend list(Class Work)
             </button>
             </Link>
        

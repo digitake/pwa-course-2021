@@ -1,3 +1,4 @@
+
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import App from "./App";
 import FriendList from "./FriendList";
@@ -9,17 +10,20 @@ function Router(){
     return(
         <BrowserRouter>
             <Switch>
+                <Route path="/profiletar">
+                  <Profiletar/>
+                </Route>
                 <Route path="/Eye_Scene">
                     <Eye_LoadingScene />
                 </Route>
                 <Route path="/friend-list">
                     <FriendList />
                 </Route>
-                <Route path="/EnterApp_3ofghost">
-                    <EnterApp_3ofghost />
+                <Route path="/App">
+                    <App />
                 </Route>
                 <Route path="/">
-                    <App/>
+                    <EnterApp_3ofghost />
                 </Route>
             </Switch>
         </BrowserRouter>
@@ -27,3 +31,4 @@ function Router(){
 };
 
 export default Router;
+

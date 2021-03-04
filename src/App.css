@@ -15,6 +15,7 @@
   pointer-events: none;
 }
 
+
 .App-header {
   background-image: url("BGapp.jpg");
   display: flex;
@@ -31,6 +32,10 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50px;
+  position: absolute;
+  top: 25px;
+  right: 100px;
+
 }
 
 
@@ -43,6 +48,9 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50px;
+  position: absolute;
+  top: 25px;
+  right: 0px;
 }
 
 .profile-read-phai {
@@ -138,19 +146,16 @@
   margin: 15px;
   background-color: rgb(255, 255, 255);
 }
-
 .App-textbox {
   background-color: rgb(253, 4, 4);
   justify-content: center;
   align-items: stretch;
   display: flex;
 }
-
 .App-textbox-input {
   height: 100%;
   box-sizing: border-box;
 }
-
 .App-textbox-send {
   height: 100%;
   vertical-align: middle;

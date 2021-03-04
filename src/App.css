@@ -1,4 +1,5 @@
 .App {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,10 +13,10 @@
   background-position: center;
 }
 
-@media (min-width: 700px) {
-  .App {
-    max-width:90%;
-    background-color: rgb(230, 233, 35);
+@media (min-width : 1080px){
+  .App{
+    width: 95%;
+    background-color: #2D2C67;
   }
 }
 @media (min-width: 950px) {
@@ -32,7 +33,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #3d14f5;
+  background-color: #505396;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,4 +79,13 @@
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.AppUndo{
+  position: absolute;
+  width: 28.54px;
+  height: 23.84px;
+  left: 13px;
+  top: 15px;  
+
 }

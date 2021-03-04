@@ -6,7 +6,7 @@ function FriendList(){
         <div className="FriendList" >
             <div className= "FriendList-header">
                Friend List
-              <Link to="/">
+              <Link to="/menu">
                   <img src ="back-32.png" align="Left" />
               </Link>
             </div>

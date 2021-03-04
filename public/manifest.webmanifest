@@ -1,11 +1,11 @@
 {
-    "theme_color": "#f69435",
-    "background_color": "#f69435",
+    "theme_color": "#2D2C67",
+    "background_color": "#2D2C67",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "My first app",
-    "short_name": "First app",
+    "name": "PrivateChatRoomApplication",
+    "short_name": "Privy",
     "icons": [
         {
             "src": "/icon-192x192.png",

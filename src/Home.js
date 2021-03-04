@@ -21,7 +21,7 @@ function Home() {
 <div className="App-middle-home">
 
 <div className="App-pic-left" > 
-               <Link to="/" >
+               <Link to="/chat-friend" >
                <img src={Friend}/>
                </Link> 
                <div className="App-text-left">

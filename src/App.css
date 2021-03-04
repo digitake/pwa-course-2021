@@ -121,18 +121,6 @@
  
   
 }
-
-.App-pic-right{
-
-  height: 150px;
-  width: 150px;
-  
- right: 100%;
- 
- 
-}
-
-
 .App-header-home {
   flex: 1;
   background-color: #ffc400;
@@ -150,6 +138,25 @@
   
   background-color: rgb(247, 218, 132);
 }
+.App-head-chatFriend{
+  flex: 1;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+
+  background-color: #ffc400;
+}
+.App-chat-friend{
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #ffc400;
+  font-size: 25px;
+}
+
 
 
 

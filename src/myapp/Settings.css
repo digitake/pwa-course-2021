@@ -1,5 +1,5 @@
-.contain{
-    display: flex;
+.app{
+  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -8,13 +8,18 @@
   margin: auto;
   background-color:#2D2C67
 }
+.app-contrain{
+  background: #3d14f5;
+  color:aliceblue;
+  height: 80px;
+  }
 @media (min-width: 700px) {
-    .contain {
+    .app {
       max-width:90%;
     }
   }
   @media (min-width: 950px) {
-    .contain {
+    .app {
       max-width:100%;
     }
   }

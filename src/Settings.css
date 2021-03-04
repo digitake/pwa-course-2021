@@ -8,3 +8,13 @@
   margin: auto;
   background-color:#2D2C67
 }
+@media (min-width: 700px) {
+    .contain {
+      max-width:90%;
+    }
+  }
+  @media (min-width: 950px) {
+    .contain {
+      max-width:100%;
+    }
+  }

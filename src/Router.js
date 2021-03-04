@@ -1,7 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
 import FriendList from './FriendList';
-import FristPage from './FristPage';
+import Setting from './Setting';
 function Router() {
 
     return (
@@ -11,7 +11,7 @@ function Router() {
             <FriendList/>
          </Route>
          <Route path="/Frist-Page">
-            <FristPage/>
+            <Setting/>
          </Route>
         <Route path="/">
             <App />

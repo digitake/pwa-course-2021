@@ -22,13 +22,21 @@ const onSend = () => {
   return (
     <div className="App col-12">
       <div className="App-header">
-          <div className="profile-read-ju-on"></div>
-          <div className="RoomName">Room Ju-on</div>
-          <div className="RoomID">RID 123456</div>
-          <div className="profile-read-tar"></div>
-          <div className="profile-read-pruek"></div>
-          <div className="profile-read-phai"></div>
+          <div className="profile-read-ju-on">
           </div>
+          <div className="RoomName">
+              Room Ju-on
+          </div>
+          <div className="RoomID">
+              RID 123456
+          </div>
+          <div className="profile-read-tar">
+          </div>
+          <div className="profile-read-pruek">
+          </div>
+          <div className="profile-read-phai">
+          </div>
+      </div>
       <div className="App-chatroom">
         {
           lines.map(x=>{

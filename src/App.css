@@ -8,8 +8,6 @@
   margin: auto;
 }
 
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -24,7 +22,6 @@
 }
 
 .profile-read-tar {
-  
   overflow: visible;
   background-image: url(tarProfile.jpg);
   background-size: cover;
@@ -36,7 +33,6 @@
 
 
 .profile-read-pruek {
-  
   overflow: visible;
   background-image: url(pruekProfile.jpg);
   background-size: cover;
@@ -46,7 +42,6 @@
 }
 
 .profile-read-phai {
-  
   overflow: visible;
   background-image: url(phaiProfile.jpg);
   background-size: cover;
@@ -57,7 +52,6 @@
 }
 
 .profile-read-ju-on {
-
   background-image: url(Ju-onProfile.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,8 +61,6 @@
   border-color: #3de73d;
   border-radius: 50px;
   position: relative;
-  
-
 }
 
 .App-Botton{

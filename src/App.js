@@ -68,6 +68,11 @@ const onSend = (event) =>{
         <div className="App-textbox-send " onClick ={onSend}>Send!</div>
 
       </div>
+      <div>
+      <button id="myBtn">Open Modal
+
+      </button>
+      </div>
      </div>
     );
 }

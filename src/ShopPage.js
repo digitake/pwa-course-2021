@@ -18,18 +18,38 @@ function ShopPage(){
             <div className="ShopPage-body">
                 <div className="ShopPage-profile-sticker">
                     <div className=".ShopPage-profile-image">
-                        
+                        <div className ="Profile-image">
+                            <img src="Profile.png" align="Bottom" />
+                        </div>
                     </div>
                     <div className=".ShopPage-profile-name-description">
-                        name
-                        <p id="name">Name</p>
-                        <p id="description">Description</p>
+                        <div className=".Profile-name">
+                            <p id="name">Name</p>
+                        </div>
+                        <div className=".Profile-description">
+                            <p id="description">Description</p>
+                        </div>
                     </div>
                 </div>
                 <div className="ShopPage-details-zone">
                     <div className="ShopPage-details-sticker-header">
                     </div>
                     <div className="ShopPage-details-sticker">
+                        <div className=".ShopPage-details-sticker-row">
+                            <img src="Profile-250.png" width="150px" height="150px" />
+                            <img src="Profile-250.png" width="150px" height="150px" />
+                            <img src="Profile-250.png" width="150px" height="150px" />
+                        </div>
+                        <div className=".ShopPage-details-sticker-row">
+                            <img src="Profile-250.png" width="150px" height="150px" />
+                            <img src="Profile-250.png" width="150px" height="150px" />
+                            <img src="Profile-250.png" width="150px" height="150px" />
+                        </div>
+                        <div className=".ShopPage-details-sticker-row">
+                            <img src="Profile-250.png" width="150px" height="150px" />
+                            <img src="Profile-250.png" width="150px" height="150px" />
+                            <img src="Profile-250.png" width="150px" height="150px" />
+                        </div>
                     </div>
                 </div>
             </div>

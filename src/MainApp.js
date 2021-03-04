@@ -6,9 +6,7 @@ function  MainApp(){
         <div>
             Main App
             <Link to="/">
-                <button>
-                    Chatroom
-                </button>
+                <img src="logodoge192.png"/>
             </Link>
         </div>
     );

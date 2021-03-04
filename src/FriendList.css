@@ -14,7 +14,6 @@
     
   }
 
- 
   @media (min-width: 768px){
  
     .FriendList{
@@ -34,13 +33,17 @@
     }
   }
 
+
   .FriendList-header {
     flex: 1;
     background-color: #FECC48;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+=======
     justify-content: center;
     
+>>>>>>> d48959107dc773950f219abbd3b5b70cd21ee2b7
 
   }
 
@@ -49,10 +52,36 @@
     background-color: #E9E87F;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+    justify-content: center;
+  }
+
+  .FriendList-header3{
+    flex: 3;
+    background-color: #E9E87F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+  }
+  .FriendList-header4{
+    flex: 3;
+    background-color: #E9E87F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  
+
+=======
     align-items: center;
     justify-content: center;
   }
 
+>>>>>>> d48959107dc773950f219abbd3b5b70cd21ee2b7
 
 
   .FriendList-chatroom {

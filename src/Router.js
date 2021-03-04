@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import  App  from "./App";
 import FriendList from "./FriendList";
 import ShopPage from "./ShopPage";
+import Menu from "./Menu";
 import ProfilePage from "./ProfilePage";
 import GamePage from "./GamePage";
 
@@ -18,6 +19,10 @@ function Router()  {
             
             <Route path="/shop-page">
               <ShopPage />
+            </Route>
+
+            <Route path="/menu">
+              <Menu />
             </Route>
 
             <Route path="/profile-page">
@@ -37,7 +42,6 @@ function Router()  {
 
     )
 };
-
 
 export default Router; //Run Router
 

@@ -8,6 +8,8 @@ const [text,setText] = useState("");
 
 const [lines, setLines] = useState(["Tar : Hello guys!"]);
 
+
+
 const onTextChange = (event) => {
     setText(event.target.value);
 };
@@ -30,6 +32,7 @@ const onSend = () => {
           <div className="profile-read-tar"></div>
           <div className="profile-read-pruek"></div>
           <div className="profile-read-phai"></div>
+          <div className="Chat-header"></div>
           </div>
       <div className="App-chatroom">
         {

@@ -20,7 +20,7 @@ function Home() {
 </div>
 <div className="App-middle-home">
 
-<div className="App-pic-left" > 
+<div className="App-pic-home" > 
                <Link to="/pap-friendList" >
                <img src={Friend}/>
                </Link> 
@@ -30,7 +30,7 @@ function Home() {
             </div>
           
             </div> 
-            <div className="App-pic-left" > 
+            <div className="App-pic-home" > 
             <Link to="/group-List" >
                <img src={Group}/>
                </Link> 
@@ -42,9 +42,9 @@ function Home() {
                 
  
 
-<div className="App-pic-left" >  
+<div className="App-pic-home" >  
            
-                <Link to="/" >
+                <Link to="/Store" >
                <img src={Store}/>
                </Link> 
                <div className="App-text-left">

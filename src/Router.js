@@ -6,6 +6,7 @@ import GroupList from './GroupList';
 import Home from './Home';
 import ChatFriend from './ChatFriend';
 import GroupChat from './GroupChat';
+import Store from './Store';
 
 
 function Router(){
@@ -14,10 +15,15 @@ function Router(){
    <BrowserRouter>
    <Switch>
 
+   <Route path = "/Store">
+    <Store />
+    </Route>
+
 
    <Route path = "/friend-list">
     <FriendList />
     </Route>
+
 
 
 <Route path = "/pap-friendList">

@@ -9,19 +9,30 @@
     background-color: rgb(31, 103, 211);
 }
 
+.Prosetting-header {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
 .Prosetting-Text {
     height: 100px;
     width: 180px;
     position: relative;
-    top: -150px;
-
+    top: -200px;
 }
 
 .Prosetting-Icon-Back {
     height:  60px;
     width: 60px;
     position: relative;
-    top: -240px;
+    top: -300px;
     left: -240px;
 }
 
@@ -29,7 +40,7 @@
     height: 70px;
     width: 70px;
     position: relative;
-    top: -220px;
+    top: -270px;
     left: -130px;
 }
 
@@ -37,11 +48,39 @@
     height: 60px;
     width: 200px;
     position: relative;
-    top: -285px;
+    top: -335px;
     left: 20px;
 }
 
 .Prosetting-Account {
+    height: 70px;
+    width: 550px;
+    position: relative;
+    top: -260px;
+}
+
+.Prosetting-Laug {
+    height: 70px;
+    width: 550px;
+    position: relative;
+    top: -260px;
+}
+
+.Prosetting-Support {
+    height: 70px;
+    width: 550px;
+    position: relative;
+    top: -260px;
+}
+
+.Prosetting-Not {
+    height: 70px;
+    width: 550px;
+    position: relative;
+    top: -260px;
+}
+
+.Prosetting-Logout {
     height: 70px;
     width: 550px;
     position: relative;

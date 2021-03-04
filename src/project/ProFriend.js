@@ -33,30 +33,30 @@ function ProFriend() {
             <img src="/Project/ProFriend/sad.png" alt="/Project/ProFriend/sad.png" width="100px" height="100px" />
           </button>
         </Link> 
-        <div className="text1">
+      </div>
+      <div className="text1">
         Pepe1
        </div>
-      </div>
       <div className="circlesbox2">    
         <Link to='/ProChatroom'>
           <button>
             <img src="/Project/ProFriend/sad.png" alt="/Project/ProFriend/sad.png" width="100px" height="100px"/>
           </button>
         </Link> 
-        <div className="text1">
+      </div>
+      <div className="text2">
         Pepe2
        </div>
-      </div>
       <div className="circlesbox3">    
       <Link to='/ProChatroom'>
           <button>
             <img src="/Project/ProFriend/nono.jpg" alt="/Project/ProFriend/nono.jpg" width="100px" height="100px" />
           </button>
-      </Link> 
-          <div className="text1">
+      </Link>
+        </div>
+        <div className="text3">
           Noel
           </div>
-        </div>
     </div>
 </div>
   );

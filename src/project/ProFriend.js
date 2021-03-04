@@ -16,7 +16,7 @@ function ProFriend() {
       Hoshimati Suisei
       </div>
       <div className="Profile">    
-        <Link to='/ProProfile'>
+        <Link to='/Profile'>
           <button>
             <img src="/Project/ProFriend/Sui.jpg" alt="/Project/ProFriend/Sui.jpg" width="75px" height="75px" />
           </button>

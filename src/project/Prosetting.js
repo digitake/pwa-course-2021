@@ -20,7 +20,9 @@ function Prosetting() {
                     <img className="Prosetting-User" src="/Project/Prosetting/Setting_Username.png" alt = "/Project/Prosetting/Setting_Username.png" />
                 </div>
                 <div>
-                    <img className="Prosetting-Account" src="/Project/Prosetting/Setting_Account.png" alt = "/Project/Prosetting/Setting_Account.png" />
+                    <Link to="/Profile">
+                        <img className="Prosetting-Account" src="/Project/Prosetting/Setting_Account.png" alt = "/Project/Prosetting/Setting_Account.png" />
+                    </Link>
                 </div>
                 <div>
                     <img className="Prosetting-Laug" src="/Project/Prosetting/Setting_Laug.png" alt = "/Project/Prosetting/Setting_Laug.png" />

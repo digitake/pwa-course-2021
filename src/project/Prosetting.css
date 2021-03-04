@@ -25,14 +25,14 @@
     height: 100px;
     width: 180px;
     position: relative;
-    top: -200px;
+    top: -95px;
 }
 
 .Prosetting-Icon-Back {
     height:  60px;
     width: 60px;
     position: relative;
-    top: -300px;
+    top: -180px;
     left: -240px;
 }
 
@@ -40,7 +40,7 @@
     height: 70px;
     width: 70px;
     position: relative;
-    top: -270px;
+    top: -130px;
     left: -130px;
 }
 
@@ -48,7 +48,7 @@
     height: 60px;
     width: 200px;
     position: relative;
-    top: -335px;
+    top: -200px;
     left: 20px;
 }
 
@@ -56,33 +56,33 @@
     height: 70px;
     width: 550px;
     position: relative;
-    top: -260px;
+    top: -150px;
 }
 
 .Prosetting-Laug {
     height: 70px;
     width: 550px;
     position: relative;
-    top: -260px;
+    top: -160px;
 }
 
 .Prosetting-Support {
     height: 70px;
     width: 550px;
     position: relative;
-    top: -260px;
+    top: -170px;
 }
 
 .Prosetting-Not {
     height: 70px;
     width: 550px;
     position: relative;
-    top: -260px;
+    top: -180px;
 }
 
 .Prosetting-Logout {
     height: 70px;
     width: 550px;
     position: relative;
-    top: -260px;
+    top: -190px;
 }

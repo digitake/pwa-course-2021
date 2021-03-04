@@ -152,28 +152,23 @@
 /*win Code **/
 .App-login-head{
   background-color: #fc531a;
-width: 10;
-font-size:40px ;
-flex: 4;
-
-text-align: center;
-
-
-}
-.App-PapFriendList-body{
-background-color: #fc9b7a;
-width:100%;
-height:50px ;
-border: 3px solid;
-text-align: center;
-}
-
-.App-colum{
-flex:0.1;
-background-color: #fc531a;
-}
-
-
+  width: 10;
+  font-size:40px ;
+  flex: 4;
+  text-align: center;
+  }
+  .App-PapFriendList-body{
+    background-color: rgb(247, 218, 132);
+  width:100%;
+  height:85px ;
+  border: 3px solid;
+  text-align: left;
+  font-size:40px ;   
+  }
+  .App-colum{
+  flex:0.1;
+  background-color: rgb(255, 115, 0);
+  }
 
 
 @media(min-width:760px)

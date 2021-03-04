@@ -28,8 +28,6 @@ function Router(){
     <GroupList />
 </Route>
 
-
-
 <Route path="/chat-friend">
     <ChatFriend />
 </Route>
@@ -41,8 +39,6 @@ function Router(){
 <Route path="/home">
     <Home />
 </Route>
-
-
 
 <Route path="/">
     <App/>

@@ -21,7 +21,7 @@ function HomePage() {
             </Link>
         </div>
         <div className = "SettingBar">
-            <Link to = "/SettingBar">
+            <Link to = "/SettingPage">
             <img src = "SettingBar.Png" alt = "" />
             </Link>
         </div>

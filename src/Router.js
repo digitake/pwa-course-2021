@@ -5,12 +5,17 @@ import RegisterNextStep from './RegisterNextStep';
 import LoginApp from './LoginApp'
 import LoginPage from './LoginPage'
 import HomePage from './HomePage'
+import SettingPage from './SettingPage'
 
 
 function Router() {    
     return(
         <BrowserRouter>
           <Switch>
+
+          <Route path = "/SettingPage">
+            <SettingPage />
+          </Route>
 
           <Route path = "/HomePage">
             <HomePage />

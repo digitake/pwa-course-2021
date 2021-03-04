@@ -75,11 +75,12 @@
 
 
 .LoadingSetting-chatroom {
-    flex: 10;
+    flex:10;
     background-image: url(BGapp.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
     flex-direction: column;
 }
 
@@ -124,6 +125,7 @@
     display: flex;
     cursor: pointer;
 }
+.Private
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -415,9 +417,9 @@
         display: inline-block;
         width: 60px;
         height: 34px;
-        top:80%;
-        right:45%;
-        flex-direction: column;
+        top:75%;
+        left:1%;
+        margin: 5px;
     }
 
     .switch input {

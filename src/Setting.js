@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Settings(){
     return(
         <div className="contain">
-            <div className="App-head">
+            <div className="Header">
                 Settings
             </div>
         <div className="contents">

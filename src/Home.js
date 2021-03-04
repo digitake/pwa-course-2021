@@ -21,7 +21,7 @@ function Home() {
 <div className="App-middle-home">
 
 <div className="App-pic-left" > 
-               <Link to="/chat-friend" >
+               <Link to="/pap-friendList" >
                <img src={Friend}/>
                </Link> 
                <div className="App-text-left">
@@ -31,11 +31,11 @@ function Home() {
           
             </div> 
             <div className="App-pic-left" > 
-               <Link to="/" >
-               <img src={Store}/>
+            <Link to="/group-List" >
+               <img src={Group}/>
                </Link> 
                <div className="App-text-left">
-                Store
+                Group Chat
             
                 </div>
             </div>  
@@ -43,11 +43,12 @@ function Home() {
  
 
 <div className="App-pic-left" >  
-           <Link to="/" >
-               <img src={Group}/>
+           
+                <Link to="/" >
+               <img src={Store}/>
                </Link> 
                <div className="App-text-left">
-                Group Chat
+                Store
             </div>
 
 

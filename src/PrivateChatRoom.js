@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './PrivateChatRoom.css';
 import { Link } from 'react-router-dom';
-import { FiMicOff,FiLogOut,FiMoreVertical,FiClipboard,FiSearch } from "react-icons/fi";
+import { FiMicOff,FiLogOut,FiMoreVertical,FiClipboard,FiSearch,FiSettings,FiUsers,FiPlusCircle } from "react-icons/fi";
 
 function PrivateChatRoom() {
 
@@ -42,12 +42,12 @@ function PrivateChatRoom() {
       </div>
       <Link to="/friend-list">
         <button>
-        FriendList
+        <FiUsers/>FriendList
         </button>
       </Link>
       <Link to="/setting">
         <button>
-        Settings
+        <FiSettings/>Settings
         </button>
       </Link>
       <div className="App-chatroom">
@@ -60,7 +60,7 @@ function PrivateChatRoom() {
       }
       </div>
       <div className="App-textbox">
-        <button class="btn"><i>More Function</i></button>
+        <button class="btn"><FiPlusCircle/></button>
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} placeholder="Type a message" />
         <button className="App-textbox-send" button onClick={onSend}>Send</button>
       </div>

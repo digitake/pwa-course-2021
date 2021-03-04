@@ -1,16 +1,14 @@
-import { Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-function FriendList() {
+function FriendList(){
     return(
         <div>
-            Friend List
+            FriendList
             <Link to="/">
-                <button>
-                    Go Chatroom
-                </button>
+                <img src= "logo.svg"/>
             </Link>
         </div>
-    )
+    );
 };
 
 export default FriendList;

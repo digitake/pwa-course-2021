@@ -13,7 +13,7 @@ function Router() {
          <Route path="/setting">
             <Setting/>
          </Route>
-        <Route path="/">
+        <Route path="/PrivateChat">
             <PrivateChatRoom />
             </Route>
         </Switch>

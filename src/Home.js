@@ -44,7 +44,7 @@ function Home() {
 
 <div className="App-pic-home" >  
            
-                <Link to="/" >
+                <Link to="/Store" >
                <img src={Store}/>
                </Link> 
                <div className="App-text-left">

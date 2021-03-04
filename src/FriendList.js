@@ -9,7 +9,7 @@ function FriendList(){
                     Go to Main
                 </button>
                 
-                <img src="pruekProfile.jpg"/>
+                <img src="phaiProfile.jpg"/>
             </Link>
         </div>
     );

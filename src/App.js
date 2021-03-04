@@ -1,4 +1,3 @@
-
 import './App.css';
 import{useState}from 'react'
 import {Link} from 'react-router-dom';
@@ -60,7 +59,7 @@ const onSend = (event) =>{
         </div>
           })
         }
-    
+
       </div>
       <div className="App-textbox ">
         <input type="text" className="App-textbox-input" value ={text} onChange= {onTextChange}/>
@@ -68,14 +67,19 @@ const onSend = (event) =>{
         <div className="App-textbox-send " onClick ={onSend}>Send!</div>
 
       </div>
-      <div>
-      <button id="myBtn">Open Modal
+<button id="myBtn">Open Sticker</button>
 
-      </button>
-      </div>
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Stickers</p>
+  </div>
+
+</div>
      </div>
+     
     );
 }
-
 
 export default App;

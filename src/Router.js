@@ -1,10 +1,8 @@
 import{BrowserRouter,Switch,Route} from 'react-router-dom';
 import App from './App';
 import FriendList from './FriendList';
-
 import PapFriendList from './PapFriendList';
 import GroupList from './GroupList';
-
 import Home from './Home';
 import ChatFriend from './ChatFriend';
 import GroupChat from './GroupChat';
@@ -12,14 +10,14 @@ import GroupChat from './GroupChat';
 
 function Router(){
 
-return(
+    return(
    <BrowserRouter>
    <Switch>
 
 
    <Route path = "/friend-list">
     <FriendList />
-
+    </Route>
 
 
 <Route path = "/pap-friendList">
@@ -29,8 +27,6 @@ return(
 <Route path = "/group-List">
     <GroupList />
 </Route>
-
-
 
 <Route path="/chat-friend">
     <ChatFriend />
@@ -44,8 +40,6 @@ return(
     <Home />
 </Route>
 
-
-
 <Route path="/">
     <App/>
 </Route>
@@ -56,6 +50,7 @@ return(
 
 
    </Switch>
+
  </BrowserRouter>
 )
 };

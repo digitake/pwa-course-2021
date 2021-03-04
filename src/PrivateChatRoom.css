@@ -1,5 +1,4 @@
 .App {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,10 +8,9 @@
   margin: auto;
 }
 
-@media (min-width : 1080px){
-  .App{
-    width: 95%;
-    background-color: #2D2C67;
+@media (min-width: 700px) {
+  .App {
+    max-width:90%;
   }
 }
 @media (min-width: 950px) {
@@ -27,12 +25,15 @@
 
 .App-header {
   flex: 1;
-  background-color: #505396;
+  background-color: #3d14f5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(0, 0, 0);
+  color: #fff;
+}
+.Function-link{
+  color: #fff;
 }
 
 .App-chatroom 
@@ -52,7 +53,6 @@
 
 .App-textbox {
   flex: 1;
-  background-color:#FF7F00;
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -78,12 +78,14 @@
   align-items: center;
   display: flex;
 }
-
-.AppUndo{
-  position: absolute;
-  width: 28.54px;
-  height: 23.84px;
-  left: 13px;
-  top: 15px;  
-
+.btn {
+  background-color: DodgerBlue;
+  grid: flex;
+  border: none; 
+  color: white;
+  padding: 8px 5px; /* Some padding */
+  font-size: 15px; /* Set a font size */ 
+}
+.btn:hover{
+  color:RoyalBlue;
 }

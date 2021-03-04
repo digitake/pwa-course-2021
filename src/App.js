@@ -6,7 +6,7 @@ function App() {
 
 const [text,setText] = useState("");
 
-const [lines, setLines] = useState(["Welcome to my Lobby"]);
+const [lines, setLines] = useState(["Tar : Hello guys!"]);
 
 
 
@@ -15,7 +15,7 @@ const onTextChange = (event) => {
 };
 
 const onSend = () => {
-  setLines(line => [...lines,text]);
+  setLines(line => [...lines,"Me : " + text]);
     setText("")
 }
 
@@ -25,8 +25,10 @@ const onSend = () => {
     <div className="App col-12">
       <div className="App-header">
           <div className="profile-read-ju-on"></div>
-          <div className="RoomName">Room Ju-on</div>
-          <div className="RoomID">RID 123456</div>
+          <div className="RoomName">
+              <h1>Room Ju-on</h1>
+              <h6>RID 123456</h6>
+          </div>
           <div className="profile-read-tar"></div>
           <div className="profile-read-pruek"></div>
           <div className="profile-read-phai"></div>
@@ -43,8 +45,8 @@ const onSend = () => {
 
       </div>
       <div className="App-textbox">
-          <div className="App-Botton col-3"></div>
-        <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-10" value = {text} onChange={onTextChange}/>
+          <div className="App-Botton col-1"></div>
+        <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-9" value = {text} onChange={onTextChange}/>
         <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
             
       </div>

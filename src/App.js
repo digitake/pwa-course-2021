@@ -29,7 +29,9 @@ const onSend = () => {
               <h1>Room Ju-on</h1>
               <h6>RID 123456</h6>
           </div>
+          <Link to="/Profile_Tar">
           <div className="profile-read-tar"></div>
+          </Link>
           <div className="profile-read-pruek"></div>
           <div className="profile-read-phai"></div>
           <div className="Chat-header"></div>

@@ -1,10 +1,14 @@
+import { Link } from 'react-router-dom';
 
-function FriendList() {
+function FriendList(){
     return(
         <div>
-            Friend List
+            FriendList
+            <Link to="/">
+                <img src= "logo.svg"/>
+            </Link>
         </div>
-    )
+    );
 };
 
 export default FriendList;

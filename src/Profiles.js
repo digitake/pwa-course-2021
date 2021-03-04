@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function profiles() {
     return (
-    <div className="Header">
+    <div className="Page">
             <div className="contain">
                 Profiles
                <ul className="Function">

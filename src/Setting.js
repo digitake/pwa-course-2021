@@ -5,8 +5,8 @@ import { BiPaintRoll,BiPalette } from "react-icons/bi";
 
 function Settings(){
     return(
-        <div className="Header">
-            <div className="Container">
+        <div className="app">
+            <div className="app-contain">
                 Settings
                <ul className="Function">
                    <li className="Function-link">

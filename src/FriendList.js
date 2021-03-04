@@ -7,7 +7,6 @@ function FriendList(){
             <div className= "FriendList-header">
                Friend List
               <Link to="/">
-<<<<<<< HEAD
                   <img src ="back-32.png" align="Left" />
               </Link>
             </div>
@@ -51,16 +50,6 @@ function FriendList(){
                 </div>
             </div>
             <div className= "FriendList-chatroom"> 
-=======
-                  <img src ="back-32.png" align= "Left" />
-              </Link>
-            </div>
-            <div className= "FriendList-header2">
-                
-            </div>
-            <div className= "FriendList-chatroom">
-                
->>>>>>> d48959107dc773950f219abbd3b5b70cd21ee2b7
             </div>
         </div>
 

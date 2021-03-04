@@ -92,15 +92,7 @@
     align-items: center;
     display: flex;
   }
-  img {
-    border-radius: 50%;
-  }
 
-  button{
-    background-color: transparent;
-    border-radius: 20%;  
-    clip-path: circle();
-  }
 
   .circlesbox1{
     margin-top: 25px;

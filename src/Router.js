@@ -1,8 +1,7 @@
 import {BrowserRouter, Switch , Route} from 'react-router-dom';
-import ProFriend from './project/ProFriend';
 import Prologin from './project/Prologin';
 import Prosetting from './project/Prosetting';
-
+import ProFriend from './project/ProFriend'
 
 function Router() {
 
@@ -12,11 +11,11 @@ function Router() {
                 <Route path = "/Prosetting">
                     <Prosetting />
                 </Route>
-                <Route path = "/ProFriend">
-                    <ProFriend />
-                </Route>
                 <Route path = "/Prologin">
                     <Prologin />
+                </Route>
+                <Route path = "/Profriend">
+                    <ProFriend />
                 </Route>
             </Switch>
         </BrowserRouter>

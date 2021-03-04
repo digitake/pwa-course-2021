@@ -8,7 +8,7 @@ function ProFriend() {
   <div className="App">
     <div className="App-header">
       <div className="circlesbox4">  
-        <Link to='/ProSetting'>
+        <Link to='/Prosetting'>
           <img src="/Project/ProFriend/3Line.png" alt="/Project/ProFriend/3Line.png" width="50px" height="50px"/>         
         </Link>
       </div>

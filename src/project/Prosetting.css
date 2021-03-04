@@ -1,0 +1,49 @@
+.Prosetting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 550px;
+    height: 87%;
+    margin: auto;
+    background-color: rgb(31, 103, 211);
+}
+
+.Prosetting-Text {
+    height: 100px;
+    width: 180px;
+    position: relative;
+    top: -150px;
+
+}
+
+.Prosetting-Icon-Back {
+    height:  60px;
+    width: 60px;
+    position: relative;
+    top: -240px;
+    left: -240px;
+}
+
+.Prosetting-Pro{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: -220px;
+    left: -130px;
+}
+
+.Prosetting-User {
+    height: 60px;
+    width: 200px;
+    position: relative;
+    top: -285px;
+    left: 20px;
+}
+
+.Prosetting-Account {
+    height: 70px;
+    width: 550px;
+    position: relative;
+    top: -260px;
+}

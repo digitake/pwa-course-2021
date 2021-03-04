@@ -8,16 +8,6 @@ import { Link } from "react-router-dom";
 
 function ShopPage(){
     return(
-<<<<<<< HEAD
-        <div className="BackButton">
-            <Link to="/">
-            <button>
-                Back
-            </button>
-             </Link>
-        </div>
-          
-=======
         <div className="ShopPage">
             <div className="ShopPage-header">
                 Sticker Shop
@@ -64,7 +54,6 @@ function ShopPage(){
                 </div>
             </div>
         </div>
->>>>>>> d48959107dc773950f219abbd3b5b70cd21ee2b7
     );
 };
 

@@ -1,15 +1,18 @@
-/** ดึงส่วนประกอบที่จำเป็นมาใช้งานเพื่อสร้าง Component สำหรับ Router*/
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
+import FriendList from './FriendList';
+/** FriendList*/
+function Router() {
 
-function Router(){
-
-    return(
+    return (
         <BrowserRouter>
-           <Switch>
-             <Route path="/">
-                <App />
-             </Route>
+            <Switch>
+                <Route path="/friend-List">
+                    <FriendList />
+                </Route>
+                <Route path="/">
+                    <App/>
+                </Route>
             </Switch>
         </BrowserRouter>
     )

@@ -10,39 +10,33 @@ import SettingPage from './SettingPage'
 
 function Router() {    
     return(
-        <BrowserRouter>
-          <Switch>
+      <BrowserRouter>
+        <Switch>
 
           <Route path = "/SettingPage">
-            <SettingPage />
-          </Route>
-
+             <SettingPage />
+           </Route>
           <Route path = "/HomePage">
-            <HomePage />
-          </Route>
-
+             <HomePage />
+            </Route>
           <Route path = "/LoginPage">
-            <LoginPage />
-          </Route>
-
+             <LoginPage />
+            </Route>
           <Route path = "/Register">
-            <Register />
-          </Route>
-
+              <Register />
+            </Route>
           <Route path = "/RegisterNextStep">
-              <RegisterNextStep />
-                </Route>
-
-              <Route path = "/Chat-Room">
-                <App />
+                <RegisterNextStep />
               </Route>
+          <Route path = "/Chat-Room">
+              <App />
+            </Route>
+          <Route path = "/">
+              <LoginApp />
+            </Route>
 
-              <Route path = "/">
-            <LoginApp />
-          </Route>
-
-          </Switch>
-        </BrowserRouter>
+         </Switch>
+      </BrowserRouter>
     )
 };
   export default Router;

@@ -20,7 +20,7 @@ function PrivateChatRoom() {
   return (
     <div className="App">
       <div className="App-header">
-        Chatroom
+        Private Chatroom
       </div>
       <Link to="/friend-list">
         <button>

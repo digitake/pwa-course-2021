@@ -12,23 +12,23 @@
 .Prologin-header-logo {
   width: 350px;
   height: 280px;
-  position: absolute;
-  top: 80px;
-  left: 780px;
+  position: relative;
+  top: -150px;
+  left: 0px;
 }
 
 .signin-logo img {
-  position: absolute;
-  top: 450px;
-  left: 820px;
-  max-width: 100%;
-  width: 15%;
+  position: relative;
+  top: -20px;
+  left: 0px;
+  max-width: 550px;
+  width: 300px;  
 }
 
 .registery-logo img {
-  max-height: 100%;
-  height: 8%;
-  position: absolute;
-  top: 590px;
-  left: 835px;
+  max-height: 500px;
+  height: 80px;
+  position: relative;
+  top: 50px;
+  left: 0px;
 }

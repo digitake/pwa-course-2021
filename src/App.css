@@ -8,7 +8,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  
+
 }
 
 .App-logo{
@@ -20,13 +20,14 @@
 
 }
 
+
 @media (min-width: 768px){
  
   .App{
 
-    
+
     width: 95%;
-  
+
   }
 }
 
@@ -35,10 +36,9 @@
   .App{
 
     background-color:  #242424;
-    
+
   }
 }
-
 
 
 
@@ -49,12 +49,25 @@
   flex-direction: column;
   justify-content: center;
 
+
+}
+
+.Back-Button{
+  background-image: url(mango.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Menu-Button {
+  text-align: right;
 }
 
 .App-chatroom {
   flex: 12;
-  
+
 }
+
 
 .App-chatroom-text {
   margin: 8px;
@@ -74,7 +87,7 @@
   height: 100%;
   box-sizing: border-box;
   background-color: #ebe99e;
-  
+
 }
 
 .App-textbox-send {
@@ -95,4 +108,124 @@
   text-align: left;
 }
 
+@media (min-width: 768px){
+ 
+  .App{
 
+
+    width: 95%;
+
+  }
+}
+
+@media (min-width: 480px){
+
+  .App{
+
+    background-color:  #242424;
+
+  }
+}
+
+
+<<<<<<< HEAD
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*dssf*/
+=======
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.App-header {
+  flex: 1;
+  background-color: #FECC48;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.App-chatroom {
+  flex: 12;
+
+}
+
+.App-chatroom-text {
+  margin: 8px;
+  background-color: #E9E87F;
+}
+
+.App-textbox {
+  flex: 1;
+  background-color:#FECC48;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+}
+
+.App-textbox-input {
+  flex: 5;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #ebe99e;
+
+}
+
+.App-textbox-send {
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.Friend-Button{
+  text-align: left;
+}
+
+.Shop-Button{
+  text-align: left;
+}
+>>>>>>> d48959107dc773950f219abbd3b5b70cd21ee2b7

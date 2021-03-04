@@ -4,7 +4,7 @@ function Profiletar() {
     return(
     // <div className="App col-12">
      <div>  
-     <Link to="/" className="Profilebon">
+     <Link to="/">
      <button>
      Back to chat
      </button>

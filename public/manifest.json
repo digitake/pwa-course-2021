@@ -1,9 +1,8 @@
 {
-  "short_name": "flash App",
-  "name": "Create React App Sample",
+
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "testfavicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
@@ -20,6 +19,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "3e5599",
+  "background_color": "#2f4074"
 }

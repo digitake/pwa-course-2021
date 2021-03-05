@@ -23,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+        DOGEBOOK
       </div>
       <div className="App-chatroom">
         {

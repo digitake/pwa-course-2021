@@ -1,0 +1,71 @@
+.background{
+    background-image: url(animal_background.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+@media(min-width: 500px){
+    .background{
+        background-image: url(animal_background.gif);
+        background-size: 2000px;
+        background-repeat: no-repeat;
+        height: 1000px;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 75px;
+    }
+    .link{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+    }
+}
+
+@media(min-width: 10px){
+    .background{
+        background-image: url(animal_background.gif);
+        background-size: 1500px;
+        background-repeat: no-repeat;
+        height: 1000px;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 32%;
+        font-size: 48px;
+    }
+
+    .link{
+        position: absolute;
+        top: 50%;
+        left: 32%;
+
+    }
+}
+
+@media(min-width: 1300px){
+    .background{
+        background-image: url(animal_background.gif);
+        background-size: 2000px;
+        background-repeat: no-repeat;
+        height: 1000px;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 43%;
+        font-size: 75px;
+    }
+
+    .link{
+        position: absolute;
+        top: 50%;
+        left: 43%;
+    }
+}
+

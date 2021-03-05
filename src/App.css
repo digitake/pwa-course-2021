@@ -1,9 +1,8 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  text-align: right;
-  max-width: 400px;
+  justify-content: center;
+  text-align: center;
   height: 100%;
   margin: auto;
   
@@ -15,6 +14,7 @@
 
 .App-header {
   flex: 1;
+
   background-color: rgb(250, 131, 76);
   display: flex;
   flex-direction: column;
@@ -59,33 +59,28 @@
   align-items: center;
   display: flex;
 }
+@media(max-width: 768px){
+.App{
+  background-image:url(anime-milo-art-warriors-orochi-Favim.ru-3849202.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+}
 
-  @media(orientation: landscape){
-    .App {
-      background-image: url(BG_Moblie.png);
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      background-color: powderblue;
-    }
+@media(min-width: 768px) and (max-width: 1024px){
+  .App{
+    background-image:url(anime-milo-art-warriors-orochi-Favim.ru-3849202.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: rgb(225, 253, 255);
   }
-  
-  @media (max-width: 768px) {
-    .App{
-      background-image: url(BG_Moblie.png);
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      background-color: mintcream;
-      margin-top: 24px;
-      margin-bottom: 24px;
-    }
+}
+
+@media(orientation: landscape){
+.App{
+  background-image:url(anime-milo-art-warriors-orochi-Favim.ru-3849202.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: rgb(226, 255, 225);
   }
-  
-  /*768 - 1024 */
-  @media (min-width: 768px) and (max-width: 1024px){
-    .App{
-      background-image: url(BG_Moblie.png);
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      background-color: mistyrose;
-    }
-  }
+}

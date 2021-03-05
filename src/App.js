@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 import {useState} from 'react';
 
@@ -23,9 +25,18 @@ function App() {
 
   return (
     <div className="App">
+      
       <div className="App-header">
-        Miyawaki Sakura
+
+      <div className="App-header1" >
+      <Link className={"App-header1"} to="/chats"/>
       </div>
+      
+      <div className="App-header2" ></div>
+      <div className="App-header3" ></div>  
+        
+    </div>
+      
       <div className="App-chatroom">
         {
           lines.map(x => {
@@ -42,7 +53,10 @@ function App() {
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
     </div>
+    
   );
+  
+    
 
 }
 

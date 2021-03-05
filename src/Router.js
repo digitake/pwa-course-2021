@@ -3,6 +3,7 @@ import Prologin from './project/Prologin';
 import Prosetting from './project/Prosetting';
 import ProFriend from './project/ProFriend';
 import Profile from './project/Profile';
+import ProChatroom from './project/ProChatroom';
 
 function Router() {
 
@@ -17,6 +18,9 @@ function Router() {
                 </Route>
                 <Route path = "/Profile">
                     <Profile />
+                </Route>
+                <Route path = "/Prochatroom">
+                    <ProChatroom />
                 </Route>
                 <Route path = "">
                     <Prologin />

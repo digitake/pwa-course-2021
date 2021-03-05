@@ -2,15 +2,14 @@ import { Link } from "react-router-dom";
 
 function ShopPage(){
     return(
-        <div>
-            Shop Page
+        <div className="BackButton">
             <Link to="/">
-              <button>
-                  Back
-               </button>
-            </Link>
+            <button>
+                Back
+            </button>
+             </Link>
         </div>
-
+          
     );
 };
 

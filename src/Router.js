@@ -8,16 +8,15 @@ function Router() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/home">
-                    <Home />
-                </Route>
                 <Route path="/chats">
                     <Chats />
                 </Route>
                 <Route path="/">
-                    <App />
+                    <App/>
                 </Route>
-            
+                <Route path="/home">
+                    <App/>
+                </Route>
             </Switch>
         </BrowserRouter>
     )

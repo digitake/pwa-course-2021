@@ -29,7 +29,7 @@ function Calendar(){
         
 
         <div className="Calendar-textbox-send" >
-        <Link className={"Calendar-textbox-send"} to="/chats"/>
+        <Link className={"Calendar-textbox-send"} to="/home"/>
         </div>
         <div className="Calendar-textbox-send1" > </div>
         <div className="Calendar-textbox-send2" ></div>

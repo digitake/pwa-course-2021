@@ -4,6 +4,7 @@ import './index.css';
 import Router from './Router';
 import reportWebVitals from './reportWebVitals';
 
+/** create Conponent */
 ReactDOM.render(
   <React.StrictMode>
     <Router />

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 function FriendList() {
-HEAD
+    
     return (
         <div>
             Friend List

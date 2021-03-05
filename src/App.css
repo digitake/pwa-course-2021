@@ -6,11 +6,23 @@
   max-width: 100%;
   height: 100%;
   margin: auto;
+ 
+}
+
+@media (min-width: 768px){
+  .App{
+    max-width: 100%;
+  }
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10px;
   pointer-events: none;
+}
+
+.App-header-button{
+  max-width: 20%;
+  height: 25%;
 }
 
 .App-header {
@@ -26,6 +38,7 @@
   font-weight: bold;
   color: #F7F7F7;
 }
+
 
 .App-chatroom {
   flex: 12;
@@ -55,7 +68,8 @@
 }
 
 .App-textbox-input {
-  flex: 5;
+  margin: 0px;
+  flex: 3;
   height: 100%;
   box-sizing: border-box;
   color: white;
@@ -95,5 +109,8 @@
     font-weight: normal;
   }
   
+  .App-navigator{
+    text-align: left;
+  }
 
 }

@@ -10,26 +10,28 @@ function  Home() {
       <div class ="link">
             <Link to="/friend-list">
             <button>
-             Go to Friend-List
+                  <img src="Friends.png" alt="Friend List" width="50" height="50"></img>
              </button>
             </Link>
             </div>
+            <div class = "link">
           <Link to="/chat-room">
             <button>
-             Go to Chat Room
+            <img src="Chat.png" alt="Chat room" width="50" height="50"></img>
              </button>
           </Link>
+          </div>
           <div class="link">
           <Link to="/doc-work">
             <button>
-             Go to Document Work
+            <img src="Doc.png" alt="Document" width="50" height="50"></img>
              </button>
           </Link>
           </div>
           <div class="link">
           <Link to="/photo-list">
             <button>
-             Go to Photo-List
+            <img src="Photo.png" alt="Photo List" width="50" height="50"></img>
              </button>
              </Link>
              </div>

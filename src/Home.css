@@ -21,12 +21,12 @@
         font-style: italic;
     }
     .link{
-        float: bottom;
+        margin: 2px;       float: bottom;
         width: 180px;
     }
 }
 
-@media(min-width: 10px){
+@media(min-width: 2px){
     .background{
         background-image: url(animal_background.gif);
         background-size: 1500px;
@@ -44,7 +44,7 @@
     }
 
     .link{
-        float: bottom;
+        margin: 2px;       float: bottom;
         width: 180px;
     }
 }
@@ -67,6 +67,7 @@
     }
 
     .link{
+        margin: 2px;
         float: bottom;
         width: 180px;
     }

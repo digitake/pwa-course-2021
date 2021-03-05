@@ -12,7 +12,9 @@ function App({children}) {
           </button>
         </Link>
       </div>
-      {children}
+      <div className="App-body">
+        {children}
+      </div>
     </div>
   );
 }

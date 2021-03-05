@@ -43,7 +43,6 @@ function App() {
         <div className="App-textbox-send" onClick={onSend}></div>
         <div className="App-textbox-send1" onClick={onSend}></div>
         <div className="App-textbox-send2" onClick={onSend}></div>
-
       </div>
     </div>
   );

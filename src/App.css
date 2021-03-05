@@ -19,9 +19,12 @@
   .App-header3{
     background-color: rgb(255, 255, 255);
     background-position: right;
+
   }
 
 }
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -31,9 +34,13 @@
   background-position: center;
   background-repeat: no-repeat;
   flex: 1;
+
+  
+
   height: 100%;
   vertical-align: middle;
   justify-content: center;
+
   align-items: center;
   display: flex;
 }

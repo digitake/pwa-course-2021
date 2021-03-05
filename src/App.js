@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 
@@ -6,9 +7,7 @@ function App() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
   
-  const onTextChange = (event) git checkout -b kumfiless-main main
-  git pull https://github.com/kumfiless/pwa-course-2021.git main
-  => {
+  const onTextChange = (event) 
     setText(event.target.value);
   };
   const onSend = () =>{
@@ -23,9 +22,18 @@ function App() {
 
   return (
     <div className="App">
+      
       <div className="App-header">
-        Miyawaki Sakura
+
+      <div className="App-header1" >
+      <Link className={"App-header1"} to="/chats"/>
       </div>
+      
+      <div className="App-header2" ></div>
+      <div className="App-header3" ></div>  
+        
+    </div>
+      
       <div className="App-chatroom">
         {
           lines.map(x => {
@@ -42,6 +50,10 @@ function App() {
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
     </div>
+    
   );
+  
+    
+
 }
 export default App;

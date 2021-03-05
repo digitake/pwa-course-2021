@@ -19,9 +19,9 @@ function  FriendList() {
           <div className="Friend-chatroom-text">
              Hayina
           </div>
-          <Link to="/cradit">
+          <Link to="/">
             <button>
-             Go to Cradit-List
+             Go to Home
             </button>
           </Link>
             

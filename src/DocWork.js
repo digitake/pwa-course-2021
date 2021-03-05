@@ -1,15 +1,31 @@
 import './App.css';
 import{Link} from 'react-router-dom'
-function  DocWork() {
+import  './botton.css';
+
+
+
+function  DocWork() 
+{
     return(
-        <div>
-            Document-Work
-          <Link to="/cradit">
-            <button>
-             Go to Cradit-List
-             </button>
-            </Link>
+        <div >  
+           
+    <iframe title="Google" width="100%" height="1000" 
+    src="https://docs.google.com/document/d/1ruuAuaO_ELBasjGb-1yT1lZVOAkiwqy5CZCCysEwXDs/edit?usp=sharing" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+    </iframe>
+    
+        <Link to ="/Home"> 
+        <button  class="Home-1">   
+        </button>
+        </Link>
+            
+  
         </div>
-    )
+        
+         )
 };
+
+
+
 export default DocWork;

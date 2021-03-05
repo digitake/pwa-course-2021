@@ -49,10 +49,11 @@ function  PhotoList() {
           </div>
           
           <div class="Link">
-           <Link to="/cradit">
-                <button>
-                Go to Cradit-List
-                </button>
+           <Link to="/">
+           <button>
+            <img src="Home.png" alt="Go home" width="30" height="30"></img>
+            <div>Go Home</div>
+             </button>
             </Link>
             </div>
             

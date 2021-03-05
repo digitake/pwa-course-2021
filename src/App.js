@@ -47,10 +47,10 @@ function App() {
           }  
         </div>
       </div>
-      <Link to="/cradit">
+      <Link to="/">
         <div className="App-chatroom">
       <div className="Goto-Friend">
-          Goto Cradit List
+          Go to Home
         </div>
         </div>
             </Link>

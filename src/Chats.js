@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 
-function FriendList(){
+function Chats(){
     return(
         <div>
-            FriendList
+            Chats
             <Link to="/">
-                <img src= "logo.svg"/>
+                <img src= "logo192.png"/>
             </Link>
         </div>
     );
 };
 
-export default FriendList;
+export default Chats;

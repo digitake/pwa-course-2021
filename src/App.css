@@ -28,10 +28,10 @@
 
 .App-header {
   flex: 1;
+  background-color: #000000;
   display: flex;
   align-items: center;
-  font-size:30px;
-  background-color: #000000;
+  justify-content: center;
   color: rgb(255, 255, 255);
 }
 
@@ -59,7 +59,9 @@
 
 .App-textbox {
   flex: 1;
+
   background-color: rgb(0, 0, 0);
+
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -96,6 +98,14 @@
   display: flex;
   justify-content: space-between;
   }
+}
+
+.App-chatbot-icon{
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  font-size:40px;
+  padding: 10px;
 }
 
 .hide-when-small { display: none }

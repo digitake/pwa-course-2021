@@ -24,9 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="App-header"> <Link to="/"> <div className="App-back-icon"> <i class="fas fa-chevron-circle-left"></i> </div> </Link>
-      Receiver's Name  
-      </div>
+      <div className="App-header">Receiver's Name</div>
       <div className="App-chatroom">
         {
           lines.map(x => {

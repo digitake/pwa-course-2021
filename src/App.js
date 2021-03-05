@@ -42,6 +42,13 @@ function App() {
         </button>
      </Link>
     </div>
+    <div>
+     <Link to="/Profile">
+        <button>
+            Go Profile
+        </button>
+     </Link>
+    </div>
     </div>
     
   );

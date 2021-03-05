@@ -23,7 +23,6 @@ function Home(){
           <div className="Home-menu2"></div>
           <div className="Home-menu3"></div>
           <div className="Home-menu4"></div>
-  
         </div>
       </div>
     );

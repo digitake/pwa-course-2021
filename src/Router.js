@@ -4,7 +4,6 @@ import App from './App';
 import Calendar from './Calendar';
 import Chats from './Chats';
 import Home from './Home';
-/** FriendList*/
 
 function Router(){
 

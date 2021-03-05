@@ -1,4 +1,4 @@
-import { Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function Chats(){
     return(
@@ -8,7 +8,7 @@ function Chats(){
                 <img src= "Logo192.png"/>
             </Link>
         </div>
-    )
+    );
 };
 
 export default Chats;

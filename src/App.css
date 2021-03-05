@@ -6,11 +6,6 @@
   text-align: center;
   height: 100%;
   margin: auto;
-  background-color: rgb(255, 200, 255);
-  background-image: url(design/s2.jpg);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 @media (min-width: 768px) {
@@ -29,7 +24,6 @@
   }
 
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -49,7 +43,6 @@
 
 .App-header1 {
   background-image: url(design/Design\ Chi\ CHi\ App-08.png);
-  
   background-position: left;
   background-repeat: no-repeat;
   flex: 1;
@@ -58,7 +51,6 @@
   justify-content: center;
   align-items: center;
   display: flex;
-
 }
 
 .App-header2 {
@@ -152,7 +144,6 @@
   align-items: center;
   display: flex;
 }
-
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -165,10 +156,3 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
-@media (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}

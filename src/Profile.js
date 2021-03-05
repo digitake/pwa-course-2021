@@ -1,25 +1,24 @@
 import { Link } from 'react-router-dom';
 
-function FriendList() {
-    
+function Profile() {
     return (
         <div>
-            Friend List
+            Profile
             <Link to="/">
                 <button>
                     Go Chatroom
                 </button>
             </Link>
             <div>
-                <Link to="/Profile">
+                <Link to="/friend-list">
                     <button>
-                        Go Profile
+                        Go FriendList
                     </button>
                 </Link>
             </div>
         </div>
-
+        
     );
 };
 
-export default FriendList;
+export default Profile;

@@ -11,12 +11,8 @@
 @media (min-width: 768px) {
 
   .App {
-<<<<<<< HEAD
-    background-image: url(555.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-=======
+
+
     background-color: rgb(207, 238, 250);
   }
   .App-header1{
@@ -27,7 +23,7 @@
   .App-header3{
     background-color: rgb(255, 255, 255);
     background-position: right;
->>>>>>> 52d9eb692e172293168e2b98c7089e4a4774f108
+
   }
 
 }
@@ -51,15 +47,13 @@
   background-position: center;
   background-repeat: no-repeat;
   flex: 1;
-<<<<<<< HEAD
-  background-color: #e02d0db0;
-  display: flex;
-  flex-direction: column;
-=======
+
+  
+
   height: 100%;
   vertical-align: middle;
   justify-content: center;
->>>>>>> 52d9eb692e172293168e2b98c7089e4a4774f108
+
   align-items: center;
   display: flex;
 }
@@ -73,19 +67,6 @@
   height: 100%;
   vertical-align: middle;
   justify-content: center;
-<<<<<<< HEAD
-  color: rgb(216, 196, 15);
-  font-size: 40px;
-
-}
-
-.App-chatroom {
-  flex: 12;
-
-  background-color: rgba(255, 255, 255, 0);
-  background-image: url();
-  
-=======
   align-items: center;
   display: flex;
 
@@ -115,7 +96,6 @@
   align-items: center;
   display: flex;
 }
->>>>>>> 52d9eb692e172293168e2b98c7089e4a4774f108
 
 .App-chatroom {
   color: rgb(182, 234, 255);
@@ -124,30 +104,16 @@
 
 .App-chatroom-text {
   margin: 8px;
-<<<<<<< HEAD
-
-  background-color: rgb(206, 87, 87);
-
-  color : rgb(48, 100, 100);
-  font-size: 20px;
-=======
   background-color: rgb(108, 165, 250);
   background-size: 30%;
   color : rgb(23, 24, 24);
   font-size: 30px;
->>>>>>> 52d9eb692e172293168e2b98c7089e4a4774f108
 }
 
 .App-textbox {
   flex: 1;
-<<<<<<< HEAD
-
-  background-color: rgb(255, 0, 0);
-
-=======
   background-color: rgb(255, 255, 255);
   background-position: right;
->>>>>>> 52d9eb692e172293168e2b98c7089e4a4774f108
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -184,8 +150,6 @@
   justify-content: center;
   align-items: center;
   display: flex;
-<<<<<<< HEAD
-=======
 }
 
 .App-textbox-send2 {
@@ -198,7 +162,6 @@
   justify-content: center;
   align-items: center;
   display: flex;
->>>>>>> 52d9eb692e172293168e2b98c7089e4a4774f108
 }
 
 .col-1 {width: 8.33%;}

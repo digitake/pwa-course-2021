@@ -5,7 +5,13 @@ function  Home() {
     return(
       <div class="background">
         <div class="text">
-            Welcome
+            Welcome 
+            <div>
+            to
+           </div>
+            <div>
+            A-nim Chat
+      </div>
       </div>
       <div class ="link">
             <Link to="/friend-list">
@@ -31,7 +37,14 @@ function  Home() {
           <div class="link">
           <Link to="/photo-list">
             <button>
-            <img src="Photo.png" alt="Photo List" width="50" height="50"></img>
+            <img src="Photo.png" alt="ThePhotoList" width="50" height="50"></img>
+             </button>
+             </Link>
+             </div>
+             <div class="link">
+          <Link to="/cradit">
+            <button>
+            <img src="Link.png" alt="Link-List" width="50" height="50"></img>
              </button>
              </Link>
              </div>

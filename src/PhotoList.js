@@ -50,9 +50,10 @@ function  PhotoList() {
           
           <div class="Link">
            <Link to="/">
-                <button>
-                Go to Home
-                </button>
+           <button>
+            <img src="Home.png" alt="Chat room" width="30" height="30"></img>
+            <div>Go Home</div>
+             </button>
             </Link>
             </div>
             

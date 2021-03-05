@@ -17,12 +17,12 @@
         top: 50%;
         left: 50%;
         font-size: 75px;
+        color: aliceblue;
+        font-style: italic;
     }
     .link{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-
+        float: bottom;
+        width: 180px;
     }
 }
 
@@ -38,13 +38,14 @@
         top: 50%;
         left: 32%;
         font-size: 48px;
+        color: aliceblue;
+        font-style: italic;
+        
     }
 
     .link{
-        position: absolute;
-        top: 50%;
-        left: 32%;
-
+        float: bottom;
+        width: 180px;
     }
 }
 
@@ -60,12 +61,14 @@
         top: 50%;
         left: 43%;
         font-size: 75px;
+        color: aliceblue;
+        font-style: italic;
+
     }
 
     .link{
-        position: absolute;
-        top: 50%;
-        left: 43%;
+        float: bottom;
+        width: 180px;
     }
 }
 

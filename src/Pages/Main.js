@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../Pages/Feed.css';
+import '../Pages/Main.css';
 import LogoPng from '../Neptune/Logo.png';
 
 function Main() {
@@ -13,6 +13,10 @@ function Main() {
                         </button>
                 </div>
                 <div className='app'>
+                    <Link to='/Chat'>
+                        <button className='iconButton'>
+                            Chat</button>
+                    </Link>
                     <Link to='/feed'>
                         <button className='iconButton'>
                             Feed</button>
@@ -22,6 +26,9 @@ function Main() {
                         <button className='iconButton'>
                             Profile</button>
                     </Link>
+                </div>
+                <div className='app'>
+
                     <Link to='/profile-setting'>
                         <button className='iconButton'>
                             Settings</button>

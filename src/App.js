@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import {useState} from 'react';
 
@@ -9,12 +10,10 @@ function App() {
   const onTextChange = (event) => {
     setText(event.target.value);
   };
-
   const onSend = () =>{
     setLines([...lines, text]);
     setText("");
   };
-
   const keyPress = (event) => {
     if (event.which === 13){
       onSend();
@@ -43,8 +42,5 @@ function App() {
       </div>
     </div>
   );
-
 }
-
-
 export default App;

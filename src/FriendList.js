@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 function FriendList() {
-<<<<<<< HEAD
+HEAD
     return (
         <div>
             Friend List
@@ -18,17 +18,7 @@ function FriendList() {
                 </Link>
             </div>
         </div>
-=======
- return(
-    <div>
-        Friend List
-        <Link to ='/'>
-            <bottom>
-                Go chatroom
-            </bottom>
-        </Link>
-    </div>
->>>>>>> 733aa0d578751e009adf73f4336f46f4041307da
+
     );
 };
 

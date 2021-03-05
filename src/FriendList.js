@@ -6,10 +6,14 @@ function FriendList() {
 
   return (
   <App>
-    <div className="friend-list">Friend List</div>
-    <Link to="/">
-      Go back
-    </Link>
+    <div className="friend-list">
+      <div>
+      Friend List
+      </div>
+      <Link to="/">
+        Go back
+      </Link>
+    </div>
   </App>
   )
 

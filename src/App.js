@@ -24,7 +24,9 @@ function App() {
 
   return (
     <div className="App">
-      <div className="App-header">Receiver's Name</div>
+      <div className="App-header"> <Link to="/"> <div className="App-back-icon"> <i class="fas fa-chevron-circle-left"></i> </div> </Link>
+      Receiver's Name  
+      </div>
       <div className="App-chatroom">
         {
           lines.map(x => {
@@ -36,9 +38,7 @@ function App() {
       </div>
       <div className="App-textbox-icon" ><i class="fas fa-microphone-alt"></i> 
       <i class="fas fa-file-upload hide-when-small"></i>
-      <Link to="/">
       <i class="fas fa-plus hide-when-big"></i>
-      </Link>
       <i class="fas fa-images hide-when-small"></i> 
       <i class="fas fa-camera"></i> </div>
       <div className="App-textbox">

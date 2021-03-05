@@ -20,13 +20,18 @@
   pointer-events: none;
 }
 
+.App-back-icon{
+  float: left;
+  width: 70px;
+  font-size:30px;
+}
+
 .App-header {
   flex: 1;
-  background-color: #000000;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  font-size:30px;
+  background-color: #000000;
   color: rgb(255, 255, 255);
 }
 
@@ -63,7 +68,7 @@
 }
 
 .App-textbox-input {
-  flex: 7;
+  flex: 6;
   height: 100%;
   box-sizing: border-box;
 }
@@ -75,16 +80,15 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  
 }
+
 .App-textbox-icon{
-  height: 5%;
+  height: auto;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-around;
   font-size:30px;
-  padding: 5px;
-
+  padding: 10px;
 }
 
 @media (min-width: 768px){

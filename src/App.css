@@ -3,23 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 768px;
-  height: 100%;
-  margin: auto;
-  background-color: #3e5599;
-  background-image: url(doge\ dab.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 40%;
-}
 
-@media(max-width:768px){
-  .App{
-  background-image: url(doge.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-color: rgb(173, 167, 81);
   }
 }
 
@@ -30,30 +14,27 @@
 
 .App-header {
   flex: 1;
-  background-color: #2f4074;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(18px + 2vmin);
-  font-weight: 500;
-  color: rgb(255, 255, 255);
+
 }
 
 .App-chatroom {
   flex: 12;
+
 }
 
 .App-chatroom-text {
   margin: 8px;
-  color : rgb(255, 255, 255);
-  font-size: 24px;
-  background-color: rgb(49, 49, 49);
+
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(153, 152, 152);
+  background-color: rgb(215, 242, 250);
   justify-content: center;
   align-items: stretch;
   display: flex;

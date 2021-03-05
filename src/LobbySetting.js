@@ -6,14 +6,14 @@ import './LobbySetting.css';
 function LobbySetting() {
     
     const [text,setText] = useState("");
-    const [lines, setLines] = useState(["Welcome to my Lobby"]);
+    const [lines, setLines] = useState(["Tar : Hello Guys!"]);
 
     const onTextChange = (event) => {
         setText(event.target.value);
     };
 
     const onSend = () => {
-        setLines(line => [...lines,text]);
+        setLines(line => [...lines,"ME : " + text]);
         setText("")
     }
    
@@ -28,8 +28,9 @@ function LobbySetting() {
                 <div className="LoadingSetting-RoomID">
                     RID 123456
                 </div>
+                <Link to="/Profile_Tar">
                 <div className="LoadingSetting-profile-read-tar">
-                </div>
+                </div></Link>
                 <div className="LoadingSetting-profile-read-pruek">
                 </div>
                 <div className="LoadingSetting-profile-read-phai">
@@ -82,9 +83,11 @@ function LobbySetting() {
 
             </div>
             <div className="LoadingSetting-textbox">
+                <Link to="/App">
                 <div className="LoadingSetting-Botton col-1">
-                </div>
-                <input type="text" placeholder="Type Ready to Start!" className="LoadingSetting-textbox-input col-10" value = {text} onChange={onTextChange}/>
+                    <img src="botton.png"/>
+                </div></Link>
+                <input type="text" placeholder="Type Ready to Start!" className="LoadingSetting-textbox-input col-9" value = {text} onChange={onTextChange}/>
                 <div className="LoadingSetting-textbox-send col-2" onClick={onSend}>Send!</div>
             </div>
         </div>

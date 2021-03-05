@@ -62,15 +62,8 @@
 }
 
 .LoadingSetting-Botton{
-    background-image: url("botton.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    position : fixed;
-    left: 1px;
-    top: 1000px;
-    
+    height: 50px;
+    flex: fit-content;
 }
 
 

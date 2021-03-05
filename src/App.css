@@ -25,36 +25,30 @@
 }
 
 .profile-read-tar {
-  
+
   overflow: visible;
   background-image: url(tarProfile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50px;
-  position: absolute;
-  top: 25px;
-  right: 100px;
 
 }
 
 
 
 .profile-read-pruek {
-  
+
   overflow: visible;
   background-image: url(pruekProfile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50px;
-  position: absolute;
-  top: 25px;
-  right: 0px;
 }
 
 .profile-read-phai {
-  
+
   overflow: visible;
   background-image: url(phaiProfile.jpg);
   background-size: cover;
@@ -80,10 +74,8 @@
 }
 
 .App-Botton{
-  background-image: url("botton.png");
   height: 50px;
-  flex: content-box;
-  background-repeat: no-repeat;
+  flex: fit-content;
 }
 
 
@@ -186,7 +178,8 @@
     width: 40px;
     height: 40px;
     left: 90%;
-}
+    bottom: 94%;
+  }
 
   .profile-read-ju-on{
     width: 50px;
@@ -200,12 +193,14 @@
     width: 40px;
     height: 40px;
     left: 75%;
+    bottom: 94%;
   }
   .profile-read-phai{
     position: absolute;
     width: 40px;
     height: 40px;
     left: 82.5%;
+    bottom: 94%;
 
   }
   .App-header{
@@ -217,7 +212,7 @@
   .RoomName{
     font-size: 10px;
     left: 17%;
-    top: 0;
+    bottom: 93%;
   }
   
 }
@@ -237,6 +232,7 @@
     width: 50px;
     height: 50px;
     left: 94%;
+    bottom: 92%;
     
   }
   .profile-read-pruek{
@@ -244,6 +240,7 @@
     width: 50px;
     height: 50px;
     left: 84%;
+    bottom: 92%;
 
   }
   .profile-read-phai{
@@ -251,6 +248,7 @@
     width: 50px;
     height: 50px;
     left: 89%;
+    bottom: 92%;
 
   }
   .App-header{
@@ -304,7 +302,7 @@
   .RoomName{
     font-size: 20px;
     left: 47%;
-    bottom: 87.5%;
+    bottom: 87%;
     
   }
   

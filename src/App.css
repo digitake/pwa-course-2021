@@ -10,8 +10,10 @@
 
 .App-logo {
   height: 40vmin;
+  background-image: [Capture222];
   pointer-events: none;
 }
+
 
 .App-header {
   flex: 1;
@@ -26,12 +28,12 @@
 
 .App-chatroom {
   flex: 12;
-  background-color: rgb(74, 23, 194);
+  background-color: rgb(235, 208, 178);
 }
 
 .App-chatroom-text {
   margin: 20px;
-  background-color: rgb(227, 126, 236);
+  background-color: rgb(255, 255, 255);
   color: #0f3522;
 }
 
@@ -42,6 +44,7 @@
   align-items: stretch;
   display: flex;
 }
+
 
 .App-textbox-input {
   flex: 5;

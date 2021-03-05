@@ -6,7 +6,9 @@ function App() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
   
-  const onTextChange = (event) => {
+  const onTextChange = (event) git checkout -b kumfiless-main main
+  git pull https://github.com/kumfiless/pwa-course-2021.git main
+  => {
     setText(event.target.value);
   };
   const onSend = () =>{

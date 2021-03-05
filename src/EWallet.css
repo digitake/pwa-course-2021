@@ -1,4 +1,4 @@
-.App {
+.EWallet {
     
     display: flex;
     flex-direction: column;
@@ -8,21 +8,19 @@
     margin: auto;
   }
   @media (min-width: 768px) {
-      .App-bg{
+      .EWallet-bg{
         background-position: auto;
         height: auto;
       }
   }
  
   
-  
-  
-  .App-logo {
+  .EWallet-logo {
     height: 40vmin;
     pointer-events: none;
   }
   
-  .App-header {
+  .EWallet-header {
     background-color: rgb(255, 255, 255);
     background-position: center;
     background-repeat: no-repeat;
@@ -34,7 +32,7 @@
     display: flex;
   }
   
-  .App-header1 {
+  .EWallet-header1 {
     background-image: url();
     
     background-position: left;
@@ -48,7 +46,7 @@
   
   }
   
-  .App-header2 {
+  .EWallet-header2 {
     background-image: url(design/ewallet.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -61,7 +59,7 @@
   
   }
   
-  .App-header3 {
+  .EWallet-header3 {
     background-image: url();
     background-position: right;
     background-repeat: no-repeat;
@@ -74,20 +72,20 @@
   }
   
   
-  .App-bg {
+  .EWallet-bg {
     background-image: url(design/iconasd.jpg);
     color: rgb(255, 255, 255);
     flex: 12;
     background-repeat: no-repeat; 
   }
 
-  .App-chatroom-text {
+  .EWallet-chatroom-text {
     background-image: url(design/balance.jpg);
   }
   
   
   
-  .App-textbox {
+  .EWallet-textbox {
     flex: 1;
     background-color: rgb(255, 255, 255);
     background-position: right;
@@ -97,14 +95,14 @@
     color: rgb(228, 222, 222);
   }
   
-  .App-textbox-input {
+  .EWallet-textbox-input {
     flex: 4;
     height: 100%;
     box-sizing: border-box;
     color: rgb(250, 254, 255);
   }
   
-  .App-textbox-send {
+  .EWallet-textbox-send {
     background-image: url();
     background-position: center;
     background-repeat: no-repeat;
@@ -117,7 +115,7 @@
   }
   
   
-  .App-textbox-send1 {
+  .EWallet-textbox-send1 {
     background-image: url();
     background-position: center;
     background-repeat: no-repeat;
@@ -129,7 +127,7 @@
     display: flex;
   }
   
-  .App-textbox-send2 {
+  .EWallet-textbox-send2 {
     background-image: url();
     background-position: center;
     background-repeat: no-repeat;

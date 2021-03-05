@@ -1,8 +1,9 @@
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
 import Calendar from './Calendar';
 import Profile from './Profile';
 import Home from './Home';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import EWallet from './EWallet';
 
 /** FriendList*/
 
@@ -13,8 +14,10 @@ function Router(){
             <Switch>
                 <Route path="/profile">
                     <Profile />
-                </Route> 
-                
+                </Route>
+                <Route path="/e-wallet">
+                    <EWallet />
+                </Route>  
                 <Route path="/calendar">
                     <Calendar />
                 </Route>

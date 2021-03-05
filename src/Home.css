@@ -84,7 +84,7 @@ flex: 12;
 
 .Home-chats-room {
   background-image: url("design/chats-pic.jpg");
-  background-size: 45%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   flex: 1;

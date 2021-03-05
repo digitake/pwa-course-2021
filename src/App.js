@@ -10,7 +10,6 @@ function App() {
   const onChangeHandler = (event) => {
       setText(event.target.value);
   };
-
   const onSendHandler = (event) => {
     setLines(lines => [...lines, text]);
     setText("");

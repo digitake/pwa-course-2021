@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 
@@ -23,13 +24,17 @@ function App() {
 
   return (
     <div className="App">
+      
       <div className="App-header">
 
-      <div className="App-header1" onClick={onSend}></div>
-      <div className="App-header2" onClick={onSend}></div>
-      <div className="App-header3" onClick={onSend}></div>  
-
+      <div className="App-header1" >
+      <Link className={"App-header1"} to="/chats"/>
       </div>
+      
+      <div className="App-header2" ></div>
+      <div className="App-header3" ></div>  
+        
+    </div>
       
       <div className="App-chatroom">
         {
@@ -50,7 +55,11 @@ function App() {
         
       </div>
     </div>
+    
   );
+  
+    
+
 }
 
 export default App;

@@ -1,23 +1,40 @@
-import logo from './C.png';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const [text, setText] = useState("");
+
+  const[Lines, setLines] = useState([""]);
+
+  const onTextChange = (event) => {
+    setText(event.target.value);
+  };
+
+  const onSend = () =>{
+    setLines(lines =>[...lines, text]);
+    setText("");
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Elija Chinda
-        </a>
-      </header>
+      <div className="App-header">
+      </div>
+      <div className="App-chatroom">
+        {
+          Lines.map(x =>{
+              return <div className="App-chatroom-text">
+                {x}
+                </div>
+          }
+
+          )
+        }
+      </div>
+      <div className="App-textbox">
+        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange}/>
+        <div className="App-textbox-send" onClick={onSend}>Send!</div>
+      </div>
     </div>
   );
 }

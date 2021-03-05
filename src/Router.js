@@ -1,23 +1,20 @@
 import App from './App';
 import Calendar from './Calendar';
-import Chats from './Chats';
 import Profile from './Profile';
+import Home from './Home';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 /** FriendList*/
-function Router() {
 
 function Router(){
 
     return(
         <BrowserRouter>
             <Switch>
-             <Route path="/profile">
+                <Route path="/profile">
                     <Profile />
                 </Route> 
-                <Route path="/chats">
-                    <Chats />
-                </Route>
+                
                 <Route path="/calendar">
                     <Calendar />
                 </Route>

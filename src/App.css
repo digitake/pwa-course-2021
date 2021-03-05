@@ -40,12 +40,7 @@
 
 
 .App-header {
-<<<<<<< HEAD
-  flex: 1;
-  background-color: #fffc5c;
-=======
   background-image: url("BGapp.jpg");
->>>>>>> 0f650f1ab1e99e48f09e54b3e2805e1f27b83e86
   display: flex;
   align-items: flex-end;
   color: white;
@@ -108,16 +103,11 @@
 
 
 .App-chatroom {
-<<<<<<< HEAD
-  flex: 12;
-  background-color: rgba(168, 168, 168, 0.418);
-=======
   flex: 10;
   background-image: url(BGapp.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
->>>>>>> 0f650f1ab1e99e48f09e54b3e2805e1f27b83e86
 }
 
 .RoomName{
@@ -168,23 +158,11 @@
 
 
 .App-chatroom-text {
-<<<<<<< HEAD
-  margin: 8px;
-  background-color: rgb(211, 198, 198);
-  color : rgb(48, 100, 100);
-  font-size: 20px;
-=======
   margin: 15px;
   background-color: rgb(255, 255, 255);
->>>>>>> 0f650f1ab1e99e48f09e54b3e2805e1f27b83e86
 }
 .App-textbox {
-<<<<<<< HEAD
-  flex: 1;
-  background-color: rgb(139, 139, 139);
-=======
   background-color: rgb(253, 4, 4);
->>>>>>> 0f650f1ab1e99e48f09e54b3e2805e1f27b83e86
   justify-content: center;
   align-items: stretch;
   display: flex;

@@ -1,30 +1,3 @@
-<<<<<<< HEAD
-import{BrowserRouter,Switch,Route} from 'react-router-dom';
-import App from './App';
-import FriendList from './FriendList';
-import SupportList from './SupportList';
-
-function Router( ) {
-
-    return (
-        <BrowserRouter>
-         <Switch>
-            <Route path="/support-list">
-                <SupportList />
-            </Route>
-              <Route path="/friend-list">
-                <FriendList />
-              </Route>
-             <Route path="/">
-                <App />
-             </Route>
-         </Switch>
-        </BrowserRouter>
-    )
-}
-
-export default Router;
-=======
 
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import App from "./App";
@@ -64,4 +37,3 @@ function Router(){
 
 export default Router;
 
->>>>>>> 0f650f1ab1e99e48f09e54b3e2805e1f27b83e86

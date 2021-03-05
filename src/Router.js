@@ -1,6 +1,7 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
-import FriendList from './FriendList';
+import Calendar from './Calendar';
+import Chats from './Chats';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 /** FriendList*/
 function Router() {
@@ -8,8 +9,11 @@ function Router() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/friend-List">
-                    <FriendList />
+                <Route path="/chats">
+                    <Chats />
+                </Route>
+                <Route path="/calendar">
+                    <Calendar />
                 </Route>
                 <Route path="/">
                     <App/>

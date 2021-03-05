@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 
-function FriendList(){
+function Calendar(){
     return(
         <div>
-            FriendList
+            Calendar
             <Link to="/">
-                <img src= "logo.svg"/>
+                <img src= "Logo192.png"/>
             </Link>
         </div>
     );
 };
 
-export default FriendList;
+export default Calendar;

@@ -9,7 +9,9 @@ function Home(){
         <div className="Home-header2" >
         <Link className={"Home-header2"} to="/home"/>
         </div>
-        <div className="Home-header3" ></div>  
+        <div className="Home-header3">
+        <Link className={"Home-header3"} to="/calendar"/>
+        </div>  
         </div>
         <div className="Home-chats">
             <div className="Home-chats-room">

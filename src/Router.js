@@ -1,14 +1,18 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
-import FriendList from './FriendList';
+import Calendar from './Calendar';
+import Chats from './Chats';
 /** FriendList*/
 function Router() {
 
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/friend-List">
-                    <FriendList />
+                <Route path="/chats">
+                    <Chats />
+                </Route>
+                <Route path="/calendar">
+                    <Calendar />
                 </Route>
                 <Route path="/">
                     <App/>

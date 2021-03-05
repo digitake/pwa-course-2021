@@ -6,6 +6,40 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
+  /*background-size: cover;*/
+}
+
+@media (min-width: 768px) {
+  .App {
+    max-width: 100%;
+    background-color: blue;
+    background-image: url(Thedeer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 24px;
+    margin-bottom: 24;
+    height: 95%;
+    
+  }
+}
+
+@media (max-width: 1024px){
+  .App{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+  }   
+ }
+
+
+.background-mycolor-1{
+  font-size: 24px;
+  max-width: 600px;
+  background-color: aquamarine;
+}
+
+.background-mycolor-2{
+  background-color: rebeccapurple;
 }
 
 .App-logo {
@@ -14,7 +48,7 @@
 }
 
 .App-header {
-  flex: 1;
+  flex: 2;
 
   background-color: #013b32;
 

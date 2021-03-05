@@ -1,8 +1,7 @@
 import './App.css';
 import { Link } from 'react-router-dom';
-import Chatbox from './Chatbox.js';
 
-function App() {
+function App({children}) {
   
   return (
     <div className="App col-6">
@@ -13,7 +12,7 @@ function App() {
           </button>
         </Link>
       </div>
-      <Chatbox />
+      {children}
     </div>
   );
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
 import backButton from './back_button.png'
 import './FriendList.css';
@@ -28,5 +29,21 @@ return (
         
     )
 }
+=======
+import { Link } from 'react-router-dom';
+
+function FriendList(){
+    return (
+    <div>
+        Friend List
+        <Link to="/">
+            <button>
+                Go Chatroom
+                </button>
+                </Link>
+        </div>
+    );
+};
+>>>>>>> c4a1fcf51668531f6a4a8d9f98fbd74c22aa5355
 
 export default FriendList;

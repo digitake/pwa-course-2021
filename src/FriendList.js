@@ -17,9 +17,7 @@ function FriendList(){
                  </Link>
                  <div className= "Chat-Button">
                     <Link to = "/" >
-                     <button>
-                     Chat  
-                     </button>
+                     <img src = "buttonChat.png" />
                     </Link>
                 </div>
             </div>
@@ -30,9 +28,7 @@ function FriendList(){
                 </Link>
                 <div className= "Chat-Button">
                     <Link to = "/" >
-                     <button>
-                     Chat  
-                     </button>
+                    <img src = "buttonChat.png" />
                     </Link>
                 </div>
             </div>
@@ -43,9 +39,7 @@ function FriendList(){
                 </Link>
                 <div className= "Chat-Button">
                     <Link to = "/" >
-                     <button>
-                     Chat  
-                     </button>
+                    <img src = "buttonChat.png" />
                     </Link>
                 </div>
             </div>

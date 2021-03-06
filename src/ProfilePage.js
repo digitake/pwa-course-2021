@@ -2,9 +2,10 @@ import './Profile.css';
 import App from './App';
 import { Link } from "react-router-dom";
 
+
 function ProfilePage(){
     return(
- <App>
+      <App>
     <div className="ProfilePage">
 
         <div className="Profile-background">
@@ -36,12 +37,15 @@ function ProfilePage(){
                </image>
              </Link>
             </div>
-          </div>
+
+        </div>
+
         <div className="Profile-chatroom">
            Name Surname
         </div>
+
     </div>
-  </App>
+    </App>
     );
 };
 

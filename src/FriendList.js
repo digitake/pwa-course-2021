@@ -1,8 +1,10 @@
 import './FriendList.css';
+import App from './App';
 import { Link } from "react-router-dom";
 
 function FriendList(){
     return(
+    <App>
         <div className="FriendList" >
             <div className= "FriendList-header">
                Friend List
@@ -46,7 +48,7 @@ function FriendList(){
             <div className= "FriendList-black"> 
             </div>
         </div>
-
+    </App>
 
     );
 };

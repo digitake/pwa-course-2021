@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import '../Neptune/Neptune.css';
+import '../CSS/Neptune.css';
 import LogoPng from '../Neptune/Logo.png';
 
 import { Link } from "react-router-dom";

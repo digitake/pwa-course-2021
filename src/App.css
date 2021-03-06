@@ -26,7 +26,6 @@
 
 .App-chatroom {
   flex: 12;
-  
 }
 
 .App-chatroom-text {
@@ -76,14 +75,14 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: rgb(243, 10, 10);
+    color: rgb(23, 218, 169);
   }
 
   .App-textbox-input {
     flex: 2;
     height: 100%;
     box-sizing: border-box;
-  }
+  }/*Input Field*/
 
   .App-textbox-send {
     flex: 0.4;
@@ -96,11 +95,11 @@
 
   .App-textbox {
     flex: 0.75;
-    background-color: rgb(224, 220, 220);
+    background-color: rgb(243, 166, 0);
     justify-content: center;
     align-items: stretch;
     display: flex;
-  }
+  }/*ปุ่มส่ง message*/
 }
 @media(min-width:601px) and (max-width:1080px){
   .App{

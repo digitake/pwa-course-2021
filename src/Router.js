@@ -8,7 +8,11 @@ import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import Profile from './Profile';
 import Home from './Pages/Home';
+<<<<<<< HEAD
 import Setting from './Pages/Setting';
+=======
+import Feed from './Pages/Feed';
+>>>>>>> ee3d8b55c44b8b7ed6f0d960f066157514df6621
 
 function Router() {
     return (
@@ -16,6 +20,9 @@ function Router() {
             <Switch>
                 <Route path="/app">
                     <Chatbox />
+                </Route>
+                <Route path="/feed">
+                    <Feed />
                 </Route>
                 <Route path="/friend-list">
                     <FriendList />

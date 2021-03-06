@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import './Chatbox.css';
+import App from './App';
 
 function Chatbox() {
 
@@ -24,15 +23,7 @@ function Chatbox() {
     }
 
     return (
-        <div className="App">
-
-            <div className="App-header">
-                <Link to='home'>
-                    Neptune Chat
-                </Link>
-
-            </div>
-
+        <App>
             <div className="App-chatroom">
                 {
                     lines.map(msg => {
@@ -41,16 +32,15 @@ function Chatbox() {
                         </div>
                     })
                 }
-
             </div>
-            
+
             <div className="App-textbox">
                 <input placeholder='Type something...' type="text" className="App-textbox-input" value={text} onKeyPress={onKeyPress} onChange={onTextChange} />
                 <div className="App-textbox-send" onClick={onSend}>Send!</div>
             </div>
             <div>
             </div>
-        </div>
+        </App>
     );
 }
 

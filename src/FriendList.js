@@ -8,7 +8,7 @@ function FriendList() {
       <div className="FriendList-header">
       contacts
       <div className="FriendList-Headers">
-      <Link to="/">
+      <Link to="/App">
                 <botton>
                     Go to chatroom
                 </botton>

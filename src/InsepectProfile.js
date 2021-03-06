@@ -8,7 +8,7 @@ function InsepectProfile() {
                 <img src={inProfile} width="480" height="852"></img>
             </Link>
         </div>
-        </App>
+        
     )
 };
 

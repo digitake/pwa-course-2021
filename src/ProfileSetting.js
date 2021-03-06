@@ -8,7 +8,7 @@ function ProfileSetting() {
                 <img src={prosetting} width="480" height="852"></img>
             </Link>
         </div>
-        </App>
+        
     )
 }
 

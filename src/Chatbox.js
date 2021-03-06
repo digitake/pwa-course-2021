@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import './Chatbox.css';
+import App from './App';
 
 
-import './onClick.js'
-
-
-function App() {
+function Chatbox() {
 
   const [text, setText] = useState("");
   const [lines, setLines] = useState([""]);
@@ -22,7 +20,7 @@ function App() {
   
   return (
 
-
+    <App>
     <div className="App">
       
      
@@ -44,9 +42,9 @@ function App() {
       
     </div>
 
-    
+    </App>
 
   );
 }
 
-export default App;
+export default Chatbox;

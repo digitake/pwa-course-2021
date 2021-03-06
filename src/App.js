@@ -6,10 +6,11 @@ import chatroomButton from './Chatbutton.png'
 import dropdownButton from './icon2.png'
 import Chatbox from './Chatbox'
 
+
 import './onClick.js'
 
 
-function App() {
+function App({children}) {
 
   
 
@@ -26,13 +27,15 @@ function App() {
                 <a href="#"><Link to="/friend-list"> <img src={friendButton}></img> </Link></a>
                 <a href="#"><Link to="/shop"> <img src={shopButton}></img> </Link></a>
                 <a href="#"><Link to="/chatroom"><img src={chatroomButton}></img></Link></a>
+                <Link to="/profile">Profile</Link>
+                <Link to="/">Main</Link>
          
               </div>
         </div>
       </div>
 
       <div className="App-content">
-      <Chatbox />
+        {children}
       </div>
       
      

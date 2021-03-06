@@ -2,7 +2,10 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
 import FriendList from './FriendList';
 import Shop from "./Shop";
-import Chatroom from "./Chatroom"
+import Chatroom from "./Chatroom";
+import Chatbox from "./Chatbox";
+import Profile from "./Profile";
+
 function Router() {
 
     return (
@@ -18,9 +21,12 @@ function Router() {
                     <Chatroom />
                 </Route>
                 <Route path="/">
-                    <App />
+                    <Chatbox />
                 </Route>
 
+                <Route path ="/profile">
+                    <Profile />
+                </Route>
             </Switch> 
         </BrowserRouter>
     )

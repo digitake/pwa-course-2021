@@ -1,6 +1,6 @@
 //ดึงส่วนประกอบมาใช้งานเพื่อสร้างCpmponent สำหรับRounter
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import App from './App';
+import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import Profile from './Profile';
 
@@ -17,7 +17,7 @@ function Router()
               <Profile />
             </Route>
             <Route path = "/">
-              <App />
+              <Chatbox />
             </Route>
         </Switch>
      </BrowserRouter> 

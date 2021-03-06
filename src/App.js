@@ -1,5 +1,5 @@
 import './App.css';
-import{useState}from 'react'
+import{useState}from 'react'; 
 import {Link} from 'react-router-dom';
 
 function App() 
@@ -51,7 +51,7 @@ const onSend = (event) =>{
              </Link>
         </div>
       </div>
-      <div className="App-chatroom">
+      <div className="App-content">
         {
           lines.map(x =>{
         return <div className="App-chatroom-text">

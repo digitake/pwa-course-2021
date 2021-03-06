@@ -1,6 +1,7 @@
 import './Profile.css';
-import { Link } from "react-router-dom";
 import App from './App';
+import { Link } from "react-router-dom";
+
 
 function ProfilePage(){
     return(
@@ -30,13 +31,6 @@ function ProfilePage(){
                <img src ="buttonFriend.png"/>  
                </image>
              </Link>
-
-             <Link to = "/shop-page">
-               <image>
-               <img src ="buttonShop.png"/>  
-               </image>
-             </Link>
-
              <Link to = "/game-page">
                <image>
                <img src ="buttonGame.png"/> 

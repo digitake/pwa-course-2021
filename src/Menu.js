@@ -16,12 +16,31 @@ function Menu(){
                 </div>
             </div>
             <div className="Menu-box">
+                <div className="Menu-column">
+                <div className="Menu-row">
+                    <button>
+                        <img src="mango-192.png"/>
+                    </button>
+                    <button>
+                        <img src="mango-192.png"/>
+                    </button>
+                    <button>
+                        <img src="mango-192.png"/>
+                    </button>
+                </div>
+                <div className="Menu-row">
+                    <button>
+                        <img src="mango-192.png"/>
+                    </button>
+                    <button>
+                        <img src="mango-192.png"/>
+                    </button>
+                    <button>
+                        <img src="mango-192.png"/>
+                    </button>
+                </div>
+                </div>
             </div> 
-            <div className="">
-            </div>
-
-
-        
         </div>
           
     );

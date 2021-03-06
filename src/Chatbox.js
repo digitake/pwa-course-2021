@@ -29,28 +29,7 @@ function Chatbox() {
   return (
     <div className="App">
       
-      <div className="App-header">
-
-      <Link to = "/friend-list">
-                
-                <button>
-                    Go to friendlist
-                </button>
-      </Link>
-
-      <Link to = "/profile">
-                
-                <button>
-                    Go to profile
-                </button>
-      </Link>
-        
-      <div className="App-chatroom2">
-
-          GI472 <br></br> Varinkarn Kumtanasan <br></br> Pheeraphat Chocokviriyapanya <br></br>Tunwarat Kaewphang <br></br> Nattida Mee-nguen
-        
-        </div>
-      </div>
+      
       <div className="App-chatroom">
         
         {

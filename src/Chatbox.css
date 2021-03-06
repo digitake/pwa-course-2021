@@ -1,0 +1,105 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+    /*background-size: cover;*/
+  }
+  
+  @media (min-width: 768px){
+    .App{
+      max-width: 100%;
+      background-color: rgb(29, 29, 29);
+      background-repeat: no-repeat;
+      background-image: url(wall2.jpg);
+      background-position: center;
+      
+    }
+  }
+  
+  @media (max-width: 1024px){
+    .App{
+      max-width: 100%;
+      background-repeat: no-repeat;
+      background-image: url(wall.jpg);
+      background-position: center;
+      background-size: 125%;
+      background-color: rgb(29, 29, 29);
+    }
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    flex: 1;
+    background-color: #8869b1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(68, 117, 250);
+  }
+  
+  .App-content {
+  
+    flex: 12;
+  }
+  
+  .App-chatroom {
+    flex: 12;
+  
+  }
+  
+  .App-chatroom2 {
+    flex: 12;
+    background-color: rgba(255, 255, 255, 0);
+    color : rgb(0, 0, 0);
+    font-weight: 1000;
+  
+    font-size: large;
+  }
+  
+  
+  .App-chatroom-text {
+    margin: 8px;
+    background-color: rgb(136, 152, 241);
+    color : rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .App-textbox {
+    flex: 1;
+    background-color: rgb(243, 200, 230);
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+  }
+  
+  .App-textbox-input {
+    flex: 5;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: x-small;
+  }
+  
+  .App-textbox-send {
+    flex: 2;
+    height: 100%;
+    background-color: burlywood;
+    vertical-align: super;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    color: rgb(52, 1, 255);
+  }

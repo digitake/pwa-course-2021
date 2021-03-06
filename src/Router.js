@@ -2,7 +2,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
 import FriendList from './FriendList';
 import Shop from "./Shop";
-
+import Chatroom from "./Chatroom"
 function Router() {
 
     return (
@@ -14,9 +14,13 @@ function Router() {
                 <Route path="/shop">
                     <Shop />
                 </Route>  
+                <Route path="/chatroom">
+                    <Chatroom />
+                </Route>
                 <Route path="/">
                     <App />
                 </Route>
+
             </Switch> 
         </BrowserRouter>
     )

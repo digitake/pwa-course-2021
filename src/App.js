@@ -1,9 +1,14 @@
-
 import React, { useState } from 'react';
 import './App.css';
 import  { Link } from 'react-router-dom';
 import shopButton from './shop_button.png'
 import friendButton from './friendList_button.png'
+import chatroomButton from './Chatbutton.png'
+import dropdownButton from './icon2.png'
+
+import './onClick.js'
+
+
 function App() {
 
   const [text, setText] = useState("");
@@ -18,18 +23,24 @@ function App() {
     setText("");
   };
 
+  
   return (
+
+
     <div className="App">
       <div className="App-header">
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+          <script src onClick></script>
+          <button onclick="myFunction()" class="dropbtn"><img src={dropdownButton}></img></button>
           <div id="myDropdown" class="dropdown-content">
             
-         <a href="#"><Link to="/friend-list"> <img src={shopButton}></img> </Link></a>
-         <a href="#"><Link to="/shop"> <img src={friendButton}></img> </Link></a>
-         <a href="#">Link 3</a>
+         <a href="#"><Link to="/friend-list"> <img src={friendButton}></img> </Link></a>
+         <a href="#"><Link to="/shop"> <img src={shopButton}></img> </Link></a>
+         <a href="#"><Link to="/chatroom"><img src={chatroomButton}></img></Link></a>
+         
           </div>
         </div>
+        
       </div>
 
       
@@ -54,6 +65,7 @@ function App() {
     </div>
 
     
+
   );
 }
 

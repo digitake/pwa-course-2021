@@ -32,14 +32,9 @@
   color: rgb(0, 0, 0);
 }
 
-.App-chatroom {
+.App-content {
   flex: 12;
-
   background-color: rgba(170, 158, 212, 0.418);
-  background-image: url();
-  background-image: url("tenor (1).gif");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .App-chatroom-text {

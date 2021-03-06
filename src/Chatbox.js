@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Chatbox.css';
-import { Link } from 'react-router-dom';
+import App from './App';
 
-function App() {
+function Chatbox() {
 
   const [text, setText] = useState("")
 
@@ -18,8 +18,9 @@ function App() {
   };
 
   return (
+      <App>
     <div className="App">
-      <div className="App-chatroom">
+      <div className="App-content">
       {
         lines.map(x =>{
           return <div className="App-chatroom-text">
@@ -34,8 +35,8 @@ function App() {
         <button className="App-textbox-send" button onClick={onSend}>Send</button>
       </div>
     </div>
-    
+    </App>
   );
 }
 
-export default App;
+export default Chatbox;

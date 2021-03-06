@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
+import App from './App';
 
 function FriendList(){
     return(
-        <div>
+        <App>
+        <div className="App-FriendList">
             Friend List
             <Link to="/">
                 <button>
@@ -10,6 +12,7 @@ function FriendList(){
                 </button>
             </Link>
         </div>
+        </App>
     );
 };
 

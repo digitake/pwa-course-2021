@@ -19,7 +19,7 @@ function PrivateChatRoom() {
   };
 
   return (
-    <div className="App">
+    <div className="AppPrivate">
       <div className="App-header">
         Private Chatroom
         <ul className="Function">

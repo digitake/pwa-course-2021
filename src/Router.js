@@ -4,6 +4,7 @@ import Setting from './Setting';
 import PrivateChatRoom from './PrivateChatRoom';
 import Profiles from './Profiles';
 import App from './App';
+import Chatbox from './Chatbox';
 function Router() {
 
     return (
@@ -22,7 +23,7 @@ function Router() {
             <PrivateChatRoom />
             </Route>
         <Route path="/">
-            <App/>
+            <Chatbox/>
             </Route>
         </Switch>
         </BrowserRouter>

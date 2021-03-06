@@ -1,52 +1,65 @@
-import {Link} from 'react-router-dom';import Login from './Login';
-import Profile from './Register';
+import { Link } from 'react-router-dom';
 import './App.css';
-import {useState} from 'react';
+import { useState } from 'react';
+import LinkTo from './Components/LinkManager';
 
 function App() {
 
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
   const [lines, setLines] = useState([]);
+
+  const onSend = () => {
+    if (text.length < 1) return;
+    setLines([...lines, text]);
+    setText("");
+  }
 
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
-  const onSend = () =>{
-    setLines([...lines, text])
-    setText("");
-  };
-
-  const keyPress = (event) => {
-    if (event.which === 13){
+  const onKeyPress = (event) => {
+    if (event.which === 13) {
       onSend();
     }
   }
+
   return (
     <div className="App">
+      <div className="App-navigator">
+        <LinkTo value='Welcome' to='/loading' />
+        <LinkTo value='Insert Password' to='/insert-password' />
+        <LinkTo value='Register' to='/register' />
+        <LinkTo value='Login' to='/login' />
+        <LinkTo value='Feed' to='/feed' />
+        <LinkTo value='Settings' to='/settings' />
+        <LinkTo value='Profile Setting' to='/profile-setting' />
+        <LinkTo value='Insepect Profile' to='/insepect-profile' />
+      </div>
       <div className="App-header">
-        NepTune.Chat
+        Neptune Chat
       </div>
       <div className="App-chatroom">
         {
-          lines.map(x => {
-            return <div className="App-chatroom-text">
-              {x}
+          lines.map(msg => {
+            return <div key={msg} className="App-chatroom-text">
+              {msg}
             </div>
           })
         }
+
       </div>
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        <div className="App-textbox-send" onClick={onSend}>Send</div>
+        <input placeholder='Type something...' type="text" className="App-textbox-input" value={text} onKeyPress={onKeyPress} onChange={onTextChange} />
+        <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
-        <div>
-            <Link to="/Register">
-        <button>
+      <div>
+        <Link to="/Register">
+          <button>
             Go to Register
         </button>
         </Link>
-        </div>
+      </div>
     </div>
   );
 }

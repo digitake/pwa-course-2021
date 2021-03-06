@@ -1,4 +1,4 @@
-.App {
+.Chatbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,7 @@
   
   }
   
-  .App-logo{
+  .Chatbox-logo{
   
     background-image: url(mango.png);
     background-size: 40px;
@@ -25,7 +25,7 @@
   
   @media (min-width: 768px){
    
-    .App{
+    .Chatbox{
   
   
       width: 95%;
@@ -35,7 +35,7 @@
   
   @media (min-width: 480px){
   
-    .App{
+    .Chatbox{
   
       background-color:  #242424;
   
@@ -44,7 +44,7 @@
   
   
   
-  .App-header {
+  .Chatbox-header {
     flex: 1;
     background-color: #FECC48;
     display: flex;
@@ -65,19 +65,19 @@
     text-align: right;
   }
   
-  .App-chatroom {
+  .Chatbox-chatroom {
     flex: 12;
      background-color: #242424;
   }
   
   
-  .App-content {
+  .Chatbox-content {
     
     margin: 8px;
     background-color: #e9e77f00;
   }
   
-  .App-textbox {
+  .Chatbox-textbox {
     flex: 1;
     background-color:#fecd48;
     justify-content: center;
@@ -85,7 +85,7 @@
     display: flex;
   }
   
-  .App-textbox-input {
+  .Chatbox-textbox-input {
     flex: 5;
     height: 100%;
     box-sizing: border-box;
@@ -93,7 +93,7 @@
   
   }
   
-  .App-textbox-send {
+  .Chatbox-textbox-send {
     flex: 1;
     height: 100%;
     vertical-align: middle;
@@ -113,7 +113,7 @@
   
   @media (min-width: 768px){
    
-    .App{
+    .Chatbox{
   
   
       width: 95%;
@@ -123,7 +123,7 @@
   
   @media (min-width: 480px){
   
-    .App{
+    .Chatbox{
   
       background-color:  #242424;
   

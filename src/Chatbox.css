@@ -10,8 +10,6 @@
   background-image: url(origin.png);
   background-repeat: no-repeat;
   background-position: center;
-
-
 }
 .App-header {
 
@@ -22,9 +20,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-
   color: rgb(255, 0, 0);
-
 }
 
 .App-chatroom {
@@ -49,7 +45,6 @@
   justify-content: center;
   align-items: stretch;
   display: flex;
-  
 }
 
 .App-textbox-input {
@@ -75,7 +70,6 @@
     background-position: center;
     background-color: #535353;
     background-image: url(origin.png);
-
   }
   .App-textbox {
     flex: 3

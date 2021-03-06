@@ -33,12 +33,14 @@ function Chatbox() {
         </Link>
         </div>
       </div>
+
       <div className ="panel-footer">
       </div>
+
       <div className ="input-group">
       </div>
-      <div className="App-chatroom">
 
+      <div className="App-chatroom">
         {
           lines.map(x => {
             return <div className="App-chatroom-text">
@@ -47,11 +49,13 @@ function Chatbox() {
           })
         }
       </div>
+
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" 
         value={text} onChange={onTextChange} onKeyPress={keyPress}/>
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
+      
     </div>
   );
 }

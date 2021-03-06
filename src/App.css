@@ -27,11 +27,12 @@
 
 }
 
-.App-chatroom {
+.App-content {
   flex: 12;
   background-image: url(Mogu.png);
   background-size:cover;
- 
+  display: flex;
+  flex-direction: row;
  
 
 }

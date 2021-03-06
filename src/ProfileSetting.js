@@ -1,22 +1,15 @@
 import {Link} from 'react-router-dom';
 import prosetting from './desgin/Profile Setting (Light Mode).jpg'
+import App from './App';
 
 function ProfileSetting(){
     return(
-        <div align="center">
+        <App>
+        <div>
             <h1>Profile Setting</h1>
-            <img src={prosetting} width="480" height="852"></img>
-            <Link to="/">
-                <button>
-                    Go to Chatroom
-                </button>
-            </Link>
-            <Link to="/insepect-profile">
-                <button>
-                    Go to Insepect Profile
-                </button>
-            </Link>
+            <img src={prosetting}></img>
         </div>
+        </App>
     )
 }
 

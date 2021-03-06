@@ -1,13 +1,21 @@
 /* import router components เข้ามาเพื่อเตรียมใช้งาน */
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
-import App from './App';
 import InsepectProfile from'./InsepectProfile';
 import ProfileSetting from "./ProfileSetting";
+import Chatbox from './Chatbox';
+import FriendList from './FriendList';
+import Profile from './Profile';
 
 function Router(){
     return(
         <BrowserRouter>
             <Switch>
+                <Route path="profile">
+                    <Profile />
+                </Route>
+                <Route path="/friend-list">
+                    <FriendList />
+                </Route>
                 <Route path="/insepect-profile">
                     <InsepectProfile />
                 </Route>
@@ -15,7 +23,7 @@ function Router(){
                     <ProfileSetting />
                 </Route>
                 <Route path="/">
-                     <App />
+                     <Chatbox />
                 </Route>
                 
             </Switch>

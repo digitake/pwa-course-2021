@@ -1,6 +1,7 @@
 import './Chatbox.css';
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
+import App from './App';
 
 function Chatbox() {
 
@@ -23,9 +24,10 @@ function Chatbox() {
     }
   };
   return (
+    <App>
     <div className="App">
       <div className="App-header">
-       Neptune Chat
+          Neptune Chat
       </div>
       <div className="App-chatroom">
         {
@@ -41,6 +43,7 @@ function Chatbox() {
         <div className="App-textbox-send"onClick={onSend}>Send!</div>
       </div>
     </div>
+    </App>
   );
 }
 

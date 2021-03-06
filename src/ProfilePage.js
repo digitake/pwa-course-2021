@@ -4,7 +4,7 @@ import App from './App';
 
 function ProfilePage(){
     return(
-      <App>
+    <App>
     <div className="ProfilePage">
 
         <div className="Profile-background">

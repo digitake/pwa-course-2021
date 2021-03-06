@@ -28,7 +28,7 @@ function Chatbox() {
     <div className="App">
       <div className="App-header">
       <div>
-        <Link to="/">
+        <Link to="/friend-list">
             <img src="back"  alt="ย้อนกลับ"/>
         </Link>
         </div>

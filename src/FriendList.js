@@ -43,7 +43,7 @@ function FriendList(){
                     </Link>
                 </div>
             </div>
-            <div className= "FriendList-chatroom"> 
+            <div className= "FriendList-black"> 
             </div>
         </div>
 

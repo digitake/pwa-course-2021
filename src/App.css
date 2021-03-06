@@ -8,7 +8,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  
+
 }
 
 .App-logo{
@@ -18,6 +18,7 @@
   background-repeat: no-repeat;
   background-position: center; 
 
+
 }
 
 
@@ -25,9 +26,9 @@
  
   .App{
 
-    
+
     width: 95%;
-  
+
   }
 }
 
@@ -36,7 +37,7 @@
   .App{
 
     background-color:  #242424;
-    
+
   }
 }
 
@@ -65,18 +66,18 @@
 
 .App-chatroom {
   flex: 12;
-  
+
 }
 
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: #E9E87F;
+  background-color: #e9e77f00;
 }
 
 .App-textbox {
   flex: 1;
-  background-color:#FECC48;
+  background-color:#fecd48;
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -87,7 +88,7 @@
   height: 100%;
   box-sizing: border-box;
   background-color: #ebe99e;
-  
+
 }
 
 .App-textbox-send {
@@ -106,6 +107,25 @@
 
 .Shop-Button{
   text-align: left;
+}
+
+@media (min-width: 768px){
+ 
+  .App{
+
+
+    width: 95%;
+
+  }
+}
+
+@media (min-width: 480px){
+
+  .App{
+
+    background-color:  #242424;
+
+  }
 }
 
 

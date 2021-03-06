@@ -47,10 +47,23 @@
     display: flex;
     flex-direction: column;
   }
-
   
   .Menu-box{
     flex: 8;
     
   }
+
+  .Menu-column{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  }
+
+  .Menu-row{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
   

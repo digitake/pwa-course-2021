@@ -21,6 +21,11 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+      <Link to="/friend-list">
+                <botton>
+                    Go to Friendlist
+                </botton>
+            </Link>
       </div>
       <div className="App-chatroom">
         {

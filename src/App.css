@@ -17,11 +17,9 @@
 .App-header {
   flex: 1;
 
-
-  background-color: #fd33ec;
+  background-color: #e70505;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(233, 1, 1);

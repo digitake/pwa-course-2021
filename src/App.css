@@ -29,8 +29,7 @@
 
 .App-content {
   flex: 12;
-  display: flex;
-  flex-direction: column;
+  
   background-size:cover;
  
  

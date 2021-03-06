@@ -52,8 +52,6 @@ function FriendList(){
             <div className= "FriendList-chatroom"> 
             </div>
         </div>
-
-
     );
 };
 

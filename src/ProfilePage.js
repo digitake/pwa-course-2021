@@ -1,8 +1,10 @@
 import './Profile.css';
 import { Link } from "react-router-dom";
+import App from './App';
 
 function ProfilePage(){
     return(
+      <App>
     <div className="ProfilePage">
 
         <div className="Profile-background">
@@ -48,10 +50,8 @@ function ProfilePage(){
            Name Surname
         </div>
 
-           
-
     </div>
-
+    </App>
     );
 };
 

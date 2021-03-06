@@ -1,75 +1,57 @@
 
 import './App.css';
-import{useState}from 'react'
 import {Link} from 'react-router-dom';
 
-function App() 
-{
+function App({children}) {
 
-const [text, setText] = useState("")
-
-const [lines, setLines] = useState([""]);
-
-
-const onTextChange = (event) => {
-  setText(event.target.value);
-}
-
-const onSend = (event) =>{
-  setLines(lines => [...lines, text]);
-  setText("");
-}
   return (
     <div className="App">
-      <div className="Friend-Button">
-             <Link to = "/friend-list">
-               <button>
-                 Friends
-               </button>
-             </Link>
-      </div>
-      <div className="Shop-Button">
-             <Link to = "/shop-page">
-               <button>
-                 Shop
-               </button>
-             </Link>
-      </div>
-      <div className="Profile-Button">
-             <Link to = "/profile-page">
-               <button>
-                 Profile
-               </button>
-             </Link>
-      </div>
-      <div className="Game-Button">
-             <Link to = "/game-page">
-               <button>
-                 Game
-               </button>
-             </Link>
-      </div>
-      <div className="App-header App-logo ">
+      <div className="App-header">
+        <div className="App-logo">
 
-      </div>
-      
-      <div className="App-chatroom">
-        {
-          lines.map(x =>{
-        return <div className="App-chatroom-text">
-           {x}
         </div>
-          })
-        }
-      </div>
-      <div className="App-textbox ">
-        <input type="text" className="App-textbox-input" value ={text} onChange= {onTextChange}/>
 
-        <div className="App-textbox-send " onClick ={onSend}>Send!</div>
+        <div className="App-logo Button">
 
+             <Link to = "/profile-page">
+               <image>
+               <img src ="buttonProfile.png"/>
+               </image>
+             </Link>
+
+             <Link to = "/friend-list">
+               <image>
+               <img src ="buttonFriend.png"/>
+               </image>
+             </Link>
+
+             <Link to = "/App">
+               <image>
+               <img src ="buttonMenu.png"/>
+               </image>
+             </Link>
+
+             <Link to = "/shop-page">
+               <image>
+               <img src ="buttonShop.png"/>
+               </image>
+             </Link>
+
+             <Link to = "/game-page">
+               <image>
+               <img src ="buttonGame.png"/>
+               </image>
+             </Link>
+
+        </div>
       </div>
+
+      <div className="App-content">
+        {children}
+      </div>
+
     </div>
     );
-}
+};
 
 export default App;

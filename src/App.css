@@ -34,11 +34,12 @@
   flex: 1;
   background-color: aqua;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 32, 32);
+  padding-right: 16px;
 }
 
 .App-content {
@@ -48,7 +49,7 @@
 
 .App-chatroom-text {
   margin: 8px;
-  color: rgb(243, 171, 108);
+  color: rgb(241, 167, 102);
   font-size: 20px;
 }
 

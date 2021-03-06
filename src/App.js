@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './App.css';
-import FriendList from './FriendList';
 
 function App({children}) {
 
@@ -10,6 +9,18 @@ function App({children}) {
         <Link to="friend-list">
           <button>
             Go to FriendList
+          </button>
+        </Link>
+
+        <Link to="profile">
+          <button>
+            Go to Profile
+          </button>
+        </Link>
+
+        <Link to="/">
+          <button>
+            Go to Chatbox
           </button>
         </Link>
       </div>

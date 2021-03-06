@@ -10,6 +10,15 @@
   background-image: url(origin.png);
   background-repeat: no-repeat;
   background-position: center;
+<<<<<<< HEAD
+=======
+
+
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+>>>>>>> 4e0f9f9ea88b939112c7a13ec25f9c90f7009a14
 }
 .App-header {
 
@@ -20,13 +29,22 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+<<<<<<< HEAD
   color: rgb(255, 0, 0);
+=======
+
+  color: rgb(255, 0, 0);
+
+>>>>>>> 4e0f9f9ea88b939112c7a13ec25f9c90f7009a14
 }
 
 .App-chatroom {
   flex: 12;
+<<<<<<< HEAD
   background-color: rgb(0, 0, 0);
   background-image: url(origin.png);
+=======
+>>>>>>> 4e0f9f9ea88b939112c7a13ec25f9c90f7009a14
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -45,6 +63,10 @@
   justify-content: center;
   align-items: stretch;
   display: flex;
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 4e0f9f9ea88b939112c7a13ec25f9c90f7009a14
 }
 
 .App-textbox-input {
@@ -70,6 +92,10 @@
     background-position: center;
     background-color: #535353;
     background-image: url(origin.png);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4e0f9f9ea88b939112c7a13ec25f9c90f7009a14
   }
   .App-textbox {
     flex: 3

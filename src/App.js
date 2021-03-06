@@ -42,6 +42,11 @@ function App({children}) {
                </image>
              </Link>
 
+            <Link to ="/menu">
+              <image>
+              <img src ="down32.png" align ="right"/>
+              </image>
+            </Link>  
         </div>
       </div>
 

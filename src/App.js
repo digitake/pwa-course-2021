@@ -9,6 +9,7 @@ function App({ children }) {
         <LinkTo value='Chat' to='chat' />
         <LinkTo value='Feed' to='friend-list' />
         <LinkTo value='Friend List' to='friend-list' />
+        
       </div>
 
       <div className='App-content'>

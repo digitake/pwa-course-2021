@@ -8,11 +8,15 @@ import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import Profile from './Profile';
 import Home from './Pages/Home';
+import Setting2 from './Pages/Setting2';
 
 function Router() {
     return (
         <BrowserRouter>
             <Switch>
+            <Route path="/setting-2">
+                    <Setting2 />
+                </Route>
                 <Route path="/app">
                     <Chatbox />
                 </Route>

@@ -36,8 +36,11 @@
   color: white; */
 }
 
-.App-App-content {
+
+.App-content {
   flex: 12;
+  background-color: rgb(66, 221, 188);
+
 }
 
 .App-chatroom-text {

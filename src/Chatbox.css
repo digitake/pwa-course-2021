@@ -36,7 +36,7 @@
     color: white; */
   }
   
-  .App-App-content {
+  .App-chatroom {
     flex: 12;
   }
   
@@ -61,7 +61,8 @@
   }
   
   .App-textbox-send {
-    flex: 5;
+
+    flex: 1;
     height: 100%;
     vertical-align: middle;
     justify-content: center;

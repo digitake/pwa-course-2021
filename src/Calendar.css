@@ -1,5 +1,5 @@
-.App {
-    
+.Calendar {
+    background-color: rgb(207, 238, 250);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,22 +7,30 @@
     height: 100%;
     margin: auto;
   }
+  
   @media (min-width: 768px) {
-      .App-bg{
-        background-position: auto;
-        height: auto;
-      }
+  
+    .Calendar {
+      background-color: rgb(207, 238, 250);
+    }
+    .Calendar-header1{
+      background-color: rgb(255, 255, 255);
+      background-position: left;
+    }
+  
+    .Calendar-header3{
+      background-color: rgb(255, 255, 255);
+      background-position: right;
+    }
+  
   }
- 
   
-  
-  
-  .App-logo {
+  .Calendar-logo {
     height: 40vmin;
     pointer-events: none;
   }
   
-  .App-header {
+  .Calendar-header {
     background-color: rgb(255, 255, 255);
     background-position: center;
     background-repeat: no-repeat;
@@ -34,8 +42,8 @@
     display: flex;
   }
   
-  .App-header1 {
-    background-image: url();
+  .Calendar-header1 {
+    background-image: url(design/Calendar_UI-01.png);
     
     background-position: left;
     background-repeat: no-repeat;
@@ -48,8 +56,8 @@
   
   }
   
-  .App-header2 {
-    background-image: url(design/ewallet.png);
+  .Calendar-header2 {
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -61,8 +69,8 @@
   
   }
   
-  .App-header3 {
-    background-image: url();
+  .Calendar-header3 {
+    background-image: url(design/Calendar_UI-02.png);
     background-position: right;
     background-repeat: no-repeat;
     flex: 1;
@@ -73,21 +81,40 @@
     display: flex;
   }
   
-  
-  .App-bg {
-    background-image: url(design/iconasd.jpg);
-    color: rgb(255, 255, 255);
-    flex: 12;
-    background-repeat: no-repeat; 
+  .Calendar-chatroom {
+    background-image: url(design/Calendar_UI-03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:90%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
   }
 
-  .App-chatroom-text {
-    background-image: url(design/balance.jpg);
+  .Calendar-chatroom1 {
+    background-image: url(design/Calendar_UI-04.png);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:90%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+  }
+
+
+  
+  .Calendar-chatroom-text {
+    margin: 8px;
+    background-color: rgb(108, 165, 250);
+    background-size: 30%;
+    color : rgb(23, 24, 24);
+    font-size: 30px;
   }
   
-  
-  
-  .App-textbox {
+  .Calendar-textbox {
     flex: 1;
     background-color: rgb(255, 255, 255);
     background-position: right;
@@ -97,15 +124,15 @@
     color: rgb(228, 222, 222);
   }
   
-  .App-textbox-input {
+  .Calendar-textbox-input {
     flex: 4;
     height: 100%;
     box-sizing: border-box;
-    color: rgb(250, 254, 255);
+    color: rgb(6, 87, 119);
   }
   
-  .App-textbox-send {
-    background-image: url();
+  .Calendar-textbox-send {
+    background-image: url(design/Calendar_UI-05.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -117,8 +144,8 @@
   }
   
   
-  .App-textbox-send1 {
-    background-image: url();
+  .Calendar-textbox-send1 {
+    background-image: url(design/Calendar_UI-06.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -129,8 +156,32 @@
     display: flex;
   }
   
-  .App-textbox-send2 {
-    background-image: url();
+  .Calendar-textbox-send2 {
+    background-image: url(design/Calendar_UI-07.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Calendar-textbox-send3 {
+    background-image: url(design/Calendar_UI-08.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Calendar-textbox-send4 {
+    background-image: url(design/Calendar_UI-09.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;

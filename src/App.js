@@ -13,6 +13,7 @@ function App() {
     setText("");
   };
   const keyPress = (event) => {
+
     if (event.which === 13){
       onSend();
     }
@@ -21,12 +22,17 @@ function App() {
     <div className="App">
       
       <div className="App-header">
+
             <Link to="/friend-list">
                 <button>
                     Go to Friend List
-                </button>
-                
+                </button> 
             </Link>  
+            <Link to ="/PageDrawing">
+          <botton>
+            Go to PageDrawing
+          </botton>
+        </Link>
       </div>
       
       <div className="App-chatroom">
@@ -37,6 +43,7 @@ function App() {
                 </div>
           })
         }
+        
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" 

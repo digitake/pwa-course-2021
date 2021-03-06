@@ -1,0 +1,30 @@
+.PageDrawing{
+  background-image: url(BGPT.png);
+  background-size: cover;
+  height: 100%;
+}
+.PageDrawing-header {
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    background-color: rgb(255, 183, 239);
+    font-size: 30px;
+  }
+  .PageDrawing-botton{
+    float: right;
+  }
+  .PageDrawing-drawbox{
+    padding: 350px 0;
+    margin: 20px;
+    background-color: white;
+  }
+  .PageDrawing-send{
+    padding: 25px 0;
+    margin: 20px;
+    background-color: white;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+  }
+   

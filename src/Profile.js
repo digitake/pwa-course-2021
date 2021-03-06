@@ -1,7 +1,11 @@
+import './Profile.css';
 import { Link } from 'react-router-dom';
 
 function Profile() {
     return (
+        <div className ="Profile">
+          <div className ="Profile-Pic">
+   
         <div>
             Profile
             <Link to="/">
@@ -16,8 +20,10 @@ function Profile() {
                     </button>
                 </Link>
             </div>
+         </div>
         </div>
-        
+        </div>
+
     );
 };
 

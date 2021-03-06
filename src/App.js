@@ -7,8 +7,7 @@ function App({ children }) {
       <div className="App-header">
         <LinkTo value='Home' to='home' />
         <LinkTo value='Chat' to='chat' />
-        <LinkTo value='Feed' to='friend-list' />
-        <LinkTo value='Friend List' to='friend-list' />
+        <LinkTo value='Feed' to='feed' />
       </div>
 
       <div className='App-content'>

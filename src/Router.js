@@ -8,7 +8,8 @@ import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import Profile from './Profile';
 import Home from './Pages/Home';
-import Setting from './Pages/Setting';
+import Feed from './Pages/Feed';
+import Setting1 from './Pages/Setting1';
 
 function Router() {
     return (
@@ -16,6 +17,9 @@ function Router() {
             <Switch>
                 <Route path="/app">
                     <Chatbox />
+                </Route>
+                <Route path="/feed">
+                    <Feed />
                 </Route>
                 <Route path="/friend-list">
                     <FriendList />
@@ -39,7 +43,7 @@ function Router() {
                     <NeptunePin />
                 </Route>
                 <Route path="/setting1">
-                    <Setting />
+                    <Setting1 />
                 </Route>
                 <Route path="/">
                     <NeptuneWelcome />

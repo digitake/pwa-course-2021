@@ -3,6 +3,7 @@ import FriendList from './FriendList';
 import Setting from './Setting';
 import PrivateChatRoom from './PrivateChatRoom';
 import Profiles from './Profiles';
+import App from './App';
 function Router() {
 
     return (
@@ -19,6 +20,9 @@ function Router() {
          </Route>
         <Route path="/PrivateChat">
             <PrivateChatRoom />
+            </Route>
+        <Route path="/">
+            <App/>
             </Route>
         </Switch>
         </BrowserRouter>

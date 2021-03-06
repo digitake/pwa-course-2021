@@ -39,6 +39,8 @@
     background-color: #FECC48;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    
 
   }
 

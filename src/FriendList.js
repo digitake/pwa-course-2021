@@ -4,9 +4,9 @@ function FriendList(){
     return(
         <div>
             Friend List
-            <Link to="/PrivateChat">
+            <Link to="/">
                 <button>
-                    Go Chatroom
+                    Go to Chatroom
                 </button>
             </Link>
         </div>

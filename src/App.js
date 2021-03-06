@@ -20,10 +20,11 @@ function App() {
                 </button>
          </Link>
         </div> 
-         <div className="App-chatroom">
+      </div>
+      
+      <div className="App-chatroom">
            <Chatbox/>
          </div>
-      </div>
     </div>
     
   );

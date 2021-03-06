@@ -1,7 +1,7 @@
 .LogoApp {
 /* LogoApplication */
-    text-align: center;
     position: relative;
+    text-align: center;
     width: 414px;
     height: 896px;
     margin: auto;
@@ -10,10 +10,12 @@
     background-position: center ;
     background-size: 103%;
     background-repeat: no-repeat;
+    
+
 }
 
 .AppLogin{
-    position: absolute;
+    position: relative;
     width: 167px;
     height: 52px;
     left: 17px;
@@ -21,23 +23,23 @@
 }
 
 .AppRegister{
-    position: absolute;
+    position: relative;
     width: 167px;
     height: 52px;
     left: 226px;
-    top: 770px;
+    top: 719px;
 }
 
 .Login{
     position: relative;
     width: 414px;
-    height: 896px;
+    height: 825px;
     margin: auto;
     background-image: url(/src/AppchatUpdate/Log\ In.png);
 }
 
 .Undo{
-    position: absolute;
+    position: relative;
     width: 28.55px;
     height: 23.85px;
     left: 13px;
@@ -45,7 +47,7 @@
 }
 
 .Undo2{
-    position: absolute;
+    position: relative;
     width: 28.54px;
     height: 23.84px;
     left: 14px;
@@ -53,7 +55,7 @@
 }
 
 .SingIn{
-    position: absolute;
+    position: relative;
     left: 8.7%;
     right: 8.45%;
     top: 35.27%;
@@ -71,10 +73,10 @@
 
 .RegisterNextStep{
     
-    position: absolute;
+    position: relative;
     left: 8.7%;
     right: 8.45%;
-    top: 34.15%;
+    top: 32%;
     bottom: 60.04%;
 }
 
@@ -83,58 +85,81 @@
     position: relative;
     width: 414px;
     height: 896px;
+    background-repeat: no-repeat;
     background-image: url(/src/AppchatUpdate/RegisterStep2Username.png);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .SingUP{
-    position: absolute;
+    position: relative;
     width: 343px;
     height: 52px;
     left: 36px;
-    top: 242px;
+    top: 219px;
 }
 
 
 .HomePageInfo{
-    margin: auto;
-    position: relative;
+    margin: auto;  
     width: 414px;
-    height: 896px;   
-    background-image: url(/src/AppchatUpdate/AppHomePage.png);
+    height: 896px;
+    top: 100px;
+    background-repeat: no-repeat;
+    background-image: url(/src/AppchatUpdate/MenuHomeBar.png);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-position: center bottom ;
+}
+
+.HomePageInfo-topBar
+{
+    margin: auto;
+    width: 414px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-image: url(/src/AppchatUpdate/StatusBar.png);
+
+    background-position: center unset ;
+}
+
+.ToolBar{
+    
+    display: flex;
+    flex: 1;
+    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 374px;
+    height: 82px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.ChatBar{
-    position: absolute;
-    width: 40px;
-    height: 38px;
-    left: 21px;
-    top: 845px;
-}
-
 .GroupBar{
-    position: absolute;
+    
     width: 42px;
     height: 42px;
     left: 93px;
     top: 842px;
+    
 }
 
 .PrivateBar{
-    position: absolute;
+    
     width: 40px;
     height: 36px;
     left: 281px;
-    top: 845px;
+    
 }
 
 .SettingBar{
-    position: absolute;
+    
     width: 40px;
     height: 36px;
     left: 353px;
-    top: 845px;
+    
 }
 
 .SettingPage{
@@ -147,17 +172,27 @@
 }
 
 .LogOut{
-    position: absolute;
+    position: relative;
     width: 178.78px;
     height: 51.22px;
     left: 47.22px;
-    top: 722.78px;
+    top: 698px;
 }
 
 .MenuHomeBar{
-    position: absolute;
+    position: relative;
     width: 414px;
     height: 82px;
     left: 0px;
     top: 814px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 };
+
+.Botchat{
+    position: relative;
+    width: 241px;
+    height: 69px;
+    left: 22px;
+    top: 162px;
+    
+}

@@ -1,41 +1,36 @@
 import './App.css';
-import {useState} from 'react';
+import { Link } form 'react-router-dom';
 
-function App() {
 
-const [text, serText] = useState("");
-const [lines, setLines] = useState([]);
+function App({children}) {
 
-const onTextChange = (event) => {
-  serText(event.target.value)
-};
-
-const onSend = () =>{
-  setLines([...lines, text])
-};
-
-const keyPress = (event) => {
-  if (event.which === 13){
-    onSend();
-  }
-}
   return (
     <div className="App">
       <div className="App-header">
+      <Link to="/friend-list">
+          <button>
+              Friend-list
+          </button>
+        </Link>
+
+        <Link to="/profile">
+          <button>
+              Profile
+          </button>
+        </Link>
+
+        <Link to="/chatbox">
+          <button>
+              Chatbox
+          </button>
+        </Link>
+
       </div>
-      <div className="App-chatroom">
-       { lines.map(x => {
-          return <div className="App-chatroom-text">
-            {x}
-          </div>
-          })
-        }
-          </div>
-      <div className="App-textbox">
-        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        <div className="App-textbox-send" onClick={onSend}  >Send!</div>
+      <div className="App-content">
+        {children}
       </div>
     </div>
+      
   );
 }
 

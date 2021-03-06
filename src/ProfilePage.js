@@ -1,8 +1,10 @@
 import './Profile.css';
+import App from './App';
 import { Link } from "react-router-dom";
 
 function ProfilePage(){
     return(
+ <App>
     <div className="ProfilePage">
 
         <div className="Profile-background">
@@ -28,30 +30,18 @@ function ProfilePage(){
                <img src ="buttonFriend.png"/>  
                </image>
              </Link>
-
-             <Link to = "/shop-page">
-               <image>
-               <img src ="buttonShop.png"/>  
-               </image>
-             </Link>
-
              <Link to = "/game-page">
                <image>
                <img src ="buttonGame.png"/> 
                </image>
              </Link>
             </div>
-
-        </div>
-
+          </div>
         <div className="Profile-chatroom">
            Name Surname
         </div>
-
-           
-
     </div>
-
+  </App>
     );
 };
 

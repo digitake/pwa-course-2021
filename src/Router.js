@@ -8,11 +8,7 @@ import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import Profile from './Profile';
 import Home from './Pages/Home';
-<<<<<<< HEAD
 import Feed from './Pages/Feed';
-=======
-import Setting2 from './Pages/Setting2';
->>>>>>> 398916516a420aaa55dc5b104a6d9f4b948e5e96
 
 function Router() {
     return (

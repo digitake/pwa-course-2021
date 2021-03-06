@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+}
+
+.iconButton{
+    background-color: black;
+    border: 1px solid whitesmoke;
+    color: white;
+    border-radius: 70px;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.header{
+    flex: 1;
+  display: flex;
+  background-color:black;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  color: #F7F7F7;
+}
+
+.logo{
+    width: 30%;
+}
+
+.profile{
+    background-color: green;
+    border: 1px solid whitesmoke;
+    color: white;
+    border-radius: 70px;
+    width: 70px;
+    height: 70px;
+}
+
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

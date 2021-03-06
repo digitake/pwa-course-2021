@@ -1,6 +1,7 @@
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import App from './App';
 import FriendList from './FriendList';
+import Chatbox from './Chatbox'
 
 function Router() {
     
@@ -11,14 +12,7 @@ function Router() {
                     <FriendList />
                 </Route>
                 <Route path="/">
-                    <App />
-                    <div>
-                        <Link to="friend-list">
-                            <button>
-                                Go FriendList
-                            </button>
-                        </Link>
-                    </div>
+                    <Chatbox />
                 </Route>
             </Switch>
         </BrowserRouter>

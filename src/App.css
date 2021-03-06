@@ -41,14 +41,14 @@
   color: rgb(255, 32, 32);
 }
 
-.App-chatroom {
+.App-content {
   flex: 12;
 
 }
 
 .App-chatroom-text {
   margin: 8px;
-
+  color: rgb(243, 171, 108);
   font-size: 20px;
 }
 

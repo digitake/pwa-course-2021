@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+<<<<<<< HEAD
 import Router from './Router';
+=======
+>>>>>>> b49edfa271afdd785d6876546f642c3293919999
 import reportWebVitals from './reportWebVitals';
+import Router from './Router';
 
 ReactDOM.render(
   <React.StrictMode>

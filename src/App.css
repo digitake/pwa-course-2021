@@ -35,6 +35,7 @@
 
 .App-content
 {
+  flex-direction: column;
   flex: 12;
   background-color:#2D2C67
 }

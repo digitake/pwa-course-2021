@@ -1,21 +1,26 @@
-/** Import Router components เข้ามาเพื่อเตรียมใช้งาน **/
-import { BrowserRouter, Switch, Route} from 'react-router-dom';
-import App from './App';
-import FriendList from './FriendList'
+// import router เข้ามาเตรียมใช้งาน //
+
+import {BrowserRouter,Switch, Route } from 'react-router-dom'
+import App from './App'
+import FriendList from './FriendList';
+import PageDrawing from './PageDrawing';
 
 function Router(){
-    return (
-        <BrowserRouter>
+    return(
+    <BrowserRouter>
         <Switch>
-            <Route path= "/friend-list">
-            <FriendList />
+            <Route path="/friend-list">
+                <FriendList />
             </Route>
-            <Route path= "/">
+            <Route path="/PageDrawing">
+                <PageDrawing />
+            </Route>
+            <Route path="/">
                 <App />
             </Route>
         </Switch>
-        </BrowserRouter>
+    </BrowserRouter>
     )
-}
+};
 
-export default Router; /**ส่งออก Router ไปให้โลกใช้งาน**/
+export default Router; // ส่งออก Router ไปให้ใช่งาน //

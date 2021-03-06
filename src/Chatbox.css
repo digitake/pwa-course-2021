@@ -1,0 +1,160 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    max-width: 1920px;
+    height: 100%;
+    margin: auto;
+  }
+  
+  @media(max-width:1000px){
+    .App{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(shiba.png);
+      background-size: contain;
+  }
+  }
+  @media(min-width:1001px)and (max-width:1920px){
+    .App{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(download.jpg);
+      background-repeat: repeat;
+  }
+  }
+  
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    flex: 1;
+    background-color: #7ff8fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+  }
+  
+  .App-chatroom {
+    flex: 12;
+  }
+  
+  .App-chatroom-text {
+    margin: 8px;
+    background-color: rgb(197, 189, 189);
+    color : rgb(48, 100, 100);
+    font-size: 20px;
+  }
+  
+  .App-textbox {
+    flex: 1;
+    background-color: rgb(224, 220, 220);
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+  }
+  
+  .App-textbox-input {
+    flex: 3;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .App-textbox-send {
+    flex: 0.5;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  /*<768px*/
+  @media(max-width: 600px){
+    .App{
+      background-repeat: center;
+      background-position: center;
+      background-image: url(shiba.png);
+      background-size: contain;
+    }
+  
+    .App-header {
+      flex: 0.75;
+      background-color: #ff844f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: rgb(243, 10, 10);
+    }
+  
+    .App-textbox-input {
+      flex: 2;
+      height: 100%;
+      box-sizing: border-box;
+    }
+  
+    .App-textbox-send {
+      flex: 0.4;
+      height: 100%;
+      vertical-align: middle;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  
+    .App-textbox {
+      flex: 0.75;
+      background-color: rgb(224, 220, 220);
+      justify-content: center;
+      align-items: stretch;
+      display: flex;
+    }
+  }
+  @media(min-width:601px) and (max-width:1080px){
+    .App{
+      background-repeat: repeat;
+      background-position: center;
+      background-image: url(Jesus.png);
+      background-size: contain;
+    }
+  
+    .App-header {
+      flex: 1;
+      background-color: #00661f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: rgb(236, 128, 128);
+    }
+  }
+  
+  @media(min-width:1081px){
+    .App{
+      background-repeat: repeat;
+      background-position: center;
+      background-image: url(sea.png);
+      background-size: cover;
+    }
+  
+    .App-header {
+      flex: 1;
+      background-color: #f57ca0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: rgb(243, 10, 10);
+    }
+  }

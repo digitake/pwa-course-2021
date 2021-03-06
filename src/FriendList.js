@@ -1,11 +1,17 @@
 import LinkTo from './Components/LinkManager'
+import App from './App';
 
 function FriendList() {
     return (
-        <div>
-            <LinkTo value="home" to="/" />
-            <h1>FriendList</h1>
-        </div>
+        <App>
+
+            <div>
+                <h1>FriendList</h1>
+                <LinkTo value="Go Back!" to="/app" />
+            </div>
+
+        </App>
+
     );
 }
 

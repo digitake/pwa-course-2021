@@ -71,8 +71,8 @@
 }
 
 
-.App-chatroom-text {
-  margin: 8px;
+.App-content {
+  flex: 12;
   background-color: #e9e77f00;
 }
 

@@ -79,6 +79,10 @@ label{
     text-align: center;
 }
 
+.home-button{
+margin: 10px;
+}
+
 .button{
     width: 100%;
     border:  none;

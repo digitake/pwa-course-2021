@@ -23,7 +23,7 @@
   height: 25%;
 }
 .App-header {
-  flex: 2;
+  flex: 5;
   background: rgb(5, 0, 99);
   background: linear-gradient(90deg,
   rgb(21, 21, 150) 35%, rgb(16, 208, 247) 100%);
@@ -37,7 +37,7 @@
 }
 
 
-.App-chatroom {
+.App-content {
   flex: 12;
   background-size: 140%;
   background-position: center;

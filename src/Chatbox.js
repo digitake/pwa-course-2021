@@ -25,18 +25,6 @@ function Chatbox() {
   return (
     <div className="App">
       <div className="App-header">
-        <div className="App-header-button">
-                <Link to ="/insepect-profile">
-                  <button>
-                    Insepect Profile
-                  </button>
-                </Link>
-                <Link to ="/profile-setting">
-                  <button>
-                    Profile Setting
-                  </button>
-                </Link>
-        </div>
        Neptune Chat
       </div>
       <div className="App-chatroom">

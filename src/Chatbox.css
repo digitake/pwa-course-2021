@@ -1,4 +1,4 @@
-.App {
+.Chatbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,10 +17,6 @@
 .App-logo {
   height: 10px;
   pointer-events: none;
-}
-.App-header-button{
-  max-width: 20%;
-  height: 25%;
 }
 .App-header {
   flex: 2;

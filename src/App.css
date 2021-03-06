@@ -17,6 +17,11 @@
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center; 
+<<<<<<< HEAD
+=======
+  
+  
+>>>>>>> ec1377303115d149742bb21405bc0a129abd3be7
 
 }
 
@@ -71,12 +76,12 @@
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: #E9E87F;
+  background-color: #e9e77f00;
 }
 
 .App-textbox {
   flex: 1;
-  background-color:#FECC48;
+  background-color:#fecd48;
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -167,3 +172,5 @@
 }
 
 /*dssf*/
+
+

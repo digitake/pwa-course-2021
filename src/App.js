@@ -1,17 +1,11 @@
 import './App.css';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-import Chatbox from './Chatbox';
-
-function App() {
-=======
 
 
 
 function App({children}) {
-
->>>>>>> 4e0f9f9ea88b939112c7a13ec25f9c90f7009a14
   return (
+
     <div className="App col-6">
       <div className="App-header">
         <Link to="/friend-list">
@@ -19,19 +13,6 @@ function App({children}) {
           Friend List
           </button>
         </Link>
-<<<<<<< HEAD
-        </div>
-      </div>
-
-      <div className ="panel-footer"> 
-      </div>
-
-      <div className ="input-group">
-      </div>
-
-      <div className ="app-content">
-      </div>
-=======
 
         <Link to="/profile">
           <button>
@@ -48,8 +29,8 @@ function App({children}) {
       <div className="App-content">
       {children}
       </div>
->>>>>>> 4e0f9f9ea88b939112c7a13ec25f9c90f7009a14
     </div>
+    
   );
 }
 

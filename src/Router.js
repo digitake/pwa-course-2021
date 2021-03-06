@@ -6,6 +6,8 @@ import ShopPage from "./ShopPage";
 import Menu from "./Menu";
 import ProfilePage from "./ProfilePage";
 import GamePage from "./GamePage";
+import Chatbox from "./Chatbox";
+
 
 // Create Component
 function Router()  {
@@ -34,7 +36,7 @@ function Router()  {
             </Route>
 
             <Route path="/">
-              <App />
+              <Chatbox />
             </Route>
 
         </Switch>

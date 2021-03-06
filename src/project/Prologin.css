@@ -1,34 +1,34 @@
 .Prologin {
+  flex: 12;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 550px;
+  max-width: 600px;
   height: 87%;
   margin: auto;
   background-color: rgb(31, 103, 211);
 }
 
-.Prologin-header-logo {
-  width: 350px;
-  height: 280px;
-  position: absolute;
-  top: 80px;
-  left: 780px;
+.background-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  background-color: rgb(31, 103, 211);
 }
 
-.signin-logo img {
-  position: absolute;
-  top: 450px;
-  left: 820px;
-  max-width: 100%;
-  width: 15%;  
+.Prologin-logo {
+  margin-top: -50px;
 }
 
-.registery-logo img {
-  max-height: 100%;
-  height: 8%;
-  position: absolute;
-  top: 590px;
-  left: 835px;
+.signin-logo {
+  padding-top: 110px;
 }
+
+.register-logo {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+

@@ -25,8 +25,7 @@ function Chatbox() {
 
   return (
     <div className="App">
-      <div className="App-header">
-      </div>
+      
       <div className="App-chatroom">
         {
 

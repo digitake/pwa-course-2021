@@ -1,18 +1,19 @@
-import { BrowserRouter, Switch, Router } form 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
-import FriendList form './FriendList';
+import FriendList from './FriendList';
+
 
 function Router() {
 
     return(
         <BrowserRouter>
             <Switch>
-                <Router path="/friend-List">
+                <Route path="/friend-List">
                     <FriendList />
-                </Router>
-                <Router path="/">
+                </Route>
+                <Route path="/">
                     <App />
-                </Router>
+                </Route>
             </Switch>
         </BrowserRouter>
     )

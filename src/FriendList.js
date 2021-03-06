@@ -10,7 +10,7 @@ function FriendList(){
                   <img src ="back-32.png" align="Left" />
               </Link>
             </div>
-            <div className= "FriendList-header2">
+            <div className= "FriendList-boby">
                  สมชาย
                  <Link to="/profile-page">
                      <img src = "profile-user-64.png"  />
@@ -21,7 +21,7 @@ function FriendList(){
                     </Link>
                 </div>
             </div>
-            <div className= "FriendList-header3">
+            <div className= "FriendList-boby2">
                  สมศรี
                  <Link to="/profile-page">
                 <img src = "profile-user-64.png"  />
@@ -32,7 +32,7 @@ function FriendList(){
                     </Link>
                 </div>
             </div>
-            <div className= "FriendList-header4">
+            <div className= "FriendList-boby3">
                  สมศักดิ์
                  <Link to="/profile-page">
                 <img src = "profile-user-64.png"  />

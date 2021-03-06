@@ -9,11 +9,24 @@ import NeptuneRegister from './Pages/NeptuneRegister';
 import NeptunePin from './Pages/NeptunePin';
 import NeptuneWelcome from './Pages/NeptuneWelcome';
 import NeptuneChat from './Pages/NeptuneChat';
+import Chatbox from './Chatbox';
+import FriendList from './FriendList';
+import Profile from './Profile';
 
 function Router() {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path="/app">
+                    <Chatbox />
+                </Route>
+                <Route path="/friend-list">
+                    <FriendList />
+                </Route>
+                <Route path="/profile">
+                    <Profile />
+                </Route>
+                
                 <Route path='/home'>
                     <Main />
                 </Route>

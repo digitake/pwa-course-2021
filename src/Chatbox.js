@@ -53,13 +53,6 @@ function Chatbox() {
         <input placeholder='Type something...' type="text" className="App-textbox-input" value={text} onKeyPress={onKeyPress} onChange={onTextChange} />
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
-      <div>
-        <Link to="/Register">
-          <button>
-            Go to Register
-        </button>
-        </Link>
-      </div>
     </div>
   );
 }

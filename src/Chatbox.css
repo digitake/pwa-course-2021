@@ -37,7 +37,7 @@
   {
     flex-direction: column;
     flex: 12;
-    background-color:#2D2C67
+    background-image:url(Games.jpg);
   }
   
   .App-chatroom-text 

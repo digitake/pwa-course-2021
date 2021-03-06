@@ -1,15 +1,14 @@
-
 import { Link } from "react-router-dom";
+import App from './App';
 import main from './image/BT.png';
 import pro from './123.jpg';
-function  MainPage() {
-    return(
-        <div>
-            <body>
-           <Link to="/profile">
-                <img src={main} width="200" border="5"  />
-           </Link>
 
+function  Profile() {
+
+    return(
+        <App>
+        <div>
+        <body>
            <center><img src={pro} width="200" border="5" align="top" /></center>
                 <p align="center">
                     <h1>
@@ -20,9 +19,9 @@ function  MainPage() {
                     </h1>
                 </p>
             </body>
-           
         </div>
-    ) 
- }
- 
- export default MainPage;
+        </App>
+    )
+    
+}
+export default Profile;

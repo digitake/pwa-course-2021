@@ -15,7 +15,7 @@ function HomePage({children}) {
 
             </Link>
         </div>
-        <div className = "">
+        <div className = "GroupBar">
             <Link to = "/GroupChatBox">
                 <img src = "GroupChat.Png" alt = "" />
                 

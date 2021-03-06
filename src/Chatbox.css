@@ -66,7 +66,7 @@
     text-align: right;
   }
   
-  .App-chatroom {
+  .Chatbox-chatroom {
     flex: 12;
     
   }
@@ -74,7 +74,7 @@
   
   .Chatbox-chatroom-text {
     margin: 8px;
-    background-color: #e9e77f00;
+    background-color: #ebe99e;
   }
   
   .Chatbox-textbox {
@@ -90,9 +90,9 @@
     height: 100%;
     box-sizing: border-box;
     background-color: #ebe99e;
-    
+
   }
-  
+
   .Chatbox-textbox-send {
     flex: 1;
     height: 100%;
@@ -101,7 +101,7 @@
     align-items: center;
     display: flex;
     cursor: pointer;
-  }
+  } 
   
   /* The Modal (background) */
   .modal {

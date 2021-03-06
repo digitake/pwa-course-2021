@@ -1,11 +1,26 @@
 import './Chatbox.css';
 import {Link} from 'react-router-dom';
 import{useState}from 'react';
+import './App.css';
+import App from './App';
 
 function Chatbox(){
+
+    const [text, setText] = useState("")
+    const [lines, setLines] = useState([""]);
+
+
+    const onTextChange = (event) => {
+  setText(event.target.value);
+        }
+    const onSend = (event) =>{
+    setLines(lines => [...lines, text]);
+    setText("");
+    }
   return(
+      <App>
     <div className="Chatbox">
-      
+
       <div className="Chatbox-chatroom">
         {
           lines.map(x =>{
@@ -22,6 +37,8 @@ function Chatbox(){
 
       </div>
     </div>
+    </App>
     );
 };
+
 export default Chatbox;

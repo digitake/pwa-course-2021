@@ -1,7 +1,7 @@
   
 import './Chatbox.css';
-
 import {useState} from 'react' ;
+import App from './App'
 
 function Chatbox() {
 
@@ -24,6 +24,7 @@ function Chatbox() {
 
 
   return (
+      <App>
     <div className="App">
       
       <div className="App-chatroom">
@@ -43,6 +44,7 @@ function Chatbox() {
 
       </div>
     </div>
+    </App>
   );
 }
 

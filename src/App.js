@@ -1,5 +1,7 @@
 import './App.css';
 import {Link} from 'react-router-dom';
+import Chatbox from './Chatbox';
+import FriendList from './FriendList';
 
 function App() 
 {
@@ -14,8 +16,11 @@ function App()
              <img src= "down32.png" align ="right"/> 
              </Link>
           </div>
-       </div>
      </div>
+     <div className= "App-content">
+        <Chatbox/>
+    </div>
+  </div>
      
     );
 }

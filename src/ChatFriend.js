@@ -14,6 +14,7 @@ function AllChatInterface() {
           </div>
 
           <div className="Middle-Zone">
+              
               <div className = "FriendChat-Box">
 
                 <div className = "Name-Box">

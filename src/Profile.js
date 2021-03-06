@@ -1,5 +1,4 @@
 import './Profile.css';
-import {useState} from 'react';
 import { Link } from 'react-router-dom'
 function Profile(){
     return (
@@ -16,17 +15,17 @@ function Profile(){
                 </Link>
             </div>
             
-          <div className="Profile-name">
+            <div className="Profile-name">
     
               GI472 Pheeraphat Chocokviriyapanya
-              </div>
+            </div>
 
-              <div className="Profile-picture">
+            <div className="Profile-picture">
     
-              </div>
+            </div>
 
-              </div>
-              </div>
+            </div>
+        </div>
 
               
               );

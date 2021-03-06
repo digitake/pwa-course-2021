@@ -1,10 +1,11 @@
 
 import { Link } from "react-router-dom";
 import './GamePage.css';
-import{useState}from 'react'
+import App from './App';
 
 function GamePage(){
     return(
+        <App>
         <div className="GamePage">
             <div>
             Game Page
@@ -21,6 +22,7 @@ function GamePage(){
             <div className="">
             </div>
         </div>
+        </App>
 
     );
 };

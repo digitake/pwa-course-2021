@@ -1,4 +1,4 @@
-.App {
+/*.App {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,16 +6,16 @@
     height: 100%;
     margin: auto;
     background-color: blue;
-  }
+  }*/
   
-  @media(min-width: 786px){
+  /*@media(min-width: 786px){
     .App{
       background-image: url(koro.jpg);
       background-repeat: no-repeat;
       background-position: center;
       width:80%;
     }
-  }
+  }*/
   
   .App-logo {
     height: 40vmin;
@@ -34,10 +34,14 @@
   
   .App-chatroom {
     flex: 12;
-  
-    background-color: rgba(170, 158, 212, 0.418);
-    margin: 24px;
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+    background-color: blue;
+
   }
   
   .App-chatroom-text {

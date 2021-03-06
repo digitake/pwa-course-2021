@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom'
+import App from './App';
 import dog from './dog.PNG';
 function FriendList(){
     return(
+        <App>
         <div>
             Friend List
             <Link to = "/">
-                <img src= {dog} alt="รูปหมา"/>
                 <button>
                     Go to Chatroom
                 </button>
             </Link>
         </div>
-        
+        </App>
     )
 }
 

@@ -1,8 +1,8 @@
 import './App.css';
 import { Link } from 'react-router-dom'
-import Chatbox from './Chatbox'
 
-function App() {
+
+function App({children}) {
  
 
   return (
@@ -23,9 +23,16 @@ function App() {
                     profile
                 </button>
       </Link>
+
+      <Link to = "/">
+                
+                <button>
+                    chatbox
+                </button>
+      </Link>
       </div>
       <div className = "App-content">
-      <Chatbox/>
+      {children}
     </div>
       </div>
     

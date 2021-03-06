@@ -1,5 +1,6 @@
 import './App.css';
 import { Link } from 'react-router-dom';
+import Chatbox from './Chatbox'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         FriendList
         </button>
       </Link>
+      <Chatbox/>
       
     </div>
     

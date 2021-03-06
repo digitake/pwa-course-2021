@@ -8,7 +8,7 @@ class Feed extends Component {
         return (
             <Link to="/home">
                 <div className='Feed'>
-                    <img src={FeedImg} />
+                    <img src={Feed} />
                 </div>
             </Link>
 

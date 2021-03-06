@@ -11,6 +11,18 @@ function App({children}) {
         <button>
         FriendList
         </button>
+      </Link> 
+      
+      <Link to="/learnprofiles">
+        <button>
+        learnprofile
+        </button>
+      </Link> 
+      
+      <Link to="/">
+        <button>
+        Chatbox
+        </button>
       </Link>
       </div>
       <div className="App-content">

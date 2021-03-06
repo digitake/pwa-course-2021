@@ -5,6 +5,7 @@ import PrivateChatRoom from './PrivateChatRoom';
 import Profiles from './Profiles';
 import App from './App';
 import Chatbox from './Chatbox';
+import LearnProfile from './LearnProfile';
 function Router() {
 
     return (
@@ -21,6 +22,9 @@ function Router() {
          </Route>
         <Route path="/PrivateChat">
             <PrivateChatRoom />
+            </Route>
+        <Route path="/learnprofiles">
+            <LearnProfile />
             </Route>
         <Route path="/">
             <Chatbox/>

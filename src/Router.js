@@ -6,7 +6,7 @@ import NeptuneWelcome from './Pages/NeptuneWelcome';
 import NeptuneChat from './Pages/NeptuneChat';
 import Chatbox from './Chatbox';
 import FriendList from './FriendList';
-import Profile from './Profile';
+import Profile from './Pages/Profile';
 import Home from './Pages/Home';
 import Feed from './Pages/Feed';
 

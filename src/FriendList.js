@@ -11,7 +11,7 @@ function FriendList() {
                 </button>
             </Link>
         </div>
-n
+
     )
 };
 

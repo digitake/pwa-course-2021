@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import img from './image/back.png';
+import back from './image/back.png' ; 
 
 function Chatroom() {
 return(
     <div>
         Chatroom
-        <Link to="/">
-            <img src="back"  alt="ย้อนกลับ"/>
+        <Link to="MainPage">
+            <image src={back}  alt="ย้อนกลับ" width="200" border="5" align="top"/>
         </Link>
     </div>
     

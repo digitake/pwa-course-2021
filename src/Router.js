@@ -9,6 +9,7 @@ import FriendList from './FriendList';
 import Profile from './Pages/Profile';
 import Home from './Pages/Home';
 import Feed from './Pages/Feed';
+import Setting1 from './Pages/Setting1';
 
 function Router() {
     return (
@@ -43,6 +44,9 @@ function Router() {
                 </Route>
                 <Route path="/pin">
                     <NeptunePin />
+                </Route>
+                <Route path="/setting1">
+                    <Setting1 />
                 </Route>
                 <Route path="/">
                     <NeptuneWelcome />

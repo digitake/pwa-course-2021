@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import App from './App';
+import '../App.css';
+import App from '../App';
 
-function Chatbox() {
+function NeptuneChat() {
 
     const [text, setText] = useState('');
     const [lines, setLines] = useState([]);
@@ -33,7 +35,6 @@ function Chatbox() {
                     })
                 }
             </div>
-
             <div className="App-textbox">
                 <input placeholder='Type something...' type="text" className="App-textbox-input" value={text} onKeyPress={onKeyPress} onChange={onTextChange} />
                 <div className="App-textbox-send" onClick={onSend}>Send!</div>
@@ -41,7 +42,8 @@ function Chatbox() {
             <div>
             </div>
         </App>
+
     );
 }
 
-export default Chatbox;
+export default NeptuneChat;

@@ -1,13 +1,12 @@
-import {Link} from 'react-router-dom';
-import prosetting from './desgin/Profile Setting (Light Mode).jpg'
-import App from './App';
+import { Link } from 'react-router-dom';
+import prosetting from './design/Profile Setting (Light Mode).jpg'
 
-function ProfileSetting(){
-    return(
-        <App>
-        <div>
-            <h1>Profile Setting</h1>
-            <img src={prosetting}></img>
+function ProfileSetting() {
+    return (
+        <div align="center">
+            <Link to="/home">
+                <img src={prosetting} width="480" height="852"></img>
+            </Link>
         </div>
         </App>
     )

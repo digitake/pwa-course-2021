@@ -1,6 +1,7 @@
 import './Chatbox.css';
 import{useState}from 'react'
 import App from './App';
+import {Link} from 'react-router-dom';
 
 function Chatbox() 
 {
@@ -19,7 +20,7 @@ const onSend = (event) =>{
   return (
  <App>
     <div className="App">
-      {/* <div className="Shop-Button">
+       <div className="Shop-Button">
              <Link to = "/shop-page">
                <button>
                  Shop
@@ -33,12 +34,12 @@ const onSend = (event) =>{
                </button>
              </Link>
       </div>
-      <div className="Game-Button">
+       <div className="Game-Button">
              <Link to = "/game-page">
                <button>
                  Game
                </button>
-             </Link> */}
+             </Link> 
       </div> 
       <div className="App-chatroom">
         {
@@ -60,7 +61,7 @@ const onSend = (event) =>{
         <p>Stickers</p>
      </div>
     </div>
- {/* </div> */}
+  </div> 
 </App>   
     );
 }

@@ -4,7 +4,7 @@ import FriendListphoto from './image/friendlist.png'
 import chatroomphoto from './image/chatroom.png'
 import profilephoto from './image/profile.png'
 
-ื
+
 function HomePage() {
     return (
         <div>

@@ -1,4 +1,4 @@
-import './App.css';
+import './Chatbox.css';
 import { Link } from 'react-router-dom';
 
 import {useState} from 'react';

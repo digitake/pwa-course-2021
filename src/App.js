@@ -1,5 +1,7 @@
 import './App.css';
+import {Link} from 'react-router-dom';
 import { useState } from 'react';
+
 function App() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
@@ -28,6 +30,11 @@ function App() {
                 </div>
           })
         }
+        <Link to ="/PageDrawing">
+          <botton>
+            Go to PageDrawing
+          </botton>
+        </Link>
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" 

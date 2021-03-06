@@ -24,8 +24,7 @@ function Chatbox() {
 
   return (
     <App>
-        <div className="App">
-
+        
             <div className = "App-chatroom">
                 {
                 lines.map(x => {
@@ -43,7 +42,7 @@ function Chatbox() {
             <div className="App-textbox-send" onClick={onSend}>Send!</div>
 
             </div>
-        </div>
+        
     </App>
   );
 }

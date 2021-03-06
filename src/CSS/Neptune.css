@@ -79,10 +79,6 @@ label{
     text-align: center;
 }
 
-.home-button{
-margin: 10px;
-}
-
 .button{
     width: 100%;
     border:  none;
@@ -95,3 +91,16 @@ margin: 10px;
     background: rgb(68,146,195);
     background: linear-gradient(90deg, rgba(68,146,195,1) 0%, rgba(35,100,156,1) 100%);
 }
+
+
+.nav-button{
+    width: 100%;
+    border:  none;
+    padding:  10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:  white;
+    background: transparent;
+}
+

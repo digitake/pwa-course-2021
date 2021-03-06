@@ -1,5 +1,7 @@
 import './App.css';
+import {Link} from 'react-router-dom';
 import { useState } from 'react';
+
 function App() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
@@ -19,6 +21,11 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+      <Link to="/friend-list">
+                <botton>
+                    Go to Friendlist
+                </botton>
+            </Link>
       </div>
       <div className="App-chatroom">
         {
@@ -28,6 +35,11 @@ function App() {
                 </div>
           })
         }
+        <Link to ="/PageDrawing">
+          <botton>
+            Go to PageDrawing
+          </botton>
+        </Link>
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" 

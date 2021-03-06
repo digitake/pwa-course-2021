@@ -1,0 +1,32 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: center;
+    max-width: 1920px;
+    height: 100%;
+    margin: auto;
+    background-image: url(sea.png);
+    background-size: cover;
+  }
+
+  .Home-header {
+    flex: 1;
+    background-color: #7ff8fc;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: calc(0.5px + 2vmin);
+    color: rgb(255, 42, 42);
+  }
+
+  .Home-chatroom {
+    flex: 12;
+  }
+
+  .Home-chatroom-text {
+    margin: 8px;
+    color : rgb(48, 100, 100);
+    font-size: 20px;
+  }

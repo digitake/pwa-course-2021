@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
-import '../Pages/Main.css';
-import LogoPng from '../Neptune/Logo.png';
+import '../CSS/Home.css';
 import App from '../App';
 
-function Main() {
+function Home() {
     return (
         <App>
             <div>
@@ -38,4 +37,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default Home;

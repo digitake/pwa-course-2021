@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './LinkManager.css';
-import '../Neptune/Neptune.css';
+import '../CSS/Neptune.css';
 
 function LinkTo(props) {
     return (

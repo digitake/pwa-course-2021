@@ -28,11 +28,6 @@ function Router()
 export default Router;
 =======
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Feed from './Feed';
-import Settings from './Settings';
-import InsepectProfile from './InsepectProfile';
-import ProfileSetting from './ProfileSetting';
-import Main from './Pages/Main';
 import NeptuneLogin from './Pages/NeptuneLogin';
 import NeptuneRegister from './Pages/NeptuneRegister';
 import NeptunePin from './Pages/NeptunePin';
@@ -41,6 +36,7 @@ import NeptuneChat from './Pages/NeptuneChat';
 import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import Profile from './Profile';
+import Home from './Pages/Home';
 
 function Router() {
     return (
@@ -55,9 +51,8 @@ function Router() {
                 <Route path="/profile">
                     <Profile />
                 </Route>
-                
                 <Route path='/home'>
-                    <Main />
+                    <Home />
                 </Route>
                 <Route path="/chat">
                     <NeptuneChat />
@@ -70,18 +65,6 @@ function Router() {
                 </Route>
                 <Route path="/pin">
                     <NeptunePin />
-                </Route>
-                <Route path='/feed'>
-                    <Feed />
-                </Route>
-                <Route path='/settings'>
-                    <Settings />
-                </Route>
-                <Route path="/insepect-profile">
-                    <InsepectProfile />
-                </Route>
-                <Route path="/profile-setting">
-                    <ProfileSetting />
                 </Route>
                 <Route path="/">
                     <NeptuneWelcome />

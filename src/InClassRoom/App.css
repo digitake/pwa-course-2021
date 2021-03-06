@@ -5,25 +5,15 @@
   text-align: center;
   height: 100%;
   margin: auto;
+  background-color: blue;
 }
 
 @media(min-width: 786px){
   .App{
-    background-color: blue;
     background-image: url(koro.jpg);
     background-repeat: no-repeat;
     background-position: center;
     width:80%;
-  }
-}
-
-@media (max-width :786px ) {
-  .App {
-    background-color: red;
-    background-image: url(cat.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 70%;
   }
 }
 
@@ -42,8 +32,10 @@
   color: rgb(0, 0, 0);
 }
 
-.App-chatroom {
+.App-content {
   flex: 12;
+  display: flex;
+  flex-direction: column;
 
   background-color: rgba(170, 158, 212, 0.418);
   margin: 24px;

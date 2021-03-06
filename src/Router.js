@@ -39,7 +39,7 @@ function Router()  {
             </Route>
 
             <Route path="/">
-              <App />
+              <Chatbox />
             </Route>
 
         </Switch>

@@ -8,7 +8,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  
+
 }
 
 .App-logo{
@@ -25,9 +25,9 @@
  
   .App{
 
-    
+
     width: 95%;
-  
+
   }
 }
 
@@ -36,7 +36,7 @@
   .App{
 
     background-color:  #242424;
-    
+
   }
 }
 
@@ -62,7 +62,7 @@
   background-position: center;
 }
 
-.Menu-Button {
+.Menu-button {
   text-align: right;
 }
 
@@ -84,7 +84,7 @@
   height: 100%;
   box-sizing: border-box;
   background-color: #ebe99e;
-  
+
 }
 
 .App-textbox-send {

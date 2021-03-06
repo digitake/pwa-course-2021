@@ -18,7 +18,7 @@ function Chatbox(){
     setText("");
     }
   return(
-    <App>
+      <App>
     <div className="Chatbox">
 
       <div className="Chatbox-chatroom">

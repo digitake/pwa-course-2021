@@ -1,8 +1,11 @@
 import './Profile.css';
+import App from './App';
 import { Link } from "react-router-dom";
+
 
 function ProfilePage(){
     return(
+      <App>
     <div className="ProfilePage">
 
         <div className="Profile-background">
@@ -28,13 +31,6 @@ function ProfilePage(){
                <img src ="buttonFriend.png"/>  
                </image>
              </Link>
-
-             <Link to = "/shop-page">
-               <image>
-               <img src ="buttonShop.png"/>  
-               </image>
-             </Link>
-
              <Link to = "/game-page">
                <image>
                <img src ="buttonGame.png"/> 
@@ -48,10 +44,8 @@ function ProfilePage(){
            Name Surname
         </div>
 
-           
-
     </div>
-
+    </App>
     );
 };
 

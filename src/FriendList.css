@@ -44,7 +44,7 @@
 
   }
 
-  .FriendList-header2{
+  .FriendList-boby{
     flex: 3;
     background-color: #E9E87F;
     display: flex;
@@ -52,7 +52,7 @@
     justify-content: center;
   }
 
-  .FriendList-header3{
+  .FriendList-boby2{
     flex: 3;
     background-color: #E9E87F;
     display: flex;
@@ -61,7 +61,7 @@
     
     
   }
-  .FriendList-header4{
+  .FriendList-boby3{
     flex: 3;
     background-color: #E9E87F;
     display: flex;
@@ -74,7 +74,7 @@
 
 
 
-  .FriendList-chatroom {
+  .FriendList-black {
     flex: 12;
   }
   

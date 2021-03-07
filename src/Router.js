@@ -7,7 +7,8 @@ import Home from './Home';
 import ChatFriend from './ChatFriend';
 import GroupChat from './GroupChat';
 import Store from './Store';
-
+import Chatbox from './Chatbox';
+import Profile from './Profile';
 
 function Router(){
 
@@ -47,11 +48,13 @@ function Router(){
 </Route>
 
 <Route path="/">
-    <App/>
+    <Chatbox />
 </Route>
 
 
-
+<Route path = "/profile">
+    <Profile />
+    </Route>
 
 
 

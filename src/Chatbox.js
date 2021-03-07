@@ -1,6 +1,6 @@
 import './Chatbox.css';
 import {useState} from 'react';
-import{Link} from 'react-router-dom';
+import App from './App' ;
 
 function Chatbox() {
   const [text, setText] = useState("");
@@ -22,6 +22,7 @@ function Chatbox() {
   };
 
   return (
+      <App>
     <div className="App">
       
       <div className="App-chatroom">
@@ -43,6 +44,7 @@ function Chatbox() {
         
       </div>
     </div>
+    </App>
   );
 }
 

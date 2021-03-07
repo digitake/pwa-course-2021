@@ -148,7 +148,18 @@
     
 }
 
+.HomePageInfo-backgroun-Botchat{
+
+    display: flex;
+    padding: 12px;
+    align-content: center;
+    width: 241px;
+    height: 69px;
+    
+}
+
 .ToolBar{
+
     display: flex;
     flex: 12;
     flex-direction: row;
@@ -163,18 +174,9 @@
 }
 
 .pandding{
+
     padding-bottom: 6px;
 }
-
-.HomePageButton{
-
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
 
 .LogOut{
 
@@ -194,10 +196,4 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 };
 
-.HomePageInfo-backgroun-Botchat{
-    
-      
-    width: 241px;
-    height: 69px;
-    padding-right: 50px;
-}
+

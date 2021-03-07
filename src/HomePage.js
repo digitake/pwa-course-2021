@@ -13,13 +13,14 @@ function HomePage({children}) {
         <div className = "HomePageInfo-search"/>
                 
         <div className = "HomePageInfo-backgroun">
-            <div className =".ToolBar-Botchat">
+
+            <div className = "HomePageInfo-backgroun-Botchat">
              {children}
             </div>
+            
         </div>
            
 
-            
             <div className = "ToolBar">
 
             <div className = "pandding">

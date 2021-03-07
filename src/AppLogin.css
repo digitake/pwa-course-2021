@@ -1,0 +1,88 @@
+.LogoApp {
+
+    /* LogoApplication */
+    position: relative;
+    text-align: center;
+    width: 414px;
+    height: 896px;
+    margin: auto;
+    background-image: url(/src/AppchatUpdate/LogoApplication.png);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-position: center ;
+    background-size: 103%;
+    background-repeat: no-repeat;
+        
+    
+}
+
+.SingIn{
+
+    position: relative;
+    left: 8.7%;
+    right: 8.45%;
+    top: 35.27%;
+    bottom: 58.93%;
+}
+.Login{
+
+    position: relative;
+    width: 414px;
+    height: 825px;
+    margin: auto;
+    background-image: url(/src/AppchatUpdate/Log\ In.png);
+}
+.AppRegister{
+
+    position: relative;
+    width: 167px;
+    height: 52px;
+    left: 226px;
+    top: 719px;
+}
+.AppLogin{
+
+    position: relative;
+    width: 167px;
+    height: 52px;
+    left: 17px;
+    top: 770px;
+}
+
+.Register{
+
+    margin: auto;
+    position: relative;
+    width: 414px;
+    height: 896px;
+    background-image: url(/src/AppchatUpdate/RegisterStep1.png);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.RegisterNextStep{
+    
+    position: relative;
+    left: 8.7%;
+    right: 8.45%;
+    top: 32%;
+    bottom: 60.04%;
+}
+
+.NextStep{
+
+    margin: auto;
+    position: relative;
+    width: 414px;
+    height: 896px;
+    background-repeat: no-repeat;
+    background-image: url(/src/AppchatUpdate/RegisterStep2Username.png);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.SingUP{
+
+    position: relative;
+    width: 343px;
+    height: 52px;
+    left: 36px;
+    top: 219px;
+}

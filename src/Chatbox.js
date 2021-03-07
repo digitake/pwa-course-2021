@@ -1,9 +1,9 @@
 
-import './App.css';
+import './Chatbox.css';
 import {useState} from 'react' ;
 import { Link } from 'react-router-dom';
 
-function App() {
+function Chatbox() {
 
   const [text,setText] = useState("");const [lines, setLines] = useState([]);
   const  onTextChange = (event) =>
@@ -58,4 +58,4 @@ function App() {
   );
 }
 
-export default App;
+export default Chatbox;

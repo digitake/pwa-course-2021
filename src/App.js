@@ -1,9 +1,9 @@
 import './App.css';
-import {Link} from 'react-router-dom';
+import Chatbox from './Chatbox';
 
+import{Link} from 'react-router-dom';
 
-
-function App ({Children}) {
+function App({children}) {
   
 
   return (
@@ -16,29 +16,27 @@ function App ({Children}) {
           
             <Link to="/friend-list">
             <button>
-                Go to Friend list(Class Work)
+                Friend list(Class Work)
+            </button>
+            </Link>
+            <Link to="/home">
+            <button>
+               PrototypeAppChat
             </button>
             </Link>
 
-            <Link to="/profile">
+            <Link to="/Profile">
             <button>
                 Profile
             </button>
             </Link>
-
-            <Link to="/">
-            <button>
-                Chat box
-            </button>
-            </Link>
-       
+            
         </div>
-      <div className="App-content">
-       {Children}
       </div>
-             
-        
-      </div>
+     <div className="App-content">
+    
+    {children} 
+     </div>
     </div>
   );
 }

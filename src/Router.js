@@ -15,6 +15,9 @@ function Router(){
     return(
    <BrowserRouter>
    <Switch>
+<Route path ="/profile">
+<Profile/>
+</Route>
 
    <Route path = "/Store">
     <Store />
@@ -47,14 +50,16 @@ function Router(){
     <Home />
 </Route>
 
+
+
+
+
 <Route path="/">
-    <Chatbox />
+    <Chatbox/>
 </Route>
 
 
-<Route path = "/profile">
-    <Profile />
-    </Route>
+
 
 
 

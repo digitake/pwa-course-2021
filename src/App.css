@@ -18,7 +18,7 @@
   flex: 2;
   background-color: #ffc400;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -29,10 +29,17 @@
 
 .App-content {
   flex: 12;
+  
+  background-size:cover;
+ 
+ 
+
+}
+.App-chatroom {
+  flex: 12;
   background-image: url(Mogu.png);
   background-size:cover;
-  display: flex;
-  flex-direction: row;
+ 
  
 
 }

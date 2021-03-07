@@ -1,6 +1,7 @@
-import './Chatbox.css';
+import './App.css';
 import {useState} from 'react';
-import App from './App' ;
+import{Link} from 'react-router-dom';
+import App from './App';
 
 function Chatbox() {
   const [text, setText] = useState("");

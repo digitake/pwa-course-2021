@@ -5,14 +5,16 @@ import HomePage from './HomePage'
 function Chatroom() {
 
 return(
-    <HomePage className = "Botchat">
-        
-        <div className = "Botchat">
+
+    
+    <HomePage>
+        <div>
             <Link to = "/Chat-Room" >
              <img src = "BotHelpChat.png" alt = "" />
                 
             </Link>
         </div>
+        
         
     </HomePage>
  

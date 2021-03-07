@@ -1,4 +1,5 @@
 .LogoApp {
+
 /* LogoApplication */
     position: relative;
     text-align: center;
@@ -15,6 +16,7 @@
 }
 
 .AppLogin{
+
     position: relative;
     width: 167px;
     height: 52px;
@@ -23,6 +25,7 @@
 }
 
 .AppRegister{
+
     position: relative;
     width: 167px;
     height: 52px;
@@ -31,6 +34,7 @@
 }
 
 .Login{
+
     position: relative;
     width: 414px;
     height: 825px;
@@ -39,6 +43,7 @@
 }
 
 .Undo{
+
     position: relative;
     width: 28.55px;
     height: 23.85px;
@@ -47,6 +52,7 @@
 }
 
 .Undo2{
+
     position: relative;
     width: 28.54px;
     height: 23.84px;
@@ -55,6 +61,7 @@
 }
 
 .SingIn{
+
     position: relative;
     left: 8.7%;
     right: 8.45%;
@@ -63,6 +70,7 @@
 }
 
 .Register{
+
     margin: auto;
     position: relative;
     width: 414px;
@@ -81,6 +89,7 @@
 }
 
 .NextStep{
+
     margin: auto;
     position: relative;
     width: 414px;
@@ -91,6 +100,7 @@
 }
 
 .SingUP{
+
     position: relative;
     width: 343px;
     height: 52px;
@@ -100,80 +110,74 @@
 
 
 .HomePageInfo{
-    margin: auto;  
+    margin: auto;
+    display: flex;  
     width: 414px;
     height: 896px;
-    top: 100px;
+    flex-direction: column;
+    justify-items: start;
     background-repeat: no-repeat;
     background-image: url(/src/AppchatUpdate/MenuHomeBar.png);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-position: center bottom ;
 }
 
-.HomePageInfo-topBar
-{
-    margin: auto;
+.HomePageInfo-topBar{   
+
+    justify-items: start;
+    flex-direction: column;
     width: 414px;
     height: 48px;
     background-repeat: no-repeat;
     background-image: url(/src/AppchatUpdate/StatusBar.png);
+    
+}
+.HomePageInfo-search{
 
-    background-position: center unset ;
+    background-image: url(/src/AppchatUpdate/SearchBar.png) ;
+    width: 414px;
+    height: 83px;
+}
+
+.HomePageInfo-backgroun{
+
+    display: flex;
+    align-items: flex-start;
+    height: 765px;
+    background-image: url(/src/AppchatUpdate/Rectangle.png);
+    
 }
 
 .ToolBar{
-    
     display: flex;
-    flex: 1;
-    
-    flex-wrap: wrap;
+    flex: 12;
     flex-direction: row;
+    justify-self: end;
     justify-content: space-between;
     align-items: flex-end;
     padding-right: 20px;
     padding-left: 20px;
     width: 374px;
-    height: 885px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.GroupBar{
-    display: flex;
-    flex: start;
-    width: 42px;
-    height: 42px;
-    left: 93px;
-    top: 24px;
-    
+    height: 60px; 
     
 }
 
-.PrivateBar{
-    
-    width: 40px;
-    height: 36px;
-    left: 281px;
-    
+.pandding{
+    padding-bottom: 6px;
 }
 
-.SettingBar{
-    
-    width: 40px;
-    height: 36px;
-    left: 353px;
-    
+.HomePageButton{
+
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
-.SettingPage{
-    margin: auto;
-    position: relative;
-    width: 414px;
-    height: 896px;   
-    background-image: url(/src/AppchatUpdate/Setting.png);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
+
 
 .LogOut{
+
     position: relative;
     width: 178.78px;
     height: 51.22px;
@@ -190,11 +194,10 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 };
 
-.Botchat{
-    position: relative;
+.HomePageInfo-backgroun-Botchat{
+    
+      
     width: 241px;
     height: 69px;
-    left: 22px;
-    top: 162px;
-    
+    padding-right: 50px;
 }

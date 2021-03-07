@@ -93,3 +93,8 @@
   top: 15px;  
 
 }
+
+.App-connent{
+    flex: 12;
+    background-color: lawngreen;
+}

@@ -1,5 +1,4 @@
 import {Link} from 'react-router-dom'
-import './AppMat.css'
 import HomePage from './HomePage'
 
 function Chatroom() {

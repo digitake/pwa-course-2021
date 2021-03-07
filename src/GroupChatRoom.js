@@ -2,11 +2,11 @@ import {Link} from 'react-router-dom'
 import HomePage from './HomePage'
 
 
-function PrivatePage() {
+function GroupChatRoom() {
 return(
     <HomePage>
         <div>
-            Private
+            GroupChatRoom
         </div> 
     </HomePage>
     
@@ -14,4 +14,4 @@ return(
 )  
 }
 
-export default PrivatePage;
+export default GroupChatRoom;

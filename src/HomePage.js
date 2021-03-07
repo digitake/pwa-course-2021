@@ -1,12 +1,11 @@
 import {Link} from 'react-router-dom'
-import './App.css';
 import './AppMat.css'
 
 function HomePage({children}) {
   return(
     
 
-     <div className = "HomePageInfo">
+    <div className = "HomePageInfo">
          
         <div className = "HomePageInfo-topBar"/>
         
@@ -17,44 +16,44 @@ function HomePage({children}) {
             <div className = "HomePageInfo-backgroun-Botchat">
              {children}
             </div>
-            
+
         </div>
            
 
-            <div className = "ToolBar">
+        <div className = "ToolBar">
 
             <div className = "pandding">
-            <Link to = "/Chatroom">
+
+                <Link to = "/Chatroom">
                 <img src = "ChatBoxBar.Png" alt = "" />
+                </Link>
+            </div>
+            <div className = "pandding">
 
-            </Link>
-        </div>
-        <div className = "pandding">
-            <Link to = "/GroupChatBox">
-                <img src = "GroupChat.Png" alt = "" />
-                
-            </Link>
-        </div>
-        <div className = "HomePageButton">
-           
-            <Link to = "/HomePage">
-            <img src = "Home.png" alt = "" />
-            </Link> 
-        </div>
-        <div className = "pandding">
-            <Link to = "/PrivateChatBox">
-                <img src = "Private.Png" alt = "" />
-                
-            </Link>
-        </div>
-        <div className = "pandding">
-            <Link to = "/SettingPage">
-                <img src = "SettingBar.Png" alt = "" />
+                <Link to = "/GroupChatRoom">
+                    <img src = "GroupChat.Png" alt = "" />
+                </Link>
+            </div>
+            <div className = "HomePageButton">
 
-            </Link>
-        </div>
+                <Link to = "/HomePage">
+                <img src = "Home.png" alt = "" />
+                </Link> 
+            </div>
+            <div className = "pandding">
+
+                <Link to = "/PrivatePage">
+                    <img src = "Private.Png" alt = "" />
+                </Link>
+            </div>
+            <div className = "pandding">
+
+                <Link to = "/SettingPage">
+                    <img src = "SettingBar.Png" alt = "" />
+                </Link>
+            </div>
         
-         </div>
+        </div>
 
     </div>    
     

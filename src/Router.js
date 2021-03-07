@@ -7,13 +7,20 @@ import LoginPage from './LoginPage'
 import HomePage from './HomePage'
 import SettingPage from './SettingPage'
 import Chatroom from './Chatroom'
+import PrivatePage from './PrivatePage'
+import GroupChatRoom from './GroupChatRoom'
 
 
 function Router() {    
     return(
       <BrowserRouter>
         <Switch>
-
+        <Route path = "/GroupChatRoom">
+             <GroupChatRoom/>
+           </Route>
+        <Route path = "/PrivatePage">
+             <PrivatePage/>
+           </Route>
         <Route path = "/Chatroom">
              <Chatroom />
            </Route>

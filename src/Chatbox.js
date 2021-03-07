@@ -1,7 +1,7 @@
 
 import './Chatbox.css';
 import {useState} from 'react' ;
-import { Link } from 'react-router-dom';
+
 
 function Chatbox() {
 
@@ -25,18 +25,6 @@ function Chatbox() {
 
   return (
     <div className="App">
-      <div className="App-header ">
-        <Link to="/friend-list">
-            <button>
-                Friend List
-            </button>
-        </Link>
-        <Link to ="/profile1">
-          <button>
-            Profile
-          </button>
-        </Link>
-      </div>
       <div className="App-chatroom">
         {
 

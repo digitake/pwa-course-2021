@@ -97,11 +97,11 @@
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
-.App-content {
-  flex: 12;
+.App-chatroom {
+  flex: 10;
 
 
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(70, 70, 70, 0);
 
 
   /*background-image: url(../src/logo1.png);  สำหรับพื้นหลัง*/

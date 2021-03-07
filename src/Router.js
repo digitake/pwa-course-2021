@@ -1,8 +1,8 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import App from './App';
 import FriendList from './FriendList';
 import Shop from "./Shop";
 import Chatroom from "./Chatroom"
+import Chatbox from './Chatbox';
 function Router() {
 
     return (
@@ -18,7 +18,7 @@ function Router() {
                     <Chatroom />
                 </Route>
                 <Route path="/">
-                    <App />
+                    <Chatbox />
                 </Route>
 
             </Switch> 

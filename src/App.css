@@ -56,7 +56,7 @@
 }
 
 .App-chatroom-text {
-  margin: 7px;
+  margin: 8px;
   background-color: rgb(20, 16, 231);
   color: rgb(255, 255, 255);
   font-size: 16px;
@@ -64,26 +64,38 @@
 
 .App-textbox {
   flex: 1;
-  background-color:#FF7F00;
   justify-content: center;
   align-items: stretch;
   display: flex;
 }
 
 .App-textbox-input {
-  flex: 5;
-  height: 100%;
+  width: 400px;
+  height: 52px;
+  
   box-sizing: border-box;
 }
 
 .App-textbox-send {
-  flex: 1;
-  height: 100%;
+  
+  width: 15%;
+  height: 10%;
   vertical-align: middle;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: flex-start;
   display: flex;
+ 
 }
+
+.App-textbox-send-pic{
+  
+  width: 62px;
+  height: 62px;
+  background-image: url(/src/AppchatUpdate/SendButton.png) ;
+
+}
+
+
 
 .AppUndo{
   position: absolute;

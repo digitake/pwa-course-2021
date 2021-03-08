@@ -12,46 +12,48 @@ function ShopPage({children}){
         <div className="ShopPage">
             <div className="ShopPage-header">
                 Sticker Shop
-                <div className="SopPage-bottle">
+                <div className="SopPage-button">
                     <Link to="/friend-list">
                     <img src ="back-32.png" align= "Left" />
                 </Link>
                 </div>
             </div>
             <div className="ShopPage-Category">
-                <div className="ShopPage-bottle">
+                <div className="ShopPage-button">
                     <Link to ="/HotStickersList">
                         <bottle>
                             Hot!
                         </bottle>
                     </Link>
                 </div>
-                <div className="ShopPage-bottle">
-                    <bottle>
-                        New stickers
-                    </bottle>
+                <div className="ShopPage-button">
+                    <Link to ="/NewStickersList">
+                        <bottle>
+                            New stickers
+                        </bottle>
+                    </Link>
                 </div>
-                <div className="ShopPage-bottle">
+                <div className="ShopPage-button">
                     <bottle>
                         Effect stickers
                     </bottle>
                 </div>
-                <div className="ShopPage-bottle">
+                <div className="ShopPage-button">
                     <bottle>
                         Animated stickers
                     </bottle>
                 </div>
-                <div className="ShopPage-bottle">
+                <div className="ShopPage-button">
                     <bottle>
                         Cute
                     </bottle>
                 </div>
-                <div className="ShopPage-bottle">
+                <div className="ShopPage-button">
                     <bottle>
                         Cool
                     </bottle>
                 </div>
-                <div className="ShopPage-bottle">                        
+                <div className="ShopPage-button">                        
                 <bottle>
                     Warm & Fuzzy
                 </bottle>

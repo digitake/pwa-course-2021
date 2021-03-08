@@ -8,6 +8,7 @@ import GamePage from "./GamePage";
 import HotStickersList from "./Sticker-Category/HotStickersList";
 import Sticker0001 from "./Details-Stickers/Sticker0001";
 import Sticker1001 from "./Details-Stickers/Sticker1001";
+import NewStickersList from "./Sticker-Category/NewStickersList";
 
 
 // Create Component
@@ -38,6 +39,10 @@ function Router()  {
 
             <Route path="/HotStickersList">
               <HotStickersList />
+            </Route>
+
+            <Route path="/NewStickersList">
+              <NewStickersList />
             </Route>
 
             <Route path="/Sticker0001">

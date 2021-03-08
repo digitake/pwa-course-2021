@@ -1,13 +1,12 @@
 import './Sticker1001.css';
 import { Link } from "react-router-dom";
 
-
 function Sticker0001(){
     return(    
         <div className="StickerPage">
             <div className="StickerPage-header">
                 Sticker Details
-                <Link to="/HotStickersList">
+                <Link to="/NewStickersList">
                     <img src ="back-32.png" align= "Left" />
                 </Link>
             </div>
@@ -20,10 +19,10 @@ function Sticker0001(){
                     </div>
                     <div className=".StickerPage-profile-name-description">
                         <div className=".Profile-name">
-                            <p id="name">Name 0001</p>
+                            <p id="name">Name 1001</p>
                         </div>
                         <div className=".Profile-description">
-                            <p id="description">Description 0001</p>
+                            <p id="description">Description 1001</p>
                         </div>
                     </div>
                 </div>
@@ -52,6 +51,5 @@ function Sticker0001(){
         </div>  
     );
 };
-
 
 export default Sticker0001;

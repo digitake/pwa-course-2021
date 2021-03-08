@@ -63,6 +63,7 @@
 }
 
 .App-textbox {
+  
   flex: 1;
   justify-content: center;
   align-items: stretch;

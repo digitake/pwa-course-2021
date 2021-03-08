@@ -6,9 +6,13 @@
   text-align: center;
   height: 100%;
   margin: auto;
+<<<<<<< HEAD
+
+=======
   background-image: url(Ju-on.png);
   background-repeat: no-repeat;
   background-position: center ;
+>>>>>>> b9baf8cdc6fd18c15d1425436ab5f12b445e6faa
   font-size: 24px;
 }
 
@@ -42,6 +46,20 @@
 .App-header {
   background-image: url("BGapp.jpg");
   display: flex;
+<<<<<<< HEAD
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+}
+
+.App-header-button {
+  min-width: 80px;
+}
+
+=======
   align-items: flex-end;
   color: white;
   text-align: left;
@@ -155,6 +173,7 @@
 /*  outline: none;*/
 /*  */
 /*}*/
+>>>>>>> b9baf8cdc6fd18c15d1425436ab5f12b445e6faa
 
 
 .App-chatroom-text {

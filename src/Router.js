@@ -1,9 +1,11 @@
 // import router เข้ามาเตรียมใช้งาน //
 
 import {BrowserRouter,Switch, Route } from 'react-router-dom'
-import App from './App'
+import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import PageDrawing from './PageDrawing';
+import Profile from './Profile';
+
 
 function Router(){
     return(
@@ -15,8 +17,11 @@ function Router(){
             <Route path="/PageDrawing">
                 <PageDrawing />
             </Route>
+            <Route path='/Profile'>
+                <Profile />
+            </Route>
             <Route path="/">
-                <App />
+                <Chatbox />
             </Route>
         </Switch>
     </BrowserRouter>

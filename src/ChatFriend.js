@@ -1,10 +1,12 @@
 import './App.css';
-import { Link } from 'react-router-dom';
+import AppContent from './Content'
+
 
 function AllChatInterface() {
 
     return(
-        <div className ="App">
+        <AppContent>
+        
 
           <div className="AllChat-Header">
             <div className="Search-Box">
@@ -31,29 +33,7 @@ function AllChatInterface() {
                 </div>
             </div>
 
-
-            <div className ="image-button">
-
-           
-             <Link to="/" className="image-between">
-                 <img src= "profile.png" alt = "profile.png" width="100px" height="100px"/> 
-             </Link>
-
-             <Link to="/AllChat" className="image-between">
-                 <img src= "friend list.png" alt = "profile.png" width="100px" height="100px"/> 
-             </Link>
-
-             <Link to="/" className="image-between">
-                 <img src= "dice.png" alt = "profile.png" width="100px" height="100px"/> 
-             </Link>
-
-             <Link to="/" className="image-between">
-                <img src= "list.png" alt = "profile.png" width="100px" height="100px"/> 
-             </Link>
-
-            </div>   
-        </div>
-
+         </AppContent>
     );
     
 }

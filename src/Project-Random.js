@@ -3,7 +3,7 @@ import App from './App';
 import Content from './Content'
 function ProjectMain(){
     return(
-      <Content>
+    <Content>
 
      <div className ="App">
          <div className="space">

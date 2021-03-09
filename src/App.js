@@ -22,7 +22,7 @@ function App({children}) {
                 <button>
                     Go Chatroom
                 </button>
-        </Link>
+         </Link>
 
         <Link to="/chatbox-test">
                 <button>
@@ -33,6 +33,7 @@ function App({children}) {
         </div>
 
     </div>
+    
   );
 }
 export default App;

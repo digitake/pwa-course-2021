@@ -8,7 +8,8 @@ function Content({children}) {
       
         {children}
       
-    <div className ="image-button">
+
+      <div className ="image-button">
 
            
              <Link to="/" className="image-between">

@@ -1,17 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
-<<<<<<< HEAD
-import {Children} from 'react';
-import {Link} from 'react-router-dom';
-=======
 import {Link} from "react-router-dom";
->>>>>>> b9baf8cdc6fd18c15d1425436ab5f12b445e6faa
 
+function App() {
 
-<<<<<<< HEAD
-function App({children}) {
-
-=======
 const [text,setText] = useState("");
 
 const [lines, setLines] = useState(["Tar : Hello guys!"]);
@@ -28,31 +20,10 @@ const onSend = () => {
 }
 
     
->>>>>>> b9baf8cdc6fd18c15d1425436ab5f12b445e6faa
 
   return (
     <div className="App col-12">
       <div className="App-header">
-<<<<<<< HEAD
-      <Link to="/friend-list" className="App-header-button">
-                <button>
-                    Go Friend-list
-                </button>
-            </Link>
-            <Link to="/support-list" className="App-header-button">
-                <button>
-                    Go support-list
-                </button>
-            </Link>
-            <Link to="/chatbox" className="App-header-button">
-                <button>
-                    Go chatbox
-                </button>
-            </Link>
-      </div>     
-      <div className="App-content">
-        {children}
-=======
           <div className="profile-read-ju-on"></div>
           <div className="RoomName">
               <h1>Room Ju-on</h1>
@@ -85,7 +56,6 @@ const onSend = () => {
         <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-9" value = {text} onChange={onTextChange}/>
         <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
             
->>>>>>> b9baf8cdc6fd18c15d1425436ab5f12b445e6faa
       </div>
     </div>
   );

@@ -1,9 +1,13 @@
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import App from './App';
+
 import FriendList from './FriendList';
+import ChatboxTest from './Chatbox-Test';
+
 import ProjectRandom from './Project-Random';
 import AllChatInterface from './ChatFriend';
 import MainNote from './Note';
+import MainProfile from './profile';
 
 function Router(){
 
@@ -11,9 +15,17 @@ function Router(){
         <BrowserRouter>
         <Switch>
 
+            ----
             <Route  path="/friend-list">
                <FriendList />
             </Route>
+
+            <Route  path="/chatbox-test">
+               <ChatboxTest />
+            </Route>
+            ----
+
+
 
             <Route path="/AllChat">
                 <AllChatInterface/>
@@ -22,7 +34,12 @@ function Router(){
             <Route path="/random-main">
                 <ProjectRandom />
             </Route>
-            
+
+            <Route path="/profile">
+                <MainProfile />
+            </Route>
+
+    
             
             <Route path="/Note">
                 <MainNote />

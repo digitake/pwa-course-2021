@@ -10,13 +10,13 @@ return (
            <div class="friendList-center">
                <div class="friendList-friend">
                 <a href="/friend-profile" class="class1">User.1</a>
-                <a href="" class="class1">User.2</a>
-                <a href="" class="class1">User.3</a>
-                <a href="" class="class1">User.4</a>
-                <a href="" class="class1">User.5</a>
-                <a href="" class="class1">User.6</a>
-                <a href="" class="class1">User.7</a>
-                <a href="" class="class1">User.8</a>
+                <a href="/friend-profile" class="class1">User.2</a>
+                <a href="/friend-profile" class="class1">User.3</a>
+                <a href="/friend-profile" class="class1">User.4</a>
+                <a href="/friend-profile" class="class1">User.5</a>
+                <a href="/friend-profile" class="class1">User.6</a>
+                <a href="/friend-profile" class="class1">User.7</a>
+                <a href="/friend-profile" class="class1">User.8</a>
                </div>
            </div>
            <div className="friendlist">

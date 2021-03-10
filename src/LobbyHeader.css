@@ -10,11 +10,22 @@
 }
 
 .App-header {
+  display: flex;
   flex: 1;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: flex-end;
   background-image: url(BGapp.jpg);
   background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
+}
+.App-Content{
+  flex: 12;
+}
+
+.profile-list {
+  display: flex;
+  flex-direction: row;
 }
 
 .profile-read-tar {
@@ -24,8 +35,6 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50px;
-  position: relative;
-  justify-content: flex-end;
 }
 
 
@@ -37,8 +46,6 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50px;
-  position: relative;
-  justify-content: flex-end;
 }
 
 .profile-read-phai {
@@ -48,8 +55,6 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50px;
-  position: relative;
-  justify-content: flex-end;
   
 }
 
@@ -63,12 +68,13 @@
   border-width: 4px;
   border-color: #3de73d;
   border-radius: 50px;
-  position: relative;
   
 
 }
 
 .RoomName{
+  display:flex;
+ flex-direction: row;
   color: #ffffff;
   }
 
@@ -110,15 +116,10 @@
     
 
   }
-  .App-header{
-    flex : 0.7;
-  }
-  
   
   .RoomName{
     font-size: 10px;
-    left: 17%;
-    bottom: 93%;
+    
   }
   
 }
@@ -150,15 +151,9 @@
     
 
   }
-  .App-header{
-    flex :1;
-
-  }
-  
   .RoomName{
     font-size: 17px;
-    left: 13%;
-    bottom: 90%;
+    
   }
 
 }
@@ -184,10 +179,6 @@
     width: 60px;
     height: 60px;
   }
-  .App-header{
-    flex :1.2;
-  }
-
   .RoomName{
     font-size: 20px;
 

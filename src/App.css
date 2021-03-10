@@ -1,9 +1,9 @@
-
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  max-width: 400px;
   height: 100%;
   margin: auto;
   background-image: url(Ju-on.png);
@@ -31,16 +31,14 @@
   }
 }
 
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-
 .App-header {
-  background-image: url("BGapp.jpg");
+  flex: 1;
+  background-color: #fffc5c;
   display: flex;
   align-items: flex-end;
   color: white;
@@ -81,33 +79,20 @@
   
 }
 
-.profile-read-ju-on {
+.App-content {
+  flex: 12;
+  display: flex;
+  flex-direction: column;
 
-  background-image: url(Ju-onProfile.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-style: solid;
-  border-width: 4px;
-  border-color: #3de73d;
-  border-radius: 50px;
-  position: relative;
-  
-
+  background-color: rgb(255, 112, 68);
 }
-
-.App-Botton{
-  height: 50px;
-  flex: fit-content;
-}
-
 
 .App-chatroom {
-  flex: 10;
-  background-image: url(BGapp.jpg);
-  background-position: center;
+  flex: 12;
+  background-color: rgba(168, 168, 168, 0.418);
+  /* background-image: url(origin.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center ; */
 }
 
 .RoomName{
@@ -158,175 +143,31 @@
 
 
 .App-chatroom-text {
-  margin: 15px;
-  background-color: rgb(255, 255, 255);
+  margin: 8px;
+  background-color: rgb(211, 198, 198);
+  color : rgb(48, 100, 100);
+  font-size: 20px;
 }
+
 .App-textbox {
-  background-color: rgb(253, 4, 4);
+  flex: 1;
+  background-color: rgb(139, 139, 139);
   justify-content: center;
   align-items: stretch;
   display: flex;
 }
+
 .App-textbox-input {
+  flex: 5;
   height: 100%;
   box-sizing: border-box;
 }
+
 .App-textbox-send {
+  flex: 1;
   height: 100%;
   vertical-align: middle;
   justify-content: center;
   align-items: center;
   display: flex;
-  cursor: pointer;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.68%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-
-@media  (max-width: 760px){
-  /* IPHONE */
-  .profile-read-tar{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 90%;
-    bottom: 94%;
-  }
-
-  .profile-read-ju-on{
-    width: 50px;
-    height: 50px;
-    left : 5%;
-    bottom : 5%;
-  }
-
-  .profile-read-pruek{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 75%;
-    bottom: 94%;
-  }
-  .profile-read-phai{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 82.5%;
-    bottom: 94%;
-
-  }
-  .App-header{
-    flex : 0.7;
-    flex-direction: row;
-  }
-  
-  
-  .RoomName{
-    font-size: 10px;
-    left: 17%;
-    bottom: 93%;
-  }
-  
-}
-
-@media  (max-width: 1500px) and (min-width: 761px){
-  /* IPAD */
-
-  .profile-read-ju-on{
-    width: 70px;
-    height: 70px;
-    left : 3%;
-    bottom : 10%;
-  }
-
-  .profile-read-tar{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 94%;
-    bottom: 92%;
-    
-  }
-  .profile-read-pruek{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 84%;
-    bottom: 92%;
-
-  }
-  .profile-read-phai{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 89%;
-    bottom: 92%;
-
-  }
-  .App-header{
-    flex :1;
-    flex-direction: row;
-
-  }
-  
-  .RoomName{
-    font-size: 17px;
-    left: 13%;
-    bottom: 90%;
-  }
-
-}
-
-@media  (min-width: 1501px){
-  /* PC */
-
-  .profile-read-ju-on{
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 40%;
-    top: 2%
-  }
-  .profile-read-tar{
-    margin: 5px;
-    width: 60px;
-    height: 60px;
-
-  }
-  .profile-read-pruek{
-    margin: 5px;
-    width: 60px;
-    height: 60px;
-
-  }
-  .profile-read-phai{
-    margin: 5px;
-    width: 60px;
-    height: 60px;
-  }
-  
-  .App-header{
-    height: 10%;    
-    flex-direction: column;
-  }
-  
-
-  .RoomName{
-    font-size: 20px;
-    left: 47%;
-    bottom: 87%;
-    
-  }
-  
 }

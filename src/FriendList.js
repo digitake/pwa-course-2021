@@ -9,13 +9,14 @@ return (
        <div class="friendList-header">
            <div class="friendList-center">
                <div class="friendList-friend">
-                <div class="item1">User.1</div>
-                <div class="item2">User.2</div>
-                <div class="item3">User.3</div>
-                <div class="item4">User.4</div>
-                <div class="item4">User.5</div>
-                <div class="item4">User.6</div>
-                <div class="item4">User.7</div>
+                <a href="" class="class1">User.1</a>
+                <a href="" class="class1">User.2</a>
+                <a href="" class="class1">User.3</a>
+                <a href="" class="class1">User.4</a>
+                <a href="" class="class1">User.5</a>
+                <a href="" class="class1">User.6</a>
+                <a href="" class="class1">User.7</a>
+                <a href="" class="class1">User.8</a>
                </div>
            </div>
            <div className="friendlist">

@@ -3,6 +3,7 @@ import FriendList from './FriendList';
 import Shop from "./Shop";
 import Chatroom from "./Chatroom"
 import Chatbox from './Chatbox';
+import FriendProfile from "./FriendProfile";
 function Router() {
 
     return (
@@ -17,9 +18,13 @@ function Router() {
                 <Route path="/chatroom">
                     <Chatroom />
                 </Route>
+                <Route path="/friend-profile">
+                    <FriendProfile />
+                </Route>
                 <Route path="/">
                     <Chatbox />
                 </Route>
+                
 
             </Switch> 
         </BrowserRouter>

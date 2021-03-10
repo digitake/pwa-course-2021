@@ -9,7 +9,7 @@ return (
        <div class="friendList-header">
            <div class="friendList-center">
                <div class="friendList-friend">
-                <a href="" class="class1">User.1</a>
+                <a href="/friend-profile" class="class1">User.1</a>
                 <a href="" class="class1">User.2</a>
                 <a href="" class="class1">User.3</a>
                 <a href="" class="class1">User.4</a>

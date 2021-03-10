@@ -6,6 +6,7 @@ import Profiletar from "./Profile-Tar";
 import LobbySetting from "./LobbySetting";
 import ChatBox from "./Chatbox";
 import LobbyHeader from "./LobbyHeader";
+import LoadingBar from "./LoadingBar";
 
 function Router() {
 
@@ -16,7 +17,7 @@ function Router() {
                     <Profiletar/>
                 </Route>
                 <Route path="/Eye_Scene">
-                    <Eye_LoadingScene/>
+                    <LoadingBar/>
                 </Route>
                 <Route path="/friend-list">
                     <FriendList/>

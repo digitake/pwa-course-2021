@@ -1,7 +1,9 @@
 import{Link} from 'react-router-dom';
 import './App.css';
+import App from './App';
 function FriendList(){
     return(
+        <App>
         <div className="App-chatroom-text ">
             FriendList(ClassWork)
       <div className="App-pic-right">   <Link to="/">
@@ -19,6 +21,7 @@ function FriendList(){
      </div>
 
         </div>
+        </App>
     )
 }
 export default FriendList;

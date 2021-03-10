@@ -7,13 +7,17 @@ import Home from './Home';
 import ChatFriend from './ChatFriend';
 import GroupChat from './GroupChat';
 import Store from './Store';
-
+import Chatbox from './Chatbox';
+import Profile from './Profile';
 
 function Router(){
 
     return(
    <BrowserRouter>
    <Switch>
+<Route path ="/profile">
+<Profile/>
+</Route>
 
    <Route path = "/Store">
     <Store />
@@ -24,7 +28,7 @@ function Router(){
     <FriendList />
     </Route>
 
-    
+
 
 <Route path = "/pap-friendList">
     <PapFriendList />
@@ -33,8 +37,6 @@ function Router(){
 <Route path = "/group-List">
     <GroupList />
 </Route>
-
-
 
 <Route path="/chat-friend">
     <ChatFriend />
@@ -50,8 +52,10 @@ function Router(){
 
 
 
+
+
 <Route path="/">
-    <App/>
+    <Chatbox/>
 </Route>
 
 

@@ -7,13 +7,13 @@ import Store from './Store.PNG';
 
 function Home() {
     return(
-
+    
         <div className="App">
 
-
+       
          <div className="App-header-home">
          Home 
-
+                        
      </div>
 <div className="App-test">
 
@@ -26,9 +26,9 @@ function Home() {
                </Link> 
                <div className="App-text-left">
                 Friend
-
+                        
             </div>
-
+          
             </div> 
             <div className="App-pic-home" > 
             <Link to="/group-List" >
@@ -36,14 +36,14 @@ function Home() {
                </Link> 
                <div className="App-text-left">
                 Group Chat
-
+            
                 </div>
-            </div>
-
+            </div>  
+                
  
 
-<div className="App-pic-home" >
-
+<div className="App-pic-home" >  
+           
                 <Link to="/Store" >
                <img src={Store}/>
                </Link> 
@@ -58,6 +58,6 @@ function Home() {
      </div>
 
     )
-
+    
 }
 export default Home;

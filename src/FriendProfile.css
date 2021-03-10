@@ -1,0 +1,33 @@
+.friendProfile {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+  }
+
+.friendProfile-box {
+    
+    align-content: left;
+    width: 1300px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.336);
+ 
+  }
+
+.friendProfile-detail {
+
+    border-style: outset;
+    border-width: 13px;
+    border-color: rgb(7, 164, 255);
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin-left: 120px;
+    margin-top: 50px;
+    
+}
+
+@keyframes mymove {
+    50% {border: 15px solid lightblue;}
+  }

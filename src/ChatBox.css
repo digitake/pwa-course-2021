@@ -19,7 +19,7 @@
 }
 
 .App-chatroom {
-    flex: 10;
+    flex: 12;
     background-image: url(BGapp.jpg);
     background-position: center;
     background-repeat: no-repeat;

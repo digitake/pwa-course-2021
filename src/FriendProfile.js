@@ -15,7 +15,12 @@ function FriendProfile(){
                     </Link>
                     <div class="friendProfile-detail">
                         <img src={profile}></img>
-                    </div>
+                    </div>   
+                </div>
+                <div class="friendProfile-detail-text">
+                    <p>Profile ::  User</p>
+                    <p>Status :: Offline</p>
+                    <p>Interface แบบกลวงๆ</p>
                 </div>
             </div>
         </App>

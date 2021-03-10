@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
+import App from './App';
+
 
 function Profile1(params) {
     return(
-        <div>
+        <App>
+        <div className >
             Profile
             <Link to="/">
                 <button>
@@ -10,6 +13,7 @@ function Profile1(params) {
                 </button>
             </Link>
         </div>
+        </App>
     )
 }
 

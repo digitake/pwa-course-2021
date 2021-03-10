@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import './Chatbox.css';
 import App from './App';
-import shopButton from './shop_button.png'
-import friendButton from './friendList_button.png'
-import chatroomButton from './Chatbutton.png'
-import dropdownButton from './icon2.png'
+
 
 import './onClick.js'
 

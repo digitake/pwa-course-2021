@@ -11,6 +11,19 @@
   font-family: 'Prompt', sans-serif;
 }
 
+@media (min-width: 100px) {
+  .App {
+    background-image: url(background_01.gif);
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    background-image: url(background_01.gif);
+    width: 98%;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

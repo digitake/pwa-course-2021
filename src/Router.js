@@ -9,12 +9,17 @@ import GroupChat from './GroupChat';
 import Store from './Store';
 import Chatbox from './Chatbox';
 import Profile from './Profile';
+import Buyshop from './Buyshop';
 
 function Router(){
 
     return(
    <BrowserRouter>
    <Switch>
+   <Route path = "/buyshop">
+    <Buyshop/>
+    </Route>
+
 <Route path ="/profile">
 <Profile/>
 </Route>

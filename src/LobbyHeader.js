@@ -10,13 +10,17 @@ function LobbyHeader({children}) {
                     <h1>Room Ju-on</h1>
                     <h4>RID 123456</h4>
                 </div>
-                <Link to="/Profile_Tar">
-                    <div className="profile-read-tar"/>
-                </Link>
-                <div className="profile-read-pruek"/>
-                <div className="profile-read-phai"/>
+                <div className="profile-list">
+                    <Link to="/Profile_Tar">
+                        <div className="profile-read-tar"/>
+                    </Link>
+                    <div className="profile-read-pruek"/>
+                    <div className="profile-read-phai"/>
+                </div>
             </div>
-            {children}
+            <div className="App-Content">
+                {children}
+            </div>
         </div>
     );
 }

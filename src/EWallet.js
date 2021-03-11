@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './EWallet.css';
-
+import App from'./App';
 
 function EWallet() {
 
   return (
+    <App>
     <div className="EWallet">
       <div className="EWallet-header">
 
@@ -31,6 +32,7 @@ function EWallet() {
       <div className="Menu-1">
         </div>
     </div>
+    </App>
   );
 }
 

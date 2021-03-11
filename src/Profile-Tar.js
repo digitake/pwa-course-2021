@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom';
+import {Link} from "react-router-dom";
 import "./Profile-Tar.css";
+
+
 function Profiletar() {
     return(
     // <div className="App col-12">
      <div>  
-     <Link to="/">
+     <Link to="/App">
      <button>
      Back to chat
      </button>
@@ -14,9 +16,7 @@ function Profiletar() {
       <div className="Propic"></div>
       <div className="textname">Ratpakorn Suntornsarathul
      </div>
-     
       </div>
-      
      </div>
      
     );

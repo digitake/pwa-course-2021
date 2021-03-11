@@ -1,16 +1,16 @@
 import {Link} from "react-router-dom";
 import './Eye_LoadingScene.css';
 
-function Eye_LoadingScene(){
+function Eye_LoadingScene({children}){
     return(
+        <Link to="/App">
         <div className="App col-12">
             <div className="EyeBG">
                 <div className="Text_Fantasma">Fantasma</div>
-                <div className="LoadBox">
-                    <div className="LoadBar"></div>
-                </div>
+                {children}
             </div>
         </div>
+        </Link>
     );
 };
 

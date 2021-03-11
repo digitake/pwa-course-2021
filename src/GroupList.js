@@ -1,93 +1,81 @@
 import{Link} from 'react-router-dom';
 import './App.css';
+import Groupchat1 from './Groupchat1.png';
+
+
 function GroupList() {
     return(
-<div>
-<div className="App-login-head">
-PAP GroupList
-</div>
-   
-   <div>
 
-   </div>
-   
-   <div className="App-PapFriendList-body">
+<div>
+<div className="App-head-grouplist">
+Group1
+
+<div className="App-PapFriendList-body">
 
 <Link to="/group-chat">
-            <button>
-                Group1
-            </button>
-            </Link>
+   <img src={Groupchat1}/>
+              </Link>
    </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/group-chat">
-            <button>
-            Group2
-            </button>
-            </Link>
    </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/group-chat">
-            <button>
-            Group3
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/group-chat">
-            <button>
-            Group4
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/group-chat">
-            <button>
-            Group5
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/group-chat">
-            <button>
-            Group6
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-  
-      
-  
-   <Link to="/group-chat">
-            <button>
-            Group7
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/group-chat">
-            <button>
-            Group8
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/group-chat">
-            <button>
-            Group9
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/home">
-            <button>
-                Home
-            </button>
-            </Link>
 
+   <div className="App-head-grouplist">
+Group2
+
+<div className="App-PapFriendList-body">
+
+<Link to="/group-chat">
+   <img src={Groupchat1}/>
+              </Link>
    </div>
    </div>
-   )
+
+   <div className="App-head-grouplist">
+Group3
+
+<div className="App-PapFriendList-body">
+
+<Link to="/group-chat">
+   <img src={Groupchat1}/>
+              </Link>
+   </div>
+   </div>
+
+   <div className="App-head-grouplist">
+Group4
+
+<div className="App-PapFriendList-body">
+
+<Link to="/group-chat">
+   <img src={Groupchat1}/>
+              </Link>
+   </div>
+   </div>
+
+   <div className="App-head-grouplist">
+Group5
+
+<div className="App-PapFriendList-body">
+
+<Link to="/group-chat">
+   <img src={Groupchat1}/>
+              </Link>
+   </div>
+   </div>
+
+   <div className="App-head-grouplist">
+Group6
+
+<div className="App-PapFriendList-body">
+
+<Link to="/group-chat">
+   <img src={Groupchat1}/>
+              </Link>
+   </div>
+   </div>
+   </div>
+   
+      );
+
    
 }
 export default GroupList;

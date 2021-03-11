@@ -1,4 +1,4 @@
-import HeadOfApp from './HeadOfList';
+import HeadOfApp from './HeaderOfChat';
 import './App.css';
 
 function Profile()

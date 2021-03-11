@@ -3,6 +3,9 @@ import './Chatbox.css';
 import App from './App';
 
 
+import './onClick.js'
+
+
 function Chatbox() {
 
   const [text, setText] = useState("");
@@ -19,11 +22,9 @@ function Chatbox() {
 
   
   return (
-
     <App>
-    <div className="App">
-      
-     
+
+    <div className="App">    
     <div className="App-chatroom">
         {
 
@@ -41,8 +42,9 @@ function Chatbox() {
       </div>
       
     </div>
-
     </App>
+
+    
 
   );
 }

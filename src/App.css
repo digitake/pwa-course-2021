@@ -17,16 +17,12 @@
   }
 }
 
-
 @media (min-width: 768px) {
   .App {
     background-image: url(background_01.gif);
     width: 98%;
   }
 }
-
-
-
 
 .App-logo {
   height: 40vmin;
@@ -102,10 +98,10 @@
 
 
 .App-content {
-  flex: 10;
+  flex: 12;
 
-
-  background-color: rgba(70, 70, 70, 0);
+  
+  background-image: url(background_01.gif);
 
 
   /*background-image: url(../src/logo1.png);  สำหรับพื้นหลัง*/
@@ -126,3 +122,5 @@
     flex: 6;
   }
 }
+
+

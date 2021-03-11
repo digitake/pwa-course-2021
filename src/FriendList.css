@@ -30,7 +30,6 @@
     }
   }
   
-  
   @media (min-width: 768px) {
     .friendList {
       background-image: url(background_01.gif);
@@ -66,7 +65,7 @@
     padding: 10px;
   }
   
-  .friendList-friend > div {
+  a:link.class1, a:visited.class1 {
     border-radius: 25px;
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -74,6 +73,12 @@
     padding: 40px 0;
     color: rgb(0, 0, 0);
   }
+  
+  a:hover.class1, a:active.class1 {
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+  }
+  
 
   @media (min-width: 100px) {
     .friendList-friend {
@@ -99,3 +104,9 @@
       width: 1700px;
     }
   }
+  
+  
+  
+  
+  
+ 

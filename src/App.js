@@ -4,15 +4,12 @@ import shopButton from './shop_button.png'
 import friendButton from './friendList_button.png'
 import chatroomButton from './Chatbutton.png'
 import dropdownButton from './icon2.png'
-import Chatbox from './Chatbox'
 
 
 import './onClick.js'
 
 
 function App({children}) {
-
-  
 
   return (
 
@@ -32,15 +29,10 @@ function App({children}) {
          
               </div>
         </div>
-      </div>
-
-      <div className="App-content">
-        {children}
-      </div>
-      
-     
-    
-      
+        <div className="App-content">
+          {children}
+        </div> 
+      </div>     
     </div>
 
     

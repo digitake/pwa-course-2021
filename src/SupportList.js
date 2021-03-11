@@ -4,10 +4,7 @@ import App from './App';
 function SupportList() {
     return (
         <App>
-        <div>
-        <Link to="/">
-            <img src="fist.png"/>
-        </Link>
+        <div>  
             Support List
         </div>
         </App>

@@ -6,6 +6,7 @@ import EnterApp_3ofghost from "./EnterApp_3ofghost";
 import Eye_LoadingScene from "./Eye_LodeingScene";
 import Profiletar from "./Profile-Tar";
 import LobbySetting from "./LobbySetting";
+import EndTrue from "./EndTrue";
 
 function Router(){
     
@@ -29,6 +30,9 @@ function Router(){
                 </Route>
                 <Route path="/">
                     <EnterApp_3ofghost />
+                </Route>
+                <Route path="/EndTrue">
+                    <EndTrue />
                 </Route>
             </Switch>
         </BrowserRouter>

@@ -1,13 +1,13 @@
 
 import './App.css';
 import {Link} from "react-router-dom";
+import {useState} from 'react';
 
 function App() {
 
 const [text,setText] = useState("");
 
 const [lines, setLines] = useState(["Tar : Hello guys!"]);
-
 
 
 const onTextChange = (event) => {
@@ -31,6 +31,10 @@ const onSend = () => {
           </div>
           <Link to="/Profile_Tar">
           <div className="profile-read-tar"></div>
+          </Link>
+          <Link to="/EndTrue">
+          <div className=".show-end-true"></div>
+          <h3>EndTrue</h3>
           </Link>
           <div className="profile-read-pruek"></div>
           <div className="profile-read-phai"></div>

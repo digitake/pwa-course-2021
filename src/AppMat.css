@@ -1,13 +1,4 @@
 
-.Undo{
-
-    position: relative;
-    width: 28.55px;
-    height: 23.85px;
-    left: 13px;
-    top: 58px;
-}
-
 .Undo2{
     position: absolute;
     width: 28.54px;
@@ -113,6 +104,7 @@
     
     .HomePageInfo-topBar{   
         display: flex;
+        margin: auto;
         align-items: center;
         flex: 1;
         width: 1600px;

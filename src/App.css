@@ -6,11 +6,9 @@
   max-width: 1920px;
   height: 100%;
   margin: auto;
-  /*background-image: url(cool1.jpg);*/
-  background-position: center;
+  background-image: url(cool1.jpg);
   background-repeat: no-repeat;
-  background-color: rgb(50, 224, 255);
-
+  background-position: center;
 }
 
 
@@ -66,6 +64,8 @@
   align-items: center;
   display: flex;
 }
+
+
 
 @media (max-width: 768px){
   .App{

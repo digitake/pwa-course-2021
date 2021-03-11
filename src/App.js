@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function App({children}) {
   return (
-    <div className="App">
+    <div className="App ">
       <div className="App-header ">
         <Link to="/friend-list">
             <button>

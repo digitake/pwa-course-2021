@@ -1,0 +1,34 @@
+.Prologin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 550px;
+    height: 87%;
+    margin: auto;
+    background-color: rgb(31, 103, 211);
+  }
+  
+  .Prologin-header-logo {
+    width: 350px;
+    height: 280px;
+    position: relative;
+    top: -150px;
+    left: 0px;
+  }
+  
+  .signin-logo img {
+    position: relative;
+    top: -20px;
+    left: 0px;
+    max-width: 550px;
+    width: 300px;  
+  }
+  
+  .registery-logo img {
+    max-height: 500px;
+    height: 80px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+  }

@@ -7,11 +7,24 @@
     height: 87%;
     margin: auto;
     position: relative;
+<<<<<<< HEAD
   }
   
   .App-header {      
     background-repeat: no-repeat;
     /*background-image: url();*/
+=======
+
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .App-header {      
+    background-repeat: no-repeat;
+>>>>>>> ab53e7d4fe1c2da023a6dd8f250365dcfa395295
     background-size: contain;
     background-position: left;
     flex: 1;
@@ -89,7 +102,10 @@
     display: flex;
     margin-left: 300px;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ab53e7d4fe1c2da023a6dd8f250365dcfa395295
   .Textinline{
     color: rgb(255, 255, 255);
     left: 10px;
@@ -137,7 +153,11 @@
     margin-top: -136px;
     margin-left: 175px;
     margin-right: 100px;
+<<<<<<< HEAD
     width: 90%;   
+=======
+    width: 90%;
+>>>>>>> ab53e7d4fe1c2da023a6dd8f250365dcfa395295
     clip-path: circle(48px at center center);
   }
   .circlesbox4{
@@ -153,8 +173,13 @@
     margin-left: -450px;
     margin-right: 0px;
     clip-path: circle();
+<<<<<<< HEAD
     width: 80%;
     height: 80%;
+=======
+    width: 75%;
+    height: 75%;
+>>>>>>> ab53e7d4fe1c2da023a6dd8f250365dcfa395295
   }
 
   

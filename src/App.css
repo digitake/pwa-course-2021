@@ -178,6 +178,14 @@
   background-color: rgb(255, 115, 0);
   }
 
+  .App-head-grouplist{
+    background-color: #fc531a;
+    width: 10;
+    font-size:40px ;
+    flex: 4;
+    text-align: left;
+    
+  }
 
 @media(min-width:760px)
 {

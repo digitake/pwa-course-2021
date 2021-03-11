@@ -1,34 +1,108 @@
-import { Link } from 'react-router-dom'
-import backButton from './back_button.png'
-import './FriendList.css';
-import App from './App';
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap');
 
-function FriendList() {
-return (
-<App>
-    <div className="friendList">
-       <div class="friendList-header">
-           <div class="friendList-center">
-               <div class="friendList-friend">
-                <a href="/friend-profile" class="class1">User.1</a>
-                <a href="/friend-profile" class="class1">User.2</a>
-                <a href="/friend-profile" class="class1">User.3</a>
-                <a href="/friend-profile" class="class1">User.4</a>
-                <a href="/friend-profile" class="class1">User.5</a>
-                <a href="/friend-profile" class="class1">User.6</a>
-                <a href="/friend-profile" class="class1">User.7</a>
-                <a href="/friend-profile" class="class1">User.8</a>
-               </div>
-           </div>
-           <div className="friendlist">
-               <Link to="/">
-                <img src={backButton}></img>
-              </Link>
-            </div>
-        </div>
-    </div>
-        </App>
-    )
+.shop-center::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
+/* Optional: show position indicator in red */
+.shop-center::-webkit-scrollbar-thumb {
+    background: #ffffff00;
+}
+.shop {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+    font-size: 22px;
+    font-family: 'Prompt', sans-serif;
+  }
 
-export default FriendList;
+  @media (min-width: 100px) {
+    .shop {
+      background-image: url(background_01.gif);
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    .shop {
+      background-image: url(background_01.gif);
+      width: 98%;
+    }
+  }
+
+.shop-header {
+    padding: 10px;
+    text-align: left;
+    background: #0000005d;
+    color: white;
+    font-size: 10px;
+  }
+
+  .shop-center {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    right: 150px;
+    bottom: 15px;
+    height: 800px;
+    margin: auto;
+    padding: 10px;
+    overflow: scroll;
+    direction: ltr;
+  }
+
+  .shop-items {
+    display: grid;
+  }
+
+  .shop-items > div {
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: auto;
+    padding: 150px 0;
+    color: rgb(0, 0, 0);
+  }
+
+  @media (min-width: 100px) {
+    .shop-items {
+      grid-template-columns: auto auto;
+      padding: 0px;
+      font-size: 15px;
+      grid-gap: 50px;
+    }
+  }
+
+  @media (min-width: 100px) {
+    .shop-items > div {
+      padding: 60px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .shop-items {
+      grid-template-columns: auto auto auto;
+      grid-gap: 100px;
+      padding: 10px;
+      font-size: 30px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .shop-items > div {
+        padding: 150px 0;
+    }
+  }
+
+  @media (min-width: 100px) {
+    .shop-center {
+      right: 50px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .shop-center {
+      width: 1700px;
+    }
+  }

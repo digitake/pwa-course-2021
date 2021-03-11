@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap');
+.Chatroom {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  margin: auto;
+  font-size: 22px;
+  font-family: 'Prompt', sans-serif;
+}
+
+@media (min-width: 100px) {
+  .Chatroom {
+    background-image: url(background_01.gif);
+  }
+}
+
+
+@media (min-width: 768px) {
+  .Chatroom {
+    background-image: url(background_01.gif);
+    width: 98%;
+  }
+}
+
+
+
+
+
+
+.Chatroom-header {
+  flex: 1;
+
+  background-color: #4998ffd5;
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(230, 230, 230);
+}
+
+
+
+
+
+
+.Chatroom-room {
+  flex: 10;
+
+
+  background-color: rgba(70, 70, 70, 0);
+
+
+  /*background-image: url(../src/logo1.png);  สำหรับพื้นหลัง*/
+}
+
+.Chatroom-room-text {
+  margin: 8px;
+  
+
+
+  background-color: hsl(212, 100%, 76%);
+  color:rgb(255, 255, 255);
+  font: size 22px;
+
+}
+
+.Chatroom-textbox {
+  flex: 1;
+
+  background-color: rgb(201, 201, 201);
+
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+}
+
+@media (min-width: 100px) {
+  .Chatroom-textbox-input {
+  flex: 3 ;
+  height: 100%;
+  box-sizing: border-box;
+  }
+}
+
+@media (min-width: 768px) {
+  .Chatroom-textbox-input {
+    flex: 6;
+  }
+}
+
+.Chatroom-textbox-send {
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

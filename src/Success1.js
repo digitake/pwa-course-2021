@@ -8,24 +8,13 @@ function Buyshop2() {
     return(
         <div className="App">
 
-       
-      
-
-
-
 <div > 
-
 
               <img src={Success}/>
               
-              
-            
-         
+        
            </div> 
           
-               
-   
-
     </div>
 
    );

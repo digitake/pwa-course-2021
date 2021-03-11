@@ -1,11 +1,11 @@
 import './App.css';
 import {useState} from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function App() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
-
+  
   const onTextChange = (event) => {
     setText(event.target.value);
   };
@@ -24,12 +24,11 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        Hello
-        <Link to="/FriendList">
-             <button>
-               Go FriendList
-            </button>
-          </Link>
+            <Link to="/friend" className="Button">
+                <button>
+                  Go To
+                </button>
+            </Link>
       </div>
       <div className="App-chatroom">
         {
@@ -39,12 +38,11 @@ function App() {
                    </div>
           })
         }
-        
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" 
         value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-
+        
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
     </div>

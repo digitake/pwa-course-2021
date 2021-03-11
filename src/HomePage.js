@@ -7,9 +7,12 @@ function HomePage({children}) {
 
     <div className = "HomePageInfo">
          
-        <div className = "HomePageInfo-topBar"/>
+        <div className = "HomePageInfo-topBar">
         
         <div className = "HomePageInfo-search"/>
+        <div className = "HomePageInfo-topBar-profile"/>
+        
+        </div>
                 
         <div className = "HomePageInfo-backgroun">
 
@@ -28,12 +31,14 @@ function HomePage({children}) {
                 <img src = "ChatBoxBar.Png" alt = "" />
                 </Link>
             </div>
+
             <div className = "pandding">
 
                 <Link to = "/GroupChatRoom">
                     <img src = "GroupChat.Png" alt = "" />
                 </Link>
             </div>
+
             <div className = "HomePageButton">
 
                 <Link to = "/HomePage">

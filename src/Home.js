@@ -5,9 +5,11 @@ function Home(){
     return(
         <div className="Home">
         <div className="Home-header">
-        <div className="Home-header1" ></div>
+        <div className="Home-header1" >
+        <Link className={"Home-header1"} to="/profile"/>
+        </div>
         <div className="Home-header2" >
-        <Link className={"Home-header2"} to="/home"/>
+        <Link className={"Home-header2"} to="/e-wallet"/>
         </div>
         <div className="Home-header3">
         <Link className={"Home-header3"} to="/calendar"/>

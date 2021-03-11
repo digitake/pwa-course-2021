@@ -1,30 +1,36 @@
-/** ดึงส่วนประกอบที่จำเป็นมาใช้งานเพื่อสร้าง Component สำหรับ Router*/
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import App from './App';
 import Calendar from './Calendar';
-import Chats from './Chats';
+import Profile from './Profile';
 import Home from './Home';
+import EWallet from './EWallet';
+import Chatbox from './Chatbox';
+import App from './App';
+
+/** FriendList*/
 
 function Router(){
 
     return(
         <BrowserRouter>
             <Switch>
-                <Route path="/chats">
-                    <Chats />
+                <Route path="/profile">
+                    <Profile />
                 </Route>
+                <Route path="/e-wallet">
+                    <EWallet />
+                </Route>  
                 <Route path="/calendar">
                     <Calendar />
                 </Route>
                 <Route path="/home">
                     <Home/>
                 </Route>
+            
                 <Route path="/">
-                    <App/>
+                    <Chatbox/>
                 </Route>
             </Switch>
         </BrowserRouter>
     )
 };
-
 export default Router;

@@ -11,11 +11,6 @@ function Store() {
     return(
         <div className="App">
 
-       
-        <div className="App-header-home">
-        S
-                       
-    </div>
 
 
 

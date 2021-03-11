@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom";
-import "./Profile-Tar.css";
+import "./Profile.css";
 
 
-function Profiletar({childre}) {
+function Profile({childre}) {
     return(
     // <div className="App col-12">
      <div>  
@@ -11,10 +11,10 @@ function Profiletar({childre}) {
      Back to chat
      </button>
      </Link>
-     <div className="textpro">Profile</div>
+     <div className="textpro"></div>
       <div className="bgpro">
       <div className="Propic"></div>
-      <div className="textname">Ratpakorn Suntornsarathul
+      <div className="textname">
      </div>
      {childre}
       </div>
@@ -22,4 +22,4 @@ function Profiletar({childre}) {
      
     );
 };
-    export default Profiletar;
+    export default Profile;

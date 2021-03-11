@@ -7,6 +7,7 @@ import LobbySetting from "./LobbySetting";
 import ChatBox from "./Chatbox";
 import LobbyHeader from "./LobbyHeader";
 import LoadingBar from "./LoadingBar";
+import Phai from './ProfilePhai';
 
 function Router() {
 
@@ -15,6 +16,9 @@ function Router() {
             <Switch>
                 <Route path="/Profile_Tar">
                     <Profiletar/>
+                </Route>
+                <Route path="/ProfilePhai">
+                    <Phai/>
                 </Route>
                 <Route path="/Eye_Scene">
                     <LoadingBar/>

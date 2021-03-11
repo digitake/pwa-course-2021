@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function App() {
 
@@ -10,7 +10,6 @@ function App() {
   const onChangeHandler = (event) => {
       setText(event.target.value);
   };
-
   const onSendHandler = (event) => {
     setLines(lines => [...lines, text]);
     setText("");
@@ -22,17 +21,16 @@ function App() {
       <div className="App-header">
          Group Box Chat
       </div>
-      
-      <div className = "AppUndo">
-      <Link to = "/HomePage">
-        <img src = "Union(1).png" alt = "" /> 
-      </Link>
-      </div>
-     
-      <div className="App-chatroom">
+      <Link to="/Friend-List">
+          <button>
+            Go FriendList
+          </button>
+        </Link>
+        <div className="App-chatroom">
         <div className="App-chatroom-text">
           
         </div>
+        
         <div className="App-chatroom-text">
         </div>
         {

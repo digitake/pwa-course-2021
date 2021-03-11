@@ -30,7 +30,8 @@
   flex-direction: row;
   justify-content: flex-end;
   padding-right: 16px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  height: 100%;
 }
 
 .App-content

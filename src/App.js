@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-         Group Box Chat
+         Box Chat
       </div>
       <Link to="/Friend-List">
           <button>
@@ -41,10 +41,20 @@ function App() {
           })
         }
       </div>
+
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input" onChange={onChangeHandler} value={text}/>
-        <div className="App-textbox-send" onClick={onSendHandler}>Send!</div>
+        <input type = "text" className = "App-textbox-input" onChange={onChangeHandler} value={text}/>
+
+        <div className = "App-textbox-send" 
+          onClick={onSendHandler}> 
+        <div className = "App-textbox-send-pic">
+          </div>
+
+        </div>
+  
       </div>
+
+
     </div>
   );
 }

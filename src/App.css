@@ -41,43 +41,49 @@
   background-color:#2D2C67
 }
 
-.App-chatroom-text 
-{
-  margin: 8px;
+.App-chatroom-text {
+  margin: 5px;
+  background-color: rgb(20, 16, 231);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+ 
   
-  background-color: rgb(144, 218, 101);
-  color : rgb(48, 100, 100);
-  font-size: 20px;
 }
 
 .App-textbox {
+  
   flex: 1;
-  background-color:#FF7F00;
-  justify-content: center;
-  align-items: stretch;
+  justify-content: flex-end;
+  align-items: flex-end;
   display: flex;
 }
 
 .App-textbox-input {
-  flex: 5;
-  height: 100%;
-  box-sizing: border-box;
-  image-rendering: auto;
+  width: 400px;
+  height: 32px;
+  
 }
 
 .App-textbox-send {
-  flex: 1;
-  height: 100%;
-  background-color: rgb(252, 8, 0);
-  border: none;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 8px 5px;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
+
+  vertical-align: bottom;
+  align-items: flex-end;
   display: flex;
+ 
 }
+
+.App-textbox-send-pic{
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+  background-image: url(/src/AppchatUpdate/SendButton.png) ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
 
 .AppUndo{
   position: absolute;
@@ -86,4 +92,9 @@
   left: 13px;
   top: 15px;  
 
+}
+
+.App-connent{
+    flex: 12;
+    background-color: lawngreen;
 }

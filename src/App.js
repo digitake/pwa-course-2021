@@ -12,7 +12,7 @@ function App({children}) {
 
         <div className="App-logo Button">
 
-             <Link to = "/profile-page">
+             <Link to = "/profile">
                <image>
                <img src ="buttonProfile.png"/>
                </image>

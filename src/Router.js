@@ -4,7 +4,8 @@ import Chatbox  from "./Chatbox";
 import FriendList from "./FriendList";
 import ShopPage from "./ShopPage";
 import Menu from "./Menu";
-import ProfilePage from "./ProfilePage";
+import Profile from "./Profile";
+import Image from "./Image";
 import GamePage from "./GamePage";
 import App from "./App";
 
@@ -26,8 +27,8 @@ function Router()  {
               <Menu />
             </Route>
 
-            <Route path="/profile-page">
-              <ProfilePage />
+            <Route path="/profile">
+              <Profile />
             </Route>
 
             <Route path="/game-page">
@@ -36,6 +37,10 @@ function Router()  {
 
             <Route path="/Chatbox">
               <Chatbox />
+            </Route>
+
+            <Route path="/Image">
+              <Image />
             </Route>
 
             <Route path="/">

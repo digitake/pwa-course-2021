@@ -3,10 +3,10 @@ import App from './App';
 import { Link } from "react-router-dom";
 
 
-function ProfilePage(){
+function Profile(){
     return(
     <App>
-    <div className="ProfilePage">
+    <div className="Profile">
 
         <div className="Profile-background">
       
@@ -20,20 +20,9 @@ function ProfilePage(){
 
         <div className="Profile-header">
             <div className="Profile-room-Button">
-             <Link to = "/">
+             <Link to = "/Image">
                <image>
                <img src ="buttonChat.png"/>
-               </image>
-             </Link>
-
-             <Link to = "/friend-list">
-               <image>
-               <img src ="buttonFriend.png"/>  
-               </image>
-             </Link>
-             <Link to = "/game-page">
-               <image>
-               <img src ="buttonGame.png"/> 
                </image>
              </Link>
             </div>
@@ -49,4 +38,4 @@ function ProfilePage(){
     );
 };
 
-export default ProfilePage;
+export default Profile;

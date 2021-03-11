@@ -1,4 +1,4 @@
-.ProfilePage {
+.Profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,13 +11,13 @@
 }
 
 @media (min-width: 768px){
-  .ProfilePage{
+  .Profile{
     width: 95%;
   }
 }
 
 @media (min-width: 480px){
-  .ProfilePage{
+  .Profile{
     background-color:  #242424;
   }
 }

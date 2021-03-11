@@ -4,6 +4,7 @@ import Shop from "./Shop";
 import Chatroom from "./Chatroom"
 import Chatbox from './Chatbox';
 import FriendProfile from "./FriendProfile";
+import Profile from "./Profile";
 function Router() {
 
     return (

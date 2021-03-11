@@ -1,7 +1,7 @@
 import './Prosetting.css';
 import { Link } from 'react-router-dom'
 
-function Prosetting() {
+function Prosetting({children}) {
     return(
         <div className = "Prosetting">
             <div className ="Prosetting-header">

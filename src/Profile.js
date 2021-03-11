@@ -1,19 +1,32 @@
 import './Profile.css';
-import {useState} from 'react';
 import { Link } from 'react-router-dom'
-import App from './App';
 function Profile(){
     return (
-        <App>
-           <div>
-               My Profile
-            <Link to = "/">
-                <button>
-                    Go to Chatroom
-                </button>
-            </Link>
-            </div> 
-        </App>
+        <div className = "Profile">
+          
+          <div className="Profile-header">
+    
+          <div>
+                Profile
+                <Link to = "/">
+                    <button>
+                        Go to Chatroom
+                    </button>
+                </Link>
+            </div>
+            
+            <div className="Profile-name">
+    
+              GI472 Pheeraphat Chocokviriyapanya
+            </div>
+
+            <div className="Profile-picture">
+    
+            </div>
+
+            </div>
+        </div>
+
               
               );
             };

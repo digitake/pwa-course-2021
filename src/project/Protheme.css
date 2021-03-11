@@ -7,16 +7,11 @@
     height: 87%;
     margin: auto;
     position: relative;
-
   }
   
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-
-  .App-header {      
+  .App-headerRut {      
     background-repeat: no-repeat;
+    /*background-image: url();*/
     background-size: contain;
     background-position: left;
     flex: 1;
@@ -28,6 +23,11 @@
     color: rgb(0, 0, 0);
   }
   
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
   .App-chatroom {
     flex: 12;
     background-color: #8fbbff;
@@ -117,7 +117,7 @@
   }
 
 
-  .circlesbox1{
+  .circlesboxRut1{
     margin-top: 25px;
     margin-left: 100px;
     margin-left: -125px;
@@ -125,21 +125,21 @@
     width: 90%;
     clip-path: circle(48px at center center);
   }
-  .circlesbox2{
+  .circlesboxRut2{
     margin-top: -136px;
     margin-left: 25px;
     margin-right: 0px;
     width: 90%;
     clip-path: circle(48px at center center);
   }
-  .circlesbox3{
+  .circlesboxRut3{
     margin-top: -136px;
     margin-left: 175px;
     margin-right: 100px;
-    width: 90%;
+    width: 90%;   
     clip-path: circle(48px at center center);
   }
-  .circlesbox4{
+  .circlesboxRut4{
     margin-top: 1;
     margin-left: 350px;
     margin-right: -10px;
@@ -147,17 +147,17 @@
     width: 75%;
     height: 75%;
   }
-  .Profile{
+  .ProfileRut{
     margin-top: -90px;
     margin-left: -450px;
     margin-right: 0px;
     clip-path: circle();
-    width: 75%;
-    height: 75%;
+    width: 80%;
+    height: 80%;
   }
 
   
-  .col-1 {width:  8.33%;}
+  /*.col-1 {width:  8.33%;}
   .col-2 {width:  16.66%;}
   .col-3 {width:  25%;}
   .col-4 {width:  33.33%;}
@@ -168,10 +168,10 @@
   .col-9 {width:  75%;}
   .col-10 {width:  83.33%;}
   .col-11{width:  91.66%;}
-  .col-12 {width: 100%;}
+  .col-12 {width: 100%;}*/
   
-  @media (max-width:786px){
+  /*@media (max-width:786px){
     [class*="col-"]{
       width: 100;
     }
-  }
+  }*/

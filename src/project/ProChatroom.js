@@ -22,21 +22,19 @@ return (
     <div className="App">
       <p className = "noelly">noel</p>
       <div className="App-header">
-      <div className="circlesbox1">
-        <Link to='/Profile'>
-          <button>
-            <img src="/Project/Prochatroom/5.jpg" alt="/Project/Prochatroom/5.jpg" width="50px" height="50px"/>
-          </button>
-        </Link> 
-       </div>
-       <div className="imp">
-        <Link to='/Profile'>
-          <button>
-            <img src="/Project/Prochatroom/333.jpg" alt = "/Project/Prochatroom/333.jpg" width="50px" height="50px"/>
-          </button>
-        </Link>
-       </div>
-       <div className="imp2"><img src= "/Project/Prochatroom/5555.jpg" alt ="/Project/Prochatroom/5555.jpg" width="60px" height="60px" /></div>
+        <div className="circlesbox1">
+          <Link to='/Profile'>
+              <img src="/Project/Prochatroom/5.jpg" alt="/Project/Prochatroom/5.jpg" width="50px" height="50px"/>
+          </Link> 
+        </div>
+        <div className="imp">
+          <Link to='/Profriend'>
+              <img src="/Project/Prochatroom/333.jpg" alt = "/Project/Prochatroom/333.jpg" width="50px" height="50px"/>
+          </Link>
+        </div>
+        <div className="imp2">
+          <img src= "/Project/Prochatroom/5555.jpg" alt ="/Project/Prochatroom/5555.jpg" width="60px" height="60px" />
+        </div>
       </div>
       <div className="App-chatroom">
         {

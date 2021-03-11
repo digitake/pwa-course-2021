@@ -6,7 +6,7 @@ function  MainPage() {
     return(
         <div>
             <body>
-           <Link to="/profile">
+           <Link to="/profiless">
                 <img src={main} width="200" border="5"  />
            </Link>
 

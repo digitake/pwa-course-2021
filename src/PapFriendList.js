@@ -8,7 +8,7 @@ function PapFriendList() {
 
 <div>
 <div className="App-head-grouplist">
-Friend 1
+Friend1
 
 <div className="App-PapFriendList-body">
 

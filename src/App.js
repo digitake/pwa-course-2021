@@ -24,7 +24,7 @@ function App({children}) {
                 </button>
       </Link>
 
-      <Link to = "/">
+      <Link to = "/chatbox">
                 
                 <button>
                     chatbox

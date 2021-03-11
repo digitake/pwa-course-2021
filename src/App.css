@@ -119,7 +119,7 @@
  
   border-style: dotted dashed solid double;
   background-color: rgb(255, 115, 0);
-
+  
  
   
 }
@@ -187,6 +187,24 @@
   background-color: rgb(255, 115, 0);
   }
 
+
+/*rewannop code**/
+.App-png{
+
+  
+ 
+  
+}
+
+
+
+
+
+
+
+
+
+
   .App-head-grouplist{
     background-color: #fc531a;
     width: 10;
@@ -195,6 +213,7 @@
     text-align: left;
     
   }
+
 
 @media(min-width:760px)
 {
@@ -232,5 +251,8 @@
     border-style:groove ;
   }
   
+  
+   
+  
+  
 }
- 

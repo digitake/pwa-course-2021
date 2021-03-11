@@ -4,32 +4,29 @@ import Success from './Success1.png';
 
 
 
-function Buyshop2() {
+function Success1() {
     return(
         <div className="App">
-
        
-      
-
-
-
-<div > 
-
-
+      <div > 
               <img src={Success}/>
               
-              
-            
-         
-           </div> 
+          </div> 
           
-               
-   
+          
+                     <div>
+              <Link to="/home">
+          <button>
+            Accept
+          </button>
+          </Link>
+            
+          </div>
 
     </div>
 
    );
 
 }
-export default Buyshop2
+export default Success1
 

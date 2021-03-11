@@ -11,7 +11,6 @@ function HeaderLayout({children}) {
                 <img src="/Project/ProFriend/3Line.png" alt="/Project/ProFriend/3Line.png" width="50px" height="50px"/>         
                 </Link>
             </div>
-
             <div className ="App-contenter">
                 {children}
             </div>

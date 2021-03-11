@@ -12,7 +12,7 @@
   
   
   @media (min-width: 768px) {
-    .Chatbox {
+    .App {
       max-width: 100%;
       background-color: burlywood;
     }
@@ -39,7 +39,10 @@
   }
   
   .App-chatroom {
-    flex: 10;
+    flex: 12;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: rgb(34, 255, 237);
     color: rgb(0, 0, 0);
   }

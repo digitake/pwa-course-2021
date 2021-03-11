@@ -1,7 +1,6 @@
 import './Chatbox.css';
 import {useState} from 'react';
-import { Link } from "react-router-dom";
-
+import App from './App';
 
 function Chatbox() {
   const [text, setText] = useState("");
@@ -23,13 +22,8 @@ function Chatbox() {
   }
 
   return (
-    <div className="Chatbox">
-      <Link to="/friend-list">
-      <div className="App-textbox-back" onClick={onSend}>BACK</div>
-      </Link>
-      <div className="App-header">
-        REACT CHAT
-      </div>
+    <App>
+    <div className="App col-6">
       <div className="App-chatroom">
         {
           lines.map(x => {
@@ -46,6 +40,7 @@ function Chatbox() {
       <div className="App-textbox-send" onClick={onSend}>Send</div>
       </div>
     </div>
+    </App>
   );
 }
 

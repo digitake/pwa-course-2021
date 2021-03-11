@@ -24,7 +24,7 @@ function Store() {
               <img src={sticker1}/>
               </Link> 
               <div className="App-text-left">
-              
+              Sticker1 = 10$
            
                </div>
            </div>  

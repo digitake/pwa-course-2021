@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom'
 
 function App() {
 
@@ -10,6 +10,7 @@ function App() {
   const onChangeHandler = (event) => {
       setText(event.target.value);
   };
+
   const onSendHandler = (event) => {
     setLines(lines => [...lines, text]);
     setText("");
@@ -21,18 +22,20 @@ function App() {
       <div className="App-header">
          Box Chat
       </div>
-      <Link to="/Friend-List">
-          <button>
-            Go FriendList
-          </button>
-        </Link>
-        <div className="App-chatroom">
-        <div className="App-chatroom-text">
-          
-        </div>
-        
+      
+      <div className = "AppUndo">
+      <Link to = "/HomePage">
+        <img src = "Union(1).png" alt = "" /> 
+      </Link>
+      </div>
+     
+      <div className="App-chatroom">
         <div className="App-chatroom-text">
         </div>
+
+        <div className="App-chatroom-text">
+        </div>
+
         {
           lines.map((value, index) => {
             return <div key={index} className="App-chatroom-text">
@@ -40,6 +43,7 @@ function App() {
               </div>
           })
         }
+        
       </div>
 
       <div className="App-textbox">

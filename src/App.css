@@ -86,8 +86,17 @@
   background-color: rgb(247, 218, 132);
  
   
- 
 
+}
+.App-header-public {
+  flex: 1;
+  height: 20%;
+ flex-direction: row;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
 }
 
 .App-button-home {

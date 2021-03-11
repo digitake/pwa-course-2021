@@ -9,12 +9,24 @@ import GroupChat from './GroupChat';
 import Store from './Store';
 import Chatbox from './Chatbox';
 import Profile from './Profile';
+import HeadOfApp from './HeadOfApp';
+import HeaderOfChat from './HeaderOfChat';
 
 function Router(){
 
     return(
    <BrowserRouter>
    <Switch>
+
+   <Route path ="/HeaderOfChat">
+<HeaderOfChat/>
+</Route>
+
+   <Route path ="/HeadOfApp">
+<HeadOfApp/>
+</Route>
+
+
 <Route path ="/profile">
 <Profile/>
 </Route>

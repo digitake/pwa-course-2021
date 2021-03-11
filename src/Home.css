@@ -1,0 +1,15 @@
+.Home{
+    background-image:url(cool3.jpg) ;
+    max-width: 1920px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.993);
+    height: 100%;
+    
+}
+
+.link{
+    margin:2px ;
+    display: flex;
+    justify-content: flex-end;
+}

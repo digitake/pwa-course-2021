@@ -10,79 +10,69 @@
 }
 
 .Prosetting-header {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
     flex: 1;
     display: flex;
+    flex-direction: row;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
+.Prosetting-Bg{
+    flex: 12;
+    display: flex;
     flex-direction: column;
+}
+
+.Prosetting-ProUi{
+    flex: 0.4;
+    display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(0, 0, 0);
+    flex-direction: row;
+}
+
+.Prosetting-InterUi{
+    flex: 0.35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .Prosetting-Text {
-    height: 100px;
-    width: 180px;
-    position: relative;
-    top: -95px;
+    margin-top:-10%;
+    margin-right:-20%;
 }
 
 .Prosetting-Icon-Back {
-    height:  60px;
-    width: 60px;
-    position: relative;
-    top: -180px;
-    left: -240px;
+    margin: auto;
+    margin-left: -1400%;
 }
 
 .Prosetting-Pro{
-    height: 70px;
-    width: 70px;
-    position: relative;
-    top: -130px;
-    left: -130px;
+    margin: auto;
 }
 
 .Prosetting-User {
-    height: 60px;
-    width: 200px;
-    position: relative;
-    top: -200px;
-    left: 20px;
+margin: auto;
 }
 
 .Prosetting-Account {
-    height: 70px;
-    width: 550px;
-    position: relative;
-    top: -150px;
+    margin:auto;
 }
 
 .Prosetting-Laug {
-    height: 70px;
-    width: 550px;
-    position: relative;
-    top: -160px;
+    margin:auto;
 }
 
 .Prosetting-Support {
-    height: 70px;
-    width: 550px;
-    position: relative;
-    top: -170px;
+    margin:auto;
 }
 
 .Prosetting-Not {
-    height: 70px;
-    width: 550px;
-    position: relative;
-    top: -180px;
+    margin:auto;
 }
 
 .Prosetting-Logout {
-    height: 70px;
-    width: 550px;
-    position: relative;
-    top: -190px;
+    margin:auto;
 }

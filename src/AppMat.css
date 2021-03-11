@@ -9,12 +9,12 @@
 }
 
 .Undo2{
-
-    position: relative;
+    position: absolute;
     width: 28.54px;
     height: 23.84px;
     left: 14px;
     top: 77px;
+    
 }
 
 
@@ -87,16 +87,8 @@
     padding-bottom: 6px;
 }
 
-.LogOut{
-
-    position: relative;
-    width: 178.78px;
-    height: 51.22px;
-    left: 47.22px;
-    top: 698px;
-}
-
 .MenuHomeBar{
+
     position: relative;
     width: 414px;
     height: 82px;
@@ -104,15 +96,127 @@
     top: 814px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.SettingPage{
-    margin: auto;
-    width: 414px;
-    height: 896px;
 
-    background-repeat: no-repeat;
-    background-image: url(/src/AppchatUpdate/Setting.png);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
+
+
+@media (max-width: 1281px)
+{
+    .SettingPage{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 414px;
+        height: 896px;
+        background-repeat: no-repeat;
+        background-image: url(/src/AppchatUpdate/Setting.png);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+    }
+    .Header
+    {   
+        display: flex;
+        position: relative;
+        background-color: #505396;
+        width: 414px;
+        height: 131px;
+        align-items: center;
+        justify-content: center ;
+    }
+
+    .Header-text
+    {   
+        margin-left:100px ;
+        margin-top: 60px;
+        height: 131px;
+        width: 414px;
+        background-repeat: no-repeat;
+        background-image: url(/src/AppchatUpdate/Settings.png);
+    }
+    .LogOut{
+
+        display: flex;
+        align-items: center;
+        margin-left: 46px;
+        margin-top: 590px;  
+        justify-content: flex-start;
+        
+    }
+
+    .Undo2{
+
+        display: flex;
+        margin-bottom: 60px;
+        align-items: flex-start;
+        justify-content:flex-start;
+        
+    }
 }
 
 
+@media (min-width: 1280px){
+
+    .SettingPage{
+
+        margin: auto;
+        display: flex;
+          
+        width: 1600px;
+        height: 900px;
+        background-color: #2D2C67;
+        flex-direction: column;
+        
+    }
+
+    .Header
+    {   
+        display: flex;
+        position: relative;
+        background-color: #505396;
+        width: 100%;
+        height: 131px;
+        justify-content: center;
+        align-items: center;
+        
+       
+    }
+
+    .Header-text
+    {   
+        align-items: center;
+        width: 200px;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-size: 95% ;
+        background-image: url(/src/AppchatUpdate/Settings.png);
+    }
+    .OptionSetting
+    {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    .OptionSetting-Bar
+    {
+        margin-top: 24px;
+        width: 852px;
+        height: 498px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(/src/AppchatUpdate/GroupOption.png);
+    }
+    .LogOut{
+
+        width: 62px;
+        height: 62px;
+        justify-content:center;  
+        margin-top: 100px;
+    } 
+
+    .Undo2{
+        align-items: center;
+        justify-content: start;
+        
+    }
+    
+}

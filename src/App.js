@@ -31,10 +31,11 @@ function App() {
      
       <div className="App-chatroom">
         <div className="App-chatroom-text">
-          
         </div>
+
         <div className="App-chatroom-text">
         </div>
+
         {
           lines.map((value, index) => {
             return <div key={index} className="App-chatroom-text">
@@ -42,6 +43,7 @@ function App() {
               </div>
           })
         }
+        
       </div>
 
       <div className="App-textbox">

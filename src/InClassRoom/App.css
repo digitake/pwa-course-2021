@@ -8,11 +8,7 @@
   background-color: yellow;
 }
 
-<<<<<<< HEAD:src/App.css
-/*@media(min-width: 1280px){
-=======
 @media(min-width: 786px){
->>>>>>> ab53e7d4fe1c2da023a6dd8f250365dcfa395295:src/InClassRoom/App.css
   .App{
     background-image: url(koro.jpg);
     background-repeat: no-repeat;
@@ -38,13 +34,9 @@
 
 .App-content {
   flex: 12;
-<<<<<<< HEAD:src/App.css
-  background-color: rgba(201, 137, 197, 0.418);
-=======
   display: flex;
   flex-direction: column;
 
->>>>>>> ab53e7d4fe1c2da023a6dd8f250365dcfa395295:src/InClassRoom/App.css
 }
 
 .App-chatroom-text {

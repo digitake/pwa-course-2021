@@ -7,10 +7,9 @@ return(
 
     
     <HomePage>
-        <div >
+        <div>
             <Link to = "/Chat-Room" >
              <img src = "BotHelpChat.png" alt = "" />
-                
             </Link>
         </div>
         

@@ -6,8 +6,10 @@ function GroupChatRoom() {
 return(
     <HomePage>
         <div>
-            GroupChatRoom
-        </div> 
+            <Link to = "/Chat-Room" >
+             <img src = "ButtonGroupChat.png" alt = "" />
+            </Link>
+        </div>
     </HomePage>
     
 )  

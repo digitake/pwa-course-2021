@@ -6,7 +6,9 @@ function PrivatePage() {
 return(
     <HomePage>
         <div>
-            Private
+            <Link to = "/Chat-Room" >
+             <img src = "ButtonPrivateGroupChat.png" alt = "" />
+            </Link>
         </div> 
     </HomePage>
     

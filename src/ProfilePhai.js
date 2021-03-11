@@ -5,7 +5,7 @@ function Phai() {
     return(
       <div>
      <Profile>
-     <div>
+     <div className="textphai" >
        phai
      </div>
      </Profile>

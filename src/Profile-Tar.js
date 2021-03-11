@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import "./Profile-Tar.css";
 
 
-function Profiletar({childre}) {
+function Profiletar() {
     return(
     // <div className="App col-12">
      <div>  
@@ -16,7 +16,6 @@ function Profiletar({childre}) {
       <div className="Propic"></div>
       <div className="textname">Ratpakorn Suntornsarathul
      </div>
-     {childre}
       </div>
      </div>
      

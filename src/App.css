@@ -56,44 +56,45 @@
 }
 
 .App-chatroom-text {
-  margin: 8px;
+  margin: 5px;
   background-color: rgb(20, 16, 231);
   color: rgb(255, 255, 255);
   font-size: 16px;
+ 
+  
 }
 
 .App-textbox {
   
   flex: 1;
-  justify-content: center;
-  align-items: stretch;
+  justify-content: flex-end;
+  align-items: flex-end;
   display: flex;
 }
 
 .App-textbox-input {
   width: 400px;
-  height: 52px;
+  height: 32px;
   
-  box-sizing: border-box;
 }
 
 .App-textbox-send {
-  
-  width: 15%;
-  height: 10%;
-  vertical-align: middle;
-  justify-content: start;
-  align-items: flex-start;
+
+  vertical-align: bottom;
+  align-items: flex-end;
   display: flex;
  
 }
 
 .App-textbox-send-pic{
-  
-  width: 62px;
-  height: 62px;
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
   background-image: url(/src/AppchatUpdate/SendButton.png) ;
-
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 

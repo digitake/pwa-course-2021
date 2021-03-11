@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-         Group Box Chat
+         Box Chat
       </div>
       
       <div className = "AppUndo">
@@ -49,12 +49,11 @@ function App() {
 
         <div className = "App-textbox-send" 
           onClick={onSendHandler}> 
-          <div className = "App-textbox-send-pic">
-            send
+        <div className = "App-textbox-send-pic">
           </div>
 
         </div>
-
+  
       </div>
 
 

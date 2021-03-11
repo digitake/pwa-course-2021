@@ -7,60 +7,23 @@
   height: 100%;
   margin: auto;
 }
-
-@media (min-width: 768px) {
-
-  .App {
-
-
-    background-color: rgb(207, 238, 250);
-  }
-  .App-header1{
-    background-color: rgb(255, 255, 255);
-    background-position: left;
-  }
-
-  .App-header3{
-    background-color: rgb(255, 255, 255);
-    background-position: right;
-
-  }
-
-}
-@media (max-width: 768px) {
-
-  .App {
-    background-image: url(555.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-  }
-
-}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 .App-header {
   background-color: rgb(255, 255, 255);
   background-position: center;
   background-repeat: no-repeat;
-  flex: 1;
-
-  
-
+  flex: 0.5;
   height: 100%;
   vertical-align: middle;
   justify-content: center;
-
   align-items: center;
   display: flex;
 }
-
 .App-header1 {
-  background-image: url(design/Design\ Chi\ CHi\ App-08.png);
-  
+  background-image: url(design/App\ Content-01.png);
   background-position: left;
   background-repeat: no-repeat;
   flex: 1;
@@ -69,11 +32,9 @@
   justify-content: center;
   align-items: center;
   display: flex;
-
 }
-
 .App-header2 {
-  background-image: url(design/Design\ Chi\ CHi\ App-09.png);
+  background-image: url();
   background-position: center;
   background-repeat: no-repeat;
   flex: 1;
@@ -82,11 +43,9 @@
   justify-content: center;
   align-items: center;
   display: flex;
-
 }
-
 .App-header3 {
-  background-image: url(design/Design\ Chi\ CHi\ App-10.png);
+  background-image: url(design/App\ Content-02.png);
   background-position: right;
   background-repeat: no-repeat;
   flex: 1;
@@ -96,12 +55,10 @@
   align-items: center;
   display: flex;
 }
-
-.App-chatroom {
+.App-content{
   color: rgb(182, 234, 255);
   flex: 12;
 }
-
 .App-chatroom-text {
   margin: 8px;
   background-color: rgb(108, 165,  250);
@@ -109,7 +66,6 @@
   color : rgb(23, 24, 24);
   font-size: 30px;
 }
-
 .App-textbox {
   flex: 1;
   background-color: rgb(255, 255, 255);
@@ -119,16 +75,14 @@
   display: flex;
   color: rgb(228, 222, 222);
 }
-
 .App-textbox-input {
   flex: 4;
   height: 100%;
   box-sizing: border-box;
   color: rgb(6, 87, 119);
 }
-
 .App-textbox-send {
-  background-image: url(design/Design\ Chi\ CHi\ App-03.png);
+  background-image: url();
   background-position: center;
   background-repeat: no-repeat;
   flex: 1;
@@ -138,10 +92,8 @@
   align-items: center;
   display: flex;
 }
-
-
 .App-textbox-send1 {
-  background-image: url(design/Design\ Chi\ CHi\ App-04.png);
+  background-image: url();
   background-position: center;
   background-repeat: no-repeat;
   flex: 1;
@@ -151,9 +103,8 @@
   align-items: center;
   display: flex;
 }
-
 .App-textbox-send2 {
-  background-image: url(design/Design\ Chi\ CHi\ App-05.png);
+  background-image: url();
   background-position: center;
   background-repeat: no-repeat;
   flex: 1;
@@ -163,7 +114,6 @@
   align-items: center;
   display: flex;
 }
-
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -176,10 +126,3 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
-@media (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}

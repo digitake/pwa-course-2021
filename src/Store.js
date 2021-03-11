@@ -30,7 +30,7 @@ function Store() {
            </div> 
            <div className="App-test"></div>
            <div className="App-pic-left" > 
-           <Link to="/home" >
+           <Link to="/buyshop" >
               <img src={sticker1}/>
               </Link> 
               <div className="App-text-left">
@@ -43,7 +43,7 @@ function Store() {
            <div className="App-test"></div>
 <div className="App-pic-left" >  
 
-               <Link to="/home" >
+               <Link to="/buyshop" >
               <img src={sticker1}/>
               </Link> 
               <div className="App-text-left">
@@ -57,7 +57,7 @@ function Store() {
                <div className="App-test"></div>
 <div className="App-pic-left" >  
 
-               <Link to="/home" >
+               <Link to="/buyshop" >
               <img src={sticker1}/>
               </Link> 
               <div className="App-text-left">
@@ -69,7 +69,7 @@ function Store() {
                <div className="App-test"></div>
 <div className="App-pic-left" >  
 
-               <Link to="/home" >
+               <Link to="/buyshop" >
               <img src={sticker1}/>
               </Link> 
               <div className="App-text-left">

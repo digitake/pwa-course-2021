@@ -4,7 +4,7 @@ import rew2 from './rew2.png';
 import rewB from './rewbb.png';
 
 
-function Buyshop2() {
+function Buyshop() {
     return(
         <div className="App">
 
@@ -20,18 +20,17 @@ function Buyshop2() {
 
 <div > 
 <div className="App-png" > 
-
               <img src={rew2}/>
               
               </div>
               
               <div className="App-text-left">
               
-              <Link to="/Success1" >
+            
                <button>
                Sticker1 = 10$
             </button>
-            </Link>         
+                       
            </div>
            
          
@@ -98,4 +97,4 @@ function Buyshop2() {
    );
 
 }
-export default Buyshop2
+export default Buyshop;

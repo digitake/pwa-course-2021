@@ -110,7 +110,7 @@
  
   border-style: dotted dashed solid double;
   background-color: rgb(255, 115, 0);
-
+  
  
   
 }
@@ -178,6 +178,22 @@
   background-color: rgb(255, 115, 0);
   }
 
+/*rewannop code**/
+.App-png{
+
+  
+ 
+  
+}
+
+
+
+
+
+
+
+
+
 
 @media(min-width:760px)
 {
@@ -214,8 +230,9 @@
     font-size: 30px;
     border-style:groove ;
   }
-  /*rewannop code**/
+  
+  
+   
   
   
 }
- 

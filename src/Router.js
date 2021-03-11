@@ -10,13 +10,18 @@ import Store from './Store';
 import Chatbox from './Chatbox';
 import Profile from './Profile';
 import Buyshop from './Buyshop';
-
+import Success from './Success1';
 function Router(){
 
     return(
    <BrowserRouter>
    <Switch>
-   <Route path = "/buyshop">
+  
+   <Route path = "/Success1">
+    <Success/>
+    </Route>
+
+    <Route path = "/buyshop">
     <Buyshop/>
     </Route>
 

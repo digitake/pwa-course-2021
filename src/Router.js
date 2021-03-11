@@ -7,6 +7,7 @@ import FriendList from './FriendList' ;
 import Profile from './Profile' ;
 
 import AddFriend from './AddFriend';
+import HomePage from './HomePage';
 
 function Router() {
     return(
@@ -27,7 +28,11 @@ function Router() {
                 </Route>
 
                 <Route path="/">
-                    <Chatbox/>
+                    <Chatbox />
+                </Route>
+
+                <Route path="/Home-page">
+                    <HomePage />
                 </Route>
                 
             </Switch>

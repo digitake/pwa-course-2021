@@ -4,11 +4,12 @@ import sticker1 from './stickerA.png';
 import sticker2 from './stickerB.png';
 import sticker3 from './stickerC.png';
 import sticker4 from './stickerD.png';
-
+import HeadOfList from './HeadOfList';
 
 
 function Store() {
     return(
+        <HeadOfList>
         <div className="App">
 
 
@@ -19,7 +20,7 @@ function Store() {
 
            <div className="App-test"></div>
            <div className="App-pic-left" > 
-           <Link to="/home" >
+           <Link to="/buyshop" >
               <img src={sticker1}/>
               </Link> 
               <div className="App-text-left">
@@ -32,7 +33,7 @@ function Store() {
            <div className="App-test"></div>
 <div className="App-pic-left" >  
 
-               <Link to="/home" >
+               <Link to="/buyshop" >
               <img src={sticker2}/>
               </Link> 
               <div className="App-text-left">
@@ -46,7 +47,7 @@ function Store() {
                <div className="App-test"></div>
 <div className="App-pic-left" >  
 
-               <Link to="/home" >
+               <Link to="/buyshop" >
               <img src={sticker3}/>
               </Link> 
               <div className="App-text-left">
@@ -58,7 +59,7 @@ function Store() {
                <div className="App-test"></div>
 <div className="App-pic-left" >  
 
-               <Link to="/home" >
+               <Link to="/buyshop" >
               <img src={sticker4}/>
               </Link> 
               <div className="App-text-left">
@@ -71,7 +72,7 @@ function Store() {
    </div>
 
     </div>
-
+    </HeadOfList>
    );
 
 }

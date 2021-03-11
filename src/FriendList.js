@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 
-function FriendList(){
-    return(
+function FriendList() {
+    return (
         <div>
             Friend List
-            <Link to="/PrivateChat">
+            <Link to='/'>
                 <button>
-                    Go Chatroom
+                    Go chatroom
                 </button>
             </Link>
         </div>

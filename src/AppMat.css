@@ -1,154 +1,118 @@
-.LogoApp {
-/* LogoApplication */
-    text-align: center;
-    position: relative;
-    width: 414px;
-    height: 896px;
-    margin: auto;
-    background-image: url(/src/AppchatUpdate/LogoApplication.png);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-position: center ;
-    background-size: 103%;
-    background-repeat: no-repeat;
-}
-
-.AppLogin{
-    position: absolute;
-    width: 167px;
-    height: 52px;
-    left: 17px;
-    top: 770px;
-}
-
-.AppRegister{
-    position: absolute;
-    width: 167px;
-    height: 52px;
-    left: 226px;
-    top: 770px;
-}
-
-.Login{
-    position: relative;
-    width: 414px;
-    height: 896px;
-    margin: auto;
-    background-image: url(/src/AppchatUpdate/Log\ In.png);
-}
 
 .Undo{
-    position: absolute;
+
+    position: relative;
     width: 28.55px;
     height: 23.85px;
     left: 13px;
     top: 58px;
 }
 
-.SingIn{
-    position: absolute;
-    left: 8.7%;
-    right: 8.45%;
-    top: 35.27%;
-    bottom: 58.93%;
-}
-
-.Register{
-    margin: auto;
-    position: relative;
-    width: 414px;
-    height: 896px;
-    background-image: url(/src/AppchatUpdate/RegisterStep1.png);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.RegisterNextStep{
-    
-    position: absolute;
-    left: 8.7%;
-    right: 8.45%;
-    top: 34.15%;
-    bottom: 60.04%;
-}
-
-.NextStep{
-    margin: auto;
-    position: relative;
-    width: 414px;
-    height: 896px;
-    background-image: url(/src/AppchatUpdate/RegisterStep2Username.png);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.SingUP{
-    position: absolute;
-    width: 343px;
-    height: 52px;
-    left: 36px;
-    top: 242px;
-}
-
-
-.HomePageInfo{
-    margin: auto;
-    position: relative;
-    width: 414px;
-    height: 896px;   
-    background-image: url(/src/AppchatUpdate/AppHomePage.png);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.ChatBar{
-    position: absolute;
-    width: 40px;
-    height: 38px;
-    left: 21px;
-    top: 845px;
-}
-
-.GroupBar{
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    left: 93px;
-    top: 842px;
-}
-
-.PrivateBar{
-    position: absolute;
-    width: 40px;
-    height: 36px;
-    left: 281px;
-    top: 845px;
-}
-
-.SettingBar{
-    position: absolute;
-    width: 40px;
-    height: 36px;
-    left: 353px;
-    top: 845px;
-}
-
-.SettingPage{
-    margin: auto;
-    position: relative;
-    width: 414px;
-    height: 896px;   
-    background-image: url(/src/AppchatUpdate/Setting.png);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 .Undo2{
-    position: absolute;
+
+    position: relative;
     width: 28.54px;
     height: 23.84px;
     left: 14px;
     top: 77px;
 }
 
+
+.HomePageInfo{
+    margin: auto;
+    display: flex;  
+    width: 414px;
+    height: 896px;
+    flex-direction: column;
+    justify-items: start;
+    background-repeat: no-repeat;
+    background-image: url(/src/AppchatUpdate/MenuHomeBar.png);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-position: center bottom ;
+}
+
+.HomePageInfo-topBar{   
+
+    justify-items: start;
+    flex-direction: column;
+    width: 414px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-image: url(/src/AppchatUpdate/StatusBar.png);
+    
+}
+.HomePageInfo-search{
+
+    background-image: url(/src/AppchatUpdate/SearchBar.png) ;
+    width: 414px;
+    height: 83px;
+}
+
+.HomePageInfo-backgroun{
+
+    display: flex;
+    align-items: flex-start;
+    height: 765px;
+    background-image: url(/src/AppchatUpdate/Rectangle.png);
+    
+}
+
+.HomePageInfo-backgroun-Botchat{
+
+    display: flex;
+    padding: 12px;
+    align-content: center;
+    width: 241px;
+    height: 69px;
+    
+}
+
+.ToolBar{
+
+    display: flex;
+    flex: 12;
+    flex-direction: row;
+    justify-self: end;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 374px;
+    height: 60px; 
+    
+}
+
+.pandding{
+
+    padding-bottom: 6px;
+}
+
 .LogOut{
-    position: absolute;
+
+    position: relative;
     width: 178.78px;
     height: 51.22px;
     left: 47.22px;
-    top: 722.78px;
+    top: 698px;
 }
+
+.MenuHomeBar{
+    position: relative;
+    width: 414px;
+    height: 82px;
+    left: 0px;
+    top: 814px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.SettingPage{
+    margin: auto;
+    width: 414px;
+    height: 896px;
+
+    background-repeat: no-repeat;
+    background-image: url(/src/AppchatUpdate/Setting.png);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+

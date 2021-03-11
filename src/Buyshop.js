@@ -2,20 +2,17 @@ import{Link} from 'react-router-dom';
 import './App.css';
 import rew2 from './rew2.png';
 import rewB from './rewbb.png';
+import HeaderOfChat from './HeadOfApp';
 
 
 function Buyshop2() {
     return(
+        <HeaderOfChat>
         <div className="App">
 
        
-        <div className="App-header-home">
-        Buyshop
-                       
-    </div>
-<div className="App-test">
+       
 
-</div>
 <div className="App-middle-home">
 
 <div > 
@@ -94,6 +91,7 @@ function Buyshop2() {
    </div>
 
     </div>
+    </HeaderOfChat>
 
    );
 

@@ -1,15 +1,15 @@
-import App from './App';
-
+import HeadOfApp from './HeaderOfChat';
+import './App.css';
 
 function Profile()
 {return(
-<App>
+<HeadOfApp>
 
-    <div>
+    <div >
         Profile
         
     </div>
-</App>
+</HeadOfApp>
 )
 };
 export default Profile;

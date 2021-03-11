@@ -9,13 +9,20 @@ import GroupChat from './GroupChat';
 import Store from './Store';
 import Chatbox from './Chatbox';
 import Profile from './Profile';
+
 import Buyshop from './Buyshop';
 import Success from './Success1';
+
+import HeadOfApp from './HeadOfApp';
+import HeaderOfChat from './HeaderOfChat';
+
+
 function Router(){
 
     return(
    <BrowserRouter>
    <Switch>
+
   
    <Route path = "/Success1">
     <Success/>
@@ -24,6 +31,17 @@ function Router(){
     <Route path = "/buyshop">
     <Buyshop/>
     </Route>
+
+
+   <Route path ="/HeaderOfChat">
+<HeaderOfChat/>
+</Route>
+
+   <Route path ="/HeadOfApp">
+<HeadOfApp/>
+</Route>
+
+
 
 <Route path ="/profile">
 <Profile/>

@@ -1,92 +1,70 @@
 import{Link} from 'react-router-dom';
 import './App.css';
+import Friend1 from './Friend1.png';
+import HeadOfList from './HeadOfList';
 function PapFriendList() {
     return(
-<div>
-<div className="App-login-head">
-PAP Friendlist
-</div>
-   
-   <div>
+       <HeadOfList>
 
-   </div>
-   
-   <div className="App-PapFriendList-body">
+<div>
+<div className="App-head-grouplist">
+Friend1
+
+<div className="App-PapFriendList-body">
 
 <Link to="/chat-friend">
-            <button>
-                Friend1
-            </button>
-            </Link>
+   <img src={Friend1}/>
+              </Link>
    </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/chat-friend">
-            <button>
-                Friend2
-            </button>
-            </Link>
    </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/chat-friend">
-            <button>
-                Friend3
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/chat-friend">
-            <button>
-                Friend4
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/chat-friend">
-            <button>
-                Friend5
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/chat-friend">
-            <button>
-                Friend6
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-  
-      
-  
-   <Link to="/chat-friend">
-            <button>
-                Friend7
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/chat-friend">
-            <button>
-                Friend8
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/chat-friend">
-            <button>
-                Friend9
-            </button>
-            </Link>
-   </div>
-   <div className="App-PapFriendList-body">
-   <Link to="/home">
-            <button>
-                Home
-            </button>
-            </Link>
 
+   <div className="App-head-grouplist">
+   Friend2
+
+<div className="App-PapFriendList-body">
+
+<Link to="/chat-friend">
+   <img src={Friend1}/>
+              </Link>
    </div>
    </div>
+
+   <div className="App-head-grouplist">
+   Friend3
+
+<div className="App-PapFriendList-body">
+
+<Link to="/chat-friend">
+   <img src={Friend1}/>
+              </Link>
+   </div>
+   </div>
+
+   <div className="App-head-grouplist">
+   Friend4
+
+<div className="App-PapFriendList-body">
+
+<Link to="/chat-friend">
+   <img src={Friend1}/>
+              </Link>
+   </div>
+   </div>
+
+   <div className="App-head-grouplist">
+   Friend5
+
+<div className="App-PapFriendList-body">
+
+<Link to="/chat-friend">
+   <img src={Friend1}/>
+              </Link>
+   </div>
+   </div>
+
+   
+   </div>
+   </HeadOfList>
    )
    
 }

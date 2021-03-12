@@ -14,12 +14,6 @@ function  DocWork()
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
     </iframe>
-    
-        <Link to ="/Home"> 
-        <button  class="Home-1">   
-        </button>
-        </Link>
-            
   
         </div>
         

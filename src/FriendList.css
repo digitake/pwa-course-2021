@@ -16,16 +16,18 @@
     background-position: center;
     text-align: center;
     color: cornsilk;
+    
   }
 
   .FriendList-Headers {
     float: right;
-    font-size: 15px;
+    font-size: 10px;
   }
   
   .FriendList-Contact-info {
     background-color: rgb(255, 255, 255);
     padding: 300px 0;
+    border-style: groove;
   }
   .FriendList-chatroom {
     flex: 12;

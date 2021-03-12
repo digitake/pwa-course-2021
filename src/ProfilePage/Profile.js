@@ -1,9 +1,9 @@
 import './Profile.css';
-import App from './App';
+import App from '../App';
 import { Link } from "react-router-dom";
 
 
-function Profile(){
+function Profile({children}){
     return(
     <App>
     <div className="Profile">
@@ -20,17 +20,29 @@ function Profile(){
 
         <div className="Profile-header">
             <div className="Profile-room-Button">
+             <Link to = "/Post">
+               <button>
+                  Post
+               </button>
+             </Link>
+
              <Link to = "/Image">
-               <image>
-               <img src ="buttonChat.png"/>
-               </image>
+               <button>
+                  Image
+               </button>
+             </Link>
+
+             <Link to = "/Video">
+               <button>
+                  Video
+               </button>
              </Link>
             </div>
 
         </div>
 
-        <div className="Profile-chatroom">
-           Name Surname
+        <div className="Profile-content">
+           {children}
         </div>
 
     </div>

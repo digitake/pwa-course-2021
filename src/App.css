@@ -20,13 +20,17 @@
   pointer-events: none;
 }
 
+.App-back-icon{
+  width: 70px;
+  font-size:30px;
+}
+
 .App-header {
   flex: 1;
-  background-color: #000000;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  font-size:30px;
+  background-color: #000000;
   color: rgb(255, 255, 255);
 }
 
@@ -36,18 +40,17 @@
   }
 }
 
-.App-chatroom {
+.App-content {
   flex: 12;
-
-  background-color: rgba(170, 158, 212, 0.418);
-  background-image: url();
+  background-image: url(Space.jpg);
+  background-size: cover;
 
 }
 
-.App-chatroom-text {
+.App-content-text {
   margin: 8px;
 
-  background-color: rgb(206, 87, 87);
+  background-color: rgba(73, 73, 73, 0.103);
 
   color : rgb(255, 255, 255);
   font-size: 20px;
@@ -55,16 +58,16 @@
 
 .App-textbox {
   flex: 1;
-
   background-color: rgb(0, 0, 0);
-
   justify-content: center;
   align-items: stretch;
   display: flex;
+  font-size:40px;
+  color:lightblue;
 }
 
 .App-textbox-input {
-  flex: 5;
+  flex: 6;
   height: 100%;
   box-sizing: border-box;
 }
@@ -77,6 +80,49 @@
   align-items: center;
   display: flex;
 }
+
+.App-textbox-icon{
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  font-size:30px;
+  padding: 10px;
+}
+
+@media (min-width: 768px){
+  .App-textbox-icon{
+  display: flex;
+  justify-content: space-between;
+  }
+}
+
+.App-chatbot-icon{
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  font-size:40px;
+  padding: 10px;
+  color:rgb(255, 255, 255);
+}
+
+.App-header-friend{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size:30px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.hide-when-small { display: none }
+
+.hide-when-big {display: none;}
+ 
+@media (min-width: 768px) { .hide-when-small {display:flex}}
+
+@media (max-width: 768px) { .hide-when-big {display: flex}}
+
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}

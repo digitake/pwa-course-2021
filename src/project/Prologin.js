@@ -1,5 +1,6 @@
 import './Prologin.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import BGlogin from './LayoutHomework/BGlogin';
 
 function Prologin({children}) {
   return (
@@ -10,7 +11,8 @@ function Prologin({children}) {
       </div>
 
       <div className ="background-login">
-         
+
+          <BGlogin>
              <div to="/" className="Prologin-logo">
                  <img src= "/Project/Prologin/boxchat.jpg" alt = "/Project/Prologin/boxchat.jpg" 
                width="370px" height="290px"/> 
@@ -25,6 +27,7 @@ function Prologin({children}) {
                  <img src= "/Project/Prologin/register.jpg" alt = "/Project/Prologin/register.jpg" 
                width="240px" height="70px"/> 
              </Link>
+          </BGlogin>
 
       </div>   
 

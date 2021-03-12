@@ -1,4 +1,4 @@
-import './Prologin.css';
+import './BGlogin.css';
 
 function BGlogin({children}) {
     return (

@@ -12,7 +12,7 @@ function Router() {
                   <FriendList />
               </Route>
               <Route path="/ProChatroom">
-                  <ProChatroom />
+                  <ProChatroom/>
               </Route>
             </Switch>
         </BrowserRouter>

@@ -31,9 +31,9 @@
   color: rgb(255, 255, 255);
 }
 
-.App-chatroom {
+.App-content {
   flex: 12;
-
+  
   background-color: rgba(30, 203, 255, 0.418);
   
 

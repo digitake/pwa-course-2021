@@ -5,17 +5,20 @@
     pointer-events: none;
   }
   
-  .App-header {
+  .header {
     flex: 1;
-    background-color: rgb(31, 103, 211);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: rgb(247, 247, 247);
+
+  background-color: #e70505;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(233, 1, 1);
+    
   }
   
-  .App-chatroom {
+  .chatroom {
     flex: 12;
   
     background-color: rgba(30, 203, 255, 0.418);
@@ -23,7 +26,7 @@
   
   }
   
-  .App-chatroom-text {
+  .chatroom-text {
     margin: 8px;
   
     background-color: rgb(255, 255, 255);
@@ -32,7 +35,7 @@
     font-size: 20px;
   }
   
-  .App-textbox {
+  .textbox {
     flex: 1;
   
     background-color: rgba(0, 215, 223, 0.575);
@@ -42,13 +45,13 @@
     display: flex;
   }
   
-  .App-textbox-input {
+  .textbox-input {
     flex: 5;
     height: 100%;
     box-sizing: border-box;
   }
   
-  .App-textbox-send {
+  .textbox-send {
     flex: 1;
     height: 100%;
     vertical-align: middle;
@@ -56,48 +59,36 @@
     align-items: center;
     display: flex;
   }
-  
-  .circlesbox1{
-    margin-top: 15px;
-    margin-left: 100px;
-    margin-left: -300px;
-    margin-right: 5px;
-    width: 90%;
-    vertical-align: left;
-    clip-path: circle();
+
+
+  .noelly  {
+    color: rgb(255, 255, 255); 
+   margin-top: 20px;
+   margin-left: -80px;
+   font-size: 30px;
+ 
   }
-  .circlesbox2{
+  .noelphoto{
     margin-top: -60px;
-    margin-left: 100px;
-    margin-left: 400px;
+    margin-left: -330px;
     margin-right: 5px;
-    width: 90%;
-    vertical-align: left;
-  }
-  .noelly {
-    position: absolute;
-    top: 20px;
-    left: 280px;
-    max-height: 500px;
-    height: 100px;
+    clip-path: circle();
+    justify-content: center;
   }
 
   .imp{
-    margin-top: -60px;
-    margin-left: 100px;
+    margin-top: -60px;;
     margin-left: -450px;
     margin-right: 5px;
-    width: 50%;
     vertical-align: left;
+    background-color: transparent;
   }
   .imp2{
     margin-top: -60px;
-    margin-left: 100px;
     margin-left: 400px;
     margin-right: 5px;
-    width: 80%;
     vertical-align: left;
-
+    
   }
   .App {
     display: flex;
@@ -109,3 +100,9 @@
     margin: auto;
     background-color: rgb(55, 125, 231);
   }
+.control{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 5px;
+  width: 90%;
+}

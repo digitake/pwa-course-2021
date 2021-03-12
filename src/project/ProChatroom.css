@@ -1,0 +1,111 @@
+
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    flex: 1;
+    background-color: rgb(31, 103, 211);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(247, 247, 247);
+  }
+  
+  .App-chatroom {
+    flex: 12;
+  
+    background-color: rgba(30, 203, 255, 0.418);
+    
+  
+  }
+  
+  .App-chatroom-text {
+    margin: 8px;
+  
+    background-color: rgb(255, 255, 255);
+  
+    color : rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  
+  .App-textbox {
+    flex: 1;
+  
+    background-color: rgba(0, 215, 223, 0.575);
+  
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+  }
+  
+  .App-textbox-input {
+    flex: 5;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .App-textbox-send {
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .circlesbox1{
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-left: -300px;
+    margin-right: 5px;
+    width: 90%;
+    vertical-align: left;
+    clip-path: circle();
+  }
+  .circlesbox2{
+    margin-top: -60px;
+    margin-left: 100px;
+    margin-left: 400px;
+    margin-right: 5px;
+    width: 90%;
+    vertical-align: left;
+  }
+  .noelly {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    max-height: 500px;
+    height: 100px;
+  }
+
+  .imp{
+    margin-top: -60px;
+    margin-left: 100px;
+    margin-left: -450px;
+    margin-right: 5px;
+    width: 50%;
+    vertical-align: left;
+  }
+  .imp2{
+    margin-top: -60px;
+    margin-left: 100px;
+    margin-left: 400px;
+    margin-right: 5px;
+    width: 80%;
+    vertical-align: left;
+
+  }
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 550px;
+    height: 87%;
+    margin: auto;
+    background-color: rgb(55, 125, 231);
+  }

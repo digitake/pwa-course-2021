@@ -33,8 +33,14 @@ const onSend = () => {
           <div className="profile-read-tar"></div>
           </Link>
           <Link to="/EndTrue">
-          <div className=".show-end-true"></div>
+          <div className=".show-end-true">
           <h3>EndTrue</h3>
+          </div>
+          </Link>
+          <Link to="/EndFalse">
+          <div className=".show-end-true">
+          <h3>EndFalse</h3>
+          </div>
           </Link>
           <div className="profile-read-pruek"></div>
           <div className="profile-read-phai"></div>

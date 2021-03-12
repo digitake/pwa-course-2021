@@ -1,4 +1,7 @@
-/* .App {
+@media  (min-width: 1501px) {
+.App {
+    /* PC */
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,36 +9,53 @@
     max-width: 400px;
     height: 100%;
     margin: auto;
-    background-image: url();
+    background-image: url(candle.jpg);
     background-repeat: no-repeat; 
-    background-position: center ; 
+    background-position : center;
+    background-size: cover;
     font-size: 24px;
-  } */
+    }
+  }
   
-   @media (min-width: 768px) {
+   @media (min-width: 760px) {
     .App {
-      max-width:100%;
-      background-color: red;
-      width: 95%;
+      /* IPHONE */
+      align-items: center;
+       max-width:100%; 
+      background-image: url(candle.jpg);
+      background-repeat: no-repeat; 
+      background-position: center ; 
+      background-size: cover;
+       width: 95%; 
     }
   } 
   
-  /* @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 1500px) and (max-width: 761px) {
     .App {
-      width: 95%;
-      background-color: rgb(255, 112, 68);
-      background-image: url(Ju-on.png);
-      background-blend-mode: soft-light;
+      /* IPAD */
+      align-items: center;
+       width: 100%;  
+      background-image: url(candle.jpg);
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center ;
     }
-  } */
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
   }
   
+  .App-text {
+    height: 10%;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    background-color: rgb(235, 72, 72);
+    color: rgb(255, 255, 255);
+  }
+
+
   .App-header {
     flex: 1;
     background-color: #fffc5c;
@@ -57,9 +77,10 @@
   
   .EndScene-survived{
     position: relative;
-    color: ghostwhite;
+    color: rgb(255, 255, 255);
     bottom: 30px;
     font-size: 30px;
+    text-align: center;
   }
 
 .col-1 {width: 8.33%;}
@@ -75,14 +96,5 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;} 
 
-@media  (max-width: 760px){
-    /* IPHONE */
-}
 
-@media  (max-width: 1500px) and (min-width: 761px) {
-    /* IPAD */
-}
 
-@media  (min-width: 1501px) {
-    /* PC */
-}

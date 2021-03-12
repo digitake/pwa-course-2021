@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-  
-import './Chatbox.css';
-import {useState} from 'react' ;
-import App from './App'
-=======
 import './Chatbox.css';
 import {useState} from 'react' ;
 import App from "./App";
 
->>>>>>> 5b6a495c3344b009890d0ce690209925488a1cfc
 
 function Chatbox() {
 

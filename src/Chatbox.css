@@ -38,29 +38,17 @@
 
 .App-textbox {
   flex: 1;
-<<<<<<< HEAD
-
-  background-color: rgb(255, 116, 116);
-
-=======
   background-color: rgb(224, 220, 220);
->>>>>>> 5b6a495c3344b009890d0ce690209925488a1cfc
   justify-content: center;
   align-items: stretch;
   display: flex;
 }
 
 .App-textbox-input {
-<<<<<<< HEAD
-  flex: 5;
-  height: 100%;
-  box-sizing: border-box;
-=======
   flex: 10;
   height: 100%;
   box-sizing: border-box;
   font-size: x-large;
->>>>>>> 5b6a495c3344b009890d0ce690209925488a1cfc
 }
 
 .App-textbox-send {
@@ -70,8 +58,6 @@
   justify-content: center;
   align-items: center;
   display: flex;
-<<<<<<< HEAD
-=======
 }
 
 @media (max-width: 768px){
@@ -87,5 +73,4 @@
     background-color: rgb(25, 72, 226);
     
   }
->>>>>>> 5b6a495c3344b009890d0ce690209925488a1cfc
 }

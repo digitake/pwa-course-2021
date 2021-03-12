@@ -1,0 +1,33 @@
+.Prologin {
+  flex: 12;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  height: 87%;
+  margin: auto;
+  background-color: rgb(31, 103, 211);
+}
+
+.background-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  background-color: rgb(31, 103, 211);
+}
+
+.Prologin-logo {
+  margin-top: -50px;
+}
+
+.signin-logo {
+  padding-top: 110px;
+}
+
+.register-logo {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}

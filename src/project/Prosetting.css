@@ -1,0 +1,78 @@
+.Prosetting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 550px;
+    height: 87%;
+    margin: auto;
+    background-color: rgb(31, 103, 211);
+}
+
+.Prosetting-header {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
+.Prosetting-Bg{
+    flex: 12;
+    display: flex;
+    flex-direction: column;
+}
+
+.Prosetting-ProUi{
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Prosetting-InterUi{
+    flex: 0.35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Prosetting-Text {
+    margin-top:-10%;
+    margin-right:-20%;
+}
+
+.Prosetting-Icon-Back {
+    margin: auto;
+    margin-left: -1400%;
+}
+
+.Prosetting-Pro{
+    margin: auto;
+}
+
+.Prosetting-User {
+margin: auto;
+}
+
+.Prosetting-Account {
+    margin:auto;
+}
+
+.Prosetting-Laug {
+    margin:auto;
+}
+
+.Prosetting-Support {
+    margin:auto;
+}
+
+.Prosetting-Not {
+    margin:auto;
+}
+
+.Prosetting-Logout {
+    margin:auto;
+}

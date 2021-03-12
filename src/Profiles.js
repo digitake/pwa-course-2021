@@ -11,10 +11,9 @@ function profiles() {
             </div>
 
         <div className = "Info">
-
                 <div className = "Profile" >
                     <CgProfile/>
-                    <div classname = "InfoProfile">
+                    <div classname = "InfoWProfile">
                         Profile
                     </div>
                 </div>
@@ -42,11 +41,12 @@ function profiles() {
 
                 <div className = "Twitter">
                     <GrTwitter/>
-                        <div classname = "InfoTwitter">
-                            Twitter is take over by flametwit
-                        </div>
+                    <div classname = "InfoWTwitter">
+                        Twitter is take over by flametwit
+                    </div>
                 </div>
-                
+
+
             </div>
         </div>
         

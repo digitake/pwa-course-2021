@@ -13,7 +13,6 @@
     color:#ffffff;
     display: flex;
     background-color: #505396;
-    flex-direction: column;
     align-items:center;
     justify-content: center;
     width:100%;
@@ -30,12 +29,20 @@
 
 .Profile{
   display:flex;
-  flex:3;
+  flex:2.4;
   width:100%;
   align-items: center;
   justify-content: space-around;
   color:#ffffff;
   font-size: 100px;
+}
+
+.InfoProfile {
+  display:flex;
+  flex:0.95;
+  justify-content: center;
+  background-color:#505396;
+  font-size: 30px;
 }
 
 .InfoFacebook{
@@ -46,7 +53,7 @@
 
 .Facebook{
   display:flex;
-  flex:3;
+  flex:2.4;
   width:100%;
   align-items: center;
   justify-content: space-around;
@@ -64,7 +71,7 @@
 
 .Instagram{
   display:flex;
-  flex:3;
+  flex:2.4;
   width:100%;
   align-items: center;
   justify-content: space-around;
@@ -82,7 +89,7 @@
 
 .Github{
   display:flex;
-  flex:3;
+  flex:2.4;
   width:100%;
   align-items: center;
   justify-content: space-around;
@@ -100,7 +107,7 @@
 
 .Twitter {
   display:flex;
-  flex:3;
+  flex:2.4;
   width:100%;
   align-items: center;
   justify-content: space-around;
@@ -115,6 +122,7 @@
   background-color:#505396;
   font-size: 30px;
 }
+
 
 
 

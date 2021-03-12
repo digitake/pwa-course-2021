@@ -21,18 +21,32 @@
   }
 .header{
     background-color: #3d14f5;
-    max-width: ;
-    height: 150px;
+    height: flex;
   }
+.chatname a{
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+font-size: 2rem;
+}
 .header-content{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    align-items: center;
-  }
+display: flex;
+justify-content: space-between;
+height: flex;
+align-items: center;
+
+}
 .Function-link{
-    color: #fff;
+    display: flex;
+    list-style-type: none;
   }
+.Function li {
+  padding-right: 2rem;
+}
+.Function li a{
+  text-decoration: none;
+  color: #fff;
+}
 .App-chatroom 
   {
     flex: 12;

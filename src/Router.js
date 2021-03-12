@@ -3,10 +3,9 @@ import FriendList from "./FriendList";
 import EnterApp_3ofghost from "./EnterApp_3ofghost";
 import Profiletar from "./Profile-Tar";
 import LobbySetting from "./LobbySetting";
-import ChatBox from "./Chatbox";
 import LoadingBar from "./LoadingBar";
 import Phai from './ProfilePhai';
-import ButtonLobbySetting from "./ButtonLobbySettings";
+import Lobby from "./Lobby";
 
 
 function Router() {
@@ -27,16 +26,13 @@ function Router() {
                     <FriendList/>
                 </Route>
                 <Route path="/App">
-                    <ChatBox/>
+                    <Lobby/>
                 </Route>
                 <Route path="/LobbySetting">
                     <LobbySetting/>
                 </Route>
                 <Route path="/">
                     <EnterApp_3ofghost/>
-                </Route>
-                <Route path="/ButtonLobbySettings">
-                    <ButtonLobbySetting/>
                 </Route>
             </Switch>
         </BrowserRouter>

@@ -5,6 +5,7 @@ import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import PageDrawing from './PageDrawing';
 import Profile from './Profile';
+import App from './App';
 
 function Router(){
     return(

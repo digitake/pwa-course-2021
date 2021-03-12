@@ -1,6 +1,7 @@
 import './Chatbox.css';
 import {Link} from 'react-router-dom';
 import { useState } from 'react';
+import App from './App';
 
 function Chatbox() {
   const [text, setText] = useState("");
@@ -19,6 +20,7 @@ function Chatbox() {
     }
   }
   return (
+    <App>
     <div className="App">
       <div className="App-header">
       <Link to="/friend-list">
@@ -47,7 +49,8 @@ function Chatbox() {
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
     </div>
+    </App>
   );
 }
 
-export default App;
+export default Chatbox;

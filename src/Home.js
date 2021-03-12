@@ -31,16 +31,6 @@ function Home() {
                 </button>
             </Link>
         </div>
-
-        <div className = "Text">
-            Find
-            <div>
-            Friends
-        </div>
-        </div>
-        <div className = "gif">
-        <img src = {gif} alt= "" width = "300" height = "300"></img>
-        </div>
         <div className ="logo">
             <img src = {logo} alt= "" width = "75" height = "75"></img>
         </div>

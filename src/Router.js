@@ -2,11 +2,15 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Chatbox  from "./Chatbox";
 import FriendList from "./FriendList";
-import ShopPage from "./ShopPage";
 import Menu from "./Menu";
-import ProfilePage from "./ProfilePage";
+import Profile from "./Profile";
+import Image from "./Image";
 import GamePage from "./GamePage";
-import App from "./App";
+import HotStickersList from "./Sticker-Category/HotStickersList";
+import Sticker0001 from "./Details-Stickers/Sticker0001";
+import Sticker1001 from "./Details-Stickers/Sticker1001";
+import NewStickersList from "./Sticker-Category/NewStickersList";
+
 
 // Create Component
 function Router()  {
@@ -17,17 +21,13 @@ function Router()  {
             <Route path="/friend-list">
               <FriendList />
             </Route>
-            
-            <Route path="/shop-page">
-              <ShopPage />
-            </Route>
 
             <Route path="/menu">
               <Menu />
             </Route>
 
-            <Route path="/profile-page">
-              <ProfilePage />
+            <Route path="/profile">
+              <Profile />
             </Route>
 
             <Route path="/game-page">
@@ -36,6 +36,26 @@ function Router()  {
 
             <Route path="/Chatbox">
               <Chatbox />
+            </Route>
+
+            <Route path="/HotStickersList">
+              <HotStickersList />
+            </Route>
+
+            <Route path="/NewStickersList">
+              <NewStickersList />
+            </Route>
+
+            <Route path="/Sticker0001">
+              <Sticker0001 />
+            </Route>
+
+            <Route path="/Sticker1001">
+              <Sticker1001 />
+            </Route>
+
+            <Route path="/Image">
+              <Image />
             </Route>
 
             <Route path="/">

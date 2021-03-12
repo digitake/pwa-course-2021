@@ -1,4 +1,4 @@
-.App {
+.Profile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,9 +6,33 @@
     max-width: 1920px;
     height: 100%;
     margin: auto;
-    background-color: aquamarine;
+    background-color: rgb(83, 179, 147);
 }
 
-.App-content{
+.Profilemid{
+    flex: 12;
+    margin: 10px;
+    width: 100%;
+  }
+  
+
+
+
+.Profilename{
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 5px;
+    width: 95%;
     
+    color: rgb(4, 0, 255);
+    font-size: 40px;
+    
+  }
+
+.Profileinfo{
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 5px;
+    color: rgb(4, 0, 255);
+    font-size: 35px;
 }

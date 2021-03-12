@@ -1,17 +1,17 @@
 
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
-import App from './App';
 import FriendList from './FriendList';
 import Cradit from './Cradit';
 import Home from './Home';
 import DocWork from './DocWork';
 import PhotoList from './PhotoList';
+import Chatbox from './Chatbox';
 function  Router() {
     return(
        <BrowserRouter>
        <Switch>
               <Route path="/chat-room">
-                  <App/>
+                  <Chatbox/>
               </Route>
               <Route path="/photo-list">
                   <PhotoList/>

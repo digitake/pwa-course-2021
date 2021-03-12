@@ -29,18 +29,16 @@
   flex: 3;
   background-image: url(game.JPG);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content:flex-end;
-  color: #000;
-  padding-right: 16px;
+  justify-content: center;
   /* font-size: calc(10px + 2vmin);
   color: white; */
 }
 
 .App-content {
   flex: 12;
-  background-color: rgb(68, 233, 197);
+  background-color: rgb(66, 221, 188);
 
 }
 

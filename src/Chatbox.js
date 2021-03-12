@@ -1,23 +1,26 @@
 import React, { useState } from 'react';
-import './PrivateChatRoom.css';
-import Headerchat from './Headerchat';
-import { FiMicOff,FiLogOut,FiMoreVertical,FiClipboard,FiSearch,FiSettings,FiUsers,FiPlusCircle,FiSend,FiMenu,FiX } from "react-icons/fi";
+import './Chatbox.css';
+import App from './App';
 
-function PrivateChatRoom() {
+function Chatbox() {
+
   const [text, setText] = useState("")
-  const [lines, setLines] = useState(["msg1"]);
+
+  const [lines, setLines] = useState(["msg1" , "msg2" , "msg3" , "msg4" , "msg5"]);
+
   const onTextChange = (event) => {
     setText(event.target.value);
   };
+
   const onSend = () => {
     setLines(lines => [...lines, text]);
     setText("");
   };
 
   return (
-      <Headerchat>
-    <div className="AppPrivate">
-      <div className="App-chatroom">
+      <App>
+    <div className="App">
+      <div className="App-content">
       {
         lines.map(x =>{
           return <div className="App-chatroom-text">
@@ -27,13 +30,13 @@ function PrivateChatRoom() {
       }
       </div>
       <div className="App-textbox">
-        <button class="btn"><FiPlusCircle/></button>
+        <button class="btn"><i>More Function</i></button>
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} placeholder="Type a message" />
-        <button className="App-textbox-send" button onClick={onSend}><FiSend/>Send</button>
+        <button className="App-textbox-send" button onClick={onSend}>Send</button>
       </div>
-  </div>
-    </Headerchat>
+    </div>
+    </App>
   );
 }
 
-export default PrivateChatRoom;
+export default Chatbox;

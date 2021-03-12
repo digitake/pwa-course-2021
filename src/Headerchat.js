@@ -1,6 +1,7 @@
 import './Headerchat.css';
 import { FiMicOff,FiLogOut,FiMoreVertical,FiClipboard,FiSearch,FiSettings,FiUsers,FiPlusCircle,FiSend,FiMenu,FiX } from "react-icons/fi";
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 
 function Headerchat({children}) {
 
@@ -13,6 +14,9 @@ return(
     <div className="header">
       <div className="header-content">
       <div className="chatname">
+      <Link to = "/HomePage">
+        <img src = "Union(1).png" alt = "" /> 
+      </Link>
         <a href ="#"> Chatroom</a>
       </div>
       <ul className={click ? "menu active" : "menu"}>
@@ -26,7 +30,9 @@ return(
         <a href="#"><FiMicOff/> Mute Chat</a>
       </li>
       <li className="menu-link">
-        <a href="#"><FiLogOut/> Leave</a>
+      <Link to = '/PrivatePage'>
+      <a href="#"><FiLogOut/> Leave</a>
+      </Link>
       </li>
       </ul>
       <div className="mobile-menu" onClick={handleClick}>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "short_name": "Tung Tee",
   "name": "Create React App Sample",
@@ -23,3 +24,5 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+=======
+>>>>>>> e215b60ea8d94712f2aa09dd921b9cef9552868d

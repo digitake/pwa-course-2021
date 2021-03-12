@@ -19,21 +19,24 @@ const onSend = () => {
 };
 return (
   
-  <div className="App">
-    <div className="header">
-       <div className="noelly">noel</div> 
-      <div className="noelphoto">
-        <Link to='/ProProfile'>
-            <img src="Logo noel.jpg" width="50px" height="50px"/>
-        </Link>
-       </div>
-       <div className="imp">
-        <Link to=''>
-            <img src="333.jpg" width="50px" height="50px"/>
-        </Link>
-       </div>
-       <div className="imp2"><img src= "5555.jpg"width="50px" height="50px" /></div>
-      </div>
+    <div className="App">
+      
+      <HeaderLayout>
+      <p className = "noelly">noel</p>
+        <div className="circlesbox1">
+          <Link to='/Profile'>
+              <img src="/Project/Prochatroom/5.jpg" alt="/Project/Prochatroom/5.jpg" width="50px" height="50px"/>
+          </Link> 
+        </div>
+        <div className="imp">
+          <Link to='/Profriend'>
+              <img src="/Project/Prochatroom/333.jpg" alt = "/Project/Prochatroom/333.jpg" width="50px" height="50px"/>
+          </Link>
+        </div>
+        <div className="imp2">
+          <img src= "/Project/Prochatroom/5555.jpg" alt ="/Project/Prochatroom/5555.jpg" width="60px" height="60px" />
+        </div>
+        <HeaderLayout>
       <div className="chatroom">
         {
           lines.map(x =>{
@@ -43,9 +46,9 @@ return (
           })
         }
       </div>
-      <div className="textbox">
-        <input type="text" className="textbox-input" value={text} onChange={onTextChange}/>
-        <div className="textbox-send"onClick={onSend}><img src= "send.png" alt = "send.png" width="70px" height="70px"/></div>
+      <div className="App-textbox">
+        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange}/>
+        <div className="App-textbox-send"onClick={onSend}><img src= "/Project/Prochatroom/send.png" alt = "/Project/Prochatroom/send.png" width="70px" height="70px"/></div>
       </div>
     </div>
   );

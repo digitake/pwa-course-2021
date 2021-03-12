@@ -1,5 +1,5 @@
 import './Profile.css';
-import { Link } from 'react-router-dom';
+import NormalPage from './NormalPage'
 
 function Profile() {
     return (
@@ -8,20 +8,10 @@ function Profile() {
    
         <div>
             Profile
-            <Link to="/">
-                <button>
-                    Go Chatroom
-                </button>
-            </Link>
-            <div>
-                <Link to="/friend-list">
-                    <button>
-                        Go FriendList
-                    </button>
-                </Link>
+            <NormalPage>
+            </NormalPage>
             </div>
          </div>
-        </div>
         </div>
 
     );

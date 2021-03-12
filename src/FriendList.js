@@ -1,5 +1,5 @@
 import './FriendList.css';
-import { Link } from 'react-router-dom';
+import NormalPage from './NormalPage'
 
 function FriendList() {
     
@@ -11,22 +11,13 @@ function FriendList() {
         <div className = "FriendList-Main">
             <div>
                 Friend List
-                <Link to="/">
-                    <button>
-                        Go Chatroom
-                     </button>
-                 </Link>
-                <div>
-                <Link to="/Profile">
-                    <button>
-                        Go Profile
-                    </button>
-                </Link>
+                <NormalPage>
+                </NormalPage>
                 </div>
             </div>
         </div>
         </div>
-        </div>
+    
 
 
 

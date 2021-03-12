@@ -16,21 +16,21 @@ function Prosetting() {
             <div className ="Prosetting-InterUi">
                 <div>
                     <Link to="/Profile">
-                        <img className="Prosetting-Account" src="/Project/Prosetting/Setting_Account.png" alt = "/Project/Prosetting/Setting_Account.png" width="550px" height="70px" />
+                        <img className="Prosetting-Account" src="/Project/Prosetting/Setting_Account.png" alt = "/Project/Prosetting/Setting_Account.png" width="600px" height="80px" />
                     </Link>
                 </div>
                 <div>
-                    <img className="Prosetting-Laug" src="/Project/Prosetting/Setting_Laug.png" alt = "/Project/Prosetting/Setting_Laug.png" width="550px" height="70px" />
+                    <img className="Prosetting-Laug" src="/Project/Prosetting/Setting_Laug.png" alt = "/Project/Prosetting/Setting_Laug.png" width="600px" height="80px" />
                 </div>
                 <div>
-                    <img className="Prosetting-Support" src="/Project/Prosetting/Setting_Support.png" alt = "/Project/Prosetting/Setting_Support.png" width="550px" height="70px" />
+                    <img className="Prosetting-Support" src="/Project/Prosetting/Setting_Support.png" alt = "/Project/Prosetting/Setting_Support.png" width="600px" height="80px" />
                 </div>
                 <div>
-                    <img className="Prosetting-Not" src="/Project/Prosetting/Setting_Notifications.png" alt = "/Project/Prosetting/Setting_Notifications.png" width="550px" height="70px" />
+                    <img className="Prosetting-Not" src="/Project/Prosetting/Setting_Notifications.png" alt = "/Project/Prosetting/Setting_Notifications.png" width="600px" height="80px" />
                 </div>
                 <div>
                     <Link to="/Prologin">
-                        <img className="Prosetting-Logout" src="/Project/Prosetting/Setting_Logout.png" alt = "/Project/Prosetting/Setting_Logout.png" width="550px" height="70px" />
+                        <img className="Prosetting-Logout" src="/Project/Prosetting/Setting_Logout.png" alt = "/Project/Prosetting/Setting_Logout.png" width="600px" height="80px" />
                     </Link>
                 </div>
             </div>

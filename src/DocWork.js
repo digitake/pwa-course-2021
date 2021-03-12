@@ -1,13 +1,13 @@
 import './App.css';
 import{Link} from 'react-router-dom'
 import  './botton.css';
-
+import  App  from './App';
 
 
 function  DocWork() 
 {
     return(
-        <div >  
+        <App><div>  
            
     <iframe title="Google" width="100%" height="1000" 
     src="https://docs.google.com/document/d/1ruuAuaO_ELBasjGb-1yT1lZVOAkiwqy5CZCCysEwXDs/edit?usp=sharing" 
@@ -23,7 +23,7 @@ function  DocWork()
   
         </div>
         
-         )
+        </App> )
 };
 
 

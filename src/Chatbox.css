@@ -22,10 +22,10 @@
 
 .App-chatroom {
   flex: 12;
-   background-image: url(cool1.jpg);
+   /*background-image: url(iconbur30.png);*/
    background-position: center;
    background-repeat: no-repeat;
-   background-color: black;
+   background-color: #ffe2ae;
    
 }
 

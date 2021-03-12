@@ -1,9 +1,123 @@
-.Page{
+.Header{
+  display:flex;
+  flex-direction: column;
   height:100%;
   width:100%;
   margin: auto;
   background-color:#2D2C67;
+
 }
+
+.Profile-Titles {
+    flex:1;
+    color:#ffffff;
+    display: flex;
+    background-color: #505396;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    font-size: calc(10px + 2vmin);
+}
+
+.Info{
+  flex:12;
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  
+}
+
+.Profile{
+  display:flex;
+  flex:3;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  color:#ffffff;
+  font-size: 100px;
+}
+
+.InfoFacebook{
+  display:flex;
+  flex:0.95;
+  justify-content: center;
+}
+
+.Facebook{
+  display:flex;
+  flex:3;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  color:#ffffff;
+  font-size: 100px;
+}
+
+.InfoFacebook{
+  display:flex;
+  flex:0.95;
+  justify-content: center;
+  background-color:#505396;
+  font-size: 40px;
+}
+
+.Instagram{
+  display:flex;
+  flex:3;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  color:#ffffff;
+  font-size: 100px;
+}
+
+.InfoInstagram{
+  display:flex;
+  flex:0.95;
+  justify-content: center;
+  background-color:#505396;
+  font-size: 40px;
+}
+
+.Github{
+  display:flex;
+  flex:3;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  color:#ffffff;
+  font-size: 100px;
+}
+
+.InfoGithub{
+  display:flex;
+  flex:0.95;
+  justify-content: center;
+  background-color:#505396;
+  font-size: 30px;
+}
+
+.Twitter{
+  display:flex;
+  flex:3;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  color:#ffffff;
+  font-size: 100px;
+}
+
+.InfoTwitter{
+  display:flex;
+  flex:0.95;
+  justify-content: center;
+  background-color:#505396;
+  font-size: 30px;
+}
+
+
+
 
 @media (min-width: 700px) {
   .Page {

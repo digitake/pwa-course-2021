@@ -7,10 +7,13 @@ function FriendList(params) {
         <div>
             <div>Friend List</div>
             <Link to="/">
-                Go back
+                go back
         </Link>
+        
         </div>
+    
         </App>
+    
     )
 };
 

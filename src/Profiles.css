@@ -98,7 +98,7 @@
   font-size: 30px;
 }
 
-.Twitter{
+.Twitter {
   display:flex;
   flex:3;
   width:100%;
@@ -108,13 +108,14 @@
   font-size: 100px;
 }
 
-.InfoTwitter{
+.InfoTwitter {
   display:flex;
   flex:0.95;
   justify-content: center;
   background-color:#505396;
   font-size: 30px;
 }
+
 
 
 

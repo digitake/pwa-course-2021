@@ -1,0 +1,153 @@
+.Home {
+  background-color: rgb(207, 238, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .Home {
+    background-color: rgb(207, 238, 250);
+  }
+  .Home-header1{
+      background-position: center;
+  }
+  .Home-header2{
+    background-position: center;
+  }
+  .Home-header3{
+      background-position: center;
+  }
+  .Home-chats{
+      background-position: center;
+  }
+}
+
+.Home-header {
+background-color: rgb(255, 255, 255);
+background-position: center;
+background-repeat: no-repeat;
+flex: 1;
+height: 100%;
+vertical-align: middle;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.Home-header1 {
+background-image: url("design/profile-icon.png");
+background-size: 50px;
+background-position: center;
+background-repeat: no-repeat;
+flex: 1;
+height: 100%;
+vertical-align: middle;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.Home-header2 {
+background-image: url("design/Logo_ChiCHi-04.png");
+background-size: 65px;
+background-position: center;
+background-repeat: no-repeat;
+flex: 1;
+height: 100%;
+vertical-align: middle;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.Home-header3 {
+background-image: url("design/calendar-icon.png");
+background-size: 50px;
+background-position: center;
+background-repeat: no-repeat;
+flex: 1;
+height: 100%;
+vertical-align: middle;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.Home-chats {
+color: rgb(182, 234, 255);
+flex: 12;
+}
+
+.Home-chats-room {
+  background-image: url("design/chats-pic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Home-menu {
+flex: 1;
+background-color: rgb(255, 255, 255);
+background-position: right;
+justify-content: center;
+align-items: stretch;
+display: flex;
+color: rgb(228, 222, 222);
+}
+.Home-menu1 {
+background-image: url("design/Logo_ChiCHi-04.png");
+background-size: 65px;
+background-position: center;
+background-repeat: no-repeat;
+flex: 1;
+height: 100%;
+vertical-align: middle;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+.Home-menu2 {
+background-image: url("design/Design\ Chi\ CHi\ App-03.png");
+background-position: center;
+background-repeat: no-repeat;
+flex: 1;
+height: 100%;
+vertical-align: middle;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.Home-menu3 {
+  background-image: url("design/Design\ Chi\ CHi\ App-04.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Home-menu4 {
+  background-image: url("design/game-icon.png");
+  background-size: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

@@ -1,0 +1,133 @@
+.Chatbox {
+    background-color: rgb(207, 238, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+  }
+  
+  .Chatbox-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .Chatbox-header {
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Chatbox-header1 {
+    background-image: url(design/Design\ Chi\ CHi\ App-08.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Chatbox-header2 {
+    background-image: url(design/Design\ Chi\ CHi\ App-09.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .Chatbox-header3 {
+    background-image: url(design/Design\ Chi\ CHi\ App-10.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .Chatbox-chatroom {
+    color: rgb(182, 234, 255);
+    flex: 12;
+  }
+  .Chatbox-chatroom-text {
+    margin: 8px;
+    background-color: rgb(108, 165,  250);
+    background-size: 30%;
+    color : rgb(23, 24, 24);
+    font-size: 30px;
+  }
+  .Chatbox-textbox {
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    background-position: right;
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+    color: rgb(228, 222, 222);
+  }
+  .Chatbox-textbox-input {
+    flex: 4;
+    height: 100%;
+    box-sizing: border-box;
+    color: rgb(6, 87, 119);
+  }
+  .Chatbox-textbox-send {
+    background-image: url(design/Design\ Chi\ CHi\ App-03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .Chatbox-textbox-send1 {
+    background-image: url(design/Design\ Chi\ CHi\ App-04.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .Chatbox-textbox-send2 {
+    background-image: url(design/Design\ Chi\ CHi\ App-05.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  

@@ -6,15 +6,13 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
+  background-image: url(cool1.jpg);
+  background-position: center;
+  background-size: cover;
+
 }
 
 
-@media (min-width: 768px) {
-  .App {
-    max-width:100%;
-    background-color: rgb(104, 79, 85);
-  }
-}
 
 .App-logo {
   height: 40vmin;
@@ -24,7 +22,11 @@
 
 .App-header {
   flex: 1;
+<<<<<<< HEAD
   background-color: #e7b6c9;
+=======
+  background-color: #04645f;
+>>>>>>> f64ba1d78fb14703989041c5b6eefb0c6a01957f
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,17 +39,26 @@
 
 .App-chatroom {
   flex: 12;
+<<<<<<< HEAD
 
   background-color: rgba(212, 178, 212, 0.418);
  
+=======
+  
+>>>>>>> f64ba1d78fb14703989041c5b6eefb0c6a01957f
 }
 
 .App-chatroom-text {
   margin: 8px;
+<<<<<<< HEAD
 
   background-color: rgb(247, 211, 232);
 
   color : rgb(167, 99, 161);
+=======
+  background-color: rgb(0, 87, 72);
+  color : rgb(255, 255, 255);
+>>>>>>> f64ba1d78fb14703989041c5b6eefb0c6a01957f
   font-size: 20px;
   background-image: url(2.jpg);
 
@@ -67,13 +78,32 @@
   flex: 5;
   height: 100%;
   box-sizing: border-box;
+  font-size: x-large;
 }
 
 .App-textbox-send {
-  flex: 1;
+  flex: 2;
   height: 100%;
   vertical-align: middle;
   justify-content: center;
   align-items: center;
   display: flex;
 }
+<<<<<<< HEAD
+=======
+
+@media (max-width: 768px){
+  .App{
+    background-image: url(cool2.jpg);
+    background-size: cover ;
+  }
+  .App-header{
+    background-color: rgb(84, 11, 253);
+
+  }
+  .App-chatroom-text{
+    background-color: rgb(25, 72, 226);
+    
+  }
+}
+>>>>>>> f64ba1d78fb14703989041c5b6eefb0c6a01957f

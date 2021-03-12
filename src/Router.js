@@ -5,7 +5,9 @@ import Profiletar from "./Profile-Tar";
 import LobbySetting from "./LobbySetting";
 import ChatBox from "./Chatbox";
 import LoadingBar from "./LoadingBar";
+import Phai from './ProfilePhai';
 import ButtonLobbySetting from "./ButtonLobbySettings";
+
 
 function Router() {
 
@@ -14,6 +16,9 @@ function Router() {
             <Switch>
                 <Route path="/Profile_Tar">
                     <Profiletar/>
+                </Route>
+                <Route path="/ProfilePhai">
+                    <Phai/>
                 </Route>
                 <Route path="/Eye_Scene">
                     <LoadingBar/>

@@ -20,7 +20,7 @@ function App({children}) {
 
               <Link to="/">
                     <button>
-                         Chatbox
+                         Chatbox 
                     </button>
               </Link>
           </div>  

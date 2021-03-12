@@ -27,10 +27,10 @@ function ChatBot() {
         <div className="App-header"> <Link to="/"> <div className="App-back-icon"> <i class="fas fa-chevron-circle-left"></i> </div> </Link>
         chatbot 
         </div>
-        <div className="App-chatroom">
+        <div className="App-content">
           {
             lines.map(x => {
-              return <div className="App-chatroom-text">
+              return <div className="App-content-text">
                       {x}
                      </div>
             })

@@ -40,14 +40,14 @@
   }
 }
 
-.App-chatroom {
+.App-content {
   flex: 12;
   background-image: url(Space.jpg);
   background-size: cover;
 
 }
 
-.App-chatroom-text {
+.App-content-text {
   margin: 8px;
 
   background-color: rgba(73, 73, 73, 0.103);

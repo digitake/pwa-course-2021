@@ -3,69 +3,64 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
+  max-width: 1920px;
   height: 100%;
   margin: auto;
+  /*background-image: url(cool1.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+
 }
 
-
-@media (min-width: 768px) {
-  .App {
-
-    max-width:100%;
-    background-color: rgb(226, 134, 134);
-  }
-}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-.App-header {
-  flex: 1;
-  background-color: #ff8480;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgb(0, 0, 0);
-}
 
 .App-chatroom {
   flex: 12;
-
-  background-color: rgba(170, 158, 212, 0.418);
-  background-image: url();
-  background-image: url("tenor (1).gif");
-  background-position: center;
-  background-repeat: no-repeat;
+   background-image: url(cool1.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: black;
+   
 }
 
 .App-chatroom-text {
-  margin: 10px;
-
-  background-color: rgb(255, 255, 255);
-
-  color : rgb(0, 0, 0);
-  font-size: 26px;
-  
+  margin: 8px;
+  background-color: rgb(0, 87, 72);
+  color : rgb(255, 255, 255);
+  font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
+<<<<<<< HEAD
 
   background-color: rgb(255, 116, 116);
 
+=======
+  background-color: rgb(224, 220, 220);
+>>>>>>> 5b6a495c3344b009890d0ce690209925488a1cfc
   justify-content: center;
   align-items: stretch;
   display: flex;
 }
 
 .App-textbox-input {
+<<<<<<< HEAD
   flex: 5;
   height: 100%;
   box-sizing: border-box;
+=======
+  flex: 10;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: x-large;
+>>>>>>> 5b6a495c3344b009890d0ce690209925488a1cfc
 }
 
 .App-textbox-send {
@@ -75,4 +70,22 @@
   justify-content: center;
   align-items: center;
   display: flex;
+<<<<<<< HEAD
+=======
+}
+
+@media (max-width: 768px){
+  .App-chatroom{
+    background-image: url(cool2.jpg);
+    background-size: cover ;
+  }
+  .App-header{
+    background-color: rgb(84, 11, 253);
+
+  }
+  .App-chatroom-text{
+    background-color: rgb(25, 72, 226);
+    
+  }
+>>>>>>> 5b6a495c3344b009890d0ce690209925488a1cfc
 }

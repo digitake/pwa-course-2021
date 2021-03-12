@@ -11,11 +11,11 @@ function Router(){
                 <Route path="/profile">
                     <Profile/>
                 </Route>   
-                <Route path="/friend-List">
-                    <FriendList />
+                <Route path="/chatbox">
+                    <Chatbox />
                 </Route>
                 <Route path='/'>
-                    <Chatbox />          
+                    <FriendList />          
                 </Route>   
             </Switch>
         </BrowserRouter>    

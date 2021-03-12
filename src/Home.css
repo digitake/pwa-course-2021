@@ -1,4 +1,5 @@
-.Home{
+.Home
+{
     background-image:url(logo.png) ;
     max-width: 1920px;
     background-repeat: no-repeat;
@@ -7,36 +8,38 @@
     height: 100%;
     
 }
-.link{
+.link
+{
     margin:2px ;
     display: flex;
     justify-content: flex-end;
 }
     
     
-.logo{
+.logo
+{
     position: absolute;
     top: 0.4%;
     left: 0.1%;
         
 }
 
-@media (max-width: 768px){
-    .Home{
+@media (max-width: 768px)
+{
+    .Home
+    {
       background-image: url(logo.png);
       background-size: 100% ;
     }
-    .Text{
+    .Text
+    {
         font-size: 50px;
         top: 20%;
-    }
-
-    .gif{
-        
-    }
+    }       
+}
       
     
-  }
+
 
 
 

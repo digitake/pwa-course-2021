@@ -3,7 +3,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Chatbox  from "./Chatbox";
 import FriendList from "./FriendList";
 import Menu from "./Menu";
-import ProfilePage from "./ProfilePage";
+import Profile from "./Profile";
+import Image from "./Image";
 import GamePage from "./GamePage";
 import HotStickersList from "./Sticker-Category/HotStickersList";
 import Sticker0001 from "./Details-Stickers/Sticker0001";
@@ -25,8 +26,8 @@ function Router()  {
               <Menu />
             </Route>
 
-            <Route path="/profile-page">
-              <ProfilePage />
+            <Route path="/profile">
+              <Profile />
             </Route>
 
             <Route path="/game-page">
@@ -51,6 +52,10 @@ function Router()  {
 
             <Route path="/Sticker1001">
               <Sticker1001 />
+            </Route>
+
+            <Route path="/Image">
+              <Image />
             </Route>
 
             <Route path="/">

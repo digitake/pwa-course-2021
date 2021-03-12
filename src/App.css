@@ -1,9 +1,10 @@
 /***************************************************************************************************************/
 /********************************************BASS OF APP AND FRIEND*********************************************/
 /***************************************************************************************************************/
-@media (min-width: 500px)
+/*@media (min-width: 500px)
 {
  .App{
+  background-color: #00424b;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -29,10 +30,10 @@
 ***************************************************************************************************************/
 
 /****************************      MIN < 500PX      *********************************************************************************************************************************************************/
-@media (min-width: 500px){
+/*@media (min-width: 500px){
   .App{
     max-width:100%;
-    background-image: url(funny-cat.jpeg);
+    background-color: #00424b;
     background-position:top center;
     background-size: 1000px;
     background-repeat: no-repeat;
@@ -47,14 +48,14 @@
     font-size: calc(10px + 2vmin);
     color: rgb(255, 255, 255);
   }
-  .App-chatroom-text {
+  .App-content-text {
     margin: 8px;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 20px;
   }
   /*Friend Zone scene*/
-  .Friend{
+  /*.Friend{
     max-width:100%;
     background-image: url(cat-2.jpg);
     background-position:top center;
@@ -71,7 +72,7 @@
     font-size: calc(10px + 2vmin);
     color: rgb(255, 255, 255);
   }
-  .Friend-chatroom-text {
+  .Friend-content-text {
     margin: 8px;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
@@ -87,14 +88,14 @@
   color: #ffffff;
   background-repeat:  no-repeat;
 }
-}  
+  
 
 /****************************     MIN < 1000PX     ******************************************************************************************************************************************/
 
-@media (min-width: 1000px){
+/*@media (min-width: 1000px){
   .App{
     max-width:100%;
-    background-image: url(111.png);
+    background-color: #00424b;
     background-position:top center;
     background-size: 1500px;
     background-repeat: no-repeat;
@@ -109,14 +110,14 @@
     font-size: calc(10px + 2vmin);
     color: rgb(0, 0, 0);
   }
-  .App-chatroom-text {
+  .App-content-text {
     margin: 8px;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 30px;
   }
  /*Friend Zone scene*/
-  .Friend{
+  /*.Friend{
     max-width:100%;
     background-image: url(cat-2.jpg);
     background-position:top center;
@@ -133,7 +134,7 @@
     font-size: calc(10px + 2vmin);
     color: rgb(255, 255, 255);
   }
-  .Friend-chatroom-text {
+  .Friend-content-text {
     margin: 8px;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
@@ -153,10 +154,10 @@
 
  /****************************       MIN < 1500PX      ****************************************************************************************************************************************/
 
-@media (min-width: 1500px){
+/*@media (min-width: 1500px){
   .App{
     max-width:100%;
-    background-image: url(cat-3.jpg);
+    background-color: #00424b;
     background-position:top center;
     background-size: 2000px;
     background-repeat: no-repeat;
@@ -172,14 +173,14 @@
     color: rgb(255, 255, 255);
   }
  
-  .App-chatroom-text {
+  .App-content-text {
     margin: 8px;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 40px;
   }
   /*Friend Zone scene*/
-  .Friend{
+  /*.Friend{
     max-width:100%;
     background-image: url(cat-2.jpg);
     background-position:top;
@@ -197,22 +198,13 @@
     color: rgb(255, 255, 255);
   }
  
-  .Friend-chatroom-text {
+  .Friend-content-text {
     margin: 8px;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 40px;
   }
-  .Goto-Friend
-{
-  width: 500px;
-  border: 10px solid rgb(0, 113, 243);
-  padding: 10px;
-  margin: 0;
-  background-color: rgb(0, 70, 150);
-  color: #ffffff;
-  background-repeat:  no-repeat;
-}
+
 }
 /******************************************************************************************AND COMMAND FIX THE SIZE**********************************************************************************************/
 
@@ -225,14 +217,10 @@
 
 /************************BASS OF APP AND FRIEND (CHATROOM)******************************
 ***************************************************************************************/
-.App-chatroom {
+.App-content {
   flex: 12;
-  background-color: rgba(179, 178, 178, 0.418);
-  background-size: 500px;
-  background-repeat: no-repeat;
-  background-position:  center;
 }
-.Friend-chatroom {
+.Friend-content {
   flex: 12;
   background-color: rgba(179, 178, 178, 0.418);
   background-size: 500px;
@@ -264,8 +252,49 @@
   align-items: center;
   display: flex;
 }
-.link-button
+.link-margin
 {
-   color: cornsilk;
+   margin-left: 8px;
 }
+
+.TopHead{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: auto;
+  max-width:100%;
+  background-color: hsl(0, 0%, 25%);
+  background-position:top center;
+  background-size: 2000px;
+  background-repeat: no-repeat;
+}
+.TopHead2{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: auto;
+  max-width:100%;
+  background-color: rgb(21, 0, 59);
+  background-position:top center;
+  background-size: 2000px;
+  background-repeat: no-repeat;
+}
+.Link-Top
+{
+  margin: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+  .magin-Logo{
+    position: absolute;
+    right: 120px;
+  }
+  .magin-Text{
+    position: absolute;
+    right: 10px;
+  }
+
 

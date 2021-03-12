@@ -1,8 +1,10 @@
 import './App.css';
-import{Link} from 'react-router-dom'
+import App from './App';
 function  FriendList() {
+  
     return(
-      <div className="Friend">
+      <App>
+        <div className="Friend">
         <div className="Friend-header">
              My Friend List
         </div>
@@ -18,15 +20,10 @@ function  FriendList() {
           </div>
           <div className="Friend-chatroom-text">
              Hayina
-          </div>
-          <Link to="/">
-            <button>
-             Go to Home
-            </button>
-          </Link>
-            
+          </div>      
         </div>
-      </div>
+      </div></App>
+      
         
     )
     

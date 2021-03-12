@@ -1,10 +1,10 @@
 import './App.css';
 import './Photo.css';
-import{Link} from 'react-router-dom'
+import App from './App'
 function  PhotoList() {
     return(
-        <div class="BG">
-            <div class="Text">My Gallery</div>
+        <App><div class="BG">
+            <div class="Text">: My Gallery :</div>
           <div class="gallery">
               <a target="_blank" href="cat-2.jpg">
                   <img src="cat-2.jpg" alt="My favorite cat 1" width="600" height="400"></img>
@@ -46,20 +46,10 @@ function  PhotoList() {
                     <img src=" mobile_app_presenting.jpg" alt="Present interface" width="600" height="400"></img>
                 </a>
                  <div class="desc">Present interface</div>
-          </div>
-          
-          <div class="Link">
-           <Link to="/">
-           <button>
-            <img src="Home.png" alt="Go home" width="30" height="30"></img>
-            <div>Go Home</div>
-             </button>
-            </Link>
-            </div>
+          </div>          
+            </div></App>
             
-            </div>
-       
-
+        
     )
 };
 

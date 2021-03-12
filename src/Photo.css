@@ -34,6 +34,8 @@
   top: 10px;
   }
   .Text{
+    float: top;
+    margin-left: 40%;
     font-size: 20px;
     text-align: center;
     padding: 20px;
@@ -41,6 +43,9 @@
     border: 3px solid rgb(255, 255, 255);
     width: 150px;
     background-color: rgb(33, 0, 43);
+}
+.margin-text{
+  margin: 10px;
 }
 
   @media (min-width: 500px){

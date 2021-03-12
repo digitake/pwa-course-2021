@@ -3,13 +3,12 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
+  max-width: 1920px;
   height: 100%;
   margin: auto;
-  background-image: url(cool1.jpg);
+ 
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-
 }
 
 
@@ -28,16 +27,22 @@
   background-color: #04645f;
 >>>>>>> f64ba1d78fb14703989041c5b6eefb0c6a01957f
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+<<<<<<< HEAD
   justify-content: center;
   color: rgb(0, 0, 0);
   border: 10px solid transparent;
   padding: 15px;
  
+=======
+  justify-content: flex-end;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+>>>>>>> 5b6a495c3344b009890d0ce690209925488a1cfc
 }
 
-.App-chatroom {
+.App-content {
   flex: 12;
 <<<<<<< HEAD
 
@@ -91,6 +96,9 @@
 }
 <<<<<<< HEAD
 =======
+
+
+
 
 @media (max-width: 768px){
   .App{

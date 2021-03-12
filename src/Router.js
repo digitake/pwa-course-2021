@@ -10,14 +10,6 @@ function Router() {
     return(
         <BrowserRouter>
             <Switch>
-<<<<<<< HEAD
-              <Route path="/FriendList">
-                  <FriendList />
-              </Route>
-              <Route path="/ProChatroom">
-                  <ProChatroom/>
-              </Route>
-=======
                 <Route path = "/Prosetting">
                     <Prosetting />
                 </Route>
@@ -33,7 +25,6 @@ function Router() {
                 <Route path = "">
                     <Prologin />
                 </Route>
->>>>>>> 278ebcaffbe42ee34dc4202fcd1cb586a7105c13
             </Switch>
         </BrowserRouter>
     )

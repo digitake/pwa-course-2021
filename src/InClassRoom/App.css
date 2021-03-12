@@ -34,14 +34,8 @@
 
 .App-content {
   flex: 12;
-<<<<<<< HEAD:src/App.css
-  
-  background-color: rgba(30, 203, 255, 0.418);
-  
-=======
   display: flex;
   flex-direction: column;
->>>>>>> 278ebcaffbe42ee34dc4202fcd1cb586a7105c13:src/InClassRoom/App.css
 
 }
 

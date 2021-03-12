@@ -7,8 +7,8 @@ import DarkChat from './DarkChat';
 import NormalPage from './NormalPage';
 
 
-function Router()
-{
+function Router(){
+
 
     return(
       <BrowserRouter>
@@ -28,10 +28,11 @@ function Router()
             <Route path = "/NormalPage">
               <NormalPage />
             </Route>
+            <Route path ="/">
+              <Chatbox />
+            </Route>
         </Switch>
-     </BrowserRouter> 
-
+     </BrowserRouter>
     )
-};
-
+}
 export default Router;

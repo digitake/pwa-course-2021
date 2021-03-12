@@ -1,15 +1,11 @@
 import './DarkChat.css';
-import App from './App';
+import Chatbox from './Chatbox'
 
-
-function DarkChat() {
+function DarkChat({children}) {
     return (
-        <div className ="DarkChat">
-            <App>
-                
-            </App>
-        </div> 
-       
+                <Chatbox>
+                </Chatbox>
+        
     );
 };
 

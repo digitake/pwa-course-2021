@@ -15,7 +15,7 @@ return(
       <div className="chatname">
         <a href ="#"> Chatroom</a>
       </div>
-      <ul className="menu">
+      <ul className={click ? "menu active" : "menu"}>
   <li className="menu-link">
         <a href="#"><FiSearch /> Search</a>
   </li>

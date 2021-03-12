@@ -44,7 +44,7 @@ padding: right;
 .mobile-menu{
   display: none;
 }
-@media screen and (min-width: 480px) and (max-width: 960px){
+@media (min-width: 414px) and (max-width: 960px){
 .AppPrivate {
   max-width:90%;  
 }
@@ -63,14 +63,16 @@ font-size: 1.5rem;
   flex-direction: column;
   position: absolute;
   top: -10px;
-  right: 50px;
-  background-color: rgb(0, 0, 0);
+  right: 80px;
   width: 13%;
   transition: 0.5s ease;
- 
+  opacity: 0;
 }
 .menu.active{
   background: rgb(0, 0, 0);
+  opacity: 1;
+  align-content: center;
+  transition: 0.5s ease;
 }
     }
 .App-chatroom 

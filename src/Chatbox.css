@@ -32,8 +32,21 @@
 }
 
 
+.Chatbox-header {
+  flex: 1;
+  background-color: #7ff8fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+}
+
 .Chatbox-chatroom {
   flex: 12;
+  display: flex;
+  flex-direction: column;
 }
 
 .Chatbox-chatroom-text {

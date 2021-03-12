@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom'
 
 function App() {
 
   const [text, setText] = useState("");
-  const [lines, setLines] = useState(["sdad","dasd"]);
+  const [lines, setLines] = useState(["Please Enter Your Massage",""]);
 
   const onChangeHandler = (event) => {
       setText(event.target.value);
   };
+
   const onSendHandler = (event) => {
     setLines(lines => [...lines, text]);
     setText("");
@@ -19,20 +20,22 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
+         Box Chat
       </div>
-      <Link to="/Friend-List">
-          <button>
-            Go FriendList
-          </button>
-        </Link>
-        <div className="App-chatroom">
+      
+      <div className = "AppUndo">
+      <Link to = "/HomePage">
+        <img src = "Union(1).png" alt = "" /> 
+      </Link>
+      </div>
+     
+      <div className="App-chatroom">
         <div className="App-chatroom-text">
-          Line1
         </div>
-        
+
         <div className="App-chatroom-text">
-          Line2
         </div>
+
         {
           lines.map((value, index) => {
             return <div key={index} className="App-chatroom-text">
@@ -40,11 +43,22 @@ function App() {
               </div>
           })
         }
+        
       </div>
+
       <div className="App-textbox">
-        <input type="text" className="App-textbox-input" onChange={onChangeHandler} value={text}/>
-        <div className="App-textbox-send" onClick={onSendHandler}>Send!</div>
+        <input type = "text" className = "App-textbox-input" onChange={onChangeHandler} value={text}/>
+
+        <div className = "App-textbox-send" 
+          onClick={onSendHandler}> 
+        <div className = "App-textbox-send-pic">
+          </div>
+
+        </div>
+  
       </div>
+
+
     </div>
   );
 }

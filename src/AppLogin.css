@@ -1,0 +1,114 @@
+
+@media (min-width : 414px) and (max-width : 1023px){
+
+    .LogoApp{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: auto;
+        width: 414px;
+        Height: 896px;
+        background-image: url(/src/icon/icon-256x256.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #2D2C67;
+      
+    }
+    
+    .AppLogin{
+        align-self: flex-end;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .AppRegister{
+        align-self: flex-end;
+        margin-bottom: 20px;
+    }
+
+  }
+
+@media (min-width : 1024px) {
+    .LogoApp {
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        Height: 100%;
+        background-image: url(/src/icon/icon-256x256.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #2D2C67;
+    
+}
+
+    .AppLogin{
+        margin: 20px;
+        margin-bottom: -230px;
+    }
+    
+    .AppRegister{
+        margin: 250px;
+        margin-bottom: 200px;
+    }
+
+}
+
+.SingIn{
+    position: relative;
+    left: 8.7%;
+    right: 8.45%;
+    top: 35.27%;
+    bottom: 58.93%;
+}
+
+.Login{
+
+    position: relative;
+    width: 414px;
+    height: 825px;
+    margin: auto;
+    background-image: url(/src/AppchatUpdate/Log\ In.png);
+}
+
+.Register{
+
+    margin: auto;
+    position: relative;
+    width: 414px;
+    height: 896px;
+    background-image: url(/src/AppchatUpdate/RegisterStep1.png);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.RegisterNextStep{
+    
+    position: relative;
+    left: 8.7%;
+    right: 8.45%;
+    top: 32%;
+    bottom: 60.04%;
+}
+
+.NextStep{
+
+    margin: auto;
+    position: relative;
+    width: 414px;
+    height: 896px;
+    background-repeat: no-repeat;
+    background-image: url(/src/AppchatUpdate/RegisterStep2Username.png);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.SingUP{
+
+    position: relative;
+    width: 343px;
+    height: 52px;
+    left: 36px;
+    top: 219px;
+}

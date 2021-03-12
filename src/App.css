@@ -1,4 +1,5 @@
 .App {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,23 +7,33 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
-  background-image: url(Games.jpg);
+  background-image: url(BG.jpg);
   background-position: center ;
-  background-size: 90%;
+  background-size: 50%;
   background-repeat: no-repeat;
 }
 
-@media (max-width: 1024px) {
-  .App {
-    background-color: rgb(9, 0, 59);
-    width:95%;
+@media (min-width : 1080px){
+  .App{
+    width: 95%;
+    background-color: #2D2C67;
   }
 }
 
-@media (min-width: 768px) {
-  .App {
-    background-color: #4d01ff;
-  width: 95%;
+
+
+
+@media (min-width : 720px) and (max-width: 1079px){
+  .App{
+    width: 95%;
+    background-color: #FFE5B4;
+  }
+}
+
+@media (min-width : 480px) and (max-width: 719px){
+  .App{
+    width: 95%;
+    background-color: #FFC0CB;
   }
 }
 
@@ -33,52 +44,74 @@
 
 .App-header {
   flex: 1;
-  background-color: #ab0de9;
+  background-color: #505396;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(0, 0, 0);
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
 }
 
 .App-chatroom {
   flex: 12;
 
-  background-color: rgba(170, 158, 212, 0.418);
-  background-image: url();
-
 }
 
 .App-chatroom-text {
-  margin: 8px;
-
-  background-color: rgb(206, 87, 87);
-
-  color : rgb(48, 100, 100);
-  font-size: 20px;
+  margin: 5px;
+  background-color: rgb(20, 16, 231);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+ 
+  
 }
 
 .App-textbox {
+  
   flex: 1;
-
-  background-color: rgba(0, 255, 234, 0.644);
-
-  justify-content: center;
-  align-items: stretch;
+  justify-content: flex-end;
+  align-items: flex-end;
   display: flex;
 }
 
 .App-textbox-input {
-  flex: 5;
-  height: 100%;
-  box-sizing: border-box;
+  width: 400px;
+  height: 32px;
+  
 }
 
 .App-textbox-send {
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
+
+  vertical-align: bottom;
+  align-items: flex-end;
   display: flex;
+ 
+}
+
+.App-textbox-send-pic{
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+  background-image: url(/src/AppchatUpdate/SendButton.png) ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+.AppUndo{
+  position: absolute;
+  width: 28.54px;
+  height: 23.84px;
+  left: 13px;
+  top: 15px;  
+
+}
+
+.App-connent{
+    flex: 12;
+    background-color: lawngreen;
 }

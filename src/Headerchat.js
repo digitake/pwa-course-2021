@@ -15,17 +15,17 @@ return(
       <div className="chatname">
         <a href ="#"> Chatroom</a>
       </div>
-      <ul className="Function">
-  <li className="Function-link">
+      <ul className="menu">
+  <li className="menu-link">
         <a href="#"><FiSearch /> Search</a>
   </li>
-  <li className="Function-link">
+  <li className="menu-link">
         <a href="#"><FiClipboard/> Note</a>
   </li>
-  <li className="Function-link">
+  <li className="menu-link">
         <a href="#"><FiMicOff/> Mute Chat</a>
       </li>
-      <li className="Function-link">
+      <li className="menu-link">
         <a href="#"><FiLogOut/> Leave</a>
       </li>
       </ul>

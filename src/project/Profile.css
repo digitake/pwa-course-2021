@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    max-width: 550px;
+    max-width: 600px;
     height: 87%;
     margin: auto;
     background-color: rgb(31, 103, 211);
@@ -11,7 +11,7 @@
 
  .Main-BackGrounder {
     height: 845px;
-    width: 550px;
+    width: 600px;
     position: relative;
     top: 690px;
     left: auto;

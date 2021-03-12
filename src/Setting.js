@@ -5,7 +5,7 @@ import { BiPaintRoll,BiPalette } from "react-icons/bi";
 
 function Settings(){
     return(
-        <div className="appSetting">
+        <div className="app">
             <div className="app-contain">
                 Settings
                <ul className="Function">

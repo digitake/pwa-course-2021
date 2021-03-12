@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 import App from './App';
 import './Profile1.css';
 import profile from './profile.png'

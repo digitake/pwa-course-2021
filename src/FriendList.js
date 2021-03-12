@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 import App from './App'
 import'./FriendList.css';
 import FriendListIcon from './profile.png';

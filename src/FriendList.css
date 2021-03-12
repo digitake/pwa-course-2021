@@ -1,6 +1,32 @@
 .FriendList
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     max-width: 1920px;
-    background-color:#ffe2ae;
     height: 100%;
+    margin: auto;
+    background-color: #ffe2ae;
+}
+
+
+.FriendList-Header{
+    margin-top: 1px;
+    margin-left: 50px;
+    margin-right: 5px;
+    width: 95%;
+    
+    color: rgb(0, 47, 255);
+    font-size: 40px;
+}
+
+.FriendListMid{
+    flex: 12;
+    margin: 10px;
+    width: 100%;
+}
+
+.FriendList1{
+    margin: 20px;
 }

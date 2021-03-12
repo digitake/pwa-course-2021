@@ -9,6 +9,10 @@ function FriendList(params)
     return(
         <App>
         <div className = "FriendList">
+                <div className = "FriendListMid">
+                <div className ="FriendList-Header">
+                 My Friend List
+                 </div>       
 
         <div className = "FriendList1">
                 <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
@@ -17,18 +21,21 @@ function FriendList(params)
                 </div>
         </div>
 
-        <div className = "FriendList2">
+        <div className = "FriendList1">
                 <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
                 <div className = "FriendListName">
                      JoJo ID : 111111111
                 </div>
         </div>
-        <div className = "FriendList3">
+        <div className = "FriendList1">
                 <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
                 <div className = "FriendListName">
                      Kahjon ID : 999999999
                 </div>
         </div>
+                </div>
+
+         
 
         </div>
         </App>

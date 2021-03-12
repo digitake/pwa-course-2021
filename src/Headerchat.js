@@ -28,12 +28,12 @@ return(
   </li>
   <li className="menu-link">
         <a href="#"><FiMicOff/> Mute Chat</a>
-      </li>
-      <li className="menu-link">
+  </li>
+  <li className="menu-link">
       <Link to = '/PrivatePage'>
       <a href="#"><FiLogOut/> Leave</a>
       </Link>
-      </li>
+  </li>
       </ul>
       <div className="mobile-menu" onClick={handleClick}>
         {click ? (
@@ -47,7 +47,7 @@ return(
   <div className="App-chatroom">
       {children}
     </div>
- </div> 
+</div> 
 );
 }
 export default Headerchat;

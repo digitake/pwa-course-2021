@@ -48,9 +48,6 @@ function Router() {
           <Route path = "/RegisterNextStep">
                 <RegisterNextStep />
               </Route>
-          <Route path = "/Chat-Room">
-              <App />
-            </Route>
             <Route path = "/profile">
               <Profiles />
               <Route path="/privateChat">
@@ -61,8 +58,8 @@ function Router() {
             </Route>
           </Route>
           <Route path = "/">
-              <LoginApp />
-            </Route>
+          <LoginApp />
+          </Route>
          </Switch>
       </BrowserRouter>
     )

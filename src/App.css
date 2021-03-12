@@ -16,7 +16,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #000000;
+  background-color: #f84040;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,14 +27,14 @@
 
 .App-content {
   flex: 12;
-  border: #0f3522;
-  background-color: rgb(235, 208, 178);
+  background-color: rgb(245, 220, 234)
 }
 
 .App-chatroom-text {
-  margin: 20px;
-  background-color: rgb(255, 255, 255);
-  color: #0f3522;
+  border: 3px solid rgb(192, 188, 188);
+  
+  align-text: center;
+
 }
 
 .App-textbox {
@@ -60,3 +60,34 @@
   align-items: center;
   display: flex;
 }
+img {
+  border-radius: 50%;
+  background: url(Domelnwza.PNG);
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 25px;
+  
+}
+
+img.right {
+  float: right;
+  border-radius: 50%;
+  background: url(Domelnwza.PNG);
+  background-size: 100% ;
+
+  margin-left: 20px;
+  margin-right:0;
+  }
+
+ 
+img.left {
+  float: left;
+  border-radius: 50%;
+  background: url(Folklnwza.jpg);
+  background-size: 100% ;
+  margin-left: 20px;
+  margin-right:0;
+  }
+  
+

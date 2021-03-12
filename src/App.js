@@ -10,7 +10,7 @@ function App({children}) {
       <div className="App-header">
         <Link to="/friend-list">
           <button>
-            FriendList 
+            friendList
           </button>
         </Link>
       </div>

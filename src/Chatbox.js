@@ -23,11 +23,22 @@ function Chatbox() {
 
   return (
 <App>
+<img width="100" height="100"></img>
+
+<img width="60" height="60" class="right"></img>
+
+<img width="60" height="60" class="left"></img>
+
+
+
+
+
     <div className="App">
       <div className="App-chatroom">
         {
           lines.map(x => {
             return <div className="App-chatroom-text">
+              
                     {x}
                    </div>
           })
@@ -40,6 +51,8 @@ function Chatbox() {
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
     </div>
+
+    
 </App>
   );
 }

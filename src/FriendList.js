@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
+import App from './App';
+
+
 
 function FriendList() {
     return(
+        <App>
         <div>
             Friend List
             <Link to="/">
@@ -10,6 +14,10 @@ function FriendList() {
                </button>
             </Link>
         </div>
+       
+
+
+     </App>
     );
 }
 export default FriendList;

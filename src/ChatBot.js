@@ -23,7 +23,6 @@ function ChatBot() {
     };
   
     return (
-      <App>
       <div className="App">
         <div className="App-content">
           {
@@ -45,7 +44,6 @@ function ChatBot() {
           <div className="App-textbox-send" onClick={onSend}> <i class="far fa-paper-plane"></i> </div>
         </div>
       </div>
-      </App>
     );
   }  
 

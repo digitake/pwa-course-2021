@@ -30,7 +30,7 @@ function App({children}) {
                </image>
              </Link>
 
-             <Link to = "/shop-page">
+             <Link to = "/HotStickersList">
                <image>
                <img src ="buttonShop.png"/>
                </image>

@@ -1,12 +1,15 @@
 
-import{Link} from 'react-router-dom'
 import './Home.css';
+import App from './App'
 function  Home() {
     return(
-      <div class="background">
+      <App>
+        <div class="background">
         <div class="text">
-            Welcome 
-            <div>
+          <div class="welcomemargin">
+             Welcome
+          </div>
+            <div class="margin">
             to
            </div>
             <div>
@@ -14,44 +17,10 @@ function  Home() {
       </div>
       </div>
       <div class ="link">
-            <Link to="/friend-list">
-            <button>
-                  <img src="Friends.png" alt="Friend List" width="50" height="50"></img>
-             </button>
-            </Link>
-            </div>
-            <div class = "link">
-          <Link to="/chat-room">
-            <button>
-            <img src="Chat.png" alt="Chat room" width="50" height="50"></img>
-             </button>
-          </Link>
-          </div>
-          <div class="link">
-          <Link to="/doc-work">
-            <button>
-            <img src="Doc.png" alt="Document" width="50" height="50"></img>
-             </button>
-          </Link>
-          </div>
-          <div class="link">
-          <Link to="/photo-list">
-            <button>
-            <img src="Photo.png" alt="ThePhotoList" width="50" height="50"></img>
-             </button>
-             </Link>
-             </div>
-             <div class="link">
-          <Link to="/cradit">
-            <button>
-            <img src="Link.png" alt="Link-List" width="50" height="50"></img>
-             </button>
-             </Link>
              </div>
       </div>
-
+      </App>
     )
-    
 };
 
 export default Home;

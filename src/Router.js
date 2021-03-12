@@ -20,7 +20,7 @@ function Router() {
          <Route path="/profiles">
             <Profiles/>
          </Route>
-        <Route path="/PrivateChat">
+        <Route path="/privateChat">
             <PrivateChatRoom />
             </Route>
         <Route path="/learnprofiles">

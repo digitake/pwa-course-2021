@@ -12,6 +12,7 @@ return(
     <div className="AppPrivate">
     <div className="header">
       Chatroom
+      <div className="header-content">
       <ul className="Function">
   <li className="Function-link">
         <a href="#"><FiSearch /> Search</a>
@@ -27,11 +28,18 @@ return(
       </li>
       </ul>
     </div>
-    <div className="App-chatroom">
-      {children}
+    <div className="mobile-menu" onClick = {handleClick}>
+      {click ?(
+        <FiX/>
+      ) : (
+        <FiMenu/>
+      )}
     </div>
   </div>
-  
+  <div className="App-chatroom">
+      {children}
+    </div>
+ </div> 
 );
 }
 export default Headerchat;

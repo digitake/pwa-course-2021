@@ -10,6 +10,9 @@ function Router(){
     return(
     <BrowserRouter>
         <Switch>
+        <Route path="/App">
+                <App />
+            </Route>
             <Route path="/friend-list">
                 <FriendList />
             </Route>

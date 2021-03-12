@@ -1,23 +1,30 @@
-import {Link} from 'react-router-dom';
-import App from './App'
+import './FriendList.css';
+import { Link } from 'react-router-dom';
+import App from './App';
 
-// ใช้<img src={}> แทนbottonได้  ** ระหว่างlink ** //
 function FriendList() {
-    return(
-        <App>
-        <div className = "FriendList-drawbox"></div>
-        <div>
-            Friend List
-            <Link to ="/">
-                 <botton>
-                     Go to chatroom
-                 </botton>
+  return (
+    <App>
+    <div className="FriendList">
+      <div className="FriendList-header">
+      contacts
+      <div className="FriendList-Headers">
+      <Link to="/App">
+                <botton>
+                    Go to chatroom
+                </botton>
             </Link>
-        </div>
-        
-        </App>
-    )
-    
+      </div>
+      </div>
+      <div className= "FriendList-Contact-info">
+      </div>
+      <div className="FriendList-chatroom">
+        {
+        }
+      </div>
+    </div>
+    </App>
+  );
 };
 
 export default FriendList;

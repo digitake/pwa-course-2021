@@ -31,6 +31,7 @@
   pointer-events: none;
 }
 
+
 .Chatbox-header {
   flex: 1;
   background-color: #7ff8fc;
@@ -46,7 +47,6 @@
   flex: 12;
   display: flex;
   flex-direction: column;
-
 }
 
 .Chatbox-chatroom-text {

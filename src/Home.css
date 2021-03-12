@@ -1,9 +1,9 @@
 .Home{
-    background-image:url(cool3.jpg) ;
+    background-image:url(logo.png) ;
     max-width: 1920px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.993);
+    background-color:#FBF1D5;
     height: 100%;
     
 }
@@ -13,22 +13,6 @@
     justify-content: flex-end;
 }
     
-.Text{
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    font-size:100px;
-    color: rgb(255, 230, 0);
-    font-family: Copperplate, Papyrus, fantasy;
-}
-    
-.gif{
-    position: absolute;
-    bottom: 20%;
-    left: 5%;
-    
-        
-}
     
 .logo{
     position: absolute;
@@ -39,7 +23,7 @@
 
 @media (max-width: 768px){
     .Home{
-      background-image: url(cool3.jpg);
+      background-image: url(logo.png);
       background-size: 100% ;
     }
     .Text{

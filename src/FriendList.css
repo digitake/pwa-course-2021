@@ -1,0 +1,30 @@
+.FriendList{
+    background-image: url(BGPT.png);
+    background-size: cover;
+    height: 100%;
+  }
+  .FriendList-header {
+      justify-content: center;
+      text-align: center;
+      padding: 10px 0;
+      color: white;
+      background-color: rgb(255, 183, 239);
+      font-size: 30px;
+    }
+    .FriendList-botton{
+      float: right;
+    }
+    .FriendList-drawbox{
+      padding: 350px 0;
+      margin: 20px;
+      background-color: white;
+    }
+    .FriendList-send{
+      padding: 25px 0;
+      margin: 20px;
+      background-color: white;
+      font-size: 30px;
+      color: black;
+      text-align: center;
+    }
+     

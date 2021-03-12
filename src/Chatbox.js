@@ -1,47 +1,48 @@
 import './Chatbox.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import App from './App';
 
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
-  const onTextChange = (event) =>{
+  const onTextChange = (event) => {
     setText(event.target.value);
   };
-  const onSend = () =>{
+  const onSend = () => {
     setLines([...lines, text]);
     setText("");
   };
   const keyPress = (event) => {
 
-    if (event.which === 13){
+    if (event.which === 13) {
       onSend();
     }
   }
   return (
-    <div className="App">
-      <div className="App-header">
-      </div>
-      <div className="App-chatroom">
-        {
-        lines.map(x => {
-          return <div className="App-chatroom-text">
+    <App>
+      <div className="Chatbox">
+        <div className="Chatbox-chatroom">
+          <Link to="/PageDrawing">
+            <button>
+              Go To Drawing Page
+          </button>
+          </Link>
+          {
+            lines.map(x => {
+              return <div className="Chatbox-chatroom-text">
                 {x}
-                </div>
-          })
-        }
-        <Link to ="/PageDrawing">
-          <botton>
-            Go to PageDrawing
-          </botton>
-        </Link>
+              </div>
+            })
+          }
+        </div>
+        <div className="Chatbox-textbox">
+          <input type="text" className="Chatbox-textbox-input"
+            value={text} onChange={onTextChange} onKeyPress={keyPress} />
+          <div className="Chatbox-textbox-send" onClick={onSend}>Send!</div>
+        </div>
       </div>
-      <div className="App-textbox">
-        <input type="text" className="App-textbox-input" 
-        value={text} onChange={onTextChange}onKeyPress={keyPress}/>
-        <div className="App-textbox-send" onClick={onSend}>Send!</div>
-      </div>
-    </div>
+    </App>
   );
 }
 

@@ -41,8 +41,9 @@
   }
 }
 
-.App-chatroom {
+.App-content {
   flex: 12;
+  
   background-image: url(Space.jpg);
   background-size: cover;
 

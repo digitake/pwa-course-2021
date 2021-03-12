@@ -1,14 +1,15 @@
 import './Chatbox.css';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import App from './App';
 
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
-  const onTextChange = (event) =>{
+  const onTextChange = (event) => {
     setText(event.target.value);
   };
-  const onSend = () =>{
+  const onSend = () => {
     setLines([...lines, text]);
     setText("");
   };

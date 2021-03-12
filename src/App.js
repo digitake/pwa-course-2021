@@ -2,23 +2,24 @@
 import './App.css';
 import { Link } from 'react-router-dom';
 
+import Home from './cool4.png';
+
 function App({children}) {
   return (
     <div className="App ">
       <div className="App-header ">
-        <Link to="/friend-list">
-            <button>
-                Friend List
-            </button>
-        </Link>
-        <Link to ="/profile1">
+      <Link to ="/">
           <button>
-            Profile
+            <img src = {Home} alt= "" width = "75" height = "75"></img>
           </button>
         </Link>
+        
       </div>
+      
       <div className="App-content">
         {children}
+        
+      
       </div>
     </div>
     

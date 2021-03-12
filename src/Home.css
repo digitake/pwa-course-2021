@@ -7,13 +7,12 @@
     height: 100%;
     
 }
-
 .link{
     margin:2px ;
     display: flex;
     justify-content: flex-end;
 }
-
+    
 .Text{
     position: absolute;
     top: 10%;
@@ -22,10 +21,42 @@
     color: rgb(255, 230, 0);
     font-family: Copperplate, Papyrus, fantasy;
 }
-
+    
 .gif{
     position: absolute;
     bottom: 20%;
     left: 5%;
-    
+    background-image:url(giphy.gif) ;
+    background-size: 30px 30px;
+        
 }
+    
+.logo{
+    position: absolute;
+    top: 0.4%;
+    left: 0.1%;
+        
+}
+
+@media (max-width: 768px){
+    .Home{
+      background-image: url(cool3.jpg);
+      background-size: 100% ;
+    }
+    .Text{
+        font-size: 50px;
+        top: 20%;
+    }
+
+    .gif{
+        
+    }
+      
+    
+  }
+
+
+
+
+
+    

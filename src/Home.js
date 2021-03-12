@@ -5,6 +5,7 @@ import Chatbutton from './chat.png';
 import Friendbutton from './friend.png';
 import gif from './giphy.gif';
 import profile from './cool5.png';
+import logo from './logo.png';
 
 function Home() {
     return(
@@ -39,6 +40,9 @@ function Home() {
         </div>
         <div className = "gif">
         <img src = {gif} alt= "" width = "300" height = "300"></img>
+        </div>
+        <div className ="logo">
+            <img src = {logo} alt= "" width = "75" height = "75"></img>
         </div>
 
         </div>

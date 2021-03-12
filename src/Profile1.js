@@ -7,11 +7,7 @@ function Profile1(params) {
         <App>
         <div className = "App">
             <div className = "App-content">
-                <Link to="/">
-                <button>
-                    Go to Chatroom 
-                </button>
-            </Link>
+                
             </div>
             Profile
             

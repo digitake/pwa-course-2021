@@ -6,7 +6,7 @@
   max-width: 1920px;
   height: 100%;
   margin: auto;
-  background-image: url(cool1.jpg);
+ 
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -22,9 +22,9 @@
   flex: 1;
   background-color: #04645f;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 255, 255);
 }
@@ -64,6 +64,7 @@
   align-items: center;
   display: flex;
 }
+
 
 
 

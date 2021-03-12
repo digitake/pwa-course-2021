@@ -26,6 +26,7 @@
    background-position: center;
    background-repeat: no-repeat;
    background-color: black;
+   
 }
 
 .App-chatroom-text {
@@ -44,14 +45,14 @@
 }
 
 .App-textbox-input {
-  flex: 5;
+  flex: 10;
   height: 100%;
   box-sizing: border-box;
   font-size: x-large;
 }
 
 .App-textbox-send {
-  flex: 2;
+  flex: 1;
   height: 100%;
   vertical-align: middle;
   justify-content: center;

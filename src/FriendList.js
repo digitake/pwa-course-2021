@@ -1,11 +1,11 @@
 import './App.css';
 import { Link } from 'react-router-dom';
+import AppLayoutFriend from './AppLayoutFriend';
 
 function FriendList() {
     return (
-        <div className="App">
-        <div className="App-header-friend"> <i class="fas fa-search-plus"></i> Chat  <i class="fas fa-user-plus"></i>
-    </div>
+    <AppLayoutFriend>
+    <div className="App">
     <div className="App-content">
     </div>
     <div className="App-textbox-icon" ><Link to="/chat-room"> <i class="fas fa-comment-dots"></i> </Link>
@@ -13,6 +13,7 @@ function FriendList() {
     <i class="fas fa-users"></i>
     </div>
   </div>
+  </AppLayoutFriend>
     );
 };
 

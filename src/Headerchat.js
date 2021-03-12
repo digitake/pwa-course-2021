@@ -11,8 +11,10 @@ function Headerchat({children}) {
 return(
     <div className="AppPrivate">
     <div className="header">
-      Chatroom
       <div className="header-content">
+      <div className="chatname">
+        <a href ="#"> Chatroom</a>
+      </div>
       <ul className="Function">
   <li className="Function-link">
         <a href="#"><FiSearch /> Search</a>
@@ -27,13 +29,13 @@ return(
         <a href="#"><FiLogOut/> Leave</a>
       </li>
       </ul>
-    </div>
-    <div className="mobile-menu" onClick = {handleClick}>
-      {click ?(
-        <FiX/>
-      ) : (
-        <FiMenu/>
-      )}
+      <div className="mobile-menu" onClick={handleClick}>
+        {click ? (
+          <FiX/>
+        ) : (
+          <FiMenu/>
+        )}
+       </div> 
     </div>
   </div>
   <div className="App-chatroom">

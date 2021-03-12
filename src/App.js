@@ -17,16 +17,6 @@ function App({children}) {
               Go Profile
             </button>
              </Link>
-             <Link to="/App">
-             <button>
-              App
-            </button>
-             </Link>
-             <Link to="/DarkChat">
-             <button>
-              DarkChat
-            </button>
-             </Link>
          </div>
       <div className ="App-content">
         {children}

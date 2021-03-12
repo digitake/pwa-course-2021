@@ -1,5 +1,5 @@
 import './LoadingBar.css';
-import Eye_LoadingScene from "./Eye_LodeingScene";
+import Eye_LoadingScene from "./Eye_LoadingScene";
 function LoadingBar(){
     return(
         <Eye_LoadingScene>

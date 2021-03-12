@@ -83,7 +83,6 @@
 
 .App-textbox-icon{
   height: auto;
-  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-around;
   font-size:30px;
@@ -103,6 +102,7 @@
   justify-content: space-around;
   font-size:40px;
   padding: 10px;
+  color:rgb(255, 255, 255);
 }
 
 .App-header-friend{
@@ -119,9 +119,9 @@
 
 .hide-when-big {display: none;}
  
-@media (min-width: 768px) { .hide-when-small { display:flex } }
+@media (min-width: 768px) { .hide-when-small {display:flex}}
 
-@media (max-width: 768px) { .hide-when-big {display: flex;}}
+@media (max-width: 768px) { .hide-when-big {display: flex}}
 
 
 .col-1 {width: 8.33%;}

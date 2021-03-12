@@ -263,7 +263,7 @@
   height: 100%;
   margin: auto;
   max-width:100%;
-  background-color: #00424b;
+  background-color: hsl(0, 0%, 25%);
   background-position:top center;
   background-size: 2000px;
   background-repeat: no-repeat;
@@ -282,6 +282,19 @@
 .Link-Top
 {
   margin: 5px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
 }
+
+
+  .magin-Logo{
+    position: absolute;
+    right: 120px;
+  }
+  .magin-Text{
+    position: absolute;
+    right: 10px;
+  }
+
+

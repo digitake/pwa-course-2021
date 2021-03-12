@@ -47,11 +47,24 @@ function App({children}) {
                   </button>
                   </Link>
       </div>
+      <div className = "link-margin">
+        <div className= "magin-Logo">
+          <img src="CatLogo.png" alt="Link-List"  width="40" height="40"></img>
+          </div>
+      </div>
+      <div className = "link-margin">  
+      <div className= "magin-Text"> 
+      <img src="TextLogo.png" alt="Link-List"  width="100" height="40"></img>
+      </div>     
+         
+      </div>
+
         </div>
        <div className="App-content">
          {children}
        </div>
     </div>
+    
   );
 }
 

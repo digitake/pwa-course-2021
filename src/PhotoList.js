@@ -1,9 +1,9 @@
 import './App.css';
 import './Photo.css';
-import TopPhotoList from './TopPhotoList'
+import App from './App'
 function  PhotoList() {
     return(
-        <TopPhotoList><div class="BG">
+        <App><div class="BG">
             <div class="Text">: My Gallery :</div>
           <div class="gallery">
               <a target="_blank" href="cat-2.jpg">
@@ -46,15 +46,10 @@ function  PhotoList() {
                     <img src=" mobile_app_presenting.jpg" alt="Present interface" width="600" height="400"></img>
                 </a>
                  <div class="desc">Present interface</div>
-          </div>
-          
+          </div>          
+            </div></App>
             
-            </div></TopPhotoList>
-            
-           
         
-       
-
     )
 };
 

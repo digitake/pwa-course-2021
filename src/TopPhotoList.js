@@ -2,7 +2,7 @@ import './App.css'
 import{Link} from 'react-router-dom'
 function TopPhotolist({children}) {
   return (
-    <div className="TopHead2">
+    <div  className="TopHead2">
       <div className ="Link-Top">
       <div className ="link-margin">
       <Link to="/">
@@ -51,6 +51,7 @@ function TopPhotolist({children}) {
          {children}
        </div>
     </div>
+   
   );
 }
 

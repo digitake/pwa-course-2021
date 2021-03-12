@@ -6,11 +6,13 @@ import FriendList from './FriendList';
 import PageDrawing from './PageDrawing';
 import Profile from './Profile';
 
-
 function Router(){
     return(
     <BrowserRouter>
         <Switch>
+        <Route path="/App">
+                <App />
+            </Route>
             <Route path="/friend-list">
                 <FriendList />
             </Route>
@@ -22,6 +24,7 @@ function Router(){
             </Route>
             <Route path="/">
                 <Chatbox />
+
             </Route>
         </Switch>
     </BrowserRouter>

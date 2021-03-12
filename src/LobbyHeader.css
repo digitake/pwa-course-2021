@@ -1,0 +1,187 @@
+
+.App {
+  display: flex;
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(BGapp.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.App-Content{
+  flex: 12;
+}
+
+.profile-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-read-tar {
+
+  background-image: url(tarProfile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+
+
+
+.profile-read-pruek {
+
+  background-image: url(pruekProfile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+
+.profile-read-phai {
+
+  background-image: url(phaiProfile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  
+}
+
+.profile-read-ju-on {
+
+  background-image: url(Ju-onProfile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #3de73d;
+  border-radius: 50px;
+  
+
+}
+
+.RoomName{
+  display:flex;
+ flex-direction: row;
+  color: #ffffff;
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.68%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media  (max-width: 760px){
+  /* IPHONE */
+  .profile-read-tar{
+    width: 40px;
+    height: 40px;
+    
+  }
+  
+  .profile-read-ju-on{
+    width: 50px;
+    height: 50px;
+    justify-content: flex-start;
+  }
+
+  .profile-read-pruek{
+    width: 40px;
+    height: 40px;
+   
+  }
+  .profile-read-phai{
+    width: 40px;
+    height: 40px;
+    
+
+  }
+  
+  .RoomName{
+    font-size: 10px;
+    
+  }
+  
+}
+
+@media  (max-width: 1500px) and (min-width: 761px){
+  /* IPAD */
+
+  .profile-read-ju-on{
+    width: 70px;
+    height: 70px;
+    justify-content: flex-start;
+  }
+
+  .profile-read-tar{
+    width: 50px;
+    height: 50px;
+    
+    
+  }
+  .profile-read-pruek{
+    width: 50px;
+    height: 50px;
+    
+
+  }
+  .profile-read-phai{
+    width: 50px;
+    height: 50px;
+    
+
+  }
+  .RoomName{
+    font-size: 17px;
+    
+  }
+
+}
+
+@media  (min-width: 1501px){
+  /* PC */
+
+  .profile-read-ju-on{
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+  }
+  .profile-read-tar{
+    width: 60px;
+    height: 60px;
+  }
+  .profile-read-pruek{
+    width: 60px;
+    height: 60px;
+
+  }
+  .profile-read-phai{
+    width: 60px;
+    height: 60px;
+  }
+  .RoomName{
+    font-size: 20px;
+
+  }
+  
+}

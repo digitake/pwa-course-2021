@@ -1,6 +1,4 @@
-
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import App from "./App";
 import FriendList from "./FriendList";
 import EnterApp_3ofghost from "./EnterApp_3ofghost";
 import Eye_LoadingScene from "./Eye_LodeingScene";

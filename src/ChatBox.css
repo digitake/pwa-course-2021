@@ -1,0 +1,124 @@
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-Botton{
+    height: 50px;
+    flex: fit-content;
+}
+
+.App-chatroom {
+    flex: 12;
+    background-image: url(BGapp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.App-chatroom-text {
+    margin: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.App-textbox {
+    background-color: rgb(253, 4, 4);
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+}
+
+.App-textbox-input {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.App-textbox-send {
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.68%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media  (max-width: 760px){
+    /* IPHONE */
+
+}
+
+@media  (max-width: 1500px) and (min-width: 761px){
+    /* IPAD */
+
+   
+}
+
+@media  (min-width: 1501px){
+    /* PC */
+
+
+}
+
+/* For Study next time*/
+/*.chat-form{*/
+/*  display: grid;*/
+/*  grid: 51px/32px 1fr;*/
+/*  align-content: center;*/
+/*  align-items: center;*/
+/*  grid-gap: 15px;*/
+/*  grid-area: chat-form;*/
+/*  border-radius: 0 0 10px 0;*/
+/*  border-top: 1px white;*/
+/*  padding-left: 30px;*/
+/*  padding-right: 30px;*/
+/*}*/
+
+/*.text {*/
+/*  letter-spacing: 0px;*/
+/*  line-height: 1.2;*/
+/*  color: white;*/
+/*  font-weight: 400;*/
+/*  font-style: oblique;*/
+/*  font-family: "Irish Grover", serif;*/
+/*}*/
+
+/*.chat-form-input{*/
+/*  outline: none;*/
+/*  padding: 15px;*/
+/*  border:  2px white;*/
+/*  color: black;*/
+/*  border-radius: 6px;*/
+/*  font-size: 1.4rem;*/
+/*}*/
+
+
+/*.text{*/
+/*  font-size: 1.5rem;*/
+/*  padding-left: 30px;*/
+/*  outline: none;*/
+/*  */
+/*}*/

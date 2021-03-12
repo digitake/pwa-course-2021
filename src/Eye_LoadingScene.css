@@ -15,55 +15,9 @@
     font-style: oblique;
     font-family: "Indie Flower", serif;
     text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.25);
-    overflow: visible;
-}
+    overflow: visible;    
+    text-align: center;
 
-.LoadBox{
-    overflow: visible;
-    height: 15px;
-    width: 55%;
-    background-color: #723838;
-    top: 90%;
-    left: 25%;
-    position: absolute;
-}
-
-.LoadBar{
-    top: 90%;
-    width: 100px;
-    height: 15px;
-    position: fixed;
-    animation: Downloadbar 1s infinite;
-    animation-direction: initial;
-    
-}
-
-@keyframes Downloadbar {
-    0% {
-        width: 100px;
-        background: #ba1818;
-        left: 25%;
-    }
-    25% {
-        width: 150px;
-        background: #991414;
-        left: 30%;
-    }
-    50% {
-        width: 200px;
-        background: #801111;
-        left: 45%;
-    }
-    75% {
-        width: 150px;
-        background: #600d0d;
-        left: 60%;
-    }
-    100% {
-        width: 100px;
-        background: #470a0a;
-        left: 75%;
-    }
 }
 
 .col-1 {width: 8.33%;}
@@ -86,42 +40,6 @@
         top: 15%;
         font-size: 70px;
     }
-    
-    .LoadBar{
-        top: 80%;
-    }
-
-    @keyframes Downloadbar {
-        0% {
-            width: 50px;
-            background: #ba1818;
-            left: 25%;
-        }
-        25% {
-            width: 75px;
-            background: #991414;
-            left: 30%;
-        }
-        50% {
-            width: 100px;
-            background: #801111;
-            left: 45%;
-        }
-        75% {
-            width: 75px;
-            background: #600d0d;
-            left: 60%;
-        }
-        100% {
-            width: 50px;
-            background: #470a0a;
-            left: 75%;
-        }
-    }
-    
-    .LoadBox{
-        top: 80%;
-    }
 }
 
 @media  (max-width: 1500px) and (min-width: 761px) {
@@ -132,36 +50,6 @@
         font-size: 100px;
 
     }
-
-    @keyframes Downloadbar {
-        0% {
-            width: 50px;
-            background: #ba1818;
-            left: 25%;
-        }
-        25% {
-            width: 75px;
-            background: #991414;
-            left: 30%;
-        }
-        50% {
-            width: 100px;
-            background: #801111;
-            left: 45%;
-        }
-        75% {
-            width: 75px;
-            background: #600d0d;
-            left: 60%;
-        }
-        100% {
-            width: 50px;
-            background: #470a0a;
-            left: 75%;
-        }
-    }
-
-
 }
 
 @media  (min-width: 1501px) {

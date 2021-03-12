@@ -10,7 +10,6 @@
 
 .App-logo {
   height: 40vmin;
-  background-image: [Capture222];
   pointer-events: none;
 }
 
@@ -26,8 +25,9 @@
   color: rgb(78, 17, 58);
 }
 
-.App-chatroom {
+.App-content {
   flex: 12;
+  border: #0f3522;
   background-color: rgb(235, 208, 178);
 }
 

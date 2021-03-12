@@ -1,6 +1,7 @@
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
-import App from'./InClassRoom/App';
+import Chatbox from'./InClassRoom/Chatbox';
 import FriendList from './InClassRoom/FriendList';
+import Profile from './InClassRoom/Profile';
 
 function Router() {
 
@@ -10,8 +11,11 @@ function Router() {
                 <Route path= "/friend">
                     <FriendList />
                 </Route>
+                <Route path = "/profile">
+                    <Profile />
+                </Route>
                 <Route path = "/">
-                    <App />
+                    <Chatbox />
                 </Route>
             </Switch>
         </BrowserRouter>

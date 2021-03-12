@@ -1,4 +1,4 @@
-.App {
+.AppPrivate {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,36 +6,22 @@
   max-width: 414px;
   height: 100%;
   margin: auto;
+  background-color: #3d14f5;
 }
 
 @media (min-width: 700px) {
-  .App {
+.AppPrivate {
     max-width:90%;
   }
 }
 @media (min-width: 950px) {
-  .App {
+.AppPrivate {
     max-width:100%;
   }
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  flex: 1;
-  background-color: #3d14f5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
 }
 .Function-link{
   color: #fff;
 }
-
 .App-chatroom 
 {
   flex: 12;
@@ -45,7 +31,7 @@
 .App-chatroom-text 
 {
   margin: 8px;
-  
+
   background-color: rgb(144, 218, 101);
   color : rgb(48, 100, 100);
   font-size: 20px;

@@ -1,13 +1,4 @@
 
-.Undo{
-
-    position: relative;
-    width: 28.55px;
-    height: 23.85px;
-    left: 13px;
-    top: 58px;
-}
-
 .Undo2{
     position: absolute;
     width: 28.54px;
@@ -44,7 +35,7 @@
         
     }
     .HomePageInfo-search{
-    
+        
         background-image: url(/src/AppchatUpdate/SearchBar.png) ;
         width: 414px;
         height: 83px;
@@ -113,6 +104,7 @@
     
     .HomePageInfo-topBar{   
         display: flex;
+        margin: auto;
         align-items: center;
         flex: 1;
         width: 1600px;
@@ -124,7 +116,7 @@
     
 
     .HomePageInfo-search{
-        margin-top: 25px ;
+        margin-top: 30px ;
         justify-items: flex-start;
         background-repeat: no-repeat;
         margin-left: 100px;
@@ -138,6 +130,7 @@
         align-items: flex-end;
         justify-content: flex-end;
         background-repeat: no-repeat;
+        margin-top: 12px ;
         margin-left: 500px;
         width: 300px;
         height: 83px;

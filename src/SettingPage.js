@@ -15,9 +15,8 @@ function SettingPage() {
                     </Link> 
                 </div>
                 
-                 <div className = "Header-text">
+                 <div className = "Header-text"/>
                     
-                </div>
 
             </div>
             

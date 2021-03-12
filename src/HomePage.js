@@ -9,8 +9,8 @@ function HomePage({children}) {
          
         <div className = "HomePageInfo-topBar">
         
-        <div className = "HomePageInfo-search"/>
-        <div className = "HomePageInfo-topBar-profile"/>
+            <div className = "HomePageInfo-search"/>
+            <div className = "HomePageInfo-topBar-profile"/>
         
         </div>
                 

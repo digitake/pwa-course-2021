@@ -5,9 +5,9 @@ function LoginApp(){
     return(
         <div className = "LogoApp">
             
-            <div classname = "LogoE">
+           
             
-            </div>
+            
 
             <div className = "AppLogin">
                 <Link to = '/LoginPage'>

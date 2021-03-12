@@ -1,5 +1,5 @@
 
-@media (min-width : 414px) and (max-width : 1023px){
+@media (max-width : 1279px) {
 
     .LogoApp{
         display: flex;
@@ -8,6 +8,7 @@
         margin: auto;
         width: 414px;
         Height: 896px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         background-image: url(/src/icon/icon-256x256.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -16,6 +17,7 @@
     }
     
     .AppLogin{
+
         align-self: flex-end;
         margin-right: 20px;
         margin-bottom: 20px;
@@ -26,13 +28,45 @@
         margin-bottom: 20px;
     }
 
+
+    .SingIn{
+        margin-bottom: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Login{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 414px;
+        height: 825px;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-image: url(/src/AppchatUpdate/Log\ In.png);
+    }
+
+    .Undo{
+
+        position: absolute;
+        width: 28.54px;
+        height: 23.84px;
+        left: 14px;
+        top: 58px;
+    }
+
+
   }
 
-@media (min-width : 1024px) {
+@media (min-width : 1280px) {
+
+
     .LogoApp {
 
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: auto;
@@ -42,73 +76,65 @@
         background-repeat: no-repeat;
         background-position: center;
         background-color: #2D2C67;
-    
-}
+        
+    }
 
     .AppLogin{
-        margin: 20px;
-        margin-bottom: -230px;
+
+        
+        margin-top: 450px;
+        
     }
     
     .AppRegister{
-        margin: 250px;
-        margin-bottom: 200px;
+
+        margin-top: 10px;
+        
     }
 
+
+    .SingIn{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Login{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #2D2C67;
+    }
+
+    .Login-boxLogin{    
+        
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 808px;
+        height: 209px;
+        background-image: url(/src/AppchatUpdate/GroupLoginButton.png);
+        background-repeat: no-repeat ;
+
+    }
+
+    .Undo{
+
+        position: absolute;
+        width: 48.39px;
+        height: 40.91px;
+        left: 39px;
+        top: 64px;
+    }
+
+
 }
 
-.SingIn{
-    position: relative;
-    left: 8.7%;
-    right: 8.45%;
-    top: 35.27%;
-    bottom: 58.93%;
-}
 
-.Login{
 
-    position: relative;
-    width: 414px;
-    height: 825px;
-    margin: auto;
-    background-image: url(/src/AppchatUpdate/Log\ In.png);
-}
-
-.Register{
-
-    margin: auto;
-    position: relative;
-    width: 414px;
-    height: 896px;
-    background-image: url(/src/AppchatUpdate/RegisterStep1.png);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.RegisterNextStep{
-    
-    position: relative;
-    left: 8.7%;
-    right: 8.45%;
-    top: 32%;
-    bottom: 60.04%;
-}
-
-.NextStep{
-
-    margin: auto;
-    position: relative;
-    width: 414px;
-    height: 896px;
-    background-repeat: no-repeat;
-    background-image: url(/src/AppchatUpdate/RegisterStep2Username.png);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.SingUP{
-
-    position: relative;
-    width: 343px;
-    height: 52px;
-    left: 36px;
-    top: 219px;
-}

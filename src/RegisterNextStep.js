@@ -15,7 +15,6 @@ function RegisterNextStep() {
 
             <div className = "Register-singIn"/>
 
-
             <div className = "Register-recapcha"/>
         
             <div className = "SingUP">

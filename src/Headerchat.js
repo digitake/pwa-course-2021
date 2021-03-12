@@ -42,9 +42,9 @@ return(
           <FiMenu/>
         )}
        </div> 
+      </div>
     </div>
-  </div>
-  <div className="App-chatroom">
+    <div className="App-chatroom">
       {children}
     </div>
 </div> 

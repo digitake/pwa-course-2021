@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
   max-width: 500px;
   height: 90%;
   margin: auto;
@@ -20,6 +21,24 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgb(245, 220, 234);
+
+  max-width: 400px;
+  height: 100%;
+  margin: auto;
+  background:rgb(245, 220, 234);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .App {
+    width:100%;
+    height:100%;
+    background-image: rgb(245, 220, 234);
+    background-size: 210%;
+    background-repeat: no-repeat;
+    background-position: center;
+
   }
 }
 
@@ -30,6 +49,7 @@
 
 .App-header {
   flex: 1;
+
   background-color:#f84040;
   display: flex;
   flex-direction: row;
@@ -37,26 +57,45 @@
   justify-content: flex-end;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 32, 32);
+
+  background-color: #f84040;
+  display: flex;
+  flex-direction:row;
+  align-items:stretch;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 88, 88);
+
   padding-right: 16px;
 }
 
 .App-content {
   flex: 12;
-
 }
 
 .App-chatroom-text {
   margin: 8px;
+
   color: rgb(241, 167, 102);
+
+  color : rgb(107, 27, 27);
+  background-color:rgb(208, 185, 252) ;
+
   font-size: 20px;
 }
 
 .App-textbox {
+
   flex: 1;
   background-color: rgb(215, 242, 250);
   justify-content: center;
+
+  flex: 0.07;
+  background-color: rgb(137, 112, 247);
+  justify-content:center;
+
   align-items: stretch;
-  display: flex;
+  display:flex;
 }
 
 .App-textbox-input {
@@ -72,6 +111,33 @@
   justify-content: center;
   align-items: center;
   display: flex;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+img {
+  border-radius: 50%;
+  background: url(เณรเชน.jpg);
+  background-size: 160% ;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.button {
+  background-color: #f84040;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 }
 h1 {

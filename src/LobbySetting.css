@@ -46,6 +46,15 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50px;
+}
+
+.LoadingSetting-profile-read-taro {
+    overflow: visible;
+    background-image: url(myProfile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
 
 }
 

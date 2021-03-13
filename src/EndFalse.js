@@ -1,7 +1,7 @@
  import './EndTrue.css';
  import {Link} from 'react-router-dom';
  import {useState} from 'react';
- import EndTrue from './EndTrue';
+ 
 
  function EndFalse() {
 

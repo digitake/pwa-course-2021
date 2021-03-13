@@ -16,6 +16,7 @@ function LobbyHeader({children}) {
                     </Link>
                     <div className="profile-read-pruek"/>
                     <div className="profile-read-phai"/>
+                    <div className="profile-read-Taro"/>
                 </div>
             </div>
             <div className="App-Content">

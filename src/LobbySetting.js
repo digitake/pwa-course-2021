@@ -35,6 +35,8 @@ function LobbySetting() {
                 </div>
                 <div className="LoadingSetting-profile-read-phai">
                 </div>
+                <div className="LoadingSetting-profile-read-taro">
+                </div>
             </div>
             <div className="LoadingSetting-chatroom">
                 {

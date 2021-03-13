@@ -18,9 +18,6 @@
     flex: fit-content;
 }
 
-.App-content{
-    flex : 2;
-}
 
 .App-chatroom {
     flex: 12;

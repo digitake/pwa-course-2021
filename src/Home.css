@@ -29,7 +29,7 @@
     .Home
     {
       background-image: url(logo.png);
-      background-size: 100% ;
+      background-size: cover;
     }
     
     .link{

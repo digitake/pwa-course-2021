@@ -35,16 +35,14 @@
 
 .App-chatroom-text {
   margin: 12px;
-  background-color: #EDAB94;
-  color : rgb(255, 255, 255);
+  background-color: #fbf1d5;
+  color : #6e5146;
   font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
-
   background-color: rgb(255, 116, 116);
-
   justify-content: center;
   align-items: stretch;
   display: flex;

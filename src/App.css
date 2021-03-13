@@ -3,22 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
-  height: 100%;
-  margin: auto;
-  background:rgb(245, 220, 234);
-  background-size: 200%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-@media (max-width: 768px) {
-  .App {
-    width:100%;
-    height:100%;
-    background-image: rgb(245, 220, 234);
-    background-size: 210%;
-    background-repeat: no-repeat;
-    background-position: center;
+
   }
 }
 .App-logo {
@@ -44,15 +29,7 @@
 
 .App-chatroom-text {
   margin: 8px;
-  color : rgb(107, 27, 27);
-  background-color:rgb(208, 185, 252) ;
-  font-size: 20px;
-}
 
-.App-textbox {
-  flex: 0.07;
-  background-color: rgb(137, 112, 247);
-  justify-content:center;
   align-items: stretch;
   display:flex;
 }

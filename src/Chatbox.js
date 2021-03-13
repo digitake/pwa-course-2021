@@ -1,6 +1,5 @@
 import './Chatbox.css';
 import {useState} from 'react';
-import App from './App';
 
 function Chatbox() {
   const [text, setText] = useState("");

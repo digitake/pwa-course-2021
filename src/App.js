@@ -24,14 +24,23 @@ function App({children}) {
                 </button>
       </Link>
       
-      </div>
       <Link to = "/">
                 
                 <button>
                     chatbox
                 </button>
       </Link>
+      </div>
       <div className = "App-content">
+
+      <Link to = "/group">
+                
+                <button>
+                    กลุ่ม
+                </button>
+      </Link>
+
+
       {children}
     </div>
       </div>

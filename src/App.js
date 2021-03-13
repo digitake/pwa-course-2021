@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 
 
 function App({children}) {
@@ -7,9 +6,8 @@ function App({children}) {
     <div className="App">
       <div className="App-header">
 
-
     </div>
-   );
+  );
 }
 
 export default App;

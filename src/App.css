@@ -3,18 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 768px;
-  height: 100%;
-  margin: auto;
-}
 
-@media(max-width:768px){
-  .App{
-  background-image: url(doge.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-color: rgb(173, 167, 81);
   }
 }
 .App-logo {
@@ -26,7 +15,12 @@
   flex: 1;
   background-color: #f84040;
   display: flex;
-
+  flex-direction:row;
+  align-items:stretch;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 88, 88);
+  padding-right: 16px;
 }
 
 .App-content {
@@ -53,3 +47,31 @@
   justify-content: center;
   align-items: center;
   display: flex;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+img {
+  border-radius: 50%;
+  background: url(เณรเชน.jpg);
+  background-size: 160% ;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.button {
+  background-color: #f84040;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+

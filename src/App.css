@@ -3,6 +3,25 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
+  max-width: 500px;
+  height: 90%;
+  margin: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(245, 220, 234);
+}
+
+@media (max-width: 768px) {
+  .App {
+    width:100%;
+    height:90%;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(245, 220, 234);
+
   max-width: 400px;
   height: 100%;
   margin: auto;
@@ -19,8 +38,10 @@
     background-size: 210%;
     background-repeat: no-repeat;
     background-position: center;
+
   }
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,6 +49,15 @@
 
 .App-header {
   flex: 1;
+
+  background-color:#f84040;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 32, 32);
+
   background-color: #f84040;
   display: flex;
   flex-direction:row;
@@ -35,6 +65,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 88, 88);
+
   padding-right: 16px;
 }
 
@@ -44,15 +75,25 @@
 
 .App-chatroom-text {
   margin: 8px;
+
+  color: rgb(241, 167, 102);
+
   color : rgb(107, 27, 27);
   background-color:rgb(208, 185, 252) ;
+
   font-size: 20px;
 }
 
 .App-textbox {
+
+  flex: 1;
+  background-color: rgb(215, 242, 250);
+  justify-content: center;
+
   flex: 0.07;
   background-color: rgb(137, 112, 247);
   justify-content:center;
+
   align-items: stretch;
   display:flex;
 }
@@ -97,4 +138,55 @@ img {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+}
+h1 {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f84040;
+}
+
+p {
+  height: 5%;
+  background-color:rgb(255, 255, 255);
+  outline-color:#f84040;
+  }
+p.solid {outline-style:auto;}
+
+select {
+  width: 25%;
+  padding: 2px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+form.example input[type=text] {
+  padding: 10px ;
+  font-size: 17px;
+  border: 5px solid grey;
+  float: left;
+  width: 120%;
+  background: #f1f1f1;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  border-radius: 50%;
+  background: url(hi.jpg);
+  background-size: 160% ;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 

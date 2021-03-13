@@ -6,7 +6,6 @@
   max-width: 100%;
   height: 100%;
   margin: auto;
- 
 }
 
 @media (min-width: 768px){
@@ -38,7 +37,6 @@
   color: #F7F7F7;
   flex-direction: row;
 }
-
 
 .App-chatroom {
   flex: 12;
@@ -112,8 +110,8 @@
 }
 
 .App-content{
+  flex: 12;
   display: flex;
   flex-direction: column;
-  flex: 12;
   color: white;
 }

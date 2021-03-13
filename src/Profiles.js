@@ -1,32 +1,55 @@
 import './Profiles.css';
-import { FiFacebook,FiInstagram,FiTwitter } from "react-icons/fi";
+import {GrFacebook , GrGithub ,GrTwitter} from "react-icons/gr";
+import {CgProfile, CgInstagram} from "react-icons/cg";
 import { Link } from 'react-router-dom';
 
 function profiles() {
     return (
-    <div className="Page">
-            <div className="contain">
-                Profiles
-               <ul className="Function">
-                   <li className="Function-link">
-                   <a href="#"><FiFacebook/>Facebook</a>
-                   </li>
-                   <li className="Function-link">
-                   <a href="#"><FiInstagram/>Instagram</a>
-                   </li>
-                   <li className="Function-link">
-                   <a href="#"><FiTwitter/>Twitter</a>
-                   </li>
-                   </ul> 
-        <div className="App-contents">
-        </div>
-        <Link to="/PrivateChat">
-        <button>
-        PrivateChatRoom
-        </button>
-        </Link>
+    <div className="Header">
+            <div className = "Profile-Titles">
+                Profile
+            </div>
+
+        <div className = "Info">
+                <div className = "Profile" >
+                    <CgProfile/>
+                    <div classname = "InfoWProfile">
+                        Profile
+                    </div>
+                </div>
+
+                <div className = "Facebook">
+                    <GrFacebook />
+                    <div className = "InfoFacebook">
+                        Thanaporn Tungyen
+                    </div>
+                </div>
+            
+                <div className = "Instagram">
+                    <CgInstagram/>
+                    <div className = "InfoInstagram">
+                        I LOVE FACEBOOK BETTER!
+                    </div>
+                </div>
+
+                <div className = "Github">
+                    <GrGithub/>
+                    <div className = "InfoGithub">
+                    https://github.com/Barrower990/pwa-course-2021
+                    </div>
+                </div>
+
+                <div className = "Twitter">
+                    <GrTwitter/>
+                    <div classname = "InfoWTwitter">
+                        Twitter is take over by flametwit
+                    </div>
+                </div>
+
+
             </div>
         </div>
+        
     );
 }
 

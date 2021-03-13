@@ -9,6 +9,8 @@ import SettingPage from './SettingPage'
 import Chatroom from './Chatroom'
 import PrivatePage from './PrivatePage'
 import GroupChatRoom from './GroupChatRoom'
+import Profiles from './Profiles'
+import PrivateChatRoom from './PrivateChatRoom'
 
 
 function Router() {    
@@ -42,10 +44,15 @@ function Router() {
           <Route path = "/Chat-Room">
               <App />
             </Route>
+            <Route path = "/profile">
+              <Profiles />
+          </Route>
+          <Route path = "/privatechat">
+              <PrivateChatRoom />
+          </Route>
           <Route path = "/">
               <LoginApp />
             </Route>
-
          </Switch>
       </BrowserRouter>
     )

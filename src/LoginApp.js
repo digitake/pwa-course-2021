@@ -4,11 +4,6 @@ import './AppLogin.css'
 function LoginApp(){
     return(
         <div className = "LogoApp">
-            
-           
-            
-            
-
             <div className = "AppLogin">
                 <Link to = '/LoginPage'>
                     <img src="ButtonLogin.png"  alt = "" />

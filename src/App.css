@@ -6,7 +6,6 @@
   max-width: 1920px;
   height: 100%;
   margin: auto;
- 
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -69,17 +68,3 @@
 
 
 
-/* @media (max-width: 768px){
-  .App{
-    background-image: url(cool2.jpg);
-    background-size: cover ;
-  }
-  .App-header{
-    background-color: rgb(84, 11, 253);
-
-  }
-  .App-chatroom-text{
-    background-color: rgb(25, 72, 226);
-    
-  }
-} */

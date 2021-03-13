@@ -1,7 +1,5 @@
-
 import './App.css';
 import { Link } from 'react-router-dom';
-
 import Home from './cool4.png';
 
 function App({children}) {

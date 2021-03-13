@@ -1,9 +1,7 @@
-
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Chatbutton from './chat.png';
 import Friendbutton from './friend.png';
-import gif from './giphy.gif';
 import profile from './cool5.png';
 import logo from './logo.png';
 

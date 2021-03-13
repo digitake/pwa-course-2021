@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import '../CSS/Neptune.css';
-import LogoPng from '../Neptune/Logo.png';
+import LogoPng from '../design/Logo.png';
 
 import { Link } from "react-router-dom";
 
@@ -20,7 +20,7 @@ function Login() {
                 Username or email
                 <input type='text' placeholder='Your username' />
                 Password
-                <input type='text' placeholder='Your password' />
+                <input type='password' placeholder='Your password' />
                 <Link to='/pin'>
                     <button className='button'>Log in</button>
                 </Link>

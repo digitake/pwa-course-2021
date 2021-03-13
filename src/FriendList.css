@@ -33,6 +33,13 @@
     }
   }
 
+  .profile-button{
+
+    
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
 
   .FriendList-header {
     flex: 1;

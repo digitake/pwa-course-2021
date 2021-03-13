@@ -51,8 +51,8 @@ function App() {
 
         <div className = "App-textbox-send" 
           onClick={onSendHandler}> 
-        <div className = "App-textbox-send-pic">
-          </div>
+        <div className = "App-textbox-send-pic"/>
+          
 
         </div>
   

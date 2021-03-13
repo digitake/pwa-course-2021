@@ -2,7 +2,8 @@
 import App from './App'
 import'./FriendList.css';
 import FriendListIcon from './profile.png';
-
+import stateOnline from './statusOnline.png'
+import stateOffline from './statusOffline.png'
 
 function FriendList(params) 
 {
@@ -17,21 +18,26 @@ function FriendList(params)
         <div className = "FriendList1">
                 <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
                 <div className = "FriendListName">
-                     Natchapol ID : 123456789
-                </div>
+                     Natchapol 
+                 </div>
+                     <img src = {stateOnline} alt ="" width = "15px" height ="15px"></img> Online 
+               
         </div>
 
         <div className = "FriendList1">
                 <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
                 <div className = "FriendListName">
-                     JoJo ID : 111111111
+                     JoJo 
                 </div>
+                <img src = {stateOnline} alt ="" width = "15px" height ="15px"></img> Online
         </div>
+        
         <div className = "FriendList1">
                 <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
                 <div className = "FriendListName">
-                     Kahjon ID : 999999999
+                     Kahjon 
                 </div>
+                <img src = {stateOffline} alt ="" width = "15px" height ="15px"></img> Online
         </div>
                 </div>
 

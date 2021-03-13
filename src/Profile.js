@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './Profile.css';
-
+import App from './App';
 
 
 function Profile(){
 
   return (
+    <App>
     <div className="Profile">
       
       <div className="Profile-header">
@@ -39,7 +40,7 @@ function Profile(){
 
       </div>
     </div>
-    
+    </App>
   );
   
 }

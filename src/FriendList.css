@@ -10,14 +10,13 @@
     background-color: #ffe2ae;
 }
 
-
 .FriendList-Header{
     margin-top: 1px;
     margin-left: 50px;
     margin-right: 5px;
     width: 95%;
     
-    color: rgb(0, 47, 255);
+    color: #6e5146;
     font-size: 40px;
 }
 

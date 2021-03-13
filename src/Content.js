@@ -12,7 +12,7 @@ function Content({children}) {
       <div className ="image-button">
 
            
-             <Link to="/" className="image-between">
+             <Link to="/profile" className="image-between">
                  <img src= "profile.png" alt = "profile.png" width="100px" height="100px"/> 
              </Link>
 
@@ -20,11 +20,11 @@ function Content({children}) {
                  <img src= "friend list.png" alt = "profile.png" width="100px" height="100px"/> 
              </Link>
 
-             <Link to="/" className="image-between">
+             <Link to="/random-main" className="image-between">
                  <img src= "dice.png" alt = "profile.png" width="100px" height="100px"/> 
              </Link>
 
-             <Link to="/" className="image-between">
+             <Link to="/Note" className="image-between">
                 <img src= "list.png" alt = "profile.png" width="100px" height="100px"/> 
              </Link>
 

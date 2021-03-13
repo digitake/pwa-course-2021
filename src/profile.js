@@ -1,11 +1,11 @@
 import './App.css';
 import { Link } from 'react-router-dom';
-
+import Content from './Content'
 
 function MainProfile() {
 
     return(
-       
+       <Content>
         <div className ="App">
 
             <div className = "profilehead">
@@ -36,37 +36,11 @@ function MainProfile() {
 
             </div>
 
-          
-
-            <div className ="image-button">
-
-                        
-                     <Link to="/" className="image-between">
-                    <img src= "profile.png" alt = "profile.png" width="100px" height="100px"/> 
-                </Link>
-
-                <Link to="/AllChat" className="image-between">
-                    <img src= "friend list.png" alt = "profile.png" width="100px" height="100px"/> 
-                </Link>
-
-                <Link to="/" className="image-between">
-                    <img src= "dice.png" alt = "profile.png" width="100px" height="100px"/> 
-                </Link>
-
-                <Link to="/" className="image-between">
-                    <img src= "list.png" alt = "profile.png" width="100px" height="100px"/> 
-                </Link>
-
-                    </div>
 
         </div>
-
-    
-        
-
+ 
+        </Content>
     );
-    
-
 }
 
 export default MainProfile;

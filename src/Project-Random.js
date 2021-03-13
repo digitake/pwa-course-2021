@@ -1,5 +1,4 @@
 import './App.css';
-import App from './App';
 import Content from './Content'
 function ProjectMain(){
     return(

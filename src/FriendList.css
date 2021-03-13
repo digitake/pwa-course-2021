@@ -1,4 +1,5 @@
-.Profile {
+.FriendList
+{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,30 +10,22 @@
     background-color: #ffe2ae;
 }
 
-.Profilemid{
-    flex: 12;
-    margin: 10px;
-    width: 100%;
-  }
-  
-
-
-
-.Profilename{
-    margin-top: 15px;
+.FriendList-Header{
+    margin-top: 1px;
     margin-left: 50px;
     margin-right: 5px;
     width: 95%;
     
     color: #6e5146;
     font-size: 40px;
-    
-  }
+}
 
-.Profileinfo{
-    margin-top: 15px;
-    margin-left: 50px;
-    margin-right: 5px;
-    color: #6e5146;
-    font-size: 35px;
+.FriendListMid{
+    flex: 12;
+    margin: 10px;
+    width: 100%;
+}
+
+.FriendList1{
+    margin: 20px;
 }

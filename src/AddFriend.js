@@ -1,7 +1,7 @@
-/*import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import App from './App';
 
-function FriendList() {
+function AddFriend() {
     return(
         <App>
             <h1>Add friend</h1>
@@ -18,4 +18,4 @@ function FriendList() {
 }
 
 
-export default FriendList;*/
+export default AddFriend;

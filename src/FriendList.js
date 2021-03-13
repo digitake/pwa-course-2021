@@ -4,6 +4,7 @@ import'./FriendList.css';
 import FriendListIcon from './profile.png';
 import stateOnline from './statusOnline.png'
 import stateOffline from './statusOffline.png'
+import { Link } from 'react-router-dom';
 
 function FriendList(params) 
 {
@@ -16,23 +17,23 @@ function FriendList(params)
                  </div>       
 
         <div className = "FriendList1">
-                <button>
-                        <div className = "FriendListImg">
-                        <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
-                        </div>
-                        <div className = "FriendListName">
-                         Natchapol 
-                         </div>
-                         <div className = "Status">
-                        <img src = {stateOnline} alt ="" width = "15px" height ="15px"></img> 
-                         Online
-                         </div>
+                <Link to = "/chatbox">
+                <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
+                </Link>
+                <div className = "FriendListName">
+                     Natchapol 
+                 </div>
+                 
                 
-                </button>      
+                 
+                <img src = {stateOnline} alt ="" width = "15px" height ="15px"></img> Online 
+               
         </div>
 
         <div className = "FriendList1">
+                <Link to = "/chatbox">
                 <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
+                </Link>
                 <div className = "FriendListName">
                      JoJo 
                 </div>
@@ -40,7 +41,9 @@ function FriendList(params)
         </div>
         
         <div className = "FriendList1">
+                <Link to = "/chatbox">
                 <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
+                </Link>
                 <div className = "FriendListName">
                      Kahjon 
                 </div>

@@ -16,12 +16,19 @@ function FriendList(params)
                  </div>       
 
         <div className = "FriendList1">
-                <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
-                <div className = "FriendListName">
-                     Natchapol 
-                 </div>
-                     <img src = {stateOnline} alt ="" width = "15px" height ="15px"></img> Online 
-               
+                <button>
+                        <div className = "FriendListImg">
+                        <img src = {FriendListIcon} alt ="" width = "150px" height ="150px"></img>
+                        </div>
+                        <div className = "FriendListName">
+                         Natchapol 
+                         </div>
+                         <div className = "Status">
+                        <img src = {stateOnline} alt ="" width = "15px" height ="15px"></img> 
+                         Online
+                         </div>
+                
+                </button>      
         </div>
 
         <div className = "FriendList1">

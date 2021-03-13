@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import LogoPng from '../Neptune/Logo.png';
+import LogoPng from '../design/Logo.png';
 
 import { Link } from "react-router-dom";
 
@@ -20,8 +20,8 @@ function Login(params) {
                 <input type='text' placeholder='Enter username' />
                 <input type='text' placeholder='Enter your email' />
                 <input type='text' placeholder='Enter your phone number' />
-                <input type='text' placeholder='Enter your password' />
-                <input type='text' placeholder='Re-enter your password' />
+                <input type='password' placeholder='Enter your password' />
+                <input type='password' placeholder='Re-enter your password' />
                 <label>I accept the terms of the agreement
                     <input
                         className='loginCheckbox'

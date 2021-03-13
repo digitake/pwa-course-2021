@@ -7,7 +7,14 @@ return (
 
     <div className="friendList">
        <div class="friendList-header">
-           <div class="friendList-center">
+           
+           <div className="friendlist">
+               <Link to="/">
+                <img src={backButton}></img>
+              </Link>
+            </div>
+        </div>
+        <div class="friendList-center">
                <div class="friendList-friend">
                 <a href="/friend-profile" class="class1">User.1</a>
                 <a href="/friend-profile" class="class1">User.2</a>
@@ -18,12 +25,6 @@ return (
                 <a href="/friend-profile" class="class1">User.7</a>
                 <a href="/friend-profile" class="class1">User.8</a>
                </div>
-           </div>
-           <div className="friendlist">
-               <Link to="/">
-                <img src={backButton}></img>
-              </Link>
-            </div>
         </div>
     </div>
         

@@ -12,7 +12,7 @@ function App({children}) {
 
         <div className="App-logo Button">
 
-             <Link to = "/profile-page">
+             <Link to = "/profile">
                <image>
                <img src ="buttonProfile.png"/>
                </image>
@@ -30,7 +30,7 @@ function App({children}) {
                </image>
              </Link>
 
-             <Link to = "/shop-page">
+             <Link to = "/HotStickersList">
                <image>
                <img src ="buttonShop.png"/>
                </image>

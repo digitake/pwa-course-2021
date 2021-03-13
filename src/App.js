@@ -15,7 +15,7 @@ function App({children}) {
         <Link to="/Profile">
                   <img src={logo3}/>
               </Link>
-        <Link to="/">
+        <Link to="/Chatbox">
                 <img src={logo1}/>
         </Link>
       </div>

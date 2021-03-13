@@ -11,7 +11,7 @@ function FriendList() {
                 <option value="au">ID</option>
                 <option value="ca">Phone No</option>
             </select>
-            <img wigth="200" height="200"></img>
+            <img width="200" height="200"></img>
         </App>
     )
     

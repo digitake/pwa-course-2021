@@ -24,6 +24,9 @@ function HeaderOfChat({children}) {
          <div className= "App-head-chatFriend">
        
 </div>
+<div className= "App-head-chatFriend">
+       
+       </div>
       </div>
       
       <div className="App-content">

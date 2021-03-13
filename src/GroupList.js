@@ -1,11 +1,11 @@
 import{Link} from 'react-router-dom';
 import './App.css';
 import Groupchat1 from './Groupchat1.png';
-
+import HeadOfList from './HeadOfList';
 
 function GroupList() {
     return(
-
+<HeadOfList>
 <div>
 <div className="App-head-grouplist">
 Group1
@@ -62,18 +62,9 @@ Group5
    </div>
    </div>
 
-   <div className="App-head-grouplist">
-Group6
-
-<div className="App-PapFriendList-body">
-
-<Link to="/group-chat">
-   <img src={Groupchat1}/>
-              </Link>
+ 
    </div>
-   </div>
-   </div>
-   
+   </HeadOfList>
       );
 
    

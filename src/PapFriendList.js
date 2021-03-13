@@ -1,12 +1,14 @@
 import{Link} from 'react-router-dom';
 import './App.css';
 import Friend1 from './Friend1.png';
+import HeadOfList from './HeadOfList';
 function PapFriendList() {
     return(
+       <HeadOfList>
 
 <div>
 <div className="App-head-grouplist">
-Friend 1
+Friend1
 
 <div className="App-PapFriendList-body">
 
@@ -60,17 +62,9 @@ Friend 1
    </div>
    </div>
 
-   <div className="App-head-grouplist">
-   Friend6
-
-<div className="App-PapFriendList-body">
-
-<Link to="/chat-friend">
-   <img src={Friend1}/>
-              </Link>
+   
    </div>
-   </div>
-   </div>
+   </HeadOfList>
    )
    
 }

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import {Link} from 'react-router-dom'
-import Headerchat from './Headerchat';
 
 function App() {
 
@@ -19,30 +18,48 @@ function App() {
 
 
   return (
-    <Headerchat>
     <div className="App">
-    <div className="App-chatroom">
-      {
-        lines.map(x =>{
-          return <div className="App-chatroom-text">
-                  {x}
-                  </div>
-        }) 
-      }
+      <div className="App-header">
+         Box Chat
+      </div>
+      
+      <div className = "AppUndo">
+      <Link to = "/HomePage">
+        <img src = "Union(1).png" alt = "" /> 
+      </Link>
+      </div>
+     
+      <div className="App-chatroom">
+        <div className="App-chatroom-text">
+        </div>
+
+        <div className="App-chatroom-text">
+        </div>
+
+        {
+          lines.map((value, index) => {
+            return <div key={index} className="App-chatroom-text">
+                {value}
+              </div>
+          })
+        }
+        
       </div>
 
       <div className="App-textbox">
         <input type = "text" className = "App-textbox-input" onChange={onChangeHandler} value={text}/>
+
         <div className = "App-textbox-send" 
           onClick={onSendHandler}> 
         <div className = "App-textbox-send-pic">
           </div>
+
         </div>
+  
       </div>
 
 
     </div>
-    </Headerchat>
   );
 }
 

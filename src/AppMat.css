@@ -251,10 +251,9 @@
 @media (min-width: 1280px){
 
     .SettingPage{
-
+        
         margin: auto;
         display: flex;
-          
         width: 1600px;
         height: 900px;
         background-color: #2D2C67;
@@ -298,7 +297,7 @@
         height: 498px;
         background-size: 100%;
         background-repeat: no-repeat;
-        background-image: url(/src/AppchatUpdate/GroupOption.png);
+        background-image: url(/src/AppchatUpdate/GropOption.png);
     }
     .LogOut{
 

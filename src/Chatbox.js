@@ -22,13 +22,6 @@ function Chatbox() {
   return (
     <App>
       <div className="Chatbox">
-      <div>
-      <Link to="/friend-list">
-                <botton>
-                    Go to Friendlist
-                </botton>
-            </Link>
-      </div>
       <div className="Chatbox-chatroom">
         {
         lines.map(x => {
@@ -37,11 +30,6 @@ function Chatbox() {
                 </div>
           })
         }
-        <Link to ="/PageDrawing">
-          <botton>
-            Go to PageDrawing
-          </botton>
-        </Link>
       </div>
       <div className="Chatbox-textbox">
         <input type="text" className="Chatbox-textbox-input" 

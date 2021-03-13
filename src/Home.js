@@ -3,7 +3,7 @@ import './Home.css';
 import Chatbutton from './chat.png';
 import Friendbutton from './friend.png';
 import profile from './cool5.png';
-import logo from './logo.png';
+
 
 function Home() {
     return(
@@ -28,9 +28,6 @@ function Home() {
                     <img src ={profile} alt="" width = "75" height = "75"></img>
                 </button>
             </Link>
-        </div>
-        <div className ="logo">
-            <img src = {logo} alt= "" width = "75" height = "75"></img>
         </div>
 
         </div>

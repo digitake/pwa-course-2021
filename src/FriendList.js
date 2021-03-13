@@ -37,7 +37,7 @@ function FriendList(params)
                 <div className = "FriendListName">
                      Kahjon 
                 </div>
-                <img src = {stateOffline} alt ="" width = "15px" height ="15px"></img> Online
+                <img src = {stateOffline} alt ="" width = "15px" height ="15px"></img> Offline
         </div>
                 </div>
 

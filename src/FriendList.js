@@ -23,7 +23,7 @@ function FriendList(){
                 </Link>
                 </div>
             </div>
-            <div className= "FriendList-boby2">
+            <div className= "FriendList-boby">
                  สมศรี
                 <div className= "profile-button">
                 <Link to="/profile-page">
@@ -36,7 +36,7 @@ function FriendList(){
                 </Link>
                 </div>
             </div>
-            <div className= "FriendList-boby3">
+            <div className= "FriendList-boby">
                  สมศักดิ์
               <div className= "profile-button">
               <Link to="/profile-page">

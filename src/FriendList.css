@@ -59,28 +59,8 @@
     justify-content: center;
   }
 
-  .FriendList-boby2{
-    flex: 3;
-    background-color: #E9E87F;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    
-  }
-  .FriendList-boby3{
-    flex: 3;
-    background-color: #E9E87F;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-  }
 
   
-
-
-
   .FriendList-black {
     flex: 12;
   }

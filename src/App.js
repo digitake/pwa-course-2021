@@ -15,11 +15,16 @@ function App({children}) {
         </Link>
       </div>
       <div className="App-content">
+      <Link to="/Chatbox">
+          <button>
+            Chatbox
+          </button>
+        </Link>
+      </div>
       {children}
       </div>
       
-      </div>
-  );
-}
+  )}
 
 export default App;
+  

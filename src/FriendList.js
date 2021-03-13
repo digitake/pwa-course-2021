@@ -1,7 +1,6 @@
+
 import { Link } from "react-router-dom";
 import App from './App';
-
-
 
 function FriendList() {
     return(
@@ -21,3 +20,6 @@ function FriendList() {
     );
 }
 export default FriendList;
+
+
+

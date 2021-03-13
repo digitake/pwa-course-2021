@@ -1,7 +1,6 @@
 .App {
     display: flex;
-    
-    flex-direction: column;
+     flex-direction: column;
     justify-content: center;
     text-align: center;
     max-width: 400px;

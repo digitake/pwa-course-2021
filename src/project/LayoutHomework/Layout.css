@@ -42,3 +42,15 @@
     display: flex;
     flex-direction: column;
   }
+
+  .BGProfilely {
+    flex: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 600px;
+    height: 87%;
+    margin: auto;
+    background-color: rgb(12, 61, 134);
+  }

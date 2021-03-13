@@ -1,8 +1,11 @@
 import './Profile.css'
 import { Link } from 'react-router-dom';
+import BGProfile from './LayoutHomework/BGProfile';
 
 function Profile() {
     return (
+
+    <BGProfile>
     <div className="Profile">
              <header className="Main-BackGround">
                 <img className="Main-BackGrounder" src="/Project/Profile/k2.png" alt = "/Project/Profile/k2.png" />
@@ -28,7 +31,8 @@ function Profile() {
             </Link>
         </div>
     </div>
-    
+    </BGProfile>
+
     );
 } 
 

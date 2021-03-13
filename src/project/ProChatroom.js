@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './ProChatroom.css';
-import { Link } from "react-router-dom";
+import BGChatroom from './BGChatroom';
 
 
 function ProChatroom() {
@@ -18,36 +18,22 @@ const onSend = () => {
   setText("");
 };
 return (
-  
-    <div className="App">
+
+    <div className="mainchatroom">
       <p className = "noelly">noel</p>
-      <div className="App-header">
-        <div className="circlesbox1">
-          <Link to='/Profile'>
-              <img src="/Project/Prochatroom/5.jpg" alt="/Project/Prochatroom/5.jpg" width="50px" height="50px"/>
-          </Link> 
-        </div>
-        <div className="imp">
-          <Link to='/Profriend'>
-              <img src="/Project/Prochatroom/333.jpg" alt = "/Project/Prochatroom/333.jpg" width="50px" height="50px"/>
-          </Link>
-        </div>
-        <div className="imp2">
-          <img src= "/Project/Prochatroom/5555.jpg" alt ="/Project/Prochatroom/5555.jpg" width="60px" height="60px" />
-        </div>
-      </div>
-      <div className="App-chatroom">
+      <BGChatroom/>
+      <div className="BG-Chatroom">
         {
           lines.map(x =>{
-          return <div className="App-chatroom-text">
+          return <div className="Chatroom-text">
                  {x}
                </div>
           })
         }
       </div>
-      <div className="App-textbox">
-        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange}/>
-        <div className="App-textbox-send"onClick={onSend}><img src= "/Project/Prochatroom/send.png" alt = "/Project/Prochatroom/send.png" width="70px" height="70px"/></div>
+      <div className="textbox">
+        <input type="text" className="textbox-input" value={text} onChange={onTextChange}/>
+        <div className="textbox-send"onClick={onSend}><img src= "/Project/Prochatroom/send.png" alt = "/Project/Prochatroom/send.png" width="70px" height="70px"/></div>
       </div>
     </div>
   );

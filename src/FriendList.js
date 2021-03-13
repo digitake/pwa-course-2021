@@ -9,7 +9,7 @@ function FriendList() {
       <div className="FriendList-header">
       contacts
       <div className="FriendList-Headers">
-      <Link to="/App">
+      <Link to="/Chatroom">
                 <botton>
                     Go to chatroom
                 </botton>

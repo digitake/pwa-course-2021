@@ -3,7 +3,18 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  max-width: 768px;
+  height: 100%;
+  margin: auto;
+}
 
+@media(max-width:768px){
+  .App{
+  background-image: url(doge.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-color: rgb(173, 167, 81);
   }
 }
 .App-logo {
@@ -24,15 +35,7 @@
 
 .App-chatroom-text {
   margin: 8px;
-  color : rgb(107, 27, 27);
-  background-color:rgb(208, 185, 252) ;
-  font-size: 20px;
-}
 
-.App-textbox {
-  flex: 0.07;
-  background-color: rgb(137, 112, 247);
-  justify-content:center;
   align-items: stretch;
   display:flex;
 }

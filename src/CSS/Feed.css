@@ -1,3 +1,14 @@
 .feed-content{
-    color: white;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: white;
+}
+
+.feed-box{
+    flex: 1;
+    width: 100%;
+    border: none;
 }

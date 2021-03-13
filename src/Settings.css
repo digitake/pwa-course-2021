@@ -13,6 +13,7 @@
   color:aliceblue;
   height: 80px;
   }
+
 @media (min-width: 700px) {
     .app {
       max-width:90%;

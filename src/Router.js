@@ -1,4 +1,5 @@
 
+
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Chatbox from './Chatbox';   
 import FriendList from './FriendList';
@@ -20,10 +21,10 @@ function Router() {
     
 </Switch>
 </BrowserRouter>
-    <Route path="/friend-list">
-            <FriendList />
+    <Route path="/profile">
+            <Profile />
     </Route>
-    <Route part="/">
+    <Route part="/chat">
         <Chatbox />
         
     </Route>
@@ -35,7 +36,7 @@ function Router() {
     )
 }
 
+
+
+
 export default Router;
-
-
-

@@ -6,7 +6,6 @@ import FriendList from './FriendList';
 
 
 
-
 function App({children}) {
 
   return (
@@ -15,22 +14,40 @@ function App({children}) {
 
         <Link to="/friend-list">
           <button>
-            friendList
+           Go to friendList
           </button>
         </Link>
-      </div>
-      <div className="App-content">
+  
       <Link to="/Chatbox">
           <button>
             Chatbox
           </button>
         </Link>
-      </div>
+        </div>
+      <Link to="/Home">
+          <button>
+            Home
+          </button>
+        </Link>
+        
+        <Link to="profile">
+          <button>
+           Profile
+          </button>
+        </Link>
+        
+      </div>)
+  
       {children}
-      </div>
+   
       
-  )}
+  
+
+
+
+  
+  
+}
 
 
 export default App;
-  

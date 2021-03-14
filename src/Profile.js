@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom";
 import "./Profile.css";
-import {Children} from 'react';
 
-function Profile({children}) {
+
+function Profile({childre}) {
     return(
     // <div className="App col-12">
      <div>  
@@ -16,10 +16,10 @@ function Profile({children}) {
       <div className="Propic"></div>
       <div className="textname">
      </div>
-     {children}
+     {childre}
       </div>
      </div>
-
+     
     );
 };
-    export default Profile; 
+    export default Profile;

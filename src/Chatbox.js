@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import './ChatBox.css';
-import {Link} from "react-router-dom";
 import LobbyHeader from "./LobbyHeader";
 
-function ChatBox() {
+function ChatBox({children}) {
 
     const [text, setText] = useState("");
 
@@ -26,22 +25,26 @@ function ChatBox() {
                         lines.map(x => {
                             return <div className="App-chatroom-text">
                                 {x}
-                            </div>
+                            </div>  
                         })
                     }
                 </div>
+                {children}
+                
+                {/*ChatBar Input*/}
                 <div className="App-textbox">
-                    <Link to="/LobbySetting">
-                        <div className="App-Botton col-1">
-                            <img src="botton.png"/>
-                        </div>
-                    </Link>
+                    <div className="App-Botton col-1">
+                        <img src="botton.png"/>
+                    </div>
                     <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-9"
                            value={text}
                            onChange={onTextChange}/>
                     <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
                 </div>
+                
             </div>
+            
+           
         </LobbyHeader>
     );
 }

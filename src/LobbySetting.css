@@ -1,585 +1,128 @@
 ﻿
-.LoadingSetting {
+.button-bar{
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    margin: auto;
 }
 
-.LoadingSetting-logo {
-    height: 40vmin;
-    pointer-events: none;
+table {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.LoadingSetting-header {
-    background-image: url("BGapp.jpg");
-    display: flex;
-    align-items: flex-end;
-    color: white;
+tr:nth-child(even){background-color: #f2f2f2}
+th, td {
     text-align: left;
+    padding: 5px;
 }
 
-.LoadingSetting-profile-read-tar {
-    overflow: visible;
-    background-image: url(tarProfile.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50px;
+th {
+    color: white;
 }
 
-.LoadingSetting-profile-read-pruek {
-    overflow: visible;
-    background-image: url(pruekProfile.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50px;
-}
-
-.LoadingSetting-profile-read-phai {
-    overflow: visible;
-    background-image: url(phaiProfile.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50px;
-}
-
-.LoadingSetting-profile-read-taro {
-    overflow: visible;
-    background-image: url(myProfile.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50px;
-
-}
-
-.LoadingSetting-profile-read-ju-on {
-    background-image: url(Ju-onProfile.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #3de73d;
-    border-radius: 50px;
+.switch {
     position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 75%;
+    left: 1%;
+    margin: 10px;
 }
 
-.LoadingSetting-Botton{
-    height: 50px;
-    flex: fit-content;
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-
-.LoadingSetting-chatroom {
-    flex:10;
-    background-image: url(BGapp.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-.LoadingSetting-RoomName{
-    color: #ffffff;
-    position: relative;
-}
-
-.LoadingSetting-RoomID{
-    color: #ffffff;
-    position: relative;
-}
-
-.LoadingSetting-chatroom-text {
-    margin: 15px;
-    background-color: rgb(255, 255, 255);
-}
-
-.LoadingSetting-textbox {
-    background-color: rgb(253, 4, 4);
-    justify-content: center;
-    align-items: stretch;
-    display: flex;
-    position: fixed;
-    margin: 1px;
-    left: 4.5%;
-    top:1000px;
-    height: 2.6%;
-    width: 97%;
-}
-
-.LoadingSetting-textbox-input {
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.LoadingSetting-textbox-send {
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.slider {
+    position: absolute;
     cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.68%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
 
+input:checked + .slider {
+    background-color: #2196F3;
+}
 
-@media  (max-width: 760px){
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.Private {
+    font-size: 60%;
+    color: #000000;
+    display: flex;
+
+}
+
+.AllowHint {
+    font-size: 60%;
+    color: #000000;
+    display: flex;
+}
+
+.AllowJoin {
+    font-size: 60%;
+    color: #000000;
+    display: flex;
+}
+
+.PlayerName {
+    font-size: 60%;
+    color: #000000;
+    display: flex;
+}
+
+@media (max-width: 760px) {
     /* IPHONE */
-    .LoadingSetting-profile-read-tar{
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        right: 20px;
-    }
-
-    .LoadingSetting-profile-read-ju-on{
-        width: 50px;
-        height: 50px;
-        left : 30px;
-        bottom : 5px;
-    }
-
-    .LoadingSetting-profile-read-pruek{
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        right: 120px;
-    }
-    .LoadingSetting-profile-read-phai{
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        right: 70px;
-    }
-    .LoadingSetting-header{
-        flex : 0.7;
-        flex-direction: row;
-    }
-    .LoadingSetting-Botton{
-        position: fixed;
-        width: 40px;
-        height: 40px;
-        left: 1%;
-        top: 1000px;
-    }
-
-    .LoadingSetting-RoomName{
-        font-size: 1.2rem;
-        left: 45px;
-        bottom: 35px;
-    }
-
-    .LoadingSetting-RoomID{
-        font-size: 0.7rem;
-        bottom: 10px;
-        right: 82px;
-    }
-
     /*button*/
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-        top:75%;
-        left:1%;
-        margin: 10px;
-    }
-
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-    input:checked + .slider {
-        background-color: #2196F3;
-    }
-
-    input:focus + .slider {
-        box-shadow: 0 0 1px #2196F3;
-    }
-
-    input:checked + .slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-    }
-
-    .slider.round {
-        border-radius: 34px;
-    }
-
-    .slider.round:before {
-        border-radius: 50%;
-    }
-
-    .Private{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:12.5%;
-        top:80.6%;
-    }
-    .AllowHint{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:12.5%;
-        top:85%;
-    }  
-    .AllowJoin{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:12.5%;
-        top:89.3%;
-    }
-    .PlayerName{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:12.5%;
-        top:93.6%;
-    }
 }
 
-@media  (max-width: 1500px) and (min-width: 761px){
-   
+@media (max-width: 1500px) and (min-width: 761px) {
+
     /* IPAD */
-    .LoadingSetting-profile-read-ju-on{
-        width: 70px;
-        height: 70px;
-        left : 40px;
-        bottom : 25%;
-    }
-
-    .LoadingSetting-profile-read-tar{
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        right: 30px;
-
-    }
-    .LoadingSetting-profile-read-pruek{
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        right: 150px;
-
-    }
-    .LoadingSetting-profile-read-phai{
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        right: 90px;
-
-    }
-    .LoadingSetting-header{
-        flex :1;
-        flex-direction: row;
-
-    }
-
-    .LoadingSetting-Botton{
-        bottom: 50px;
-        width: 50px;
-        height: 50px;
-
-    }
-
-    .LoadingSetting-RoomName{
-        font-size: 2.2rem;
-        left: 60px;
-        bottom: 45%;
-    }
-
-    .LoadingSetting-RoomID{
-        font-size: 1rem;
-        bottom: 40px;
-        right: 125px;
-    }
-
     /*button*/
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-        top:75%;
-        left:1%;
-        margin: 10px;
-    }
 
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-    input:checked + .slider {
-        background-color: #2196F3;
-    }
-
-    input:focus + .slider {
-        box-shadow: 0 0 1px #2196F3;
-    }
-
-    input:checked + .slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-    }
-
-    .slider.round {
-        border-radius: 34px;
-    }
-
-    .slider.round:before {
-        border-radius: 50%;
-    }
-   
-    .Private{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:7.5%;
-        top:81.3%;
-    }
-    .AllowHint{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:7.5%;
-        top:85.6%;
-    }
-    .AllowJoin{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:7.5%;
-        top:90%;
-    }
-    .PlayerName{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:7.5%;
-        top:94.3%;
-    }
 }
 
-@media  (min-width: 1501px){
-    
+@media (min-width: 1501px) {
+
     /* PC */
-    .LoadingSetting-profile-read-ju-on{
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        left : 700px;
-        top : 20px;
-    }
-    .LoadingSetting-profile-read-tar{
-        margin: 5px;
-        width: 60px;
-        height: 60px;
-
-    }
-    .LoadingSetting-profile-read-pruek{
-        margin: 5px;
-        width: 60px;
-        height: 60px;
-
-    }
-    .LoadingSetting-profile-read-phai{
-        margin: 5px;
-        width: 60px;
-        height: 60px;
-    }
-
-    .LoadingSetting-header{
-        height: 10%;
-        flex-direction: column;
-    }
-
-    .LoadingSetting-Botton{
-        position: fixed;
-        width: 55px;
-        height: 55px;
-        top: 1000px;
-        left:1%;
-    }
-
-    .LoadingSetting-RoomName{
-        position: fixed;
-        font-size: 2.2rem;
-        left: 850px;
-        top: 10px;
-    }
-
-    .LoadingSetting-RoomID{
-        position: fixed;
-        font-size: 1rem;
-        left: 920px;
-        top: 90px;
-    }
-    
     /*button*/
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-        top:75%;
-        left:1%;
-        margin: 10px;
-    }
 
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
 
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-
-    input:checked + .slider {
-        background-color: #2196F3;
-    }
-
-    input:focus + .slider {
-        box-shadow: 0 0 1px #2196F3;
-    }
-
-    input:checked + .slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-    }
-    
-    .slider.round {
-        border-radius: 34px;
-    }
-
-    .slider.round:before {
-        border-radius: 50%;
-    }
-    
-    .Private{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:4.5%;
-        top:81.3%;
-    }
-    .AllowHint{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:4.5%;
-        top:85.3%;
-    }
-    .AllowJoin{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:4.5%;
-        top:89.3%;
-    }
-    .PlayerName{
-        font-size: 60%;
-        color: white;
-        position: fixed;
-        left:4.5%;
-        top:93.3%;
-    }
 }

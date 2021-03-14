@@ -1,13 +1,12 @@
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import FriendList from "./FriendList";
 import EnterApp_3ofghost from "./EnterApp_3ofghost";
-import ChatBox from "./Chatbox"; 
 import Profiletar from "./Profile-Tar";
 import LobbySetting from "./LobbySetting";
-import EndTrue from "./EndTrue";
-import EndFalse from "./EndFalse";
-import Profiletaro from "./Profile-Taro";
 import LoadingBar from "./LoadingBar";
+import Phai from './ProfilePhai';
+import Lobby from "./Lobby";
+
 
 
 function Router(){
@@ -21,14 +20,17 @@ function Router(){
                 <Route path="/Profile_Tar">
                   <Profiletar />
                 </Route>
+                <Route path="/ProfilePhai">
+                    <Phai/>
+                </Route>
                 <Route path="/Eye_Scene">
                     <LoadingBar/>
                 </Route>
                 <Route path="/Profile_Taro">
                   <Profiletaro />
                 </Route>
-                <Route path="/friend-list">
-                    <FriendList />
+                <Route path="/App">
+                    <Lobby/>
                 </Route>
                 <Route path="/LobbySetting">
                     <LobbySetting />
@@ -46,6 +48,8 @@ function Router(){
         </BrowserRouter>
     );
 };
+
+//Plz give me A senpai
 
 export default Router;
 

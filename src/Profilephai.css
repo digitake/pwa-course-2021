@@ -7,7 +7,7 @@
 }
  .Propic{
   overflow: visible;
-  background-image: ();
+  background-image: url("phaiProfile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -36,5 +36,9 @@
  }
  .Profilebon{
      background-color: black;
+ }
+
+ .textphai{
+     color: white;
  }
  

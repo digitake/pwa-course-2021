@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import App from './App';
+import Home from './Home'
 
 
 function FriendList() {
@@ -17,7 +18,7 @@ function FriendList() {
        
         <p> 
         </p>
-        <img width="200" height="200"></img>
+        <img src = {Home} width="200" height="200"></img>
         <p> 
         </p>
         <form>

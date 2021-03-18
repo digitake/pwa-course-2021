@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import App from './App';
 
 function AddFriend() {
@@ -10,7 +9,7 @@ function AddFriend() {
             <select id="country" name="country">
                 <option value="au">ID</option>
                 <option value="ca">Phone No</option>
-            </select>
+            </select>   
             <img width="200" height="200"></img>
         </App>
     )

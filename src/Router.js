@@ -1,30 +1,27 @@
-
-
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Chatbox from './Chatbox';   
 import FriendList from './FriendList';
+import Profile from './Profile';
 import Home from './Home';
+
 
 function Router() {
 
     return (
 <BrowserRouter>
-<Switch><BrowserRouter>
 <Switch>
+<Route path="/profile">
+        <Profile />
+    </Route>
     <Route path="/friend-list">
             <FriendList />
     </Route>
-    <Route part="/home">
-        <Home/>
+   
+   <Route part="/Home">
+            <Home/>
     </Route>
-
     
-</Switch>
-</BrowserRouter>
-    <Route path="/profile">
-            <Profile />
-    </Route>
-    <Route part="/chat">
+    <Route part="/">
         <Chatbox />
         
     </Route>
@@ -35,8 +32,6 @@ function Router() {
         
     )
 }
-
-
 
 
 export default Router;

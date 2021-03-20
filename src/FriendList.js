@@ -1,9 +1,10 @@
-import { useState } from 'react';
 import './FriendList.css';
 import { Link } from 'react-router-dom';
+import App from './App';
 
 function FriendList() {
   return (
+    <App>
     <div className="FriendList">
       <div className="FriendList-header">
       contacts
@@ -22,6 +23,7 @@ function FriendList() {
         }
       </div>
     </div>
+    </App>
   );
 };
 

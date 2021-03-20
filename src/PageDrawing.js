@@ -7,7 +7,7 @@ function Page4Drawling() {
       <div className="PageDrawing-header">
         Page Drawing
         <div className="PageDrawing-botton">
-          <Link to="/App">
+          <Link to="/Chatroom">
             <botton>Go to Chatroom</botton>
           </Link>
         </div>

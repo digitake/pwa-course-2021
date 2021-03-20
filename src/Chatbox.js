@@ -19,6 +19,12 @@ function Chatbox(){
     setText("");
     };
 
+    const keyPress = (event) =>{
+      if(event.which === 13){
+        onSend();
+      }
+    }
+
   return(
       <App>
     <div className="Chatbox">
@@ -33,7 +39,8 @@ function Chatbox(){
         }
       </div>
       <div className="Chatbox-textbox ">
-        <input type="text" className="Chatbox-textbox-input" value ={text} onChange= {onTextChange}/>
+        <input type="text" className="Chatbox-textbox-input" 
+        value ={text} onChange= {onTextChange} onKeyPress={keyPress}/>
 
         <div className="Chatbox-textbox-send " onClick ={onSend}>Send!</div>
 

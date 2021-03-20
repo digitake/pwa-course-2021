@@ -4,30 +4,20 @@ import {useState,useEffect} from 'react';
 import HeaderOfChat from './HeaderOfChat';
 
 
-
-function Chatbox() {
+function ChatFriend() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
-  useEffect(()=>{
-   
-  },[lines]);
-  
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () =>{
-    setLines([...lines, 
-      
-      {sender:"Me",message:text,timeStamp:(new Date())
-  
-  
-  }]);
+    setLines([...lines, {sender:"Me",message:text,timeSamp:(new Date())}]);
     setText("");
   };
 
-  const keyPress = (event) => {               
+  const keyPress = (event) => {
     if (event.which === 13){
       onSend();
     }
@@ -37,17 +27,16 @@ function Chatbox() {
     <HeaderOfChat>
     <div className="App">
     
-    <div className="App-chatroom">
+      <div className="App-chatroom">
         {
           lines.map(x => {
             return <div className="App-chatroom-text">
-                   <div className="App-Chatroom-sender">
-                       {x.sender+":"}
-                   </div>
-                   <div className="App-chatroom-message"> 
-                      {x.message} 
-                      <div >                      
-                      {" Time  "+x.timeStamp.toLocaleString()}  
+                    <div className="App-Chatroom-sender">{x.sender+":"}
+                    </div>
+                    <div className="App-chatroom-message">
+                      {x.message}
+                      <div>
+                       {"Time"+x.timeSamp.toLocaleString()} 
                       </div>
                     </div>
                    </div>

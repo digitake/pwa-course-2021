@@ -1,5 +1,5 @@
 import './App.css';
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import{Link} from 'react-router-dom';
 import App from './App';
 
@@ -7,20 +7,32 @@ function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
+  useEffect(()=>{
+   
+  },[lines]);
+  
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () =>{
-    setLines([...lines, text]);
+    setLines([...lines, 
+      
+      {sender:"Me",message:text,timeStamp:(new Date())
+  
+  
+  }]);
     setText("");
   };
 
-  const keyPress = (event) => {
+  const keyPress = (event) => {               
     if (event.which === 13){
       onSend();
     }
   };
+
+ 
+//render
 
   return (
       <App>
@@ -30,7 +42,15 @@ function Chatbox() {
         {
           lines.map(x => {
             return <div className="App-chatroom-text">
-                    {x}
+                   <div className="App-Chatroom-sender">
+                       {x.sender+":"}
+                   </div>
+                   <div className="App-chatroom-message"> 
+                      {x.message} 
+                      <div >                      
+                      {" Time  "+x.timeStamp.toLocaleString()}  
+                      </div>
+                    </div>
                    </div>
           })
         }

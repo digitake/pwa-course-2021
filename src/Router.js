@@ -15,6 +15,7 @@ import Success from './Success1';
 
 import HeadOfApp from './HeadOfApp';
 import HeaderOfChat from './HeaderOfChat';
+import FlexShow from './FlexShow';
 
 
 function Router(){
@@ -23,7 +24,10 @@ function Router(){
    <BrowserRouter>
    <Switch>
 
-  
+   <Route path = "/Flexshow">
+    <FlexShow/>
+    </Route>
+
    <Route path = "/Success1">
     <Success/>
     </Route>

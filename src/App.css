@@ -52,8 +52,25 @@ background-color: rgb(255, 167, 2);
 
 color : rgb(0, 3, 3);
 font-size: 20px;
+flex-direction: row;
+padding: 8px;
+display: flex;
 border-style:groove ;
 }
+
+.App-chatroom-text-sender {
+  
+  flex:0.1;
+  background-color: rgb(255, 167, 2);
+   justify-self:left;
+  
+  }
+  .App-chatroom-text-message {
+  
+    flex:0.9;
+    background-color: rgb(255, 167, 2);
+    
+    }
 
 .App-textbox {
 flex: 1;

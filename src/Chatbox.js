@@ -1,8 +1,9 @@
-import './App.css';
-import {useState} from 'react';
+import './Chatbox.css';
 import {Link} from 'react-router-dom';
+import { useState } from 'react';
+import App from './App';
 
-function App() {
+function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
   const onTextChange = (event) =>{
@@ -19,6 +20,7 @@ function App() {
     }
   }
   return (
+<<<<<<< HEAD
     <div className="App">
       
       <div className="App-header">
@@ -40,10 +42,19 @@ function App() {
         {
         lines.map(x => {
           return <div className="App-chatroom-text">
+=======
+    <App>
+      <div className="Chatbox">
+      <div className="Chatbox-chatroom">
+        {
+        lines.map(x => {
+          return <div className="Chatbox-chatroom-text">
+>>>>>>> 529244a7e80adccbdb18f8ddba7f78db8ad83c23
                 {x}
                 </div>
           })
         }
+<<<<<<< HEAD
         
       </div>
       <div className="App-textbox">
@@ -56,3 +67,17 @@ function App() {
 }
 
 export default App;
+=======
+      </div>
+      <div className="Chatbox-textbox">
+        <input type="text" className="Chatbox-textbox-input" 
+        value={text} onChange={onTextChange}onKeyPress={keyPress}/>
+        <div className="Chatbox-textbox-send" onClick={onSend}>Send!</div>
+      </div>
+    </div>
+    </App>
+  );
+}
+
+export default Chatbox;
+>>>>>>> 529244a7e80adccbdb18f8ddba7f78db8ad83c23

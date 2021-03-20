@@ -17,7 +17,6 @@
   .App{
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(shiba.png);
     background-size: contain;
 }
 }
@@ -25,7 +24,6 @@
   .App{
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(download.jpg);
     background-repeat: repeat;
 }
 }
@@ -40,15 +38,16 @@
   flex: 1;
   background-color: #7ff8fc;
   display: flex;
-  flex-direction: column;
-  align-items: left;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   font-size: calc(0.5px + 2vmin);
   color: rgb(255, 255, 255);
 }
 
-.App-chatroom {
+.App-Content {
   flex: 12;
+  flex-direction: column;
 }
 
 .App-chatroom-text {
@@ -86,17 +85,12 @@
   .App{
     background-repeat: center;
     background-position: center;
-    background-image: url(shiba.png);
     background-size: contain;
   }
 
   .App-header {
     flex: 0.75;
     background-color: #ff844f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: calc(10px + 2vmin);
     color: rgb(23, 218, 169);
   }
@@ -128,17 +122,12 @@
   .App{
     background-repeat: repeat;
     background-position: center;
-    background-image: url(Jesus.png);
     background-size: contain;
   }
 
   .App-header {
     flex: 1;
     background-color: #00661f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: calc(10px + 2vmin);
     color: rgb(236, 128, 128);
   }
@@ -148,17 +137,12 @@
   .App{
     background-repeat: repeat;
     background-position: center;
-    background-image: url(sea.png);
     background-size: cover;
   }
 
   .App-header {
     flex: 1;
     background-color: #f57ca0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: calc(10px + 2vmin);
     color: rgb(243, 10, 10);
   }

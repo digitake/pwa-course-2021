@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Chatbox.css';
-import App from './App';
+import Headerchat from './Headerchat';
 
 function Chatbox() {
 
@@ -18,7 +18,7 @@ function Chatbox() {
   };
 
   return (
-      <App>
+    <Headerchat>
     <div className="App">
       <div className="App-content">
       {
@@ -35,7 +35,7 @@ function Chatbox() {
         <button className="App-textbox-send" button onClick={onSend}>Send</button>
       </div>
     </div>
-    </App>
+    </Headerchat>
   );
 }
 

@@ -12,8 +12,8 @@ function FriendList(){
             </div>
             <div className= "FriendList-boby">
                  สมชาย
-                <div className= "profile-button">
-                <Link to="/profile-page">
+                <div className= "profile-icon">
+                <Link to="/profile">
                      <img src = "profile-user-64.png" />
                 </Link>
                 </div>
@@ -25,8 +25,8 @@ function FriendList(){
             </div>
             <div className= "FriendList-boby">
                  สมศรี
-                <div className= "profile-button">
-                <Link to="/profile-page">
+                <div className= "profile-icon">
+                <Link to="/profile">
                 <img src = "profile-user-64.png"  />
                 </Link>
                 </div>
@@ -38,8 +38,8 @@ function FriendList(){
             </div>
             <div className= "FriendList-boby">
                  สมศักดิ์
-              <div className= "profile-button">
-              <Link to="/profile-page">
+              <div className= "profile-icon">
+              <Link to="/profile">
                 <img src = "profile-user-64.png"  />
               </Link>
             </div>

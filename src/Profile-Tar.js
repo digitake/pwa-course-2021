@@ -3,22 +3,22 @@ import "./Profile-Tar.css";
 
 
 function Profiletar() {
-    return(
-    // <div className="App col-12">
-     <div>  
-     <Link to="/App">
-     <button>
-     Back to chat
-     </button>
-     </Link>
-     <div className="textpro">Profile</div>
-      <div className="bgpro">
-      <div className="Propic"></div>
-      <div className="textname">Ratpakorn Suntornsarathul
-     </div>
-      </div>
-     </div>
-     
+    return (
+        // <div className="App col-12">
+        <div>
+            <Link to="/App">
+                <button>
+                    Back to chat
+                </button>
+            </Link>
+            <div className="textpro">Profile</div>
+            <div className="bgpro">
+                <div className="Propic"></div>
+                <div className="textname">Ratpakorn Suntornsarathul
+                </div>
+            </div>
+        </div>
+
     );
 };
-    export default Profiletar;
+export default Profiletar;

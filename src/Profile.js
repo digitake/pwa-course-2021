@@ -7,7 +7,7 @@ function Profile(){
         <App>
            <div>
                My Profile
-            <Link to = "/">
+            <Link to = "/chatbox">
                 <button>
                     Go to Chatroom
                 </button>

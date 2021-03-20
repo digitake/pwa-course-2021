@@ -2,7 +2,7 @@ import { BrowserRouter, Switch , Route} from 'react-router-dom'
 import App from './App';
 import Chatbox from './Chatbox';
 import FriendList from './FriendList';
-import GroupApp from './GroupApp';
+import Group from './group';
 import Profile from './Profile';
 
 function Router() {
@@ -13,13 +13,16 @@ function Router() {
                     <Profile />
                     </Route>
                 <Route path="/group">
-                    <GroupApp />
+                    <Group />
                     </Route>
                 <Route path="/friend-list">
                     <FriendList />
                     </Route>
-                <Route path="/">
+                <Route path="/chatbox">
                     <Chatbox />
+                </Route>
+                <Route path="/">
+                    <App />
                 </Route>
             </Switch>
         </BrowserRouter>

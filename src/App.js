@@ -1,6 +1,8 @@
 import './App.css';
 import { Link } from 'react-router-dom'
-
+import friend2 from './icon friend2.png';
+import profile from './icon profile.png';
+import group from './icon group.png';
 
 function App({children}) {
  
@@ -12,19 +14,24 @@ function App({children}) {
 
       <Link to = "/friend-list">
                 
-                <button>
-                    friendlist
-                </button>
+                
+                <img src= {friend2} width = "50" height = " 40" alt="เพื่อน" />
+                
       </Link>
 
       <Link to = "/profile">
                 
-                <button>
-                    profile
-                </button>
+                <img src= {profile} width = "50" height = " 40" alt="โปร์ไฟล์" />
+
       </Link>
-      
-      <Link to = "/">
+
+      <Link to = "/group">
+                
+                 <img src= {group} width = "50" height = " 40" alt="กลุ่ม" />
+
+      </Link>
+
+      <Link to = "/chatbox">
                 
                 <button>
                     chatbox
@@ -33,12 +40,7 @@ function App({children}) {
       </div>
       <div className = "App-content">
 
-      <Link to = "/group">
-                
-                <button>
-                    กลุ่ม
-                </button>
-      </Link>
+      
 
 
       {children}

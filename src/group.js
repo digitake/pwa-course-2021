@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import App from './App';
-function FriendList(){
+function group(){
     return(
         <App>
         <div>
-            Friend List
+            Group
             <Link to = "/chatbox">
                 <button>
                     Go to Chatroom
@@ -15,4 +15,4 @@ function FriendList(){
     )
 }
 
-export default FriendList
+export default group

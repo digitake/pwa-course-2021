@@ -12,9 +12,11 @@
 @media (min-width: 768px){
   .App{
     max-width: 100%;
-    background-color: rgb(134, 255, 134);
+    background-color: rgb(88, 222, 255);
+    background-image: url(bg2.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 125%;
     
   }
 }
@@ -23,6 +25,7 @@
   .App{
     max-width: 100%;
     background-repeat: no-repeat;
+    background-image: url(bg.jpg);
     background-position: center;
     background-size: 125%;
     background-color: rgb(29, 29, 29);
@@ -36,13 +39,14 @@
 
 .App-header {
   flex: 1;
-  background-color: #69b16f;
+  background-color: #32a0fa;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   font-size: calc(10px + 2vmin);
   color: rgb(68, 117, 250);
+  
 }
 
 .App-content {
@@ -52,16 +56,13 @@
 
 .App-chatroom {
   flex: 12;
-  /*background-color: rgba(198, 198, 199, 1.0);*/
-
-  /*background-image: url(wall.jpg);*/
 
 }
 
 .App-chatroom2 {
   flex: 12;
   background-color: rgba(255, 255, 255, 0);
-  background-image: url(Logo.jpg);
+  background-image: url();
   color : rgb(0, 0, 0);
   font-weight: 1000;
 

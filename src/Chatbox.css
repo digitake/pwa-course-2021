@@ -8,20 +8,20 @@
     margin: auto;
   }
   
-  @media (min-width: 700px) {
-    .App {
-      max-width:90%;
+@media (min-width: 700px) {
+  .App{
+    max-width:90%;
+  }
     }
+@media (min-width: 950px) {
+  .App{
+    max-width:100%;
   }
-  @media (min-width: 950px) {
-    .App {
-      max-width:100%;
     }
-  }
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
 
   .App-header {
     flex: 1;

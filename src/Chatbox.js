@@ -1,6 +1,6 @@
 import './Chatbox.css';
 import {Link} from 'react-router-dom';
-import{useState }from 'react';
+import{useState, useEffect }from 'react';
 import './App.css';
 import App from './App';
 
@@ -9,7 +9,9 @@ function Chatbox(){
     const [text, setText] = useState("")
     const [lines, setLines] = useState([]);
 
-    
+    useEffect(() => {
+      alert("Total text chat = "+ lines.length)
+    },[lines])
     
     const onTextChange = (event) => {
     setText(event.target.value);

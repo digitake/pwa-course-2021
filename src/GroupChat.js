@@ -1,7 +1,5 @@
 import './App.css';
-import{Link} from 'react-router-dom';
 import {useState} from 'react';
-import Back from './Back.png';
 import HeaderOfChat from './HeaderOfChat';
 
 
@@ -14,7 +12,7 @@ function GroupChat() {
   };
 
   const onSend = () =>{
-    setLines([...lines, text]);
+    setLines([...lines, {People:"Me",message:text}]);
     setText("");
   };
 
@@ -33,8 +31,13 @@ function GroupChat() {
         {
           lines.map(x => {
             return <div className="App-chatroom-text">
-                    {x}
-                   </div>
+                  <div className="App-Chatroom-sender">  
+                    {x.People+" :"}
+                  </div>
+                  <div className="App-chatroom-message"> 
+                   {x.message}
+                 </div>   
+                 </div>
           })
         }
       </div>

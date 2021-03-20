@@ -45,7 +45,6 @@ display: flex;
 }
 
 .profile-read-tar {
-
   background-image: url(tarProfile.jpg);
   background-size: cover;
   background-position: center;
@@ -79,7 +78,10 @@ display: flex;
 
 }
 
+
+
 .profile-read-ju-on {
+  margin-left: 30px;
   background-image: url(Ju-onProfile.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -159,18 +161,21 @@ display: flex;
   }
 
   .profile-read-tar{
+    margin-right: 10px;
     width: 70px;
     height: 70px;
     
     
   }
   .profile-read-pruek{
+    margin-right: 10px;
     width: 70px;
     height: 70px;
     
 
   }
   .profile-read-phai{
+    margin-right: 10px;
     width: 70px;
     height: 70px;
     
@@ -187,19 +192,22 @@ display: flex;
   /* PC */
 
   .profile-read-ju-on{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
   .profile-read-tar{
+    margin-right: 20px;
     width: 80px;
     height: 80px;
   }
   .profile-read-pruek{
+    margin-right: 20px;
     width: 80px;
     height: 80px;
 
   }
   .profile-read-phai{
+    margin-right: 20px;
     width: 80px;
     height: 80px;
   }

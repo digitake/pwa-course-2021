@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Chatbox.css';
 import Headerchat from './Headerchat';
 
@@ -6,6 +6,15 @@ function Chatbox() {
 
   const [text, setText] = useState("")
   const [lines, setLines] = useState([]);
+
+// () => {} same as function() {}
+  
+useEffect(() => {
+    //alert("Total text chat = " + lines.length) //Hook
+    //sendDatatoserver()
+
+  }, [lines]);
+  //watchdog
 
   const onTextChange = (event) => {
     setText(event.target.value);

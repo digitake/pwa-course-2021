@@ -51,7 +51,7 @@ function Router() {
           <Route path = "/privatechat">
               <PrivateChatRoom />
           </Route>
-          <Route path = "/chatbox">
+          <Route path = "/learn">
               <Chatbox />
           </Route>
           <Route path = "/">

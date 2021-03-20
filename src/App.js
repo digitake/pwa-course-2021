@@ -11,11 +11,7 @@ function App({children}) {
       <div className="App-header">
     
       </div>
-
-      <div className="App-content">
       {children}
-      </div>
-
       <div>
         <Link to="/Chatbox">
                 <button>

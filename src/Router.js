@@ -15,7 +15,7 @@ function Router(){
         <BrowserRouter>
             <Switch>
                 <Route path="/App">
-                  <ChatBox/>
+                  <Lobby />
                 </Route>
                 <Route path="/Profile_Tar">
                   <Profiletar />
@@ -26,10 +26,7 @@ function Router(){
                 <Route path="/Eye_Scene">
                     <LoadingBar/>
                 </Route>
-                <Route path="/Profile_Taro">
-                  <Profiletaro />
-                </Route>
-                <Route path="/App">
+                <Route path="/">
                     <Lobby/>
                 </Route>
                 <Route path="/LobbySetting">
@@ -38,12 +35,7 @@ function Router(){
                 <Route path="/Loding_Scene">
                     <EnterApp_3ofghost />
                 </Route>
-                <Route path="/EndTrue">
-                    <EndTrue />
-                </Route>
-                <Route path="/EndFalse">
-                    <EndFalse />
-                </Route>
+                
             </Switch>
         </BrowserRouter>
     );

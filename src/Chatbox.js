@@ -5,14 +5,19 @@ import Headerchat from './Headerchat';
 function Chatbox() {
 
   const [text, setText] = useState("")
-  const [lines, setLines] = useState(["msg1" , "msg2" , "msg3" , "msg4" , "msg5"]);
+  const [lines, setLines] = useState([]);
 
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () => {
-    setLines(lines => [...lines, text]);
+    setLines(lines => [...lines, {
+      sender:"Me", 
+      message :text,
+      timestamp: (new Date()),
+    }
+    ]);
     setText("");
   };
 
@@ -23,8 +28,16 @@ function Chatbox() {
       {
         lines.map(x =>{
           return <div className="App-chatroom-text">
-                  {x}
-                  </div>
+            <div>
+              {x.sender+":"}
+              </div>
+            <div>
+              {x.message}
+              </div>
+            <div>
+              {x.timestamp.toLocaleDateString()}
+              </div>
+          </div>
         }) 
       }
       </div>

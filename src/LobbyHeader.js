@@ -26,6 +26,7 @@ function LobbyHeader({children}) {
                     </tr>
                 </table>
                 <div className="RoomName">
+
                 </div>
 
             </div>

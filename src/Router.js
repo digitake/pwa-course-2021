@@ -8,17 +8,13 @@ import Phai from './ProfilePhai';
 import Lobby from "./Lobby";
 
 
+function Router() {
 
-function Router(){
-    
-    return(
+    return (
         <BrowserRouter>
             <Switch>
-                <Route path="/App">
-                  <ChatBox/>
-                </Route>
                 <Route path="/Profile_Tar">
-                  <Profiletar />
+                    <Profiletar/>
                 </Route>
                 <Route path="/ProfilePhai">
                     <Phai/>
@@ -26,23 +22,17 @@ function Router(){
                 <Route path="/Eye_Scene">
                     <LoadingBar/>
                 </Route>
-                <Route path="/Profile_Taro">
-                  <Profiletaro />
+                <Route path="/friend-list">
+                    <FriendList/>
                 </Route>
                 <Route path="/App">
                     <Lobby/>
                 </Route>
                 <Route path="/LobbySetting">
-                    <LobbySetting />
+                    <LobbySetting/>
                 </Route>
-                <Route path="/Loding_Scene">
-                    <EnterApp_3ofghost />
-                </Route>
-                <Route path="/EndTrue">
-                    <EndTrue />
-                </Route>
-                <Route path="/EndFalse">
-                    <EndFalse />
+                <Route path="/">
+                    <EnterApp_3ofghost/>
                 </Route>
             </Switch>
         </BrowserRouter>

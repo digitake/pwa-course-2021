@@ -9,7 +9,7 @@ function ChatBox({children}) {
     const [lines, setLines] = useState([]);
     
     // () => {} same as function() {}  --lambda notation
-   // useEffect(() => {alert("total text chat =" + lines.length)}, [lines]);
+   useEffect(() => {alert("total text chat =" + lines.length)}, [lines]);
 
     const onTextChange = (event) => {
         setText(event.target.value);

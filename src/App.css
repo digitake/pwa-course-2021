@@ -8,6 +8,11 @@
   margin: auto;
 }
 
+.App-Content{
+  flex:12;
+  display: flex;
+  flex-direction: column;
+}
 @media(max-width:1000px){
   .App{
     background-repeat: no-repeat;

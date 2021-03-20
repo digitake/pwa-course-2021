@@ -1,21 +1,27 @@
 import './Chatbox.css';
 import {Link} from 'react-router-dom';
-import{useState}from 'react';
+import{useState }from 'react';
 import './App.css';
 import App from './App';
 
 function Chatbox(){
 
     const [text, setText] = useState("")
-    const [lines, setLines] = useState([""]);
+    const [lines, setLines] = useState([]);
 
-
+    
+    
     const onTextChange = (event) => {
     setText(event.target.value);
     };
 
     const onSend = (event) =>{
-    setLines(lines => [...lines, text]);
+    setLines(lines => [...lines, {
+      sender: "Me", 
+      message: text,
+      timestamp: (new Date())
+    }]);
+
     setText("");
     };
 
@@ -26,15 +32,22 @@ function Chatbox(){
     }
 
   return(
-      <App>
+  <App>
     <div className="Chatbox">
-
       <div className="Chatbox-chatroom">
         {
           lines.map(x =>{
-        return <div className="Chatbox-chatroom-text">
-           {x}
-        </div>
+            return <div className="Chatbox-chatroom-text">
+              <div>
+               {x.sender+ ":"}
+              </div>
+              <div>
+               {x.message}
+              </div>
+              <div>
+               {x.timestamp.toLocaleDateString()}
+             </div>
+            </div>
           })
         }
       </div>
@@ -46,7 +59,7 @@ function Chatbox(){
 
       </div>
     </div>
-    </App>
+  </App>
     );
 };
 

@@ -1,24 +1,34 @@
 import './App.css';
 import{Link} from 'react-router-dom';
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import Back from './Back.png';
 import HeaderOfChat from './HeaderOfChat';
 
 
-function GroupChat() {
+
+function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
+  useEffect(()=>{
+   
+  },[lines]);
+  
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () =>{
-    setLines([...lines, text]);
+    setLines([...lines, 
+      
+      {sender:"Me",message:text,timeStamp:(new Date())
+  
+  
+  }]);
     setText("");
   };
 
-  const keyPress = (event) => {
+  const keyPress = (event) => {               
     if (event.which === 13){
       onSend();
     }
@@ -29,11 +39,19 @@ function GroupChat() {
     <div className="App">
     
      
-      <div className="App-chatroom">
+    <div className="App-chatroom">
         {
           lines.map(x => {
             return <div className="App-chatroom-text">
-                    {x}
+                   <div className="App-Chatroom-sender">
+                       {x.sender+":"}
+                   </div>
+                   <div className="App-chatroom-message"> 
+                      {x.message} 
+                      <div >                      
+                      {" Time  "+x.timeStamp.toLocaleString()}  
+                      </div>
+                    </div>
                    </div>
           })
         }

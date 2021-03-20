@@ -5,7 +5,6 @@ import App from './App';
 function Chatbox() {
 
     const [text,setText] = useState("");
-
     const [lines,setLines] = useState([]);
 
     const onTextChange = (event) => {
@@ -13,7 +12,7 @@ function Chatbox() {
     };
 
     const onSend =() => {
-      setLines(lines => [...lines,text]);
+      setLines([...lines,{sender: "Me" ,message: text,timestamp: (new Date())}]);
       setText("");
     };
 
@@ -30,7 +29,15 @@ function Chatbox() {
         {
           lines.map(x =>{
            return <div className="App-chatroom-text">
-                      {x}
+                      <div>
+                        {x.sender+": "}
+                      </div>
+                      <div>
+                        {x.message}
+                      </div>
+                      <div>
+                        {x.timestamp.toLocaleDataString()}
+                      </div>
                   </div>
           })
         } 

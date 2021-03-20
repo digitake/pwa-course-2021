@@ -6,7 +6,7 @@ import LobbySetting from "./LobbySetting";
 import LoadingBar from "./LoadingBar";
 import Phai from './ProfilePhai';
 import Lobby from "./Lobby";
-
+import FlexShow from "./FlexShow";
 
 function Router() {
 
@@ -31,9 +31,13 @@ function Router() {
                 <Route path="/LobbySetting">
                     <LobbySetting/>
                 </Route>
+                <Route path="/FlexShow">
+                    <FlexShow/>
+                </Route>
                 <Route path="/">
                     <EnterApp_3ofghost/>
                 </Route>
+              
             </Switch>
         </BrowserRouter>
     );

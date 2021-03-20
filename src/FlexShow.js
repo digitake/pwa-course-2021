@@ -1,4 +1,5 @@
 import './FlexShow.css';
+import {Link} from "react-router-dom";
 
 function FlexShow(){
 
@@ -33,6 +34,6 @@ function FlexShow(){
             </div>
         </div>
     );
-}
+};
 
-export default FlexShow();
+export default FlexShow;

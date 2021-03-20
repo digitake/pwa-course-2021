@@ -18,19 +18,26 @@ function Chatbox() {
     };
   
   const onSend = () => {
-    setLines(lines => [...lines, text])
+    setLines(lines => [...lines, {Sender:"Me", Message: text, timestamp:(new Date())}])
     setText("");
   }
 
   return (
     <App>
-        
             <div className = "App-chatroom">
                 {
                 lines.map(x => {
                 return <div className="App-chatroom-text">
-                        {x}
-                        </div>
+                       <div>
+                         {x.Sender+": "}
+                       </div>
+                       <div>
+                        {x.Message}
+                       </div>
+                       <div>
+                         {x.timestamp}
+                       </div>
+                  </div>
                 })
                 }
             </div>

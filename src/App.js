@@ -9,7 +9,6 @@ function App({children}) {
     <div className="App">
 
       <div className="App-header">
-        Welcome to My App Main
     
       </div>
 
@@ -18,7 +17,7 @@ function App({children}) {
       </div>
 
       <div>
-        <Link to="/friend-list">
+        <Link to="/Chatbox">
                 <button>
                     Go Chatroom
                 </button>

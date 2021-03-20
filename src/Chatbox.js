@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import {Link} from 'react-router-dom';
 
-function App() {
+function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
@@ -44,4 +44,4 @@ const onSend = () => {
     </div>
   );
 }
-export default App;
+export default Chatbox;

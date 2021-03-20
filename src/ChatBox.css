@@ -18,6 +18,10 @@
     flex: fit-content;
 }
 
+.App-Time-Position{
+    display: flex;
+    justify-content: flex-end;
+}
 
 .App-chatroom {
     flex: 12;
@@ -28,6 +32,8 @@
 }
 
 .App-chatroom-text {
+    display: flex;
+    flex-direction: column;
     margin: 15px;
     background-color: rgb(255, 255, 255);
 }

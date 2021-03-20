@@ -9,7 +9,7 @@ function ChatBox({children}) {
     const [lines, setLines] = useState([]);
     
     // () => {} same as function() {}  --lambda notation
-   useEffect(() => {alert("total text chat =" + lines.length)}, [lines]);
+   // useEffect(() => {alert("total text chat =" + lines.length)}, [lines]);
 
     const onTextChange = (event) => {
         setText(event.target.value);
@@ -35,7 +35,8 @@ function ChatBox({children}) {
                             return <div className="App-chatroom-text">
                                 {x.sender}
                                 {x.message}
-                                <div>{x.timestamp.toLocaleString()}</div>
+                                <div className="App-Time-Position">{ " --- " + x.timestamp.toLocaleString() + " --- "}</div>
+                                
                             </div>  
                         })
                     }
@@ -45,8 +46,7 @@ function ChatBox({children}) {
                 {/*ChatBar Input*/}
                 <div className="App-textbox">
                     <div className="App-Botton col-1">
-                        <img src="botton.png"/>
-                    </div>
+                   </div>
                     <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-9"
                            value={text}
                            onChange={onTextChange}

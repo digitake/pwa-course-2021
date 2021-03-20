@@ -11,12 +11,14 @@ function Chatbox(){
 
 
     const onTextChange = (event) => {
-  setText(event.target.value);
-        }
+    setText(event.target.value);
+    };
+
     const onSend = (event) =>{
     setLines(lines => [...lines, text]);
     setText("");
-    }
+    };
+
   return(
       <App>
     <div className="Chatbox">

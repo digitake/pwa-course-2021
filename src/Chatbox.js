@@ -42,11 +42,7 @@ function Chatbox(){
             return <div className="Chatbox-chatroom-text">
               <div>
                {x.sender+ ":"}
-              </div>
-              <div>
                {x.message}
-              </div>
-              <div>
                {x.timestamp.toLocaleDateString()}
              </div>
             </div>

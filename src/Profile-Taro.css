@@ -7,7 +7,7 @@
 }
  .Propic{
   overflow: visible;
-  background-image: ();
+  background-image: url("myProfile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

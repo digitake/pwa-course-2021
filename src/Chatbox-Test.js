@@ -1,5 +1,5 @@
 import './Chatbox.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import App from './App'
 
 function Chatbox() {

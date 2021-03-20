@@ -1,11 +1,15 @@
 import './Chatbox.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import App from './App'
 
 function Chatbox() {
 
     const [text, setText] = useState("");
     const [lines, setLines] = useState([]);
+
+    /*useEffect(() => {
+      alert("Total Chat Text= "+ lines.length)
+    }, [lines]);*/
   
     const onTextChange = (event) =>{
       setText(event.target.value)
@@ -18,7 +22,9 @@ function Chatbox() {
     };
   
   const onSend = () => {
-    setLines(lines => [...lines, {Sender:"Me", Message: text, timestamp:(new Date())}])
+    setLines(lines => [...lines, {
+      Sender:"Me",
+      Message: text}])
     setText("");
   }
 
@@ -33,9 +39,6 @@ function Chatbox() {
                        </div>
                        <div>
                         {x.Message}
-                       </div>
-                       <div>
-                         {x.timestamp}
                        </div>
                   </div>
                 })

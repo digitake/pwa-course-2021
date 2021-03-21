@@ -26,7 +26,7 @@ th {
 
 
 .App-header {
-display: flex; 
+  display: flex; 
   flex: 1;
   flex-direction: row;
   background-image: url("HeaderBG.png");

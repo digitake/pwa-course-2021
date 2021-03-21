@@ -1,0 +1,98 @@
+.fullscreen {
+  display: flex;
+  flex:1;
+  background-image: url(candle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.text-box { 
+    flex:0.4;
+    margin: auto;
+    border-radius: 7%;
+    background-color: rgb(240, 82, 82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.text-msg {
+  display: flex;
+  flex:0.5;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  font-size: 28px;
+}
+
+th {
+  color: rgb(0, 255, 76);
+  font-size: 28px;
+  
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.68%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media  (max-width: 760px){
+  /* IPHONE */
+  .text-box {
+    margin: 30px;
+  }
+
+  .text-msg {
+    font-size: 20px;
+  }
+  
+  th {
+    font-size: 15px;
+  }
+
+}
+
+@media  (max-width: 1500px) and (min-width: 761px){
+  /* IPAD */
+  .text-box {
+    margin: 30px;
+  }
+
+  .text-msg {
+    font-size: 40px;
+  }
+  
+  th {
+    font-size: 35px;
+  }
+
+ 
+}
+
+@media  (min-width: 1501px){
+  /* PC */
+  .text-box {
+    margin: auto;
+  }
+
+  .text-msg {
+    font-size: 35px;
+  }
+  
+  th {
+    font-size: 30px;
+  }
+
+}

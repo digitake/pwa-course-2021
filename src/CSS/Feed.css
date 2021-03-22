@@ -8,7 +8,7 @@
 
 .box{
     box-shadow: #eee 5px 5px;
-  display: flex;
+display: flex;
   margin: 5px;
   flex-direction: column;
   align-items: center;
@@ -48,12 +48,6 @@ a.dot{
  font-size: 20px;
 }
 
-
-.delete{
-    width: 100%;
-    margin-right: 40px;
-}
-
 .post{
     word-break:break-all;
     width: 90%;
@@ -65,4 +59,61 @@ a.dot{
 .comment{
     width: 100%;
     margin-right: 20px;
+}
+
+.option{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.option .optionText{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.option .myPopup{
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    box-shadow: #eee 5px 5px;
+    border-radius: 3px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.option .optionBox{
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    height: 24px;
+    border-radius: 2px;
+    margin: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.option .edit{
+    font-weight: bold;
+}
+
+.option .delete{
+    color: red;
+    font-weight: bold;
+}
+
+.option .show{
+    visibility: visible;
+    animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn{
+    from{ opacity: 0;}
+    to{opacity: 1;}
 }

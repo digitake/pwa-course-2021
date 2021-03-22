@@ -8,6 +8,7 @@ import Phai from './ProfilePhai';
 import Lobby from "./Lobby";
 import FlexShow from "./FlexShow";
 import EndTrue from "./EndTrue";
+import EndFalse from "./EndFalse";
 
 function Router() {
 
@@ -37,6 +38,9 @@ function Router() {
                 </Route>
                 <Route path="/EndTrue">
                     <EndTrue/>
+                </Route>
+                <Route path="/EndFalse">
+                    <EndFalse/>
                 </Route>
                 <Route path="/">
                     <EnterApp_3ofghost/>

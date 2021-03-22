@@ -23,6 +23,7 @@ img.avatar{
   height: 80px;
   background-color: black;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .infoBox{
@@ -59,6 +60,7 @@ a.dot{
 .comment{
     width: 100%;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .option{
@@ -82,7 +84,7 @@ a.dot{
     justify-content: flex-start;
     align-items: center;
     background-color: white;
-    box-shadow: #eee 5px 5px;
+    box-shadow: #eee 3px 3px 3px;
     border-radius: 3px;
     padding: 5px;
     padding-left: 8px;
@@ -110,7 +112,7 @@ a.dot{
 
 .option .show{
     visibility: visible;
-    animation: fadeIn 0.2s;
+    animation: fadeIn 0.35s;
 }
 
 @keyframes fadeIn{

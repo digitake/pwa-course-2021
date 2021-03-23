@@ -7,7 +7,7 @@ import LoadingBar from "./LoadingBar";
 import Phai from './ProfilePhai';
 import Lobby from "./Lobby";
 import FlexShow from "./FlexShow";
-import EndTrue from "./EndTrue";
+
 
 function Router() {
 
@@ -34,9 +34,6 @@ function Router() {
                 </Route>
                 <Route path="/FlexShow">
                     <FlexShow/>
-                </Route>
-                <Route path="/EndTrue">
-                    <EndTrue/>
                 </Route>
                 <Route path="/">
                     <EnterApp_3ofghost/>

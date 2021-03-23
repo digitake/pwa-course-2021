@@ -2,21 +2,18 @@ import './EndTrue.css'
 
 
 
-function EndTrue() {
+function EndFalse() {
 
 
-
+  
 
   return (
             <div className="fullscreen col-12">
               
               <div className="text-box">
-              
-                
-                  <div className="text-msg">
-                    {"Today.Luck is favoring you.But next time you might be unlucky like today."}
-                    </div>
-             
+              <div className="text-msg">
+              {"Congratulations!!!................You will be able to stay with me."}
+              </div>
                 
               </div>  
               
@@ -25,7 +22,7 @@ function EndTrue() {
                    
                    
                    <div className="text-msg">
-                     --------You're <th>Survived!</th>--------
+                     --------You're <td>Dead!</td>--------
                    </div>
                  
 </div>
@@ -36,4 +33,4 @@ function EndTrue() {
 
  
 
-export default EndTrue;
+export default EndFalse;

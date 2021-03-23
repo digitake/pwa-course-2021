@@ -23,14 +23,21 @@
 
 .text-msg {
   display: flex;
-  flex:0.5;
+  flex:0.6;
   color: rgb(255, 255, 255);
   justify-content: center;
+  align-items: flex-start;
   font-size: 28px;
 }
 
 th {
   color: rgb(0, 255, 76);
+  font-size: 28px;
+  
+}
+
+td {
+  color: rgb(255, 38, 0);
   font-size: 28px;
   
 }
@@ -55,10 +62,14 @@ th {
   }
 
   .text-msg {
-    font-size: 20px;
+    font-size: 15px;
   }
   
   th {
+    font-size: 15px;
+  }
+
+  td{
     font-size: 15px;
   }
 
@@ -78,6 +89,10 @@ th {
     font-size: 35px;
   }
 
+  td{
+    font-size: 40px;
+  }
+
  
 }
 
@@ -92,6 +107,10 @@ th {
   }
   
   th {
+    font-size: 30px;
+  }
+
+  td{
     font-size: 30px;
   }
 

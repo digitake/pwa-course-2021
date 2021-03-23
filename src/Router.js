@@ -34,15 +34,6 @@ function Router() {
                 <Route path="/FlexShow">
                     <FlexShow/>
                 </Route>
-<<<<<<< HEAD
-=======
-                <Route path="/EndTrue">
-                    <EndTrue/>
-                </Route>
-                <Route path="/EndFalse">
-                    <EndFalse/>
-                </Route>
->>>>>>> aac2d0a6f277f305d459f1c56f364986ae5eedb7
                 <Route path="/">
                     <EnterApp_3ofghost/>
                 </Route>

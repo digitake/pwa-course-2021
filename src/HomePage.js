@@ -23,6 +23,7 @@ function HomePage({children}) {
 
         </div>
            
+           
 
         <div className = "ToolBar">
 
@@ -40,12 +41,13 @@ function HomePage({children}) {
                 </Link>
             </div>
 
-            <div className = "HomePageButton">
+            <div className = "HomePageInfo-topBar-HomePageButton">
 
                 <Link to = "/HomePage">
                 <img src = "Home.png" alt = "" />
                 </Link> 
             </div>
+
             <div className = "pandding">
 
                 <Link to = "/PrivatePage">

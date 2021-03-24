@@ -33,7 +33,7 @@ function HomePage({children}) {
                 </Link>
             </div>
 
-            <div className = "pandding">
+            <div className = "pandding" >
 
                 <Link to = "/GroupChatRoom">
                     <img src = "GroupChat.Png" alt = "" />

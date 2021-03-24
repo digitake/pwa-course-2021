@@ -26,10 +26,10 @@ function SettingPage() {
             <div className = "OptionSetting">
 
                 <div className = "Profiles" />
-            
+                
                 <div>
                     <Link to = "/profile">
-                        <img src = "Profile.png" />
+                        <img src = "Profile.png" alt = ""/>
                     </Link>
                 </div>
 

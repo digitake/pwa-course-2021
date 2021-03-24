@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import './PrivateChatRoom.css';
 import Headerchat from './Headerchat';
-import { FiMicOff,FiLogOut,FiMoreVertical,FiClipboard,FiSearch,FiSettings,FiUsers,FiPlusCircle,FiSend,FiMenu,FiX } from "react-icons/fi";
+import { FiPlusCircle,FiSend } from "react-icons/fi";
 
 function PrivateChatRoom() {
+
   const [text, setText] = useState("")
-  const [lines, setLines] = useState(["msg1"]);
+  const [lines, setLines] = useState(["Please Enter Your Massage!"]);
   const onTextChange = (event) => {
     setText(event.target.value);
+
   };
   const onSend = () => {
     setLines(lines => [...lines, text]);
@@ -17,14 +19,16 @@ function PrivateChatRoom() {
   return (
       <Headerchat>
     <div className="AppPrivate">
+
       <div className="App-chatroom">
       {
         lines.map(x =>{
           return <div className="App-chatroom-text">
                   {x}
-                  </div>
+                </div>
         }) 
       }
+
       </div>
       <div className="App-textbox">
         <button class="btn"><FiPlusCircle/></button>
@@ -32,6 +36,7 @@ function PrivateChatRoom() {
         <button className="App-textbox-send" button onClick={onSend}><FiSend/>Send</button>
       </div>
   </div>
+
     </Headerchat>
   );
 }

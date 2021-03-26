@@ -20,7 +20,7 @@ const onSend = () => {
 return (
 
     <div className="mainchatroom">
-      <p className = "noelly">noel</p>
+      <p className = "noelly"></p>
       <BGChatroom/>
       <div className="BG-Chatroom">
         {

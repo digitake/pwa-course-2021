@@ -24,7 +24,7 @@ function Prologin() {
         </div>
 
         <div className="register-logo">
-          <Link to="/">
+          <Link to="/Proregister">
             <img src="/Project/Prologin/register.jpg" alt ="/Project/Prologin/register.jpg" 
             width="340px" height="100px"/>
           </Link>

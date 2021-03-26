@@ -1,0 +1,165 @@
+.fullscreen-register {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: rgb(23, 96, 207);
+}
+
+.header-register {
+  flex: 0.05;
+  background-color: rgb(23, 96, 207);
+}
+  
+.content-register {
+  background-color: rgb(23, 96, 207);
+  flex: 0.9;
+  display: flex; 
+  flex-direction: column;
+}
+  
+.footer-register {
+  flex: 0.05;
+  background-color: rgb(23, 96, 207);
+}
+
+.newAcount-logo {
+  margin-left: 700px;
+  margin-top: 100px;
+}
+
+.usernameInput-logo {
+  margin-top: 100px;
+  margin-left: 650px;
+}
+
+.passwordInput-logo {
+  margin-top: 50px;
+  margin-left: 650px;
+}
+
+.confirmPassInput-logo {
+  margin-top: 30px;
+  margin-left: 585px;
+}
+
+.Complete-register-icon {
+  margin-top: 100px;
+  margin-left: 880px;
+}
+
+input[type=USname], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin-left: 750px;
+  margin-top: -50px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=PW], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin-left: 750px;
+  margin-top: -50px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=CON], select {
+  width: 25%;
+  padding: 12px 20px;
+  margin-left: 750px;
+  margin-top: -60px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media(max-width: 1000px){
+.fullscreen-register {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 100%;
+  background-color: rgb(23, 96, 207);
+ }
+}
+
+@media(max-width: 1000px){
+.newAcount-logo {
+  margin-left: 50px;
+ }
+}
+
+@media(max-width: 1000px){
+.usernameInput-logo {
+  margin-left: 80px;
+ }
+}
+
+@media(max-width: 1000px){
+.passwordInput-logo {
+  margin-left: 80px;
+ }
+}
+
+
+@media(max-width: 1000px){
+.confirmPassInput-logo {
+  margin-left: 15px;
+ }
+}
+
+@media(max-width: 1000px){
+.Complete-register-icon {
+  margin-left: 220px;
+ }
+}
+
+@media(max-width: 1000px){
+input[type=USname], select {
+  width: 55%;
+  padding: 12px 20px;
+  margin-left: 180px;
+  margin-top: -50px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;  
+ }
+}
+
+@media(max-width: 1000px){
+    input[type=PW], select {
+  width: 55%;
+  padding: 12px 20px;
+  margin-left: 180px;
+  margin-top: -50px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;  
+ }
+}
+
+@media(max-width: 1000px){
+input[type=CON], select {
+  width: 55%;
+  padding: 12px 20px;
+  margin-left: 180px;
+  margin-top: -60px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;  
+ }
+}

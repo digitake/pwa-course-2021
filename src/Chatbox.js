@@ -1,8 +1,11 @@
 import './Chatbox.css';
-//import {Link} from 'react-router-dom';
 import{useState, useEffect }from 'react';
 import './App.css';
 import App from './App';
+
+import firebase from './firebaseConfig';
+
+const chatroomRef = firebase.database().ref('chatroom-1')
 
 function Chatbox(){
 
@@ -10,19 +13,27 @@ function Chatbox(){
     const [lines, setLines] = useState([]);
 
     useEffect(() => {
-      alert("Total text chat = "+ lines.length)
-    },[lines])
+      chatroomRef.on('child_added', snapshot => {
+        let x = snapshot.val();
+        setLines( l => [...l, {
+          sender: x.sender, 
+          message: x.message,
+          timestamp: (new Date(x.timestamp))
+        }])
+      })
+    },[]);
     
     const onTextChange = (event) => {
     setText(event.target.value);
     };
 
     const onSend = (event) =>{
-    setLines(lines => [...lines, {
-      sender: "Me", 
-      message: text,
-      timestamp: (new Date())
-    }]);
+      //Push message to firebase server
+      chatroomRef.push({
+        sender: "Me", 
+        message: text,
+        timestamp: firebase.database.ServerValue.TIMESTAMP
+      });
 
     setText("");
     };
@@ -43,7 +54,7 @@ function Chatbox(){
               <div>
                {x.sender+ ": "}
                {x.message}
-               {x.timestamp.toLocaleDateString()};
+               {x.timestamp.toLocaleString()};
              </div>
             </div>
           })

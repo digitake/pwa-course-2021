@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Chatbox.css';
 import App from './App';
 
@@ -9,16 +9,32 @@ import './onClick.js'
 function Chatbox() {
 
   const [text, setText] = useState("");
-  const [lines, setLines] = useState([""]);
+  const [lines, setLines] = useState([]);
+
+  useEffect(() => {
+    alert("Total text chat = "+lines.length)
+  }, [lines]);
 
   const onChangeHandler = (event) => {
       setText(event.target.value);
   };
 
-  const onSendHandler = (event) => {
-    setLines(lines => [...lines, text]);
+  const onSendHandler = () => {
+    setLines([...lines,{
+      sender: "Me" , 
+      message: text , 
+      timestamp: (new Date())
+    }]);
+    
     setText("");
+    
   };
+
+  const keyPress = (event) => {
+    if(event.which === 13){
+      onSendHandler();
+    }
+  }
 
   
   return (
@@ -28,9 +44,17 @@ function Chatbox() {
     <div className="App-chatroom">
         {
 
-          lines.map((value, index) => {
-            return <div key={index} className="App-chatroom-text">
-                {value}
+          lines.map(x => {
+            return <div className="App-chatroom-text">
+                <div>
+                  
+                  {x.timestamp.toLocaleDateString()+" "}
+                  {x.sender+": "}
+                
+                  {x.message+" "}
+                  
+                  
+                </div>
               </div>
           })
         }

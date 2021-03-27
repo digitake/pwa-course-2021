@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './Chatbox.css';
 import App from './App';
-
+import firebase from './firebaseConfig';
 
 import './onClick.js'
+
+
+const chatroomRef = firebase.database().ref('chatroom-1')
 
 
 function Chatbox() {
@@ -12,19 +15,28 @@ function Chatbox() {
   const [lines, setLines] = useState([]);
 
   useEffect(() => {
-    alert("Total text chat = "+lines.length)
-  }, [lines]);
+    //alert("Total text chat = "+lines.length)
+    chatroomRef.on('child_added', snapshot => {
+      let x = snapshot.val();
+      setLines( l => [...l,{
+        sender: x.sender,
+        message: x.message,
+        timestamp:(new Date())
+      }])
+    })
+
+  }, []);
 
   const onChangeHandler = (event) => {
       setText(event.target.value);
   };
 
   const onSendHandler = () => {
-    setLines([...lines,{
-      sender: "Me" , 
-      message: text , 
-      timestamp: (new Date())
-    }]);
+    chatroomRef.push({
+      sender: "P",
+      message: text,
+      timestamp: (new Date)
+    })
     
     setText("");
     
@@ -54,6 +66,7 @@ function Chatbox() {
                   {x.message+" "}
                   
                   
+                  
                 </div>
               </div>
           })
@@ -61,7 +74,7 @@ function Chatbox() {
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" onChange={onChangeHandler} value={text}/>
-        <div className="App-textbox-send" onClick={onSendHandler}>ส่ง!</div>
+        <div className="App-textbox-send" keyPress={onSendHandler} onClick={onSendHandler}>ส่ง!</div>
 
       </div>
       

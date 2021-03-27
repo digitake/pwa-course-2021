@@ -61,6 +61,8 @@
     font-size: 20px;
     text-align: center;
     font-weight: 600;
+    display: flex;
+    flex-direction: row;
   }
   
   .Chatbox-textbox {
@@ -69,6 +71,7 @@
     justify-content: center;
     align-items: stretch;
     display: flex;
+    
   }
   
   .Chatbox-textbox-input {
@@ -89,4 +92,14 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1000;
     color: rgb(52, 1, 255);
+  }
+
+  .Chatbox-chatroom-sender {
+    background-color: yellow;
+    flex: 0.1;
+  }
+
+  .Chatbox-chatroom-message {
+    background-color: yellow;
+    flex: 0.9;
   }

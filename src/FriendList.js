@@ -4,12 +4,15 @@ function FriendList(){
     return(
         <App>
         <div>
-            Friend List
+        <div className="App-header">
+            
             <Link to = "/chatbox">
-                <button>
-                    Go to Chatroom
-                </button>
+                <button> 
+                    back 
+                </button> 
             </Link>
+            
+            </div>
         </div>
         </App>
     )

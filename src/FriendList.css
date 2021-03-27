@@ -1,27 +1,3 @@
-.FriendList {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    /* max-width: 400px; */
-    height: 100%;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgb(120, 218, 128);
-  }
-
-  .FriendList-header {
-    flex: 2;
-    background-color: rgb(108, 18, 224);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* font-size: calc(10px + 2vmin);
-    color: white; */
-  }
-
   .FriendList-main {
     margin: 8px;
     background-color: rgb(99, 231, 132);

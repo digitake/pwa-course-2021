@@ -1,93 +1,27 @@
-.Chatbox {
+.App-chatroom-text{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  max-width: 400px;
-  height: 100%;
-  margin: auto;
- 
+  align-items: flex-start;
 }
 
-@media (min-width: 768px){
-  .App{
-    max-width: 100%;
-  }
-}
-.App-logo {
-  height: 10px;
-  pointer-events: none;
-}
-.App-header {
-  flex: 10;
-  background: rgb(5, 0, 99);
-  background: linear-gradient(90deg,
-  rgb(21, 21, 150) 35%, rgb(16, 208, 247) 100%);
-  display: legacy;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-}
-
-
-.App-chatroom {
-  flex: 50;
-  background-size: 140%;
-  background-position: center;
-  background-color: rgba(255, 255, 255, 0.418);
-}
-
-.App-chatroom-text {
-  margin: 10px;
-  background-color: rgba(211, 210, 210, 0.856);
-  color : rgb(0, 0, 0);
-  font-size: 20px;
-  font-weight: bold;
-  
-}
-
-.App-textbox { 
-  flex: 5 ; 
-  background-color: rgb(224, 220, 220);
-  justify-content: left;
-  align-items: stretch;
+.App-chatroom-text .messageBox{
   display: flex;
-}
-
-.App-textbox-input {
-  flex: 4;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.App-textbox-send {
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  display: flex;
 }
 
-@media (min-width: 768px){
-  .App{
-    min-width: 100%;
-    background: rgb(9,9,121);
-background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
-    background-size: contain;
-  }
-  .App-header{
-    max-width: 100%;
-    flex: 1.5;
-    font-size: 30px;
-  }
-  .App-textbox-input {
-    flex: 5;
-  }
-  .App-textbox{
-    flex: 1.25;
-  }
+.App-chatroom-text .time{
+  font-size: 80%;
+ margin-left: 5px;
+ font-weight: lighter;
+ color: darkgray;
+}
+
+.App-chatroom-text .sender{
+  font-weight: bold;
+  color: rgb(67, 108, 241);
+}
+
+.App-chatroom-text .message{
+  font-weight: lighter;
 }

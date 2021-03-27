@@ -18,11 +18,11 @@
     "mime-types" "~2.1.24"
     "negotiator" "0.6.2"
 
+"acorn@^6.0.0 || ^7.0.0 || ^8.0.0", "acorn@^7.1.1", "acorn@^7.4.0":
+  "version" "7.4.1"
+
 "acorn@^6.4.1":
   "version" "6.4.2"
-
-"acorn@^7.1.1", "acorn@^7.4.0":
-  "version" "7.4.1"
 
 "acorn-globals@^6.0.0":
   "version" "6.0.0"
@@ -52,7 +52,7 @@
   dependencies:
     "debug" "4"
 
-"ajv@^6.1.0", "ajv@^6.10.0", "ajv@^6.10.2", "ajv@^6.12.3", "ajv@^6.12.4", "ajv@^6.12.5":
+"ajv@^6.1.0", "ajv@^6.10.0", "ajv@^6.10.2", "ajv@^6.12.3", "ajv@^6.12.4", "ajv@^6.12.5", "ajv@^6.9.1", "ajv@>=5.0.0":
   "version" "6.12.6"
   dependencies:
     "fast-deep-equal" "^3.1.1"
@@ -264,7 +264,7 @@
 "@babel/compat-data@^7.12.1", "@babel/compat-data@^7.12.5", "@babel/compat-data@^7.12.7":
   "version" "7.12.7"
 
-"@babel/core@^7.1.0", "@babel/core@^7.12.3", "@babel/core@^7.7.5", "@babel/core@^7.8.4", "@babel/core@^7.9.0", "@babel/core@7.12.3":
+"@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.1.0", "@babel/core@^7.12.3", "@babel/core@^7.7.5", "@babel/core@^7.8.4", "@babel/core@^7.9.0", "@babel/core@7 || ^7.0.0-rc.2", "@babel/core@7.12.3":
   "version" "7.12.3"
   dependencies:
     "@babel/code-frame" "^7.10.4"
@@ -284,7 +284,7 @@
     "semver" "^5.4.1"
     "source-map" "^0.5.0"
 
-"babel-eslint@^10.1.0":
+"babel-eslint@^10.0.0", "babel-eslint@^10.1.0":
   "version" "10.1.0"
   dependencies:
     "@babel/code-frame" "^7.0.0"
@@ -1424,7 +1424,7 @@
 "browser-process-hrtime@^1.0.0":
   "version" "1.0.0"
 
-"browserslist@^4.0.0", "browserslist@^4.12.0", "browserslist@^4.14.5", "browserslist@^4.14.6", "browserslist@^4.6.2", "browserslist@^4.6.4":
+"browserslist@^4", "browserslist@^4.0.0", "browserslist@^4.12.0", "browserslist@^4.14.5", "browserslist@^4.14.6", "browserslist@^4.6.2", "browserslist@^4.6.4":
   "version" "4.14.7"
   dependencies:
     "caniuse-lite" "^1.0.30001157"
@@ -1874,6 +1874,11 @@
     "rimraf" "^2.5.4"
     "run-queue" "^1.0.0"
 
+"copy-descriptor@^0.1.1":
+  "integrity" "sha1-Z29us8OZl8LuGsOpJP1hJHSPV40="
+  "resolved" "https://registry.npmjs.org/copy-descriptor/-/copy-descriptor-0.1.1.tgz"
+  "version" "0.1.1"
+
 "core-js@^2.4.0":
   "version" "2.6.11"
 
@@ -2315,6 +2320,8 @@
     "is-descriptor" "^0.1.0"
 
 "define-property@^1.0.0":
+  "integrity" "sha1-dp66rz9KY6rTr56NMEybvnm/sOY="
+  "resolved" "https://registry.npmjs.org/define-property/-/define-property-1.0.0.tgz"
   "version" "1.0.0"
   dependencies:
     "is-descriptor" "^1.0.0"
@@ -2632,7 +2639,12 @@
   optionalDependencies:
     "source-map" "~0.6.1"
 
-"eslint@^7.11.0":
+"eslint-config-react-app@^6.0.0":
+  "version" "6.0.0"
+  dependencies:
+    "confusing-browser-globals" "^1.0.10"
+
+"eslint@*", "eslint@^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0", "eslint@^3 || ^4 || ^5 || ^6 || ^7", "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0", "eslint@^5 || ^6 || ^7", "eslint@^5.0.0 || ^6.0.0 || ^7.0.0", "eslint@^7.0.0", "eslint@^7.1.0", "eslint@^7.11.0", "eslint@^7.5.0", "eslint@>= 4.12.1", "eslint@>=5":
   "version" "7.14.0"
   dependencies:
     "ajv" "^6.10.0"
@@ -2673,11 +2685,6 @@
     "text-table" "^0.2.0"
     "v8-compile-cache" "^2.0.3"
 
-"eslint-config-react-app@^6.0.0":
-  "version" "6.0.0"
-  dependencies:
-    "confusing-browser-globals" "^1.0.10"
-
 "@eslint/eslintrc@^0.2.1":
   "version" "0.2.1"
   dependencies:
@@ -2713,7 +2720,7 @@
     "lodash" "^4.17.15"
     "string-natural-compare" "^3.0.1"
 
-"eslint-plugin-import@^2.22.1":
+"eslint-plugin-import@^2.22.0", "eslint-plugin-import@^2.22.1":
   "version" "2.22.1"
   dependencies:
     "array-includes" "^3.1.1"
@@ -2730,7 +2737,7 @@
     "resolve" "^1.17.0"
     "tsconfig-paths" "^3.9.0"
 
-"eslint-plugin-jest@^24.1.0":
+"eslint-plugin-jest@^24.0.0", "eslint-plugin-jest@^24.1.0":
   "version" "24.1.3"
   dependencies:
     "@typescript-eslint/experimental-utils" "^4.0.1"
@@ -2750,7 +2757,7 @@
     "jsx-ast-utils" "^3.1.0"
     "language-tags" "^1.0.5"
 
-"eslint-plugin-react@^7.21.5":
+"eslint-plugin-react@^7.20.3", "eslint-plugin-react@^7.21.5":
   "version" "7.21.5"
   dependencies:
     "array-includes" "^3.1.1"
@@ -2765,10 +2772,10 @@
     "resolve" "^1.18.1"
     "string.prototype.matchall" "^4.0.2"
 
-"eslint-plugin-react-hooks@^4.2.0":
+"eslint-plugin-react-hooks@^4.0.8", "eslint-plugin-react-hooks@^4.2.0":
   "version" "4.2.0"
 
-"eslint-plugin-testing-library@^3.9.2":
+"eslint-plugin-testing-library@^3.9.0", "eslint-plugin-testing-library@^3.9.2":
   "version" "3.10.1"
   dependencies:
     "@typescript-eslint/experimental-utils" "^3.10.1"
@@ -3045,7 +3052,7 @@
   dependencies:
     "flat-cache" "^2.0.1"
 
-"file-loader@6.1.1":
+"file-loader@*", "file-loader@6.1.1":
   "version" "6.1.1"
   dependencies:
     "loader-utils" "^2.0.0"
@@ -3138,7 +3145,7 @@
   "resolved" "https://registry.npmjs.org/@firebase/analytics-types/-/analytics-types-0.4.0.tgz"
   "version" "0.4.0"
 
-"@firebase/app@0.6.17":
+"@firebase/app@0.6.17", "@firebase/app@0.x":
   "integrity" "sha512-xLXY8507VaVkg5l1mWIUh/OrGqutexKxngbvEdpD9PXY2qiBRApXgvdIJ+DuuhaZDnG+3M/5hlP1IIx7XnkAsA=="
   "resolved" "https://registry.npmjs.org/@firebase/app/-/app-0.6.17.tgz"
   "version" "0.6.17"
@@ -3151,7 +3158,7 @@
     "tslib" "^2.1.0"
     "xmlhttprequest" "1.8.0"
 
-"@firebase/app-types@0.6.1":
+"@firebase/app-types@0.6.1", "@firebase/app-types@0.x":
   "integrity" "sha512-L/ZnJRAq7F++utfuoTKX4CLBG5YR7tFO3PLzG1/oXXKEezJ0kRL3CMRoueBEmTCzVb/6SIs2Qlaw++uDgi5Xyg=="
   "resolved" "https://registry.npmjs.org/@firebase/app-types/-/app-types-0.6.1.tgz"
   "version" "0.6.1"
@@ -3333,7 +3340,7 @@
   "resolved" "https://registry.npmjs.org/@firebase/storage-types/-/storage-types-0.3.13.tgz"
   "version" "0.3.13"
 
-"@firebase/util@0.4.0":
+"@firebase/util@0.4.0", "@firebase/util@0.x":
   "integrity" "sha512-z8A+9YGM61ZXQ2KBSVwxXaELOJjG+EQ374YolqNVMvWBJzTNGZGaVP81Ggl8XD10Xinyt1Dgdo86JDV0OAnvqA=="
   "resolved" "https://registry.npmjs.org/@firebase/util/-/util-0.4.0.tgz"
   "version" "0.4.0"
@@ -4047,6 +4054,13 @@
     "rgba-regex" "^1.0.0"
     "rgb-regex" "^1.0.1"
 
+"is-core-module@^2.2.0":
+  "integrity" "sha512-XRAfAdyyY5F5cOXn7hYQDqh2Xmii+DEfIcQGxK/uNwMHhIkPWO0g8msXcbzLe+MpGoR951MlqM/2iIlU4vKDdQ=="
+  "resolved" "https://registry.npmjs.org/is-core-module/-/is-core-module-2.2.0.tgz"
+  "version" "2.2.0"
+  dependencies:
+    "has" "^1.0.3"
+
 "is-data-descriptor@^0.1.4":
   "version" "0.1.4"
   dependencies:
@@ -4257,7 +4271,7 @@
   dependencies:
     "is-docker" "^2.0.0"
 
-"jest@26.6.0":
+"jest@^26.0.0", "jest@26.6.0":
   "version" "26.6.0"
   dependencies:
     "import-local" "^3.0.2"
@@ -4572,7 +4586,14 @@
     "resolve" "^1.18.1"
     "slash" "^3.0.0"
 
-"jest-resolve@26.6.0":
+"jest-resolve-dependencies@^26.6.3":
+  "version" "26.6.3"
+  dependencies:
+    "jest-regex-util" "^26.0.0"
+    "jest-snapshot" "^26.6.2"
+    "@jest/types" "^26.6.2"
+
+"jest-resolve@*", "jest-resolve@26.6.0":
   "version" "26.6.0"
   dependencies:
     "chalk" "^4.0.0"
@@ -4583,13 +4604,6 @@
     "read-pkg-up" "^7.0.1"
     "resolve" "^1.17.0"
     "slash" "^3.0.0"
-
-"jest-resolve-dependencies@^26.6.3":
-  "version" "26.6.3"
-  dependencies:
-    "jest-regex-util" "^26.0.0"
-    "jest-snapshot" "^26.6.2"
-    "@jest/types" "^26.6.2"
 
 "jest-runner@^26.6.0", "jest-runner@^26.6.3":
   "version" "26.6.3"
@@ -4904,6 +4918,8 @@
   "version" "1.0.1"
 
 "kind-of@^3.0.2", "kind-of@^5.0.0":
+  "integrity" "sha512-NGEErnH6F2vUuXDh+OlbcKW7/wOcfdRHaZ7VWtqCztfHri/++YKmP51OdWeGPuqCOba6kk2OTe5d02VmTB80Pw=="
+  "resolved" "https://registry.npmjs.org/kind-of/-/kind-of-5.1.0.tgz"
   "version" "5.1.0"
   dependencies:
     "kind-of" "^3.0.2"
@@ -5466,6 +5482,15 @@
     "has-symbols" "^1.0.1"
     "object-keys" "^1.1.1"
 
+"object-copy@^1.0.0":
+  "integrity" "sha512-aOrmvYlQQ7sB/vVo65iqSvGBbqXPLkz90viy6/Tg9sLvwalib9wguMIuGViFEC5S5KJkEAdSKOTobbtxnLCUQg=="
+  "resolved" "https://registry.npmjs.org/object-copy/-/object-copy-1.0.0.tgz"
+  "version" "1.0.0"
+  dependencies:
+    "copy-descriptor" "^0.1.1"
+    "define-property" "^1.0.0"
+    "kind-of" "^5.0.0"
+
 "object.entries@^1.1.0", "object.entries@^1.1.2":
   "version" "1.1.2"
   dependencies:
@@ -5675,6 +5700,11 @@
 
 "path-key@^2.0.1", "path-key@^3.0.0", "path-key@^3.1.0":
   "version" "3.1.1"
+
+"path-parse@^1.0.6":
+  "integrity" "sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw=="
+  "resolved" "https://registry.npmjs.org/path-parse/-/path-parse-1.0.6.tgz"
+  "version" "1.0.6"
 
 "path-to-regexp@^1.7.0":
   "integrity" "sha512-n43JRhlUKUAlibEJhPeir1ncUID16QnEjNpwzNdO3Lm4ywrBpBZ5oLD0I6br9evr1Y9JTqwRtAh7JLoOzAQdVA=="
@@ -6358,12 +6388,6 @@
     "iconv-lite" "0.4.24"
     "unpipe" "1.0.0"
 
-"react@^17.0.1":
-  "version" "17.0.1"
-  dependencies:
-    "loose-envify" "^1.1.0"
-    "object-assign" "^4.1.1"
-
 "react-app-polyfill@^2.0.0":
   "version" "2.0.0"
   dependencies:
@@ -6404,7 +6428,7 @@
     "strip-ansi" "6.0.0"
     "text-table" "0.2.0"
 
-"react-dom@^17.0.1":
+"react-dom@*", "react-dom@^17.0.1":
   "version" "17.0.1"
   dependencies:
     "loose-envify" "^1.1.0"
@@ -6425,6 +6449,12 @@
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
+
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^17.0.1", "react@>=15", "react@17.0.1":
+  "version" "17.0.1"
+  dependencies:
+    "loose-envify" "^1.1.0"
+    "object-assign" "^4.1.1"
 
 "react-refresh@^0.8.3":
   "version" "0.8.3"
@@ -6690,6 +6720,14 @@
   dependencies:
     "@babel/runtime" "^7.8.4"
 
+"regex-not@^1.0.0", "regex-not@^1.0.2":
+  "integrity" "sha512-J6SDjUgDxQj5NusnOtdFxDwN/+HWykR8GELwctJ7mdqhcyy1xEc4SRFHUXvxTp661YaVKAjfRLZ9cCqS6tn32A=="
+  "resolved" "https://registry.npmjs.org/regex-not/-/regex-not-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "extend-shallow" "^3.0.2"
+    "safe-regex" "^1.1.0"
+
 "regex-parser@^2.2.11":
   "version" "2.2.11"
 
@@ -6761,6 +6799,14 @@
     "is-number" "^3.0.0"
     "repeat-string" "^1.6.1"
 
+"resolve@^1.10.0", "resolve@^1.12.0", "resolve@^1.13.1", "resolve@^1.14.2", "resolve@^1.17.0", "resolve@^1.18.1", "resolve@^1.20.0", "resolve@^1.3.2", "resolve@^1.8.1", "resolve@1.18.1":
+  "integrity" "sha512-wENBPt4ySzg4ybFQW2TT1zMQucPK95HSh/nq2CFTZVOGut2+pQvSsgtda4d26YrYcr067wjbmzOG8byDPBX63A=="
+  "resolved" "https://registry.npmjs.org/resolve/-/resolve-1.20.0.tgz"
+  "version" "1.20.0"
+  dependencies:
+    "is-core-module" "^2.2.0"
+    "path-parse" "^1.0.6"
+
 "resolve-cwd@^2.0.0":
   "version" "2.0.0"
   dependencies:
@@ -6796,6 +6842,11 @@
     "rework" "1.0.1"
     "rework-visit" "1.0.0"
     "source-map" "0.6.1"
+
+"ret@^0.4.0":
+  "integrity" "sha512-ZAUfxFXaRPGDk8P2qxoDT/xz4DF+Iaq+pIH07ZMGhIGWo/5zFZRg/mPvKkzxRWTqfqy9M2Hw7Uqv3z3XwE6cpw=="
+  "resolved" "https://registry.npmjs.org/ret/-/ret-0.4.0.tgz"
+  "version" "0.4.0"
 
 "retry@^0.12.0":
   "version" "0.12.0"
@@ -7043,13 +7094,20 @@
   dependencies:
     "kind-of" "^6.0.2"
 
-"shebang-command@^1.2.0":
-  "version" "1.2.0"
+"shebang-command@^1.2.0", "shebang-command@^2.0.0":
+  "integrity" "sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA=="
+  "resolved" "https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz"
+  "version" "2.0.0"
   dependencies:
-    "shebang-regex" "^1.0.0"
+    "shebang-regex" "^3.0.0"
 
 "shebang-regex@^1.0.0":
   "version" "1.0.0"
+
+"shebang-regex@^3.0.0":
+  "integrity" "sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A=="
+  "resolved" "https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz"
+  "version" "3.0.0"
 
 "shell-quote@1.7.2":
   "version" "1.7.2"
@@ -7103,7 +7161,7 @@
 "sockjs@0.3.20":
   "version" "0.3.20"
 
-"sockjs-client@1.4.0":
+"sockjs-client@^1.4.0", "sockjs-client@1.4.0":
   "version" "1.4.0"
   dependencies:
     "debug" "^3.2.5"
@@ -7237,6 +7295,11 @@
 
 "static-extend@^0.1.1":
   "version" "0.1.2"
+
+"statuses@^2.0.1", "statuses@>= 1.4.0 < 2", "statuses@>= 1.5.0 < 2", "statuses@~1.5.0":
+  "integrity" "sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ=="
+  "resolved" "https://registry.npmjs.org/statuses/-/statuses-2.0.1.tgz"
+  "version" "2.0.1"
 
 "stream-browserify@^2.0.1":
   "version" "2.0.2"
@@ -7577,7 +7640,7 @@
     "@istanbuljs/schema" "^0.1.2"
     "minimatch" "^3.0.4"
 
-"@testing-library/dom@^7.28.1":
+"@testing-library/dom@^7.28.1", "@testing-library/dom@>=7.21.4":
   "version" "7.29.4"
   dependencies:
     "aria-query" "^4.2.2"
@@ -7772,7 +7835,7 @@
   dependencies:
     "source-map" "^0.6.1"
 
-"type-fest@^0.11.0":
+"type-fest@^0.11.0", "type-fest@^0.13.1":
   "version" "0.11.0"
 
 "type-fest@^0.3.1":
@@ -7815,7 +7878,12 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
-"@typescript-eslint/eslint-plugin@^4.5.0":
+"typescript@^3.2.1", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
+  "integrity" "sha512-kdMjTiekY+z/ubJCATUPlRDl39vXYiMV9iyeMuEuXZh2we6zz80uovNN2WlAxmmdE/Z/YQe+EbOEXB5RHEED3w=="
+  "resolved" "https://registry.npmjs.org/typescript/-/typescript-3.9.9.tgz"
+  "version" "3.9.9"
+
+"@typescript-eslint/eslint-plugin@^4.0.0", "@typescript-eslint/eslint-plugin@^4.5.0":
   "version" "4.8.1"
   dependencies:
     "debug" "^4.1.1"
@@ -7845,7 +7913,7 @@
     "@typescript-eslint/typescript-estree" "4.8.1"
     "@types/json-schema" "^7.0.3"
 
-"@typescript-eslint/parser@^4.5.0":
+"@typescript-eslint/parser@^4.0.0", "@typescript-eslint/parser@^4.5.0":
   "version" "4.8.1"
   dependencies:
     "debug" "^4.1.1"
@@ -8003,7 +8071,7 @@
   dependencies:
     "source-map" "^0.6.1"
 
-"@types/webpack@^4.41.8":
+"@types/webpack@^4.41.8", "@types/webpack@4.x":
   "version" "4.41.25"
   dependencies:
     "source-map" "^0.6.0"
@@ -8324,7 +8392,7 @@
 "webidl-conversions@^6.1.0":
   "version" "6.1.0"
 
-"webpack@4.44.2":
+"webpack@^4.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.27.0 || ^5.0.0", "webpack@^4.36.0 || ^5.0.0", "webpack@^4.4.0 || ^5.0.0", "webpack@>=2", "webpack@>=4.43.0 <6.0.0", "webpack@2 || 3 || 4", "webpack@4.44.2":
   "version" "4.44.2"
   dependencies:
     "acorn" "^6.4.1"
@@ -8360,7 +8428,7 @@
     "range-parser" "^1.2.1"
     "webpack-log" "^2.0.0"
 
-"webpack-dev-server@3.11.0":
+"webpack-dev-server@3.11.0", "webpack-dev-server@3.x":
   "version" "3.11.0"
   dependencies:
     "ansi-html" "0.0.7"

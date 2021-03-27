@@ -13,9 +13,9 @@ function App({children}) {
     
       </div>
 
-      <div className="App-content">
+     
       {children}
-      </div>
+
 
       <div>
         <Link to="/friend-list">

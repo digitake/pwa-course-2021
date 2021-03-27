@@ -10,18 +10,6 @@ function Chatbox() {
 
     const [text, setText] = useState("");
     const [lines, setLines] = useState([]);
-
-    useEffect( () => {
-      chatroomref.on('child_added',snapshot =>{
-        let x = snapshot.val();
-        setLines(l => [...l,{
-          Sender: x.sender,
-          Message: x.message
-        }])
-      });
-
-
-    }, []);
   
     useEffect(() => {
       chatroomref.on('child-added', snapshot => {

@@ -2,21 +2,38 @@ import './Chatbox.css';
 import {useState , useEffect} from 'react';
 import App from './App';
 
+import firebase from './firebaseConfig';
+
+const chatroomRef = firebase.database().ref('chatroom-1');
+
 
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
   
   useEffect(() => {
-    alert("Total lines = " + lines.length);
-  }, [lines]);
+    chatroomRef.on('child_added' , snapshot =>{
+      let x = snapshot.val();
+
+      setLines(line => [...line, {
+      sender: x.sender ,
+      message: x.message,
+      timestamp: new Date(x.timestamp)
+      }])
+    });
+
+  }, []);
 
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () =>{
-    setLines([...lines ,{sender: "Me" , message: text , timestamp: (new Date()) }]);
+    chatroomRef.push({
+      sender: "Benz",
+      message: text ,
+      timestamp: firebase.database.ServerValue.TIMESTAMP
+    });
 
     setText("");
   };
@@ -39,15 +56,16 @@ function Chatbox() {
         {
           lines.map(x => {
             return <div className="Chatbox-chatroom-text">
-              <div className = "Chatbox-chatroom-sender">
+               <div>
               {x.sender+ ": "}
               </div>
-
-              <div className = "Chatbox-chatroom-message">
+               <div>
               {x.message}
               </div>
-              
+               <div>
+              {x.timestamp.toLocaleTimeString()}
               </div>
+            </div>
           })
         }
       </div>

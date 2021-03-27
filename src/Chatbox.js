@@ -21,7 +21,7 @@ function Chatbox() {
       setLines(line => [...line, {
         sender : x.sender,
         message : x.message,
-        timestamp : new Date()
+        timestamp : new Date(x.timestamp)
       }])
     })
   }, []);
@@ -33,7 +33,8 @@ function Chatbox() {
   const onSend = () =>{
     chatroomRef.push({
       sender : "pigleg",
-      message : text
+      message : text,
+      timestamp : firebase.database.ServerValue.TIMESTAMP
     });
     setText("");
   };

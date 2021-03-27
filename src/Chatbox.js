@@ -53,7 +53,7 @@ function Chatbox(){
             return <div className="Chatbox-chatroom-text">
               <div>
                {x.sender+ ": "}
-               {x.messag+ " "}
+               {x.message+ " "}
                {x.timestamp.toLocaleDateString()}
              </div>
             </div>

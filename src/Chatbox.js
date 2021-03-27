@@ -21,13 +21,12 @@ function Chatbox() {
   const onTextChange = (event) => {
     setText(event.target.value);
   };
-  
+
   const onSend =() =>{
     chatroomRef.push({
-      sender : "song",
+      sender : "Cha",
       massage : text,
-      timestamp: firebase.database.ServerValue.TIMESTAMP
-
+      timestamp : firebase.database.ServerValue.TIMESTAMP
     });
     setText("");
   };
@@ -56,14 +55,14 @@ function Chatbox() {
         <div className="App-chatroom-text">
           Good Luck Meaow ^^ 
         </div>
-        <div className="App-chatroom-text">
+        <div className="App-chatroom">
           {
           lines.map(x => {
-          return <div className="App-chatroom-text">
-                  {x.sender+" :  "}
-                  {x.massage}
+          return <div className="App-chatroom-text">                 
+                  {x.sender+" : "}
+                  {x.massage +" "}
                   {x.timestamp.toLocaleString()}
-                  </div>
+                  </div>                  
                         }
                     )      
           }  

@@ -12,12 +12,12 @@ function Chatbox() {
     const [lines, setLines] = useState([]);
   
     useEffect(() => {
-      chatroomref.on('child-added', snapshot => {
+      chatroomref.on('child_added', snapshot => {
         let x = snapshot.val();
         setLines( l => [ ...l,{
           sender: x.sender,
           message: x.message,
-          timestamp: (new Date())
+          timestamp: (new Date(x.timestamp))
         }])
       });
 
@@ -33,11 +33,11 @@ function Chatbox() {
       }
     };
   
-    const onSend = () => {
+    const onSend = () =>{
       chatroomref.push({
         sender : "Me",
         message: text,
-        timestamp: firebase.database.ServerValue.timestamp
+        timestamp: firebase.database.ServerValue.TIMESTAMP
       });
       setText("");
     };

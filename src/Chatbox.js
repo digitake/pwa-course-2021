@@ -4,6 +4,10 @@ import {useState} from 'react';
 
 import App from './App';
 
+import firebase from './firebaseConfig';
+
+const chatroomRef = firebase.database().ref('chatroom-1');
+
 function Chatbox() {
 
   const [text, setText] = useState("");
@@ -15,7 +19,10 @@ function Chatbox() {
   };
   
   const onSend = () =>{
-    setLines([...lines, text]);
+    chatroomRef.push({
+      sender : "pigleg",
+      message : text
+    });
     setText("");
   };
   

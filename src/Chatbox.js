@@ -4,28 +4,40 @@ import{useState, useEffect }from 'react';
 import './App.css';
 import App from './App';
 
+import firebase from './firebaseConfig';
+
+const chatroomRef = firebase.database().ref('chatroom-1')
+
 function Chatbox(){
 
     const [text, setText] = useState("")
     const [lines, setLines] = useState([]);
 
     useEffect(() => {
-      alert("Total text chat = "+ lines.length)
-    },[lines])
+    chatroomRef.on('child_added', snapshot => {
+      let x = snapshot.val();
+      setLines(l => [...l, {
+        sender: x.sender,
+        message: x.message,
+        timestamp: (new Date())
+      }])
+     });
+    }, []);
     
+    const onSend = () =>{
+
+     chatroomRef.push({
+       sender: "Me",
+       message: text,
+     });
+    
+      setText("");
+    };
+
     const onTextChange = (event) => {
-    setText(event.target.value);
-    };
-
-    const onSend = (event) =>{
-    setLines(lines => [...lines, {
-      sender: "Me", 
-      message: text,
-      timestamp: (new Date())
-    }]);
-
-    setText("");
-    };
+      setText(event.target.value);
+      };
+  
 
     const keyPress = (event) =>{
       if(event.which === 13){
@@ -42,7 +54,7 @@ function Chatbox(){
             return <div className="Chatbox-chatroom-text">
               <div>
                {x.sender+ ": "}
-               {x.messag+ " "}
+               {x.message+ " "}
                {x.timestamp.toLocaleDateString()}
              </div>
             </div>

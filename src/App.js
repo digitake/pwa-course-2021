@@ -6,11 +6,21 @@ function App({children}) {
   return (
     <div className="App">
       <div className="App-header">
-            
-          </div>  
-          <div className="App-content">
-            {children}
-          </div>
+      <Link to="chatbox">
+          <button>
+          Go to Chatbox
+          </button>
+        </Link>
+        
+        <Link to="/">
+          <button>
+            Go to chen
+          </button>
+        </Link>
+      </div>
+        <div className="App-content">
+          {children}
+        </div>
     </div>
   );
 }

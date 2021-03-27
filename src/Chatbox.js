@@ -50,10 +50,11 @@ function ChatBox({children}) {
                     {
                         lines.map(x => {
                             return <div className="App-chatroom-text">
-                                {x.sender +" : "}
-                                {x.message}
-                                <div
-                                    className="App-Time-Position">{" --- " + x.timestamp.toLocaleString() + " --- "}</div>
+                                <div className="App-textPosition">
+                                    {x.sender + " : "}
+                                    {x.message}
+                                </div>
+                                <div className="App-Time-Position">{" --- " + x.timestamp.toLocaleTimeString() + " --- "}</div>
 
                             </div>
                         })

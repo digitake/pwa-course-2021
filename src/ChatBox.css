@@ -21,6 +21,8 @@
 .App-Time-Position{
     display: flex;
     justify-content: flex-end;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .App-chatroom {
@@ -32,10 +34,22 @@
 }
 
 .App-chatroom-text {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: max-content;
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
     background-color: rgb(255, 255, 255);
+}
+
+.App-textPosition{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .App-textbox {

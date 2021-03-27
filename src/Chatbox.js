@@ -1,6 +1,6 @@
 import './Chatbox.css';
 
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 
 import App from './App';
 
@@ -13,6 +13,18 @@ function Chatbox() {
   const [text, setText] = useState("");
 
   const [lines, setLines] = useState([]);
+
+  useEffect(() => {
+    chatroomRef.on('child_added', snapshot =>{
+      let x = snapshot.val();
+
+      setLines(line => [...line, {
+        sender : x.sender,
+        message : x.message,
+        timestamp : new Date()
+      }])
+    })
+  }, []);
   
   const onTextChange = (event) => {
     setText(event.target.value);
@@ -43,7 +55,17 @@ function Chatbox() {
         lines.map(x => {
 
           return <div className="App-chatroom-text">
-              {x}
+              <div>
+                {x.sender+":"}
+              </div>
+
+              <div>
+                {x.message}
+              </div>
+
+              <div>
+                {x.timestamp.toLocaleString()}
+              </div>
             </div>
 
         })
@@ -68,8 +90,3 @@ function Chatbox() {
 }
 
 export default Chatbox;
-
-
-
-
-  

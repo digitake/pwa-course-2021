@@ -1,5 +1,5 @@
 import './Chatbox.css';
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
 import{useState, useEffect }from 'react';
 import './App.css';
 import App from './App';
@@ -42,16 +42,15 @@ function Chatbox(){
             return <div className="Chatbox-chatroom-text">
               <div>
                {x.sender+ ": "}
-               {x.messag+ " "}
-               {x.timestamp.toLocaleDateString()}
+               {x.message}
+               {x.timestamp.toLocaleDateString()};
              </div>
             </div>
           })
         }
       </div>
       <div className="Chatbox-textbox ">
-        <input type="text" className="Chatbox-textbox-input" 
-        value ={text} onChange= {onTextChange} onKeyPress={keyPress}/>
+        <input type="text" className="Chatbox-textbox-input" value ={text} onChange= {onTextChange} onKeyPress={keyPress}/>
 
         <div className="Chatbox-textbox-send " onClick ={onSend}>Send!</div>
 

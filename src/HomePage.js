@@ -1,7 +1,8 @@
 import {Link} from 'react-router-dom'
-import './AppMat.css'
+import './AppHomePage.css'
 
 function HomePage({children}) {
+    
   return(
     
 
@@ -32,7 +33,7 @@ function HomePage({children}) {
                 </Link>
             </div>
 
-            <div className = "pandding">
+            <div className = "pandding" >
 
                 <Link to = "/GroupChatRoom">
                     <img src = "GroupChat.Png" alt = "" />

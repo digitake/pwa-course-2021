@@ -41,6 +41,8 @@
   background-color: rgb(197, 189, 189);
   color : rgb(48, 100, 100);
   font-size: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .Chatbox-textbox {
@@ -147,4 +149,15 @@
     font-size: calc(10px + 2vmin);
     color: rgb(243, 10, 10);
   }
+}
+
+.App-chatroom-sender {
+  background-color: yellow;
+  padding: 16;
+  flex: 0.1;
+}
+
+.App-chatroom-message {
+  background-color: yellowgreen;
+  flex: 0.9;
 }

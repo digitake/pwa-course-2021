@@ -2,20 +2,37 @@ import React, { useState } from 'react';
 import './Chatbox.css';
 import App from './App';
 
+import firebase from './firebaseConfig';
+
+const chatroomref = firebase.database().ref('chatroom-1');
+
 function Chatbox() {
 
   const [text, setText] = useState("")
+  const [lines, setLines] = useState([]);
 
-  const [lines, setLines] = useState(["msg1" , "msg2" , "msg3" , "msg4" , "msg5"]);
+  useEffect (() => {
+      chatroomRef.on('child_added', snapshot => {
+        let x = snapshot.val();
+        setLines ( l => [...l, {
+          sender: x.sender,
+          message: x.message,
+          timestamp: (new Date())
+        }])
+      });
+  }, []);
 
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () => {
-    setLines(lines => [...lines, text]);
-    setText("");
+    chatroomRef.push({
+      sender: "Me",
+      message: text,
+    })
   };
+
 
   return (
       <App>

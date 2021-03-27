@@ -1,16 +1,35 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import App from './App';
+import firebase from './firebaseConfig';
+
+const chatroomRef = firebase.database().ref('chatroom-1');
 
 function Chatbox() {
 
-    const [text, setText] = useState('');
+    const [text, setText] = useState("");
     const [lines, setLines] = useState([]);
 
+    useEffect(() =>{
+        chatroomRef.on('child_added', snapshot =>{
+            let x = snapshot.val();
+
+            setLines(line => [...line, {
+                sender: x.sender,
+                message: x.message,
+                timestamp: new Date(x.timestamp)
+            }])
+        });
+
+    }, []);
+
     const onSend = () => {
-        if (text.length < 1) return;
-        setLines([...lines, text]);
+        chatroomRef.push({
+            sender: "F",
+            message: text,
+            timestamp: firebase.database.ServerValue.TIMESTAMP
+        });
         setText("");
-    }
+    };
 
     const onTextChange = (event) => {
         setText(event.target.value);
@@ -26,12 +45,27 @@ function Chatbox() {
         <App>
             <div className="App-chatroom">
                 {
-                    lines.map(msg => {
+                    /*lines.map(msg => {
                         return <div key={msg} className="App-chatroom-text">
+                            {msg.sender+":>"}
+                            {msg.message}
+                            {msg.timestamp.toLocaleString()}
                             {msg}
                         </div>
-                    })
-                }
+                    })*/
+                    lines.map(x => {
+                        return <div className="App-chatroom-text">
+                            <div>
+                                {x.sender+":"}
+                            </div> 
+                            <div>
+                                {x.message}
+                            </div> 
+                            <div>
+                                {x.timestamp.toLocaleString()}
+                            </div> 
+                            </div>
+                })}
             </div>
 
             <div className="App-textbox">

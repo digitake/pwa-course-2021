@@ -52,6 +52,8 @@
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
   }
   /*Friend Zone scene*/
   .Friend{
@@ -76,6 +78,8 @@
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
   }
   .Goto-Friend
 {
@@ -113,7 +117,9 @@
     margin: 8px;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
   }
  /*Friend Zone scene*/
   .Friend{
@@ -176,7 +182,9 @@
     margin: 8px;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
   }
   /*Friend Zone scene*/
   .Friend{

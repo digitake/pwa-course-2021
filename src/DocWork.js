@@ -1,5 +1,4 @@
 import './App.css';
-import{Link} from 'react-router-dom'
 import  './botton.css';
 import  App  from './App';
 
@@ -14,12 +13,6 @@ function  DocWork()
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
     </iframe>
-    
-        <Link to ="/Home"> 
-        <button  class="Home-1">   
-        </button>
-        </Link>
-            
   
         </div>
         

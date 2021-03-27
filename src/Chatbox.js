@@ -54,8 +54,7 @@ function ChatBox({children}) {
                                     {x.sender + " : "}
                                     {x.message}
                                 </div>
-                                <div className="App-Time-Position">{" --- " + x.timestamp.toLocaleTimeString() + " --- "}</div>
-
+                                <div className="App-Time-Position"> {x.timestamp.toLocaleTimeString()} </div>
                             </div>
                         })
                     }

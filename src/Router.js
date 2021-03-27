@@ -10,18 +10,21 @@ import FriendList from './FriendList';
 import Feed from './Pages/Feed';
 import Setting1 from './Pages/Setting1';
 import Setting2 from './Pages/Setting2';
+import FlexShow from './FlexShow';
 
 function Router() {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path="/flex">
+                    <FlexShow />
+                </Route>
                 <Route path="/app">
                     <Chatbox />
                 </Route>
                 <Route path="/friend-list">
                     <FriendList />
                 </Route>
-
                 <Route path='/login'>
                     <NeptuneLogin />
                 </Route>

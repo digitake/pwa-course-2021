@@ -46,7 +46,8 @@
   color : rgb(0, 0, 0);
   font-size: 20px;
   font-weight: bold;
-  
+  display: flex;
+  flex-direction: row;
 }
 
 .App-textbox { 
@@ -71,12 +72,21 @@
   align-items: center;
   display: flex;
 }
+.App-chatroom-sender{
+  background-color: hotpink;
+  padding: 16px;
+  flex: 0.1;
+}
+.App-chatroom-massage{
+  background-color: indigo;
+  flex: 0.9;
+}
 
 @media (min-width: 768px){
   .App{
     min-width: 100%;
     background: rgb(9,9,121);
-background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
     background-size: contain;
   }
   .App-header{

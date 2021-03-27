@@ -18,7 +18,7 @@ function ChatBox({children}) {
             setLines(l => [...l, {
                 sender: x.sender,
                 message: x.message,
-                timestamp: (new Date())
+                timestamp: (new Date(x.timestamp))
             }])
         });
     }, []);
@@ -30,8 +30,9 @@ function ChatBox({children}) {
     const onSend = () => {
         // push to firebase sever
         chatroomRef.push({
-            sender: "Me : ",
+            sender: "Me",
             message: text,
+            timestamp: firebase.database.ServerValue.TIMESTAMP
         });
         setText("")
     }
@@ -49,7 +50,7 @@ function ChatBox({children}) {
                     {
                         lines.map(x => {
                             return <div className="App-chatroom-text">
-                                {x.sender}
+                                {x.sender +" : "}
                                 {x.message}
                                 <div
                                     className="App-Time-Position">{" --- " + x.timestamp.toLocaleString() + " --- "}</div>

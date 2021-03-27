@@ -11,6 +11,7 @@ import PrivatePage from './PrivatePage'
 import GroupChatRoom from './GroupChatRoom'
 import Profiles from './Profiles'
 import PrivateChatRoom from './PrivateChatRoom'
+import Chatbox from './Chatbox'
 
 
 function Router() {    
@@ -49,6 +50,9 @@ function Router() {
           </Route>
           <Route path = "/privatechat">
               <PrivateChatRoom />
+          </Route>
+          <Route path = "/learn">
+              <Chatbox />
           </Route>
           <Route path = "/">
               <LoginApp />

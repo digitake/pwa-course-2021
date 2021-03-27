@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Chatbox.css';
-import App from './App';
+import Headerchat from './Headerchat';
+
+import firebase from './firebaseConfig'; //ดึง config
+
+const chatroomRef = firebase.database().ref('chatroom-1');
 
 import firebase from './firebaseConfig';
 
@@ -35,24 +39,32 @@ function Chatbox() {
 
 
   return (
-      <App>
+    <Headerchat>
     <div className="App">
       <div className="App-content">
       {
         lines.map(x =>{
           return <div className="App-chatroom-text">
-                  {x}
-                  </div>
+            <div>
+              {x.sender+":"}
+              </div>
+            <div>
+              {x.message}
+              </div>
+            <div>
+              {x.timestamp.toLocaleDateString()}
+              </div>
+          </div>
         }) 
       }
       </div>
       <div className="App-textbox">
         <button class="btn"><i>More Function</i></button>
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} placeholder="Type a message" />
-        <button className="App-textbox-send" button onClick={onSend}>Send</button>
+        <div className="App-textbox-send" onClick={onSend}>Send </div>
       </div>
     </div>
-    </App>
+    </Headerchat>
   );
 }
 

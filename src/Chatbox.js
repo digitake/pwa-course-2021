@@ -2,6 +2,10 @@ import React, {useState,useEffect} from 'react';
 import './ChatBox.css';
 import LobbyHeader from "./LobbyHeader";
 
+import firebase from './firebaseConfig';
+
+const chatroomRef = firebase.database().ref('chatroom-1');
+
 function ChatBox({children}) {
 
     const [text, setText] = useState("");
@@ -9,20 +13,30 @@ function ChatBox({children}) {
     const [lines, setLines] = useState([]);
     
     // () => {} same as function() {}  --lambda notation
-   useEffect(() => {alert("total text chat =" + lines.length)}, [lines]);
+   useEffect(() => {
+       chatroomRef.on('child_added',snapshot =>{
+           let x = snapshot.val();
+           setLines(l => [...l, {
+            sender: x.sender,
+            message: x.message,
+            timestamp: (new Date(x.timestamp))
+       }])
+    });
+
+    }, []);
 
     const onTextChange = (event) => {
         setText(event.target.value);
     };
 
     const onSend = () => {
-        setLines(line => [...lines, {
-            sender: "Me : ",
-            message: text,
-            timestamp: (new Date())
-        }]);
+        chatroomRef.push({
+            sender : "Spector" ,
+            message : text,
+            timestamp:firebase.database.ServerValue.TIMESTAMP
+        });
         setText("")
-    }
+    };
     
     const keyPress = (event) =>{if (event.which === 13){onSend();}};
 
@@ -33,7 +47,7 @@ function ChatBox({children}) {
                     {
                         lines.map(x => {
                             return <div className="App-chatroom-text">
-                                {x.sender}
+                                {x.sender+':'}
                                 {x.message}
                                 <div>{x.timestamp.toLocaleString()}</div>
                             </div>  

@@ -5,7 +5,7 @@ import { FiMicOff,FiLogOut,FiMoreVertical,FiClipboard,FiSearch,FiSettings,FiUser
 
 function PrivateChatRoom() {
   const [text, setText] = useState("")
-  const [lines, setLines] = useState(["msg1"]);
+  const [lines, setLines] = useState([""]);
   const onTextChange = (event) => {
     setText(event.target.value);
   };

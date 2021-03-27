@@ -68,6 +68,7 @@ border-style:groove ;
   .App-chatroom-text-message {
   
     flex:0.9;
+    
     background-color: rgb(255, 167, 2);
     
     }

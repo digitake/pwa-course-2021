@@ -23,6 +23,10 @@ function Router(){
     return(
    <BrowserRouter>
    <Switch>
+       
+       <Route path="/chatbox">
+           <Chatbox/>
+       </Route>
 
    <Route path = "/Flexshow">
     <FlexShow/>

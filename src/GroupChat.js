@@ -34,7 +34,7 @@ function GroupChat() {
                   <div className="App-Chatroom-sender">  
                     {x.People+" :"}
                   </div>
-                  <div className="App-chatroom-message"> 
+                  <div className="App-chatroom-messag e"> 
                    {x.message}
                  </div>   
                  </div>

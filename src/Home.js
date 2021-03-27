@@ -5,6 +5,7 @@ import Friend from './Friend.PNG';
 import Group from './Group.PNG';
 import Store from './Store.PNG';
 
+
 function Home() {
     return(
     

@@ -1,66 +1,33 @@
 
-<<<<<<< HEAD
-import './Chatbox.css';
-import {useEffect, useState} from 'react';
-import App from './App';
-
-import firebase from './firebaseConfig';
-
-const chatroomRef = firebase.database().ref('chatroom-1');
-
-=======
 import './Chatbox.css'
 import {useState,useEffect} from 'react'
 import App from './App';
 import firebase from './firebaseConfig';
 const chatroomRef = firebase.database().ref('chatroom-1');
->>>>>>> fc7bdef89ffd9de953ca447560b05bae886ad83d
 function Chatbox() {
 
   const [text,setText] = useState("");
   const [lines,setLines] = useState([]);
-<<<<<<< HEAD
-  
-  useEffect(() => {
-    chatroomRef.on("cild_added", snapshot =>{
-      let x = snapshot.val();
-
-      setLines(line => [...line, {
-=======
   useEffect(()=>{
     chatroomRef.on('child_added',snapshot =>{
       let x= snapshot.val();
       setLines(l =>[...l,{
->>>>>>> fc7bdef89ffd9de953ca447560b05bae886ad83d
         sender: x.sender,
         massage: x.massage,
         timestamp: new Date(x.timestamp)
       }])
     });
-<<<<<<< HEAD
-  }, []);
-
-=======
   },[]);
->>>>>>> fc7bdef89ffd9de953ca447560b05bae886ad83d
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend =() =>{
     chatroomRef.push({
-<<<<<<< HEAD
-      sender: "Pus",
-      massage: text,
-      timestamp: firebase.database.ServerValue.TIMESTAMP
-    })
-
-=======
-      sender : "Cha",
+      sender : "Pus",
       massage : text,
       timestamp : firebase.database.ServerValue.TIMESTAMP
     });
->>>>>>> fc7bdef89ffd9de953ca447560b05bae886ad83d
     setText("");
   };
 

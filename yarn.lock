@@ -10747,7 +10747,7 @@
     "webpack-sources" "^1.4.0"
     "worker-farm" "^1.7.0"
 
-"terser-webpack-plugin@4.2.3":
+"terser-webpack-plugin@^4.2.3", "terser-webpack-plugin@4.2.3":
   "integrity" "sha512-jTgXh40RnvOrLQNgIkwEKnQ8rmHjHK4u+6UBEi+W+FPmvb+uo+chJXntKe7/3lW5mNysgSWD60KyesnhW8D6MQ=="
   "resolved" "https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-4.2.3.tgz"
   "version" "4.2.3"

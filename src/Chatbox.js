@@ -1,18 +1,42 @@
 import './Chatbox.css';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import App from './App';
+import firebase from './firebaseConfig';
+
+const chatroomRef = firebase.database().ref('chatroom-1');
+
 
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
-  const onTextChange = (event) => {
+
+  useEffect(() =>{
+    chatroomRef.on('child_added', snapshot =>{
+      let x = snapshot.val();
+
+      setLines(line => [...line,{
+        sender: x.sender,
+        Message: x.Message,
+        timestamp: new Date(x.timestamp)
+      }])
+    });
+
+  },[]);
+
+  const onTextChange = (event) =>{
     setText(event.target.value);
   };
-  const onSend = () => {
-    setLines([...lines, text]);
+
+  const onSend = () =>{
+    chatroomRef.push({
+      sender: "Art",
+      Message: text,
+      timestamp: firebase.database.ServerValue.TIMESTAMP
+    });
+
     setText("");
   };
+
   const keyPress = (event) => {
 
     if (event.which === 13){
@@ -21,16 +45,24 @@ function Chatbox() {
   }
   return (
       <App>
-    <div className="Chatbox">
-      <div className="Chatbox-chatroom">
-        {
-        lines.map(x => {
-          return <div className="Chatbox-chatroom-text">
-                {x}
-                </div>
-          })
-        }
-      </div>
+        <div className="Chatbox">
+          <div className="Chatbox-chatroom">
+            {
+              lines.map(x => {
+                return <div className="Chatbox-chatroom-text">
+                          <div className="App-chatroom-sender">
+                            {x.sender+":>"}
+                          </div>
+                          <div className="App-chatroom-message">
+                            {x.Message}
+                          </div>
+                          <div>
+                              {x.timestamp.toLocaleString()}
+                          </div>
+                      </div>
+            })
+          }
+          </div>
       <div className="Chatbox-textbox">
         <input type="text" className="Chatbox-textbox-input" 
         value={text} onChange={onTextChange}onKeyPress={keyPress}/>
@@ -38,7 +70,7 @@ function Chatbox() {
       </div>
     </div>
     </App>
-  );
-}
+    );
+  }
 
 export default Chatbox;

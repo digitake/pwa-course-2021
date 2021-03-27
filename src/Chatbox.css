@@ -32,21 +32,8 @@
 }
 
 
-.Chatbox-header {
-  flex: 1;
-  background-color: #7ff8fc;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
-}
-
 .Chatbox-chatroom {
   flex: 12;
-  display: flex;
-  flex-direction: column;
 }
 
 .Chatbox-chatroom-text {
@@ -54,6 +41,8 @@
   background-color: rgb(197, 189, 189);
   color : rgb(48, 100, 100);
   font-size: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .Chatbox-textbox {
@@ -160,4 +149,15 @@
     font-size: calc(10px + 2vmin);
     color: rgb(243, 10, 10);
   }
+}
+
+.App-chatroom-sender {
+  background-color: yellow;
+  padding: 16;
+  flex: 0.1;
+}
+
+.App-chatroom-message {
+  background-color: yellowgreen;
+  flex: 0.9;
 }

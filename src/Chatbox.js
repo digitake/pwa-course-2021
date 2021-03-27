@@ -9,30 +9,21 @@ const chatroomRef = firebase.database().ref('chatroom-1');
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
-  
+
 
   useEffect(() => {
-    //Load only firsttime
-    chatroomRef.once('value', (snapshot) => {
-      
-      let items = snapshot.val();
-      for (let key in items) {
-        let x = items[key];
-        setLines(l => [
-          ...l,
-          {
-            sender: x.sender,
-            message: x.message,
-            timestamp: x.timestamp || (new Date())
-          }])
-      }
+    chatroomRef.on('child_added', (snapshot) => {
+      let item = snapshot.val();
+
+      setLines(l => [
+        ...l,
+        {
+          sender: item.sender,
+          message: item.message,
+          timestamp:  new Date(item.timestamp)
+        }]);
     })
-  },[]);
-
-  // useEffect(() => {
-  //   //alert("Total lines = "+ lines.length);
-
-  // }, [lines]);
+  }, []);
 
   const onTextChange = (event) => {
     setText(event.target.value);
@@ -44,7 +35,7 @@ function Chatbox() {
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
     };
-    setLines([...lines, newMsg]);
+    // setLines([...lines, newMsg]);
 
     chatroomRef.push(newMsg);
 
@@ -59,7 +50,7 @@ function Chatbox() {
 
   return (
     <App>
-      <div className="App col-6">
+      <div className="App col-12">
         <div className="App-chatroom">
           {
             lines.map(x => {

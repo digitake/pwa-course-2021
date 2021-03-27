@@ -19,7 +19,7 @@ function Chatbox(){
       setLines(l => [...l, {
         sender: x.sender,
         message: x.message,
-        timestamp: (new Date())
+        timestamp: (new Date(x.timestamp))
       }])
      });
     }, []);
@@ -29,6 +29,8 @@ function Chatbox(){
      chatroomRef.push({
        sender: "Me",
        message: text,
+       timestamp: firebase.database.ServerValue.TIMESTAMP
+
      });
     
       setText("");
@@ -55,7 +57,7 @@ function Chatbox(){
               <div>
                {x.sender+ ": "}
                {x.message+ " "}
-               {x.timestamp.toLocaleDateString()}
+               {x.timestamp.toLocaleString()}
              </div>
             </div>
           })

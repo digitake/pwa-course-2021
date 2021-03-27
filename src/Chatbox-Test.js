@@ -1,18 +1,10 @@
 import './Chatbox.css';
-<<<<<<< HEAD
-import { useEffect, useState } from 'react';
-=======
 import { useState, useEffect } from 'react';
->>>>>>> e68f13f2c2fa4ae4df83fe29c8ef748d600d0ffe
 import App from './App'
 
 import firebase from './firebaseConfig';
 
-<<<<<<< HEAD
-const chatroomref = firebase.database().ref('chatroom-1')
-=======
 const chatroomRef = firebase.database().ref('chatroom-1');
->>>>>>> e68f13f2c2fa4ae4df83fe29c8ef748d600d0ffe
 
 function Chatbox() {
 
@@ -53,16 +45,6 @@ function Chatbox() {
       }
     };
   
-<<<<<<< HEAD
-  const onSend = () => {
-    chatroomref.push({
-      Sender: "Me",
-      Message: text
-    });
-    
-    setText("");
-  }
-=======
     const onSend = () => {
       chatroomRef.push({
         sender : "Me",
@@ -71,7 +53,6 @@ function Chatbox() {
       });
       setText("");
     };
->>>>>>> e68f13f2c2fa4ae4df83fe29c8ef748d600d0ffe
 
   return (
     <App>
@@ -79,14 +60,6 @@ function Chatbox() {
                 {
                 lines.map(x => {
                 return <div className="App-chatroom-text">
-<<<<<<< HEAD
-                       <div>
-                         {x.Sender+": "}
-                       </div>
-                       <div>
-                        {x.Message}
-                       </div>
-=======
                   <div>
                     {x.sender+ " : "}
                   </div>
@@ -96,7 +69,6 @@ function Chatbox() {
                   <div>
                     {x.timestamp.toLocaleDateString()}
                   </div>
->>>>>>> e68f13f2c2fa4ae4df83fe29c8ef748d600d0ffe
                   </div>
                 })
                 }

@@ -1,15 +1,27 @@
 import './Chatbox.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import App from './App'
+
+import firebase from './firebaseConfig';
+
+const chatroomref = firebase.database().ref('chatroom-1')
 
 function Chatbox() {
 
     const [text, setText] = useState("");
     const [lines, setLines] = useState([]);
 
-    /*useEffect(() => {
-      alert("Total Chat Text= "+ lines.length)
-    }, [lines]);*/
+    useEffect( () => {
+      chatroomref.on('child_added',snapshot =>{
+        let x = snapshot.val();
+        setLines(l => [...l,{
+          Sender:"Me",
+          Message: tex
+        }])
+      });
+
+
+    }, []);
   
     const onTextChange = (event) =>{
       setText(event.target.value)
@@ -22,9 +34,11 @@ function Chatbox() {
     };
   
   const onSend = () => {
-    setLines(lines => [...lines, {
-      Sender:"Me",
-      Message: text}])
+    chatroomref.push({
+      Sender: "Me",
+      Message: text
+    });
+    
     setText("");
   }
 

@@ -3,31 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "firebase": "^8.3.1",
-    "object-copy": "^1.0.0",
-=======
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "firebase": "^8.3.1",
->>>>>>> e68f13f2c2fa4ae4df83fe29c8ef748d600d0ffe
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
-<<<<<<< HEAD
-    "regex-not": "^1.0.2",
-    "resolve": "^1.20.0",
     "ret": "^0.4.0",
-    "shebang-command": "^2.0.0",
-    "statuses": "^2.0.1",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-=======
-    "ret": "^0.4.0",
->>>>>>> e68f13f2c2fa4ae4df83fe29c8ef748d600d0ffe
     "web-vitals": "^0.2.4"
   },
   "scripts": {

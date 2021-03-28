@@ -74,7 +74,6 @@ class Feed extends Component {
     render() {
         return (
             <App>
-
                 <div className='container'>
                     <Box>
                         <Avatar img={AvatarElonImg} />

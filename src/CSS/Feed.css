@@ -92,6 +92,11 @@ a.dot{
     padding-right: 8px;
 }
 
+.option .show{
+    visibility: visible;
+    animation: fadeIn 0.35s;
+}
+
 .option .optionBox{
     background-color: rgb(247, 247, 247);
     width: 100%;
@@ -110,12 +115,6 @@ a.dot{
     color: red;
     font-weight: bold;
 }
-
-.option .show{
-    visibility: visible;
-    animation: fadeIn 0.35s;
-}
-
 @keyframes fadeIn{
     from{ opacity: 0;}
     to{opacity: 1;}

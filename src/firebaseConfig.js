@@ -2,13 +2,14 @@ import firebase from 'firebase';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyDfAR53Z_WXfdozY2V7cxNG_B_tJ4Xl5xQ",
-    authDomain: "breakout-chatapp-pwa.firebaseapp.com",
-    projectId: "breakout-chatapp-pwa",
-    storageBucket: "breakout-chatapp-pwa.appspot.com",
-    messagingSenderId: "890267306700",
-    appId: "1:890267306700:web:028c4d35d88f50d3ca9069"
+    apiKey: "AIzaSyDJJ_SSuYxQuoWxqYbsvsZs9DXM_vbzuY0",
+    authDomain: "mango-talks-app-c.firebaseapp.com",
+    projectId: "mango-talks-app-c",
+    storageBucket: "mango-talks-app-c.appspot.com",
+    messagingSenderId: "268760032759",
+    appId: "1:268760032759:web:ea78c76407e218e904faf2"
   };
+
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 

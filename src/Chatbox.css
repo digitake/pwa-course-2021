@@ -52,3 +52,16 @@ margin: 10px;
 border: none;
 height: 30px;
 }
+
+.chatroom-bar{
+  display: flex;
+  flex-direction: row;
+}
+
+.chatroom-bar .chatroom-button{
+  flex: 1;
+  color: white;
+  border: none;
+  background-color: #2668A0;
+  height: 50px;
+}

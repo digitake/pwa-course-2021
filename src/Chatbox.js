@@ -3,7 +3,7 @@ import App from './App';
 import firebase from './firebaseConfig';
 import './Chatbox.css';
 
-const chatroomRef = firebase.database().ref('chatroom-2');
+let chatroomRef = firebase.database().ref('chatroom-1');
 let senderName = '';
 
 function Chatbox() {
@@ -11,6 +11,17 @@ function Chatbox() {
     const [lines, setLines] = useState([]);
 
     useEffect(() => {
+        UpdateChat();
+    }, []);
+
+    const SetChatRoom = (chatroomId) => {
+        if (chatroomId) {
+            chatroomRef = firebase.database().ref(chatroomId);
+        }
+    }
+
+    const UpdateChat = () => {
+        //Clear Old Chat History
         setLines([]);
         chatroomRef.on('child_added', snapshot => {
             let x = snapshot.val();
@@ -21,7 +32,7 @@ function Chatbox() {
                 timestamp: new Date(x.timestamp),
             }]);
         })
-    }, []);
+    }
 
     const onSend = () => {
         if (text.length < 1) return;
@@ -60,19 +71,47 @@ function Chatbox() {
     }
 
     const ChangeName = () => {
+        const displayName = senderName.length > 0 ? senderName : "Change Name";
         return (
             <div>
                 <form id='displayname' className='displayname-settings' onSubmit={onNameChange}>
                     <input className='name-input' id='fname' placeholder='Displayname...' type='text' />
-                    <input className='name-submit' type="submit" id='fsubmit' value='Change Name' />
+                    <input className='name-submit' type="submit" id='fsubmit' value={displayName} />
                 </form>
+            </div>
+        );
+    }
+
+    const ChatroomButton = (props) => {
+        return (
+            <button className='chatroom-button' onClick={() => {
+                SetChatRoom(props.chatroomId);
+                UpdateChat();
+            }}>{props.chatroomName}</button>
+        );
+    }
+
+    const ChatroomBar = () => {
+        return (
+            <div className='chatroom-bar'>
+                <ChatroomButton
+                    chatroomName='Chatroom #1'
+                    chatroomId='chatroom-1' />
+                <ChatroomButton
+                    chatroomName='Chatroom #2'
+                    chatroomId='chatroom-2' />
+                <ChatroomButton
+                    chatroomName='Chatroom #3'
+                    chatroomId='chatroom-3' />
             </div>
         );
     }
 
     return (
         <App>
+            <ChatroomBar />
             <ChangeName />
+
             <div className="App-chatroom">
                 {
                     lines.map(x => {

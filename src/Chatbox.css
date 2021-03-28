@@ -25,3 +25,30 @@
 .App-chatroom-text .message{
   font-weight: lighter;
 }
+
+.displayname-settings {
+ display: flex;
+  background-color:gainsboro;
+ flex-direction: row; 
+ align-items: center;
+}
+
+.displayname-settings .name-input{
+  display: none;
+  color: black;
+background-color: whitesmoke;
+border: none;
+margin: 10px;
+width: 180%;
+}
+
+.displayname-settings .name-show{
+  display: block;
+}
+
+.displayname-settings .name-submit{
+background-color: black;
+margin: 10px;
+border: none;
+height: 30px;
+}

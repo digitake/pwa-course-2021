@@ -11,12 +11,17 @@ import firebase from './firebaseConfig';
 
 const chatroomRef = firebase.database().ref('chatroom-1')
 
+import firebase from './firebaseConfig.js'; //ดึง config มาเตรียมใช้งาน
+
+const chatroomRef = firebase.database().ref('chatroom-1')
+
 function Chatbox(){
 
     const [text, setText] = useState("")
     const [lines, setLines] = useState([]);
 
     useEffect(() => {
+<<<<<<< HEAD
     chatroomRef.on('child_added', snapshot => {
       let x = snapshot.val();
       setLines(l => [...l, {
@@ -26,13 +31,34 @@ function Chatbox(){
       }])
      });
     }, []);
+=======
+      //alert("Total text chat = "+ lines.length)
+      chatroomRef.on('child_added' , snapshot => {
+        let x = snapshot.val();
+        setLines( l => [...l, {
+          sender: x.sender,
+          message : x.message,
+          timestamp : (new Date(x.timestamp))
+        }])
+      });
+    },[]);
+>>>>>>> 6cc06eae051886c92aa147a38ef348866b13737b
     
     const onSend = () =>{
 
+<<<<<<< HEAD
      chatroomRef.push({
        sender: "Me",
        message: text,
        timestamp: firebase.database.ServerValue.TIMESTAMP
+=======
+    const onSend = (event) =>{
+      chatroomRef.push({
+        sender: "Me" , 
+        message: text,
+        timestamp: firebase.database.ServerValue.TIMESTAMP
+      });
+>>>>>>> 6cc06eae051886c92aa147a38ef348866b13737b
 
      });
     
@@ -60,7 +86,13 @@ function Chatbox(){
               <div>
                {x.sender+ ": "}
                {x.message+ " "}
+<<<<<<< HEAD
                {x.timestamp.toLocaleString()}
+=======
+              </div>
+              <div>
+               {x.timestamp.toLocaleDateString()}
+>>>>>>> 6cc06eae051886c92aa147a38ef348866b13737b
              </div>
             </div>
           })

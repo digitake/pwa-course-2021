@@ -1,7 +1,7 @@
 .App-chatroom-text{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .App-chatroom-text .messageBox{

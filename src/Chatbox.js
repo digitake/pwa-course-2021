@@ -10,13 +10,14 @@ function Chatbox() {
     const [lines, setLines] = useState([]);
 
     useEffect(() => {
+        setLines([]);
         chatroomRef.on('child_added', snapshot => {
             let x = snapshot.val();
             setLines(line => [...line,
             {
                 sender: x.sender,
                 message: x.message,
-                timestamp: x.timestamp,
+                timestamp: new Date(x.timestamp),
             }]);
         })
     }, []);
@@ -48,10 +49,10 @@ function Chatbox() {
                         return <div key={x.timestamp} className="App-chatroom-text">
                             <div className='messageBox'>
                                 <div className='sender'>{x.sender}:</div>
-                                <div className='time'>#{x.timestamp} </div>
                             </div>
 
                             <div className='message'>{x.message}</div>
+                            <div className='time'>{x.timestamp.toLocaleString()} </div>
                         </div>
                     })
                 }

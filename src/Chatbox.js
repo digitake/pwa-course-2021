@@ -11,6 +11,7 @@ function Chatbox() {
   const [text,setText] = useState("");
   const [lines, setLines] = useState([]);
   
+  
  useEffect(() =>{
    chatroomRef.on('child_added',snapshot =>{
      let x = snapshot.val();
@@ -18,7 +19,7 @@ function Chatbox() {
      setLines(line =>[...line,{
        sender: x.sender,
        message: x.message,
-       timestamp: new Date()
+       timestamp: new Date() 
      }])
    })
  },[]);
@@ -60,7 +61,7 @@ function Chatbox() {
               {x.message}
               </div>
               <div>
-              {x.timestamp.toLocaleDateString()}
+              {x.timestamp.toLocaleString('th-TH')}
               </div>
               </div>
           })

@@ -1,41 +1,36 @@
-import { useState } from 'react';
+import { useState} from 'react';
 import './Chatbox.css';
 import { Link} from 'react-router-dom'
 import App from './App';
-//import firebase from './firebaseConfig';
+import firebase from './firebaseConfig';
 import { useEffect } from 'react';
 
-//const chatroomRef = firebase.database().ref('chatroom-1');
+const chatroomRef = firebase.database().ref('chatroom-1');
 
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
   
-  //useEffect(() => {
-   // chatroomRef.on('child_added', snapshot => {
-     // let x = snapshot.val();
-     // setLines(l => [...l, {
-      //  sender: x.sender,
-      //  message: x.message,
-      //  timestamp: (new Date())
-   //   }])
-  //  });
- // }, []);
+  useEffect(() => {
+    chatroomRef.on('child_added', snapshot => {
+      let x = snapshot.val();
+      setLines(l => [...l, {
+        sender: x.sender,
+        message: x.message,
+        timestamp: (new Date())
+      }])
+    });
+  }, []);
 
   const onTextChange = (event) => {
     setText(event.target.value);
   };
   const onSend = () =>{
     //Push message to firebase
-    //chatroomRef.push({
-     // sender: "Me",
-      //message: text,
-   // })
-   setLines(l => [...l, {
-    sender: "Me",
-    message: text,
-    timestamp: (new Date())
-  }])
+    chatroomRef.push({
+      sender: "Me",
+      message: text,
+    })
 
     setText("");
   };

@@ -6,7 +6,9 @@ import App from './App';
 
 import firebase from './firebaseConfig';
 
+
 const chatroomRaf = firebase.database().ref('chatroom-1');
+
 
 function Chatbox() {
 
@@ -14,6 +16,7 @@ function Chatbox() {
   const [lines, setLines] = useState([]);
 
   useEffect(() => {
+
     chatroomRaf.on('child_added', snapshot =>{
       let x = snapshot.val();
 
@@ -23,6 +26,7 @@ function Chatbox() {
         timestamp: new Date(x.timestamp)
       }])
     });
+
   }, []);
   
   const onTextChange = (event) => {
@@ -30,11 +34,13 @@ function Chatbox() {
   };
   
   const onSend = () =>{
+
     chatroomRaf.push({
       sender: "Tae",
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
   });
+
     setText("");
   };
   
@@ -55,6 +61,7 @@ function Chatbox() {
         lines.map(x => {
 
           return <div className="App-chatroom-text">
+
             <div>
               {x.sender+";"}
             </div>
@@ -64,6 +71,7 @@ function Chatbox() {
             <div>
               {x.timestamp.toLocaleString()}
             </div>
+
             </div>
         })
       }
@@ -87,8 +95,3 @@ function Chatbox() {
 }
 
 export default Chatbox;
-
-
-
-
-  

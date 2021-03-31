@@ -5,7 +5,6 @@ import firebase from "./firebaseConfig";
 
 const chatroomRef = firebase.database().ref('fantasma-room-1');
 
-
 function ChatBox({children}) {
 
     const [text, setText] = useState("");

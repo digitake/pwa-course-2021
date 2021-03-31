@@ -18,6 +18,14 @@
     flex: fit-content;
 }
 
+.App-Time-Position{
+    text-decoration: overline;
+    font-style: normal;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    margin-left: 15px;
+}
 
 .App-chatroom {
     flex: 12;
@@ -28,8 +36,22 @@
 }
 
 .App-chatroom-text {
-    margin: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
     background-color: rgb(255, 255, 255);
+}
+
+.App-textPosition{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .App-textbox {
@@ -69,19 +91,38 @@
 
 @media  (max-width: 760px){
     /* IPHONE */
+    
+    .App-textPosition{
+        font-size: 20px;
+    }
 
+    .App-Time-Position{
+        font-size: 10px;
+    }
 }
 
 @media  (max-width: 1500px) and (min-width: 761px){
     /* IPAD */
 
-   
+    .App-textPosition{
+        font-size: 25px;
+    }
+    
+    .App-Time-Position{
+        font-size: 15px;
+    }
 }
 
 @media  (min-width: 1501px){
     /* PC */
 
+    .App-textPosition{
+        font-size: 30px;
+    }
 
+    .App-Time-Position{
+        font-size: 20px;
+    }
 }
 
 /* For Study next time*/

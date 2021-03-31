@@ -4,7 +4,6 @@ import EnterApp_3ofghost from "./EnterApp_3ofghost";
 import Profiletar from "./Profile-Tar";
 import LobbySetting from "./LobbySetting";
 import LoadingBar from "./LoadingBar";
-import Phai from './ProfilePhai';
 import Lobby from "./Lobby";
 
 
@@ -15,9 +14,6 @@ function Router() {
             <Switch>
                 <Route path="/Profile_Tar">
                     <Profiletar/>
-                </Route>
-                <Route path="/ProfilePhai">
-                    <Phai/>
                 </Route>
                 <Route path="/Eye_Scene">
                     <LoadingBar/>
@@ -38,7 +34,7 @@ function Router() {
             </Switch>
         </BrowserRouter>
     );
-};
+}
 
 //Plz give me A senpai
 

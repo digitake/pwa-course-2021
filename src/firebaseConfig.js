@@ -1,15 +1,15 @@
-import firebase from 'firebase';
+import firebase from "firebase";
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyDAHIGmwprvz5xVwiv5ozk15SpBXrQ1sR4",
-    authDomain: "my-project-pwa-gi472.firebaseapp.com",
-    projectId: "my-project-pwa-gi472",
-    storageBucket: "my-project-pwa-gi472.appspot.com",
-    messagingSenderId: "300103587234",
-    appId: "1:300103587234:web:5de2db23ebc1df998c0efb"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+    apiKey: "AIzaSyDVL4baa1lkJoN_ckUl_hGNOvoxmwkOee0",
+    authDomain: "fantasma-3ofghost.firebaseapp.com",
+    projectId: "fantasma-3ofghost",
+    storageBucket: "fantasma-3ofghost.appspot.com",
+    messagingSenderId: "959801315751",
+    appId: "1:959801315751:web:15c04126cfe50fbe906682"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
-  export default firebase;
+export default  firebase;

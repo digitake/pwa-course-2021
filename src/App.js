@@ -25,6 +25,10 @@ function App({children}) {
           <button> Chatbox </button>
         </Link>
 
+        <Link to="/Home-page">
+          <button> Home Page </button>
+        </Link>
+
       </div>
 
       <div className="App-content">

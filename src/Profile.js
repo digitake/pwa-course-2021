@@ -5,17 +5,22 @@ function  Profile() {
 
     return(
         <App>
-            <div>
-                <body>
-                    <center><img src={pro} width="200" border="5" align="top" /></center>
-                        <p align="center">
-                        <h1>Name</h1>
-                        <h1>ID ********</h1>
-                    </p>
-                </body>
-            </div>
-        </App>   
-    )   
+        <div class="center">
+        <body>
+           <img src={pro}  />
+                <p align="center">
+                    <h1>
+                    Name
+                    </h1>
+                    <h1>
+                    ID ********
+                    </h1>
+                </p>
+            </body>
+        </div>
+        </App>
+    )
+    
 }
 
 export default Profile;

@@ -6,24 +6,27 @@ import App from './App';
 
 import firebase from './firebaseConfig';
 
-const chatroomRef = firebase.database().ref('chatroom-1');
+
+const chatroomRaf = firebase.database().ref('chatroom-1');
+
 
 function Chatbox() {
 
   const [text, setText] = useState("");
-
   const [lines, setLines] = useState([]);
 
   useEffect(() => {
-    chatroomRef.on('child_added', snapshot =>{
+
+    chatroomRaf.on('child_added', snapshot =>{
       let x = snapshot.val();
 
       setLines(line => [...line, {
-        sender : x.sender,
-        message : x.message,
-        timestamp : new Date(x.timestamp)
+        sender: x.sender,
+        message: x.message,
+        timestamp: new Date(x.timestamp)
       }])
-    })
+    });
+
   }, []);
   
   const onTextChange = (event) => {
@@ -31,11 +34,13 @@ function Chatbox() {
   };
   
   const onSend = () =>{
-    chatroomRef.push({
-      sender : "pigleg",
-      message : text,
-      timestamp : firebase.database.ServerValue.TIMESTAMP
-    });
+
+    chatroomRaf.push({
+      sender: "Tae",
+      message: text,
+      timestamp: firebase.database.ServerValue.TIMESTAMP
+  });
+
     setText("");
   };
   
@@ -56,19 +61,18 @@ function Chatbox() {
         lines.map(x => {
 
           return <div className="App-chatroom-text">
-              <div>
-                {x.sender+":"}
-              </div>
 
-              <div>
-                {x.message}
-              </div>
-
-              <div>
-                {x.timestamp.toLocaleString()}
-              </div>
+            <div>
+              {x.sender+";"}
+            </div>
+            <div>
+              {x.message}
+            </div>
+            <div>
+              {x.timestamp.toLocaleString()}
             </div>
 
+            </div>
         })
       }
       </div>

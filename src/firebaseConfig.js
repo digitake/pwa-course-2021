@@ -1,17 +1,20 @@
-import  firebase from 'firebase';
+
+import  firebase  from 'firebase';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyCLirnobt_7UBWtuPkB8UII4cN-77KvCpg",
-    authDomain: "bu-chatapp-pwa-chatclub.firebaseapp.com",
-    databaseURL: "https://bu-chatapp-pwa-chatclub-default-rtdb.firebaseio.com",
-    projectId: "bu-chatapp-pwa-chatclub",
-    storageBucket: "bu-chatapp-pwa-chatclub.appspot.com",
-    messagingSenderId: "706022678488",
-    appId: "1:706022678488:web:59a5ede4a64792a2459cad"
-};
+    apiKey: "AIzaSyCbjQzVy0U48HO4hSujzoRct8HsExIEXdI",
+    authDomain: "nottae12-pwa.firebaseapp.com",
+    databaseURL: "https://nottae12-pwa-default-rtdb.firebaseio.com",
+    projectId: "nottae12-pwa",
+    storageBucket: "nottae12-pwa.appspot.com",
+    messagingSenderId: "1091765849068",
+    appId: "1:1091765849068:web:58508a8f49d073e5ffcec9"
+  };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 export default firebase;
+

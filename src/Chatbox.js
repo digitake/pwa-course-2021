@@ -1,14 +1,32 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import App from './App';
+import firebase from './firebase';
+
+const chatroomRef = firebase.database().ref('chatroom-1')
 
 function Chatbox() {
 
     const [text, setText] = useState('');
     const [lines, setLines] = useState([]);
 
+    useEffect(() => {
+        chatroomRef.on('child_added',snapshot => {
+            let x = snapshot.val();
+            
+            setLines(l => [...l,{
+                sender : x.sender,
+                message : x.message,
+                timestamp : new Date(x.timestamp)
+            }])
+        })
+    },[]);
+
     const onSend = () => {
-        if (text.length < 1) return;
-        setLines([...lines, text]);
+        chatroomRef.push({
+            sender : "Karumpee",
+            message : text,
+            timestamp : firebase.database.ServerValue.TIMESTAMP
+        });
         setText("");
     }
 
@@ -26,16 +44,27 @@ function Chatbox() {
         <App>
             <div className="App-chatroom">
                 {
-                    lines.map(msg => {
-                        return <div key={msg} className="App-chatroom-text">
-                            {msg}
+                    lines.map(x => {
+                        return <div className="App-chatroom-text">
+                            <div>
+                                {x.sender+":"}
+                            </div>
+                            <div>
+                                {x.message}
+                            </div>
+                            <div>
+                                {x.timestamp.toLocaleString()}
+                            </div>
                         </div>
+
                     })
                 }
             </div>
 
             <div className="App-textbox">
-                <input placeholder='Type something...' type="text" className="App-textbox-input" value={text} onKeyPress={onKeyPress} onChange={onTextChange} />
+                <input placeholder='Type something...' type="text" className="App-textbox-input" 
+                value={text} onKeyPress={onKeyPress} onChange={onTextChange} />
+               
                 <div className="App-textbox-send" onClick={onSend}>Send!</div>
             </div>
             <div>

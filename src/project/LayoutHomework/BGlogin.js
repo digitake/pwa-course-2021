@@ -1,4 +1,4 @@
-import './BGlogin';
+import './BGlogin.css';
 
 function BGlogin({children}) {
     return (

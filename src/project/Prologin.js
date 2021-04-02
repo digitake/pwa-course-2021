@@ -1,33 +1,41 @@
 import './Prologin.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-function Prologin({children}) {
+function Prologin() {
   return (
-    <div className = "Prologin">
+    <div className="fullscreen-login">
 
-      <div className="header-top">
-        {children}
+      <div className="header-login">
+
       </div>
 
-      <div className ="background-login">
-         
-             <div to="/" className="Prologin-logo">
-                 <img src= "/Project/Prologin/boxchat.jpg" alt = "/Project/Prologin/boxchat.jpg" 
-               width="370px" height="290px"/> 
-             </div>
+      <div className="content-login">
 
-             <Link to="/Profriend" className="signin-logo">
-                 <img src= "/Project/Prologin/sign.jpg" alt = "/Project/Prologin/sign.jpg"
-               width="320px" height="85px"/> 
-             </Link>
+        <div className="main-logo">
+          <img src="/Project/Prologin/boxchat.jpg" alt ="/Project/Prologin/boxchat.jpg" 
+          width="600px" height="400px"/>
+        </div>
 
-             <Link to="/" className="register-logo">
-                 <img src= "/Project/Prologin/register.jpg" alt = "/Project/Prologin/register.jpg" 
-               width="240px" height="70px"/> 
-             </Link>
+        <div className="signin-logo">
+          <Link to="/Profriend">
+            <img src="/Project/Prologin/sign.jpg" alt ="/Project/Prologin/sign.jpg" 
+            width="400px" height="120px"/>
+          </Link>
+        </div>
 
-      </div>   
+        <div className="register-logo">
+          <Link to="/Proregister">
+            <img src="/Project/Prologin/register.jpg" alt ="/Project/Prologin/register.jpg" 
+            width="340px" height="100px"/>
+          </Link>
+        </div>
 
+      </div>
+
+      <div className="footer-login">
+
+      </div>
+      
     </div>
   );
 }

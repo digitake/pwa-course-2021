@@ -5,7 +5,7 @@
   text-align: center;
   height: 100%;
   margin: auto;
-  background-color: yellow;
+  background-color: #8fbbff;
 }
 
 @media(min-width: 786px){
@@ -24,7 +24,7 @@
 
 .App-header {
   flex: 1;
-  background-color: #f13000;
+  background-color: #121079;
   display: flex;
   flex-direction: column;
   align-items: center;

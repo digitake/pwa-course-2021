@@ -4,6 +4,7 @@ import Profile from './Profile';
 import Home from './Home';
 import EWallet from './EWallet';
 import Chatbox from './Chatbox';
+import Music from './Music';
 import App from './App';
 
 /** FriendList*/
@@ -24,6 +25,9 @@ function Router(){
                 </Route>
                 <Route path="/home">
                     <Home/>
+                </Route>
+                <Route path="/music">
+                    <Music/>
                 </Route>
             
                 <Route path="/">

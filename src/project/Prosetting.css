@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    max-width: 550px;
+    max-width: 600px;
     height: 87%;
     margin: auto;
     background-color: rgb(31, 103, 211);
@@ -24,7 +24,7 @@
 }
 
 .Prosetting-ProUi{
-    flex: 0.4;
+    flex: 0.3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,25 +54,30 @@
 }
 
 .Prosetting-User {
-margin: auto;
+    margin: auto;
 }
 
 .Prosetting-Account {
     margin:auto;
+    margin-bottom: -0.7%;
 }
 
 .Prosetting-Laug {
     margin:auto;
+    margin-bottom: -0.7%;
 }
 
 .Prosetting-Support {
     margin:auto;
+    margin-bottom: -0.7%;
 }
 
 .Prosetting-Not {
     margin:auto;
+    margin-bottom: -0.7%;
 }
 
 .Prosetting-Logout {
     margin:auto;
+    margin-bottom: -10%;
 }

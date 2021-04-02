@@ -6,6 +6,7 @@
   max-width: 400px;
   height: 100%;
   margin: auto;
+}
   
   .FriendList-header {
     flex:28;
@@ -31,7 +32,7 @@
     flex: 12;
   }
   
-}
+
 
 .FriendList-chatroom-text {
   margin: 8px;
@@ -67,7 +68,4 @@
       background-position: center bottom;
       background-color: mistyrose;
     }
-<<<<<<< HEAD
   }
-=======
->>>>>>> 529244a7e80adccbdb18f8ddba7f78db8ad83c23

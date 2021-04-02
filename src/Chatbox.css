@@ -85,7 +85,7 @@
     background-repeat: center;
     background-position: center;
     background-image: url(shiba.png);
-    background-size: contain;
+    background-size: cover;
   }
 
   .Chatbox-header {
@@ -113,91 +113,6 @@
     align-items: center;
     display: flex;
   }
-<<<<<<< HEAD
-  
-  /*<768px*/
-  @media(max-width: 600px){
-    .Chatbox{
-      background-repeat: center;
-      background-position: center;
-      background-image: url(shiba.png);
-      background-size: contain;
-    }
-  
-    .Chatbox-header {
-      flex: 0.75;
-      background-color: #ff844f;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: calc(10px + 2vmin);
-      color: rgb(23, 218, 169);
-    }
-  
-    .Chatbox-textbox-input {
-      flex: 2;
-      height: 100%;
-      box-sizing: border-box;
-    }/*Input Field*/
-  
-    .Chatbox-textbox-send {
-      flex: 0.4;
-      height: 100%;
-      vertical-align: middle;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-    }
-  
-    .Chatbox-textbox {
-      flex: 0.75;
-      background-color: rgb(243, 166, 0);
-      justify-content: center;
-      align-items: stretch;
-      display: flex;
-    }/*ปุ่มส่ง message*/
-  }
-  @media(min-width:601px) and (max-width:1080px){
-    .Chatbox{
-      background-repeat: repeat;
-      background-position: center;
-      background-image: url(Jesus.png);
-      background-size: contain;
-    }
-  
-    .Chatbox-header {
-      flex: 1;
-      background-color: #00661f;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: calc(10px + 2vmin);
-      color: rgb(236, 128, 128);
-    }
-  }
-  
-  @media(min-width:1081px){
-    .Chatbox{
-      background-repeat: repeat;
-      background-position: center;
-      background-image: url(sea.png);
-      background-size: cover;
-    }
-  
-    .Chatbox-header {
-      flex: 1;
-      background-color: #f57ca0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: calc(10px + 2vmin);
-      color: rgb(243, 10, 10);
-    }
-  }
-=======
 
   .Chatbox-textbox {
     flex: 0.75;
@@ -246,4 +161,3 @@
     color: rgb(243, 10, 10);
   }
 }
->>>>>>> 529244a7e80adccbdb18f8ddba7f78db8ad83c23

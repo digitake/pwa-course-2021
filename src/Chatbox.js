@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Chatbox.css';
 import { Link} from 'react-router-dom'
 import App from './App';
@@ -6,12 +6,18 @@ import App from './App';
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
+
+useEffect(() => {
+alert("Toral text chat = "+lines.length);
+
+}, [lines]);
   
+
   const onTextChange = (event) => {
     setText(event.target.value);
   };
   const onSend = () =>{
-    setLines([...lines, text]);
+    setLines([...lines, {sender: "Me", message : text , timestamp: (new Date())}]);
     setText("");
   };
   const keyPress = (event) => {
@@ -37,7 +43,13 @@ function Chatbox() {
         {
           lines.map(x => {
             return <div className="Chatbox-chatroom-text">
-                    {x}
+                    <div>
+                    {x.timestamp.toLocaleDateString()}
+                    </div> 
+                    <div>
+                    {x.sender+":"}
+                    </div>
+                    {x.message}
                    </div>
           })
         }

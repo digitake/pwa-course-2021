@@ -6,8 +6,9 @@ import Profile from './Profile';
 import DarkChat from './DarkChat';
 import NormalPage from './NormalPage';
 
-function Router(){
 
+function Router()
+{
 
     return(
       <BrowserRouter>
@@ -18,7 +19,7 @@ function Router(){
             <Route path="/Profile">
               <Profile />
             </Route>
-            <Route path = "/">
+            <Route path = "/App">
               <Chatbox />
             </Route>
             <Route path = "/DarkChat">
@@ -31,7 +32,9 @@ function Router(){
               <Chatbox />
             </Route>
         </Switch>
-     </BrowserRouter>
+     </BrowserRouter> 
+
     )
-}
+};
+
 export default Router;

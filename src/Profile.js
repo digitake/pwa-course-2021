@@ -1,19 +1,16 @@
 import './Profile.css';
-import NormalPage from './NormalPage'
+import App from './App';
+import { Link } from 'react-router-dom';
+import NormalPage from './NormalPage';
 
 function Profile() {
     return (
+        <NormalPage>
         <div className ="Profile">
           <div className ="Profile-Pic">
-   
-        <div>
-            Profile
-            <NormalPage>
-            </NormalPage>
-            </div>
-         </div>
         </div>
-
+        </div>
+        </NormalPage>
     );
 };
 

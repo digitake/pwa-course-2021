@@ -1,11 +1,15 @@
 import './DarkChat.css';
-import Chatbox from './Chatbox'
+import App from './App';
+import { Link } from 'react-router-dom';
 
-function DarkChat({children}) {
+function DarkChat() {
     return (
-                <Chatbox>
-                </Chatbox>
-        
+        <div className ="DarkChat">
+            <App>
+
+            </App>
+        </div> 
+
     );
 };
 

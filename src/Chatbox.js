@@ -20,7 +20,6 @@ function Chatbox() {
         //, timestamp : (new Data(x.timestamp))
       }])
     })
-
   }, []);
 
   const onTextChange = (event) => {

@@ -2,25 +2,37 @@ import './Chatbox.css';
 import {useState, useEffect } from 'react';
 import App from './App';
 
+import firebase from './firebaseConfig';
+
+const chatroomRef = firebase.database().ref('chatroom-1');
+
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
   useEffect(() => {
-    alert("Total text chat"+ lines.length);
+    chatroomRef.on('child_added', snapshot => {
+      let x = snapshot.val();
+      setLines( l => [...l, {
+        sender: x.sender, 
+        message: x.message,
+        timestamp: (new Date(x.timestamp))
+      }])
+    })
 
-  }, [lines]);
+  }, []);
   
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () =>{
-    setLines([...lines, {
+    //Push message
+    chatroomRef.push({
       sender: "Me", 
       message: text,
-      timestamp: (new Date())
-    }]);
+      timestamp: firebase.database.ServerValue.TIMESTAMP
+    })
     setText("");
   };
 

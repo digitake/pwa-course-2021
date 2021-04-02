@@ -1,8 +1,10 @@
 import './Chatbox.css';
+import {useEffect, useState} from 'react';
+import App from './App';
 
 import {useEffect, useState} from 'react';
 
-import App from './App';
+const chatroomRef = firebase.database().ref('chatroom-1')
 
 import firebase from './firebaseConfig';
 
@@ -59,7 +61,6 @@ function Chatbox() {
       <div className="App-chatroom">
       {
         lines.map(x => {
-
           return <div className="App-chatroom-text">
 
             <div>

@@ -1,20 +1,16 @@
+import firebase from 'firebase';
 
-import  firebase  from 'firebase';
-
-// Your web app's Firebase configuration
+ // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyCbjQzVy0U48HO4hSujzoRct8HsExIEXdI",
-    authDomain: "nottae12-pwa.firebaseapp.com",
-    databaseURL: "https://nottae12-pwa-default-rtdb.firebaseio.com",
-    projectId: "nottae12-pwa",
-    storageBucket: "nottae12-pwa.appspot.com",
-    messagingSenderId: "1091765849068",
-    appId: "1:1091765849068:web:58508a8f49d073e5ffcec9"
+    apiKey: "AIzaSyBj1LyIO5bA19_D6JzMu62sz9xn4HFSGmw",
+    authDomain: "chatapp-pwa-course-1620703478.firebaseapp.com",
+    databaseURL: "https://chatapp-pwa-course-1620703478-default-rtdb.firebaseio.com",
+    projectId: "chatapp-pwa-course-1620703478",
+    storageBucket: "chatapp-pwa-course-1620703478.appspot.com",
+    messagingSenderId: "238558235711",
+    appId: "1:238558235711:web:9da8cb5e3c045aef58fc8a"
   };
-
-
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-export default firebase;
-
+  export default firebase;

@@ -1,7 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import './Chatbox.css';
 import { Link} from 'react-router-dom'
 import App from './App';
+import firebase from './firebaseConfig';
+import { useEffect } from 'react';
+
+const chatroomRef = firebase.database().ref('chatroom-1');
 
 function Chatbox() {
   const [text, setText] = useState("");
@@ -12,12 +16,27 @@ alert("Toral text chat = "+lines.length);
 
 }, [lines]);
   
+  useEffect(() => {
+    chatroomRef.on('child_added', snapshot => {
+      let x = snapshot.val();
+      setLines(l => [...l, {
+        sender: x.sender,
+        message: x.message,
+        timestamp: (new Date())
+      }])
+    });
+  }, []);
 
   const onTextChange = (event) => {
     setText(event.target.value);
   };
   const onSend = () =>{
-    setLines([...lines, {sender: "Me", message : text , timestamp: (new Date())}]);
+    //Push message to firebase
+    chatroomRef.push({
+      sender: "Me",
+      message: text,
+    })
+
     setText("");
   };
   const keyPress = (event) => {
@@ -43,14 +62,16 @@ alert("Toral text chat = "+lines.length);
         {
           lines.map(x => {
             return <div className="Chatbox-chatroom-text">
-                    <div>
-                    {x.timestamp.toLocaleDateString()}
-                    </div> 
-                    <div>
-                    {x.sender+":"}
-                    </div>
-                    {x.message}
-                   </div>
+              <div>
+                {x.sender + ":"}
+              </div>
+              <div>
+                {x.message}
+              </div>
+              <div>
+                {x.timestamp.toLocaleDateString()}
+              </div>
+            </div>
           })
         }
       </div>

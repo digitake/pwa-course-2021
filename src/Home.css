@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-.Home{
-    background-image:url(tangtee\ new1.jpg) ;
-=======
 .Home
 {
     background-image:url(logo.png) ;
->>>>>>> 70362eb41c7f6a084a0a311a10a3c8fe7d8a5728
     max-width: 1920px;
     background-repeat: no-repeat;
     background-position: center;

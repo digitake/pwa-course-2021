@@ -45,13 +45,8 @@
 
 .App-textbox {
   flex: 1;
-<<<<<<< HEAD
-
-  background-color: rgb(156, 94, 128);
-=======
   background-color: rgb(255, 116, 116);
   justify-content: center;
->>>>>>> 70362eb41c7f6a084a0a311a10a3c8fe7d8a5728
   align-items: stretch;
   display: flex;
   
@@ -76,20 +71,3 @@
 
 
 
-<<<<<<< HEAD
-@media (max-width: 768px){
-  .App{
-    background-image: url(cool2.jpg);
-    background-size: cover ;
-  }
-  .App-header{
-    background-color: rgb(84, 11, 253);
-
-  }
-  .App-chatroom-text{
-    background-color: rgb(25, 72, 226);
-    
-  }
-}
-=======
->>>>>>> 70362eb41c7f6a084a0a311a10a3c8fe7d8a5728

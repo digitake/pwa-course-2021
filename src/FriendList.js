@@ -10,14 +10,6 @@ function FriendList(params)
 {
     return(
         <App>
-<<<<<<< HEAD
-        <div>
-            <div>Friend List</div>
-            <Link to="/">
-                go back
-        </Link>
-        
-=======
         <div className = "FriendList">
                 <div className = "FriendListMid">
                 <div className ="FriendList-Header">
@@ -61,7 +53,6 @@ function FriendList(params)
 
          
 
->>>>>>> 70362eb41c7f6a084a0a311a10a3c8fe7d8a5728
         </div>
     
         </App>

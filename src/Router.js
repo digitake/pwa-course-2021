@@ -27,7 +27,7 @@ function Router(){
             <Route path = "/NormalPage">
               <NormalPage />
             </Route>
-            <Route path ="/">
+            <Route path = "/">
               <Chatbox />
             </Route>
         </Switch>

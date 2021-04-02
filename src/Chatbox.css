@@ -69,6 +69,8 @@
     background-size: 30%;
     color : rgb(23, 24, 24);
     font-size: 30px;
+    display: flex;
+    flex-direction: row;
   }
   .Chatbox-textbox {
     flex: 1;

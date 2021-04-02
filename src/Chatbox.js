@@ -58,7 +58,7 @@ function Chatbox() {
                   {x.message}
                 </div>
                 <div>
-                  {x.timestamp.toLocaleString('th-TH')}
+                  {x.timestamp.toLocaleString()}
                   </div>
               </div>
           })

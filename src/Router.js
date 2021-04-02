@@ -28,6 +28,9 @@ function Router()
             <Route path = "/NormalPage">
               <NormalPage />
             </Route>
+            <Route path = "/">
+              <Chatbox />
+            </Route>
         </Switch>
      </BrowserRouter> 
 

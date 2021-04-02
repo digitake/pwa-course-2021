@@ -1,30 +1,63 @@
 import './Chatbox.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import App from './App';
+
+import firebase from './firebaseConfig';     //ดึงconfigที่เพิ่งจะทำมาเตรียมใช้งาน
+
+const chatroomRef = firebase.database().ref('chatroom-1');
 
 function Chatbox() {
 
   const [text, setText] = useState("");
+  const [lines, setLines] = useState([]);
 
-  const[Lines, setLines] = useState([""]);
+  useEffect(() =>{
+    chatroomRef.on('child_added', snapshot => {
+      let x = snapshot.val();
+      setLines(l =>[...l, {
+        sender : x.sender,
+        message : x.message
+        //, timestamp : (new Data(x.timestamp))
+      }])
+    })
+
+  }, []);
 
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () =>{
-    setLines(lines =>[...lines, text]);
+   chatroomRef.push({
+    sender : 'Me',
+    message: text,
+    timestamp: firebase.database.ServerValue.TIMESTAMP
+
+   });
+ 
     setText("");
   };
+
+  // const keypass = (event) =>{
+  //   if (event.which ===13){
+  //     onSend();
+  //   }
+  // }
 
   return (
     <App>
      <div className="App">
        <div className="App-chatroom">
          {
-           Lines.map(x =>{
+           lines.map(x =>{
                return <div className="App-chatroom-text">
-                 {x}
+                 <div>
+                   {x.sender+":"}
+                   {x.message}
+                 </div>
+                  {/* <div>
+                      {x.timestamp.toLocaleString()}
+                  </div> */}
                  </div>
            }
            )

@@ -50,3 +50,7 @@
   margin: 8px;
   background-color: #e9e77f00;
 }
+
+.Profile-ProfileImage{
+  flex: 12;
+}

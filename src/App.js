@@ -16,6 +16,17 @@ function App({children}) {
     <div className="App">
       <div className="App-header">
 
+      <Link to="chatbox">
+          <button>
+          Go to Chatbox
+          </button>
+        </Link>
+        
+        <Link to="/">
+          <button>
+            Go to chen
+
+
         <Link to="friend-list">
           <button>
             Go to FriendList
@@ -31,6 +42,7 @@ function App({children}) {
         <Link to="/">
           <button>
             Go to Chatbox
+
           </button>
         </Link>
       </div>
@@ -38,10 +50,12 @@ function App({children}) {
           {children}
         </div>
 
+
             
           </div>  
           <div className="App-content">
             {children}
+
 
     </div>
   );

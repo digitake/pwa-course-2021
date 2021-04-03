@@ -7,7 +7,7 @@ function App({children}) {
   
 
   return (
-    <div className="App">
+    <div className="App col-6">
       <div className="App-header">
 
 

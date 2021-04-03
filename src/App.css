@@ -39,6 +39,8 @@
 }
 
 .App-content {
+  max-width: 100%;
+  overflow:  auto;
   flex: 12;
   background-color: rgb(68, 233, 197);
 

@@ -1,13 +1,12 @@
-import './App.css';
+import './NormalPage.css';
 import { Link } from 'react-router-dom';
 
-
-function App({children}) {
- 
-  return (
-    <div className="App col-6">
-      <div className="App-header">
-            <Link to="/friend-list">
+function NormalPage({children}) {
+    
+    return (
+       <div className = "NormalPage">
+             <div className = "NormalPage-header">
+             <Link to="/friend-list">
                 <button>
                  Go FriendList
                 </button>
@@ -28,11 +27,17 @@ function App({children}) {
             </button>
              </Link>
          </div>
-      <div className ="App-content">
-        {children}
-    </div>
-    </div>
-  );
-}
+        <div className = "NormalPage-chatroom">
+        <div className = "NormalPage-Main">
+            {children}
+        </div>
+        </div>
+        </div>
 
-export default App;
+
+
+
+    );
+};
+
+export default NormalPage;

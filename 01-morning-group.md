@@ -1,7 +1,9 @@
 ## รายชื่อสมาชิกในกลุ่ม
 
+Repo: https://github.com/ElijaChinda/pwa-course-2021
 
-Repo: https://github.com/Destiny-netizen/pwa-course-2021
+1. 1620702256 ElijaChinda
+2. 6620700036 SaranTungsagul
 
 1. 1620702769 Destiny-netizen
 2. 1620701944 poomphan1620701944

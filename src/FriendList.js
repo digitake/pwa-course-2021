@@ -1,19 +1,44 @@
+import './FriendList.css';
+import NormalPage from './NormalPage';
 import { Link } from 'react-router-dom';
-import App from './App';
 
 function FriendList() {
+    
+    return (
+         <NormalPage>
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           <div class="desc">Friend 1 </div>
+           </div>
+         
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           <div class="desc">Friend 2 </div>
+           </div>
+           
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           
+           <div class="desc">Friend 3 </div>
+           </div>
 
-  return (
-    <App>
-      <div>
-        <div>Friend List</div>
-        <Link to="/">
-          Go back
-        </Link>
-      </div>
-    </App>
-  )
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           <div class="desc">Friend 4 </div>
+           </div>
 
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           <div class="desc">Friend 5 </div>
+           </div>
+
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           <div class="desc">Friend  </div>
+           </div>
+         </NormalPage>
+
+    );
 };
 
 export default FriendList;

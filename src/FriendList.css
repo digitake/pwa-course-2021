@@ -9,20 +9,9 @@
     flex: 12;
   }
 
-  .Profile-Friend {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    /* max-width: 400px; */
-    height: 100%;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgb(255, 255, 255);
-  }
-
   div.gallery {
+    border-radius: 25px;
+    background: #fdffff;
     margin: 5px;
     border: 1px solid #ccc;
     float: left;

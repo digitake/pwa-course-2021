@@ -8,8 +8,13 @@ function Shop() {
     
         <div className="shop">
            <div class="shop-header">
-               <div class="shop-center">
-                   <div class="shop-items">
+                <Link to="/">
+                    <img src={backButton}></img>
+                </Link>
+            <div class="shop-money"></div>  
+            </div>
+            <div class="shop-center">
+                    <div class="shop-items">
                     <div class="item1">Item.1</div>
                     <div class="item1">Item.2</div>
                     <div class="item1">Item.3</div>
@@ -21,18 +26,6 @@ function Shop() {
                     <div class="item1">Item.9</div>
                     <div class="item1">Item.10</div>
                    </div>
-               </div>
-               <div class="shop-header">
-                   <Link to="/">
-                    <img src={backButton}></img>
-                  </Link>
-                </div>
-
-                <div class="shop-header">
-                    <div class="shop-money">
-                    
-                    </div>  
-                </div>
             </div>
         </div>
             

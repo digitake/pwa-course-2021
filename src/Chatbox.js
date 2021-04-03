@@ -69,11 +69,10 @@ function ChatBox({children}) {
                             <div className="App-inButtonBar "> Setting </div> 
                         </Link>
                     </div>
-                    <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-9"
+                    <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-11"
                            value={text}
                            onChange={onTextChange}
                            onKeyPress={keyPress}/>
-                    <div className="App-textbox-send col-2" onClick={onSend}>Send!</div>
                 </div>
 
             </div>

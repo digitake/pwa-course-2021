@@ -6,8 +6,35 @@ function FriendList() {
     
     return (
          <NormalPage>
-                
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg">
+
+           </a>
+           <div class="desc">Friend 1 </div>
+           </div>
+           
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg">
+
+           </a>
+           <div class="desc">Friend 2 </div>
+           </div>
+           
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg">
+
+           </a>
+           <div class="desc">Friend 3 </div>
+           </div>
+
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg">
+
+           </a>
+           <div class="desc">Friend 4 </div>
+           </div>
          </NormalPage>
+
     );
 };
 

@@ -5,54 +5,75 @@
   text-align: center;
   height: 100%;
   margin: auto;
-  /* background-image: url(coo.jpg); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.App-logo{
+
+  background-image: url(mango.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: left; 
+
+}
+
+
+@media (min-width: 768px){
+ 
+  .App{
+
+
+    width: 95%;
+
+  }
+}
+
+@media (min-width: 480px){
+
+  .App{
+
+    background-color:  #242424;
+
+  }
+}
+
+
+
+.App-header {
+  flex: 1;
+  background-color: #FECC48;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.App-content{
+  flex: 12;
+
+}
+
+.Back-Button{
+  background-image: url(mango.png);
+  background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-@media (max-width: 768px) {
-  .App {
-    
-    /* background-color: red; */
-  }
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  flex: 1;
-  background-color: #f13000;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 24px;
-  color: rgb(0, 0, 0);
-}
-
-.App-content {
-  flex: 12;
-
-  background-color: rgba(170, 158, 212, 0.418);
+.Menu-button {
+  text-align: right;
 }
 
 .App-chatroom-text {
   margin: 8px;
-
-  background-color: rgb(206, 87, 87);
-
-  color : rgb(48, 100, 100);
-  font-size: 20px;
+  background-color: #e9e77f00;
 }
 
 .App-textbox {
   flex: 1;
-
-  background-color: rgb(255, 0, 0);
-
+  background-color:#fecd48;
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -62,6 +83,8 @@
   flex: 5;
   height: 100%;
   box-sizing: border-box;
+  background-color: #ebe99e;
+
 }
 
 .App-textbox-send {
@@ -71,24 +94,45 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*dssf*/

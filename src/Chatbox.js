@@ -6,9 +6,9 @@ import firebase from './firebaseConfig'; //ดึง config
 
 const chatroomRef = firebase.database().ref('chatroom-1');
 
-import firebase from './firebaseConfig';
 
-const chatroomref = firebase.database().ref('chatroom-1');
+
+
 
 function Chatbox() {
 

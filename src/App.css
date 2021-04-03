@@ -49,13 +49,8 @@
 }
 
 .App-content {
-
+  overflow: auto;
   flex: 12;
-}
-
-.App-content {
-  flex: 12;
-
 }
 
 .App-chatroom2 {

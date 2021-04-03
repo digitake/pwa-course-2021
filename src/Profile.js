@@ -1,6 +1,6 @@
 import App from './App';
 
-function Profile() {
+function Profile(){
     return(
         <App>
             <div>
@@ -8,6 +8,6 @@ function Profile() {
             </div>
         </App>
     )
-
 }
+
 export default Profile;

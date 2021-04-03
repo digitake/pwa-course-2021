@@ -1,19 +1,16 @@
 import { Link } from 'react-router-dom';
-import App from './App';
 
 function FriendList() {
-
-  return (
-    <App>
-      <div>
-        <div>Friend List</div>
-        <Link to="/">
-          Go back
-        </Link>
-      </div>
-    </App>
-  )
-
+    return (
+        <div>
+            FriendList
+            <Link to="/">
+                <button>
+                    Go to Chatroom
+                </button>
+            </Link>
+        </div>
+    )
 };
 
 export default FriendList;

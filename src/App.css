@@ -5,16 +5,41 @@
   text-align: center;
   height: 100%;
   margin: auto;
-  /* background-image: url(coo.jpg); */
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(universe-vector.jpg) ;
+  /*background-size: cover;*/
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .App {
+    max-width: 100%;
+    background-color: blue;
+    background-image: url(Thedeer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 24px;
+    margin-bottom: 24;
+    height: 95%;
     
-    /* background-color: red; */
   }
+}
+
+@media (max-width: 1024px){
+  .App{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+  }   
+ }
+
+
+.background-mycolor-1{
+  font-size: 24px;
+  max-width: 600px;
+  background-color: aquamarine;
+}
+
+.background-mycolor-2{
+  background-color: rebeccapurple;
 }
 
 .App-logo {
@@ -23,13 +48,22 @@
 }
 
 .App-header {
-  flex: 1;
-  background-color: #f13000;
+  flex: 2;
+
+  background-color: #013b32;
+
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 24px;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(155, 207, 255);
+}
+
+.App-chatroom {
+  flex: 10;
+  background-color: rgb(34, 255, 237);
+
   color: rgb(0, 0, 0);
 }
 
@@ -41,8 +75,16 @@
 
 .App-chatroom-text {
   margin: 8px;
+  background-color: rgb(3, 158, 150);
+  color: #ffffff;
+  border-style: solid ;
+  border-width: 1px;
+}
 
-  background-color: rgb(206, 87, 87);
+.App-textbox {
+  flex: 0;
+  background-color: rgb(0, 90, 75);
+
 
   color : rgb(48, 100, 100);
   font-size: 20px;
@@ -56,39 +98,25 @@
   justify-content: center;
   align-items: stretch;
   display: flex;
+  color: #ffffff;
 }
 
-.App-textbox-input {
+.App-textbox-send{
+  background-color: rgb(1, 133, 122);
+  color: #ffffff;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 50px;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  display: flex;
+}
+
+.App-textbox-Input{
   flex: 5;
   height: 100%;
   box-sizing: border-box;
 }
 
-.App-textbox-send {
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}

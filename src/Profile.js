@@ -1,14 +1,12 @@
 import App from './App';
 
 function Profile(){
-
-  return (
+    return (
     <App>
-      <div>
-        My Profile
-      </div>
+        <div>
+            My Profile
+        </div>
     </App>
-  )
-};
-
+    );
+}
 export default Profile;

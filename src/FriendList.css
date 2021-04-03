@@ -1,0 +1,74 @@
+.FriendList {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+    
+  }
+  
+  .FriendList-header {
+    flex:28;
+    font-size: 25px;
+    background-image: url(BG_Moblie_Top.png);
+    background-position: center;
+    text-align: center;
+    color: cornsilk;
+    
+  }
+
+  .FriendList-Headers {
+    float: right;
+    font-size: 10px;
+  }
+  
+  .FriendList-Contact-info {
+    background-color: rgb(255, 255, 255);
+    padding: 300px 0;
+    border-style: groove;
+  }
+  .FriendList-chatroom {
+    flex: 12;
+  }
+  
+  .FriendList-Name-Space{
+    
+  }
+
+  .FriendList-chatroom-text {
+    margin: 8px;
+    color : rgb(48, 100, 100);
+    font-size: 20px;
+  }
+  
+    @media(orientation: landscape){
+      .FriendList {
+        background-image: url(BG_Moblie.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-color: powderblue;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .FriendList{
+        background-image: url(BG_Moblie.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-color: mintcream;
+        margin-top: 24px;
+        margin-bottom: 24px;
+      }
+    }
+    
+    /*768 - 1024 */
+    @media (min-width: 768px) and (max-width: 1024px){
+      .FriendList{
+        background-image: url(BG_Moblie.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-color: mistyrose;
+      }
+    }

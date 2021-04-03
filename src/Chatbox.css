@@ -1,63 +1,77 @@
-.App {
+.Chatbox {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  justify-content: right;
+  text-align: right;
+  max-width: 1920px;
   height: 100%;
   margin: auto;
-  /* background-image: url(coo.jpg); */
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-@media (max-width: 768px) {
-  .App {
-    
-    background-color: rgb(48, 180, 150);
-  }
+@media(max-width:1000px){
+  .Chatbox{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(shiba.png);
+    background-size: contain;
+}
+}
+@media(min-width:1001px)and (max-width:1920px){
+  .Chatbox{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(download.jpg);
+    background-repeat: repeat;
+}
 }
 
-.App-logo {
+
+.Chatbox-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-.App-chatroom {
-  flex: 12;
 
-  background-image: url(coo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(170, 158, 212, 0.418);
+.Chatbox-header {
+  flex: 1;
+  background-color: #7ff8fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
 }
 
-.App-chatroom-text {
+.Chatbox-chatroom {
+  flex: 12;
+  display: flex;
+  flex-direction: column;
+}
+
+.Chatbox-chatroom-text {
   margin: 8px;
-
-  background-color: rgb(206, 87, 87);
-
+  background-color: rgb(197, 189, 189);
   color : rgb(48, 100, 100);
   font-size: 20px;
 }
 
-.App-textbox {
+.Chatbox-textbox {
   flex: 1;
-
-  background-color: rgb(255, 0, 0);
-
+  background-color: rgb(224, 220, 220);
   justify-content: center;
   align-items: stretch;
   display: flex;
 }
 
-.App-textbox-input {
-  flex: 5;
+.Chatbox-textbox-input {
+  flex: 3;
   height: 100%;
   box-sizing: border-box;
 }
 
-.App-textbox-send {
-  flex: 1;
+.Chatbox-textbox-send {
+  flex: 0.5;
   height: 100%;
   vertical-align: middle;
   justify-content: center;
@@ -65,22 +79,85 @@
   display: flex;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+/*<768px*/
+@media(max-width: 600px){
+  .Chatbox{
+    background-repeat: center;
+    background-position: center;
+    background-image: url(shiba.png);
+    background-size: contain;
+  }
 
-@media (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
+  .Chatbox-header {
+    flex: 0.75;
+    background-color: #ff844f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(243, 10, 10);
+  }
+
+  .Chatbox-textbox-input {
+    flex: 2;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .Chatbox-textbox-send {
+    flex: 0.4;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Chatbox-textbox {
+    flex: 0.75;
+    background-color: rgb(224, 220, 220);
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+  }
+}
+@media(min-width:601px) and (max-width:1080px){
+  .Chatbox{
+    background-repeat: repeat;
+    background-position: center;
+    background-image: url(Jesus.png);
+    background-size: contain;
+  }
+
+  .Chatbox-header {
+    flex: 1;
+    background-color: #00661f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(236, 128, 128);
+  }
+}
+
+@media(min-width:1081px){
+  .Chatbox{
+    background-repeat: repeat;
+    background-position: center;
+    background-image: url(sea.png);
+    background-size: cover;
+  }
+
+  .Chatbox-header {
+    flex: 1;
+    background-color: #f57ca0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(243, 10, 10);
   }
 }

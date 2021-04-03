@@ -3,7 +3,7 @@ import LinkTo from './Components/LinkManager';
 
 function App({ children }) {
   return (
-    <div className="App">
+    <div className="App col-6">
       <div className="App-header">
 
         <LinkTo value='Home' to='home' />

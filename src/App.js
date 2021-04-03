@@ -1,34 +1,39 @@
 import './App.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function App({children}) {
 
+
   return (
-    <div className="App col-6">
+
+    <div className="App">
+
       <div className="App-header">
+        เราเตอร์หลักอยู่ที่ /random-main
+    
+      </div>
+
+     
+      {children}
+
+
+      <div>
         <Link to="/friend-list">
-          <button>
-            Friend List
-          </button>
-        </Link>
+                <button>
+                    Go Chatroom
+                </button>
+         </Link>
 
-        <Link to="/profile">
-          <button>
-            Profile
-          </button>
+        <Link to="/chatbox-test">
+                <button>
+                    Go Chatbox Test
+                </button>
         </Link>
+        
+        </div>
 
-        <Link to="/">
-          <button>
-            Chatbox
-          </button>
-        </Link>
-      </div>
-      <div className="App-content">
-        {children}
-      </div>
     </div>
+    
   );
 }
-
 export default App;

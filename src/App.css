@@ -3,18 +3,11 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  max-width: 500px;
+  min-height: auto;
   height: 100%;
   margin: auto;
-  /* background-image: url(coo.jpg); */
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-@media (max-width: 768px) {
-  .App {
-    
-    /* background-color: red; */
-  }
+  background-color: rgb(36, 36, 36);
 }
 
 .App-logo {
@@ -24,34 +17,126 @@
 
 .App-header {
   flex: 1;
-  background-color: #f13000;
+
+  background-color: #e70505;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 24px;
-  color: rgb(0, 0, 0);
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(233, 1, 1);
+
+}
+
+.Name-Box{
+
+   color: rgb(255, 255, 255); 
+   margin-top: 20px;
+   margin-left: 20px;
+   font-size: 30px;
+   
+   
+  /*background-color: rgb(255, 255, 255);
+  
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 30px;
+  
+  display: inline-block;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font: optional;*/
+}
+
+.Search-Box{
+  background-color: rgb(255, 255, 255);
+  
+  width: 90%;
+  margin-top: 23px;
+  display: inline-block;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font: optional;
+}
+
+.AllChat-Header {
+  flex: 1;
+
+  margin-top: -10px;
+  margin-left: 20px;
+  margin-right: 5px;
+  width: 90%;
+
+  background-color: rgb(233, 1, 1);
+  color: rgb(233, 1, 1);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.LastChat{
+
+  background-color: rgb(255, 255, 255);
+  
+  width: 60%;
+  margin-top: 20px;
+  margin-left: 50px;
+  
+  display: inline-block;
+  border: 0px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.FriendPic{
+
+  margin-bottom: 5px;
+  border-radius: 50%;
+  margin-left: 7px;
+  margin-top: -95px;
+  width: 100px;
+  clip-path: circle();
+  
+
+}
+
+.FriendChat-Box{
+
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 5px;
+  width: 90%;
+
+  background-color: rgb(233, 1, 1);
+  color: rgb(233, 1, 1);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+
+}
+
+.Middle-Zone {
+  flex: 12;
 }
 
 .App-content {
   flex: 12;
 
-  background-color: rgba(170, 158, 212, 0.418);
+  background-color: rgba(199, 198, 198, 0.418);
 }
-
 .App-chatroom-text {
   margin: 8px;
 
-  background-color: rgb(206, 87, 87);
-
+  background-color: rgb(197, 189, 189);
   color : rgb(48, 100, 100);
   font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
-
-  background-color: rgb(255, 0, 0);
+  
+  background-color: rgb(255, 232, 100);
 
   justify-content: center;
   align-items: stretch;
@@ -71,24 +156,168 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.Test{
+  flex: 1;
 
-@media (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.image-button{
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+.image-between{
+  padding: 10px;
+}
+
+/*.img {
+  border-radius: 50%;
+  
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 100px;
+  clip-path: circle();
+  
+  
+}*/
+
+
+.space{
+  flex: .1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 3vmin);
+  color: rgb(255, 255, 255);
+}
+
+.rcorners1 {
+
+  border-radius: 100px;
+  background: #b10000;
+
+  padding: 40px; 
+  width: 50px;
+  height: 5px;  
+  margin: 0;
+  
+  border: 7px solid rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.table-main{
+  width: 100%;
+  border-collapse: collapse;
+  border: 0px solid black;
+
+}
+
+.circles {
+  height: 130px;
+  width: 130px;
+  background-color: rgb(192, 28, 28);
+  border-radius: 50%;
+  display: inline-block;
+  border: 7px solid rgb(255, 255, 255);
+}
+
+.noteheader{
+  flex: 1;
+ 
+  width: 90%;
+
+ 
+}
+
+.notemid{
+  flex: 12;
+ 
+  width: 90%;
+}
+
+
+.circlesbox1{
+  margin-top: 10px;
+  margin-left: -50px;
+  margin-right: 5px;
+  width: 90%;
+  
+
+}
+
+.circlesbox2{
+  margin-top: -150px;
+  margin-left: 150px;
+  margin-right: 5px;
+  width: 90%;
+
+
+}
+
+.circlesbox3{
+  margin-top: 10px;
+  margin-left: -50px;
+  margin-right: 5px;
+  width: 90%;
+
+
+}
+.profilehead{
+  flex: 1;
+ 
+  width: 90%;
+}
+
+.profilemid{
+  flex: 12;
+ 
+  width: 90%;
+}
+
+.framepic{
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 5px;
+  width: 90%;
+  clip-path: circle();
+}
+
+.profilename{
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 5px;
+  width: 90%;
+  border: 7px solid rgb(255, 255, 255);
+  color: #ccc;
+  font-size: 20px;
+  
+}
+
+.profileinfo{
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 5px;
+  width: 90%;
+  border: 7px solid rgb(255, 255, 255);
+  color: #ccc;
+  font-size: 20px;
+}
+
+.profilespinhis{
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 5px;
+  width: 90%;
+  border: 7px solid rgb(255, 255, 255);
+  color: #ccc;
+  font-size: 20px;
 }

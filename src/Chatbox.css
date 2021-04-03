@@ -1,75 +1,90 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  margin: auto;
-  /* background-image: url(coo.jpg); */
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-@media (max-width: 768px) {
-  .App {
-    
-    background-color: rgb(48, 180, 150);
-  }
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: auto;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-Botton{
+    height: 40px;
+    background: black;
+}
+
+.App-inButtonBar{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+}
+
+.App-Time-Position{
+    background: none;
+    font-style: normal;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .App-chatroom {
-  flex: 12;
-
-  background-image: url(coo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(170, 158, 212, 0.418);
+    flex: 12;
+    background-image: url(BGapp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .App-chatroom-text {
-  margin: 8px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    background-color: rgb(255, 255, 255);
+}
 
-  background-color: rgb(206, 87, 87);
-
-  color : rgb(48, 100, 100);
-  font-size: 20px;
+.App-textPosition{
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .App-textbox {
-  flex: 1;
-
-  background-color: rgb(255, 0, 0);
-
-  justify-content: center;
-  align-items: stretch;
-  display: flex;
+    background-color: rgb(253, 4, 4);
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
 }
 
 .App-textbox-input {
-  flex: 5;
-  height: 100%;
-  box-sizing: border-box;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .App-textbox-send {
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
 }
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
+.col-5 {width: 41.68%;}
 .col-6 {width: 50%;}
 .col-7 {width: 58.33%;}
 .col-8 {width: 66.66%;}
@@ -78,9 +93,101 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+
+@media  (max-width: 760px){
+    /* IPHONE */
+    
+    .App-textPosition{
+        font-size: 20px;
+    }
+
+    .App-Time-Position{
+        font-size: 10px;
+    }
+    
+    .App-chatroom-text{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .App-inButtonBar{
+        font-size: 10px;
+    }
 }
+
+@media  (max-width: 1500px) and (min-width: 761px){
+    /* IPAD */
+
+    .App-textPosition{
+        font-size: 25px;
+    }
+    
+    .App-Time-Position{
+        font-size: 15px;
+    }
+
+    .App-chatroom-text{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+@media  (min-width: 1501px){
+    /* PC */
+
+    .App-textPosition{
+        font-size: 30px;
+    }
+
+    .App-Time-Position{
+        font-size: 20px;
+    }
+
+    .App-chatroom-text{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .App-inButtonBar{
+        font-size: 30px;
+    }
+}
+
+/* For Study next time*/
+/*.chat-form{*/
+/*  display: grid;*/
+/*  grid: 51px/32px 1fr;*/
+/*  align-content: center;*/
+/*  align-items: center;*/
+/*  grid-gap: 15px;*/
+/*  grid-area: chat-form;*/
+/*  border-radius: 0 0 10px 0;*/
+/*  border-top: 1px white;*/
+/*  padding-left: 30px;*/
+/*  padding-right: 30px;*/
+/*}*/
+
+/*.text {*/
+/*  letter-spacing: 0px;*/
+/*  line-height: 1.2;*/
+/*  color: white;*/
+/*  font-weight: 400;*/
+/*  font-style: oblique;*/
+/*  font-family: "Irish Grover", serif;*/
+/*}*/
+
+/*.chat-form-input{*/
+/*  outline: none;*/
+/*  padding: 15px;*/
+/*  border:  2px white;*/
+/*  color: black;*/
+/*  border-radius: 6px;*/
+/*  font-size: 1.4rem;*/
+/*}*/
+
+
+/*.text{*/
+/*  font-size: 1.5rem;*/
+/*  padding-left: 30px;*/
+/*  outline: none;*/
+/*  */
+/*}*/

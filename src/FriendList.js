@@ -6,10 +6,8 @@ function FriendList() {
     return(
         <App>
             <h1>Add friend</h1>
-            
         </App>
-    )
-    
+    ) 
 }
 
 

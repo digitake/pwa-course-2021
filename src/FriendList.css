@@ -4,6 +4,7 @@
     justify-content: center;
     text-align: center;
     height: 100%;
+    width: 100%;
     margin: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -14,28 +15,18 @@
     
   }
 
-  @media (min-width: 768px){
- 
-    .FriendList{
-  
-      
-      width: 95%;
-    
-    }
-  }
-  
-  @media (min-width: 480px){
-  
-    .FriendList{
-  
-      background-color:  #242424; 
-      
-    }
-  }
 
+
+  .profile-icon{
+
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
 
   .FriendList-header {
-    flex: 1;
+    flex: 2;
     background-color: #FECC48;
     display: flex;
     flex-direction: column;
@@ -52,28 +43,8 @@
     justify-content: center;
   }
 
-  .FriendList-boby2{
-    flex: 3;
-    background-color: #E9E87F;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    
-  }
-  .FriendList-boby3{
-    flex: 3;
-    background-color: #E9E87F;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-  }
 
   
-
-
-
   .FriendList-black {
     flex: 12;
   }

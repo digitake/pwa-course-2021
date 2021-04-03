@@ -9,44 +9,47 @@ function FriendList(){
         <div className="FriendList" >
             <div className= "FriendList-header">
                Friend List
-              <Link to="/">
-                  <img src ="back-32.png" align="Left" />
-              </Link>
             </div>
             <div className= "FriendList-boby">
                  สมชาย
-                 <Link to="/profile-page">
-                     <img src = "profile-user-64.png"  />
-                 </Link>
-                 <div className= "Chat-Button">
-                    <Link to = "/" >
+                <div className= "profile-icon">
+                <Link to="/profile">
+                     <img src = "profile-user-64.png" />
+                </Link>
+                </div>
+                <div className= "Chat-Button">
+                <Link to = "/" >
                      <img src = "buttonChat.png" />
-                    </Link>
+                </Link>
                 </div>
             </div>
-            <div className= "FriendList-boby2">
+            <div className= "FriendList-boby">
                  สมศรี
-                 <Link to="/profile-page">
+                <div className= "profile-icon">
+                <Link to="/profile">
                 <img src = "profile-user-64.png"  />
                 </Link>
+                </div>
                 <div className= "Chat-Button">
-                    <Link to = "/" >
+                <Link to = "/" >
                     <img src = "buttonChat.png" />
-                    </Link>
+                </Link>
                 </div>
             </div>
-            <div className= "FriendList-boby3">
+            <div className= "FriendList-boby">
                  สมศักดิ์
-                 <Link to="/profile-page">
+              <div className= "profile-icon">
+              <Link to="/profile">
                 <img src = "profile-user-64.png"  />
-                </Link>
-                <div className= "Chat-Button">
-                    <Link to = "/" >
-                    <img src = "buttonChat.png" />
-                    </Link>
-                </div>
+              </Link>
             </div>
-            <div className= "FriendList-black"> 
+              <div className= "Chat-Button">
+              <Link to = "/" >
+                 <img src = "buttonChat.png" />
+              </Link>
+             </div>
+            </div>
+             <div className= "FriendList-black"> 
             </div>
         </div>
     </App>

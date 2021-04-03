@@ -39,7 +39,7 @@
 .App-chatroom 
 {
   flex: 12;
-  background-color:#2D2C67
+  overflow: auto;
 }
 
 .App-chatroom-text 

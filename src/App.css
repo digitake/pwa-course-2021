@@ -55,7 +55,7 @@
 
 .App-chatroom {
   flex: 12;
-
+  overflow: auto;
 }
 
 .App-chatroom-text {

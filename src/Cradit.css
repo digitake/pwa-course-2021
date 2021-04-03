@@ -1,0 +1,33 @@
+.Text-incradit{
+    margin: 5px;
+    text-align: center;
+    
+    
+    
+}
+.Fist-Text{
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: snow;
+    border: 3px solid rgb(255, 255, 255);
+    width: 150px;
+    background-color: rgb(33, 0, 43);
+    background-position: center;
+}
+.Position{
+    position: absolute;
+    right: 50%;
+}
+.Position2{
+    position: fixed;
+    left: 51%;
+    top: 10px;
+}
+.addmargin{
+    margin-bottom:30px ;
+}
+.CRADIS
+{color: rgb(255, 255, 255);}
+

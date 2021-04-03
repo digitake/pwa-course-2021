@@ -1,0 +1,207 @@
+
+.gallery {
+    margin: 10px;
+    border: 5px solid rgb(21, 0, 59);
+    float: left;
+    width: 180px;
+    background-color: slategray;
+  }
+  
+  .gallery:hover {
+    border: 5px solid rgb(21, 0, 59);
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+    color: snow;
+  }
+  .BG{
+  background-image: url(AstroBG2.gif);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 2000px;
+  }
+  .Link{
+    position: absolute;
+  left: 200px;
+  top: 10px;
+  }
+  .Text{
+    float: top;
+    margin-left: 40%;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: snow;
+    border: 3px solid rgb(255, 255, 255);
+    width: 150px;
+    background-color: rgb(33, 0, 43);
+}
+.margin-text{
+  margin: 10px;
+}
+
+  @media (min-width: 500px){
+    .BG{
+        background-image: url(AstroBG2.gif);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 1350px;
+        background-size: 2000px;
+        }
+    .gallery {
+        margin: 10px;
+        border: 5px solid rgb(21, 0, 59);
+        float: left;
+        width: 180px;
+        background-color: slategray;
+      }
+      
+      .gallery:hover {
+        border: 5px solid rgb(21, 0, 59);
+      }
+      
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .desc {
+        padding: 15px;
+        text-align: center;
+        color: snow;
+      }
+      
+  }
+  @media (min-width: 600px){
+    .BG{
+        background-image: url(AstroBG2.gif);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 1350px;
+        background-size: 2000px;
+        }
+    .gallery {
+        margin: 10px;
+        border: 5px solid rgb(21, 0, 59);
+        float: left;
+        width: 180px;
+        background-color: slategray;
+      }
+      
+      .gallery:hover {
+        border: 5px solid rgb(21, 0, 59);
+      }
+      
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .desc {
+        padding: 15px;
+        text-align: center;
+        color: snow;
+      }
+    
+  }
+  @media (min-width: 800px){
+    .gallery {
+        margin: 10px;
+        border: 5px solid rgb(21, 0, 59);
+        float: left;
+        width: 180px;
+        background-color: slategray;
+      }
+      
+      .gallery:hover {
+        border: 5px solid rgb(21, 0, 59);
+      }
+      
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .desc {
+        padding: 15px;
+        text-align: center;
+        color: snow;
+      }
+      .BG{
+      background-image: url(AstroBG2.gif);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      background-size: 2000px;
+      }
+  }
+  @media (min-width: 900px){
+    .gallery {
+        margin: 10px;
+        border: 5px solid rgb(21, 0, 59);
+        float: left;
+        width: 180px;
+        background-color: slategray;
+      }
+      
+      .gallery:hover {
+        border: 5px solid rgb(21, 0, 59);
+      }
+      
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .desc {
+        padding: 15px;
+        text-align: center;
+        color: snow;
+      }
+      .BG{
+      background-image: url(AstroBG2.gif);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 1010px;
+      background-size: 2000px;
+      }
+    }
+      @media (min-width: 1200px){
+        .gallery {
+            margin: 10px;
+            border: 5px solid rgb(21, 0, 59);
+            float: left;
+            width: 180px;
+            background-color: slategray;
+          }
+          
+          .gallery:hover {
+            border: 5px solid rgb(21, 0, 59);
+          }
+          
+          .gallery img {
+            width: 100%;
+            height: auto;
+          }
+          
+          .desc {
+            padding: 15px;
+            text-align: center;
+            color: snow;
+          }
+          .BG{
+          background-image: url(AstroBG2.gif);
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          background-size: 2000px;
+          }
+  }

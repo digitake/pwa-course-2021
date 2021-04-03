@@ -1,0 +1,94 @@
+.background{
+    background-image: url(animal_background.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+@media(min-width: 500px){
+    .background{
+        background-image: url(animal_background.gif);
+        background-size: 2000px;
+        background-repeat: no-repeat;
+        height: 1000px;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 75px;
+        color: aliceblue;
+        font-style: italic;
+    }
+    .link{
+        margin: 2px;       float: bottom;
+        width: 180px;
+    }
+    .margin{
+        margin-left: 175px;
+    }
+    .welcomemargin{
+        margin-left: 50px;
+    }
+}
+
+@media(min-width: 2px){
+    .background{
+        background-image: url(animal_background.gif);
+        background-size: 1500px;
+        background-repeat: no-repeat;
+        height: 1000px;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 32%;
+        font-size: 48px;
+        color: aliceblue;
+        font-style: italic;
+        
+    }
+
+    .link{
+        margin: 2px;       float: bottom;
+        width: 180px;
+    }
+    .margin{
+        margin-left: 110px;
+    }
+    .welcomemargin{
+        margin-left: 30px;
+    }
+}
+
+@media(min-width: 1300px){
+    .background{
+        background-image: url(animal_background.gif);
+        background-size: 2000px;
+        background-repeat: no-repeat;
+        height: 1000px;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 43%;
+        font-size: 75px;
+        color: aliceblue;
+        font-style: italic;
+
+    }
+
+    .link{
+        margin: 2px;
+        float: bottom;
+        width: 180px;
+    }
+    .margin{
+        margin-left: 175px;
+    }
+    .welcomemargin{
+        margin-left: 50px;
+    }
+}
+
+

@@ -1,50 +1,259 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  margin: auto;
-  /* background-image: url(coo.jpg); */
-  background-repeat: no-repeat;
-  background-position: center;
+/***************************************************************************************************************/
+/********************************************BASS OF APP AND FRIEND*********************************************/
+/***************************************************************************************************************/
+@media (min-width: 500px)
+{
+ .App{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   max-width: 400px;
+   height: 100%;
+   margin: auto;
+ }
+ .Friend
+ {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   max-width: 400px;
+   height: 100%;
+   margin: auto;
+ }
 }
 
-@media (max-width: 768px) {
-  .App {
-    
-    background-color: rgb(48, 180, 150);
+/***************************************************************************************************************
+***************************FIX THE SIZE OF ITEM TO CONFIX WITH RESOLUTION***************************************
+***************************************************************************************************************/
+
+/****************************      MIN < 500PX      *********************************************************************************************************************************************************/
+@media (min-width: 500px){
+  .App{
+    max-width:100%;
+    background-image: url(funny-cat.jpeg);
+    background-position:top center;
+    background-size: 1000px;
+    background-repeat: no-repeat;
   }
+  .App-header{
+    flex: 1;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+  }
+  .App-chatroom-text {
+    margin: 8px;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  /*Friend Zone scene*/
+  .Friend{
+    max-width:100%;
+    background-image: url(cat-2.jpg);
+    background-position:top center;
+    background-size: 1000px;
+    background-repeat: no-repeat;
+  }
+  .Friend-header {
+    flex: 1;
+    background-color: #00424b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+  }
+  .Friend-chatroom-text {
+    margin: 8px;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .Goto-Friend
+{
+  width: 300px;
+  border: 10px solid rgb(0, 113, 243);
+  padding: 10px;
+  margin: 0;
+  background-color: rgb(0, 70, 150);
+  color: #ffffff;
+  background-repeat:  no-repeat;
+}
+}  
+
+/****************************     MIN < 1000PX     ******************************************************************************************************************************************/
+
+@media (min-width: 1000px){
+  .App{
+    max-width:100%;
+    background-image: url(111.png);
+    background-position:top center;
+    background-size: 1500px;
+    background-repeat: no-repeat;
+  }
+  .App-header {
+    flex: 1;
+    background-color: #ffee00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+  }
+  .App-chatroom-text {
+    margin: 8px;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+ /*Friend Zone scene*/
+  .Friend{
+    max-width:100%;
+    background-image: url(cat-2.jpg);
+    background-position:top center;
+    background-size: 1500px;
+    background-repeat: no-repeat;
+  }
+  .Friend-header {
+    flex: 1;
+    background-color: #005e42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+  }
+  .Friend-chatroom-text {
+    margin: 8px;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 30px;
+  }
+  .Goto-Friend
+{
+  width: 500px;
+  border: 10px solid rgb(0, 113, 243);
+  padding: 10px;
+  margin: 0;
+  background-color: rgb(0, 70, 150);
+  color: #ffffff;
+  background-repeat:  no-repeat;
+}
 }
 
+ /****************************       MIN < 1500PX      ****************************************************************************************************************************************/
+
+@media (min-width: 1500px){
+  .App{
+    max-width:100%;
+    background-image: url(cat-3.jpg);
+    background-position:top center;
+    background-size: 2000px;
+    background-repeat: no-repeat;
+  }
+  .App-header {
+    flex: 1;
+    background-color: #0ac76f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+  }
+ 
+  .App-chatroom-text {
+    margin: 8px;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  /*Friend Zone scene*/
+  .Friend{
+    max-width:100%;
+    background-image: url(cat-2.jpg);
+    background-position:top;
+    background-size: 2000px;
+    background-repeat: no-repeat;
+  }
+  .Friend-header {
+    flex: 1;
+    background-color: #366600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+  }
+ 
+  .Friend-chatroom-text {
+    margin: 8px;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 40px;
+  }
+  .Goto-Friend
+{
+  width: 500px;
+  border: 10px solid rgb(0, 113, 243);
+  padding: 10px;
+  margin: 0;
+  background-color: rgb(0, 70, 150);
+  color: #ffffff;
+  background-repeat:  no-repeat;
+}
+}
+/******************************************************************************************AND COMMAND FIX THE SIZE**********************************************************************************************/
+
+/***BASS LOGO****
+****************/
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/************************BASS OF APP AND FRIEND (CHATROOM)******************************
+***************************************************************************************/
 .App-chatroom {
   flex: 12;
-
-  background-image: url(coo.jpg);
+  background-color: rgba(179, 178, 178, 0.418);
+  background-size: 500px;
   background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(170, 158, 212, 0.418);
+  background-position:  center;
+}
+.Friend-chatroom {
+  flex: 12;
+  background-color: rgba(179, 178, 178, 0.418);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position:  center;
 }
 
-.App-chatroom-text {
-  margin: 8px;
 
-  background-color: rgb(206, 87, 87);
-
-  color : rgb(48, 100, 100);
-  font-size: 20px;
-}
-
+/************************BASS OF APP TEXT BOX AND LINK*********************************
+***************************************************************************************/
 .App-textbox {
   flex: 1;
-
-  background-color: rgb(255, 0, 0);
-
+  background-color: rgb(119, 44, 44);
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -55,7 +264,6 @@
   height: 100%;
   box-sizing: border-box;
 }
-
 .App-textbox-send {
   flex: 1;
   height: 100%;
@@ -64,23 +272,8 @@
   align-items: center;
   display: flex;
 }
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+.link-button
+{
+   color: cornsilk;
 }
+

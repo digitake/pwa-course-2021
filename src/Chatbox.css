@@ -78,6 +78,9 @@
   .Chatbox-chatroom {
     color: rgb(182, 234, 255);
     flex: 12;
+    max-width: 100%;
+    overflow: auto;
+
   }
   .Chatbox-chatroom-text {
     margin: 8px;

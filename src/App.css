@@ -101,6 +101,7 @@
   flex: 12;
   overflow: auto;
   width: 100%;
+  
 }
 .App-chatroom-text {
   margin: 8px;

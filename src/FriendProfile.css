@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap');
+
+.friendProfile {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+  }
+
+.friendProfile-box {
+    
+    border-radius: 15px;
+    align-content: left;
+    width: 1300px;
+    height: 550px;
+    background: rgba(0, 0, 0, 0.336);
+ 
+  }
+
+.friendProfile-detail {
+
+    border-style: outset;
+    border-width: 13px;
+    border-color: rgba(255, 255, 255, 0.452);
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin-left: 120px;
+    margin-top: 20px;
+    
+}
+
+.friendProfile-detail-text {
+
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Prompt', sans-serif;
+    position:absolute;
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    
+}
+

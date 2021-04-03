@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap');
-.App {
+.Chatroom {
   
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   height: 100%;
   margin: auto;
   font-size: 22px;
@@ -12,14 +12,14 @@
 }
 
 @media (min-width: 100px) {
-  .App {
+  .Chatroom {
     background-image: url(background_01.gif);
   }
 }
 
 
 @media (min-width: 768px) {
-  .App {
+  .Chatroom {
     background-image: url(background_01.gif);
     width: 98%;
   }
@@ -28,14 +28,9 @@
 
 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 
-
-.App-header {
+.Chatroom-header {
   flex: 1;
 
   background-color: #4998ffd5;
@@ -48,56 +43,13 @@
   font-size: calc(10px + 2vmin);
   color: rgb(230, 230, 230);
 }
-.App-friendlist
-{
-  text-align: right;
-}
 
 
-/* Dropdown Button */
-.dropbtn {
-  background-color: #4998ffd5;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #7eb6ffd5;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
-.App-chatroom {
+
+
+.Chatroom-room {
   flex: 10;
 
 
@@ -107,19 +59,18 @@
   /*background-image: url(../src/logo1.png);  สำหรับพื้นหลัง*/
 }
 
-.App-chatroom-text {
+.Chatroom-room-text {
   margin: 8px;
   
+
 
   background-color: hsl(212, 100%, 76%);
   color:rgb(255, 255, 255);
   font: size 22px;
-  display: flex;
-  flex-direction: row;
-  
+
 }
 
-.App-textbox {
+.Chatroom-textbox {
   flex: 1;
 
   background-color: rgb(201, 201, 201);
@@ -130,7 +81,7 @@
 }
 
 @media (min-width: 100px) {
-  .App-textbox-input {
+  .Chatroom-textbox-input {
   flex: 3 ;
   height: 100%;
   box-sizing: border-box;
@@ -138,12 +89,12 @@
 }
 
 @media (min-width: 768px) {
-  .App-textbox-input {
+  .Chatroom-textbox-input {
     flex: 6;
   }
 }
 
-.App-textbox-send {
+.Chatroom-textbox-send {
   flex: 1;
   height: 100%;
   vertical-align: middle;
@@ -151,3 +102,4 @@
   align-items: center;
   display: flex;
 }
+

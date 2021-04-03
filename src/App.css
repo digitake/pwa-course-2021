@@ -1,38 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap');
 .App {
-  position: relative;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   height: 100%;
   margin: auto;
-  background-image: url(BG.jpg);
-  background-position: center ;
-  background-size: 50%;
-  background-repeat: no-repeat;
+  font-size: 22px;
+  font-family: 'Prompt', sans-serif;
 }
 
-@media (min-width : 1080px){
-  .App{
-    width: 95%;
-    background-color: #2D2C67;
+@media (min-width: 100px) {
+  .App {
+    background-image: url(background_01.gif);
   }
 }
 
-
-
-
-@media (min-width : 720px) and (max-width: 1079px){
-  .App{
-    width: 95%;
-    background-color: #FFE5B4;
-  }
-}
-
-@media (min-width : 480px) and (max-width: 719px){
-  .App{
-    width: 95%;
-    background-color: #FFC0CB;
+@media (min-width: 768px) {
+  .App {
+    background-image: url(background_01.gif);
+    width: 98%;
   }
 }
 
@@ -40,6 +28,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+
+
 .App-header {
   background-color: rgb(236, 16, 16);
   background-position: center;
@@ -56,87 +47,94 @@
   background-position: left;
   background-repeat: no-repeat;
   flex: 1;
-  background-color: #505396;
+
+  background-color: #4998ffd5;
+
   display: flex;
-}
-.App-header2 {
-  background-image: url();
-  background-position: center;
-  background-repeat: no-repeat;
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.App-header3 {
-  background-image: url(design/App\ Content-02.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
+  flex-direction: row;
+  text-align: left;
+  align-items: left;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  color: rgb(230, 230, 230);
 }
-.App-content{
-  color: rgb(182, 234, 255);
-  flex: 12;
+.App-friendlist
+{
+  text-align: right;
 }
-.App-chatroom-text {
-  margin: 5px;
-  background-color: rgb(20, 16, 231);
-  color: rgb(255, 255, 255);
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4998ffd5;
+  color: white;
+  padding: 16px;
   font-size: 16px;
- 
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
   
 }
-.App-textbox {
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  flex-direction: row;
+  text-align: center;
+  background-color: #7eb6ffd5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
   
-  flex: 1;
-  justify-content: flex-end;
-  align-items: flex-end;
-  display: flex;
-  color: rgb(228, 222, 222);
-}
-.App-textbox-input {
-  width: 400px;
-  height: 32px;
-  border-radius:6px;
-
-}
-.App-textbox-send {
-  vertical-align: bottom;
-  align-items: flex-end;
-  display: flex;
- 
 }
 
-.App-textbox-send-pic{
-  display: flex;
-  justify-content: flex-end;
-  vertical-align: top;
-  width: 32px;
-  height: 32px;
-  background-image: url(/src/AppchatUpdate/SendButton.png) ;
-  background-size: 100%;
-  background-repeat: no-repeat;
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #0059ced5;}
+
+
+.App-content {
+  flex: 12;
+
+  
+  background-image: url(background_01.gif);
+
+
+  /*background-image: url(../src/logo1.png);  สำหรับพื้นหลัง*/
 }
 
 
 
-.AppUndo{
-  position: absolute;
-  width: 28.54px;
-  height: 23.84px;
-  left: 13px;
-  top: 15px;  
-
+@media (min-width: 100px) {
+  .App-textbox-input {
+  flex: 3 ;
+  height: 100%;
+  box-sizing: border-box;
+  }
 }
 
-.App-connent{
-    flex: 12;
-    background-color: lawngreen;
+@media (min-width: 768px) {
+  .App-textbox-input {
+    flex: 6;
+  }
 }
+
+

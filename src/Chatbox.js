@@ -1,70 +1,86 @@
-import React, { useState, useEffect } from 'react';
+import { useState , useEffect} from 'react';
 import './Chatbox.css';
-import Headerchat from './Headerchat';
+import App from './App';
 
-import firebase from './firebaseConfig'; //ดึง config
+import firebase from './firebaseConfig';
+
+import './onClick.js'
+import { logDOM } from '@testing-library/dom';
 
 const chatroomRef = firebase.database().ref('chatroom-1');
 
-
-
-
-
 function Chatbox() {
 
-  const [text, setText] = useState("")
+  const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
-  useEffect (() => {
-      chatroomRef.on('child_added', snapshot => {
-        let x = snapshot.val();
-        setLines ( l => [...l, {
-          sender: x.sender,
-          message: x.message,
-          timestamp: (new Date())
-        }])
-      });
+  useEffect(() => {
+     chatroomRef.on('child_added', snapshot => {
+       let x = snapshot.val();
+       setLines( l => [...l, {
+         sender: x.sender,
+         message: x.message,
+         timestamp: (new Date(x.timestamp))
+       }])
+     })
+    
   }, []);
 
-  const onTextChange = (event) => {
-    setText(event.target.value);
+  const onChangeHandler = (event) => {
+      setText(event.target.value);
   };
 
-  const onSend = () => {
+  const onSendHandler = () => {
     chatroomRef.push({
-      sender: "Me",
+      sender: "Me:",
       message: text,
+      timestamp: firebase.database.ServerValue.TIMESTAMP
     })
+    setText("");
+    
   };
 
+  const keyPress = (event) => {
+    if(event.which === 13){
+      onSendHandler();
+    }
+  }
 
+  
   return (
-    <Headerchat>
-    <div className="App">
-      <div className="App-content">
-      {
-        lines.map(x =>{
-          return <div className="App-chatroom-text">
-            <div>
-              {x.sender+":"}
+    <App>
+
+    <div className="App">    
+    <div className="App-chatroom">
+        {
+
+          lines.map(x => {
+            return <div className="App-chatroom-text">
+                <div>
+                  {(x.sender)}
+                </div>
+                <div>              
+                  {x.message}
+                </div>
+                <div>
+                  {x.timestamp.toLocaleDateString()}
+                </div>
               </div>
-            <div>
-              {x.message}
-              </div>
-            <div>
-              {x.timestamp.toLocaleDateString()}
-              </div>
-          </div>
-        }) 
-      }
+          })
+        }
+        
       </div>
       <div className="App-textbox">
-        <button class="btn"><i>More Function</i></button>
-        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} placeholder="Type a message" />
-        <div className="App-textbox-send" onClick={onSend}>Send </div>
+        <input type="text" className="App-textbox-input" onChange={onChangeHandler} value={text}/>
+        <div className="App-textbox-send" keyPress={onSendHandler} onClick={onSendHandler}>ส่ง!</div>
+
       </div>
+      
     </div>
-    </Headerchat>
+    </App>
+
+    
+
   );
 }
 

@@ -48,12 +48,8 @@ useEffect(() => {
         lines.map(x =>{
           return <div className="App-chatroom-text">
             <div>
-              {x.sender+":"}
-              </div>
-            <div>
-              {x.message}
-              </div>
-            <div>
+              {x.sender+":"},
+              {x.message},
               {x.timestamp.toLocaleDateString()}
               </div>
           </div>

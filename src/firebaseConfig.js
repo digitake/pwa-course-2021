@@ -1,16 +1,14 @@
 import firebase from 'firebase';
 
-// Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyDM5ik0xtNOcqeZ4PfvqpT4c2AhuYzw8oI",
-    authDomain: "tokey-chatapp-for-pwa.firebaseapp.com",
-    projectId: "tokey-chatapp-for-pwa",
-    storageBucket: "tokey-chatapp-for-pwa.appspot.com",
-    messagingSenderId: "133878514832",
-    appId: "1:133878514832:web:58bd13ffa971ac1cf5c415"
+    apiKey: "AIzaSyDvd2iRG7FAIbgMVdAXE1xlZfVIpmbA7Y0",
+    authDomain: "my-chatapp-chichi.firebaseapp.com",
+    projectId: "my-chatapp-chichi",
+    storageBucket: "my-chatapp-chichi.appspot.com",
+    messagingSenderId: "368608083167",
+    appId: "1:368608083167:web:5f712c594bef5e9a977d6a"
   };
-  
-  // Initialize Firebase
+
   firebase.initializeApp(firebaseConfig);
 
   export default firebase;

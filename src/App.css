@@ -114,7 +114,7 @@
 .App-content {
   flex: 12;
   width: 100%;
-
+  overflow: auto;
   
   background-image: url(background_01.gif);
 

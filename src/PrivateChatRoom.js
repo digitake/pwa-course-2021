@@ -26,7 +26,7 @@ function PrivateChatRoom() {
 
 const onSend = () => {
   chatroomRef.push({
-    sender: "King",
+    sender: "9",
     message: text,
     timestamp: firebase.database.ServerValue.TIMESTAMP
   });

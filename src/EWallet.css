@@ -1,5 +1,5 @@
-.Chatbox {
-    background-color: rgb(207, 238, 250);
+.EWallet {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,13 +7,20 @@
     height: 100%;
     margin: auto;
   }
+  @media (min-width: 768px) {
+      .EWallet-bg{
+        background-position: auto;
+        height: auto;
+      }
+  }
+ 
   
-  .Chatbox-logo {
+  .EWallet-logo {
     height: 40vmin;
     pointer-events: none;
   }
   
-  .Chatbox-header {
+  .EWallet-header {
     background-color: rgb(255, 255, 255);
     background-position: center;
     background-repeat: no-repeat;
@@ -25,8 +32,9 @@
     display: flex;
   }
   
-  .Chatbox-header1 {
-    background-image: url(design/Design\ Chi\ CHi\ App-08.png);
+  .EWallet-header1 {
+    background-image: url();
+    
     background-position: left;
     background-repeat: no-repeat;
     flex: 1;
@@ -35,10 +43,11 @@
     justify-content: center;
     align-items: center;
     display: flex;
+  
   }
   
-  .Chatbox-header2 {
-    background-image: url(design/Design\ Chi\ CHi\ App-09.png);
+  .EWallet-header2 {
+    background-image: url(design/ewallet.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -47,9 +56,11 @@
     justify-content: center;
     align-items: center;
     display: flex;
+  
   }
-  .Chatbox-header3 {
-    background-image: url(design/Design\ Chi\ CHi\ App-10.png);
+  
+  .EWallet-header3 {
+    background-image: url();
     background-position: right;
     background-repeat: no-repeat;
     flex: 1;
@@ -59,20 +70,22 @@
     align-items: center;
     display: flex;
   }
-  .Chatbox-chatroom {
-    color: rgb(182, 234, 255);
+  
+  
+  .EWallet-bg {
+    background-image: url(design/iconasd.jpg);
+    color: rgb(255, 255, 255);
     flex: 12;
+    background-repeat: no-repeat; 
   }
-  .Chatbox-chatroom-text {
-    margin: 8px;
-    background-color: rgb(108, 165,  250);
-    background-size: 30%;
-    color : rgb(23, 24, 24);
-    font-size: 30px;
-    display: flex;
-    flex-direction: row;
+
+  .EWallet-chatroom-text {
+    background-image: url(design/balance.jpg);
   }
-  .Chatbox-textbox {
+  
+  
+  
+  .EWallet-textbox {
     flex: 1;
     background-color: rgb(255, 255, 255);
     background-position: right;
@@ -81,14 +94,16 @@
     display: flex;
     color: rgb(228, 222, 222);
   }
-  .Chatbox-textbox-input {
+  
+  .EWallet-textbox-input {
     flex: 4;
     height: 100%;
     box-sizing: border-box;
-    color: rgb(6, 87, 119);
+    color: rgb(250, 254, 255);
   }
-  .Chatbox-textbox-send {
-    background-image: url(design/Design\ Chi\ CHi\ App-03.png);
+  
+  .EWallet-textbox-send {
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -98,8 +113,10 @@
     align-items: center;
     display: flex;
   }
-  .Chatbox-textbox-send1 {
-    background-image: url(design/Design\ Chi\ CHi\ App-04.png);
+  
+  
+  .EWallet-textbox-send1 {
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -109,8 +126,9 @@
     align-items: center;
     display: flex;
   }
-  .Chatbox-textbox-send2 {
-    background-image: url(design/Design\ Chi\ CHi\ App-05.png);
+  
+  .EWallet-textbox-send2 {
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -120,6 +138,7 @@
     align-items: center;
     display: flex;
   }
+  
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -133,3 +152,9 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
   
+  @media (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }

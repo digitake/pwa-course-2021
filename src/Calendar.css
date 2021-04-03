@@ -1,4 +1,4 @@
-.Chatbox {
+.Calendar {
     background-color: rgb(207, 238, 250);
     display: flex;
     flex-direction: column;
@@ -8,12 +8,28 @@
     margin: auto;
   }
   
-  .Chatbox-logo {
+  @media (min-width: 768px) {
+  
+    .Calendar {
+      background-color: rgb(207, 238, 250);
+    }
+    .Calendar-header1{
+      background-color: rgb(255, 255, 255);
+      background-position: left;
+    }
+  
+    .Calendar-header3{
+      background-color: rgb(255, 255, 255);
+      background-position: right;
+    }
+  }
+  
+  .Calendar-logo {
     height: 40vmin;
     pointer-events: none;
   }
   
-  .Chatbox-header {
+  .Calendar-header {
     background-color: rgb(255, 255, 255);
     background-position: center;
     background-repeat: no-repeat;
@@ -25,8 +41,8 @@
     display: flex;
   }
   
-  .Chatbox-header1 {
-    background-image: url(design/Design\ Chi\ CHi\ App-08.png);
+  .Calendar-header1 {
+    background-image: url(design/Calendar_UI-01.png);
     background-position: left;
     background-repeat: no-repeat;
     flex: 1;
@@ -37,8 +53,8 @@
     display: flex;
   }
   
-  .Chatbox-header2 {
-    background-image: url(design/Design\ Chi\ CHi\ App-09.png);
+  .Calendar-header2 {
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -48,8 +64,9 @@
     align-items: center;
     display: flex;
   }
-  .Chatbox-header3 {
-    background-image: url(design/Design\ Chi\ CHi\ App-10.png);
+  
+  .Calendar-header3 {
+    background-image: url(design/Calendar_UI-02.png);
     background-position: right;
     background-repeat: no-repeat;
     flex: 1;
@@ -59,20 +76,38 @@
     align-items: center;
     display: flex;
   }
-  .Chatbox-chatroom {
-    color: rgb(182, 234, 255);
-    flex: 12;
+  
+  .Calendar-chatroom {
+    background-image: url(design/Calendar_UI-03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:90%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
   }
-  .Chatbox-chatroom-text {
+
+  .Calendar-chatroom1 {
+    background-image: url(design/Calendar_UI-04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:90%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+  }
+
+  .Calendar-chatroom-text {
     margin: 8px;
-    background-color: rgb(108, 165,  250);
+    background-color: rgb(108, 165, 250);
     background-size: 30%;
     color : rgb(23, 24, 24);
     font-size: 30px;
-    display: flex;
-    flex-direction: row;
   }
-  .Chatbox-textbox {
+  
+  .Calendar-textbox {
     flex: 1;
     background-color: rgb(255, 255, 255);
     background-position: right;
@@ -81,14 +116,16 @@
     display: flex;
     color: rgb(228, 222, 222);
   }
-  .Chatbox-textbox-input {
+  
+  .Calendar-textbox-input {
     flex: 4;
     height: 100%;
     box-sizing: border-box;
     color: rgb(6, 87, 119);
   }
-  .Chatbox-textbox-send {
-    background-image: url(design/Design\ Chi\ CHi\ App-03.png);
+  
+  .Calendar-textbox-send {
+    background-image: url(design/Calendar_UI-05.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -98,8 +135,9 @@
     align-items: center;
     display: flex;
   }
-  .Chatbox-textbox-send1 {
-    background-image: url(design/Design\ Chi\ CHi\ App-04.png);
+  
+  .Calendar-textbox-send1 {
+    background-image: url(design/Calendar_UI-06.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -109,8 +147,9 @@
     align-items: center;
     display: flex;
   }
-  .Chatbox-textbox-send2 {
-    background-image: url(design/Design\ Chi\ CHi\ App-05.png);
+  
+  .Calendar-textbox-send2 {
+    background-image: url(design/Calendar_UI-07.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -120,6 +159,31 @@
     align-items: center;
     display: flex;
   }
+
+  .Calendar-textbox-send3 {
+    background-image: url(design/Calendar_UI-08.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Calendar-textbox-send4 {
+    background-image: url(design/Calendar_UI-09.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -133,3 +197,9 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
   
+  @media (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }

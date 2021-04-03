@@ -1,4 +1,4 @@
-.Chatbox {
+.Profile {
     background-color: rgb(207, 238, 250);
     display: flex;
     flex-direction: column;
@@ -8,12 +8,29 @@
     margin: auto;
   }
   
-  .Chatbox-logo {
+  @media (min-width: 768px) {
+  
+    .Profile {
+      background-color: rgb(207, 238, 250);
+    }
+    .Profile-header1{
+      background-color: rgb(255, 255, 255);
+      background-position: left;
+    }
+  
+    .Profile-header3{
+      background-color: rgb(255, 255, 255);
+      background-position: right;
+    }
+  
+  }
+  
+  .Profile-logo {
     height: 40vmin;
     pointer-events: none;
   }
   
-  .Chatbox-header {
+  .Profile-header {
     background-color: rgb(255, 255, 255);
     background-position: center;
     background-repeat: no-repeat;
@@ -25,8 +42,9 @@
     display: flex;
   }
   
-  .Chatbox-header1 {
-    background-image: url(design/Design\ Chi\ CHi\ App-08.png);
+  .Profile-header1 {
+    background-image: url("design/profile-back.png");
+    
     background-position: left;
     background-repeat: no-repeat;
     flex: 1;
@@ -35,10 +53,11 @@
     justify-content: center;
     align-items: center;
     display: flex;
+  
   }
   
-  .Chatbox-header2 {
-    background-image: url(design/Design\ Chi\ CHi\ App-09.png);
+  .Profile-header2 {
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -47,9 +66,11 @@
     justify-content: center;
     align-items: center;
     display: flex;
+  
   }
-  .Chatbox-header3 {
-    background-image: url(design/Design\ Chi\ CHi\ App-10.png);
+  
+  .Profile-header3 {
+    background-image: url("design/profile-next-05.png");
     background-position: right;
     background-repeat: no-repeat;
     flex: 1;
@@ -59,20 +80,41 @@
     align-items: center;
     display: flex;
   }
-  .Chatbox-chatroom {
-    color: rgb(182, 234, 255);
-    flex: 12;
+  
+  .Profile-chatroom {
+    background-image: url("design/login-profile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:90%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
   }
-  .Chatbox-chatroom-text {
+
+  .Profile-chatroom1 {
+    background-image: url("design/profile-welcome.png");
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:90%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+  }
+
+
+  
+  .Profile-chatroom-text {
     margin: 8px;
-    background-color: rgb(108, 165,  250);
+    background-color: rgb(108, 165, 250);
     background-size: 30%;
     color : rgb(23, 24, 24);
     font-size: 30px;
-    display: flex;
-    flex-direction: row;
   }
-  .Chatbox-textbox {
+  
+  .Profile-textbox {
     flex: 1;
     background-color: rgb(255, 255, 255);
     background-position: right;
@@ -81,14 +123,16 @@
     display: flex;
     color: rgb(228, 222, 222);
   }
-  .Chatbox-textbox-input {
+  
+  .Profile-textbox-input {
     flex: 4;
     height: 100%;
     box-sizing: border-box;
     color: rgb(6, 87, 119);
   }
-  .Chatbox-textbox-send {
-    background-image: url(design/Design\ Chi\ CHi\ App-03.png);
+  
+  .Profile-textbox-send {
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -98,8 +142,10 @@
     align-items: center;
     display: flex;
   }
-  .Chatbox-textbox-send1 {
-    background-image: url(design/Design\ Chi\ CHi\ App-04.png);
+  
+  
+  .Profile-textbox-send1 {
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -109,8 +155,22 @@
     align-items: center;
     display: flex;
   }
-  .Chatbox-textbox-send2 {
-    background-image: url(design/Design\ Chi\ CHi\ App-05.png);
+  
+  .Profile-textbox-send2 {
+    background-image: url("design/logo192.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Profile-textbox-send3 {
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -120,6 +180,19 @@
     align-items: center;
     display: flex;
   }
+
+  .Profile-textbox-send4 {
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -133,3 +206,9 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
   
+  @media (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }

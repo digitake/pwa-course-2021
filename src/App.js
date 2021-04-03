@@ -1,34 +1,23 @@
+
 import './App.css';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom'
+import { Children } from 'react';
 
 function App({children}) {
-
+ 
   return (
-    <div className="App col-6">
-      <div className="App-header">
-        <Link to="/friend-list">
-          <button>
-            Friend List
-          </button>
-        </Link>
-
-        <Link to="/profile">
-          <button>
-            Profile
-          </button>
-        </Link>
-
-        <Link to="/">
-          <button>
-            Chatbox
-          </button>
-        </Link>
+    <div className="App">
+      
+      <div className = "App-header">
+        <div className = "App-header1"></div>
+        <div className = "App-header2"></div>
+        <div className = "App-header3"></div>
       </div>
-      <div className="App-content">
-        {children}
+      <div className = "App-content">
+      {children}
       </div>
+      
     </div>
   );
 }
-
 export default App;

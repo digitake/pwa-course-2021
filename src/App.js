@@ -18,14 +18,16 @@ function App({children}) {
       <div className="App-header">
         <div class="dropdown">
           <script src onClick></script>
-          <button onclick="myFunction()" class="dropbtn"><img src={dropdownButton}></img></button>
-          <div id="myDropdown" class="dropdown-content">
+            <button onclick="myFunction()" class="dropbtn"><img src={dropdownButton}></img></button>
+              <div id="myDropdown" class="dropdown-content">
             
-         <a href="#"><Link to="/friend-list"> <img src={friendButton}></img> </Link></a>
-         <a href="#"><Link to="/shop"> <img src={shopButton}></img> </Link></a>
-         <a href="#"><Link to="/chatroom"><img src={chatroomButton}></img></Link></a>
-         
-          </div>
+                <a href="#"><Link to="/friend-list"> <img src={friendButton}></img> </Link></a>
+                <a href="#"><Link to="/shop"> <img src={shopButton}></img> </Link></a>
+                <a href="#"><Link to="/chatroom"><img src={chatroomButton}></img></Link></a>
+                <a href="#"><Link to="/profile">Profile</Link></a>
+                <a href="#"><Link to="/">Main</Link></a>
+                <a href="#"><Link to="/flexshow">Flexshow</Link></a>
+              </div>
         </div>
         <div className="App-content">
           {children}

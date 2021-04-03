@@ -37,7 +37,14 @@ function Chatbox() {
       timestamp: firebase.database.ServerValue.TIMESTAMP
     })
     setText("");
+    
   };
+
+  const keyPress = (event) => {
+    if(event.which === 13){
+      onSendHandler();
+    }
+  }
 
   
   return (
@@ -65,7 +72,7 @@ function Chatbox() {
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" onChange={onChangeHandler} value={text}/>
-        <div className="App-textbox-send" onClick={onSendHandler}>ส่ง!</div>
+        <div className="App-textbox-send" keyPress={onSendHandler} onClick={onSendHandler}>ส่ง!</div>
 
       </div>
       

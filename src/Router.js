@@ -1,9 +1,11 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import FriendList from './FriendList';
-import Shop from "./Shop";
-import Chatroom from "./Chatroom"
+import Shop from './Shop';
+import Chatroom from "./Chatroom";
 import Chatbox from './Chatbox';
 import FriendProfile from "./FriendProfile";
+import Profile from "./Profile";
+import FlexShow from "./FlexShow";
 function Router() {
 
     return (
@@ -24,8 +26,13 @@ function Router() {
                 <Route path="/">
                     <Chatbox />
                 </Route>
-                
+                <Route path ="/profile">
+                    <Profile />
+                </Route>
 
+                <Route path ="/FlexShow">
+                    <FlexShow />
+                </Route>
             </Switch> 
         </BrowserRouter>
     )

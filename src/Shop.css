@@ -27,8 +27,8 @@
       background-image: url(background_01.gif);
     }
   }
-  
-  
+
+
   @media (min-width: 768px) {
     .shop {
       background-image: url(background_01.gif);
@@ -51,9 +51,9 @@
     text-align: left;
     background: #0000005d;
     color: white;
-    font-size: 1px;
+    font-size: 10px;
   }
-  
+
   .shop-center {
     text-align: center;
     width: 80%;
@@ -65,7 +65,7 @@
   .shop-items {
     display: grid;
   }
-  
+
   .shop-items > div {
 
     border-radius: 25px;

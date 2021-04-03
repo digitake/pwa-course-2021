@@ -37,10 +37,10 @@
   background-color: #4998ffd5;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: left;
   align-items: left;
-  justify-content: center;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: rgb(230, 230, 230);
 }
@@ -54,7 +54,7 @@
 .dropbtn {
   background-color: #4998ffd5;
   color: white;
-  padding: 20px;
+  padding: 16px;
   font-size: 16px;
   border: none;
 }
@@ -63,16 +63,20 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
+  flex-direction: row;
+  text-align: center;
   background-color: #7eb6ffd5;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  
 }
 
 /* Links inside the dropdown */
@@ -90,7 +94,7 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #0059ced5;}
 
 
 .App-content {
@@ -103,26 +107,7 @@
   /*background-image: url(../src/logo1.png);  สำหรับพื้นหลัง*/
 }
 
-.App-chatroom-text {
-  margin: 8px;
-  
 
-
-  background-color: hsl(212, 100%, 76%);
-  color:rgb(255, 255, 255);
-  font: size 22px;
-
-}
-
-.App-textbox {
-  flex: 1;
-
-  background-color: rgb(201, 201, 201);
-
-  justify-content: center;
-  align-items: stretch;
-  display: flex;
-}
 
 @media (min-width: 100px) {
   .App-textbox-input {
@@ -138,12 +123,4 @@
   }
 }
 
-.App-textbox-send {
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 

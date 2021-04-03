@@ -20,6 +20,10 @@
 
 }
 
+.App-logo.Button {
+  margin-left: 16px;
+  margin-right: 16px;
+}
 
 @media (min-width: 768px){
  

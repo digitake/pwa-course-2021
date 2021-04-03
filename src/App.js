@@ -26,10 +26,6 @@ function App({children}) {
           <button>
             Go to FriendList
            
-           
-
-       
-
           </button>
         </Link>
       </div>

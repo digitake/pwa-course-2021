@@ -52,7 +52,7 @@
 
 .App-content{
   flex: 12;
-
+  overflow: auto; /* ถ้า content ยาวเกินจะแสดง scrollbar อัตโนมัติ */
 }
 
 .Back-Button{

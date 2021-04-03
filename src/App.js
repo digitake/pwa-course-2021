@@ -17,7 +17,7 @@ function App({children}) {
         
         <Link to="/">
           <button>
-            Go to chen
+            Profile
             </button>
             </Link>
 

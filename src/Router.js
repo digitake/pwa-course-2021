@@ -1,9 +1,9 @@
 
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import FriendList from './FriendList';
 import Chatbox from './Chatbox';
 import Profile from './Profile';
 import AddFriend from './AddFriend';
+import FriendList from './FriendList';
 
 function Router() {
     
@@ -17,7 +17,7 @@ function Router() {
                     <AddFriend />
                 </Route>
                 <Route path="/">
-                    <Chatbox />
+                    <FriendList />
                 </Route>
                 <Route path="/chatbox">
                     <Chatbox />

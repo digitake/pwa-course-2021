@@ -1,5 +1,5 @@
 
-@media(max-width:859px) {
+@media(max-width : 540px){
     
     .Register{
 
@@ -9,13 +9,15 @@
         align-items: center;
         width: 100%;
         height: 100%;
+        max-width : 540px;
         background-repeat: no-repeat;
-        background-image: url(/src/AppchatUpdate/RegisterStep1.png);
+        background-image: url(/src/AppchatUpdate/BoxTextRegister.png);
+        background-color: #2D2C67;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     
     .RegisterNextStep{
-        margin-bottom: 230px;
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,7 +48,7 @@
 }
 
 
-@media (min-width: 860px) {
+@media (min-width : 541px) {
 
     .Register{
         display: flex;
@@ -56,6 +58,7 @@
         justify-content: center;
         width: 100%;
         height: 100%;
+
         background-color: #2D2C67;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }

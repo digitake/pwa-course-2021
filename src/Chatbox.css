@@ -23,41 +23,45 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    overflow: auto;
   }
   
   .Chatbox-header1 {
     background-image: url(design/Design\ Chi\ CHi\ App-08.png);
     background-position: left;
     background-repeat: no-repeat;
-    flex: 1;
+    flex: 2;
     height: 100%;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
     display: flex;
+    overflow: auto;
   }
   
   .Chatbox-header2 {
     background-image: url(design/Design\ Chi\ CHi\ App-09.png);
     background-position: center;
     background-repeat: no-repeat;
-    flex: 1;
+    flex: 2;
     height: 100%;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
     display: flex;
+    overflow: auto;
   }
   .Chatbox-header3 {
     background-image: url(design/Design\ Chi\ CHi\ App-10.png);
     background-position: right;
     background-repeat: no-repeat;
-    flex: 1;
+    flex: 2;
     height: 100%;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
     display: flex;
+    overflow: auto;
   }
   .Chatbox-chatroom {
     color: rgb(182, 234, 255);
@@ -66,9 +70,9 @@
   .Chatbox-chatroom-text {
     margin: 8px;
     background-color: rgb(108, 165,  250);
-    background-size: 30%;
+    background-size: 10%;
     color : rgb(23, 24, 24);
-    font-size: 30px;
+    font-size: 16px;
     display: flex;
     flex-direction: row;
   }

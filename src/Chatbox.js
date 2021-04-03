@@ -10,6 +10,11 @@ const chatroomRef = firebase.database().ref('chatroom-1');
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
+
+useEffect(() => {
+alert("Toral text chat = "+lines.length);
+
+}, [lines]);
   
   useEffect(() => {
     chatroomRef.on('child_added', snapshot => {

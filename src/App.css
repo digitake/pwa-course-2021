@@ -40,6 +40,7 @@
 
 .App-content {
   flex: 12;
+  overflow: auto; /*จะแสดง scrooling bar auto */
 }
 
 .App-chatroom-text {

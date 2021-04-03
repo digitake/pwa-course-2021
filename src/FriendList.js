@@ -20,7 +20,7 @@ function FriendList(){
         <form>
         <p>Experience</p>
             <select id="country" name="country">
-            <option value="rn">ชกมวย : ชนะ 150 แพ้ 0</option>
+            <option value="rn">ชกมวย : ชนะ 151 แพ้ 0</option>
             <option value="ca">แข่งระดับโลกทุกรายการ</option>
             <option value="usa">เป็นตัวแทนระดับชาติไปสู้กับพระเจ้า</option>
             </select>

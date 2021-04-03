@@ -22,9 +22,6 @@ useEffect(()=>{
     }])
     
   })
-
-  
-  
 },[]);    
 
 const onTextChange = (event)=>{
@@ -61,9 +58,6 @@ const onSend =() => {
                       <div>
                         {x.message}
                       </div>
-                      
-                      
-                     
                   </div>
           })
         }

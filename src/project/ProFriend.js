@@ -6,7 +6,7 @@ import HeaderLayout from './LayoutHomework/HeaderLayout';
 
 function ProFriend() {
   return (
-  <div className="App">
+  <div className="Apprut">
     <HeaderLayout>
             <div className="Textlayout">
                 Hoshimati Suisei

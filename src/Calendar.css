@@ -1,0 +1,205 @@
+.Calendar {
+    background-color: rgb(207, 238, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+  }
+  
+  @media (min-width: 768px) {
+  
+    .Calendar {
+      background-color: rgb(207, 238, 250);
+    }
+    .Calendar-header1{
+      background-color: rgb(255, 255, 255);
+      background-position: left;
+    }
+  
+    .Calendar-header3{
+      background-color: rgb(255, 255, 255);
+      background-position: right;
+    }
+  }
+  
+  .Calendar-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .Calendar-header {
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Calendar-header1 {
+    background-image: url(design/Calendar_UI-01.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Calendar-header2 {
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Calendar-header3 {
+    background-image: url(design/Calendar_UI-02.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Calendar-chatroom {
+    background-image: url(design/Calendar_UI-03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:90%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+  }
+
+  .Calendar-chatroom1 {
+    background-image: url(design/Calendar_UI-04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:90%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+  }
+
+  .Calendar-chatroom-text {
+    margin: 8px;
+    background-color: rgb(108, 165, 250);
+    background-size: 30%;
+    color : rgb(23, 24, 24);
+    font-size: 30px;
+  }
+  
+  .Calendar-textbox {
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    background-position: right;
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+    color: rgb(228, 222, 222);
+  }
+  
+  .Calendar-textbox-input {
+    flex: 4;
+    height: 100%;
+    box-sizing: border-box;
+    color: rgb(6, 87, 119);
+  }
+  
+  .Calendar-textbox-send {
+    background-image: url(design/Calendar_UI-05.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Calendar-textbox-send1 {
+    background-image: url(design/Calendar_UI-06.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Calendar-textbox-send2 {
+    background-image: url(design/Calendar_UI-07.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Calendar-textbox-send3 {
+    background-image: url(design/Calendar_UI-08.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .Calendar-textbox-send4 {
+    background-image: url(design/Calendar_UI-09.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  @media (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }

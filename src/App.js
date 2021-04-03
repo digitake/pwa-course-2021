@@ -1,34 +1,60 @@
 import './App.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function App({children}) {
 
   return (
     <div className="App col-6">
       <div className="App-header">
-        <Link to="/friend-list">
-          <button>
-            Friend List
-          </button>
-        </Link>
+        <div className="App-logo">
 
-        <Link to="/profile">
-          <button>
-            Profile
-          </button>
-        </Link>
+        </div>
 
-        <Link to="/">
-          <button>
-            Chatbox
-          </button>
-        </Link>
+        <div className="App-logo Button">
+
+             <Link to = "/profile">
+               <image>
+               <img src ="buttonProfile.png"/>
+               </image>
+             </Link>
+
+             <Link to = "/friend-list">
+               <image>
+               <img src ="buttonFriend.png"/>
+               </image>
+             </Link>
+
+             <Link to = "/App">
+               <image>
+               <img src ="buttonMenu.png"/>
+               </image>
+             </Link>
+
+             <Link to = "/HotStickersList">
+               <image>
+               <img src ="buttonShop.png"/>
+               </image>
+             </Link>
+
+             <Link to = "/game-page">
+               <image>
+               <img src ="buttonGame.png"/>
+               </image>
+             </Link>
+
+            <Link to ="/menu">
+              <image>
+              <img src ="down32.png" align ="right"/>
+              </image>
+            </Link>  
+        </div>
       </div>
+
       <div className="App-content">
         {children}
       </div>
-    </div>
-  );
-}
+      </div>
+    );
+};
 
 export default App;

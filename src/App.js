@@ -28,12 +28,6 @@ function App({children}) {
         <div className="App-content">
           {children}
         </div>
-
-            
-          </div>  
-          <div className="App-content">
-            {children}
-
     </div>
   );
 }

@@ -37,7 +37,7 @@
   background-color: #4998ffd5;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: left;
   align-items: left;
   justify-content: left;
@@ -99,6 +99,7 @@
 
 .App-content {
   flex: 12;
+  width: 100%;
 
   
   background-image: url(background_01.gif);

@@ -7,11 +7,23 @@
     height: 100%;
     margin: auto;
   }
+
+  @media (min-width: 700px) {
+    .App{
+      max-width:90%;
+    }
+      }
+  @media (min-width: 950px) {
+    .App{
+      max-width:100%;
+    }
+      }
   
   .Chatbox-logo {
     height: 40vmin;
     pointer-events: none;
   }
+  
   
   .Chatbox-header {
     background-color: rgb(255, 255, 255);
@@ -69,6 +81,7 @@
   }
   .Chatbox-chatroom-text {
     margin: 8px;
+    flex: 1;
     background-color: rgb(108, 165,  250);
     background-size: 10%;
     color : rgb(23, 24, 24);
@@ -81,12 +94,11 @@
     background-color: rgb(255, 255, 255);
     background-position: right;
     justify-content: center;
-    align-items: stretch;
     display: flex;
     color: rgb(228, 222, 222);
   }
   .Chatbox-textbox-input {
-    flex: 4;
+    flex: 1;
     height: 100%;
     box-sizing: border-box;
     color: rgb(6, 87, 119);
@@ -95,7 +107,7 @@
     background-image: url(design/Design\ Chi\ CHi\ App-03.png);
     background-position: center;
     background-repeat: no-repeat;
-    flex: 1;
+    flex:1;
     height: 100%;
     vertical-align: middle;
     justify-content: center;
@@ -136,4 +148,6 @@
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  
+
   

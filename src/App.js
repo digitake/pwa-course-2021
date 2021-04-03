@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        REACT CHAT
+        BRIGHT CHAT
       </div>
       <div className="App-chatroom">
         {

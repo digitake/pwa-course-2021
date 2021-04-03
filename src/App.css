@@ -50,6 +50,11 @@
   color: rgb(255, 255, 255);
 }
 
+.App-header-button {
+  margin-left:16px;
+  margin-right: 16px;;
+}
+
 .App-Content {
   flex: 12;
   flex-direction: column;

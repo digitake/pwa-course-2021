@@ -1,14 +1,121 @@
-.feed-content{
-    display: flex;
-    flex: auto;
+.container{
+    display: flex;    
     flex-direction: column;
     align-items: center;
-    color: black;
-    background-color: white;
+    height: 100%;
+    background-color: whitesmoke;
 }
 
-.feed-box{
-    flex: 1;
+.box{
+    box-shadow: #eee 5px 5px;
+display: flex;
+  margin: 5px;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+img.avatar{
+  margin: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.infoBox{
+    text-align: center;
+}
+
+a.displayName{
+ font-size: 25px;
+}
+
+a.id{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+a.date{
+ font-size: 15px;
+}
+
+a.dot{
+ margin-left: 8px;
+ margin-right: 8px;
+ font-size: 20px;
+}
+
+.post{
+    word-break:break-all;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.comment{
     width: 100%;
-    border: none;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.option{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.option .optionText{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.option .myPopup{
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    box-shadow: #eee 3px 3px 3px;
+    border-radius: 3px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.option .show{
+    visibility: visible;
+    animation: fadeIn 0.35s;
+}
+
+.option .optionBox{
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    height: 24px;
+    border-radius: 2px;
+    margin: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.option .edit{
+    font-weight: bold;
+}
+
+.option .delete{
+    color: red;
+    font-weight: bold;
+}
+@keyframes fadeIn{
+    from{ opacity: 0;}
+    to{opacity: 1;}
 }

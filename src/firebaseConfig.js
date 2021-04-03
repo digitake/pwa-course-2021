@@ -4,7 +4,7 @@ import firebase from 'firebase';
 var firebaseConfig = {
     apiKey: "AIzaSyBhOcb1rqgyr6_D2jsIC6_OZJQhEWVoZZY",
     authDomain: "neptune-chat-26477.firebaseapp.com",
-    databaseURL: "https://neptune-chat-26477-default-rtdb.firebaseio.com/",
+    databaseURL: "https://neptune-chat-26477-default-rtdb.firebaseio.com",
     projectId: "neptune-chat-26477",
     storageBucket: "neptune-chat-26477.appspot.com",
     messagingSenderId: "416256951683",

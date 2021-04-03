@@ -1,84 +1,71 @@
-import { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import './Chatbox.css';
-import { Link} from 'react-router-dom'
-import App from './App';
-import firebase from './firebaseConfig';
-import { useEffect } from 'react';
+import Headerchat from './Headerchat';
+
+import firebase from './firebaseConfig'; //ดึง config
 
 const chatroomRef = firebase.database().ref('chatroom-1');
 
+
+
+
+
 function Chatbox() {
-  const [text, setText] = useState("");
+
+  const [text, setText] = useState("")
   const [lines, setLines] = useState([]);
-  
-  useEffect(() => {
-    chatroomRef.on('child_added', snapshot => {
-      let x = snapshot.val();
-      setLines(l => [...l, {
-        sender: x.sender,
-        message: x.message,
-        timestamp: (new Date())
-      }])
-    });
+
+  useEffect (() => {
+      chatroomRef.on('child_added', snapshot => {
+        let x = snapshot.val();
+        setLines ( l => [...l, {
+          sender: x.sender,
+          message: x.message,
+          timestamp: (new Date())
+        }])
+      });
   }, []);
 
   const onTextChange = (event) => {
     setText(event.target.value);
   };
-  const onSend = () =>{
-    //Push message to firebase
+
+  const onSend = () => {
     chatroomRef.push({
       sender: "Me",
       message: text,
     })
+  };
 
-    setText("");
-  };
-  const keyPress = (event) => {
-    if (event.which === 13){
-      onSend();
-    }
-  };
-  
+
   return (
-    <App>
-    <div className="Chatbox">
-      
-      <div className = "Chatbox-header">
-        <div className = "Chatbox-header1">
-          <Link className={"Chatbox-header1"} to="/home"/>
-        </div>
-        <div className = "Chatbox-header2"></div>
-        <div className = "Chatbox-header3"></div>
+    <Headerchat>
+    <div className="App">
+      <div className="App-content">
+      {
+        lines.map(x =>{
+          return <div className="App-chatroom-text">
+            <div>
+              {x.sender+":"}
+              </div>
+            <div>
+              {x.message}
+              </div>
+            <div>
+              {x.timestamp.toLocaleDateString()}
+              </div>
+          </div>
+        }) 
+      }
       </div>
-     
-      
-      <div className="Chatbox-chatroom">
-        {
-          lines.map(x => {
-            return <div className="Chatbox-chatroom-text">
-              <div>
-                {x.sender + ":"}
-              </div>
-              <div>
-                {x.message}
-              </div>
-              <div>
-                {x.timestamp.toLocaleDateString()}
-              </div>
-            </div>
-          })
-        }
-      </div>
-      <div className="Chatbox-textbox">
-        <input type="text" className="Chatbox-textbox-input" 
-        value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        <div className="Chatbox-textbox-send" onClick={onSend}></div>
-        <div className="Chatbox-textbox-send1" onClick={onSend}></div>
-        <div className="Chatbox-textbox-send2" onClick={onSend}></div>
+      <div className="App-textbox">
+        <button class="btn"><i>More Function</i></button>
+        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} placeholder="Type a message" />
+        <div className="App-textbox-send" onClick={onSend}>Send </div>
       </div>
     </div>
-    </App>
+    </Headerchat>
   );
 }
+
 export default Chatbox;

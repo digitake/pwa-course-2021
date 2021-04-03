@@ -1,4 +1,4 @@
-# PWA Course 2021
+# Getting Started with Create React App
 
 โปรเจ็คประกอบการเรียน Progressive Web Applications
 

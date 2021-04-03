@@ -1,22 +1,63 @@
-
+import React, { useState } from 'react';
 import './App.css';
-import { Link} from 'react-router-dom'
-import { Children } from 'react';
+import {Link} from 'react-router-dom'
 
-function App({children}) {
- 
+function App() {
+
+  const [text, setText] = useState("");
+  const [lines, setLines] = useState(["Please Enter Your Massage",""]);
+
+  const onChangeHandler = (event) => {
+      setText(event.target.value);
+  };
+
+  const onSendHandler = (event) => {
+    setLines(lines => [...lines, text]);
+    setText("");
+  };
   return (
+    
     <div className="App">
-      
-      <div className = "App-header">
-        <div className = "App-header1"></div>
-        <div className = "App-header2"></div>
-        <div className = "App-header3"></div>
-      </div>
-      <div className = "App-content">
-      {children}
+      <div className="App-header">
+         Box Chat
       </div>
       
+      <div className = "AppUndo">
+      <Link to = "/HomePage">
+        <img src = "Union(1).png" alt = "" /> 
+      </Link>
+      </div>
+     
+      <div className="App-chatroom">
+        <div className="App-chatroom-text">
+        </div>
+
+        <div className="App-chatroom-text">
+        </div>
+
+        {
+          lines.map((value, index) => {
+            return <div key={index} className="App-chatroom-text">
+                {value}
+              </div>
+          })
+        }
+        
+      </div>
+
+      <div className="App-textbox">
+        <input type = "text" className = "App-textbox-input" onChange={onChangeHandler} value={text}/>
+
+        <div className = "App-textbox-send" 
+          onClick={onSendHandler}> 
+        <div className = "App-textbox-send-pic"/>
+          
+
+        </div>
+  
+      </div>
+
+
     </div>
   );
 }

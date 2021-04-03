@@ -1,40 +1,65 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Calendar from './Calendar';
-import Profile from './Profile';
-import Home from './Home';
-import EWallet from './EWallet';
-import Chatbox from './Chatbox';
-import Music from './Music';
-import App from './App';
+import { BrowserRouter, Switch, Route}   from 'react-router-dom'
+import App from './App'
+import Register from './Rigister'
+import RegisterNextStep from './RegisterNextStep'
+import LoginApp from './LoginApp'
+import LoginPage from './LoginPage'
+import HomePage from './HomePage'
+import SettingPage from './SettingPage'
+import Chatroom from './Chatroom'
+import PrivatePage from './PrivatePage'
+import GroupChatRoom from './GroupChatRoom'
+import Profiles from './Profiles'
+import PrivateChatRoom from './PrivateChatRoom'
+import Chatbox from './Chatbox'
 
-/** FriendList*/
 
-function Router(){
-
+function Router() {    
     return(
-        <BrowserRouter>
-            <Switch>
-                <Route path="/profile">
-                    <Profile />
-                </Route>
-                <Route path="/e-wallet">
-                    <EWallet />
-                </Route>  
-                <Route path="/calendar">
-                    <Calendar />
-                </Route>
-                <Route path="/home">
-                    <Home/>
-                </Route>
-                <Route path="/music">
-                    <Music/>
-                </Route>
-            
-                <Route path="/">
-                    <Chatbox/>
-                </Route>
-            </Switch>
-        </BrowserRouter>
+      <BrowserRouter>
+        <Switch>
+        <Route path = "/GroupChatRoom">
+             <GroupChatRoom/>
+           </Route>
+        <Route path = "/PrivatePage">
+             <PrivatePage/>
+           </Route>
+        <Route path = "/Chatroom">
+             <Chatroom />
+           </Route>
+          <Route path = "/SettingPage">
+             <SettingPage />
+           </Route>
+          <Route path = "/HomePage">
+             <HomePage />
+            </Route>
+          <Route path = "/LoginPage">
+             <LoginPage />
+            </Route>
+          <Route path = "/Register">
+              <Register />
+            </Route>
+          <Route path = "/RegisterNextStep">
+                <RegisterNextStep />
+              </Route>
+          <Route path = "/Chat-Room">
+              <App />
+            </Route>
+            <Route path = "/profile">
+              <Profiles />
+          </Route>
+          <Route path = "/privatechat">
+              <PrivateChatRoom />
+          </Route>
+          <Route path = "/learn">
+              <Chatbox />
+          </Route>
+          <Route path = "/">
+              <LoginApp />
+            </Route>
+         </Switch>
+      </BrowserRouter>
     )
 };
+
 export default Router;

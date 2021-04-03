@@ -1,0 +1,157 @@
+.App-column{
+  display:flex;
+  flex-direction: column;
+  height:100%;
+  width:100%;
+  margin: auto;
+  background-color:#2D2C67;
+
+}
+
+
+.Profile-Titles {
+  flex:1;
+  color:#ffffff;
+  display: flex;
+  background-color: #505396;
+  align-items:center;
+  justify-content: center;
+  width:100%;
+  font-size: calc(30px + 2vmin);
+}
+
+.Profile{
+  display:flex;
+  flex:8;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  color:#ffffff;
+  font-size: 100px;
+}
+
+.Info-Profile {
+  display:flex;
+  flex:0.95;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 30px;
+}
+
+.Info{
+  flex:12;
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  
+}
+
+.Info-IconLogo{
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  width: 20%;
+}
+
+.Info-IconLogo-text
+{
+  display: flex;
+  flex-direction: column;
+  width: 30%
+  
+}
+
+
+.Facebook{
+  display:flex;
+  flex:2.4;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  color:#ffffff;
+  font-size: 100px;
+}
+
+
+.Info-Facebook{
+  display:flex;
+  flex:0.95;
+  margin: 10px;
+  background-color:#505396;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+.Instagram{
+  display:flex;
+  flex:2.4;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  color:#ffffff;
+  font-size: 100px;
+}
+
+.Info-Instagram{
+  display:flex;
+  flex:0.95;
+  margin: 10px;
+  border-radius: 8px;
+  background-color:#505396;
+  font-size: 24px;
+}
+
+.Github{
+  display:flex;
+  flex:2.4;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  color:#ffffff;
+  font-size: 100px;
+}
+
+.Info-Github{
+  display:flex;
+  flex:0.95;
+  margin: 10px;
+  border-radius: 8px;
+  background-color:#505396;
+  font-size: 24px;
+}
+
+.Twitter {
+  display:flex;
+  flex:2.4;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  color:#ffffff;
+  font-size: 100px;
+}
+
+.Info-Twitter{
+  
+  display:flex;
+  flex:0.95;
+  margin: 10px;
+  border-radius: 8px;
+  background-color:#505396;
+  font-size: 24px;
+}
+
+
+
+
+
+
+@media (min-width: 700px) {
+  .Page {
+    max-width:90%;
+  }
+}
+@media (min-width: 950px) {
+  .Page {
+    max-width:100%;
+  }
+}

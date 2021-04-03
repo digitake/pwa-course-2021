@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './ChatBox.css';
 import LobbyHeader from "./LobbyHeader"
 import firebase from "./firebaseConfig";
+import {Link} from "react-router-dom";
 
 const chatroomRef = firebase.database().ref('fantasma-room-1');
 
@@ -64,6 +65,9 @@ function ChatBox({children}) {
                 {/*ChatBar Input*/}
                 <div className="App-textbox">
                     <div className="App-Botton col-1">
+                        <Link to="/LobbySetting">
+                            <div className="App-inButtonBar "> Setting </div> 
+                        </Link>
                     </div>
                     <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-9"
                            value={text}

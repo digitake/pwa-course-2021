@@ -14,12 +14,19 @@
 }
 
 .App-Botton{
-    height: 50px;
-    flex: fit-content;
+    height: 40px;
+    background: black;
+}
+
+.App-inButtonBar{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
 }
 
 .App-Time-Position{
-    text-decoration: overline;
+    background: none;
     font-style: normal;
     display: flex;
     justify-content: flex-end;
@@ -44,8 +51,6 @@
     display: flex;
     flex-direction: column;
     margin: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -99,6 +104,11 @@
     .App-Time-Position{
         font-size: 10px;
     }
+    
+    .App-chatroom-text{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 @media  (max-width: 1500px) and (min-width: 761px){
@@ -111,6 +121,11 @@
     .App-Time-Position{
         font-size: 15px;
     }
+
+    .App-chatroom-text{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
 }
 
 @media  (min-width: 1501px){
@@ -122,6 +137,11 @@
 
     .App-Time-Position{
         font-size: 20px;
+    }
+
+    .App-chatroom-text{
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 

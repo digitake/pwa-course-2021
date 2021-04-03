@@ -1,20 +1,18 @@
-import './Profile.css';
-import {useState} from 'react';
 import { Link } from 'react-router-dom'
 import App from './App';
-function Profile(){
-    return (
+function group(){
+    return(
         <App>
-           <div>
-               My Profile
+        <div>
+            Group
             <Link to = "/chatbox">
                 <button>
                     Go to Chatroom
                 </button>
             </Link>
-            </div> 
+        </div>
         </App>
-              
-              );
-            };
-    export default Profile
+    )
+}
+
+export default group

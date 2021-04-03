@@ -1,19 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import App from './App';
+function FriendList(){
+    return(
+        <App>
+        <div>
+        <div className="App-header">
+            
+            <Link to = "/chatbox">
+                <button> 
+                    back 
+                </button> 
+            </Link>
+            
+            </div>
+        </div>
+        </App>
+    )
+}
 
-function FriendList() {
-
-  return (
-    <App>
-      <div>
-        <div>Friend List</div>
-        <Link to="/">
-          Go back
-        </Link>
-      </div>
-    </App>
-  )
-
-};
-
-export default FriendList;
+export default FriendList

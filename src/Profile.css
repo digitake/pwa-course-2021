@@ -1,0 +1,69 @@
+.Profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+}
+
+@media (min-width: 768px){
+    .Profile{
+      max-width: 100%;
+      background-color: hsl(271, 84%, 65%);
+      background-image: url(Benz.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      
+      
+    }
+  }
+
+
+@media (max-width: 1024px){
+    .Profile{
+      max-width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(Benz.jpg);
+      background-size: 75%;
+      background-color: hsl(271, 84%, 65%);
+    }
+  }
+
+
+.Profile-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+.Profile-header {
+    flex: 1;
+    color: #d426ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+    color: rgb(68, 117, 250);
+  }
+
+  .Profile-name {
+    flex: 12;
+    background-color: rgba(255, 255, 255, 0);
+    color : rgb(0, 0, 0);
+    font-weight: 1000;
+  
+    font-size: large;
+  }
+
+.Profile-picture {
+    flex: 12;
+    margin: 8px;
+    background-color: rgb(136, 152, 241);
+    color : rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}

@@ -1,86 +1,105 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  margin: auto;
-  /* background-image: url(coo.jpg); */
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-@media (max-width: 768px) {
-  .App {
+.Chatbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+    /*background-size: cover;*/
+  }
+  
+  @media (min-width: 768px){
+    .Chatbox{
+      max-width: 100%;
+      background-color: rgb(29, 29, 29);
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    }
+  }
+  
+  @media (max-width: 1024px){
+    .Chatbox{
+      max-width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 125%;
+      background-color: rgb(29, 29, 29);
+    }
+  }
+  
+  .Chatbox-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .Chatbox-content {
+  
+    flex: 12;
+  }
+  
+  .Chatbox-chatroom {
+    flex: 12;
+  
+  }
+  
+  .Chatbox-chatroom2 {
+    flex: 12;
+    background-color: rgba(255, 255, 255, 0);
+    color : rgb(0, 0, 0);
+    font-weight: 1000;
+  
+    font-size: large;
+  }
+  
+  
+  .Chatbox-chatroom-text {
+    margin: 8px;
+    background-color: rgb(136, 152, 241);
+    color : rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .Chatbox-textbox {
+    flex: 1;
+    background-color: rgb(243, 200, 230);
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
     
-    background-color: rgb(48, 180, 150);
   }
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-chatroom {
-  flex: 12;
-
-  background-image: url(coo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(170, 158, 212, 0.418);
-}
-
-.App-chatroom-text {
-  margin: 8px;
-
-  background-color: rgb(206, 87, 87);
-
-  color : rgb(48, 100, 100);
-  font-size: 20px;
-}
-
-.App-textbox {
-  flex: 1;
-
-  background-color: rgb(255, 0, 0);
-
-  justify-content: center;
-  align-items: stretch;
-  display: flex;
-}
-
-.App-textbox-input {
-  flex: 5;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.App-textbox-send {
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
+  
+  .Chatbox-textbox-input {
+    flex: 5;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: x-small;
   }
-}
+  
+  .Chatbox-textbox-send {
+    flex: 2;
+    height: 100%;
+    background-color: burlywood;
+    vertical-align: super;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    color: rgb(52, 1, 255);
+  }
+
+  .Chatbox-chatroom-sender {
+    background-color: yellow;
+    flex: 0.1;
+  }
+
+  .Chatbox-chatroom-message {
+    background-color: yellow;
+    flex: 0.9;
+  }

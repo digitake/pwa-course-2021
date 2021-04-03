@@ -7,14 +7,6 @@ import firebase from './firebaseConfig';
 
 const chatroomRef = firebase.database().ref('chatroom-1');
 
-import firebase from './firebaseConfig';
-
-const chatroomRef = firebase.database().ref('chatroom-1')
-
-import firebase from './firebaseConfig.js'; //ดึง config มาเตรียมใช้งาน
-
-const chatroomRef = firebase.database().ref('chatroom-1')
-
 function Chatbox(){
 
     const [text, setText] = useState("")

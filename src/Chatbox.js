@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom';
 import{useState, useEffect }from 'react';
 import './App.css';
 import App from './App';
-import firebase from './firebaseConfig';
+import firebase from './firebaseConfig.js'; //ดึง config มาเตรียมใช้งาน
 
-const chatroomRef = firebase.database().ref('chatroom-1');
+const chatroomRef = firebase.database().ref('chatroom-1')
 
 function Chatbox(){
 

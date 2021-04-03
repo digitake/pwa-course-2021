@@ -8,16 +8,16 @@ function App({children}) {
     <div className="App">
       <div className="App-header">
 
-      <Link to="chatbox">
+      <Link to="profile">
           <button>
-          Go to Chatbox
+          Go to profile
           </button>
         </Link>
         
         
         <Link to="/">
           <button>
-            Profile
+            Chatbox
             </button>
             </Link>
 

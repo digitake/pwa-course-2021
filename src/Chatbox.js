@@ -11,7 +11,7 @@ function Chatbox() {
   const [lines, setLines] = useState([]);
   // ["-้กดกด","กกกกก","กกกหกดหกดหกด"]
   // [{sender: "Mon", message: "skldfsjdlkfsd", timestamp: 12387687437424}, {sender: "Mon", message: "slkdjfsdlkfline2", timestamp: 123434234}]
-  
+
   useEffect(() => {
     chatroomRef.on('child_added', snapshot => {
       let x = snapshot.val();
@@ -31,7 +31,7 @@ function Chatbox() {
   const onSend = () =>{
     //push mesaage to firebase server
     chatroomRef.push({
-      sender: "Max : ",
+      sender: "พ่อพวกมึง : ",
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
     });
@@ -52,7 +52,7 @@ function Chatbox() {
                 lines.map(x => {
                     return <div className="App-chatroom-text">
                             {x.sender}
-                            {x.message}   
+                            {x.message}
                         </div>
                     })
                 }
@@ -60,7 +60,7 @@ function Chatbox() {
         <div className="App-textbox">
             <input type="text" className="App-textbox-input" 
             value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-            
+
             <div className="App-textbox-send" onClick={onSend}>Send!</div>
             </div>
         </div>

@@ -15,8 +15,6 @@ function App() {
     setLines(lines => [...lines, text]);
     setText("");
   };
-
-
   return (
     
     <div className="App">

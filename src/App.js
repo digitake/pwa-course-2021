@@ -16,15 +16,18 @@ function App() {
     setText("");
   };
   return (
+    
     <div className="App">
       <div className="App-header">
          Box Chat
       </div>
+      
       <div className = "AppUndo">
       <Link to = "/HomePage">
         <img src = "Union(1).png" alt = "" /> 
       </Link>
       </div>
+     
       <div className="App-chatroom">
         <div className="App-chatroom-text">
         </div>
@@ -39,15 +42,22 @@ function App() {
               </div>
           })
         }
+        
       </div>
+
       <div className="App-textbox">
         <input type = "text" className = "App-textbox-input" onChange={onChangeHandler} value={text}/>
+
         <div className = "App-textbox-send" 
           onClick={onSendHandler}> 
-        <div className = "App-textbox-send-pic">
-          </div>
+        <div className = "App-textbox-send-pic"/>
+          
+
         </div>
+  
       </div>
+
+
     </div>
   );
 }

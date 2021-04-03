@@ -78,7 +78,8 @@
 .App-textbox-input {
   width: 400px;
   height: 32px;
-  
+  border-radius:6px;
+
 }
 
 .App-textbox-send {

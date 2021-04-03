@@ -16,8 +16,8 @@ function Chatbox() {
       let x = snapshot.val();
       setLines(l =>[...l, {
         sender : x.sender,
-        message : x.message
-        //, timestamp : (new Data(x.timestamp))
+        message : x.message,
+        timestamp: (new Date(x.timestamp))
       }])
     })
   }, []);
@@ -54,9 +54,9 @@ function Chatbox() {
                    {x.sender+":"}
                    {x.message}
                  </div>
-                  {/* <div>
+                  <div>
                       {x.timestamp.toLocaleString()}
-                  </div> */}
+                  </div>
                  </div>
            }
            )

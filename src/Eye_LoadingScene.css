@@ -1,0 +1,63 @@
+.EyeBG {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-position : center;
+    background-image: url("Eyes_LoadingScene.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Text_Fantasma{
+    position: relative;
+    color: #ffffff;
+    line-height: 1.2;
+    font-style: oblique;
+    font-family: "Indie Flower", serif;
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.25);
+    overflow: visible;    
+    text-align: center;
+
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.68%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media  (max-width: 760px){
+    /* IPHONE */
+
+    .Text_Fantasma{
+        top: 15%;
+        font-size: 70px;
+    }
+}
+
+@media  (max-width: 1500px) and (min-width: 761px) {
+    /* IPAD */
+
+    .Text_Fantasma{
+        top: 10%;
+        font-size: 100px;
+
+    }
+}
+
+@media  (min-width: 1501px) {
+    /* PC */
+
+    .Text_Fantasma{
+        top: 5%;
+        font-size: 150px;
+
+    }
+}

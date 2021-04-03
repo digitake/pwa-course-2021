@@ -1,19 +1,17 @@
-import { Link } from 'react-router-dom';
+import LinkTo from './Components/LinkManager'
 import App from './App';
 
 function FriendList() {
+    return (
+        <App>
+            <div>
+                <h1>You have no friend!</h1>
+                <LinkTo value="Go Back!" to="/app" />
+            </div>
 
-  return (
-    <App>
-      <div>
-        <div>Friend List</div>
-        <Link to="/">
-          Go back
-        </Link>
-      </div>
-    </App>
-  )
+        </App>
 
-};
+    );
+}
 
 export default FriendList;

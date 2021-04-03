@@ -1,86 +1,67 @@
-.App {
+.App-chatroom-text{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  margin: auto;
-  /* background-image: url(coo.jpg); */
-  background-repeat: no-repeat;
-  background-position: center;
+  align-items: flex-end;
 }
 
-@media (max-width: 768px) {
-  .App {
-    
-    background-color: rgb(48, 180, 150);
-  }
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-chatroom {
-  flex: 12;
-
-  background-image: url(coo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(170, 158, 212, 0.418);
-}
-
-.App-chatroom-text {
-  margin: 8px;
-
-  background-color: rgb(206, 87, 87);
-
-  color : rgb(48, 100, 100);
-  font-size: 20px;
-}
-
-.App-textbox {
-  flex: 1;
-
-  background-color: rgb(255, 0, 0);
-
-  justify-content: center;
-  align-items: stretch;
+.App-chatroom-text .messageBox{
   display: flex;
-}
-
-.App-textbox-input {
-  flex: 5;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.App-textbox-send {
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  display: flex;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.App-chatroom-text .time{
+  font-size: 80%;
+ margin-left: 5px;
+ font-weight: lighter;
+ color: darkgray;
+}
 
-@media (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+.App-chatroom-text .sender{
+  font-weight: bold;
+  color: rgb(67, 108, 241);
+}
+
+.App-chatroom-text .message{
+  font-weight: lighter;
+}
+
+.displayname-settings {
+ display: flex;
+  background-color:gainsboro;
+ flex-direction: row; 
+ align-items: center;
+}
+
+.displayname-settings .name-input{
+  display: none;
+  color: black;
+background-color: whitesmoke;
+border: none;
+margin: 10px;
+width: 180%;
+}
+
+.displayname-settings .name-show{
+  display: block;
+}
+
+.displayname-settings .name-submit{
+background-color: black;
+margin: 10px;
+border: none;
+height: 30px;
+}
+
+.chatroom-bar{
+  display: flex;
+  flex-direction: row;
+}
+
+.chatroom-bar .chatroom-button{
+  flex: 1;
+  color: white;
+  border: none;
+  background-color: #2668A0;
+  height: 50px;
 }

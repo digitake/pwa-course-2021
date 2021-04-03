@@ -1,33 +1,24 @@
 import './App.css';
-import { Link } from 'react-router-dom';
+import LinkTo from './Components/LinkManager';
 
-function App({children}) {
-
+function App({ children }) {
   return (
     <div className="App col-6">
       <div className="App-header">
-        <Link to="/friend-list">
-          <button>
-            Friend List
-          </button>
-        </Link>
 
-        <Link to="/profile">
-          <button>
-            Profile
-          </button>
-        </Link>
+        <LinkTo value='Home' to='home' />
+        <LinkTo value='Feed' to='feed' />
+        <LinkTo value='Chat' to='chat' />
+        <LinkTo value='Friends' to='friend-list' />
+        <LinkTo value='My Profile' to='profile' />
 
-        <Link to="/">
-          <button>
-            Chatbox
-          </button>
-        </Link>
       </div>
-      <div className="App-content">
+
+      <div className='App-content'>
         {children}
       </div>
     </div>
+
   );
 }
 

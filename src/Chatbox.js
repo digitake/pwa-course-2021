@@ -1,12 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './ChatBox.css';
 import LobbyHeader from "./LobbyHeader"
 import firebase from "./firebaseConfig";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const chatroomRef = firebase.database().ref('fantasma-room-1');
 
-function ChatBox({children}) {
+function ChatBox({ children }) {
 
     const [text, setText] = useState("");
 
@@ -45,41 +45,44 @@ function ChatBox({children}) {
     };
 
     return (
-        <LobbyHeader>
-            <div className="App col-12">
-                <div className="App-chatroom">
-                    {
-                        lines.map(x => {
-                            return <div className="App-chatroom-text">
-                                <div className="profile-read-pruek"></div>
-                                <div className="App-textPosition">
-                                    {x.sender + " : "}
-                                    {x.message}
+        <>
+            <LobbyHeader>
+                <div className="App col-12">
+                    <div className="App-chatroom">
+                        {
+                            lines.map(x => {
+                                return <div className="App-chatroom-text">
+                                    <div className="profile-read-pruek"></div>
+                                    <div className="App-textPosition">
+                                        {x.sender + " : "}
+                                        {x.message}
+                                    </div>
+                                    <div className="App-Time-Position"> {x.timestamp.toLocaleTimeString()} </div>
                                 </div>
-                                <div className="App-Time-Position"> {x.timestamp.toLocaleTimeString()} </div>
-                            </div>
-                        })
-                    }
-                </div>
-                {children}
-
-                {/*ChatBar Input*/}
-                <div className="App-textbox">
-                    <div className="App-Botton col-1">
-                        <Link to="/LobbySetting">
-                            <div className="App-inButtonBar "> Setting </div> 
-                        </Link>
+                            })
+                        }
                     </div>
-                    <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-11"
-                           value={text}
-                           onChange={onTextChange}
-                           onKeyPress={keyPress}/>
+                    {children}
+
+                    {/*ChatBar Input*/}
+
+
                 </div>
 
+
+            </LobbyHeader>
+            <div className="App-textbox">
+                <div className="App-Botton col-1">
+                    <Link to="/LobbySetting">
+                        <div className="App-inButtonBar "> Setting </div>
+                    </Link>
+                </div>
+                <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-11"
+                    value={text}
+                    onChange={onTextChange}
+                    onKeyPress={keyPress} />
             </div>
-
-
-        </LobbyHeader>
+        </>
     );
 }
 

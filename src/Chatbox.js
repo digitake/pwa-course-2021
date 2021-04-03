@@ -54,13 +54,14 @@ function Chatbox() {
         {
           lines.map(x => {
             return <div className="App-chatroom-text">
+                     
                    <div className="App-chatroom-text-sender">
                        {x.sender+":"}
                    </div>
                    <div className="App-chatroom-text-message"> 
-                      {x.message} 
+                     {x.message} 
                       <div >                      
-                      {" Time  "+x.timeStamp.toLocaleString()}  
+                      {" Time "+x.timeStamp.toLocaleString()}
                       </div>
                     </div>
                    </div>

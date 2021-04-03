@@ -51,6 +51,7 @@ function ChatBox({children}) {
                     {
                         lines.map(x => {
                             return <div className="App-chatroom-text">
+                                <div className="profile-read-pruek"></div>
                                 <div className="App-textPosition">
                                     {x.sender + " : "}
                                     {x.message}

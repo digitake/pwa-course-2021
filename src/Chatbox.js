@@ -5,11 +5,6 @@ import './App.css';
 import App from './App';
 import firebase from './firebaseConfig';
 
-const chatroomRef = firebase.database().ref('chatroom-1');
-
-import firebase from './firebaseConfig';
-
-const chatroomRef = firebase.database().ref('chatroom-1')
 
 import firebase from './firebaseConfig.js'; //ดึง config มาเตรียมใช้งาน
 

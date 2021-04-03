@@ -7,6 +7,9 @@ function LobbySetting() {
 
     return (
         <ChatBox>
+            <Link to="/App">
+                <div className="App-text">Close Setting</div>
+            </Link>
             <div className="button-bar">
                 <table>
                     <tr>

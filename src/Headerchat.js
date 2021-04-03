@@ -1,5 +1,5 @@
 import './Headerchat.css';
-import { FiMicOff,FiLogOut,FiMoreVertical,FiClipboard,FiSearch,FiSettings,FiUsers,FiPlusCircle,FiSend,FiMenu,FiX } from "react-icons/fi";
+import { FiMicOff,FiLogOut,FiClipboard,FiSearch,FiMenu,FiX } from "react-icons/fi";
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
 
@@ -10,6 +10,7 @@ function Headerchat({children}) {
   const closeMobileMenu = () => setClick(false);
 
 return(
+  
     <div className="AppPrivate">
     <div className="header">
       <div className="header-content">
@@ -31,7 +32,7 @@ return(
   </li>
   <li className="menu-link">
       <Link to = '/PrivatePage'>
-      <a href="#"><FiLogOut/> Leave</a>
+      <a href="#"><FiLogOut/> Leave </a>
       </Link>
   </li>
       </ul>

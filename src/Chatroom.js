@@ -8,11 +8,10 @@ return(
     
     <HomePage>
         <div>
-            <Link to = "/Chat-Room" >
+            <Link to = "/privatechat" >
              <img src = "BotHelpChat.png" alt = "" />
             </Link>
         </div>
-        
         
     </HomePage>
  

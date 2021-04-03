@@ -6,39 +6,37 @@ import firebase from './firebaseConfig'; //ดึง config
 
 const chatroomRef = firebase.database().ref('chatroom-1');
 
+
+
+
+
 function Chatbox() {
 
   const [text, setText] = useState("")
   const [lines, setLines] = useState([]);
 
-// () => {} same as function() {}
-  
-useEffect(() => {
-    chatroomRef.on('child_added', snapshot => {
-      let x = snapshot.val();
-      setLines(l => [...l, {
-        sender: x.sender, 
-        message : x.message,
-        timestamp: (new Date(x.timestamp))
-      }])
-    })
+  useEffect (() => {
+      chatroomRef.on('child_added', snapshot => {
+        let x = snapshot.val();
+        setLines ( l => [...l, {
+          sender: x.sender,
+          message: x.message,
+          timestamp: (new Date())
+        }])
+      });
   }, []);
-  //watchdog
 
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () => {
-   // Push message to firebase server
-   chatroomRef.push({
-     sender : "Me",
-     messsage : text,
-     timestamp: firebase.database.ServerValue.TIMESTAMP
-   })
-    
-   setText("");
+    chatroomRef.push({
+      sender: "Me",
+      message: text,
+    })
   };
+
 
   return (
     <Headerchat>

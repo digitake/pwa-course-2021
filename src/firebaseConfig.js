@@ -2,12 +2,12 @@ import firebase from 'firebase';
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyAvF2C7BvAIjO3s5KHuUhSxlrQHfrbSUnY",
-    authDomain: "chat-app-990.firebaseapp.com",
-    projectId: "chat-app-990",
-    storageBucket: "chat-app-990.appspot.com",
-    messagingSenderId: "898458776082",
-    appId: "1:898458776082:web:6e39ac7c25574b6f8e9ecb"
+    apiKey: "AIzaSyB3r6dziJyFi7Cr8bDIHc4AzOVTHLSmpgA",
+    authDomain: "chat-app-test001.firebaseapp.com",
+    projectId: "chat-app-test001",
+    storageBucket: "chat-app-test001.appspot.com",
+    messagingSenderId: "269837444857",
+    appId: "1:269837444857:web:8e50d76a7217a955cd6428"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);

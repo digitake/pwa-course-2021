@@ -174,9 +174,11 @@
 
 .App-head-chatFriend {
   flex: 1;
-  justify-content: center;
+  
+  justify-content: flex-start;
   align-items: stretch;
   display: flex;
+  margin-left: 24px;
 
   background-color: #ffc400;
 }

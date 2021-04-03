@@ -34,7 +34,7 @@ function FriendList() {
 
            <div class="gallery">
            <a target="_blank" href="Profile.jpg"></a>
-           <div class="desc">Friend 6 </div>
+           <div class="desc">Friend  </div>
            </div>
          </NormalPage>
 

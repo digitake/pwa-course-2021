@@ -113,6 +113,7 @@
 
 .App-content {
   flex: 12;
+  width: 100%;
 
   
   background-image: url(background_01.gif);

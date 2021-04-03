@@ -39,7 +39,7 @@ function App({children}) {
       
 
           </div>
-  );
-
-  /</div>)}
+          
+  </div>
+  )}
   export default App;

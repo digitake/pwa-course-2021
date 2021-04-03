@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState , useEffect} from 'react';
 import './Chatbox.css';
 import App from './App';
 
+import firebase from './firebaseConfig';
 
 import './onClick.js'
-
-import firebase from './firebaseConfig';
+import { logDOM } from '@testing-library/dom';
 
 const chatroomRef = firebase.database().ref('chatroom-1');
 
@@ -15,15 +15,15 @@ function Chatbox() {
   const [lines, setLines] = useState([]);
 
   useEffect(() => {
-    chatroomRef.on('child_added', snapshot => {
-      let x = snapshot.val();
-      setLines( l => [...l,{
-        sender: x.sender,
-        message: x.message,
-        timestamp: (new Date(x.timestamp))
-      }])
-    });
-   
+     chatroomRef.on('child_added', snapshot => {
+       let x = snapshot.val();
+       setLines( l => [...l, {
+         sender: x.sender,
+         message: x.message,
+         timestamp: (new Date(x.timestamp))
+       }])
+     })
+    
   }, []);
 
   const onChangeHandler = (event) => {
@@ -32,20 +32,12 @@ function Chatbox() {
 
   const onSendHandler = () => {
     chatroomRef.push({
-      sender: "Me",
+      sender: "Me:",
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
-    });
-    
+    })
     setText("");
-    
   };
-
-  const keyPress = (event) => {
-    if(event.which === 13){
-      onSendHandler();
-    }
-  }
 
   
   return (
@@ -58,17 +50,18 @@ function Chatbox() {
           lines.map(x => {
             return <div className="App-chatroom-text">
                 <div>
-                  
-                  {x.timestamp.toLocaleDateString()+" "}
-                  {x.sender+": "}
-                
-                  {x.message+" "}
-                  
-                  
+                  {(x.sender)}
+                </div>
+                <div>              
+                  {x.message}
+                </div>
+                <div>
+                  {x.timestamp.toLocaleDateString()}
                 </div>
               </div>
           })
         }
+        
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" onChange={onChangeHandler} value={text}/>

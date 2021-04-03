@@ -1,9 +1,5 @@
 {
-
-  "short_name": "React App",
-
   "short_name": "flash App",
-
   "name": "Create React App Sample",
   "icons": [
     {
@@ -12,20 +8,12 @@
       "type": "image/x-icon"
     },
     {
-
-      "src": "icon-192x192.png",
-
       "src": "logo_flash.png",
-
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-
-      "src": "icon-512x512.png",
-
       "src": "logo_flash.png",
-
       "type": "image/png",
       "sizes": "512x512"
     }

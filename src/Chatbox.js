@@ -1,41 +1,70 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Chatbox.css';
-import App from './App';
+import Headerchat from './Headerchat';
+
+import firebase from './firebaseConfig'; //ดึง config
+
+const chatroomRef = firebase.database().ref('chatroom-1');
+
+import firebase from './firebaseConfig';
+
+const chatroomref = firebase.database().ref('chatroom-1');
 
 function Chatbox() {
 
   const [text, setText] = useState("")
+  const [lines, setLines] = useState([]);
 
-  const [lines, setLines] = useState(["msg1" , "msg2" , "msg3" , "msg4" , "msg5"]);
+  useEffect (() => {
+      chatroomRef.on('child_added', snapshot => {
+        let x = snapshot.val();
+        setLines ( l => [...l, {
+          sender: x.sender,
+          message: x.message,
+          timestamp: (new Date())
+        }])
+      });
+  }, []);
 
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () => {
-    setLines(lines => [...lines, text]);
-    setText("");
+    chatroomRef.push({
+      sender: "Me",
+      message: text,
+    })
   };
 
+
   return (
-      <App>
+    <Headerchat>
     <div className="App">
       <div className="App-content">
       {
         lines.map(x =>{
           return <div className="App-chatroom-text">
-                  {x}
-                  </div>
+            <div>
+              {x.sender+":"}
+              </div>
+            <div>
+              {x.message}
+              </div>
+            <div>
+              {x.timestamp.toLocaleDateString()}
+              </div>
+          </div>
         }) 
       }
       </div>
       <div className="App-textbox">
         <button class="btn"><i>More Function</i></button>
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} placeholder="Type a message" />
-        <button className="App-textbox-send" button onClick={onSend}>Send</button>
+        <div className="App-textbox-send" onClick={onSend}>Send </div>
       </div>
     </div>
-    </App>
+    </Headerchat>
   );
 }
 

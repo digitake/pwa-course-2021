@@ -1,26 +1,26 @@
 
 import './Home.css';
 import App from './App'
-function  Home() {
-    return(
-      <App>
-        <div class="background">
+function Home() {
+  return (
+    <App>
+      <div class="background">
         <div class="text">
           <div class="welcomemargin">
-             Welcome
+            Welcome
           </div>
-            <div class="margin">
+          <div class="margin">
             to
            </div>
-            <div>
+          <div>
             A-nim Chat
+          </div>
+        </div>
+        <div class="link">
+        </div>
       </div>
-      </div>
-      <div class ="link">
-             </div>
-      </div>
-      </App>
-    )
+    </App>
+  )
 };
 
 export default Home;

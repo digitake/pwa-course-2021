@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 400px;
   height: 100%;
   margin: auto;
   /*background-size: cover;*/
@@ -50,13 +49,8 @@
 }
 
 .App-content {
-
+  overflow: auto;
   flex: 12;
-}
-
-.App-chatroom {
-  flex: 12;
-
 }
 
 .App-chatroom2 {

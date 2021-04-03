@@ -22,6 +22,7 @@ function Chatbox() {
 
     const UpdateChat = () => {
         //Clear Old Chat History
+        chatroomRef.off('child_added');
         setLines([]);
         chatroomRef.on('child_added', snapshot => {
             let x = snapshot.val();

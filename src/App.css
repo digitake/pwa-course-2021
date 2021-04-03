@@ -42,7 +42,7 @@
 
 .App-content {
   flex: 12;
-
+  overflow: auto;
 }
 
 .App-chatroom-text {

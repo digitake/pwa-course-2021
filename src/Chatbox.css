@@ -111,11 +111,12 @@
   margin: 8px;
   
 
-
   background-color: hsl(212, 100%, 76%);
   color:rgb(255, 255, 255);
   font: size 22px;
-
+  display: flex;
+  flex-direction: row;
+  
 }
 
 .App-textbox {

@@ -1,0 +1,156 @@
+.fullscreen-profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(23, 96, 207);
+  }
+  
+.header-profile {
+    flex: 0.05;
+    background-color: rgb(23, 96, 207);
+}
+  
+.content-profile {
+    background-color: rgb(23, 96, 207);
+    flex: 0.9;
+    display: flex; 
+    flex-direction: column;
+}
+  
+.footer-profile {
+    flex: 0.05;
+    background-color: rgb(23, 96, 207);
+}
+
+.boxchatlogo-profile {
+    margin-left: 890px;
+    margin-top: 5px;
+}
+
+.bg-profile {
+    margin-left: 710px;
+    margin-top: -5px;
+}
+
+.bgprofile-wall {
+    margin-top: -730px;
+    margin-left: 810px;
+}
+
+.profile-wall {
+    margin-top: -289px;
+    margin-left: 825px;
+}
+
+.setting-profile { 
+    margin-top: -50px;
+    margin-left: 1015px;
+}
+
+.back-profile {
+    margin-top: -350px;
+    margin-left: 720px;
+}
+
+input[type=PRname], select {
+    width: 12%;
+    height: 5%;
+    padding: 12px 20px;
+    margin-left: 850px;
+    margin-top: 340px;
+    display: inline-block;
+    border: 1px solid rgb(2, 2, 2);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=bioP], select {
+    width: 18%;
+    height: 25%;
+    padding: 12px 10px;
+    margin-left: 785px;
+    margin-top: 70px;
+    display: inline-block;
+    border: 1px solid rgb(2, 2, 2);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+@media(max-width: 1000px){
+    .fullscreen-profile {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      height: 100%;
+      background-color: rgb(31, 103, 211);
+    }
+}
+
+@media(max-width: 1000px){
+    .boxchatlogo-profile {
+      margin-left: 235px;
+    }
+}
+
+@media(max-width: 1000px){
+    .bg-profile {
+      margin-left: 50px;
+      margin-top: -10px;
+    }
+}
+
+@media(max-width: 1000px){
+    .bgprofile-wall {
+      margin-left: 150px;
+    }
+}
+
+@media(max-width: 1000px){
+    .profile-wall {
+      margin-left: 165px;
+    }
+}
+
+@media(max-width: 1000px){
+    .setting-profile {
+      margin-left: 355px;
+    }
+}
+
+@media(max-width: 1000px){
+    .back-profile {
+      margin-left: 65px;
+    }
+}
+
+@media(max-width: 1000px){
+    input[type=PRname], select {
+        width: 35%;
+        height: 5%;
+        padding: 12px 20px;
+        margin-left: 190px;
+        margin-top: 340px;
+        display: inline-block;
+        border: 1px solid rgb(2, 2, 2);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width: 1000px){
+    input[type=bioP], select {
+        width: 70%;
+        height: 25%;
+        padding: 12px 10px;
+        margin-left: 85px;
+        margin-top: 70px;
+        display: inline-block;
+        border: 1px solid rgb(2, 2, 2);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+}

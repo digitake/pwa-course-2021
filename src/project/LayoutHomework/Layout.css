@@ -1,0 +1,56 @@
+.Headprofile {
+    background-repeat: no-repeat;
+    /*background-image: url();*/
+    background-size: contain;
+    background-position: left;
+    flex: 1;
+    background-color: #121079;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+.Textlayout{
+    font-size: 24px;
+    margin-top: -40px;
+    color: rgb(255, 255, 255);
+    flex: 1;
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+  }
+
+  .Settingbutton{
+    margin-top: 1;
+    margin-left: 350px;
+    margin-right: -10px;
+    margin-bottom: 10px;
+    width: 75%;
+    height: 75%;
+  }
+
+  .Profilepicture{
+    margin-top: -90px;
+    margin-left: -450px;
+    margin-right: 0px;
+    clip-path: circle(34px at center center);
+  }
+
+.App-contenter {
+    flex: 12;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .BGProfilely {
+    flex: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 600px;
+    height: 87%;
+    margin: auto;
+    background-color: rgb(12, 61, 134);
+  }

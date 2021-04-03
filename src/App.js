@@ -9,7 +9,7 @@ function App({children}) {
     <div className="App">
 
       <div className="App-header">
-        Welcome to My App Main
+        เราเตอร์หลักอยู่ที่ /random-main
     
       </div>
 

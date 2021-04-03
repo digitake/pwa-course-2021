@@ -1,14 +1,15 @@
-import App from './App';
+import HeadOfApp from './HeadOfList';
+import './App.css';
 
-function Profile(){
+function Profile()
+{return(
+<HeadOfApp>
 
-  return (
-    <App>
-      <div>
-        My Profile
-      </div>
-    </App>
-  )
+    <div >
+        Profile
+        
+    </div>
+</HeadOfApp>
+)
 };
-
 export default Profile;

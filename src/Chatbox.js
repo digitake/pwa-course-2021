@@ -37,7 +37,6 @@ function Chatbox() {
     })
   };
 
-
   return (
     <Headerchat>
     <div className="App">

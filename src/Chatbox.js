@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './ChatBox.css';
+import './Chatbox.css';
 import LobbyHeader from "./LobbyHeader"
 import firebase from "./firebaseConfig";
 import { Link } from "react-router-dom";
@@ -63,14 +63,9 @@ function ChatBox({ children }) {
                         }
                     </div>
                     {children}
-
-                    {/*ChatBar Input*/}
-
-
                 </div>
-
-
             </LobbyHeader>
+            {/*ChatBar Input*/}
             <div className="App-textbox">
                 <div className="App-Botton col-1">
                     <Link to="/LobbySetting">

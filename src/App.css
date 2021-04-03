@@ -61,6 +61,7 @@
 .App-content{
   color: rgb(182, 234, 255);
   flex: 12;
+  overflow: auto;
 }
 .App-chatroom-text {
   margin: 8px;

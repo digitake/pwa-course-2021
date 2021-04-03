@@ -17,11 +17,7 @@ function App({children}) {
         
         <Link to="/">
           <button>
-
             Chatbox
-
-            Profile
-
             </button>
             </Link>
 

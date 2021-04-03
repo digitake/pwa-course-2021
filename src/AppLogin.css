@@ -6,8 +6,8 @@
         align-items: flex-start;
         justify-content: center;
         margin: auto;
-        width: 414px;
-        Height: 896px;
+        width: 100%;
+        height: 100%;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         background-image: url(/src/icon/icon-256x256.png);
         background-repeat: no-repeat;
@@ -41,7 +41,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 414px;
+        width: 100%;
         height: 825px;
         margin: auto;
         background-repeat: no-repeat;
@@ -71,7 +71,8 @@
         flex-direction: column;
         margin: auto;
         width: 100%;
-        Height: 100%;
+        height: 100%;
+        max-width: 414px;
         background-image: url(/src/icon/icon-256x256.png);
         background-repeat: no-repeat;
         background-position: center;

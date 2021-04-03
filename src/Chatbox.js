@@ -32,7 +32,7 @@ function Chatbox() {
 
   const onSend = () => {
     chatroomRef.push({
-      sender: "Me",
+      sender: "9",
       message: text,
     })
   };
@@ -45,9 +45,7 @@ function Chatbox() {
         lines.map(x =>{
           return <div className="App-chatroom-text">
             <div>
-              {x.sender+":"},
-              {x.message},
-              {x.timestamp.toLocaleDateString()}
+            {x.sender + " : " + x.message + " " + x.timestamp.toLocaleString()}
               </div>
           </div>
         }) 

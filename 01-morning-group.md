@@ -6,7 +6,7 @@ Repo: https://github.com/baimee/pwa-course-2021
 2. 1620702041 AkisawaZZ
 3. 1620701142 Noraphat-thod
 4. 1620703833 Assadawut999
-5. 1620700946 CGNinja
+5. 1620700946 CGNinja(Khanin_Jittipat)
 
 ----------------------------
 

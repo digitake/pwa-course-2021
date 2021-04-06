@@ -22,6 +22,10 @@ function Profile({children}){
              <button class="Profile-Button">โพสต์</button>
              </Link>
 
+             <Link to = "/Friend">
+             <button class="Profile-Button">เพื่อน</button>
+             </Link>
+
              <Link to = "/Image">
              <button class="Profile-Button">รูปภาพ</button>
              </Link>

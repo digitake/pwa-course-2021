@@ -10,6 +10,19 @@
   background-color: rgb(36, 36, 36);
 }
 
+.AppLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 500px;
+  min-height: auto;
+  height: 100%;
+  margin: auto;
+  background: rgb(179,0,0);
+  background: linear-gradient(0deg, rgb(87, 0, 0) 0%, rgb(163, 0, 0) 51%, rgba(232,0,0,1) 100%);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -18,13 +31,13 @@
 .App-header {
   flex: 1;
 
-  background-color: #e70505;
+  background-color: #ffffff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(233, 1, 1);
+  color: rgb(255, 255, 255);
 
 }
 
@@ -120,7 +133,7 @@
   flex: 12;
 }
 
-.App-chatroom {
+.App-content {
   flex: 12;
 
   background-color: rgba(199, 198, 198, 0.418);
@@ -170,7 +183,6 @@
 }
 
 .image-button{
-  margin-bottom: 10px;
   padding: 0px;
 }
 
@@ -320,4 +332,8 @@
   border: 7px solid rgb(255, 255, 255);
   color: #ccc;
   font-size: 20px;
+}
+
+.halfspaceCentor{
+  flex: 5 ;
 }

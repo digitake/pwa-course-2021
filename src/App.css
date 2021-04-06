@@ -19,7 +19,8 @@
   min-height: auto;
   height: 100%;
   margin: auto;
-  background-color: rgb(226, 0, 0);
+  background: rgb(179,0,0);
+  background: linear-gradient(0deg, rgb(87, 0, 0) 0%, rgb(163, 0, 0) 51%, rgba(232,0,0,1) 100%);
 }
 
 .App-logo {
@@ -333,6 +334,6 @@
   font-size: 20px;
 }
 
-.BackgroundRed{
-  color: rgb(167, 0, 0);
+.halfspaceCentor{
+  flex: 5 ;
 }

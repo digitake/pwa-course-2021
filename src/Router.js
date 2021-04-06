@@ -6,7 +6,7 @@ import ChatboxTest from './Chatbox-Test';
 import ProjectRandom from './Project-Random';
 import AllChatInterface from './ChatFriend';
 import MainNote from './Note';
-import MainProfile from './profile';
+import MainProfile from './Profile';
 
 function Router(){
 

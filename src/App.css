@@ -18,13 +18,13 @@
 .App-header {
   flex: 1;
 
-  background-color: #e70505;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(233, 1, 1);
+  color: rgb(255, 255, 255);
 
 }
 

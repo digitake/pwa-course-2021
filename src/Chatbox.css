@@ -11,6 +11,20 @@
   font-family: 'Prompt', sans-serif;
 }
 
+.App-chatroom::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-track {
+background: #00000000;
+}
+
+/* Optional: show position indicator in red */
+.App-chatroom::-webkit-scrollbar-thumb {
+  background: #ffffff00;
+}
+
 @media (min-width: 100px) {
   .App {
     background-image: url(background_01.gif);
@@ -98,24 +112,39 @@
 
 
 .App-chatroom {
-  flex: 10;
-
-
-  background-color: rgba(70, 70, 70, 0);
-
-
+  flex: 12;
+  overflow: scroll;
+  
   /*background-image: url(../src/logo1.png);  สำหรับพื้นหลัง*/
 }
 
-.App-chatroom-text {
-  margin: 8px;
-  
-
-  background-color: hsl(212, 100%, 76%);
-  color:rgb(255, 255, 255);
-  font: size 22px;
-  display: flex;
+.App-chatbox-time{
   flex-direction: row;
+  text-align: left;
+  color:rgb(255, 255, 255);
+  font-size: 18px;
+  display: flex;
+  text-align: right;
+}
+
+.App-chatbox{
+  
+  border-radius: 15px;
+  background-color: hsl(212, 100%, 76%);
+  align-items: left;
+  text-align: left;
+  width: 80%;
+  padding: 20px;
+  word-wrap: break-word;
+  
+}
+
+
+.App-chatroom-text {
+  color:rgb(255, 255, 255);
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
   
 }
 
@@ -123,7 +152,8 @@
   flex: 1;
 
   background-color: rgb(201, 201, 201);
-
+  color: black;
+  
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -135,6 +165,8 @@
   height: 100%;
   box-sizing: border-box;
   }
+
+
 }
 
 @media (min-width: 768px) {
@@ -145,7 +177,6 @@
 
 .App-textbox-send {
   flex: 1;
-  height: 100%;
   vertical-align: middle;
   justify-content: center;
   align-items: center;

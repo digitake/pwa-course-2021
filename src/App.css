@@ -34,6 +34,7 @@
 .App-header {
   flex: 1;
 
+  height: 100px;
   background-color: #4998ffd5;
 
   display: flex;
@@ -100,7 +101,7 @@
 .App-content {
   flex: 12;
   width: 100%;
-
+  overflow: auto;
   
   background-image: url(background_01.gif);
 

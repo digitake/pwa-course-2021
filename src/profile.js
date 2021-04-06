@@ -33,10 +33,7 @@ function MainProfile() {
                 <div className = "profilespinhis">
                     [Spin History]
                 </div>
-
             </div>
-
-
         </div>
  
         </Content>

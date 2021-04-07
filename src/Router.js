@@ -7,6 +7,7 @@ import PageDrawing from './PageDrawing';
 import Profile from './Profile';
 import App from './App';
 import FlexShow from './FlexShow';
+import HomePage from './HomePage'
 
 function Router(){
     return(
@@ -15,7 +16,10 @@ function Router(){
             <Route path="/flex">
                 <FlexShow />
             </Route>
-        <Route path="/App">
+            <Route path="/Home">
+                <HomePage />
+            </Route>
+            <Route path="/App">
                 <App />
             </Route>
             <Route path="/friend-list">

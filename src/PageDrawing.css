@@ -19,6 +19,11 @@
     margin: 20px;
     background-color: white;
   }
+  .PageDrawing-Icon{
+    vertical-align: top;
+    float: right;
+    margin: 20px;
+  }
   .PageDrawing-send{
     padding: 25px 0;
     margin: 20px;

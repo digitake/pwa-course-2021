@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './PageDrawing.css';
+import drawing from './Drawing_Icon.png';
 
 function Page4Drawling() {
   return (
@@ -8,15 +9,19 @@ function Page4Drawling() {
         Page Drawing
         <div className="PageDrawing-botton">
           <Link to="/App">
-            <botton>Go to Chatroom</botton>
+            <button>Go to Chatroom</button>
           </Link>
         </div>
       </div>
-      <div className="PageDrawing-drawbox"></div>
+      <div className="PageDrawing-drawbox">
+        <div className="PageDrawing-Icon">
+          <img src={drawing} />
+        </div>
+      </div>
       <div className="PageDrawing-send">
         Send
       </div>
-      
+
     </div>
   )
 };

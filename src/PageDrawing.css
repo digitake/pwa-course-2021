@@ -7,24 +7,27 @@
     justify-content: center;
     text-align: center;
     padding: 10px 0;
-    color: white;
-    background-color: rgb(255, 183, 239);
+    color: rgb(238, 65, 65);
+    background-color: rgb(255, 212, 246);
     font-size: 60px;
+    
   }
   .PageDrawing-botton{
     float: right;
     padding: 10px 0;
+    padding-right: 10px;
     
   }
   .PageDrawing-drawbox{
-    padding: 320px 0;
-    margin: 30px;
-    background-color: white;
+    padding: 300px 0;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.8);
   }
   .PageDrawing-Icon{
     vertical-align: top;
-    float: right;
-    margin: 20px;
   }
   .PageDrawing-send{
     padding: 25px 0;

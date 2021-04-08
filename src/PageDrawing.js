@@ -13,8 +13,8 @@ function Page4Drawling() {
         <div className="PageDrawing-botton">
           <Link to="/App">
           <img src={ChatLogo}></img>
-              
           </Link>
+          <div></div>
         </div>
       </div>
       <div className="PageDrawing-drawbox">

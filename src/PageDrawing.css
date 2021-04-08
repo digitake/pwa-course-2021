@@ -1,5 +1,5 @@
 .PageDrawing{
-  background-image: url(BGPT.png);
+  background-image: url(BG_MEOW.png);
   background-size: cover;
   height: 100%;
 }
@@ -9,14 +9,16 @@
     padding: 10px 0;
     color: white;
     background-color: rgb(255, 183, 239);
-    font-size: 30px;
+    font-size: 60px;
   }
   .PageDrawing-botton{
     float: right;
+    padding: 10px 0;
+    
   }
   .PageDrawing-drawbox{
-    padding: 350px 0;
-    margin: 20px;
+    padding: 320px 0;
+    margin: 30px;
     background-color: white;
   }
   .PageDrawing-Icon{
@@ -26,10 +28,16 @@
   }
   .PageDrawing-send{
     padding: 25px 0;
-    margin: 20px;
+    margin: 30px;
     background-color: white;
     font-size: 30px;
     color: black;
     text-align: center;
   }
-   
+  .PageDrawing-Logo{
+    float: none;
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    
+  }

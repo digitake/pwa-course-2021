@@ -26,9 +26,10 @@
   flex: 1;
   background-color: #121079;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  padding-right: 24px;
   color: rgb(0, 0, 0);
 }
 

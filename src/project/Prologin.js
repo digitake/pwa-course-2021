@@ -17,7 +17,7 @@ function Prologin() {
         </div>
 
         <div className="signin-logo">
-          <Link to="/Profriend">
+          <Link to="/Prosign">
             <img src="/Project/Prologin/sign.jpg" alt ="/Project/Prologin/sign.jpg" 
             width="400px" height="120px"/>
           </Link>

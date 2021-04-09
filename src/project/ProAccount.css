@@ -1,0 +1,62 @@
+.fullscreen-ProAccount {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(23, 96, 207);
+    
+}
+  
+.header-ProAccount {
+    flex: 0.05;
+    background-color: rgb(31, 103, 211);
+}
+    
+.content-ProAccount {
+    background-color: rgb(31, 103, 211);
+    flex: 0.9;
+    display: flex; 
+    flex-direction: column;
+}
+    
+.footer-ProAccount {
+    flex: 0.05;
+    background-color: rgb(31, 103, 211);
+}
+
+.correct-icon {
+    margin: auto;
+}
+
+.goSign-icon {
+    margin-left: 770px;
+}
+
+@media(max-width: 1000px) {
+    .fullscreen-ProAccount {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 100%;
+        background-color: rgb(23, 96, 207);
+    }
+}
+
+@media(max-width: 1000px) {
+    .correct-icon img {
+        width: 350px;
+        height: 250px;
+        margin: auto;
+    }
+}
+
+@media(max-width: 1000px) {
+    .goSign-icon img {
+        width: 300px;
+        height: 100px;
+        margin: auto;
+    }
+}

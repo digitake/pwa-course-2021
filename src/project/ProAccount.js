@@ -17,10 +17,10 @@ function ProAccount() {
                 </div>
 
                 <Link to ="Prosign">
-                <div className ="goSign-icon">
-                    <img src="/Project/ProAccount/gosignin.jpg" alt ="/Project/ProAccount/gosignin.jpg" 
-                    width="400px" height="120px"/>
-                </div>
+                    <div className ="goSign-icon">
+                        <img src="/Project/ProAccount/gosignin.jpg" alt ="/Project/ProAccount/gosignin.jpg" 
+                        width="400px" height="120px"/>
+                    </div>
                 </Link>
 
             </div>

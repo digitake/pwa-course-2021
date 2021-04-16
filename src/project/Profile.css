@@ -43,10 +43,15 @@
     margin-left: -100px;
 }
 
+.back-icon {
+    margin-top: 12px;
+    margin-left: -440px;
+}
+
 input[type=US-profile], select {
     width: 11%;
     height: 5%;
-    margin-left: -260px;
+    margin-left: 130px;
     padding: 12px 60px;
     margin-top: 470px;
     display: inline-block;

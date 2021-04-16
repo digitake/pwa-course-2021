@@ -27,8 +27,17 @@ function Profile() {
                 </div>
 
                 <div className ="setting-profile">
+                <Link to ="/Prosetting">
                     <img src ="/Project/Profile/k5.png" alt ="/Project/Profile/k5.png"
                     width ="70px" />
+                </Link>
+                </div>
+                    
+                <div className ="back-icon">
+                <Link to ="/ProFriend">
+                    <img src ="/Project/Profile/k6.png" alt ="/Project/Profile/k6.png"
+                    width ="50px" />
+                </Link>
                 </div>
 
                 <input type="US-profile" id="Usnameprofile" name="username-profile" placeholder="Ayame"/>

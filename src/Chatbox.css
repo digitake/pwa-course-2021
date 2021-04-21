@@ -11,7 +11,7 @@
 
 @media (min-width: 700px) {
   .App{
-    max-width:90%;
+    max-width:100%;
   }
     }
 @media (min-width: 950px) {
@@ -28,14 +28,15 @@
 .Chatbox-header {
   background-color: rgb(255, 255, 255);
   background-position: center;
-  background-repeat: no-repeat;
+  
   flex: 1;
-  height: 100%;
-  vertical-align: middle;
+  height: 10%;
+  vertical-align:top;
   justify-content: center;
   align-items: center;
   display: flex;
-  overflow: auto;
+  
+  
 }
 
 .Chatbox-header1 {
@@ -123,13 +124,15 @@
 
 }
 .App-textbox {
-  flex: 1;
+  
   background-color: rgb(255, 255, 255);
   background-position: center;
   justify-content: center;
   display: flex;
+  height: 10%;
   flex: 1;
   background-size: auto;
+  flex-direction: row;
   
   color: rgb(228, 222, 222);
 }
@@ -211,22 +214,7 @@
   }
 }
 
-@media  (max-width: 1500px) and (min-width: 761px){
-  /* IPAD */
 
-  .App-textPosition{
-      font-size: 25px;
-  }
-  
-  .App-Time-Position{
-      font-size: 15px;
-  }
-
-  .App-chatroom-text{
-      margin-left: 35px;
-      margin-right: 35px;
-  }
-}
 
 @media  (min-width: 1501px){
   /* PC */

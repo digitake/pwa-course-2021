@@ -54,6 +54,7 @@
 
 .Chatbox-header2 {
   background-image: url(design/Design\ Chi\ CHi\ App-09.png);
+  background-size: 105%;
   background-position: center;
   background-repeat: no-repeat;
   flex: 2;

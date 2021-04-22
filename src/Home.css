@@ -22,6 +22,7 @@
       background-position: center;
   }
   .Home-chats{
+    
       background-position: center;
   }
 }
@@ -77,22 +78,69 @@ display: flex;
 }
 
 .Home-chats {
-color: rgb(182, 234, 255);
-flex: 12;
+flex: 8;
 }
 
-.Home-chats-room {
-  background-image: url("design/chats-pic.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.Home-chats-room1 {
   flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
+  height: 20%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("design/Home\ UI-01.png");
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
 }
+
+.Home-chats-room2 {
+    flex: 1;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("design/Home\ UI-02.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    }
+
+.Home-chats-room3 {
+  flex: 1;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("design/Home\ UI-03.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.Home-chats-room4 {
+  flex: 1;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("design/Home\ UI-04.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.Home-chats-room5 {
+  flex: 1;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("design/Home\ UI-05.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
 
 .Home-menu {
 flex: 1;

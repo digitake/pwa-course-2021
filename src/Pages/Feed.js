@@ -90,8 +90,8 @@ class Feed extends Component {
                     <Box>
                         <Avatar img={AvatarImg} />
                         <ProfileInfo
-                            name='Custom Name'
-                            id='UserID'
+                            name='Very Good'
+                            id='good.cat'
                             date='2 weeks ago' />
                         <Option popup='2' />
                         <Post text='

@@ -27,14 +27,12 @@ function Profile1(params) {
                 </div>
                 <div className = "Profileinfo">
                     {party}
+                   
                 </div>
+               </div>
+              
+             </div>
 
-            </div>
-            
-
-            
-            
-        </div>
         </App>
     )
 }

@@ -15,8 +15,13 @@ function Calendar(){
       <div className="Calendar-header2" ></div>
       <div className="Calendar-header3" ></div>  
     </div>
-      <div className ="Calendar-chatroom"></div>
+      <div className ="Calendar-chatroom">
       <div className = "Calendar-chatroom1"></div>
+      <div className = "Calendar-chatroom2">
+        
+      </div>
+      </div>
+      
       <div className="Calendar-textbox">
         <div className="Calendar-textbox-send" >
           <Link className={"Calendar-textbox-send"} to="/home"/>

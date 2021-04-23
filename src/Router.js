@@ -19,8 +19,6 @@ function Router(){
             </Route>
             ----
 
-
-
             <Route path="/AllChat">
                 <AllChatInterface/>
             </Route>
@@ -33,8 +31,6 @@ function Router(){
                 <MainProfile />
             </Route>
 
-    
-            
             <Route path="/Note">
                 <MainNote />
             </Route>

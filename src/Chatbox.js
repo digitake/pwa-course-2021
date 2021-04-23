@@ -21,7 +21,7 @@ function Chatbox() {
       setLines(l =>[...l, {
         sender : x.sender,
         message : x.message
-        //, timestamp : (new Date(x.timestamp))
+        , timestamp : (new Date(x.timestamp))
       }])
     })
   }, []);
@@ -54,14 +54,15 @@ function Chatbox() {
          {
            lines.map(x =>{
                return <div className="App-chatroom-text">
-                 <div>
+                 <div className="App-message">
                    {x.sender+":"}
                    {x.message}
                  </div>
-                  {/* <div>
+                  {<div className="App-time">
                       {x.timestamp.toLocaleString()}
-                  </div> */}
+                  </div>}
                  </div>
+                 
            }
            )
          }

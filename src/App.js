@@ -17,6 +17,11 @@ function App({children}) {
                <RiChatPrivateFill size = "3em" color = "white"/> 
                </div>
              </Link>
+             <Link to="/App">
+            <div>
+               <RiChat3Fill size = "3em" color = "white"/> 
+            </div>
+             </Link>
             <Link to="/friend-list">
             <div>
                <FaUserFriends size = "3em" color = "white"/> 
@@ -26,11 +31,6 @@ function App({children}) {
              <div>
                <CgProfile size = "3em" color = "white"/> 
               </div>
-             </Link>
-             <Link to="/App">
-            <div>
-               <RiChat3Fill size = "3em" color = "white"/> 
-            </div>
              </Link>
          </div>
       <div className ="App-content">

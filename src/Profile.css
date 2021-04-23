@@ -19,3 +19,9 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .Profile-name {
+    font-size: 20px;
+    color: rgb(99, 87, 87);
+
+  }

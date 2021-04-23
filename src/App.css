@@ -30,7 +30,6 @@
   background-image: url(game.JPG);
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content:flex-end;
   color: #000;
   padding-right: 16px;
@@ -49,7 +48,7 @@
 .App-chatroom-text {
   margin: 8px;
   background-color: rgb(99, 231, 132);
-  border-radius: 15px;
+  border-radius: 14px 14px 0 14px;
   overflow: hidden;
   
 }
@@ -78,6 +77,11 @@
   display: flex;
 }
 
+.App-message {
+  
+  justify-content: end;
+  justify-items: end;
+}
 
 /* @media (max-width: 768px){
 [class*="col-"]{

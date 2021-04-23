@@ -25,11 +25,6 @@ function NormalPage({children}) {
                <CgProfile size = "3em" color = "white"/> 
               </div>
              </Link>
-             <Link to="/App">
-            <div>
-               <RiChat3Fill size = "3em" color = "white"/> 
-            </div>
-             </Link>
          </div>
         <div className = "NormalPage-chatroom">
         <div className = "NormalPage-Main">

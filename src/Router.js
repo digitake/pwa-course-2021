@@ -5,6 +5,7 @@ import FriendList from './FriendList';
 import Profile from './Profile';
 import DarkChat from './DarkChat';
 import NormalPage from './NormalPage';
+import Login from './Login';
 
 
 function Router()
@@ -27,6 +28,9 @@ function Router()
             </Route>
             <Route path = "/NormalPage">
               <NormalPage />
+            </Route>
+            <Route path = "/Login">
+              <Login />
             </Route>
             <Route path = "/">
               <Chatbox />

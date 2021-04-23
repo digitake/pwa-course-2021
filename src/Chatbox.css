@@ -27,7 +27,6 @@
   
   .App-header {
     flex: 3;
-    background-image: url(game.JPG);
     display: flex;
     flex-direction: column;
     align-items: center;

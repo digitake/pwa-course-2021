@@ -27,22 +27,26 @@
   flex: 12;
   overflow: auto;
 }
-
 .App-chatroom-text 
 {
+  flex: 1;
+  font-family:'Oxygen';
+  padding: 8px;
+  max-width: 100%;
+  min-width: 215px;
+  display: flex;
   justify-content:flex-end;
   justify-items:flex-end;
-  margin: 8px;
-  background-color:#0048AA;
+  background-color:#d8fd08;
   border-radius: 14px 14px 0 14px;
-  color : rgb(255, 255, 255);
+  color : rgb(0, 0, 0);
   font-size: 20px;
 }
+
 .App-textbox 
 {
   flex: 1;
-  justify-content:flex-end;
-  justify-items:flex-end;
+  justify-content: center;
   align-items: stretch;
   display: flex;
 }

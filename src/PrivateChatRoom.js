@@ -39,6 +39,7 @@ const onTextChange = (event) => {
 
 };
 
+
   return (
       <Headerchat>
     <div className="AppPrivate">
@@ -51,7 +52,7 @@ const onTextChange = (event) => {
                   {x.sender + " : " + x.message + " " + x.timestamp.toLocaleString()}
                 </div>
               </div>
-        })  
+        })
       }
 
       </div>

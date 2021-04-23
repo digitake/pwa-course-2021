@@ -121,6 +121,7 @@
       right: 80px;
       width: 13%;
       opacity: 0;
+      border-radius: 3px 3px 3px 3px;
     }
     .menu.active{
       background: rgb(0, 0, 0);

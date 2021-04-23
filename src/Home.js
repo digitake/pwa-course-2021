@@ -35,10 +35,18 @@ function Home(){
             </div>
         </div>
         <div className="Home-menu">
-          <div className="Home-menu1"></div>
-          <div className="Home-menu2"></div>
-          <div className="Home-menu3"></div>
-          <div className="Home-menu4"></div>
+          <div className="Home-menu1">
+          <Link className={"Home-menu1"} to="/"/>
+          </div>
+          <div className="Home-menu2">
+          <Link className={"Home-menu2"} to="/music"/>
+          </div>
+          <div className="Home-menu3">
+          <Link className={"Home-menu3"} to="/"/>
+          </div>
+          <div className="Home-menu4">
+          <Link className={"Home-menu4"} to="/e-wallet"/>
+          </div>
         </div>
       </div>
       </App>

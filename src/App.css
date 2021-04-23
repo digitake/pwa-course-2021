@@ -56,9 +56,6 @@
   align-items: center;
   display: flex;
 
-
-  overflow: auto;
-
 }
 .App-header1 {
   background-image: url(design/App\ Content-01.png);
@@ -70,7 +67,6 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  overflow: auto;
 }
 .App-header2 {
   background-image: url();
@@ -98,7 +94,6 @@
 }
 .App-content{
   flex: 12;
-  overflow: auto;
   width: 100%;
   
 }

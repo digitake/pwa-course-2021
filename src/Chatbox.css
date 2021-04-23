@@ -12,11 +12,13 @@
 @media (min-width: 700px) {
   .App{
     max-width:100%;
+    max-height: 100%;
   }
     }
 @media (min-width: 950px) {
   .App{
     max-width:100%;
+    max-height: 100%;
   }
     }
 
@@ -28,15 +30,12 @@
 .Chatbox-header {
   background-color: rgb(255, 255, 255);
   background-position: center;
-  
   flex: 1;
   height: 10%;
   vertical-align:top;
   justify-content: center;
   align-items: center;
   display: flex;
-  
-  
 }
 
 .Chatbox-header1 {

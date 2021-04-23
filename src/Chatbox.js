@@ -57,8 +57,6 @@ function ChatBox({ children }) {
                     <div className = "Chatbox-header3"></div>  
               </div>
               <div className="App col-12">
-                  
-             
                   <div className="App-chatroom">
                   {
                     lines.map(x => {
@@ -74,10 +72,7 @@ function ChatBox({ children }) {
                   }
                   </div>
                   {children}
-
-                  
               </div>
-
                {/*ChatBar Input*/}
           <div className="App-textbox">
                     <input type="text" className="Chatbox-textbox-input" 
@@ -86,14 +81,7 @@ function ChatBox({ children }) {
                     <div className="App-textbox-send1" onClick={onSend}></div>
                     <div className="App-textbox-send2" onClick={onSend}></div>
                   </div>
-              
           </App>
-
-         
-
-
-         
-          
       </>
   );
 }

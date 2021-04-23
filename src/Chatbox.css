@@ -12,11 +12,13 @@
 @media (min-width: 700px) {
   .App{
     max-width:100%;
+    max-height: 100%;
   }
     }
 @media (min-width: 950px) {
   .App{
     max-width:100%;
+    max-height: 100%;
   }
     }
 
@@ -28,19 +30,16 @@
 .Chatbox-header {
   background-color: rgb(255, 255, 255);
   background-position: center;
-  
   flex: 1;
   height: 10%;
   vertical-align:top;
   justify-content: center;
   align-items: center;
   display: flex;
-  
-  
 }
 
 .Chatbox-header1 {
-  background-image: url(design/Design\ Chi\ CHi\ App-08.png);
+  background-image: url(design/Chat/Design\ Chi\ CHi\ App-08.png);
   background-position: left;
   background-repeat: no-repeat;
   flex: 2;
@@ -53,7 +52,8 @@
 }
 
 .Chatbox-header2 {
-  background-image: url(design/Design\ Chi\ CHi\ App-09.png);
+  background-image: url(design/Chat/Design\ Chi\ CHi\ App-09.png);
+  background-size: 105%;
   background-position: center;
   background-repeat: no-repeat;
   flex: 2;
@@ -65,7 +65,7 @@
   overflow: auto;
 }
 .Chatbox-header3 {
-  background-image: url(design/Design\ Chi\ CHi\ App-10.png);
+  background-image: url(design/Chat/Design\ Chi\ CHi\ App-10.png);
   background-position: right;
   background-repeat: no-repeat;
   flex: 2;
@@ -143,7 +143,7 @@
   color: rgb(6, 87, 119);
 }
 .App-textbox-send {
-  background-image: url(design/Design\ Chi\ CHi\ App-03.png);
+  background-image: url(design/Chat/Design\ Chi\ CHi\ App-03.png);
   background-position: center;
   background-repeat: no-repeat;
   flex:0.5;
@@ -154,7 +154,7 @@
   display: flex;
 }
 .App-textbox-send1 {
-  background-image: url(design/Design\ Chi\ CHi\ App-04.png);
+  background-image: url(design/Chat/Design\ Chi\ CHi\ App-04.png);
   background-position: center;
   background-repeat: no-repeat;
   flex: 0.5;
@@ -165,7 +165,7 @@
   display: flex;
 }
 .App-textbox-send2 {
-  background-image: url(design/Design\ Chi\ CHi\ App-05.png);
+  background-image: url(design/Chat/Design\ Chi\ CHi\ App-05.png);
   background-position: center;
   background-repeat: no-repeat;
   flex: 0.5;

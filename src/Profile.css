@@ -43,7 +43,7 @@
   }
   
   .Profile-header1 {
-    background-image: url("design/profile-back.png");
+    background-image: url("design/Profile/profile-back.png");
     
     background-position: left;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@
   }
   
   .Profile-header3 {
-    background-image: url("design/profile-next-05.png");
+    background-image: url("design/Profile/profile-next-05.png");
     background-position: right;
     background-repeat: no-repeat;
     flex: 1;
@@ -82,7 +82,7 @@
   }
   
   .Profile-chatroom {
-    background-image: url("design/login-profile.png");
+    background-image: url("design/Profile/login-profile.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size:90%;
@@ -93,7 +93,7 @@
   }
 
   .Profile-chatroom1 {
-    background-image: url("design/profile-welcome.png");
+    background-image: url("design/Profile/profile-welcome.png");
     
     background-repeat: no-repeat;
     background-position: center;

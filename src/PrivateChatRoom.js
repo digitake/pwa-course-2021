@@ -54,7 +54,6 @@ const onTextChange = (event) => {
               </div>
         })
       }
-
       </div>
 
       <div className="App-textbox">

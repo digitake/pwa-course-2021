@@ -14,13 +14,26 @@
     max-width:100%;
     max-height: 100%;
   }
-    }
+  
+}
 @media (min-width: 950px) {
   .App{
     max-width:100%;
     max-height: 100%;
   }
-    }
+}
+@media(max-width: 768px){
+  .Chatbox-header2{
+    background-size: 105%;
+  }
+}
+
+@media(min-width: 1600px){
+  .Chatbox-header2{
+    background-size: 35%;
+  }
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -53,7 +66,6 @@
 
 .Chatbox-header2 {
   background-image: url(design/Chat/Design\ Chi\ CHi\ App-09.png);
-  background-size: 105%;
   background-position: center;
   background-repeat: no-repeat;
   flex: 2;

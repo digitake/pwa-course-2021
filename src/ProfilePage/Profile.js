@@ -13,7 +13,12 @@ function Profile({children}){
         </div>
 
         <div className="Profile-Box-Profile">
-      
+
+         <div className="Profile-coverPhoto">
+         <img src ="Profile-img.png"/>
+         </div>
+         
+         <h2>Rimuru Tempest</h2>
         </div>
 
         <div className="Profile-Box-Button">

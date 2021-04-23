@@ -40,11 +40,13 @@
   height: 50%;
   flex: 8;
   box-sizing: circle;
-  background: -webkit-linear-gradient(rgb(70, 70, 70),rgb(50, 50, 50));
+  background: -webkit-linear-gradient(rgb(80, 80, 80),rgb(50, 50, 50));
 }
 
 .Profile-coverPhoto{
-  flex: 6;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .Profile-content {

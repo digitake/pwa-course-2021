@@ -46,7 +46,8 @@
         height: 825px;
         margin: auto;
         background-repeat: no-repeat;
-        background-image: url(/src/AppchatUpdate/Log\ In.png);
+        background-color: #2D2C67;
+        background-image: url(/src/AppchatUpdate/Tap.png);
     }
 
     .Undo{

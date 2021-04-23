@@ -22,6 +22,8 @@ function SettingPage() {
                  <div className = "Header-text"/>
                     
             </div>
+
+            <div></div>
            
             <div className = "OptionSetting">
 

@@ -1,6 +1,10 @@
 import './Chatbox.css';
 import { useState, useEffect } from 'react';
 import App from './App';
+import { MdSettings } from 'react-icons/md';
+import { Link } from 'react-router-dom';
+
+
 
 import firebase from './firebaseConfig';     //ดึงconfigที่เพิ่งจะทำมาเตรียมใช้งาน
 
@@ -17,7 +21,7 @@ function Chatbox() {
       setLines(l =>[...l, {
         sender : x.sender,
         message : x.message
-        //, timestamp : (new Data(x.timestamp))
+        //, timestamp : (new Date(x.timestamp))
       }])
     })
   }, []);
@@ -63,6 +67,13 @@ function Chatbox() {
          }
        </div>
        <div className="App-textbox">
+       <div className="App-setting">
+       <Link to="/DarkChat">
+             <div>
+               <MdSettings size = "2em" color = "white"/> 
+               </div>
+             </Link>
+       </div>
          <input type="text" className="App-textbox-input" value={text} onChange={onTextChange}/>
          <div className="App-textbox-send" onClick={onSend}>Send!</div>
        </div>

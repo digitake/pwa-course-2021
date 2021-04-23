@@ -6,6 +6,8 @@ import Profile from './Profile';
 import DarkChat from './DarkChat';
 import NormalPage from './NormalPage';
 import Login from './Login';
+import Shop from './Shop';
+
 
 
 function Router()
@@ -31,6 +33,9 @@ function Router()
             </Route>
             <Route path = "/Login">
               <Login />
+            </Route>
+            <Route path = "/Shop">
+              <Shop />
             </Route>
             <Route path = "/">
               <Chatbox />

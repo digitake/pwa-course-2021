@@ -75,6 +75,8 @@
     justify-content: center;
     display: flex;
     align-items: center;
+    column-count:3;
+    column-gap:5px;
   }
   
   /* @media (max-width: 768px){

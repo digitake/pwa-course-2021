@@ -2,8 +2,7 @@ import './NormalPage.css';
 import { Link } from 'react-router-dom';
 import { FaUserFriends } from 'react-icons/fa';
 import { CgProfile } from 'react-icons/cg';
-import {RiChat3Fill } from 'react-icons/ri';
-import { RiChatPrivateFill } from 'react-icons/ri';
+import { AiFillShop } from 'react-icons/ai';
 
 function NormalPage({children}) {
     
@@ -18,6 +17,11 @@ function NormalPage({children}) {
              <Link to="/Profile">
              <div>
                <CgProfile size = "3em" color = "white"/> 
+              </div>
+             </Link>
+             <Link to="/Shop">
+             <div>
+               <AiFillShop size = "3em" color = "white"/> 
               </div>
              </Link>
          </div>

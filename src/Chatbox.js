@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import App from './App';
 import { MdSettings } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import { RiChatPrivateFill } from 'react-icons/ri';
 
 
 
@@ -69,9 +70,14 @@ function Chatbox() {
        </div>
        <div className="App-textbox">
        <div className="App-setting">
-       <Link to="/Login">
+       <Link to="/friend-list">
              <div>
                <MdSettings size = "2em" color = "white"/> 
+               </div>
+             </Link>
+             <Link to="/DarkChat">
+             <div>
+               <RiChatPrivateFill size = "2em" color = "white"/> 
                </div>
              </Link>
        </div>

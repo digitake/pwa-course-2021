@@ -44,4 +44,4 @@ const onSend = () => {
     </div>
   );
 }
-export default Chatbox;
+export default App;

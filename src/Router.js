@@ -6,8 +6,7 @@ import ChatboxTest from './Chatbox-Test';
 import ProjectRandom from './Project-Random';
 import AllChatInterface from './ChatFriend';
 import MainNote from './Note';
-import MainProfile from './profile';
-import Chatbox from './Chatbox';
+import MainProfile from './Profile';
 
 function Router(){
 
@@ -16,10 +15,6 @@ function Router(){
         <Switch>
 
             ----
-            <Route  path="/Chatbox">
-               <Chatbox />
-            </Route>
-
             <Route  path="/chatbox-test">
                <ChatboxTest />
             </Route>

@@ -34,8 +34,7 @@
   padding: 8px;
   max-width: 25%;
   display: flex;
-  justify-content:flex;
-  justify-items:flex;
+  align-items: flex-end;
   background-color:#d8fd08;
   border-radius: 14px 14px 0 14px;
   color : rgb(0, 0, 0);

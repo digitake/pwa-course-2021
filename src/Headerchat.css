@@ -13,14 +13,7 @@
     flex: 12;
     overflow: auto;
   }
-  
-.App-chatroom-text 
-  {
-    margin: 8px;
-    background-color: rgb(144, 218, 101);
-    color : rgb(0, 0, 0);
-    font-size: 20px;
-  }
+ 
   
 .App-textbox {
     flex: 1;

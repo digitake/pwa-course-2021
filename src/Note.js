@@ -26,9 +26,9 @@ function MainNote() {
 
 
             <div className = "circlesbox3">
-            <Link to="/" className="image-between">
+            <Link to="/Noteparper" className="image-between">
                     <img src= "plus.png" alt = "plus.png" width="190px" height="190px"/> 
-                </Link>
+            </Link>
             </div>
 
             </div>

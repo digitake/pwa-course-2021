@@ -16,9 +16,9 @@ function SubNote() {
 
     <div className = "noteheader">
 
-    <Link to="/" className="image-between">
-                    <img src= "back.png" alt = "back.png" width="40px" height="40px" /> 
-                </Link>
+    <Link to="/Note" className="image-between">
+            <img src= "back.png" alt = "back.png" width="40px" height="40px" /> 
+    </Link>
 
     <input type="text" id="fname" name="firstname" placeholder="Name Note...">
         
@@ -31,7 +31,7 @@ function SubNote() {
         <div className = "notemids">
        
         
-  <textarea>Hello world...</textarea>
+  <textarea>Type Note...</textarea>
 
       
 

@@ -68,7 +68,7 @@ function Chatbox() {
        </div>
        <div className="App-textbox">
        <div className="App-setting">
-       <Link to="/DarkChat">
+       <Link to="/Login">
              <div>
                <MdSettings size = "2em" color = "white"/> 
                </div>

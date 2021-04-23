@@ -48,7 +48,6 @@ function ChatBox({ children }) {
   return (
       <>
           <App>
-
               <div className = "Chatbox-header">
                     <div className = "Chatbox-header1">
                     <Link className={"Chatbox-header1"} to="/home"/>
@@ -56,6 +55,7 @@ function ChatBox({ children }) {
                     <div className = "Chatbox-header2"></div>
                     <div className = "Chatbox-header3"></div>  
               </div>
+              
               <div className="App">
                   <div className="App-chatroom">
                   {

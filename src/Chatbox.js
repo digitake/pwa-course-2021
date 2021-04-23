@@ -55,7 +55,7 @@ function ChatBox({ children }) {
                     <div className = "Chatbox-header2"></div>
                     <div className = "Chatbox-header3"></div>  
               </div>
-              
+
               <div className="App">
                   <div className="App-chatroom">
                   {

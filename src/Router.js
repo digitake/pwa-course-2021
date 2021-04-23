@@ -1,13 +1,12 @@
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import App from './App';
 
-import FriendList from './FriendList';
 import ChatboxTest from './Chatbox-Test';
 
 import ProjectRandom from './Project-Random';
 import AllChatInterface from './ChatFriend';
 import MainNote from './Note';
-import MainProfile from './profile';
+import MainProfile from './Profile';
 
 function Router(){
 
@@ -16,10 +15,6 @@ function Router(){
         <Switch>
 
             ----
-            <Route  path="/friend-list">
-               <FriendList />
-            </Route>
-
             <Route  path="/chatbox-test">
                <ChatboxTest />
             </Route>

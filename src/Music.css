@@ -8,19 +8,45 @@
     margin: auto;
   }
   
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
   
     .Music {
       background-color: rgb(207, 238, 250);
     }
     .Music-header1{
+      background-size: 50%;
       background-color: rgb(255, 255, 255);
       background-position: left;
     }
-  
     .Music-header3{
+      background-size: 50%;
       background-color: rgb(255, 255, 255);
       background-position: right;
+    }
+    .Music-chatroom{
+      flex-direction: column;
+      background-size: 90%;
+    }
+    .Music-chatroom1{
+      flex-direction: column;
+      background-size: 80%;
+    }
+    .Music-chatroom2{
+      flex-direction: column;
+      background-size: 80%;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    
+    .Music-chatroom{
+      background-size: 25%;
+    }
+    .Music-chatroom1{
+      background-size: 20%;
+    }
+    .Music-chatroom2{
+      background-size: 25%;
     }
   }
   
@@ -42,7 +68,7 @@
   }
   
   .Music-header1 {
-    background-image: url(design/Profile/profile-back.png);
+    background-image: url(design/Music/Music\ UI-02.png);
     background-position: left;
     background-repeat: no-repeat;
     flex: 1;
@@ -57,7 +83,7 @@
     background-image: url();
     background-position: center;
     background-repeat: no-repeat;
-    flex: 1;
+    flex: 2;
     height: 100%;
     vertical-align: middle;
     justify-content: center;
@@ -66,7 +92,7 @@
   }
   
   .Music-header3 {
-    background-image: url(design/Music/Music_icon-05.png);
+    background-image: url(design/Music/Music\ UI-03.png);
     background-position: right;
     background-repeat: no-repeat;
     flex: 1;
@@ -78,25 +104,34 @@
   }
   
   .Music-chatroom {
-    background-image: url(design/Music/Music_Background-01.png);
+    background-image: url(design/Music/Music\ UI-04.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size:80%;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
-    flex: 4;
+    flex: 1;
+    display: flex;
   }
-
   .Music-chatroom1 {
-    background-image: url(design/Music/Music_Background-02.png);
+    background-image: url(design/Music/Music\ UI-01.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size:80%;
+    background-position: top;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
-    flex: 4;
+    flex: 3;
+    display: flex;
+  }
+  .Music-chatroom2 {
+    background-image: url(design/Music/Music\ UI-05.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    display: flex;
   }
 
   .Music-chatroom-text {
@@ -125,7 +160,7 @@
   }
   
   .Music-textbox-send {
-    background-image: url(design/Music/Music_icon-04.png);
+    background-image: url(design/Music/Music\ UI-06.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -137,7 +172,7 @@
   }
   
   .Music-textbox-send1 {
-    background-image: url(design/Music/Music_icon-06.png);
+    background-image: url(design/Music/Music\ UI-07.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -149,7 +184,7 @@
   }
   
   .Music-textbox-send2 {
-    background-image: url(design/Music/Music_icon-01.png);
+    background-image: url(design/Music/Music\ UI-08.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -160,30 +195,6 @@
     display: flex;
   }
 
-  .Music-textbox-send3 {
-    background-image: url(design/Music/Music_icon-02.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1;
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-
-  .Music-textbox-send4 {
-    background-image: url(design/Music/Music_icon-03.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1;
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-  
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}

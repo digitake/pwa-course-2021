@@ -17,6 +17,7 @@ function Music(){
     </div>
       <div className ="Music-chatroom"></div>
       <div className = "Music-chatroom1"></div>
+      <div className = "Music-chatroom2"></div>
       <div className="Music-textbox">
         <div className="Music-textbox-send" >
           <Link className={"Music-textbox-send"} to="/home"/>

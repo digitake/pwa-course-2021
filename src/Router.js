@@ -1,13 +1,12 @@
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import App from './App';
 
-import ChatboxTest from './Chatbox-Test';
-
 import ProjectRandom from './Project-Random';
 import AllChatInterface from './ChatFriend';
 import MainNote from './Note';
 import MainProfile from './Profile';
 
+import Chatbox from './Chatbox-Test';
 function Router(){
 
     return(
@@ -15,8 +14,8 @@ function Router(){
         <Switch>
 
             ----
-            <Route  path="/chatbox-test">
-               <ChatboxTest />
+            <Route  path="/ChatboxTest">
+               <Chatbox/>
             </Route>
             ----
 

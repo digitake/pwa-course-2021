@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './App.css';
 import AppContent from './Content'
 
@@ -6,16 +7,14 @@ function AllChatInterface() {
 
     return(
         <AppContent>
-        
-
           <div className="AllChat-Header">
             <div className="Search-Box">
-             [Search Box] [Search Box] [Search Box]
+              Write something to search..
             </div>
 
           </div>
 
-          <div className="Middle-Zone">
+          <Link to="/chatbox-test" className="Middle-Zone">
               
               <div className = "FriendChat-Box">
 
@@ -24,15 +23,14 @@ function AllChatInterface() {
                 </div>
 
                 <div className = "LastChat">
-                   So Hungry pls back to home 
+                   Ok
                 </div>
 
                 <div className = "FriendPic">              
                   <img src= "cat.png" alt = "profile.png" width="100px" height="105px"/>
                 </div>
                 </div>
-            </div>
-
+                </Link>
          </AppContent>
     );
     

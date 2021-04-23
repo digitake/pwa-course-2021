@@ -1,5 +1,7 @@
+<<<<<<< HEAD
+=======
 {
-  "short_name": "React App",
+  "short_name": "Tang Tee",
   "name": "Create React App Sample",
   "icons": [
     {
@@ -23,3 +25,4 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+>>>>>>> 2402876fed2ffb983cd8bb9bd2b903dee22ef3d7

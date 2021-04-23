@@ -1,0 +1,42 @@
+.Home
+{
+    background-image:url(logo.png) ;
+    max-width: 1920px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#ffe2ae;
+    height: 100%;
+    
+    
+}
+.link
+{
+    margin:2px ;
+    display: flex;
+    justify-content: flex-end;
+}
+    
+    
+
+
+@media (max-width: 768px)
+{
+    .Home
+    {
+      background-image: url(logo.png);
+      background-size: cover;
+    }
+    
+    .link{
+        
+    }
+}
+      
+    
+
+
+
+
+
+
+    

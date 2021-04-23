@@ -48,7 +48,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  overflow: auto;
+  
 }
 
 .Chatbox-header2 {
@@ -62,7 +62,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  overflow: auto;
+  
 }
 .Chatbox-header3 {
   background-image: url(design/Chat/Design\ Chi\ CHi\ App-10.png);
@@ -74,7 +74,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  overflow: auto;
+  
 }
 
 .App-Botton{
@@ -99,7 +99,7 @@
 }
 
 .App-chatroom {
-  flex: 12;
+  flex: 20;
   background-image: url();
   background-position: center;
   background-repeat: no-repeat;
@@ -141,6 +141,7 @@
   height: 100%;
   box-sizing: border-box;
   color: rgb(6, 87, 119);
+  display: flex;
 }
 .App-textbox-send {
   background-image: url(design/Chat/Design\ Chi\ CHi\ App-03.png);

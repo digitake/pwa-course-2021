@@ -11,6 +11,7 @@ function MainProfile() {
             <div className = "profilehead">
 
             </div>
+            
             <div className = "profilemid">
                 <div className ="framepic">
                 <Link to="/" className="profilepic">

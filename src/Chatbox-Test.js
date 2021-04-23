@@ -1,6 +1,7 @@
 import './Chatbox.css';
 import { useState, useEffect } from 'react';
 import App from './App'
+import AppContent from './Content'
 
 import firebase from './firebaseConfig';
 
@@ -43,7 +44,7 @@ function Chatbox() {
     };
 
   return (
-    <App>
+          <AppContent>
             <div className = "App-chatroom">
                 {
                 lines.map(x => {
@@ -69,8 +70,7 @@ function Chatbox() {
             <div className="App-textbox-send" onClick={onSend}>Send!</div>
 
             </div>
-        
-    </App>
+            </AppContent>
   );
 }
 export default Chatbox;

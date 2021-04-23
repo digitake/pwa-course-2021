@@ -5,12 +5,15 @@ import logo2 from './ContactLogo.png';
 
 function App({children}) {
   return (
-    <div className="App">
+    <div className="App col-6">
       <div className="App-header">
-        <Link to="/friend-list">
+        <Link to="/friend-list" className="App-header-button">
                 <img src={logo2}/>
               </Link>
-        <Link to="/">
+        <Link to="/Profile" className="App-header-button">
+                  <img src={logo3}/>
+              </Link>
+        <Link to="/Chatbox" className="App-header-button">
                 <img src={logo1}/>
         </Link>
         

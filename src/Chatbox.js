@@ -77,7 +77,9 @@ function ChatBox({ children }) {
             <div className="App-textbox">
                     <input type="text" className="App-textbox-input" 
                     value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-                    <div className="App-textbox-send" onClick={onSend}></div>
+                    <div className="App-textbox-send"> 
+                    <Link className = {"App-textbox-send"} to = "/music"/>
+                    </div>
                     <div className="App-textbox-send1" onClick={onSend}></div>
                     <div className="App-textbox-send2" onClick={onSend}></div>
                   </div>

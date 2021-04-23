@@ -42,7 +42,7 @@
   }
   
   .Calendar-header1 {
-    background-image: url(design/Calendar_UI-01.png);
+    background-image: url(design/Calendar/Calendar_UI-01.png);
     background-position: left;
     background-repeat: no-repeat;
     flex: 1;
@@ -66,7 +66,7 @@
   }
   
   .Calendar-header3 {
-    background-image: url(design/Calendar_UI-02.png);
+    background-image: url(design/Calendar/Calendar_UI-02.png);
     background-position: right;
     background-repeat: no-repeat;
     flex: 1;
@@ -78,7 +78,7 @@
   }
   
   .Calendar-chatroom {
-    background-image: url(design/Calendar_UI-03.png);
+    background-image: url(design/Calendar/Calendar_UI-03.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:90%;
@@ -89,7 +89,7 @@
   }
 
   .Calendar-chatroom1 {
-    background-image: url(design/Calendar_UI-04.png);
+    background-image: url(design/Calendar/Calendar_UI-04.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:90%;
@@ -125,7 +125,7 @@
   }
   
   .Calendar-textbox-send {
-    background-image: url(design/Calendar_UI-05.png);
+    background-image: url(design/Calendar/Calendar_UI-05.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -137,7 +137,7 @@
   }
   
   .Calendar-textbox-send1 {
-    background-image: url(design/Calendar_UI-06.png);
+    background-image: url(design/Calendar/Calendar_UI-06.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -149,7 +149,7 @@
   }
   
   .Calendar-textbox-send2 {
-    background-image: url(design/Calendar_UI-07.png);
+    background-image: url(design/Calendar/Calendar_UI-07.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -161,7 +161,7 @@
   }
 
   .Calendar-textbox-send3 {
-    background-image: url(design/Calendar_UI-08.png);
+    background-image: url(design/Calendar/Calendar_UI-08.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -173,7 +173,7 @@
   }
 
   .Calendar-textbox-send4 {
-    background-image: url(design/Calendar_UI-09.png);
+    background-image: url(design/Calendar/Calendar_UI-09.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;

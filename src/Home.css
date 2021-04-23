@@ -26,34 +26,34 @@
   }
 
   .Home-chats-room1{
-      background-image: url("design/Home\ UI\ PC-06.png");
+      background-image: url("design/Home/Home\ UI\ PC-06.png");
       background-position: center;
       background-size: 80%;
       background-repeat: no-repeat;
   }
 
   .Home-chats-room2{
-    background-image: url("design/Home\ UI\ PC-07.png");
+    background-image: url("design/Home/Home\ UI\ PC-07.png");
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
 }
 
 .Home-chats-room3{
-  background-image: url("design/Home\ UI\ PC-08.png");
+  background-image: url("design/Home/Home\ UI\ PC-08.png");
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
 }
 
 .Home-chats-room4{
-  background-image: url("design/Home\ UI\ PC-09.png");
+  background-image: url("design/Home/Home\ UI\ PC-09.png");
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
 }
 .Home-chats-room5{
-  background-image: url("design/Home\ UI\ PC-10.png");
+  background-image: url("design/Home/Home\ UI\ PC-10.png");
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
@@ -63,37 +63,43 @@
 
 @media (max-width: 768px) {
   .Home-chats-room1{
-    background-image: url("design/Home\ UI-01.png");
+    background-image: url("design/Home/Home\ UI-01.png");
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
+    background-color: rgb(207, 238, 250);
   }
 
   .Home-chats-room2{
-    background-image: url("design/Home\ UI-02.png");
+    background-image: url("design/Home/Home\ UI-02.png");
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
+    background-color: rgb(207, 238, 250);
   }
 
   .Home-chats-room3{
-    background-image: url("design/Home\ UI-03.png");
+    background-image: url("design/Home/Home\ UI-03.png");
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
+    background-color: rgb(207, 238, 250);
   }
 
   .Home-chats-room4{
-    background-image: url("design/Home\ UI-04.png");
+    background-image: url("design/Home/Home\ UI-04.png");
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
+    background-color: rgb(207, 238, 250);
   }
   .Home-chats-room5{
-    background-image: url("design/Home\ UI-05.png");
+    background-image: url("design/Home/Home\ UI-05.png");
+    background-color: rgb(207, 238, 250);
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
+    
   }
 }
 
@@ -111,9 +117,8 @@ display: flex;
 }
 
 .Home-header1 {
-background-image: url("design/profile-icon.png");
-background-size: 50px;
-background-position: center;
+background-image: url("design/Home/Home\ Icon-01.png");
+background-position: left;
 background-repeat: no-repeat;
 flex: 1;
 height: 100%;
@@ -123,8 +128,7 @@ align-items: center;
 display: flex;
 }
 .Home-header2 {
-background-image: url("design/Logo_ChiCHi-04.png");
-background-size: 65px;
+background-image: url("design/Home/Home\ Icon-04.png");
 background-position: center;
 background-repeat: no-repeat;
 flex: 1;
@@ -136,8 +140,7 @@ display: flex;
 }
 
 .Home-header3 {
-background-image: url("design/calendar-icon.png");
-background-size: 50px;
+background-image: url("design/Home/Home\ Icon-02.png");
 background-position: center;
 background-repeat: no-repeat;
 flex: 1;
@@ -154,42 +157,51 @@ flex: 8;
 
 .Home-chats-room1 {
   flex: 1;
-  height: 20%;
+  height: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 15px 0%;
+  
 }
 
 .Home-chats-room2 {
     flex: 1;
-    height: 20%;
+    height: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    vertical-align: middle;
+    margin: 15px 0%;
+
   }
 
 .Home-chats-room3 {
   flex: 1;
-    height: 20%;
+    height: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 15px 0%;
 }
 
 .Home-chats-room4 {
   flex: 1;
-    height: 20%;
+    height: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 15px 0%;
 }
 
 .Home-chats-room5 {
   flex: 1;
-    height: 20%;
+    height: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 15px 0%;
+    
 }
 
 
@@ -203,8 +215,7 @@ display: flex;
 color: rgb(228, 222, 222);
 }
 .Home-menu1 {
-background-image: url("design/Logo_ChiCHi-04.png");
-background-size: 65px;
+background-image: url("design/Home/Home\ Icon-05.png");
 background-position: center;
 background-repeat: no-repeat;
 flex: 1;
@@ -215,7 +226,7 @@ align-items: center;
 display: flex;
 }
 .Home-menu2 {
-background-image: url("design/Design\ Chi\ CHi\ App-03.png");
+background-image: url("design/Home/Home\ Icon-06.png");
 background-position: center;
 background-repeat: no-repeat;
 flex: 1;
@@ -225,6 +236,17 @@ justify-content: center;
 align-items: center;
 display: flex;
 }
+.Home-menu3 {
+  background-image: url("design/Home/Home\ Icon-03.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  }
 
 .Home-menu3 {
   background-position: center;

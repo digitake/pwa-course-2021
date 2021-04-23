@@ -42,7 +42,7 @@
   }
   
   .Music-header1 {
-    background-image: url(design/profile-back.png);
+    background-image: url(design/Profile/profile-back.png);
     background-position: left;
     background-repeat: no-repeat;
     flex: 1;
@@ -66,7 +66,7 @@
   }
   
   .Music-header3 {
-    background-image: url(design/Music_icon-05.png);
+    background-image: url(design/Music/Music_icon-05.png);
     background-position: right;
     background-repeat: no-repeat;
     flex: 1;
@@ -78,7 +78,7 @@
   }
   
   .Music-chatroom {
-    background-image: url(design/Music_Background-01.png);
+    background-image: url(design/Music/Music_Background-01.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:80%;
@@ -89,7 +89,7 @@
   }
 
   .Music-chatroom1 {
-    background-image: url(design/Music_Background-02.png);
+    background-image: url(design/Music/Music_Background-02.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:80%;
@@ -125,7 +125,7 @@
   }
   
   .Music-textbox-send {
-    background-image: url(design/Music_icon-04.png);
+    background-image: url(design/Music/Music_icon-04.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -137,7 +137,7 @@
   }
   
   .Music-textbox-send1 {
-    background-image: url(design/Music_icon-06.png);
+    background-image: url(design/Music/Music_icon-06.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -149,7 +149,7 @@
   }
   
   .Music-textbox-send2 {
-    background-image: url(design/Music_icon-01.png);
+    background-image: url(design/Music/Music_icon-01.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -161,7 +161,7 @@
   }
 
   .Music-textbox-send3 {
-    background-image: url(design/Music_icon-02.png);
+    background-image: url(design/Music/Music_icon-02.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -173,7 +173,7 @@
   }
 
   .Music-textbox-send4 {
-    background-image: url(design/Music_icon-03.png);
+    background-image: url(design/Music/Music_icon-03.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;

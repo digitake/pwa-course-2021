@@ -8,10 +8,10 @@ function Home(){
         <div className="Home">
          <div className="Home-header">
           <div className="Home-header1" >
-           <Link className={"Home-header1"} to="/profile"/>
+           <Link className={"Home-header1"} to="/home"/>
           </div>
           <div className="Home-header2" >
-           <Link className={"Home-header2"} to="/e-wallet"/>
+           <Link className={"Home-header2"} to="/home"/>
           </div>
           <div className="Home-header3">
             <Link className={"Home-header3"} to="/calendar"/>
@@ -36,16 +36,13 @@ function Home(){
         </div>
         <div className="Home-menu">
           <div className="Home-menu1">
-          <Link className={"Home-menu1"} to="/"/>
+          <Link className={"Home-menu1"} to="/profile"/>
           </div>
           <div className="Home-menu2">
-          <Link className={"Home-menu2"} to="/music"/>
+          <Link className={"Home-menu2"} to="/game"/>
           </div>
           <div className="Home-menu3">
-          <Link className={"Home-menu3"} to="/"/>
-          </div>
-          <div className="Home-menu4">
-          <Link className={"Home-menu4"} to="/e-wallet"/>
+          <Link className={"Home-menu3"} to="/e-wallet"/>
           </div>
         </div>
       </div>

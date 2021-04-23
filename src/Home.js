@@ -39,7 +39,7 @@ function Home(){
           <Link className={"Home-menu1"} to="/profile"/>
           </div>
           <div className="Home-menu2">
-          <Link className={"Home-menu2"} to="/game"/>
+          
           </div>
           <div className="Home-menu3">
           <Link className={"Home-menu3"} to="/e-wallet"/>

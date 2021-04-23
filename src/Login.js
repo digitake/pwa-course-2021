@@ -7,7 +7,7 @@ function Login() {
     
     return(
         <div className ="Login-main">
-        <Link to="/">
+        <Link to="/friend-list">
             <div className ="Login-button">
                 Login
                </div>

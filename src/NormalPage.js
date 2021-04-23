@@ -10,11 +10,6 @@ function NormalPage({children}) {
     return (
        <div className = "NormalPage">
              <div className = "NormalPage-header">
-             <Link to="/DarkChat">
-             <div>
-               <RiChatPrivateFill size = "3em" color = "white"/> 
-               </div>
-             </Link>
             <Link to="/friend-list">
             <div>
                <FaUserFriends size = "3em" color = "white"/> 

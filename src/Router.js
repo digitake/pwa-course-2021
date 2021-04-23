@@ -7,6 +7,7 @@ import ProjectRandom from './Project-Random';
 import AllChatInterface from './ChatFriend';
 import MainNote from './Note';
 import MainProfile from './Profile';
+import SubNotes from './Notepaper';
 
 function Router(){
 
@@ -39,6 +40,17 @@ function Router(){
             <Route path="/Note">
                 <MainNote />
             </Route>
+
+
+            
+            <Route path="/Noteparper">
+                <SubNotes />
+            </Route>
+
+
+
+
+
 
             <Route path="/">
                 <App />

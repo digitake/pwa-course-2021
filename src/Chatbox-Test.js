@@ -1,6 +1,5 @@
 import './Chatbox.css';
 import { useState, useEffect } from 'react';
-import App from './App'
 import AppContent from './Content'
 
 import firebase from './firebaseConfig';

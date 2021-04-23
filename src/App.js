@@ -2,8 +2,6 @@ import './App.css';
 import {Link} from 'react-router-dom';
 import logo1 from './ChatIcon.png';
 import logo2 from './ContactLogo.png';
-import logo3 from './ProfileLogo.png';
-
 
 function App({children}) {
   return (
@@ -18,6 +16,7 @@ function App({children}) {
         <Link to="/Chatbox" className="App-header-button">
                 <img src={logo1}/>
         </Link>
+        
       </div>
     <div className="App-Content">
     {children}

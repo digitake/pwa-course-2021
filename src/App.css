@@ -327,3 +327,30 @@
 .fontSmall {
   font-size: 25px;
 }
+
+
+#borderBackground {
+  background-position: center center;
+  border-radius: 25px;
+  background: #929292;
+  padding: 10px;
+  width: 400px;
+  height: 700px;
+}
+
+.container-1
+{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+#borderListBackground {
+  font-size: 30px;
+  background-position: top center;
+  border-radius: 25px;
+  background: #ffffff;
+  padding: 10%;
+  width: 80%;
+  height: 1px;
+}

@@ -1,12 +1,11 @@
 import './App.css';
 import Content from './Content'
-
+import {Link} from 'react-router-dom';
 
 
 function ProjectMain(){
- 
-    const Random = () => {
 
+    const Random = () => {
         var r_message = new Array ();
         r_message[0] = "Ice Cream";
         r_message[1] = "Bread";
@@ -23,29 +22,28 @@ function ProjectMain(){
         alert(r_message[i]);
     
     }
-
-    const ShowMessage = () =>{
-        alert("gg");
-    }
     
     return(
     <Content>
 
      <div className ="App">
+
          <div className="space">
             Random Food
          </div>
          <div className ="Test">
 
          <img src= "spin.png" alt = "spin.png" width="400px" height="400px"/>
-         <div class="randomTextShow"> Click Random! </div>
-
+         <div class="randomTextShow"> </div>
 
             <p>
                <table className ="table-main">
                    <tr>
                         <th>  
+                        <Link to="/random-type">
                             <img src= "choice.png" alt = "choice.png" width="100px" height="100px"/> 
+                        </Link>
+                            
                         </th>
 
 
@@ -63,7 +61,9 @@ function ProjectMain(){
                     </tr>
                     <tr>
                         <th>
+                        <Link to="/random-add">
                             <img src= "add new.png" alt = "add new.png" width="100px" height="100px"/> 
+                        </Link>
                         </th>
                         <th colSpan ="2"></th>
                    </tr>

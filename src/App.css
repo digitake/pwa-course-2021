@@ -48,18 +48,6 @@
    margin-left: 20px;
    font-size: 30px;
    
-   
-  /*background-color: rgb(255, 255, 255);
-  
-  width: 50%;
-  margin-top: 20px;
-  margin-left: 30px;
-  
-  display: inline-block;
-  border: 0px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font: optional;*/
 }
 
 .Search-Box{
@@ -189,18 +177,6 @@
 .image-between{
   padding: 10px;
 }
-
-/*.img {
-  border-radius: 50%;
-  
-  margin-top: 5px;
-  margin-left: 5px;
-  width: 100px;
-  clip-path: circle();
-  
-  
-}*/
-
 
 .space{
   flex: .1;
@@ -336,4 +312,18 @@
 
 .halfspaceCentor{
   flex: 5 ;
+}
+
+.randomTextShow {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.fontSmall {
+  font-size: 25px;
 }

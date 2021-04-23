@@ -47,7 +47,7 @@
   }
   
   .EWallet-header2 {
-    background-image: url(design/ewallet.png);
+    background-image: url(design/E-Wallet/ewallet.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -73,14 +73,14 @@
   
   
   .EWallet-bg {
-    background-image: url(design/iconasd.jpg);
+    background-image: url(design/E-Wallet/iconasd.jpg);
     color: rgb(255, 255, 255);
     flex: 12;
     background-repeat: no-repeat; 
   }
 
   .EWallet-chatroom-text {
-    background-image: url(design/balance.jpg);
+    background-image: url(design/E-Wallet/balance.jpg);
   }
   
   

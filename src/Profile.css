@@ -8,22 +8,51 @@
     margin: auto;
   }
   
-  @media (min-width: 768px) {
-  
+  @media (max-width: 768px) {  
     .Profile {
       background-color: rgb(207, 238, 250);
     }
     .Profile-header1{
+      background-size: 50%;
       background-color: rgb(255, 255, 255);
       background-position: left;
     }
-  
     .Profile-header3{
+      background-size: 50%;
       background-color: rgb(255, 255, 255);
       background-position: right;
     }
-  
+    .Profile-chatroom{
+      flex-direction: column;
+    }
+    .Profile-textbox-send2{
+      background-size: 90%;
+    }
   }
+
+  @media (min-width: 1600px) {
+    .Profile-header1{
+      background-size: 10%;
+    }
+    .Profile-header3{
+      background-size: 10%;
+    }
+    .Profile-chatroom{
+      flex-direction: row;
+    }
+    .Profile-chatroom1{
+      background-size: 90%;
+    }
+
+    .Profile-chatroom2{
+      background-size: 70%;
+    }
+
+    .Profile-textbox-send2{
+      background-size: 40%;
+    }
+  }
+
   
   .Profile-logo {
     height: 40vmin;
@@ -34,7 +63,7 @@
     background-color: rgb(255, 255, 255);
     background-position: center;
     background-repeat: no-repeat;
-    flex: 1;
+    flex: 0.5;
     height: 100%;
     vertical-align: middle;
     justify-content: center;
@@ -43,7 +72,7 @@
   }
   
   .Profile-header1 {
-    background-image: url("design/profile-back.png");
+    background-image: url("design/Profile/profile-back.png");
     
     background-position: left;
     background-repeat: no-repeat;
@@ -70,7 +99,8 @@
   }
   
   .Profile-header3 {
-    background-image: url("design/profile-next-05.png");
+    background-image: url("design/Profile/profile-next-05.png");
+    
     background-position: right;
     background-repeat: no-repeat;
     flex: 1;
@@ -81,27 +111,34 @@
     display: flex;
   }
   
-  .Profile-chatroom {
-    background-image: url("design/login-profile.png");
+  .Profile-chatroom{
+    flex: 6;
+    display: flex;
+
+  }
+  .Profile-chatroom1 {
+    background-image: url("design/Profile/login-profile.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size:90%;
+    
     vertical-align: middle;
     justify-content: center;
     align-items: center;
-    flex: 4;
+    flex: 1;
+    display: flex;
   }
 
-  .Profile-chatroom1 {
-    background-image: url("design/profile-welcome.png");
+  .Profile-chatroom2 {
+    background-image: url("design/Profile/profile-welcome.png");
     
     background-repeat: no-repeat;
     background-position: center;
-    background-size:90%;
+    
     vertical-align: middle;
     justify-content: center;
     align-items: center;
-    flex: 4;
+    flex: 1;
+    display: flex;
   }
 
 
@@ -132,35 +169,22 @@
   }
   
   .Profile-textbox-send {
-    background-image: url();
-    background-position: center;
-    background-repeat: no-repeat;
+    
     flex: 1;
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    
   }
   
   
   .Profile-textbox-send1 {
-    background-image: url();
-    background-position: center;
-    background-repeat: no-repeat;
+    
     flex: 1;
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    
   }
   
   .Profile-textbox-send2 {
     background-image: url("design/logo192.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 75%;
     flex: 1;
     height: 100%;
     vertical-align: middle;
@@ -170,27 +194,15 @@
   }
 
   .Profile-textbox-send3 {
-    background-image: url();
-    background-position: center;
-    background-repeat: no-repeat;
+    
     flex: 1;
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+   
   }
 
   .Profile-textbox-send4 {
-    background-image: url();
-    background-position: center;
-    background-repeat: no-repeat;
+   
     flex: 1;
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    
   }
   
   .col-1 {width: 8.33%;}

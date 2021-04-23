@@ -21,11 +21,12 @@ function Profile(){
         
     </div>
       
-      <div className ="Profile-chatroom"></div>
+      <div className ="Profile-chatroom">
       <div className = "Profile-chatroom1"></div>
+      <div className = "Profile-chatroom2"></div>
+      </div>
       
-
-
+  
       <div className="Profile-textbox">
         
 

@@ -7,83 +7,85 @@ import { useEffect } from 'react';
 
 const chatroomRef = firebase.database().ref('chatroom-1');
 
-function Chatbox() {
+function ChatBox({ children }) {
+
   const [text, setText] = useState("");
+
   const [lines, setLines] = useState([]);
 
-useEffect(() => {
-alert("Toral text chat = "+lines.length);
-
-}, [lines]);
-  
+  // () => {} same as function() {}  --lambda notation
   useEffect(() => {
-    chatroomRef.on('child_added', snapshot => {
-      let x = snapshot.val();
-      setLines(l => [...l, {
-        sender: x.sender,
-        message: x.message,
-        timestamp: (new Date())
-      }])
-    });
+      chatroomRef.on('child_added', snapshot => {
+          let x = snapshot.val();
+          setLines(l => [...l, {
+              sender: x.sender,
+              message: x.message,
+              timestamp: (new Date(x.timestamp))
+          }])
+      });
   }, []);
 
   const onTextChange = (event) => {
-    setText(event.target.value);
+      setText(event.target.value);
   };
-  const onSend = () =>{
-    //Push message to firebase
-    chatroomRef.push({
-      sender: "Me",
-      message: text,
-    })
 
-    setText("");
-  };
+  const onSend = () => {
+      // push to firebase sever
+      chatroomRef.push({
+          sender: "me",
+          message: text,
+          timestamp: firebase.database.ServerValue.TIMESTAMP
+      });
+      setText("")
+  }
+
   const keyPress = (event) => {
-    if (event.which === 13){
-      onSend();
-    }
+      if (event.which === 13) {
+          onSend();
+      }
   };
-  
+
   return (
-    <App>
-    <div className="Chatbox">
-      
-      <div className = "Chatbox-header">
-        <div className = "Chatbox-header1">
-          <Link className={"Chatbox-header1"} to="/home"/>
-        </div>
-        <div className = "Chatbox-header2"></div>
-        <div className = "Chatbox-header3"></div>
-      </div>
-     
-      
-      <div className="Chatbox-chatroom">
-        {
-          lines.map(x => {
-            return <div className="Chatbox-chatroom-text">
-              <div>
-                {x.sender + ":"}
+      <>
+          <App>
+              <div className = "Chatbox-header">
+                    <div className = "Chatbox-header1">
+                    <Link className={"Chatbox-header1"} to="/home"/>
+                    </div>
+                    <div className = "Chatbox-header2"></div>
+                    <div className = "Chatbox-header3"></div>  
               </div>
-              <div>
-                {x.message}
+              
+              <div className="App">
+                  <div className="App-chatroom">
+                  {
+                    lines.map(x => {
+                              return <div className="App-chatroom-text">
+                                  <div className="profile-read"></div>
+                                  <div className="App-textPosition">
+                                      {x.sender + " : "}
+                                      {x.message}
+                                  </div>
+                                  <div className="App-Time-Position"> {x.timestamp.toLocaleTimeString()} </div>
+                              </div>
+                          })
+                  }
+                  </div>
+                  {children}
               </div>
-              <div>
-                {x.timestamp.toLocaleDateString()}
-              </div>
-            </div>
-          })
-        }
-      </div>
-      <div className="Chatbox-textbox">
-        <input type="text" className="Chatbox-textbox-input" 
-        value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        <div className="Chatbox-textbox-send" onClick={onSend}></div>
-        <div className="Chatbox-textbox-send1" onClick={onSend}></div>
-        <div className="Chatbox-textbox-send2" onClick={onSend}></div>
-      </div>
-    </div>
-    </App>
+               {/*ChatBar Input*/}
+            <div className="App-textbox">
+                    <input type="text" className="App-textbox-input" 
+                    value={text} onChange={onTextChange} onKeyPress={keyPress}/>
+                    <div className="App-textbox-send"> 
+                    <Link className = {"App-textbox-send"} to = "/music"/>
+                    </div>
+                    <div className="App-textbox-send1" onClick={onSend}></div>
+                    <div className="App-textbox-send2" onClick={onSend}></div>
+                  </div>
+          </App>
+      </>
   );
 }
-export default Chatbox;
+
+export default ChatBox;

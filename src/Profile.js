@@ -19,15 +19,12 @@ function MainProfile() {
                 
                 </div>
                 <div className = "profilename">
-                    [Arm NAJA]
+                <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
                 </div>
 
                 <div className ="profileinfo">
                     
-                    ผมชอบแมวมากเลยครับ
-                    <p>แล้วผมก็ขายอาหารงูด้วย</p>
-                    <p>และผมก็ชอบหมาของขนุน</p>
-                   
+                <textarea>Edit...</textarea>
                 </div>
 
                 <div className = "profilespinhis">

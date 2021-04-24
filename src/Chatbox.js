@@ -2,6 +2,7 @@ import './Chatbox.css';
 import { useEffect, useState } from 'react';
 import App from './App';
 import firebase from './firebaseConfig';
+import logo2 from './LoginIcon.png'
 
 const chatroomRef = firebase.database().ref('chatroom-1');
 
@@ -66,7 +67,8 @@ function Chatbox() {
       <div className="Chatbox-textbox">
         <input type="text" className="Chatbox-textbox-input" 
         value={text} onChange={onTextChange}onKeyPress={keyPress}/>
-        <div className="Chatbox-textbox-send" onClick={onSend}>Send!</div>
+        <div className="Chatbox-textbox-send" onClick={onSend}>Send!
+        </div>
       </div>
     </div>
     </App>

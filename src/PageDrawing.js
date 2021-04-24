@@ -1,22 +1,32 @@
 import { Link } from 'react-router-dom';
 import './PageDrawing.css';
+import Logo from './Logo.png'
+import ChatLogo from './Cahat_Icon.png';
+import ToolLogo from './ToolIcon.png';
 
 function Page4Drawling() {
   return (
     <div className="PageDrawing">
       <div className="PageDrawing-header">
-        Page Drawing
+        <img src={Logo}></img>
+          D r a w z y
+          <img src={Logo}></img>
         <div className="PageDrawing-botton">
-          <Link to="/App">
-            <botton>Go to Chatroom</botton>
+          <Link to="/">
+          <img src={ChatLogo}></img>
           </Link>
+          <div></div>
         </div>
       </div>
-      <div className="PageDrawing-drawbox"></div>
+      <div className="PageDrawing-drawbox">
+        <div className="PageDrawing-Icon">
+        <img src={ToolLogo}></img>
+        </div>
+      </div>
       <div className="PageDrawing-send">
         Send
       </div>
-      
+
     </div>
   )
 };

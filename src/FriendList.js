@@ -1,17 +1,21 @@
 import './App.css';
-import {useState} from 'react';
 import { Link } from 'react-router-dom';
+import AppLayoutFriend from './AppLayoutFriend';
 
 function FriendList() {
     return (
-    <div>
-        Friend List
-        <Link to="/chat-room">
-            //แก้เป็นอย่างอื่นได้<button>
-                Go Chatroom
-            </button>
-        </Link>
+    <AppLayoutFriend>
+    <div className="App">
+    <div className="App-content">
     </div>
+
+    <div className="App-textbox-icon" >
+      <div> <Link to="/chat-room"> <i class="fas fa-comment-dots"></i> </Link> </div>
+      <div> <Link to="/chat-bot">  <i class="fas fa-robot"></i> </Link> </div>
+      <div> <i class="fas fa-users"></i> </div>
+    </div>
+  </div>
+  </AppLayoutFriend>
     );
 };
 

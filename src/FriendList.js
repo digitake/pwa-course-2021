@@ -10,13 +10,13 @@ function  FriendList() {
         </div>
         <div className="Friend-chatroom">
           <div className="Friend-chatroom-text">
-             Lion
+             Pus
           </div>
           <div className="Friend-chatroom-text">
-             Tiger 
+             First Ja 
           </div>
           <div className="Friend-chatroom-text">
-             Cat
+             Cha
           </div>
           <div className="Friend-chatroom-text">
              Hayina

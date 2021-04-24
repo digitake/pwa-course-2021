@@ -5,6 +5,7 @@ import Profiletar from "./Profile-Tar";
 import LobbySetting from "./LobbySetting";
 import LoadingBar from "./LoadingBar";
 import Lobby from "./Lobby";
+import PruekProfile from "./PruekProfile";
 
 
 function Router() {
@@ -12,6 +13,9 @@ function Router() {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path="/PruekProfile">
+                    <PruekProfile/>
+                </Route>
                 <Route path="/Profile_Tar">
                     <Profiletar/>
                 </Route>

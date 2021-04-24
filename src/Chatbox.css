@@ -41,7 +41,7 @@
   
   .Chatbox-chatroom {
     flex: 12;
-  
+    overflow: auto;
   }
   
   .Chatbox-chatroom2 {

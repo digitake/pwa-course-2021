@@ -12,32 +12,32 @@ function Profile({children}){
       
         </div>
 
-        <div className="Profile-coverPhoto">
-            <div className="Profile-Profilephoto">
-      
-            </div>
+        <div className="Profile-Box-Profile">
+
+         <div className="Profile-coverPhoto">
+         <img src ="Profile-img.png"/>
+         </div>
+         
+         <h2>Rimuru Tempest</h2>
         </div>
 
-        <div className="Profile-header">
-            <div className="Profile-room-Button">
+        <div className="Profile-Box-Button">
+
              <Link to = "/Post">
-               <button>
-                  Post
-               </button>
+             <button class="Profile-Button">โพสต์</button>
+             </Link>
+
+             <Link to = "/Friend">
+             <button class="Profile-Button">เพื่อน</button>
              </Link>
 
              <Link to = "/Image">
-               <button>
-                  Image
-               </button>
+             <button class="Profile-Button">รูปภาพ</button>
              </Link>
 
              <Link to = "/Video">
-               <button>
-                  Video
-               </button>
+             <button class="Profile-Button">วีดีโอ</button>
              </Link>
-            </div>
 
         </div>
 

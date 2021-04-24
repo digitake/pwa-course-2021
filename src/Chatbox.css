@@ -20,8 +20,30 @@
     pointer-events: none;
   }
   
+  .App-back-icon{
+    float: left;
+    width: 70px;
+    font-size:30px;
+  }
+  
+  .App-header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size:30px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+  
+  @media (min-width: 768px){
+    .App-header{
+      background-color: #000000;
+    }
+  }
+  
   .App-chatroom {
     flex: 12;
+    
     background-image: url(Space.jpg);
     background-size: cover;
   
@@ -34,12 +56,15 @@
   
     color : rgb(255, 255, 255);
     font-size: 20px;
+<<<<<<< HEAD
     display: flex;
 <<<<<<< HEAD
     flex-direction: column;
 =======
     flex-direction: row;
 >>>>>>> 5a5c7bd7829e358da49de8bd8efe51769efdf865
+=======
+>>>>>>> ArunsawadBoonthus-main
   }
   
   .App-textbox {
@@ -67,12 +92,25 @@
     display: flex;
   }
   
+<<<<<<< HEAD
+=======
+  .App-textbox-icon{
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    font-size:30px;
+    padding: 10px;
+  }
+  
+>>>>>>> ArunsawadBoonthus-main
   @media (min-width: 768px){
     .App-textbox-icon{
     display: flex;
     justify-content: space-between;
     }
   }
+<<<<<<< HEAD
 
   .App-textbox-chatbox-icon{
     height: auto;
@@ -81,12 +119,50 @@
     font-size:30px;
     padding: 10px;
     color:rgb(0, 17, 255);
+=======
+  
+  .App-header-friend{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size:30px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+>>>>>>> ArunsawadBoonthus-main
   }
   
   .hide-when-small { display: none }
   
   .hide-when-big {display: none;}
    
+<<<<<<< HEAD
   @media (min-width: 768px) { .hide-when-small {display:flex}}
   
   @media (max-width: 768px) { .hide-when-big {display: flex}}
+=======
+  @media (min-width: 768px) { .hide-when-small { display:flex } }
+  
+  @media (max-width: 768px) { .hide-when-big {display: flex;}}
+  
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  @media (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+>>>>>>> ArunsawadBoonthus-main

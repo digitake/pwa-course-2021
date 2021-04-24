@@ -23,7 +23,7 @@ function MainProfile() {
                 </div>
 
                 <div className ="profileinfo">
-                    
+         
                 <textarea>Edit...</textarea>
                 </div>
 

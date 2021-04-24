@@ -110,11 +110,10 @@
 }
 
 .App-chatroom {
-  flex: 20;
-  background-image: url();
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  flex: 12;
+  height: 80%;
+  width: 100%;
+  overflow: auto;
 }
 
 .App-chatroom-text {

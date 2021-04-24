@@ -27,7 +27,7 @@ function Chatbox() {
 
   const onSend = () =>{
     chatroomRef.push({
-      sender: "Me",
+      sender: "winner",
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
     })

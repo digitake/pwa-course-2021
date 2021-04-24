@@ -34,6 +34,13 @@ function App({children}) {
                 </Link>
       </div>
       <div className ="link-margin">
+      <Link to="/present">
+                  <button>
+                        <img src="Presentation.png" alt="Present" width="30" height="30"></img>
+                  </button>
+                  </Link>
+      </div>
+      <div className ="link-margin">
       <Link to="/photo-list">
                   <button>
                   <img src="Photo.png" alt="ThePhotoList" width="30" height="30"></img>

@@ -1,0 +1,27 @@
+.textpro{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.profilePicture{
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("pruekProfile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+.textname{
+    position: relative;
+    color: ghostwhite;
+    bottom: 30px;
+    font-size: 30px;
+
+}
+.Profilebon{
+    background-color: black;
+}

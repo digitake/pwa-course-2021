@@ -123,6 +123,7 @@ background: #00000000;
   text-align: left;
   color:rgb(255, 255, 255);
   font-size: 18px;
+  padding: 10px;
   display: flex;
   text-align: right;
 }
@@ -135,6 +136,7 @@ background: #00000000;
   text-align: left;
   width: 80%;
   padding: 20px;
+  margin-left: 8px;
   word-wrap: break-word;
   
 }
@@ -142,7 +144,6 @@ background: #00000000;
 
 .App-chatroom-text {
   color:rgb(255, 255, 255);
-  font-size: 18px;
   display: flex;
   flex-direction: column;
   
@@ -166,12 +167,19 @@ background: #00000000;
   box-sizing: border-box;
   }
 
+  .App-chatroom-text {
+    font-size: 18px;
+  }
 
 }
 
 @media (min-width: 768px) {
   .App-textbox-input {
     flex: 6;
+  }
+
+  .App-chatroom-text {
+    font-size: 23px;
   }
 }
 

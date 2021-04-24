@@ -33,7 +33,10 @@ function ProjectMain(){
          </div>
          <div className ="Test">
 
-         <img src= "spin.png" alt = "spin.png" width="400px" height="400px"/>
+        <div>
+            <img src= "spin.png" alt = "spin.png" width="400px" height="400px"/>
+        </div>
+         
          <div class="randomTextShow"> </div>
 
             <p>

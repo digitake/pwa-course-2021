@@ -11,26 +11,29 @@ function AllChatInterface() {
             <div className="Search-Box">
               Write something to search..
             </div>
-
           </div>
 
-          <Link to="/chatbox-test" className="Middle-Zone">
+          <div className="Middle-Zone" >
+         
               
-              <div className = "FriendChat-Box">
-
+            <div className = "FriendChat-Box">
+              <Link to="/chatbox-test">  
                 <div className = "Name-Box">
-                    Ultimate Cat [Test]
-                </div>
+                  Ultimate Cat [Test]
+                  
+                  </div>
+                  <div className = "LastChat">
+                    Ok
+                  </div>
 
-                <div className = "LastChat">
-                   Ok
-                </div>
-
-                <div className = "FriendPic">              
+                  <div className = "FriendPic">   
+                      
                   <img src= "cat.png" alt = "profile.png" width="100px" height="105px"/>
+                
                 </div>
-                </div>
-                </Link>
+              </Link>
+            </div>
+          </div>
          </AppContent>
     );
     

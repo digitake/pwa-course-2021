@@ -17,8 +17,11 @@ const Header = () => {
                     <a>Very Good</a>
                     <a>@good.cat</a>
                 </div>
-                <img className='avatar' src={AvatarImg} alt='avatar' />
+                <Link to='profile'>
+                    <img className='avatar' src={AvatarImg} alt='avatar' />
+                </Link>
                 <a className='profile-notify'>2</a>
+
             </div>
         </div>
     );

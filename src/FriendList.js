@@ -4,7 +4,6 @@ import App from './App';
 import logo1 from './ChatPF.png'
 import logo2 from './InfoButton.png';
 
-
 function FriendList() {
   return (
     <App>

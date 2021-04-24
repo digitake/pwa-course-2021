@@ -1,4 +1,5 @@
 import './Chatbox.css';
+import {Link} from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import App from './App';
 import firebase from './firebaseConfig';
@@ -6,6 +7,10 @@ import logo2 from './LoginIcon.png'
 
 var chatroomRef;
 
+
+import firebase from './firebaseConfig';
+
+const chatroomRef = firebase.database().ref('chatroom-1')
 
 function Chatbox() {
   const [text, setText] = useState("");
@@ -20,7 +25,7 @@ function Chatbox() {
       let x = snapshot.val();
       setLines(line => [...line,{
         sender: x.sender,
-        Message: x.Message,
+        message: x.message,
         timestamp: new Date(x.timestamp)
       }]);
     })
@@ -47,7 +52,6 @@ function Chatbox() {
       Message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
     });
-    
     setText("");
   };
 

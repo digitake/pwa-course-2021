@@ -32,7 +32,7 @@ function Router(){
             <Route path="/PageDrawing">
                 <PageDrawing />
             </Route>
-            <Route path='/Profile'>
+            <Route path="/Profile">
                 <Profile />
             </Route>
             <Route path="/">

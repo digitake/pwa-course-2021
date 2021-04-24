@@ -10,6 +10,7 @@ function Chatbox() {
 
   const [text, setText] = useState("")
   const [lines, setLines] = useState([]);
+  const [name, setName] = useState("myname");
 
   useEffect (() => {
       chatroomRef.on('child_added', snapshot => {
@@ -26,17 +27,27 @@ function Chatbox() {
     setText(event.target.value);
   };
 
+  const onNameChange = (event) => {
+    setName(event.target.value);
+  }
+
   const onSend = () => {
     chatroomRef.push({
-      sender: "Me",
+      sender: name,
       message: text,
     })
+  };
+
+  const keyPress = (event) => {
+    if (event.which == 13) {
+    }
   };
 
 
   return (
     <Headerchat>
     <div className="App">
+      <input type="text" value={name} onChange={onNameChange}/>
       <div className="App-content">
       {
         lines.map(x =>{

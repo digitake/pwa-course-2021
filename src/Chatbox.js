@@ -6,11 +6,15 @@ import { Link } from "react-router-dom";
 
 const chatroomRef = firebase.database().ref('fantasma-room-1');
 
+
 function ChatBox({ children }) {
 
     const [text, setText] = useState("");
 
     const [lines, setLines] = useState([]);
+    
+    const [name, setName] = useState();
+
 
     // () => {} same as function() {}  --lambda notation
     useEffect(() => {
@@ -27,11 +31,15 @@ function ChatBox({ children }) {
     const onTextChange = (event) => {
         setText(event.target.value);
     };
+    
+    const onNameChange = (event) => {
+        setName(event.target.value);
+    };
 
     const onSend = () => {
         // push to firebase sever
         chatroomRef.push({
-            sender: "พฤกษ์โครตหล่อพ่อรวย",
+            sender: name,
             message: text,
             timestamp: firebase.database.ServerValue.TIMESTAMP
         });
@@ -47,6 +55,7 @@ function ChatBox({ children }) {
     return (
         <LobbyHeader>
         <div className="App col-12">
+            <input type="text" placeholder="Please Input Your Name" value={name} onChange={onNameChange}/> 
                     <div className="App-chatroom">
                         {
                             lines.map(x => {

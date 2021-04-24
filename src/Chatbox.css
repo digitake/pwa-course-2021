@@ -45,12 +45,18 @@
   
   .App-chatroom-text 
 {
-  margin: 8px;
-
-  background-color: rgb(144, 218, 101);
-  color : rgb(48, 100, 100);
-  font-size: 20px;
+  flex: 1;
+  font-family:'Oxygen';
+  padding: 8px;
+  max-width: 25%;
   display: flex;
+  justify-content:flex;
+  justify-items:flex;
+  background-color:#d8fd08;
+  border-radius: 14px 14px 0 14px;
+  color : rgb(0, 0, 0);
+  font-size: 20px;
+  margin-left: auto;
 }
 
 .App-textbox {

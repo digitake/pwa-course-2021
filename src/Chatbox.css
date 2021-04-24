@@ -43,26 +43,6 @@
     background-repeat: no-repeat;
   }
   
-<<<<<<< HEAD
-  .App-chatroom-text 
-{
-  flex: 1;
-  font-family:'Oxygen';
-  padding: 8px;
-  max-width: 25%;
-  display: flex;
-  justify-content:flex;
-  justify-items:flex;
-  background-color:#d8fd08;
-  border-radius: 14px 14px 0 14px;
-  color : rgb(0, 0, 0);
-  font-size: 20px;
-  margin-left: auto;
-}
-=======
-
->>>>>>> 3df02454b8b074ee66bd6c639bb4a2ea7b229a7f
-
 .App-textbox {
   flex: 1;
   justify-content: center;

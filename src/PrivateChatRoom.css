@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 100%;
-  height: 100%;
+  max-width: flex;
+  height: flex;
   margin: auto;
   background-color: #3d14f5;
 }
@@ -24,6 +24,7 @@
 }
 .App-chatroom 
 {
+  height: flex;
   flex: 12;
   overflow: auto;
 }

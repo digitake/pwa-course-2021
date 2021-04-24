@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 414px;
+  max-width: 100%;
   height: 100%;
   margin: auto;
   background-color: #3d14f5;
@@ -43,6 +43,7 @@
     background-repeat: no-repeat;
   }
   
+<<<<<<< HEAD
   .App-chatroom-text 
 {
   flex: 1;
@@ -58,6 +59,9 @@
   font-size: 20px;
   margin-left: auto;
 }
+=======
+
+>>>>>>> 3df02454b8b074ee66bd6c639bb4a2ea7b229a7f
 
 .App-textbox {
   flex: 1;

@@ -5,6 +5,7 @@ import FriendList from "./FriendList";
 import Menu from "./Menu";
 import Profile from "./ProfilePage/Profile";
 import Post from "./ProfilePage/Post";
+import Friend from "./ProfilePage/Friend";
 import Image from "./ProfilePage/Image";
 import Video from "./ProfilePage/Video";
 import GamePage from "./GamePage";
@@ -34,6 +35,10 @@ function Router()  {
 
             <Route path="/Post">
               <Post />
+            </Route>
+
+            <Route path="/Friend">
+              <Friend />
             </Route>
 
             <Route path="/Image">

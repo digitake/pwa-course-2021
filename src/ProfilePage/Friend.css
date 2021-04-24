@@ -1,0 +1,12 @@
+.Friend {
+    margin: auto;
+    padding: 10px;
+    max-width: 600px;
+    height: auto;
+    text-align: left;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: Itim;
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+  }

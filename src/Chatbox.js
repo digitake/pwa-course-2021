@@ -8,7 +8,7 @@ const chatroomRef = firebase.database().ref('chatroom-1');
 
 function Chatbox() {
 
-  const [text, setText] = useState("")
+  const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
   useEffect (() => {

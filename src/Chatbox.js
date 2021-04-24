@@ -8,10 +8,6 @@ import logo2 from './LoginIcon.png'
 var chatroomRef;
 
 
-import firebase from './firebaseConfig';
-
-const chatroomRef = firebase.database().ref('chatroom-1')
-
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);

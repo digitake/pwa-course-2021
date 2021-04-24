@@ -1,3 +1,64 @@
-.Friendlist{
-    display: flexbox;
+.friend-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  flex-start;
+    width: 100%;
 }
+
+.friendList{
+    overflow-x: hidden;
+    width: 380px;
+}
+
+.element{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 85px;
+    align-items: center;
+}
+
+.friend-option button{
+border: none;
+border-radius: 10%;
+margin-left: 10px;
+width: 35px;
+height: 35px;
+color: whitesmoke;
+text-shadow: rgb(167, 167, 167) 1px 1px;
+font-weight: bolder;
+}
+
+.button-accept{
+    background-color: rgb(53, 233, 53);
+}
+.button-decline{
+    background-color: rgb(255, 107, 107);
+}
+.button-block{
+    background-color: rgb(187, 187, 187);
+}
+
+.friend-option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.friend-name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+img.avatar{
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+  }

@@ -1,10 +1,16 @@
 import App from '../App';
 import profile from '../design/ProfileSetting(LightMode).jpg';
+import '../CSS/Profile.css';
+
+import { Link } from "react-router-dom";
 function Profile() {
     return (
         <App>
-            <div>
-            <img src={profile} alt='No Img' />
+            <div className="Background">
+                
+            </div>
+            <div className="profile">
+                
             </div>
         </App>
 

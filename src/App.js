@@ -13,7 +13,6 @@ function App({children}) {
         <Link to="/">
                 <img src={logo1}/>
         </Link>
-        
       </div>
     <div className="App-Content">
     {children}

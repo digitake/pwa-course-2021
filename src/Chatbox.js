@@ -14,7 +14,6 @@ function Chatbox() {
     useEffect(() => {
         setLines([]);
         chatroomRef = firebase.database().ref(chatroom);
-        chatroomRef.off('child_added');
         chatroomRef.on('child_added', snapshot => {
             let x = snapshot.val();
             setLines(line => [...line,
@@ -24,6 +23,11 @@ function Chatbox() {
                 timestamp: new Date(x.timestamp),
             }]);
         })
+
+        return () => {
+            chatroomRef.off('child_added');
+        };
+
     }, [chatroom]);
 
     const onSend = () => {

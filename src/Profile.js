@@ -13,9 +13,9 @@ function MainProfile() {
             </div>
             <div className = "profilemid">
                 <div className ="framepic">
-                <Link to="/" className="profilepic">
+              
                     <img src= "armprofile.jpg" alt = "plus.png" width="190px" height="190px"/> 
-                </Link>
+             
                 
                 </div>
                 <div className = "profilename">

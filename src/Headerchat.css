@@ -49,7 +49,7 @@
     }
     @media (min-width: 414px) and (max-width: 960px){
     .AppPrivate {
-      max-width:90%;  
+      max-width:100%;  
     }
     .mobile-menu{
     display: block;

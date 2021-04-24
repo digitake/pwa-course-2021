@@ -11,7 +11,7 @@
 
 @media (min-width: 700px) {
 .AppPrivate {
-    max-width:90%;
+    max-width:100%;
   }
 }
 @media (min-width: 950px) {

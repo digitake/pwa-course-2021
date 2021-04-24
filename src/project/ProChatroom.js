@@ -32,7 +32,7 @@ const onTextChange = (event)=>{
 
 const onSend =() => {
   chatroomRef.push({
-    sender: "Pekora",
+    sender: "Ayame",
     message: text,
     timestamp : firebase.database.ServerValue.TIMESTAMP
   })   

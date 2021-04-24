@@ -3,26 +3,18 @@ import App from './App';
 import firebase from './firebaseConfig';
 import './Chatbox.css';
 
-let chatroomRef = firebase.database().ref('chatroom-1');
+var chatroomRef;
 
 function Chatbox() {
     const [text, setText] = useState('');
     const [lines, setLines] = useState([]);
     const [name, setName] = useState('');
+    const [chatroom, setChatroom] = useState('chatroom-1');
 
     useEffect(() => {
-        UpdateChat();
-    }, []);
-
-    const SetChatRoom = (chatroomId) => {
-        if (chatroomId) {
-            chatroomRef = firebase.database().ref(chatroomId);
-        }
-    }
-
-    const UpdateChat = () => {
-        chatroomRef.off('child_added');
         setLines([]);
+        chatroomRef = firebase.database().ref(chatroom);
+        chatroomRef.off('child_added');
         chatroomRef.on('child_added', snapshot => {
             let x = snapshot.val();
             setLines(line => [...line,
@@ -32,7 +24,7 @@ function Chatbox() {
                 timestamp: new Date(x.timestamp),
             }]);
         })
-    }
+    }, [chatroom]);
 
     const onSend = () => {
         if (text.length < 1) return;
@@ -86,8 +78,7 @@ function Chatbox() {
     const ChatroomButton = (props) => {
         return (
             <button className='chatroom-button' onClick={() => {
-                SetChatRoom(props.chatroomId);
-                UpdateChat();
+                setChatroom(props.chatroomId);
             }}>{props.chatroomName}</button>
         );
     }

@@ -15,6 +15,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+ 
 }
 
 .App-header {
@@ -38,6 +39,8 @@
   background-color: #fbf1d5;
   color : #6e5146;
   font-size: 20px;
+  background-image: url(2.jpg);
+
 }
 
 .App-textbox {
@@ -46,6 +49,8 @@
   justify-content: center;
   align-items: stretch;
   display: flex;
+  
+
 }
 
 .App-textbox-input {

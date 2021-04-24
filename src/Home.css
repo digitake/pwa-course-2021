@@ -7,6 +7,7 @@
     background-color:#ffe2ae;
     height: 100%;
     
+    
 }
 .link
 {
@@ -22,7 +23,7 @@
 {
     .Home
     {
-      background-image: url(logo.png);
+      background-image: url(tang.png);
       background-size: cover;
     }
 }

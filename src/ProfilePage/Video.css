@@ -1,0 +1,23 @@
+.Video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  @media (min-width: 768px){
+    .Video{
+      width: 95%;
+    }
+  }
+  
+  @media (min-width: 480px){
+    .Video{
+      background-color:  #242424;
+    }
+  }

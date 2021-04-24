@@ -6,10 +6,8 @@
     max-width: 400px;
     height: 100%;
     margin: auto;
-    background-image: url(universe-vector.jpg) ;
-    /*background-size: cover;*/
-    background-repeat: no-repeat;
-    background-position: center;
+    /*background-image: url(universe-vector.jpg) ;
+    background-size: cover;*/
   }
   
   /* screen > 768px */
@@ -53,15 +51,26 @@
   
   .App-header {
     flex: 2;
+  
     background-color: #013b32;
+  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: rgb(155, 207, 255);
-  }  
-  .App-content {
+  }
+  
+  .App-chatroom {
+    flex: 10;
+    background-color: rgb(34, 255, 237);
+  
+    color: rgb(0, 0, 0);
+  
+  }
+  
+  .App-chatroom {
     flex: 12;
   
     background-color: rgba(170, 158, 212, 0.418);

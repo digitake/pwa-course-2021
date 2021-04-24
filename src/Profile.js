@@ -10,7 +10,41 @@ function Profile() {
           <div className ="Profile-Pic">
         </div>
         </div>
+        <div className ="Profile-name">
+           Profile setting
+         </div>
+         <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           <div class="desc">setting 1 </div>
+           </div>
+
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           <div class="desc">setting 2 </div>
+           </div>
+
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           <div class="desc">setting 3 </div>
+           </div>
+
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           <div class="desc">setting 4 </div>
+           </div>
+
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           <div class="desc">setting 5 </div>
+           </div>
+
+           <div class="gallery">
+           <a target="_blank" href="Profile.jpg"></a>
+           <div class="desc">setting 6 </div>
+           </div>
+           
         </NormalPage>
+         
     );
 };
 

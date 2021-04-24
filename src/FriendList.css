@@ -17,6 +17,33 @@
     width: 180px;
   }
   
+  @media  screen and (max-width : 417px){
+    div.gallery {
+      border-radius: 25px;
+      background: #fdffff;
+      margin: 10px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+      justify-content: center;
+
+    }
+    
+  } 
+
+  @media  screen and (max-width : 376px){
+    div.gallery {
+      border-radius: 25px;
+      background: #ffffff;
+      margin: 10px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 100px;
+      justify-content: center;
+
+    }
+    
+  } 
   div.gallery:hover {
     border: 1px solid #777;
   }

@@ -1,0 +1,54 @@
+.Login-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("Logo.JPG");
+    background-color: rgb(218, 223, 245);
+    
+  }
+
+  .Login-button {
+      
+    position: absolute;
+    bottom: 210px;
+    width: 20%;
+    left: 40%;
+    border: 5px solid #777dd1;
+  }
+
+  @media  screen and (max-width : 376px){
+      
+    .Login-button {
+      
+        position: absolute;
+        bottom: 250px;
+        width: 20%;
+        left: 38%;
+        border: 5px solid #777dd1;
+    }
+    
+  } 
+  @media  screen and (max-width : 376px){
+      
+    .Login-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("Logo.JPG");
+        background-color: rgb(218, 223, 245);
+    
+  } 
+}
+
+
+  

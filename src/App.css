@@ -8,7 +8,7 @@
   margin: auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgb(216, 122, 177);
+  background-color: rgb(169, 180, 216);
 
 }
 
@@ -30,7 +30,6 @@
   background-image: url(game.JPG);
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content:flex-end;
   color: #000;
   padding-right: 16px;
@@ -39,16 +38,18 @@
 }
 
 .App-content {
+  max-width: 100%;
+  overflow:  auto;
   flex: 12;
-  background-color: rgb(68, 233, 197);
+  background-color: rgb(112, 167, 156);
 
 }
 
 .App-chatroom-text {
   margin: 8px;
   background-color: rgb(99, 231, 132);
-  border-radius: 15px;
-
+  border-radius: 14px 14px 0 14px;
+  overflow: hidden;
   
 }
 
@@ -74,6 +75,12 @@
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.App-message {
+  
+  justify-content: end;
+  justify-items: end;
 }
 
 /* @media (max-width: 768px){

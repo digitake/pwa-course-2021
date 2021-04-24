@@ -11,4 +11,11 @@
     background-color: rgb(0, 0, 0);
   }
 
+  @media (max-width : 768px){
+    .App{
+      width: 95%;
+      background-color: rgb(64, 190, 199);
+     }
+  
+  }
  

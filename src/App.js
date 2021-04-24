@@ -1,5 +1,6 @@
 import './App.css';
 import { Link } from 'react-router-dom';
+import {RiChat3Fill } from 'react-icons/ri';
 
 
 function App({children}) {
@@ -7,25 +8,10 @@ function App({children}) {
   return (
     <div className="App">
       <div className="App-header">
-            <Link to="/friend-list">
-                <button>
-                 Go FriendList
-                </button>
-             </Link>
-             <Link to="/Profile">
-             <button>
-              Go Profile
-            </button>
-             </Link>
              <Link to="/App">
-             <button>
-              App
-            </button>
-             </Link>
-             <Link to="/DarkChat">
-             <button>
-              DarkChat
-            </button>
+            <div>
+               <RiChat3Fill size = "3em" color = "white"/> 
+            </div>
              </Link>
          </div>
       <div className ="App-content">

@@ -45,9 +45,8 @@ function ChatBox({ children }) {
     };
 
     return (
-        <>
-            <LobbyHeader>
-                <div className="App col-12">
+        <LobbyHeader>
+        <div className="App col-12">
                     <div className="App-chatroom">
                         {
                             lines.map(x => {
@@ -63,8 +62,6 @@ function ChatBox({ children }) {
                         }
                     </div>
                     {children}
-                </div>
-            </LobbyHeader>
             {/*ChatBar Input*/}
             <div className="App-textbox">
                 <div className="App-Botton col-1">
@@ -77,7 +74,8 @@ function ChatBox({ children }) {
                     onChange={onTextChange}
                     onKeyPress={keyPress} />
             </div>
-        </>
+        </div>
+        </LobbyHeader>
     );
 }
 

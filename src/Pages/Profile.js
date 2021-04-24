@@ -1,18 +1,4 @@
 import App from '../App';
-<<<<<<< HEAD
-import profile from '../design/ProfileSetting(LightMode).jpg';
-import '../CSS/Profile.css';
-
-import { Link } from "react-router-dom";
-function Profile() {
-    return (
-        <App>
-            <div className="Background">
-                
-            </div>
-            <div className="profile">
-                
-=======
 import '../CSS/Profile.css';
 import AvatarImg from '../img/img_avatar.png';
 import { Link } from 'react-router-dom'
@@ -93,7 +79,6 @@ function Profile() {
                 <Cover />
                 <Detail />
                 <SignOut />
->>>>>>> 536a97716cecbc5de7f1c6b91b948dcbf90f83d4
             </div>
         </App>
     );

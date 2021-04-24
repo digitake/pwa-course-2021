@@ -43,6 +43,8 @@
   flex: 0.83;
   background-color: rgb(162, 197, 250);
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fotter-content-prochatroom {
@@ -240,4 +242,9 @@
 
 .plus-prochatroom {
   margin-top: 10px;
+}
+
+.textbox{
+  overflow: auto;
+  margin: auto;
 }

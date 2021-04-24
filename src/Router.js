@@ -6,10 +6,14 @@ import Home from './Home';
 import DocWork from './DocWork';
 import PhotoList from './PhotoList';
 import Chatbox from './Chatbox';
+import Presentation from './Presentation';
 function  Router() {
     return(
        <BrowserRouter>
        <Switch>
+              <Route path="/present">
+                  <Presentation/>
+              </Route>
               <Route path="/chat-room">
                   <Chatbox/>
               </Route>

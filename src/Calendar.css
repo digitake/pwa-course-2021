@@ -8,7 +8,7 @@
     margin: auto;
   }
   
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
   
     .Calendar {
       background-color: rgb(207, 238, 250);
@@ -22,8 +22,21 @@
       background-color: rgb(255, 255, 255);
       background-position: right;
     }
+
+    .Calendar-chatroom{
+      flex-direction: column; 
+    }
+
+   
   }
   
+  @media (min-width: 1600px) {
+     .Calendar-chatroom{
+      flex-direction: row;
+     }
+  }
+
+
   .Calendar-logo {
     height: 40vmin;
     pointer-events: none;
@@ -78,6 +91,13 @@
   }
   
   .Calendar-chatroom {
+  
+    flex: 6;
+    display: flex;
+    
+  }
+
+  .Calendar-chatroom1 {
     background-image: url(design/Calendar/Calendar_UI-03.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -85,10 +105,12 @@
     vertical-align: middle;
     justify-content: center;
     align-items: center;
-    flex: 4;
+    flex: 1;
+    display: flex;
   }
 
-  .Calendar-chatroom1 {
+
+  .Calendar-chatroom2 {
     background-image: url(design/Calendar/Calendar_UI-04.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -96,7 +118,8 @@
     vertical-align: middle;
     justify-content: center;
     align-items: center;
-    flex: 4;
+    flex: 1;
+    display: flex;
   }
 
   .Calendar-chatroom-text {

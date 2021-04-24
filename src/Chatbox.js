@@ -48,7 +48,6 @@ function ChatBox({ children }) {
   return (
       <>
           <App>
-
               <div className = "Chatbox-header">
                     <div className = "Chatbox-header1">
                     <Link className={"Chatbox-header1"} to="/home"/>
@@ -56,6 +55,7 @@ function ChatBox({ children }) {
                     <div className = "Chatbox-header2"></div>
                     <div className = "Chatbox-header3"></div>  
               </div>
+
               <div className="App">
                   <div className="App-chatroom">
                   {
@@ -74,10 +74,12 @@ function ChatBox({ children }) {
                   {children}
               </div>
                {/*ChatBar Input*/}
-          <div className="App-textbox">
-                    <input type="text" className="Chatbox-textbox-input" 
+            <div className="App-textbox">
+                    <input type="text" className="App-textbox-input" 
                     value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-                    <div className="App-textbox-send" onClick={onSend}></div>
+                    <div className="App-textbox-send"> 
+                    <Link className = {"App-textbox-send"} to = "/music"/>
+                    </div>
                     <div className="App-textbox-send1" onClick={onSend}></div>
                     <div className="App-textbox-send2" onClick={onSend}></div>
                   </div>

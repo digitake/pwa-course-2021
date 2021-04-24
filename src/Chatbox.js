@@ -18,7 +18,7 @@ function Chatbox() {
         setLines ( l => [...l, {
           sender: x.sender,
           message: x.message,
-          timestamp: (new Date())
+          timestamp: (new Date(x.timestamp))
         }])
       });
   }, []);
@@ -35,6 +35,7 @@ function Chatbox() {
     chatroomRef.push({
       sender: name,
       message: text,
+      timestamp: firebase.database.ServerValue.TIMESTAMP
     })
   };
 
@@ -53,13 +54,7 @@ function Chatbox() {
         lines.map(x =>{
           return <div className="App-chatroom-text">
             <div>
-              {x.sender+":"}
-              </div>
-            <div>
-              {x.message}
-              </div>
-            <div>
-              {x.timestamp.toLocaleDateString()}
+            {x.sender + " : " + x.message + " " + x.timestamp.toLocaleString()}
               </div>
           </div>
         }) 

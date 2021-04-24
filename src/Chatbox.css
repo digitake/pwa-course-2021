@@ -43,15 +43,7 @@
     background-repeat: no-repeat;
   }
   
-  .App-chatroom-text 
-{
-  margin: 8px;
 
-  background-color: rgb(144, 218, 101);
-  color : rgb(48, 100, 100);
-  font-size: 20px;
-  display: flex;
-}
 
 .App-textbox {
   flex: 1;

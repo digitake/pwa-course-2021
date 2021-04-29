@@ -21,8 +21,25 @@ function CoolStickersList(){
                 </div>
             </div>
             </Link>
-            
-        </div>  
+        </div>
+
+        <div className="StickerList">
+            <Link to ="/Sticker5002">
+                <div className="Sticker-from">
+                <div className="Stcker-ShowImg">
+                    <img src="Profile-250.png" width="90px" height="90px" />
+                </div>
+                <div className="Sticker-DisptionZone">
+                    <div className="Sticker-Name">
+                        <p id="name">Sticker 5002</p>
+                    </div>
+                    <div className="Sticker-Disption">
+                        <p id="disption">Disption 5002</p>
+                    </div>
+                </div>
+            </div>
+            </Link>
+        </div>
     </ShopPage>                  
     );
 };

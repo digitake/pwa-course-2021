@@ -6,7 +6,7 @@ function Sticker2001(){
         <div className="StickerPage">
             <div className="StickerPage-header">
                 Sticker Details
-                <Link to="/NewStickersList">
+                <Link to="/EffectStickersList">
                     <img src ="back-32.png" align= "Left" />
                 </Link>
             </div>

@@ -14,6 +14,7 @@ import Sticker0001 from "./Details-Stickers/Sticker0001";
 import Sticker1001 from "./Details-Stickers/Sticker1001";
 import Sticker2001 from "./Details-Stickers/Sticker2001";
 import Sticker3001 from "./Details-Stickers/Sticker3001";
+import Sticker4001 from "./Details-Stickers/Sticker4001";
 import NewStickersList from "./Sticker-Category/NewStickersList";
 import EffectStickersList from "./Sticker-Category/EffectStickersList";
 import AnimatedStickersList from "./Sticker-Category/AnimatedStickersList";
@@ -96,6 +97,10 @@ function Router()  {
 
             <Route path="/Sticker3001">
               <Sticker3001 />
+            </Route>
+
+            <Route path="/Sticker4001">
+              <Sticker4001 />
             </Route>
 
             <Route path="/">

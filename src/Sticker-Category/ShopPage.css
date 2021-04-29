@@ -1,3 +1,26 @@
+@media (max-width: 414px){
+
+    .ShopPage-Category {
+        font-size: auto;
+    }
+    .ShopPage-button {
+        font-size: auto;
+    }
+  }
+
+@media (min-width : 768px){  
+    .ShopPage-head {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .ShopPage-body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
 .ShopPage {
     display: flex;
     flex-direction: column;
@@ -10,6 +33,7 @@
     background-color: #FECC48;
     font-size: 20px;
     font-weight:bold;
+    
 }
 
 .ShopPage-head {
@@ -37,9 +61,10 @@
 }
 
 .ShopPage-button {
-    flex: auto;
+    flex: 1;
     font-size: 15px;
     /* color: #E9E87F; */
+    margin: 1%;
 }
 
 .ShopPage-body {

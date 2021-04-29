@@ -34,9 +34,11 @@ function ShopPage({children}){
                     </Link>
                 </div>
                 <div className="ShopPage-button">
-                    <bottle>
-                        Effect stickers
-                    </bottle>
+                    <Link to ="/EffectStickersList">
+                        <bottle>
+                            Effect stickers
+                        </bottle>
+                    </Link>
                 </div>
                 <div className="ShopPage-button">
                     <bottle>

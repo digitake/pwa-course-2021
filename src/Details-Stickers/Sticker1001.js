@@ -1,7 +1,7 @@
 import './Sticker1001.css';
 import { Link } from "react-router-dom";
 
-function Sticker0001(){
+function Sticker1001(){
     return(    
         <div className="StickerPage">
             <div className="StickerPage-header">
@@ -52,4 +52,4 @@ function Sticker0001(){
     );
 };
 
-export default Sticker0001;
+export default Sticker1001;

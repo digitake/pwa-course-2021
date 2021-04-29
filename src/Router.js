@@ -12,6 +12,7 @@ import GamePage from "./GamePage";
 import HotStickersList from "./Sticker-Category/HotStickersList";
 import Sticker0001 from "./Details-Stickers/Sticker0001";
 import Sticker1001 from "./Details-Stickers/Sticker1001";
+import Sticker2001 from "./Details-Stickers/Sticker2001";
 import NewStickersList from "./Sticker-Category/NewStickersList";
 import EffectStickersList from "./Sticker-Category/EffectStickersList";
 
@@ -76,6 +77,10 @@ function Router()  {
 
             <Route path="/Sticker1001">
               <Sticker1001 />
+            </Route>
+
+            <Route path="/Sticker2001">
+              <Sticker2001 />
             </Route>
 
             <Route path="/">

@@ -55,9 +55,11 @@ function ShopPage({children}){
                     </Link>      
                 </div>
                 <div className="ShopPage-button">
-                    
+                    <Link to="/CoolStickersList">
+
                         Cool
-                    
+
+                    </Link>  
                 </div>
                 <div className="ShopPage-button">                        
                     

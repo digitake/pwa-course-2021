@@ -1,12 +1,12 @@
-import './Sticker1001.css';
+import './Sticker0001.css';
 import { Link } from "react-router-dom";
 
-function Sticker1001(){
+function Sticker3001(){
     return(    
         <div className="StickerPage">
             <div className="StickerPage-header">
                 Sticker Details
-                <Link to="/NewStickersList">
+                <Link to="/AnimatedStickersList">
                     <img src ="back-32.png" align= "Left" />
                 </Link>
             </div>
@@ -19,10 +19,10 @@ function Sticker1001(){
                     </div>
                     <div className=".StickerPage-profile-name-description">
                         <div className=".Profile-name">
-                            <p id="name">Name 1001</p>
+                            <p id="name">Name 3001</p>
                         </div>
                         <div className=".Profile-description">
-                            <p id="description">Description 1001</p>
+                            <p id="description">Description 3001</p>
                         </div>
                     </div>
                 </div>
@@ -52,4 +52,4 @@ function Sticker1001(){
     );
 };
 
-export default Sticker1001;
+export default Sticker3001;

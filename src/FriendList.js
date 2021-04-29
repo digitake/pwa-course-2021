@@ -3,6 +3,7 @@ import App from './App';
 import { Link } from "react-router-dom";
 
 
+// Test github and Rider
 function FriendList(){
     return(
     <App>
@@ -27,7 +28,7 @@ function FriendList(){
                  สมศรี
                 <div className= "profile-icon">
                 <Link to="/profile">
-                <img src = "profile-user-64.png"  />
+                 <img src = "profile-user-64.png"  />
                 </Link>
                 </div>
                 <div className= "Chat-Button">
@@ -54,6 +55,6 @@ function FriendList(){
         </div>
     </App>
     );
-};
+}
 
 export default FriendList;

@@ -12,7 +12,11 @@ function Chatbox(){
     const [text, setText] = useState("")
     const [lines, setLines] = useState([]);
 
-    const [name ,setName ] = useState ("MyName")
+    const [name, setName] = useState("Myname");
+
+    const onNameChange = (event) => {
+      setName(event.target.value)
+    }
 
     useEffect(() => {
     chatroomRef.on('child_added', snapshot => {
@@ -25,9 +29,14 @@ function Chatbox(){
      });
     }, []);
     
-    const onNameChange = (event) =>{
-      setName(event.target.value)
-    }
+    const onTextChange = (event) => {
+      setText(event.target.value);
+      };
+
+    const onNameChange = (event) => {
+      setName(event.target.value);
+    };
+
 
     const onSend = () =>{
 
@@ -41,11 +50,7 @@ function Chatbox(){
       setText("");
     };
 
-    const onTextChange = (event) => {
-      setText(event.target.value);
-      };
-
-    
+   
   
 
     const keyPress = (event) =>{
@@ -57,7 +62,7 @@ function Chatbox(){
   return(
   <App>
     <div className="Chatbox">
-      <input type="text" value={name} onChange = {onNameChange}/>
+      <input type="text" value={name} onChange={onNameChange}/>
       <div className="Chatbox-chatroom">
         {
           lines.map(x =>{
@@ -81,6 +86,6 @@ function Chatbox(){
     </div>
   </App>
     );
-};
+}
 
 export default Chatbox;

@@ -8,71 +8,75 @@ import { Link } from "react-router-dom";
 
 function ShopPage({children}){
     return(
-        
         <div className="ShopPage">
-            <div className="ShopPage-header">
-                Sticker Shop
-                <div className="SopPage-button">
-                    <Link to="/friend-list">
-                    <img src ="back-32.png" align= "Left" />
-                </Link>
+            <div className="ShopPage-head">
+                <div className="ShopPage-header">
+                    Sticker Shop
+                    <div className="SopPage-button">
+                        <Link to="/friend-list">
+                        <img src ="back-32.png" align= "Left" />
+                        </Link>
+                    </div>
                 </div>
-            </div>
-            <div className="ShopPage-Category">
-                <div className="ShopPage-button">
-                    <Link to ="/HotStickersList">
+
+                <div className="ShopPage-Category">
+                    <div className="ShopPage-button">
+                        <Link to ="/HotStickersList">
                         
-                            Hot!
+                                Hot!
                         
-                    </Link>
-                </div>
-                <div className="ShopPage-button">
-                    <Link to ="/NewStickersList">
+                        </Link>
+                    </div>
+                    <div className="ShopPage-button">
+                        <Link to ="/NewStickersList">
                         
-                            New stickers
+                             New stickers
                         
-                    </Link>
-                </div>
-                <div className="ShopPage-button">
-                    <Link to ="/EffectStickersList">
+                        </Link>
+                    </div>
+                    <div className="ShopPage-button">
+                        <Link to ="/EffectStickersList">
                         
                             Effect stickers
                         
-                    </Link>
-                </div>
-                <div className="ShopPage-button">
-                    <Link to="/AnimatedStickersList">
+                        </Link>
+                    </div>
+                    <div className="ShopPage-button">
+                        <Link to="/AnimatedStickersList">
                         
                             Animated stickers
                         
-                    </Link>  
-                </div>
-                <div className="ShopPage-button">
-                    <Link to ="/CuteStickersList">
+                        </Link>  
+                    </div>
+                    <div className="ShopPage-button">
+                        <Link to ="/CuteStickersList">
                         
                             Cute
                         
-                    </Link>      
-                </div>
-                <div className="ShopPage-button">
-                    <Link to="/CoolStickersList">
+                        </Link>      
+                    </div>
+                    <div className="ShopPage-button">
+                        <Link to="/CoolStickersList">
 
                         Cool
 
-                    </Link>  
-                </div>
-                <div className="ShopPage-button">                        
-                    <Link to="/WarnAndFuzzyStickerList">
+                        </Link>  
+                    </div>
+                    <div className="ShopPage-button">                        
+                        <Link to="/WarnAndFuzzyStickerList">
 
                         Warm & Fuzzy
 
-                    </Link> 
+                        </Link> 
+                    </div>
                 </div>
             </div>
             <div className="ShopPage-body">
-                {children}
+                <div className="ShopPage-body-content">
+                    {children}
+                </div>
             </div>
-        </div>   
+        </div>  
     );
 };
 

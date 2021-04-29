@@ -62,9 +62,11 @@ function ShopPage({children}){
                     </Link>  
                 </div>
                 <div className="ShopPage-button">                        
-                    
+                    <Link to="/WarnAndFuzzyStickerList">
+
                         Warm & Fuzzy
-                    
+
+                    </Link> 
                 </div>
             </div>
             <div className="ShopPage-body">

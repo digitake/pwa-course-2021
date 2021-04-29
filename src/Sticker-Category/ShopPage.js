@@ -21,46 +21,48 @@ function ShopPage({children}){
             <div className="ShopPage-Category">
                 <div className="ShopPage-button">
                     <Link to ="/HotStickersList">
-                        <bottle>
+                        
                             Hot!
-                        </bottle>
+                        
                     </Link>
                 </div>
                 <div className="ShopPage-button">
                     <Link to ="/NewStickersList">
-                        <bottle>
+                        
                             New stickers
-                        </bottle>
+                        
                     </Link>
                 </div>
                 <div className="ShopPage-button">
                     <Link to ="/EffectStickersList">
-                        <bottle>
+                        
                             Effect stickers
-                        </bottle>
+                        
                     </Link>
                 </div>
                 <div className="ShopPage-button">
                     <Link to="/AnimatedStickersList">
-                        <bottle>
+                        
                             Animated stickers
-                        </bottle>
+                        
                     </Link>  
                 </div>
                 <div className="ShopPage-button">
-                    <bottle>
-                        Cute
-                    </bottle>
+                    <Link to ="/CuteStickersList">
+                        
+                            Cute
+                        
+                    </Link>      
                 </div>
                 <div className="ShopPage-button">
-                    <bottle>
+                    
                         Cool
-                    </bottle>
+                    
                 </div>
                 <div className="ShopPage-button">                        
-                <bottle>
-                    Warm & Fuzzy
-                </bottle>
+                    
+                        Warm & Fuzzy
+                    
                 </div>
             </div>
             <div className="ShopPage-body">

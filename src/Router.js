@@ -11,6 +11,12 @@ import Video from "./ProfilePage/Video";
 import GamePage from "./GamePage";
 import HotStickersList from "./Sticker-Category/HotStickersList";
 import Sticker0001 from "./Details-Stickers/Sticker0001";
+import Sticker0002 from "./Details-Stickers/Sticker0002";
+import Sticker0003 from "./Details-Stickers/Sticker0003";
+import Sticker0004 from "./Details-Stickers/Sticker0004";
+import Sticker0005 from "./Details-Stickers/Sticker0005";
+import Sticker0006 from "./Details-Stickers/Sticker0006";
+import Sticker0007 from "./Details-Stickers/Sticker0007";
 import Sticker1001 from "./Details-Stickers/Sticker1001";
 import Sticker2001 from "./Details-Stickers/Sticker2001";
 import Sticker3001 from "./Details-Stickers/Sticker3001";
@@ -97,6 +103,30 @@ function Router()  {
 
             <Route path="/Sticker0001">
               <Sticker0001 />
+            </Route>
+
+            <Route path="/Sticker0002">
+              <Sticker0002 />
+            </Route>
+
+            <Route path="/Sticker0003">
+              <Sticker0003 />
+            </Route>
+
+            <Route path="/Sticker0004">
+              <Sticker0004 />
+            </Route>
+
+            <Route path="/Sticker0005">
+              <Sticker0005 />
+            </Route>
+
+            <Route path="/Sticker0006">
+              <Sticker0006 />
+            </Route>
+
+            <Route path="/Sticker0007">
+              <Sticker0007 />
             </Route>
 
             <Route path="/Sticker1001">

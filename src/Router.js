@@ -19,6 +19,7 @@ import NewStickersList from "./Sticker-Category/NewStickersList";
 import EffectStickersList from "./Sticker-Category/EffectStickersList";
 import AnimatedStickersList from "./Sticker-Category/AnimatedStickersList";
 import CuteStickersList from "./Sticker-Category/CuteStickersList";
+import CoolStickersList from "./Sticker-Category/CoolStickersList";
 
 
 // Create Component
@@ -81,6 +82,10 @@ function Router()  {
 
             <Route path="/CuteStickersList">
               <CuteStickersList />
+            </Route>
+
+            <Route path="/CoolStickersList">
+              <CoolStickersList />
             </Route>
 
             <Route path="/Sticker0001">

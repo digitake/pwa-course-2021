@@ -1,7 +1,7 @@
 import './Sticker1001.css';
 import { Link } from "react-router-dom";
 
-function Sticker1001(){
+function Sticker1004(){
     return(    
         <div className="StickerPage">
             <div className="StickerPage-header">
@@ -19,10 +19,10 @@ function Sticker1001(){
                     </div>
                     <div className=".StickerPage-profile-name-description">
                         <div className=".Profile-name">
-                            <p id="name">Name 1001</p>
+                            <p id="name">Name 1004</p>
                         </div>
                         <div className=".Profile-description">
-                            <p id="description">Description 1001</p>
+                            <p id="description">Description 1004</p>
                         </div>
                     </div>
                 </div>
@@ -52,4 +52,4 @@ function Sticker1001(){
     );
 };
 
-export default Sticker1001;
+export default Sticker1004;

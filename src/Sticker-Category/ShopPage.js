@@ -8,61 +8,71 @@ import { Link } from "react-router-dom";
 
 function ShopPage({children}){
     return(
-        
         <div className="ShopPage">
-            <div className="ShopPage-header">
-                Sticker Shop
-                <div className="SopPage-button">
-                    <Link to="/friend-list">
-                    <img src ="back-32.png" align= "Left" />
-                </Link>
+            <div className="ShopPage-head">
+                <div className="ShopPage-header">
+                    Sticker Shop
+                    <div className="SopPage-button">
+                        <Link to="/friend-list">
+                        <img src ="back-32.png" align= "Left" />
+                        </Link>
+                    </div>
                 </div>
-            </div>
-            <div className="ShopPage-Category">
-                <div className="ShopPage-button">
-                    <Link to ="/HotStickersList">
-                        <bottle>
-                            Hot!
-                        </bottle>
-                    </Link>
-                </div>
-                <div className="ShopPage-button">
-                    <Link to ="/NewStickersList">
-                        <bottle>
-                            New stickers
-                        </bottle>
-                    </Link>
-                </div>
-                <div className="ShopPage-button">
-                    <bottle>
-                        Effect stickers
-                    </bottle>
-                </div>
-                <div className="ShopPage-button">
-                    <bottle>
-                        Animated stickers
-                    </bottle>
-                </div>
-                <div className="ShopPage-button">
-                    <bottle>
-                        Cute
-                    </bottle>
-                </div>
-                <div className="ShopPage-button">
-                    <bottle>
+
+                <div className="ShopPage-Category">
+                    <div className="ShopPage-button">
+                        <Link to ="/HotStickersList">
+                                Hot!
+                        </Link>
+                    </div>
+                    <div className="ShopPage-button">
+                        <Link to ="/NewStickersList">
+                             New stickers
+                        </Link>
+                    </div>
+                    <div className="ShopPage-button">
+                        <Link to ="/EffectStickersList">
+                        
+                            Effect stickers
+                        
+                        </Link>
+                    </div>
+                    <div className="ShopPage-button">
+                        <Link to="/AnimatedStickersList">
+                        
+                            Animated stickers
+                        
+                        </Link>  
+                    </div>
+                    <div className="ShopPage-button">
+                        <Link to ="/CuteStickersList">
+                        
+                            Cute
+                        
+                        </Link>      
+                    </div>
+                    <div className="ShopPage-button">
+                        <Link to="/CoolStickersList">
+
                         Cool
-                    </bottle>
-                </div>
-                <div className="ShopPage-button">                        
-                <bottle>
-                    Warm & Fuzzy
-                </bottle>
+
+                        </Link>  
+                    </div>
+                    <div className="ShopPage-button">                        
+                        <Link to="/WarnAndFuzzyStickerList">
+
+                        Warm&Fuzzy
+
+                        </Link> 
+                    </div>
                 </div>
             </div>
             <div className="ShopPage-body">
-                {children}
+                <div className="ShopPage-body-content">
+                    {children}
+                </div>
             </div>
-        </div>   
+        </div>  
     );
 };
 

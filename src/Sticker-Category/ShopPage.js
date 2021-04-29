@@ -22,16 +22,12 @@ function ShopPage({children}){
                 <div className="ShopPage-Category">
                     <div className="ShopPage-button">
                         <Link to ="/HotStickersList">
-                        
                                 Hot!
-                        
                         </Link>
                     </div>
                     <div className="ShopPage-button">
                         <Link to ="/NewStickersList">
-                        
                              New stickers
-                        
                         </Link>
                     </div>
                     <div className="ShopPage-button">
@@ -65,7 +61,7 @@ function ShopPage({children}){
                     <div className="ShopPage-button">                        
                         <Link to="/WarnAndFuzzyStickerList">
 
-                        Warm & Fuzzy
+                        Warm&Fuzzy
 
                         </Link> 
                     </div>

@@ -26,6 +26,11 @@ import Sticker1005 from "./Details-Stickers/Sticker1005";
 import Sticker1006 from "./Details-Stickers/Sticker1006";
 
 import Sticker2001 from "./Details-Stickers/Sticker2001";
+import Sticker2002 from "./Details-Stickers/Sticker2002";
+import Sticker2003 from "./Details-Stickers/Sticker2003";
+import Sticker2004 from "./Details-Stickers/Sticker2004";
+import Sticker2005 from "./Details-Stickers/Sticker2005";
+
 import Sticker3001 from "./Details-Stickers/Sticker3001";
 import Sticker4001 from "./Details-Stickers/Sticker4001";
 import Sticker5001 from "./Details-Stickers/Sticker5001";
@@ -162,6 +167,22 @@ function Router()  {
 
             <Route path="/Sticker2001">
               <Sticker2001 />
+            </Route>
+
+            <Route path="/Sticker2002">
+              <Sticker2002 />
+            </Route>
+
+            <Route path="/Sticker2003">
+              <Sticker2003 />
+            </Route>
+
+            <Route path="/Sticker2004">
+              <Sticker2004 />
+            </Route>
+
+            <Route path="/Sticker2005">
+              <Sticker2005 />
             </Route>
 
             <Route path="/Sticker3001">

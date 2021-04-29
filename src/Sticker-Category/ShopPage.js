@@ -41,9 +41,11 @@ function ShopPage({children}){
                     </Link>
                 </div>
                 <div className="ShopPage-button">
-                    <bottle>
-                        Animated stickers
-                    </bottle>
+                    <Link to="/AnimatedStickersList">
+                        <bottle>
+                            Animated stickers
+                        </bottle>
+                    </Link>  
                 </div>
                 <div className="ShopPage-button">
                     <bottle>

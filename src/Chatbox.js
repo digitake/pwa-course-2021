@@ -4,7 +4,7 @@ import App from './App';
 
 import firebase from './FirebaseConfig';
 
-const chatroomRef = firebase.database().ref('chatroom-1')
+var chatroomRef;
 
 function Chatbox() {
 
@@ -12,9 +12,16 @@ function Chatbox() {
 
   const [lines, setLines] = useState([]);
 
+  const [name, setName] = useState("MyName")
+  
+  const [chatroom, setChatroom] = useState("chatroom")
+
   useEffect(() => {
-    chatroomRef.on('child_added', snapshot =>{
+    setLines(_=>[])
+    chatroomRef = firebase.database().ref(chatroom);
+    chatroomRef.on('child_added', (snapshot) =>{
       let x = snapshot.val();
+
       setLines(lines => [...lines, {
         sender: x.sender,
         message: x.message,
@@ -22,15 +29,26 @@ function Chatbox() {
       }])
     });
 
-  }, []);
+    return () =>{
+      chatroomRef.off("child_added")
+    };
+  }, [chatroom]);
+  
+  const onRoomChange = (event) => {
+    setChatroom(event.target.value);
+  }
   
   const onTextChange = (event) => {
     setText(event.target.value);
   };
+
+  const onNameChange = (event) => {
+    setName(event.target.value);
+  };
   
   const onSend = () =>{
     chatroomRef.push({
-      sender: "Peet",
+      sender: name,
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
     })
@@ -48,7 +66,8 @@ function Chatbox() {
     <App>
 
       <div className="App col-6">
-
+        <input type="text" className="App-textbox-input" value={chatroom} onChange={onRoomChange}/>
+        <input type="text" className="App-textbox-input" value={name} onChange={onNameChange}/>
       <div className="App-chatroom">
       {
         lines.map(x => {

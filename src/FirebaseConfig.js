@@ -4,7 +4,7 @@ import firebase from 'firebase';
 var firebaseConfig = {
     apiKey: "AIzaSyBj1LyIO5bA19_D6JzMu62sz9xn4HFSGmw",
     authDomain: "chatapp-pwa-course-1620703478.firebaseapp.com",
-    databaseURL: "https://chatapp-pwa-course-1620703478-default-rtdb.firebaseio.com",
+    databaseURL: "https://chatapp-pwa-course-1620703478-default-rtdb.firebaseio.com/",
     projectId: "chatapp-pwa-course-1620703478",
     storageBucket: "chatapp-pwa-course-1620703478.appspot.com",
     messagingSenderId: "238558235711",

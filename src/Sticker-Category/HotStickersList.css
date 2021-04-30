@@ -1,6 +1,8 @@
 .StickersList {
     display: flex;
     flex-direction: column;
+    margin: 10px;
+
 }
 
 .Sticker-from {
@@ -10,22 +12,21 @@
 }
 
 .Sticker-ShowImg {
-    flex: 1;
-    justify-content: center;
+    flex: 0.3; 
 }
 
 .Sticker-DisptionZone {
-    flex: 15;
+    flex: 0.7;
     display: flex;
     flex-direction: column;
 }
 
 .Sticker-Name {
-    flex: 1;
+    flex: 0.5;
     font-size: small;
 }
 
 .Sticker-Disption{
-    flex: 1;
+    flex: 0.5;
     font-size: x-small;
 }

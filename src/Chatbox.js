@@ -29,6 +29,15 @@ function Chatbox(){
      });
     }, []);
     
+    const onTextChange = (event) => {
+      setText(event.target.value);
+      };
+
+    const onNameChange = (event) => {
+      setName(event.target.value);
+    };
+
+
     const onSend = () =>{
 
      chatroomRef.push({
@@ -41,9 +50,7 @@ function Chatbox(){
       setText("");
     };
 
-    const onTextChange = (event) => {
-      setText(event.target.value);
-      };
+   
   
 
     const keyPress = (event) =>{
@@ -79,6 +86,6 @@ function Chatbox(){
     </div>
   </App>
     );
-};
+}
 
 export default Chatbox;

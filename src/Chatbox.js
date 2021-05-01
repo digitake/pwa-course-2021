@@ -2,7 +2,7 @@ import './Chatbox.css';
 import {useEffect, useState} from 'react';
 import App from './App';
 
-import firebase from './firebaseConfig';
+import firebase from  './FirebaseConfig';
 
 const chatroomRef = firebase.database().ref('chatroom-1');
 

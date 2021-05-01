@@ -1,0 +1,45 @@
+.InfoPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    max-width: 1920px;
+    height: 100%;
+    margin: auto;
+}
+.InfoMain{
+    flex: 7;
+    vertical-align: middle;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background-position: top;
+    background-image: url(InfoPage1.png);
+    background-repeat: no-repeat;  
+}
+@media(max-width: 600px){
+.InfoPage {
+    background-repeat: center;
+    background-position: center;
+    background-color: aquamarine;
+    background-size: contain;
+  }
+}
+@media(min-width:601px) and (max-width:1080px){
+.InfoPage {
+    background-repeat: center;
+    background-position: center;
+    background-color: azure;
+    background-size: contain;
+    }
+}
+@media(min-width:1081px){
+.InfoPage {
+    background-repeat: center;
+    background-position: center;
+    background-color: blanchedalmond;
+    background-size: contain;
+    }
+}
+
+

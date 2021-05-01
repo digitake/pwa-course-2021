@@ -26,7 +26,7 @@ function PrivateChatRoom() {
 
 const onSend = () => {
   chatroomRef.push({
-    sender: "King",
+    sender: "9",
     message: text,
     timestamp: firebase.database.ServerValue.TIMESTAMP
   });
@@ -38,6 +38,7 @@ const onTextChange = (event) => {
   setText(event.target.value);
 
 };
+
 
   return (
       <Headerchat>
@@ -51,9 +52,8 @@ const onTextChange = (event) => {
                   {x.sender + " : " + x.message + " " + x.timestamp.toLocaleString()}
                 </div>
               </div>
-        })  
+        })
       }
-
       </div>
 
       <div className="App-textbox">

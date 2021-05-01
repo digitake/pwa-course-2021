@@ -1,6 +1,6 @@
-import  firebase from 'firebase';
+import firebase from 'firebase';
 
-// Your web app's Firebase configuration
+ // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyCLirnobt_7UBWtuPkB8UII4cN-77KvCpg",
     authDomain: "bu-chatapp-pwa-chatclub.firebaseapp.com",
@@ -14,4 +14,3 @@ var firebaseConfig = {
   // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-export default firebase;

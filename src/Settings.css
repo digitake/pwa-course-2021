@@ -28,73 +28,45 @@
 
 @media (max-width: 1279px)
 {
-  .SettingPage
-  {
-    margin: auto;
+  .SettingPage{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
+    color: #ffffff;
     background-color: #2D2C67;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      
-  }
-  .Header
-  { 
-    display: flex;
-    position: relative;
-    background-color: #505396;
-    width: 100%;
-    height: 131px;
-    align-items: center;
-    justify-content: center ;
+
   }
 
-  .Header-text
+  .Header
   {   
-    margin-left:100px ;
-    margin-top: 60px;
-    height: 131px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-image: url(/src/AppchatUpdate/Settings.png);
-  }
-  .OptionSetting
-  {
-    margin-top: 20px ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background-color: #505396;
+    font-size: calc(30px + 2vmin);
+  }
+  
+  
+  .OptionSetting{   
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    width: 100%;
+    height: 100%;
+    
   }
 
-  .Profiles{
+  .SettingTab{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-left: 50px;
+    color: #ffffff;
+    font-size: calc(30px + 2vmin);
+    width: 100%;
+    height: 100%;
   }
-  .LogOut{
-
-    display: flex;
-    align-items: center;
-    margin-right: 145px;
-    margin-top: 350px;  
-    justify-content: flex-start;
-      
-  }
-
-  .Undo2{
-
-    display: flex;
-    margin-bottom: 60px;
-    align-items: flex-start;
-    justify-content:flex-start;
-      
-  }
-
-
 
 }
 
@@ -102,104 +74,48 @@
 @media (min-width: 1280px){
 
   .SettingPage{
-        
-    margin: auto;
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
+    color: #ffffff;
     background-color: #2D2C67;
-    flex-direction: column;
-        
+
   }
 
   .Header
   {   
     display: flex;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
     background-color: #505396;
-    width: 100%;
-    height: 131px;
-    justify-content: center;
-    align-items: center;
-        
-       
+    font-size: calc(30px + 2vmin);
   }
-
-  .Header-text
-  {   
-    align-items: center;
-    width: 200px;
-    height: 70px;
-    background-repeat: no-repeat;
-    background-size: 95% ;
-    background-image: url(/src/AppchatUpdate/Settings.png);
-  }
-
-  .Profiles{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px;
-  }
-    
- 
-  .LogOut{
-
-    width: 62px;
-    height: 62px;
-    justify-content:center;  
-    margin-top: 100px;
-    margin-left: 100px;
-  } 
-
-  .Undo2{
-
-    align-items: center;
-    justify-content: start;
-        
-  }
-    
+  
+  
   .OptionSetting{   
-
+    margin-top: 5%;
     display: flex;
-  
-    flex-direction: row;
-    align-items: center;
-  
-  }
-
-
-  .OptionSetting-Bar
-  {
+    flex-direction: column;
+    align-items: center ;
+    width: 100%;
+    height: 100%;
     
-    margin-top: 50px;
-    margin-left: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 852px;
-    height: 498px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(/src/AppchatUpdate/GropOption.png);
   }
 
+  .SettingTab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-size: calc(30px + 2vmin);
+    width: 100%;
+    height: 100%;
+  }
+
+ 
 
   
-  .LogOut{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-  }
-  .OptionSetting-Profiles{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-
 }
 
 

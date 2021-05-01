@@ -6,14 +6,11 @@ import firebase from './firebaseConfig'; //ดึง config
 
 const chatroomRef = firebase.database().ref('chatroom-1');
 
-
-
-
-
 function Chatbox() {
 
   const [text, setText] = useState("")
   const [lines, setLines] = useState([]);
+  const [name, setName] = useState("myname");
 
   useEffect (() => {
       chatroomRef.on('child_added', snapshot => {
@@ -21,7 +18,7 @@ function Chatbox() {
         setLines ( l => [...l, {
           sender: x.sender,
           message: x.message,
-          timestamp: (new Date())
+          timestamp: (new Date(x.timestamp))
         }])
       });
   }, []);
@@ -30,29 +27,34 @@ function Chatbox() {
     setText(event.target.value);
   };
 
+  const onNameChange = (event) => {
+    setName(event.target.value);
+  }
+
   const onSend = () => {
     chatroomRef.push({
-      sender: "Me",
+      sender: name,
       message: text,
+      timestamp: firebase.database.ServerValue.TIMESTAMP
     })
+  };
+
+  const keyPress = (event) => {
+    if (event.which == 13) {
+    }
   };
 
 
   return (
     <Headerchat>
     <div className="App">
+      <input type="text" value={name} onChange={onNameChange}/>
       <div className="App-content">
       {
         lines.map(x =>{
           return <div className="App-chatroom-text">
             <div>
-              {x.sender+":"}
-              </div>
-            <div>
-              {x.message}
-              </div>
-            <div>
-              {x.timestamp.toLocaleDateString()}
+            {x.sender + " : " + x.message + " " + x.timestamp.toLocaleString()}
               </div>
           </div>
         }) 

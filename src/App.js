@@ -4,7 +4,7 @@ import friend2 from './icon friend2.png';
 import profile from './icon profile.png';
 import group from './icon group.png';
 
-function App({children}) {
+function App() {
  
 
   return (
@@ -44,7 +44,7 @@ function App({children}) {
       
 
 
-      {children}
+      
     </div>
       </div>
     

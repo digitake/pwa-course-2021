@@ -1,0 +1,113 @@
+.FriendList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+    /*background-size: cover;*/
+  }
+  
+  @media (min-width: 768px){
+    .FriendList{
+      max-width: 100%;
+      background-color: rgb(88, 222, 255);
+      background-image: url(bg2.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 125%;
+      
+    }
+  }
+  
+  @media (max-width: 1024px){
+    .FriendList{
+      max-width: 100%;
+      background-repeat: no-repeat;
+      background-image: url(bg.jpg);
+      background-position: center;
+      background-size: 125%;
+      background-color: rgb(29, 29, 29);
+    }
+  }
+  
+  .FriendList-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  .FriendList-header {
+    flex: 1;
+    background-color: #001969;
+    display: flex;
+    text-align: center;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+    
+    
+    
+  }
+  
+  .FriendList-content {
+    display: flex;
+    flex: 12;
+    
+    
+  }
+  
+  .FriendList-chatroom {
+    flex: 12;
+  
+  }
+  
+  .FriendList-chatroom2 {
+    flex: 12;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url();
+    color : rgb(0, 0, 0);
+    font-weight: 1000;
+  
+    font-size: large;
+  }
+  
+  
+  .FriendList-chatroom-text {
+    margin: 8px;
+    background-color: rgb(136, 152, 241);
+    color : rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .FriendList-textbox {
+    flex: 1;
+    background-color: rgb(243, 200, 230);
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+  }
+  
+  .FriendList-textbox-input {
+    flex: 5;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: x-small;
+  }
+  
+  .FriendList-textbox-send {
+    flex: 2;
+    height: 100%;
+    background-color: burlywood;
+    vertical-align: super;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    color: rgb(52, 1, 255);
+  }

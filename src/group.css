@@ -1,4 +1,4 @@
-.App {
+.group {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 768px){
-  .App{
+  .group{
     max-width: 100%;
     background-color: rgb(88, 222, 255);
     background-image: url(bg2.jpg);
@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 1024px){
-  .App{
+  .group{
     max-width: 100%;
     background-repeat: no-repeat;
     background-image: url(bg.jpg);
@@ -32,34 +32,41 @@
   }
 }
 
-.App-logo {
+.group-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-.App-header {
+.group-header {
   flex: 1;
-  background-color: #32a0fa;
+  background-color: #001969;
   display: flex;
-  flex-direction: row;
+  text-align: center;
+  flex-direction:column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(68, 117, 250);
+  color: rgb(255, 255, 255);
+  
+  
   
 }
 
-.App-content {
-
+.group-content {
+  display: flex;
   flex: 12;
+  flex-direction:column;
+  align-items: center;
+  justify-content:start;
+  
 }
 
-.App-chatroom {
+.group-chatroom {
   flex: 12;
 
 }
 
-.App-chatroom2 {
+.group-chatroom2 {
   flex: 12;
   background-color: rgba(255, 255, 255, 0);
   background-image: url();
@@ -70,7 +77,7 @@
 }
 
 
-.App-chatroom-text {
+.group-chatroom-text {
   margin: 8px;
   background-color: rgb(136, 152, 241);
   color : rgb(0, 0, 0);
@@ -79,7 +86,7 @@
   font-weight: 600;
 }
 
-.App-textbox {
+.group-textbox {
   flex: 1;
   background-color: rgb(243, 200, 230);
   justify-content: center;
@@ -87,14 +94,14 @@
   display: flex;
 }
 
-.App-textbox-input {
+.group-textbox-input {
   flex: 5;
   height: 100%;
   box-sizing: border-box;
   font-size: x-small;
 }
 
-.App-textbox-send {
+.group-textbox-send {
   flex: 2;
   height: 100%;
   background-color: burlywood;

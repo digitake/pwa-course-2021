@@ -1,17 +1,52 @@
+import './group.css';
 import { Link } from 'react-router-dom'
-import App from './App';
 function group(){
     return(
-        <App>
+        <div className="group">
+      
+      <div className="group-header">
+    
         <div>
-            Group
-            <Link to = "/chatbox">
+
+        
+        <Link to = "/">
                 <button>
-                    Go to Chatroom
+                    back 
+                </button>
+        </Link>
+        
+        
+            Group Chat
+            
+        </div>
+     
+     </div>
+
+     <div className = "group-content">  
+
+             <Link to = "/chatbox">
+                <button>
+                    แชทคุยกับอาจารย์ 
                 </button>
             </Link>
-        </div>
-        </App>
+            <div>
+                เว้นว่าง ให้จารย์ช่วยความกว้าง
+            </div>
+
+    <div>
+            <Link to = "/chatbox2">
+                <button>
+                    หาเพื่อนเล่นเกม
+                </button>
+            </Link>
+    </div>
+
+            
+
+    </div>
+
+    </div>
+        
     )
 }
 

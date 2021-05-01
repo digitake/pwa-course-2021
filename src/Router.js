@@ -5,6 +5,12 @@ import FriendList from './FriendList';
 import Group from './group';
 import Profile from './Profile';
 
+import "./App.css";
+import "./Chatbox.css";
+import "./group.css";
+import "./FriendList.css";
+import "./Profile.css";
+
 function Router() {
     return(
         <BrowserRouter>

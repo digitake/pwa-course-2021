@@ -1,4 +1,3 @@
-import './App.css';
 import { Link } from 'react-router-dom'
 import Friend from './Friend.png';
 import Profile from './Profile.png';

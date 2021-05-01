@@ -1,28 +1,30 @@
-import './Profile.css';
-/*import {useState} from 'react';*/
 import { Link } from 'react-router-dom'
-import ProfileName from './Profile.png';
+import ProfileName from './Benz.jpg';
 function Profile(){
     return (
         <div className = "Profile">
 
         <div className="Profile-header">
-           <div>
-           <Link to = "/">
-                <button>
-                    back
-                </button>
+           <div className="btn-cover">
+           <Link to = "/" style={{  textDecoration: "none" }}>
+                <div className="btn-back">
+                    Back
+                </div>
             </Link>
-               My Profile
-            
             </div> 
+            <div>
+            My Profile
+            </div>
          </div>
 
          <div className= "Profile-content">
-         <img src= {ProfileName} width = "150" height = "150" alt="รูปคนหล่อ"/>
+             <br/>
+             <a href="https://www.facebook.com/peerapat.chokwiriyapanya/" target="_blank">
+         <img src= {ProfileName} width = "150" height = "150" alt="รูปคนหล่อ" style={{borderRadius: "50%"}}/>
+         </a>
+         <br/>
             <div>
                 My name is benzchk 20 years old 
-            
             </div>
 
             <div>

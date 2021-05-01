@@ -15,24 +15,8 @@
     
   }
 
-  @media(min-width: 768px){
-    
-    .FriendList{
-      width:  95%;
-
-    }
-  }
-
-  @media(min-width: 480px){
-
-    .FriendList{
-      background-color:  #242424;
-    }
-  }
-
-
-
-  .profile-icon{
+  
+  .FriendList-icon{
 
     flex: 1;
     background-repeat: no-repeat;

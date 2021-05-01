@@ -54,7 +54,9 @@ function FriendList(params)
          
 
         </div>
+    
         </App>
+    
     )
 };
 

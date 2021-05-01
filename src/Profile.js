@@ -38,11 +38,13 @@ function Profile() {
            <div class="desc">setting 5 </div>
            </div>
 
+           
+           <Link to="/App">
            <div class="gallery">
            <a target="_blank" href="Profile.jpg"></a>
-           <div class="desc">setting 6 </div>
+           <div class="desc">Chat  </div>
            </div>
-           
+           </Link>
         </NormalPage>
          
     );

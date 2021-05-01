@@ -58,6 +58,7 @@ function Router()  {
     return(
         <BrowserRouter>
         <Switch>
+
           
             <Route path="/friend-list">
               <FriendList />
@@ -239,6 +240,7 @@ function Router()  {
               <Chatbox />
             </Route>
 
+            
         </Switch>
         </BrowserRouter>
 

@@ -27,7 +27,7 @@ function Chatbox(){
     
     const onTextChange = (event) => {
       setText(event.target.value);
-      };
+    };
 
     const onNameChange = (event) => {
       setName(event.target.value);

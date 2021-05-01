@@ -75,7 +75,7 @@
   background-color: #e9e77f00;
 }
 
-.App-textbox {
+.App-textBox {
   flex: 1;
   background-color:#fecd48;
   justify-content: center;
@@ -83,7 +83,7 @@
   display: flex;
 }
 
-.App-textbox-input {
+.App-textBox-input {
   flex: 5;
   height: 100%;
   box-sizing: border-box;
@@ -91,7 +91,7 @@
 
 }
 
-.App-textbox-send {
+.App-textBox-send {
   flex: 1;
   height: 100%;
   vertical-align: middle;
@@ -139,4 +139,3 @@
   cursor: pointer;
 }
 
-/*dssf*/

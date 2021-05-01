@@ -1,7 +1,7 @@
-import './Sticker1001.css';
+import './StickerBase.css';
 import { Link } from "react-router-dom";
 
-function Sticker0001(){
+function Sticker1001(){
     return(    
         <div className="StickerPage">
             <div className="StickerPage-header">
@@ -14,7 +14,7 @@ function Sticker0001(){
                 <div className="StickerPage-profile-sticker">
                     <div className=".StickerPage-profile-image">
                         <div className ="Profile-image">
-                            <img src="Profile.png" align="Bottom" />
+                            <img src="Profile.png" width="100px" height="100px" align="Bottom" />
                         </div>
                     </div>
                     <div className=".StickerPage-profile-name-description">
@@ -31,19 +31,19 @@ function Sticker0001(){
                     </div>
                     <div className="StickerPage-details-sticker">
                         <div className=".StickerPage-details-sticker-row">
-                            <img src="Profile-250.png" width="150px" height="150px" />
-                            <img src="Profile-250.png" width="150px" height="150px" />
-                            <img src="Profile-250.png" width="150px" height="150px" />
+                            <img src="Profile-250.png" width="110px" height="110px" />
+                            <img src="Profile-250.png" width="110px" height="110px" />
+                            <img src="Profile-250.png" width="110px" height="110px" />
                         </div>
                         <div className=".StickerPage-details-sticker-row">
-                            <img src="Profile-250.png" width="150px" height="150px" />
-                            <img src="Profile-250.png" width="150px" height="150px" />
-                            <img src="Profile-250.png" width="150px" height="150px" />
+                            <img src="Profile-250.png" width="110px" height="110px" />
+                            <img src="Profile-250.png" width="110px" height="110px" />
+                            <img src="Profile-250.png" width="110px" height="110px" />
                         </div>
                         <div className=".StickerPage-details-sticker-row">
-                            <img src="Profile-250.png" width="150px" height="150px" />
-                            <img src="Profile-250.png" width="150px" height="150px" />
-                            <img src="Profile-250.png" width="150px" height="150px" />
+                            <img src="Profile-250.png" width="110px" height="110px" />
+                            <img src="Profile-250.png" width="110px" height="110px" />
+                            <img src="Profile-250.png" width="110px" height="110px" />
                         </div>
                     </div>
                 </div>
@@ -52,4 +52,4 @@ function Sticker0001(){
     );
 };
 
-export default Sticker0001;
+export default Sticker1001;

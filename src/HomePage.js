@@ -10,7 +10,7 @@ function HomePage({children}) {
         <div class="flex-container"/>
         <div className = "HomePageInfo-topBar">
             <p>     .     </p>
-            <input type="text" Search="search" placeholder="Search"/>
+            <input type="text" Search="search" placeholder="Search" className = "HomePageInfo-topBar-search"/>
             <div className = "HomePageInfo-topBar-profile"/>
         </div>
                 

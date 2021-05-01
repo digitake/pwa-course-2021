@@ -11,6 +11,7 @@ function AddFriend() {
                     <h1>Name: Pikajuu</h1>
                     <h1>ID: 16.8.29.52</h1>
                     </p>
+                    
                 </body>
             </div>
         </App>

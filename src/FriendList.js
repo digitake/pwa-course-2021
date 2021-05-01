@@ -1,5 +1,7 @@
 import './FriendList.css';
 import { Link } from 'react-router-dom'
+import Friend1 from './Friend1.PNG';
+import Friend2 from './Friend2.PNG';
 function FriendList(){
     return(
         
@@ -19,21 +21,14 @@ function FriendList(){
 
             <div className = "FriendList-content">  
 
-            <Link to = "/chatbox">
-                 <button>
-                     แชทคุยกับอาจารย์ 
-                 </button>
-            </Link>
-                <div>
-                    เว้นว่าง ให้จารย์ช่วยความกว้าง
-                </div>
-
+            <img src= {Friend1} width = "200" height = "150" alt="เพื่อน1"/>
             <div>
-                <Link to = "/chatbox2">
-                    <button>
-                      หาเพื่อนเล่นเกม
-                    </button>
-                </Link>
+                Sun
+            </div>
+
+            <img src= {Friend2} width = "200" height = " 150" alt="เพื่อน2"/>
+            <div>
+                Nink
             </div>
 
 </div>

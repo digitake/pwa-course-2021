@@ -55,6 +55,9 @@
   .FriendList-content {
     display: flex;
     flex: 12;
+    flex-direction:column;
+    align-items: center;
+    
     
     
   }

@@ -1,6 +1,11 @@
 import './Chatbox.css';
 import {useState , useEffect} from 'react';
 import App from './App';
+import { Link } from 'react-router-dom'
+import Friend from './Friend.png';
+import Profile from './Profile.png';
+import Group from './Group.png';
+import Chat from './Chat.png';
 
 import firebase from './firebaseConfig';
 
@@ -47,10 +52,37 @@ function Chatbox() {
   };
 
   return (
-    <App>
-    <div className="App">
+    
+    <div className="Chatbox">
       
-      
+      <div className="Chatbox-header">
+      <Link to = "/friend-list">
+                
+                
+                <img src= {Friend} width = "50" height = " 60" alt="เพื่อน" />
+                
+      </Link>
+
+      <Link to = "/profile">
+                
+                <img src= {Profile} width = "50" height = " 40" alt="โปร์ไฟล์" />
+
+      </Link>
+
+      <Link to = "/group">
+                
+                 <img src= {Group} width = "50" height = " 40" alt="กลุ่ม" />
+
+      </Link>
+
+      <Link to = "/chatbox">
+                
+                <button>
+                <img src= {Chat} width = "50" height = " 40" alt="กลุ่ม" />
+                </button>
+                
+      </Link>
+      </div>
       <div className="Chatbox-chatroom">
         
         {
@@ -75,7 +107,7 @@ function Chatbox() {
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
       </div>
     </div>
-    </App>
+    
   );
 }
 

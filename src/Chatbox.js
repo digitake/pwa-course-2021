@@ -2,10 +2,6 @@ import './Chatbox.css';
 import {Link} from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import App from './App';
-import firebase from './firebaseConfig';
-
-const chatroomRef = firebase.database().ref('chatroom-1');
-
 
 import firebase from './firebaseConfig';
 

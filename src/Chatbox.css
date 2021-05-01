@@ -74,7 +74,8 @@
 }
 
 .Chatbox-textbox {
-    position: fixed;
+    display: flex;
+    position: sticky;
     bottom: 0;
     width: 100%;
     flex: 1;

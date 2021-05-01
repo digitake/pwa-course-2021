@@ -1,5 +1,5 @@
 .PageDrawing{
-  background-image: url(BG_MEOW.jpg);
+  background-image: url(BG_MEOW.png);
   background-size: cover;
   height: 100%;
 }
@@ -7,19 +7,16 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-
     padding: 10px 0;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 212, 246);
     font-size: 60px;
-
   }
   .PageDrawing-botton{
     float: right;
     padding: 10px 0;
     margin: 10px;
     padding-right: 10px;
-
   }
   .PageDrawing-drawbox{
     padding: 150px 0;
@@ -42,5 +39,4 @@
     background-image: url(Logo.png);
     background-repeat: no-repeat;
     background-size: 5%;
-
   }

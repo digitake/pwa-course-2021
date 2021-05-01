@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import './PageDrawing.css';
+import drawing from './Drawing_Icon.png';
 import Logo from './Logo.png'
-import ChatLogo from './Cahat_Icon.png';
-import ToolLogo from './ToolIcon.png';
+import ChatLogo from './Cahat_Icon.png'
+import Toolicon from './ToolIcon.png'
 
 function Page4Drawling() {
   return (
@@ -12,7 +13,7 @@ function Page4Drawling() {
           D r a w z y
           <img src={Logo}></img>
         <div className="PageDrawing-botton">
-          <Link to="/">
+          <Link to="/App">
           <img src={ChatLogo}></img>
           </Link>
           <div></div>

@@ -5,7 +5,7 @@ import firebase from 'firebase';
   var firebaseConfig = {
     apiKey: "AIzaSyCi3LV93MV-yZMGJ2WFOOwuIt55jZP17us",
     authDomain: "chatapp-drawzy.firebaseapp.com",
-    databaseURL: "https://chatapp-drawzy-default-rtdb.firebaseio.com",
+    databaseURL: "https://chatapp-drawzy-default-rtdb.firebaseio.com/",
     projectId: "chatapp-drawzy",
     storageBucket: "chatapp-drawzy.appspot.com",
     messagingSenderId: "487970962056",
@@ -15,5 +15,4 @@ import firebase from 'firebase';
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-
   export default firebase;

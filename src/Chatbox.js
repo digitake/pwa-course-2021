@@ -38,6 +38,15 @@ function Chatbox() {
   const onRoomtwo = () => {
     setchatroom("chatroom");
   };
+  const onNameChange = (event) => {
+    setname(event.target.value);
+  };
+  const onRoomone = () => {
+    setchatroom("sdsd");
+  };
+  const onRoomtwo = () => {
+    setchatroom("chatroom");
+  };
   const onSend =() =>{
     chatroomRefs.push({
       sender : name,

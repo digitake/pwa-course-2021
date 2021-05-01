@@ -27,16 +27,6 @@ function Chatbox() {
   },[chatroom]);
   const onTextChange = (event) => {
     setText(event.target.value);
-   
-  };
-  const onNameChange = (event) => {
-    setname(event.target.value);
-  };
-  const onRoomone = () => {
-    setchatroom("sdsd");
-  };
-  const onRoomtwo = () => {
-    setchatroom("chatroom");
   };
   const onNameChange = (event) => {
     setname(event.target.value);
@@ -55,7 +45,6 @@ function Chatbox() {
     });
     setText("");
   };
-
   const keyPress = (event) =>  {
     if(event.which===13){
       onSend();
@@ -64,8 +53,6 @@ function Chatbox() {
   return (
       <App>
           <div className="App">
-          <input type= "text" className= "App-textbox-input"
-            value= {name} onChange={onNamechang}/>
       <div className="App-header">
         Cat Chat
       </div>
@@ -87,7 +74,6 @@ function Chatbox() {
           Good Luck Meaow ^^ 
         </div>
         <div className="App-chatroom">
-        
           {
           lines.map(x => {
           return <div className="App-chatroom-text">                 
@@ -107,7 +93,6 @@ function Chatbox() {
           </div>
       </div>
     </div>
-   
     </App>
   );
 }

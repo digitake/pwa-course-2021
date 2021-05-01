@@ -59,9 +59,6 @@ function Router()  {
         <BrowserRouter>
         <Switch>
 
-            <Route path="/">
-              <Chatbox />
-            </Route>
           
             <Route path="/friend-list">
               <FriendList />
@@ -237,6 +234,10 @@ function Router()  {
 
             <Route path="/Sticker6001">
               <Sticker6001 />
+            </Route>
+
+            <Route path="/">
+              <Chatbox />
             </Route>
 
             

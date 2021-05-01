@@ -1,20 +1,42 @@
 import './Chatbox.css';
-import { Link } from 'react-router-dom';
+import {useEffect, useState} from 'react';
+import App from './App';
+import firebase from './FirebaseConfig';
 
-import {useState} from 'react';
+const chatroomRaf = firebase.database().ref('chatroom-1');
 
 
 function Chatbox() {
-  
+
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
-  
+
+  useEffect(() => {
+
+    chatroomRaf.on('child_added', snapshot =>{
+      let x = snapshot.val();
+
+      setLines(line => [...line, {
+        sender: x.sender,
+        message: x.message,
+        timestamp: new Date(x.timestamp)
+      }])
+    });
+
+  }, []);
+
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () =>{
-    setLines([...lines, text]);
+
+    chatroomRaf.push({
+      sender: "Arm",
+      message: text,
+      timestamp: firebase.database.ServerValue.TIMESTAMP
+  });
+
     setText("");
   };
 
@@ -25,43 +47,46 @@ function Chatbox() {
   };
 
   return (
-    <div className="App">
-      <div className="App-header">
-      <div>
-        <Link to="/">
-            <img src="back"  alt="ย้อนกลับ"/>
-        </Link>
-        </div>
-      </div>
-      <div className ="panel-footer">
-      </div>
-      <div className ="input-group">
-      </div>
-      <div className="App-chatroom">
 
-        {
-          lines.map(x => {
-            return <div className="App-chatroom-text">
-                    {x}
-                   </div>
-          })
-        }
+    <App>
+
+      <div className="App col-6">
+
+      <div className="App-chatroom">
+      {
+        lines.map(x => {
+          return <div className="App-chatroom-text">
+
+            <div>
+              {x.sender+";"}
+            </div>
+            <div>
+              {x.message}
+            </div>
+            <div>
+              {x.timestamp.toLocaleString()}
+            </div>
+
+            </div>
+        })
+      }
       </div>
+
       <div className="App-textbox">
+
         <input type="text" className="App-textbox-input" 
+
         value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        
+
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
 
       </div>
 
-
     </div>
-    
+
+    </App>
+
   );
 }
-
-
-// ctrl+alt+p to open command then run npm start to open localhost:300 
 
 export default Chatbox;

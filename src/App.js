@@ -1,61 +1,42 @@
 import './App.css';
 import { Link } from 'react-router-dom';
+import back from './image/back.png' ; 
+import './Chatbox'
 
-import {useState} from 'react';
-
-
-function App() {
-  
-  const [text, setText] = useState("");
-  const [lines, setLines] = useState([]);
-  
-  const onTextChange = (event) => {
-    setText(event.target.value);
-  };
-
-  const onSend = () =>{
-    setLines([...lines, text]);
-    setText("");
-  };
-
-  const keyPress = (event) => {
-    if (event.which === 13){
-      onSend();
-    }
-  };
-
+function App({Children}) {
+ 
   return (
-    <div className="App">
+    <div className="App col-6">
       <div className="App-header">
       <div>
-        <Link to="/">
-            <img src="back"  alt="ย้อนกลับ"/>
+      <Link to="Chatroom">
+          <img src={back} width="50" border="5" alt="ย้อนกลับ">
+          </img>
         </Link>
-        </div>
-      </div>
-      <div className ="panel-footer">
-      </div>
-      <div className ="input-group">
-      </div>
-      <div className="App-chatroom">
-
-        {
-          lines.map(x => {
-            return <div className="App-chatroom-text">
-                    {x}
-                   </div>
-          })
-        }
-      </div>
-      <div className="App-textbox">
-        <input type="text" className="App-textbox-input" 
-        value={text} onChange={onTextChange} onKeyPress={keyPress}/>
         
-        <div className="App-textbox-send" onClick={onSend}>Send!</div>
-
+        <Link to="/MainPage">
+            <button>
+              Main Page
+              </button>
+        </Link>
+        <Link to ="/Addfriend">
+          <button>
+            AddFriend
+          </button>
+          </Link>
+          <Link to ="/">
+          <button>
+            Chatroom
+          </button>
+          </Link>
+          
+        
       </div>
-
-
+      </div>
+     
+     <div className="App-content">
+       {Children}
+       </div>
     </div>
     
   );

@@ -23,6 +23,9 @@
 }
 
 .App-chatroom {
+  overflow: auto;
+
+
   flex: 12;
 
   background-image: url(coo.jpg);
@@ -95,6 +98,5 @@
 }
 
 .App-chatroom-message {
-  background-color: yellowgreen;
   flex: 0.9;
 }

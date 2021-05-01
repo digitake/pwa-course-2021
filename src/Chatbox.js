@@ -1,5 +1,5 @@
 import './Chatbox.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import App from './App';
 
 import firebase from './firebaseConfig'
@@ -11,6 +11,11 @@ function Chatbox() {
   const [lines, setLines] = useState([]);
   const [name, setName] = useState("MyName");
   const [chatroom, setChatroom] = useState("chatroom");
+  const messagesEndRef = useRef(null);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+  }
 
   useEffect(() => {
     setLines(_=>[])
@@ -25,8 +30,10 @@ function Chatbox() {
           message: item.message,
           timestamp:  new Date(item.timestamp)
         }]);
+      scrollToBottom()
     })
 
+    scrollToBottom();
     return () => {
       chatroomRef.off('child_added')
     };
@@ -89,6 +96,7 @@ function Chatbox() {
               </div>
             })
           }
+          <div ref={messagesEndRef} />
         </div>
         <div className="App-textbox">
           <input type="text" className="App-textbox-input"
@@ -96,6 +104,7 @@ function Chatbox() {
 
           <div className="App-textbox-send" onClick={onSend}>Send!</div>
         </div>
+        
       </div>
     </App>
   );

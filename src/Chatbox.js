@@ -2,31 +2,52 @@
 import './Chatbox.css'
 import {useState,useEffect} from 'react'
 import App from './App';
-
 import firebase from './firebaseConfig';
-
 const chatroomRef = firebase.database().ref('chatroom-1');
-function Chatbox() {
 
+var chatroomRef;
+
+function Chatbox() {
   const [text,setText] = useState("");
   const [lines,setLines] = useState([]);
+  const [name, setName] = useState("MyName");
+  const [chatroom, setChatroom] = useState("chatroom");
+
   useEffect(()=>{
-    chatroomRef.on('child_added',snapshot =>{
+    setLines(_=>[])
+    chatroomRef = firebase.database().ref(chatroom);
+    chatroomRef.on('child_added',(snapshot) =>{
       let x= snapshot.val();
-      setLines(l =>[...l,{
-        sender: x.sender,
-        massage: x.massage,
-        timestamp: new Date(x.timestamp)
+
+      setLines(l =>[
+        ...l,
+        {
+         sender: x.sender,
+         massage: x.massage,
+         timestamp: new Date(x.timestamp)
       }])
     });
-  },[]);
+
+    return () => {
+      chatroomRef.off('child_added')
+    }
+  },[chatroom]);
+
+  const onRoomChange = (event) => {
+    setChatroom(event.target.value);
+  }
+
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
+  const onNameChange = (event) => {
+    setName(event.target.value);
+  }
+
   const onSend =() =>{
     chatroomRef.push({
-      sender : "Pus",
+      sender : name,
       massage : text,
       timestamp : firebase.database.ServerValue.TIMESTAMP
     });
@@ -41,6 +62,11 @@ function Chatbox() {
   return (
       <App>
           <div className="App">
+
+            <input type="text" value={chatroom} onChange={onRoomChange}/>
+
+            <input type="text" value={name} onChange={onNameChange}/>
+
       <div className="App-header">
         Cat Chat
       </div>

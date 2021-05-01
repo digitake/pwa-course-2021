@@ -5,17 +5,29 @@ import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import PageDrawing from './PageDrawing';
 import Profile from './Profile';
-import App from './App'
+import App from './App';
+import FlexShow from './FlexShow';
+import HomePage from './HomePage';
+import Info from './Info';
 
 function Router(){
     return(
     <BrowserRouter>
         <Switch>
-        <Route path="/App">
+            <Route path="/flex">
+                <FlexShow />
+            </Route>
+            <Route path="/Home">
+                <HomePage />
+            </Route>
+            <Route path="/App">
                 <App />
             </Route>
             <Route path="/friend-list">
                 <FriendList />
+            </Route>
+            <Route path="/Info">
+                <Info />
             </Route>
             <Route path="/PageDrawing">
                 <PageDrawing />

@@ -1,0 +1,47 @@
+.fullsceen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: lightgrey;
+}
+
+.header{
+    flex: 0.1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.content {
+    flex: 0.8;
+    background-color: blanchedalmond;
+}
+
+.footer {
+    flex: 0.1;
+    background-color: rgb(155,135,56);
+}
+
+.icon {
+    background-color: red;
+    margin: 8px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50;
+}
+
+.icon-set {
+    display: flex;
+    flex-direction: row;
+    background-color: lightseagreen;
+}
+
+.title {
+    background-color: limegreen;
+    padding: 8px;
+    margin: 8px;
+}

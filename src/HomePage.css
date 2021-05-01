@@ -1,0 +1,30 @@
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    max-width: 1920px;
+    height: 100%;
+    margin: auto;
+    background-color: pink;
+  }
+  .HomeMain{
+      background-image: url(Mascot.png);
+      background-repeat: no-repeat;
+      vertical-align: middle;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background-position: top;
+      flex: 7;
+  }
+  .Homebottom{
+      flex: 3;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background-position: bottom;
+      background-size: 25%;
+  }

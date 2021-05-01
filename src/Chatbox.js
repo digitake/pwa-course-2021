@@ -24,11 +24,11 @@ function Chatbox() {
     });
 
   }, []);
-
+  
   const onTextChange = (event) => {
     setText(event.target.value);
   };
-
+  
   const onSend = () =>{
 
     chatroomRaf.push({
@@ -39,13 +39,13 @@ function Chatbox() {
 
     setText("");
   };
-
+  
   const keyPress = (event) => {
     if (event.which === 13){
       onSend();
     }
   };
-
+    
   return (
 
     <App>
@@ -77,7 +77,7 @@ function Chatbox() {
         <input type="text" className="App-textbox-input" 
 
         value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-
+        
         <div className="App-textbox-send" onClick={onSend}>Send!</div>
 
       </div>

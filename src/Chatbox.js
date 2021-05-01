@@ -4,41 +4,70 @@ import{Link} from 'react-router-dom';
 import App from './App';
 import firebase from './firebaseConfig';
 
-const chatroomRef=firebase.database().ref('chatroom')
+
+var chatroomRef;
 
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
-  useEffect(()=>{chatroomRef.on('child_added',snapshot=>{ let x = snapshot.val();
+  const [name, setName] = useState("MyName");
+  const [chatroom, setChatroom] = useState("chatroom");
+
+
+  useEffect(() => {
+    setLines(_=>[])
+    chatroomRef = firebase.database().ref(chatroom);
+    chatroomRef.on('child_added', (snapshot) => {
+      let item = snapshot.val();
+
+      setLines(l => [
+        ...l,
+        {
+          sender: item.sender,
+          message: item.message,
+          timestamp:  new Date(item.timestamp)
+        }]);
+    })
+  
    
-  setLines(line=>[...line,{
-    sender:x.sender,
-    message:x.message,
-    timeStamp:new Date(x.timeStamp)
-  }])
-  })
-  
-  
-  },[]);
-  
-  const onTextChange = (event) => {
-    setText(event.target.value);
+  return () => {
+    chatroomRef.off('child_added')
+  };
+}, [chatroom]);
+
+const onRoomChange = (event) => {
+  setChatroom(event.target.value);
+}
+
+const onTextChange = (event) => {
+  setText(event.target.value);
+};
+
+const onNameChange = (event) => {
+  setName(event.target.value);
+}
+
+
+
+const onSend = () => {
+  const newMsg = {
+    
+    sender: name,
+    message: text,
+    timestamp: firebase.database.ServerValue.TIMESTAMP
   };
 
-  const onSend = () =>{
-          chatroomRef.push({
-    sender:"Me",
-    message:text,
-    timeStamp:firebase.database.ServerValue.TIMESTAMP
 
-          });            
+  
+
+  
+    chatroomRef.push(newMsg);
 
     setText("");
   };
-
-  const keyPress = (event) => {               
-    if (event.which === 13){
+  const keyPress = (event) => {
+    if (event.which === 13) {
       onSend();
     }
   };
@@ -49,6 +78,9 @@ function Chatbox() {
   return (
       <App>
     <div className="App">
+    <input type="text" value={chatroom} onChange={onRoomChange}/>
+
+    <input type="text" value={name} onChange={onNameChange}/>
    
       <div className="App-chatroom">
         {
@@ -61,7 +93,7 @@ function Chatbox() {
                    <div className="App-chatroom-text-message"> 
                      {x.message} 
                       <div >                      
-                      {" Time "+x.timeStamp.toLocaleString()}
+                      {" Time "+x.timestamp.toLocaleString()}
                       </div>
                     </div>
                    </div>

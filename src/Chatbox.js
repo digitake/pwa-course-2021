@@ -4,6 +4,8 @@ import {useState,useEffect} from 'react'
 import App from './App';
 import firebase from './firebaseConfig';
 const chatroomRef = firebase.database().ref('chatroom-1');
+const [lines, setLines]= useState([])
+const [name , setName]= useState("MyName")
 function Chatbox() {
 
   const [text,setText] = useState("");
@@ -20,11 +22,15 @@ function Chatbox() {
   },[]);
   const onTextChange = (event) => {
     setText(event.target.value);
+   
+  };
+  const onNamechang = (event) =>{
+    setName(event.target.value);
   };
 
   const onSend =() =>{
     chatroomRef.push({
-      sender : "First ja ",
+      sender : name,
       massage : text,
       timestamp : firebase.database.ServerValue.TIMESTAMP
     });
@@ -39,6 +45,8 @@ function Chatbox() {
   return (
       <App>
           <div className="App">
+          <input type= "text" className= "App-textbox-input"
+            value= {name} onChange={onNamechang}/>
       <div className="App-header">
         Cat Chat
       </div>
@@ -56,6 +64,7 @@ function Chatbox() {
           Good Luck Meaow ^^ 
         </div>
         <div className="App-chatroom">
+        
           {
           lines.map(x => {
           return <div className="App-chatroom-text">                 
@@ -75,6 +84,7 @@ function Chatbox() {
           </div>
       </div>
     </div>
+   
     </App>
   );
 }

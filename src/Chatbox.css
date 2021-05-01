@@ -4,7 +4,6 @@
     justify-content: center;
     text-align: center;
     width: 100%;
-    height: 100%;
     margin: auto;
     /*background-size: cover;*/
 }
@@ -81,7 +80,7 @@
 .Chatbox-textbox-input {
     flex: 5;
     height: 100%;
-    box-sizing: border-box;
+    width: 100%;
     font-size: 20px;
 }
 

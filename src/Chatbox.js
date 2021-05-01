@@ -14,10 +14,6 @@ function Chatbox(){
 
     const [name, setName] = useState("Myname");
 
-    const onNameChange = (event) => {
-      setName(event.target.value)
-    }
-
     useEffect(() => {
     chatroomRef.on('child_added', snapshot => {
       let x = snapshot.val();

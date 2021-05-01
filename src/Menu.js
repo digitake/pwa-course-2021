@@ -4,7 +4,7 @@ import{useState}from 'react'
 
 function Menu(){
     return(
-        <div className="Menu">
+        <div className="col-6 col-s-9 Menu">
             <div className="Menu-header">
                 <div className ="space-box">
                 </div>
@@ -15,9 +15,9 @@ function Menu(){
                 </Link>
                 </div>
             </div>
-            <div className="Menu-box">
-                <div className="Menu-column">
-                <div className="Menu-row">
+            <div className="col-3 col-s-3 Menu-box">
+                <div className=" Menu-column">
+                <div className=" Menu-row">
                     <button>
                         <img src="mango-192.png"/>
                     </button>
@@ -45,5 +45,6 @@ function Menu(){
           
     );
 };
+
 
 export default Menu;

@@ -1,12 +1,12 @@
 import './StickerBase.css';
 import { Link } from "react-router-dom";
 
-function Sticker0001(){
+function Sticker4002(){
     return(    
         <div className="StickerPage">
             <div className="StickerPage-header">
                 Sticker Details
-                <Link to="/HotStickersList">
+                <Link to="/CuteStickersList">
                     <img src ="back-32.png" align= "Left" />
                 </Link>
             </div>
@@ -19,10 +19,10 @@ function Sticker0001(){
                     </div>
                     <div className=".StickerPage-profile-name-description">
                         <div className=".Profile-name">
-                            <p id="name">Name 0001</p>
+                            <p id="name">Name 4002</p>
                         </div>
                         <div className=".Profile-description">
-                            <p id="description">Description 0001</p>
+                            <p id="description">Description 4002</p>
                         </div>
                     </div>
                 </div>
@@ -52,5 +52,4 @@ function Sticker0001(){
     );
 };
 
-
-export default Sticker0001;
+export default Sticker4002;

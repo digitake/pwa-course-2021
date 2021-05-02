@@ -5,45 +5,34 @@ function group() {
 
             <div className="group-header">
 
-            <div className="btn-cover">
-            <Link to = "/" style={{  textDecoration: "none" }}>
-                    <div className="btn-back">
-                                Back
+                <div className="btn-cover">
+                    <Link to="/" style={{ textDecoration: "none" }}>
+                        <div className="btn-back">
+                            Back
                     </div>
-                </Link>
-            </div> 
-            <div>
-            Group Chat
-
-        </div>
-
-            </div>
-<br/>
-            <div className="group-content">
-
-                <Link to="/chatbox">
-                    <button>
-                        แชทคุยกับอาจารย์
-                </button>
-                </Link>
-                <div>
-                    เว้นว่าง ให้จารย์ช่วยความกว้าง
-            </div>
-
-                <div>
-                    <Link to="/chatbox2">
-                        <button>
-                            หาเพื่อนเล่นเกม
-                </button>
                     </Link>
                 </div>
-
-
-
-            </div>
+                <div>
+                    Group Chat
 
         </div>
-
+            </div>
+            <br />
+            <div className="group-content">
+                <Link to="/chatbox" style={{ textDecoration: "none"}}>
+                    <div className="btn-chatbox">
+                        แชทคุยกับอาจารย์
+                    </div>
+                </Link>
+                <div>
+                    <Link to="/chatbox2" style={{ textDecoration: "none"}}>
+                        <div className="btn-chatbox">
+                            หาเพื่อนเล่นเกม
+                        </div>
+                    </Link>
+                </div>
+            </div>
+        </div>
     )
 }
 

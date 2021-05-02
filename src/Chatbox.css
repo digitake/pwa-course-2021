@@ -1,110 +1,113 @@
 .Chatbox {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-attachment: fixed;
-    width: 100%;
-    /*background-size: cover;*/
-}
-
-@media (min-width: 768px) {
-    .Chatbox {
-        max-width: 100%;
-        background-color: rgb(88, 222, 255);
-        background-image: url(bg2.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 125%;
-    }
-}
-
-@media (max-width: 1024px) {
-    .Chatbox {
-        max-width: 100%;
-        background-repeat: no-repeat;
-        background-image: url(bg.jpg);
-        background-position: center;
-        background-size: 125%;
-        background-color: rgb(29, 29, 29);
-    }
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-attachment: fixed;
+  background-image: url(bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .Chatbox-logo {
-    height: 40vmin;
-    pointer-events: none;
+  height: 40vmin;
+  pointer-events: none;
 }
 
 .Chatbox-header {
-    display: flex;
-    position: sticky;
-    top: 0;
-    background-color: #001969;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: rgb(68, 117, 250);
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #001969;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(68, 117, 250);
+}
+.Chatbox-header > a {
+    margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.image-header:hover {
+    filter: brightness(80%);
 }
 
 .Chatbox-content {
-    overflow: auto;
-    flex: 12;
+  overflow: auto;
+  flex: 12;
 }
 
 .Chatbox-chatroom {
-    flex: 12;
-    background-color: rgba(255, 255, 255, 0);
-    /*background-image: url();*/
-    color: rgb(0, 0, 0);
-    font-weight: 1000;
-    font-size: large;
+  margin: 0 10rem 0 10rem;
+  flex: 12;
 }
 
 .Chatbox-chatroom-text {
-    display: flex;
-    padding: 1rem 0 1rem 0.5rem;
-    margin: 8px;
-    background-color: rgb(136, 152, 241);
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: 600;
+  display: block;
+  margin: 8px;
+  padding: 1rem;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 3px #111;
 }
-.Chatbox-chatroom-text > div {
-   margin-right: 1rem;
+
+.image-profile {
+  width: 2rem;
+  margin-right: 1em;
+  float: left;
 }
 
 .Chatbox-textbox {
-    display: flex;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    flex: 1;
-    background-color: rgb(243, 200, 230);
-    justify-content: center;
-    align-items: stretch;
-    display: flex;
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  flex: 1;
+  background-color: rgb(243, 200, 230);
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
 }
 
 .Chatbox-textbox-input {
-    padding: 1rem;
-    flex: 5;
-    height: 100%;
-    box-sizing: border-box;
-    font-size: 20px;
+  padding: 1rem;
+  flex: 5;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
 }
 
 .Chatbox-textbox-send {
-    cursor: pointer;
-    font-size: 20px;
-    padding: 1rem;
-    flex: 2;
-    height: 100%;
-    background-color: burlywood;
-    vertical-align: super;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 1000;
-    color: rgb(52, 1, 255);
+  cursor: pointer;
+  padding: 1rem;
+  flex: 2;
+  height: 100%;
+  background-color: burlywood;
+  vertical-align: super;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 1000;
+  font-size: 1.5rem;
+  color: #111;
 }
+
+@media screen and (max-width: 768px) {
+    .Chatbox-chatroom {
+      margin: 0 1rem 0 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .Chatbox-chatroom {
+      margin: 0 1rem 0 1rem;
+    }
+  }
+  

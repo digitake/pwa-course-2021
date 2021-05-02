@@ -9,27 +9,19 @@
   /*background-size: cover;*/
 }
 
-@media (min-width: 768px){
-  .Profile{
-    max-width: 100%;
-    background-color: rgb(88, 222, 255);
-    background-image: url(bg2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 125%;
-    
-  }
+.btn-facebook {
+  text-decoration: none;
+  font-size: 1.3rem;
+  background-color: #3b5998;
+  width: fit-content;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  margin: 1rem auto 1rem auto;
+  cursor: pointer;
 }
-
-@media (max-width: 1024px){
-  .Profile{
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-image: url(bg.jpg);
-    background-position: center;
-    background-size: 125%;
-    background-color: rgb(29, 29, 29);
-  }
+.btn-facebook:hover {
+  filter: brightness(80%);
 }
 
 .Profile-logo {
@@ -128,4 +120,27 @@
   font-family: 'Courier New', Courier, monospace;
   font-weight: 1000;
   color: rgb(52, 1, 255);
+}
+
+@media (min-width: 768px){
+  .Profile{
+    max-width: 100%;
+    background-color: rgb(88, 222, 255);
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 125%;
+    
+  }
+}
+
+@media (max-width: 1024px){
+  .Profile{
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: 125%;
+    background-color: rgb(29, 29, 29);
+  }
 }

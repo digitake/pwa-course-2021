@@ -20,14 +20,14 @@ function FriendList() {
             </div>
 <br/>
             <div className="FriendList-content">
-                <a href="https://www.facebook.com/wreedisgood" target="_blank">
+                <a href="https://www.facebook.com/wreedisgood" target="_blank" rel="noreferrer">
                 <img src={Friend1} width="200" height="150" alt="เพื่อน1" />
                 </a>
                
                 <div>
                 Sun
             </div>
-            <a href="https://www.facebook.com/gninning0602"  target="_blank">
+            <a href="https://www.facebook.com/gninning0602"  target="_blank" rel="noreferrer">
                 <img src={Friend2} width="200" height=" 150" alt="เพื่อน2" />
                </a>
                 <div>

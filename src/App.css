@@ -48,8 +48,13 @@
 }
 
 .App-content {
-    overflow: auto;
-    flex: 12;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    font-size: 5rem;
 }
 
 .App-chatroom2 {

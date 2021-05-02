@@ -9,29 +9,18 @@
   /*background-size: cover;*/
 }
 
-@media (min-width: 768px){
-  .group{
-    max-width: 100%;
-    background-color: rgb(88, 222, 255);
-    background-image: url(bg2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 125%;
-    
-  }
+.btn-chatbox {
+  color: #111;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1rem;
 }
 
-@media (max-width: 1024px){
-  .group{
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-image: url(bg.jpg);
-    background-position: center;
-    background-size: 125%;
-    background-color: rgb(29, 29, 29);
-  }
+.btn-chatbox:hover {
+  filter: brightness(80%);
 }
-
 .group-logo {
   height: 40vmin;
   pointer-events: none;
@@ -42,45 +31,39 @@
   background-color: #001969;
   display: flex;
   text-align: center;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 255, 255);
-  
-  
-  
 }
 
 .group-content {
   display: flex;
   flex: 12;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
-  justify-content:start;
-  
+  justify-content: start;
 }
 
 .group-chatroom {
   flex: 12;
-
 }
 
 .group-chatroom2 {
   flex: 12;
   background-color: rgba(255, 255, 255, 0);
   background-image: url();
-  color : rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   font-weight: 1000;
 
   font-size: large;
 }
 
-
 .group-chatroom-text {
   margin: 8px;
   background-color: rgb(136, 152, 241);
-  color : rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   font-size: 20px;
   text-align: center;
   font-weight: 600;
@@ -109,7 +92,29 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 1000;
   color: rgb(52, 1, 255);
+}
+
+@media (min-width: 768px) {
+  .group {
+    max-width: 100%;
+    background-color: rgb(88, 222, 255);
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 125%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .group {
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: 125%;
+    background-color: rgb(29, 29, 29);
+  }
 }

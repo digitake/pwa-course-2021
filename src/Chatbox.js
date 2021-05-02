@@ -50,52 +50,34 @@ function Chatbox() {
   };
 
   return (
-
     <div className="Chatbox">
-
       <div className="Chatbox-header">
         <Link to="/friend-list">
-
-
-          <img src={Friend} width="50" height=" 60" alt="เพื่อน" />
-
+          <img className="image-header" src={Friend} width="50" alt="เพื่อน" />
         </Link>
-
         <Link to="/profile">
-
-          <img src={Profile} width="50" height=" 40" alt="โปร์ไฟล์" />
-
+          <img className="image-header" src={Profile} width="50" alt="โปร์ไฟล์" />
         </Link>
-
         <Link to="/group">
-
-          <img src={Group} width="50" height=" 40" alt="กลุ่ม" />
-
+          <img className="image-header" src={Group} width="50" alt="กลุ่ม" />
         </Link>
-
         <Link to="/chatbox">
-
-          <button>
-            <img src={Chat} width="50" height=" 40" alt="กลุ่ม" />
-          </button>
-
+          <img className="image-header" src={Chat} width="50" height=" 40" alt="กลุ่ม" />
         </Link>
       </div>
       <div className="Chatbox-chatroom">
-
         {
-          lines.map(x => {
-            return <div className="Chatbox-chatroom-text">
-              <div style={{ color: "#555" }}>
-                {x.timestamp.toLocaleTimeString()}
+          lines.map((x, key) => {
+            return (
+              <div key={key}>
+                <img className="image-profile" src={Profile} />
+                <div className="Chatbox-chatroom-text">
+                  <div>
+                    <span style={{ float: "left", color: "#444" }}>{x.sender + " : "} {x.message}</span><span style={{ float: "right", color: "#666", fontSize: "1rem" }}>{x.timestamp.toLocaleTimeString()}</span>
+                  </div>
+                </div>
               </div>
-              <div>
-                {x.sender + ": "}
-              </div>
-              <div>
-                {x.message}
-              </div>
-            </div>
+            )
           })
         }
       </div>

@@ -1,12 +1,14 @@
 import { BrowserRouter, Switch , Route} from 'react-router-dom'
 import App from './App';
 import Chatbox from './Chatbox';
+import Chatbox2 from './Chatbox2';
 import FriendList from './FriendList';
 import Group from './group';
 import Profile from './Profile';
 
 import "./App.css";
 import "./Chatbox.css";
+import "./Chatbox2.css";
 import "./group.css";
 import "./FriendList.css";
 import "./Profile.css";
@@ -24,6 +26,9 @@ function Router() {
                 <Route path="/friend-list">
                     <FriendList />
                     </Route>
+                <Route path="/chatbox2">
+                    <Chatbox2 />
+                </Route>
                 <Route path="/chatbox">
                     <Chatbox />
                 </Route>

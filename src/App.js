@@ -4,48 +4,32 @@ import { Link } from 'react-router-dom';
 function App({children}) {
 
   return (
-
-   
-  <div> 
-    className="App"
-    className="App-header"
-  </div>
-  
-   );
-
     <div className="App">
       <div className="App-header">
-
-        <Link to="friend-list">
+      <Link to="chatbox">
           <button>
-            Go to FriendList
-          </button>
-        </Link>
-
-        <Link to="profile">
-          <button>
-            Go to Profile
+          Go to Chatbox
           </button>
         </Link>
 
         <Link to="/">
           <button>
-            Go to Chatbox
+          Go to Home
           </button>
         </Link>
+
+        <Link to="friendlist">
+          <button>
+            Go to chen
+          </button>
+        </Link>
+
       </div>
         <div className="App-content">
           {children}
         </div>
-
-            
-          </div>  
-          <div className="App-content">
-            {children}
-
     </div>
   );
-
 }
 
 export default App;

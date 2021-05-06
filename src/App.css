@@ -119,12 +119,7 @@ select {
   border-radius: 4px;
   background-color: #f1f1f1;
 }
-img {
-  border-radius: 50%;
-  background: url(เณรเชน.jpg);
-  background-size: 160% ;
-  background-repeat: no-repeat;
-  background-position: center;
+
 }
 .button {
   background-color: #f84040;
@@ -137,14 +132,6 @@ img {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-}
-
-}
-h1 {
-  font-size: 25px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #f84040;
 }
 
 p {
@@ -179,7 +166,6 @@ form.example::after {
 
 img {
   border-radius: 50%;
-  background: url(hi.jpg);
   background-size: 160% ;
   background-repeat: no-repeat;
   background-position: center;

@@ -23,8 +23,8 @@ function LoginPage() {
              </Link>
             </div> 
 
-            <div className="App-textbox">
-            <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} placeholder="Type a message" />
+            <div className="Login-text-bar">
+            <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} placeholder="Username" />
             </div>
 
             <div className = "SingIn" >

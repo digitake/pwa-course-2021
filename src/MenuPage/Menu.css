@@ -18,39 +18,43 @@
  
     .Menu{
   
-      
-      width: 100%;
+      background-color:  #242424; 
+      width: 95%;
     
     }
   }
   
-  @media (min-width: 480px){
+  @media (min-width: 320px){
   
     .Menu{
   
       background-color:  #242424; 
-      
+      width: 100%;
     }
   }
 
+  
   .space-box{
     flex: 0.5;
     background-color: #FECC48;
     display: flex;
     flex-direction: column;
-
   }
 
-  .Menu-header{
-    flex: 1;
-    background-color: #FECC48;
-    display: flex;
-    flex-direction: column;
+  @media (min-width: 320px){
+    .Menu-header{
+      flex: 1;
+      background-color: #FECC48;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
   }
 
-  .Menu-box{
-    flex: 8;
-    
+  @media (min-width: 320px){
+    .Menu-box{
+    flex: 10;
+    }
   }
 
   .Menu-column{
@@ -60,11 +64,20 @@
   justify-content: space-around;
   }
 
+  @media (min-width: 320px) { 
+  }
   .Menu-row{
     flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    
     }
+
+  .responsive {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    }  
 
    

@@ -2,7 +2,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Chatbox  from "./Chatbox";
 import FriendList from "./FriendList";
-import Menu from "./Menu";
+import Menu from "./MenuPage/Menu";
 import Profile from "./ProfilePage/Profile";
 import Post from "./ProfilePage/Post";
 import Friend from "./ProfilePage/Friend";

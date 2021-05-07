@@ -26,11 +26,32 @@
   }
 
   .Home-chats-room1{
-      background-image: url("design/Home/Home\ UI\ PC-06.png");
-      background-position: center;
-      background-size: 80%;
-      background-repeat: no-repeat;
+    flex: 1;
+    display: flex;
   }
+
+  .Home-chats-room1-pic{
+    flex-direction: column;
+    background-image: url("design/Home/Home\ UI\ PC-test.png");
+    background-position: right;
+    background-size: 25%;
+    background-repeat: no-repeat;
+}
+
+.Home-chats-room1-name{
+  flex-direction: column;
+  font-size: 30px;
+}
+
+.Home-chats-room1-message{
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.Home-chats-room1-time{
+  flex-direction: column;
+  font-size: 30px;
+}
 
   .Home-chats-room2{
     background-image: url("design/Home/Home\ UI\ PC-07.png");
@@ -63,12 +84,32 @@
 
 @media (max-width: 768px) {
   .Home-chats-room1{
-    background-image: url("design/Home/Home\ UI-01.png");
-    background-position: center;
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-color: rgb(207, 238, 250);
+    flex: 1;
   }
+
+  .Home-chats-room1-pic{
+    flex-direction: column;
+    background-image: url("design/Home/Home\ UI\ PC-test.png");
+    background-position: right;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.Home-chats-room1-name{
+  flex-direction: column;
+  font-size: 30px;
+}
+
+.Home-chats-room1-message{
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.Home-chats-room1-time{
+  flex-direction: column;
+  font-size: 20px;
+}
+  
 
   .Home-chats-room2{
     background-image: url("design/Home/Home\ UI-02.png");
@@ -159,10 +200,46 @@ flex: 8;
   flex: 1;
   height: 15%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   margin: 15px 0%;
-  
+}
+
+.Home-chats-room1-pic{
+  flex: 1;
+  display: flex;
+}
+
+.Home-chats-room1-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Home-chats-room1-name{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-weight: bold;
+  color:rgb(0, 54, 124)
+}
+
+.Home-chats-room1-message{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color:rgb(65, 65, 65)
+}
+
+.Home-chats-room1-time{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color:rgb(151, 151, 151)
 }
 
 .Home-chats-room2 {
@@ -173,7 +250,6 @@ flex: 8;
     justify-content: center;
     vertical-align: middle;
     margin: 15px 0%;
-
   }
 
 .Home-chats-room3 {
@@ -203,7 +279,6 @@ flex: 8;
     margin: 15px 0%;
     
 }
-
 
 .Home-menu {
 flex: 1;

@@ -58,10 +58,6 @@ function Searching() {
             autoFocus
           />
         </div>
-
-
-        
-      
     </div>
   )
 }

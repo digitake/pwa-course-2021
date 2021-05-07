@@ -5,6 +5,8 @@ import ProFriend from './project/ProFriend';
 import Profile from './project/Profile';
 import ProChatroom from './project/ProChatroom';
 import Proregister from './project/Proregister';
+import Prosign from './project/Prosign';
+import ProAccount from './project/ProAccount';
 
 function Router() {
 
@@ -22,6 +24,12 @@ function Router() {
                 </Route>
                 <Route path = "/Prochatroom">
                     <ProChatroom />
+                </Route>
+                <Route path = "/Prosign">
+                    <Prosign />
+                </Route>
+                <Route path = "/ProAccount">
+                    <ProAccount />
                 </Route>
                 <Route path = "/Proregister">
                     <Proregister />

@@ -1,0 +1,522 @@
+.fullscreen-profriend {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: rgb(31, 103, 211);
+} 
+
+.header-profriend {
+  flex: 0.05;
+  background-color: rgb(31, 103, 211);
+  display: flex;
+}
+
+.content-profriend {
+  background-color: rgb(162, 197, 250);
+  flex: 0.9;
+}
+
+.fotter-profriend {
+  flex: 0.05;
+  background-color: rgb(31, 103, 211);
+}
+
+.logo-boxchat-profriend {
+  padding-left: 5px;
+  padding-top: 6px;
+}
+
+.logo-profile-profriend {
+  padding-top: 6px;
+  margin-left: 600px;
+}
+
+.name-profile {
+  margin-left: 20px;
+  margin-top: 35px;
+}
+
+.gosetting-logo-profriend {
+  margin-left: 830px;
+  margin-top: 25px;
+}
+
+.Sbarblock-profriend {
+  margin-top: 0px;
+}
+
+.Sbaricon-profriend {
+  margin-top: -45px;
+  margin-left: 10px;
+}
+
+.Sbartext-profriend {
+  margin-left: 60px;
+  margin-top: -33px;
+  font-size: 30px;
+  color: rgb(82, 182, 248);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Lasted-chat-bar {
+  margin-top: -20px;
+}
+
+.Lasted-chat-text {
+  margin-top: -42px;
+  margin-left: 10px;
+}
+
+.Lasted-chat-gogo-icon {
+  margin-left: 1880px;
+  margin-top: -47px;
+}
+
+.noel-icon-lasted-chat {
+  margin-top: -140px;
+  margin-left: 50px;
+}
+
+.lasted-chat-name-noel {
+  margin-left: 30px;
+  margin-top: 0px;
+}
+
+.kanata-icon-lasted-chat {
+  margin-top: -141px;
+  margin-left: 200px;
+}
+
+.lasted-chat-name-kanata {
+  margin-left: 30px;
+  margin-top: 0px;
+}
+
+.suisei-icon-lasted-chat {
+  margin-top: -141px;
+  margin-left: 350px;
+}
+
+.lasted-chat-name-suisei {
+  margin-left: 30px;
+  margin-top: 0px;
+}
+
+.group-bar {
+  margin-top: -5px;
+}
+
+.group-text {
+  margin-top: -43px;
+  margin-left: 10px;
+}
+
+.group-chat-gogo-icon {
+  margin-left: 1880px;
+  margin-top: -45px;
+}
+
+.group-chat-friendlist{
+  margin-top: 5px;
+}
+
+.group1-icon-lasted-chat {
+  margin-top: -140px;
+  margin-left: 50px;
+}
+
+.group1-chat-name {
+  margin-left: 22px;
+  margin-top: 0px;
+}
+
+.group2-icon-lasted-chat {
+  margin-top: -141px;
+  margin-left: 200px;
+}
+
+.group2-chat-name {
+  margin-left: 22px;
+  margin-top: 0px;
+}
+
+.friend-chat-bar {
+  margin-top: -5px;
+}
+
+.friend-chat-text {
+  margin-left: 10px;
+  margin-top: -40px;
+}
+
+.friend-chat-gogo-icon {
+  margin-left: 1880px;
+  margin-top: -48px;
+}
+
+.friend-chat-friendlist {
+  margin-top: 6px;
+}
+
+.pekora-icon-friend-chat {
+  margin-top: -260px;
+  margin-left: 50px;
+}
+
+.friend-chat-name-pekora {
+  margin-left: 22px;
+  margin-top: 0px;
+}
+
+.fubuki-icon-friend-chat {
+  margin-top: -141px;
+  margin-left: 200px;
+}
+
+.friend-chat-name-fubuki {
+  margin-left: 22px;
+  margin-top: 0px;
+}
+
+.kanata-icon-friend-chat {
+  margin-top: -141px;
+  margin-left: 350px;
+}
+
+.friend-chat-name-kanata {
+  margin-left: 25px;
+  margin-top: 0px;
+}
+
+.rushia-icon-friend-chat {
+  margin-top: -141px;
+  margin-left: 500px;
+}
+
+.friend-chat-name-rushia {
+  margin-left: 25px;
+  margin-top: 0px;
+}
+
+.noel-icon-friend-chat {
+  margin-top: -141px;
+  margin-left: 650px;
+}
+
+.friend-chat-name-noel {
+  margin-left: 34px;
+  margin-top: 0px;
+}
+
+.suisei-icon-friend-chat {
+  margin-top: -141px;
+  margin-left: 800px;
+}
+
+.friend-chat-name-suisei {
+  margin-left: 30px;
+  margin-top: 0px;
+}
+
+@media(max-width: 1000px){
+  .fullscreen-profriend {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 100%;
+    background-color: rgb(23, 96, 207);
+  }
+}
+
+@media(max-width: 1000px){
+  .logo-boxchat-profriend img {
+    width: 100px;
+    height: 60px;
+  }
+}
+
+@media(max-width: 1000px){
+  .logo-profile-profriend img {
+    width: 60px;
+    height: 60px;
+    margin-left: -470px;
+  }
+}
+
+@media(max-width: 1000px){
+  .name-profile {
+    margin-left: -400px;
+    margin-top: 23px;
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 1000px){
+  .gosetting-logo-profriend img {
+    width: 30px;
+    height: 30px;
+    margin-left: -650px;
+    margin-top: -4px;
+  }
+}
+
+@media(max-width: 1000px){
+  .Sbarblock-profriend img {
+    height: 35px;
+    width: 600px;
+  }
+}
+
+@media(max-width: 1000px){
+  .Sbaricon-profriend img {
+    height: 25px;
+    width: 25px;
+    margin-top: 10px;
+  }
+}
+
+@media(max-width: 1000px){
+  .Sbartext-profriend {
+    font-size: 20px;
+    margin-top: -25px;
+  }
+}
+
+@media(max-width: 1000px){
+  .Sbartext-profriend {
+    font-size: 20px;
+    margin-top: -25px;
+  }
+}
+
+@media(max-width: 1000px){
+  .Lasted-chat-bar img {
+    margin-top: 7px;
+    height: 35px;
+    width: 600px;
+  }
+}
+
+@media(max-width: 1000px){
+  .Lasted-chat-text {
+    font-size: 18px;
+    margin-top: -33px;
+  }
+}
+
+@media(max-width: 1000px){
+  .Lasted-chat-gogo-icon img {
+    margin-left: -1315px;
+    margin-top: 3px;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media(max-width: 1000px){
+  .Lasted-chat-friendlist img {
+    margin-top: 2px;
+    height: 225px;
+    width: 600px;
+  }
+}
+
+@media(max-width: 1000px){
+  .noel-icon-lasted-chat img {
+    margin-top: -80px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .lasted-chat-name-noel {
+    margin-left: 27px;
+  }
+}
+
+@media(max-width: 1000px){
+  .kanata-icon-lasted-chat img {
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .lasted-chat-name-kanata {
+    margin-left: 22px;
+  }
+}
+
+@media(max-width: 1000px){
+  .suisei-icon-lasted-chat img {
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .lasted-chat-name-suisei {
+    margin-left: 25px;
+  }
+}
+
+@media(max-width: 1000px){
+  .group-bar img {
+    margin-top: 7px;
+    height: 35px;
+    width: 600px;
+  }
+}
+
+@media(max-width: 1000px){
+  .group-text {
+    font-size: 18px;
+    margin-top: -34px;
+  }
+}
+
+@media(max-width: 1000px){
+  .group-chat-gogo-icon img {
+    margin-left: -1310px;
+    margin-top: 2px;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media(max-width: 1000px){
+  .group-chat-friendlist img {
+    margin-top: -3px;
+    height: 225px;
+    width: 600px;
+  }
+}
+
+@media(max-width: 1000px){
+  .group1-icon-lasted-chat img {
+    margin-top: -80px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .group2-icon-lasted-chat img {
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .group2-chat-name {
+    margin-left: 18px;
+  }
+}
+
+@media(max-width: 1000px){
+  .group1-chat-name {
+    margin-left: 18px;
+  }
+}
+
+@media(max-width: 1000px){
+  .friend-chat-bar img {
+    margin-top: 7px;
+    height: 35px;
+    width: 600px;
+  }
+}
+
+@media(max-width: 1000px){
+  .friend-chat-text {
+    font-size: 18px;
+    margin-top: -34px;
+  }
+}
+
+@media(max-width: 1000px){
+  .friend-chat-gogo-icon img {
+    margin-left: -1310px;
+    margin-top: 5px;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media(max-width: 1000px){
+  .friend-chat-friendlist img {
+    margin-top: -4px;
+    height: 300px;
+    width: 600px;
+  }
+}
+
+@media(max-width: 1000px){
+  .pekora-icon-friend-chat img {
+    margin-top: -30px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .fubuki-icon-friend-chat img {
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .kanata-icon-friend-chat img {
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .rushia-icon-friend-chat img {
+    margin-top: 10px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .noel-icon-friend-chat img {
+    margin-top: 150px;
+    margin-left: -600px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .suisei-icon-friend-chat img {
+    margin-top: 10px;
+    margin-left: -600px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .friend-chat-name-noel {
+    margin-left: -570px;
+  }
+}
+
+@media(max-width: 1000px){
+  .friend-chat-name-suisei {
+    margin-left: -575px;
+  }
+}

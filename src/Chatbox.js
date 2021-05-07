@@ -13,6 +13,8 @@ function ChatBox({ children }) {
 
   const [lines, setLines] = useState([]);
 
+  const[name, setName] = useState("MyName");
+
   // () => {} same as function() {}  --lambda notation
   useEffect(() => {
       chatroomRef.on('child_added', snapshot => {
@@ -29,10 +31,15 @@ function ChatBox({ children }) {
       setText(event.target.value);
   };
 
+  const onNameChange = (event) => {
+    setName(event.target.value);
+};
+
+  
   const onSend = () => {
       // push to firebase sever
       chatroomRef.push({
-          sender: "me",
+          sender: name,
           message: text,
           timestamp: firebase.database.ServerValue.TIMESTAMP
       });
@@ -49,8 +56,9 @@ function ChatBox({ children }) {
       <>
           <App>
               <div className = "Chatbox-header">
+                  <input type = "text" value = {name} onChange = {onNameChange}/>
                     <div className = "Chatbox-header1">
-                    <Link className={"Chatbox-header1"} to="/home"/>
+                    <Link className={"Chatbox-header1"} to="/"/>
                     </div>
                     <div className = "Chatbox-header2"></div>
                     <div className = "Chatbox-header3"></div>  

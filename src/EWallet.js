@@ -11,7 +11,7 @@ function EWallet() {
       <div className="EWallet-header">
 
       <div className="EWallet-header1" >
-      <Link className={"EWallet-header1"} to="/home"/>
+      <Link className={"EWallet-header1"} to="/"/>
       </div>
       <div className="EWallet-header2" ></div>
       <div className="EWallet-header3" ></div>  

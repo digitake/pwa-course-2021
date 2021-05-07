@@ -19,19 +19,19 @@ function Home(){
         </div>
         <div className="Home-chats">
             <div className="Home-chats-room1">
-                <Link className={"Home-chats-room1"} to="/"/>
+                <Link className={"Home-chats-room1"} to="/chatbox"/>
             </div>
             <div className="Home-chats-room2">
-                <Link className={"Home-chats-room2"} to="/"/>
+                <Link className={"Home-chats-room2"} to="/chatbox"/>
             </div>
             <div className="Home-chats-room3">
-            <Link className={"Home-chats-room3"} to="/"/>
+            <Link className={"Home-chats-room3"} to="/chatbox"/>
             </div>
             <div className="Home-chats-room4">
-            <Link className={"Home-chats-room4"} to="/"/>
+            <Link className={"Home-chats-room4"} to="/chatbox"/>
             </div>
             <div className="Home-chats-room5">
-            <Link className={"Home-chats-room5"} to="/"/>
+            <Link className={"Home-chats-room5"} to="/chatbox"/>
             </div>
         </div>
         <div className="Home-menu">

@@ -23,15 +23,17 @@ function Router(){
                 <Route path="/calendar">
                     <Calendar />
                 </Route>
-                <Route path="/home">
-                    <Home/>
-                </Route>
+                
                 <Route path="/music">
                     <Music/>
                 </Route>
             
-                <Route path="/">
+                <Route path="/chatbox">
                     <Chatbox/>
+                </Route>
+
+                <Route path="/">
+                    <Home/>
                 </Route>
             </Switch>
         </BrowserRouter>

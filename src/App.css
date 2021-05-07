@@ -5,6 +5,17 @@
   text-align: right;
   max-width: 1920px;
   height: 100%;
+  margin: auto;
+  /* background-image: url(coo.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .App {
+    
+    /* background-color: red; */
+  }
 }
 
 @media(max-width:1000px){
@@ -39,6 +50,11 @@
   color: rgb(255, 255, 255);
 }
 
+.App-header-button {
+  margin-left:16px;
+  margin-right: 16px;;
+}
+
 .App-Content {
   flex: 12;
   flex-direction: column;
@@ -46,14 +62,18 @@
 
 .App-chatroom-text {
   margin: 8px;
-  background-color: rgb(197, 189, 189);
+
+  background-color: rgb(206, 87, 87);
+
   color : rgb(48, 100, 100);
   font-size: 20px;
 }
 
 .App-textbox {
   flex: 1;
-  background-color: rgb(224, 220, 220);
+
+  background-color: rgb(255, 0, 0);
+
   justify-content: center;
   align-items: stretch;
   display: flex;

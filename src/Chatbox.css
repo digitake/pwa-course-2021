@@ -57,6 +57,7 @@
   flex: 3;
   height: 100%;
   box-sizing: border-box;
+  font-size: 1.5em;
 }
 
 .Chatbox-textbox-send {
@@ -150,7 +151,6 @@
     color: rgb(243, 10, 10);
   }
 }
-
 .App-chatroom-sender {
   background-color: yellow;
   padding: 16;

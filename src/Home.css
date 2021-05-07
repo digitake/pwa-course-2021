@@ -9,6 +9,7 @@
 }
 
 @media (min-width: 768px) {
+  
   .Home {
     background-color: rgb(207, 238, 250);
   }
@@ -24,6 +25,10 @@
   .Home-chats{
     background-position: center;
   }
+  Seachingbox.element.style {
+    width: 400px;
+  }
+  
 
   .Home-chats-room1{
       background-image: url("design/Home/Home\ UI\ PC-06.png");
@@ -62,12 +67,18 @@
 }
 
 @media (max-width: 768px) {
+ 
+
   .Home-chats-room1{
     background-image: url("design/Home/Home\ UI-01.png");
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
     background-color: rgb(207, 238, 250);
+  }
+  
+  SeachingBox.element.style {
+    width: 140px;
   }
 
   .Home-chats-room2{
@@ -117,7 +128,7 @@ display: flex;
 }
 
 .Home-header1 {
-background-image: url("design/Home/Home\ Icon-01.png");
+
 background-position: left;
 background-repeat: no-repeat;
 flex: 1;

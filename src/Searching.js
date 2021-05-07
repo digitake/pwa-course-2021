@@ -6,23 +6,23 @@ function Searching() {
   const items = [
     {
       id: 0,
-      name: 'Cobol'
+      name: 'ZoneFez'
     },
     {
       id: 1,
-      name: 'JavaScript'
+      name: 'Yena'
     },
     {
       id: 2,
-      name: 'Basic'
+      name: 'Marja'
     },
     {
       id: 3,
-      name: 'PHP'
+      name: 'Fennik'
     },
     {
       id: 4,
-      name: 'Java'
+      name: 'Marjad'
     }
   ]
 
@@ -47,9 +47,8 @@ function Searching() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <div style={{ width: 400 }}>
+    <div className="SearchingBox">
+        <div style={{ width: 400  } }>
           <ReactSearchAutocomplete
             items={items}
             onSearch={handleOnSearch}
@@ -59,7 +58,10 @@ function Searching() {
             autoFocus
           />
         </div>
-      </header>
+
+
+        
+      
     </div>
   )
 }

@@ -11,6 +11,8 @@ function Home(){
          <div className="Home-header">
           <div className="Home-header1" >
            <Link className={"Home-header1"} to="/home"/>
+           <Searching></Searching>
+
           </div>
           <div className="Home-header2" >
            <Link className={"Home-header2"} to="/home"/>

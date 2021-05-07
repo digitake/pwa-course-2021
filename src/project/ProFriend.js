@@ -178,30 +178,6 @@ function ProFriend () {
           <p className ="friend-chat-name-suisei">suisei</p>
         </div>
 
-<<<<<<< HEAD
-function ProFriend() {
-  return (
-  <div className="Apprut">
-    <HeaderLayout>
-            <div className="Textlayout">
-                Hoshimati Suisei
-            </div>
-            <div className="Profilepicture">    
-                <Link to='/Profile'>
-                    <img src="/Project/ProFriend/Sui.jpg" alt="/Project/ProFriend/Sui.jpg" width="75px" height="75px" />
-                </Link>
-            </div>
-    </HeaderLayout>
-    <div className="Textline">
-      <div className="Textinline">FriendList</div>  
-    </div>
-    <div className="App-chatroom">    
-      <div className="circlesboxRut1">    
-        <Link to='/ProChatroom'>
-            <img src="/Project/ProFriend/sad.png" alt="/Project/ProFriend/sad.png" width="100px" height="100px" />
-        </Link> 
-=======
->>>>>>> db59708705822d26d66b7c28c6a1fc1891a4059f
       </div>
 
       <div className ="fotter-profriend">

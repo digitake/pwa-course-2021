@@ -26,18 +26,15 @@
 }
 
 .main-logo {
-  margin-top: 10px;
-  margin-left: 650px;
+  margin: auto;
 }
 
 .signin-logo {
-  margin-left: 740px;
-  margin-top: 150px;
+  margin: auto;
 }
 
 .register-logo {
-  margin-left: 770px;
-  margin-top: 20px;
+  margin: auto;
 }
 
 @media(max-width: 1000px){

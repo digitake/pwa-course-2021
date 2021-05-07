@@ -1,108 +1,279 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fullscreen-prochatroom {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: rgb(23, 96, 207);
 }
 
-.header-Chatroom {
-  flex: 1;
-  background-color: rgb(24, 97, 208);
+.header-prochatroom {
+  flex: 0.3;
+  background-color: rgb(23, 96, 207);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgb(247, 247, 247);
 }
 
-.BG-Chatroom {
-  flex: 12;
+.header-header-prochatroom {
+  background-color: rgb(0, 101, 255);
+  flex: 0.1;
+  display: flex;
+}
 
-  background-color: rgba(30, 203, 255, 0.418);
-  
+.content-header-prochatroom {
+  flex: 0.9;
+  background-color: rgb(104, 159, 242);
+  display: flex;
+}
 
+.content-prochatroom {
+  background-color: rgb(23, 96, 207);
+  flex: 0.7;
+  display: flex; 
+  flex-direction: column;
+}
+
+.header-content-prochatroom {
+  flex: 0.12;
+  display: flex;
+  background-color: rgb(23, 96, 207);
+}
+
+.content-content-prochatroom {
+  flex: 0.83;
+  background-color: rgb(162, 197, 250);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.fotter-content-prochatroom {
+  flex: 0.05;
+  background-color: rgb(23, 96, 207);
+  display: flex;
+}
+
+.chatroom-friend-icon {
+  margin-top: 5px;
+  margin-left: 70px;
+}
+
+.chatroom-friend-name-pekora {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 45px;
+  margin-left: 40px;
+}
+
+.lock-prochatroom {
+  margin-left: 940px;
+  margin-top: 22px;
+}
+
+.last-chat-prochatroom {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 27px;
+  margin-left: 140px;
+}
+
+.go-back-prochatroom {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.block01-prochatroom {
+  padding: 5px 5px;
+}
+
+.last-chat-friendlist-kanata {
+  margin-left: -540px;
+  margin-top: 15px;
+}
+
+.last-chat-name-kanata {
+  margin-top: 33px;  
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.last-chat-kanata {
+  font-size: 18px;
+  margin-top: 60px;
+  margin-left: -60px;
+}
+
+.block02-prochatroom {
+  margin-left: -258px;
+  margin-top: 110px;
+}
+
+.last-chat-friendlist-fubuki {
+  margin-left: -534px;
+  margin-top: 120px;
+}
+
+.last-chat-name-fubuki {
+  margin-top: 140px;  
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.last-chat-fubuki {
+  font-size: 18px;
+  margin-top: 165px;
+  margin-left: -60px;
+}
+
+.block03-prochatroom {
+  margin-left: -256px;
+  margin-top: 215px;
+}
+
+.last-chat-friendlist-suisei {
+  margin-left: -534px;
+  margin-top: 225px;
+}
+
+.last-chat-name-suisei {
+  margin-top: 240px;  
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.last-chat-suisei {
+  font-size: 18px;
+  margin-top: 265px;
+  margin-left: -50px;
+}
+
+.block04-prochatroom {
+  margin-left: -254px;
+  margin-top: 320px;
+}
+
+.last-chat-friendlist-noel {
+  margin-left: -534px;
+  margin-top: 330px;
+}
+
+.last-chat-name-noel {
+  margin-top: 345px;  
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.last-chat-noel {
+  font-size: 18px;
+  margin-top: 370px;
+  margin-left: -42px;
+}
+
+.block05-prochatroom {
+  margin-left: -270px;
+  margin-top: 425px;
+}
+
+.last-chat-friendlist-rushia {
+  margin-left: -534px;
+  margin-top: 435px;
+}
+
+.last-chat-name-rushia {
+  margin-top: 450px;  
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.last-chat-rushia {
+  font-size: 18px;
+  margin-top: 475px;
+  margin-left: -58px;
+}
+
+.block06-prochatroom {
+  margin-left: -222px;
+  margin-top: 530px;
+}
+
+.last-chat-friendlist-group1 {
+  margin-left: -535px;
+  margin-top: 540px;
+}
+
+.last-chat-name-group1 {
+  margin-top: 555px;  
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.last-chat-group1 {
+  font-size: 18px;
+  margin-top: 580px;
+  margin-left: -66px;
+}
+
+.block07-prochatroom {
+  margin-left: -263px;
+  margin-top: 635px;
+}
+
+.last-chat-friendlist-group2 {
+  margin-left: -535px;
+  margin-top: 645px;
+}
+
+.last-chat-name-group2 {
+  margin-top: 660px;  
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.last-chat-group2 {
+  font-size: 18px;
+  margin-top: 685px;
+  margin-left: -66px;
+}
+
+.send-prochatroom {
+  margin-top: 20px;
+  margin-left: 1200px;
+}
+
+.textbox{
+  display: flex;
+}
+
+.contro-Chatroom-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
 }
 
 .Chatroom-text {
-  margin: 8px;
-
-  background-color: rgb(255, 255, 255);
-
+  background-color: rgb(89, 148, 238);
   color : rgb(0, 0, 0);
-  font-size: 20px;
-}
-
-.textbox {
-  flex: 1;
-
-  background-color: rgba(0, 215, 223, 0.575);
-
-  justify-content: center;
-  align-items: stretch;
-  display: flex;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 8px 8px;
 }
 
 .textbox-input {
-  flex: 5;
-  height: 100%;
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 1000px;
+  height: 50%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
 }
 
 .textbox-send {
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
-.circlesbox1{
-  margin-top: 15px;
-  margin-left: 100px;
-  margin-left: -300px;
-  margin-right: 5px;
-  width: 90%;
-  vertical-align: left;
-  clip-path: circle();
-}
-.circlesbox2{
-  margin-top: -60px;
-  margin-left: 100px;
-  margin-left: 400px;
-  margin-right: 5px;
-  width: 90%;
-  vertical-align: left;
-}
-.noelly {
-  position: absolute;
-  top: -10px;
-  left: 850px;
-  font-size: 30px;
-}
-
-.imp{
-  margin-top: -60px;
-  margin-left: 100px;
-  margin-left: -450px;
-  margin-right: 5px;
-  width: 50%;
-  vertical-align: left;
-}
-.imp2{
-  margin-top: -60px;
-  margin-left: 100px;
-  margin-left: 400px;
-  margin-right: 5px;
-  width: 80%;
-  vertical-align: left;
-
-}
-.mainchatroom{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  max-width: 550px;
-  height: 87%;
-  margin: auto;
-  background-color: rgb(55, 125, 231);
+.plus-prochatroom {
+  margin-left: 0px;
+  margin-top: 10px;
 }

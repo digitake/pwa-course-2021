@@ -34,7 +34,7 @@ function Proregister() {
           </div>
           <input type="CON" id="ConPass" name="conPasseord" placeholder="Confirm Your Password..."/>
 
-          <Link to="/">
+          <Link to="ProAccount">
             <div className="Complete-register-icon">
               <img src="/Project/Proregister/registerComplete.jpg" alt="/Project/Proregister/registerComplete.jpg" 
               width="150px" height="80px" />
@@ -49,7 +49,7 @@ function Proregister() {
         
       </div>
       
-    );
-  }
+  );
+}
   
-  export default Proregister;
+export default Proregister;

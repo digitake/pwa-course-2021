@@ -114,6 +114,7 @@
   height: 80%;
   width: 100%;
   overflow: auto;
+  
 }
 
 .App-chatroom-text {
@@ -126,6 +127,7 @@
   flex-direction: column;
   margin: 25px;
   background-color: rgb(255, 255, 255);
+  
 }
 
 .App-textPosition{
@@ -143,6 +145,7 @@
   flex: 1;
   background-size: auto;  
   color: rgb(228, 222, 222);
+  
 }
 .App-textbox-input {
   flex: 1;

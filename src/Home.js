@@ -23,7 +23,18 @@ function Home(){
         </div>
         <div className="Home-chats">
             <div className="Home-chats-room1">
-                <Link className={"Home-chats-room1"} to="/chatbox"/>
+              <div className="Home-chats-room1-pic"></div>
+              <div className="Home-chats-room1-info">
+                <div className="Home-chats-room1-name">
+                  Zonefez
+                </div>
+                <div className="Home-chats-room1-message">
+                  Hello World!
+                </div>
+              </div>
+              <div className="Home-chats-room1-time">
+                30 Mins
+              </div>
             </div>
             <div className="Home-chats-room2">
                 <Link className={"Home-chats-room2"} to="/chatbox"/>

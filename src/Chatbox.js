@@ -58,7 +58,7 @@ function ChatBox({ children }) {
               <div className = "Chatbox-header">
                   <input type = "text" value = {name} onChange = {onNameChange}/>
                     <div className = "Chatbox-header1">
-                    <Link className={"Chatbox-header1"} to="/home"/>
+                    <Link className={"Chatbox-header1"} to="/"/>
                     </div>
                     <div className = "Chatbox-header2"></div>
                     <div className = "Chatbox-header3"></div>  

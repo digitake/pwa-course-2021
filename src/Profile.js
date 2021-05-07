@@ -13,7 +13,7 @@ function Profile(){
       <div className="Profile-header">
 
       <div className="Profile-header1" >
-      <Link className={"Profile-header1"} to="/home"/>
+      <Link className={"Profile-header1"} to="/"/>
       </div>
       
       <div className="Profile-header2" ></div>

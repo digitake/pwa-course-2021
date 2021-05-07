@@ -10,7 +10,7 @@ function Music(){
     <div className="Music">
       <div className="Music-header">
       <div className="Music-header1" >
-        <Link className={"Music-header1"} to="/"/>
+        <Link className={"Music-header1"} to="/chatbox"/>
       </div>
       <div className="Music-header2" ></div>
       <div className="Music-header3" ></div>  
@@ -20,7 +20,7 @@ function Music(){
       <div className = "Music-chatroom2"></div>
       <div className="Music-textbox">
         <div className="Music-textbox-send" >
-          <Link className={"Music-textbox-send"} to="/home"/>
+          <Link className={"Music-textbox-send"} to="/"/>
         </div>
         <div className="Music-textbox-send1" > </div>
         <div className="Music-textbox-send2" ></div>

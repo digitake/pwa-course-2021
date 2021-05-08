@@ -4,6 +4,7 @@ import Login from "./Login";
 import Chatbox  from "./Chatbox";
 import FriendList from "./FriendList";
 import Menu from "./MenuPage/Menu";
+import MangoSetting from "./MenuPage/MangoSetting";
 import Profile from "./ProfilePage/Profile";
 import Post from "./ProfilePage/Post";
 import Friend from "./ProfilePage/Friend";
@@ -67,6 +68,10 @@ function Router()  {
 
             <Route path="/menu">
               <Menu />
+            </Route>
+
+            <Route path="/Mangosetting">
+              <MangoSetting />
             </Route>
 
             <Route path="/profile">

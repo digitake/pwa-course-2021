@@ -5,7 +5,11 @@ self.addEventListener("install", (event) =>
         caches.open('chatapp-v1.2').then((cache)=> {
                 return cache.addAll([
                     '/',
-                    '/index.html'
+                    '/index.html',
+                    '/logo192.png',
+                    '/logo512.png',
+                    '/game.JPG',
+                    '/GameApp.JPG'
                 ]);
             })
     );

@@ -1,8 +1,9 @@
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Login from "./Login";
 import Chatbox  from "./Chatbox";
 import FriendList from "./FriendList";
-import Menu from "./Menu";
+import Menu from "./MenuPage/Menu";
 import Profile from "./ProfilePage/Profile";
 import Post from "./ProfilePage/Post";
 import Friend from "./ProfilePage/Friend";
@@ -237,7 +238,7 @@ function Router()  {
             </Route>
 
             <Route path="/">
-              <Chatbox />
+              <Login />
             </Route>
 
             

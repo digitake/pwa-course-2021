@@ -21,7 +21,7 @@ function Page4Drawling() {
       </div>
       <div className="PageDrawing-drawbox">
         <div className="PageDrawing-Icon">
-        <img src={ToolLogo}></img>
+        <img src={Toolicon}></img>
         </div>
       </div>
       <div className="PageDrawing-send">

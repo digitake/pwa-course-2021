@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Login(){
     return(
 
-        <div className = "body">
+        <div className = "background">
            
              <div className = "box">
                 Mango Talk

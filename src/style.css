@@ -1,0 +1,46 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #242424;
+  background-image: url(mango.png);
+  background-position:center; 
+}
+
+
+.box{
+  width: 300px;
+  padding:60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #FECC48;
+  text-align: center;
+  font-size:40px;
+    color:#242424;
+    font-weight:bold;
+}
+.boxh1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.boxinput{
+  border:0;
+  background: #E9E87F;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #242424;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  font-size:15px;
+    color:#242424;
+    font-weight:bold;
+}
+

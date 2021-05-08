@@ -8,7 +8,8 @@ self.addEventListener("install", (event) =>{
 
             return caches.addAll([
                 '/',
-                '/index.html'
+                '/index.html',
+                '/mango.png'
             ]);
         })
 

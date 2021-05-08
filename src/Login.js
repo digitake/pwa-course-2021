@@ -11,7 +11,7 @@ function Login(){
                 Mango Talk
                 <Link to= "/profile">
                 <div className = "boxinput">
-                    LOING
+                    LOGIN
                 </div>
                 </Link>
               </div>

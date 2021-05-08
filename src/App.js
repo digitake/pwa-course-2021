@@ -1,44 +1,48 @@
 import './App.css';
-
 import { Link } from 'react-router-dom';
+import back from './image/back.png' ; 
+import './Chatbox'
 
-function App({children}) {
+function App({Children}) {
+ 
   return (
-
     <div className="App col-6">
-
       <div className="App-header">
-
-        <Link to="/friend-list">
-          <button> Friend List </button>
-        </Link>
-
-        <Link to="/profile">
-          <button> Profile </button>
-        </Link>
-
-        <Link to="/addfriend">
-          <button> AddFriend </button>
+      <div>
+      <Link to="Chatroom">
+          <img src={back} width="50" border="5" alt="ย้อนกลับ">
+          </img>
         </Link>
         
-        <Link to="/">
-          <button> Chatbox </button>
+        <Link to="/MainPage">
+            <button>
+              Main Page
+              </button>
         </Link>
-
-        <Link to="/Home-page">
-          <button> Home Page </button>
-        </Link>
-
+        <Link to ="/Addfriend">
+          <button>
+            AddFriend
+          </button>
+          </Link>
+          <Link to ="/">
+          <button>
+            Chatroom
+          </button>
+          </Link>
+          
+        
       </div>
-
-      <div className="App-content">
-        {children}
       </div>
-
+     
+     <div className="App-content">
+       {Children}
+       </div>
     </div>
     
   );
 }
+
+
 // ctrl+alt+p to open command then run npm start to open localhost:300 
 
 export default App;

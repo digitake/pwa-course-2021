@@ -1,15 +1,12 @@
+
 import { Link } from "react-router-dom";
-
 import main from './image/BT.png';
-
-import pro from './123.jpg';
-
+import pro from './image/123.jpg';
 function  MainPage() {
     return(
         <div>
-
             <body>
-           <Link to="/profiless">
+           <Link to="/">
                 <img src={main} width="200" border="5"  />
            </Link>
 

@@ -1,45 +1,28 @@
+
+
 import {RouterBrowser,Switch,Route, BrowserRouter} from 'react-router-dom';
-
-import Chatbox from './Chatbox' ;
-
-import FriendList from './FriendList' ;
-
-import Profile from './Profile' ;
-
-import AddFriend from './AddFriend';
-import HomePage from './HomePage';
+import Chatbox from './Chatbox';
+import FriendList from './FriendList';
+import MainPage from './MainPage' ;
+import AddFriend from './AddFriend' ; 
 
 function Router() {
     return(
         <BrowserRouter>
-
             <Switch>
-
-                <Route path="/profile">
-                    <Profile />
+                <Route path="/MainPage">
+                    <MainPage />
                 </Route>
-
-                <Route path="/friend-list">
-                    <FriendList />
-                </Route>
-
-                <Route path="/add-friend">
+                <Route path="/AddFriend">
                     <AddFriend />
                 </Route>
-
                 <Route path="/">
                     <Chatbox />
                 </Route>
-
-                <Route path="/Home-page">
-                    <HomePage />
-                </Route>
-                
             </Switch>
-
-        </BrowserRouter>
+        </BrowserRouter>  
     )
-    
 } ;
+
 
 export default Router;

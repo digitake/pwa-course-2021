@@ -4,7 +4,7 @@ import firebase from 'firebase';
  var firebaseConfig = {
   apiKey: "AIzaSyAHi_UOpCJuml_u0WR39R2svjUOvFTymuQ",
   authDomain: "chatapp-b5a54.firebaseapp.com",
-  databaseURL: "https://nottae12-pwa-default-rtdb.firebaseio.com/",
+  databaseURL: "https://chatapp-b5a54-default-rtdb.firebaseio.com/",
   projectId: "chatapp-b5a54",
   storageBucket: "chatapp-b5a54.appspot.com",
   messagingSenderId: "782307115129",

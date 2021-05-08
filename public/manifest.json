@@ -2,7 +2,7 @@
   "theme_color": "#4a90e2",
   "background_color": "#356df6",
   "display": "standalone",
-  "scope": "/",
+  "scope": ".",
   "start_url": ".",
   "short_name": "Neptune Chat",
   "name": "Neptune Chat Application",

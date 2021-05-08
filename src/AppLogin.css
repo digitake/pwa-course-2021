@@ -52,17 +52,11 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-<<<<<<< HEAD
         height: 825px;
         margin: auto;
         background-repeat: no-repeat;
         background-color: #2D2C67;
         background-image: url(/src/AppchatUpdate/Tap.png);
-=======
-        height: 100%;
-        background-color: #2D2C67;
-
->>>>>>> 81426a820370ba210b8dc6019d44abf0894edf5e
     }
 
     .Undo{

@@ -13,59 +13,58 @@
   .AppPrivate{
     max-width: 100%;
   }
-<<<<<<< HEAD
 @media (min-width: 860px){
 .AppPrivate{
   max-width: 100%;
 }  
-  }
+  
 .header{
     background-color: #3d14f5;
     height: flex;
   }
-.chatname a{
-color: #fff;
-text-decoration: none;
-font-weight: bold;
-font-size: 2rem;
-}
-.chatname{
-  justify-content: space-around;
-}
-.header-content{
-display: flex;
-justify-content: space-between;
-height: flex;
-align-items: center;
-padding: right;
-}
-.menu{
+  .chatname a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  }
+  .chatname{
+    justify-content: space-around;
+  }
+  .header-content{
+  display: flex;
+  justify-content: space-between;
+  height: flex;
+  align-items: center;
+  padding: right;
+  }
+  .menu{
     display: flex;
     list-style-type: none;
   }
-.menu li {
-  padding-right: 1rem;
-}
-.menu li a{
-  text-decoration: none;
-  color: #fff;
-}
-.mobile-menu{
-  display: none;
-}
+  .menu li {
+    padding-right: 1rem;
+  }
+  .menu li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .mobile-menu{
+    display: none;
+  }
 @media (max-width: 859px){
-.AppPrivate {
-  width: 414px;  
-}
-.mobile-menu{
-display: block;
-color: #fff;
-font-size: 1.5rem;
-}
-.header{
+ .AppPrivate {
+   width: 414px;  
+ }
+ .mobile-menu{
+ display: block;
+ color: #fff;
+ font-size: 1.5rem;
+ }
+ .header{
   padding: 0 1rem;
-}
-.menu {
+ }
+ .menu {
   width: 100%;
   height: auto;
   display: flex;
@@ -76,31 +75,18 @@ font-size: 1.5rem;
   width: 13%;
   transition: 0.5s ease;
   opacity: 0;
-}
-.menu.active{
+ }
+ .menu.active{
   background: rgb(0, 0, 0);
   opacity: 1;
   align-content: center;
   transition: 0.5s ease;
-}
-    }
-.App-chatroom 
+  }
+  }
+  .App-chatroom 
   {
     flex: 12;
     overflow: auto;
-=======
-    }
-  .header{
-      background-color: #3d14f5;
-      height: flex;
-    }
-    
-  .chatname a{
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 2rem;
->>>>>>> 81426a820370ba210b8dc6019d44abf0894edf5e
   }
 
   .chatname{
@@ -116,8 +102,8 @@ font-size: 1.5rem;
   }
 
   .menu{
-      display: flex;
-      list-style-type: none;
+    display: flex;
+    list-style-type: none;
     }
   .menu li {
     padding-right: 1rem;
@@ -165,4 +151,6 @@ font-size: 1.5rem;
     opacity: 1;
     align-content: center;
   }
-      }
+}
+}
+}   

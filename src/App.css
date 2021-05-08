@@ -1,20 +1,17 @@
+body{
+  background-color: black;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   max-width: 100%;
   height: 100%;
   margin: auto;
-  /* background-image: url(coo.jpg); */
   background-repeat: no-repeat;
   background-position: center;
 }
 
-@media (max-width: 768px) {
-  .App {
-    
-    /* background-color: red; */
-  }
-}
 
 @media (min-width: 768px){
   .App{

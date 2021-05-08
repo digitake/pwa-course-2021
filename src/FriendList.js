@@ -1,12 +1,6 @@
 import App from './App';
 import './FriendList.css';
 import { Component } from 'react';
-import FriendImg1 from './img/friend_1.png';
-import FriendImg2 from './img/friend_2.png';
-import FriendImg3 from './img/friend_3.png';
-import FriendImg4 from './img/friend_4.png';
-import FriendImg5 from './img/friend_5.png';
-import FriendImg6 from './img/friend_6.png';
 
 class Section extends Component {
     constructor(props) {
@@ -88,11 +82,11 @@ function RequestList() {
     return [
         {
             name: 'น้องกิฟท์',
-            avatar: FriendImg1,
+            avatar: '/friend_1.png',
         },
         {
             name: 'เชอร์รี่',
-            avatar: FriendImg2,
+            avatar: '/friend_2.png',
         },
     ];
 }
@@ -101,15 +95,15 @@ function MyFriendList() {
     return [
         {
             name: 'น้องวาย',
-            avatar: FriendImg3,
+            avatar: '/friend_3.png',
         },
         {
             name: 'มีตั้งมากหลาย',
-            avatar: FriendImg4,
+            avatar: '/friend_4.png',
         },
         {
             name: 'ไม่ยอมเรียกกัน',
-            avatar: FriendImg5,
+            avatar: '/friend_5.png',
         },
     ];
 }
@@ -118,7 +112,7 @@ function BlockList() {
     return [
         {
             name: 'Fish Stop',
-            avatar: FriendImg6,
+            avatar: '/friend_6.png',
         },
     ];
 }

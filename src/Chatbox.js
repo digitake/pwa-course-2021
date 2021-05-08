@@ -3,27 +3,17 @@ import App from './App';
 import firebase from './firebaseConfig';
 import './Chatbox.css';
 
-let chatroomRef = firebase.database().ref('chatroom-1');
-let senderName = '';
+var chatroomRef;
 
 function Chatbox() {
     const [text, setText] = useState('');
     const [lines, setLines] = useState([]);
+    const [name, setName] = useState('');
+    const [chatroom, setChatroom] = useState('chatroom-1');
 
     useEffect(() => {
-        UpdateChat();
-    }, []);
-
-    const SetChatRoom = (chatroomId) => {
-        if (chatroomId) {
-            chatroomRef = firebase.database().ref(chatroomId);
-        }
-    }
-
-    const UpdateChat = () => {
-        //Clear Old Chat History
-        chatroomRef.off('child_added');
         setLines([]);
+        chatroomRef = firebase.database().ref(chatroom);
         chatroomRef.on('child_added', snapshot => {
             let x = snapshot.val();
             setLines(line => [...line,
@@ -33,16 +23,22 @@ function Chatbox() {
                 timestamp: new Date(x.timestamp),
             }]);
         })
-    }
+
+        return () => {
+            chatroomRef.off('child_added');
+        };
+
+    }, [chatroom]);
 
     const onSend = () => {
         if (text.length < 1) return;
-        if (senderName.length < 1) {
+        if (name.length < 1) {
             alert("Please set your displayname");
             return;
         }
+
         chatroomRef.push({
-            sender: senderName,
+            sender: name,
             message: text,
             timestamp: firebase.database.ServerValue.TIMESTAMP,
         });
@@ -64,15 +60,15 @@ function Chatbox() {
         const input = document.getElementById('fname');
         input.classList.toggle('name-show');
         if (input.className === 'name-input') {
-            senderName = input.value;
-            document.getElementById('fsubmit').value = senderName;
+            setName(input.value);
+            document.getElementById('fsubmit').value = name;
         } else {
             document.getElementById('fsubmit').value = 'Done';
         }
     }
 
     const ChangeName = () => {
-        const displayName = senderName.length > 0 ? senderName : "Change Name";
+        const displayName = name.length > 0 ? name : "Change Name";
         return (
             <div>
                 <form id='displayname' className='displayname-settings' onSubmit={onNameChange}>
@@ -86,8 +82,7 @@ function Chatbox() {
     const ChatroomButton = (props) => {
         return (
             <button className='chatroom-button' onClick={() => {
-                SetChatRoom(props.chatroomId);
-                UpdateChat();
+                setChatroom(props.chatroomId);
             }}>{props.chatroomName}</button>
         );
     }

@@ -1,5 +1,9 @@
 {
   "projects": {
+<<<<<<< HEAD
     "default": "registerprivyuse"
+=======
+    "default": "chat-app-test001"
+>>>>>>> 81426a820370ba210b8dc6019d44abf0894edf5e
   }
 }

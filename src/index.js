@@ -5,6 +5,7 @@ import Router from './Router';
 import reportWebVitals from './reportWebVitals';
 
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Router />
@@ -20,7 +21,8 @@ reportWebVitals();
 
 if('serviceWorker' in navigator)
 {
-  navigator.serviceWorker.register(SW.js).then(function(registeration){
+  navigator.serviceWorker.register('sw.js')
+  .then(function(registeration){
     console.log('Registeration successfull, scope is :',registeration.scope);
 
   }).catch(function(error){

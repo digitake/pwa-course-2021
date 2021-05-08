@@ -19,10 +19,12 @@ function Menu(){
             <div className="col-3 col-s-3 Menu-box">
                 <div className=" Menu-column">
                 <div className=" Menu-row">
+                    <Link to = "/MangoSetting">
                     <button>
                         <img src="mango-192.png" class ="responsive"/>
                         <h2>Mango setting</h2>
                     </button>
+                    </Link>
                     <button>
                         <img src="mango-192.png" class ="responsive"/>
                         <h2>Account setting</h2>

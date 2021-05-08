@@ -6,13 +6,16 @@ import firebase from './firebaseConfig';
 
 
 var chatroomRef;
-
+var EnterYourFriendName ="Enter Your Friend Name To Private Chat";
+var EnterYourName ="Enter Your Name";
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
-  const [name, setName] = useState("MyName");
-  const [chatroom, setChatroom] = useState("chatroom");
+                                   //Set Name
+  const [name, setName] = useState(" ");
+                                  //Set ChatRoom
+  const [chatroom, setChatroom] = useState(" ");
 
 
   useEffect(() => {
@@ -78,8 +81,9 @@ const onSend = () => {
   return (
       <App>
     <div className="App">
+    {EnterYourFriendName}
     <input type="text" value={chatroom} onChange={onRoomChange}/>
-
+    {EnterYourName}
     <input type="text" value={name} onChange={onNameChange}/>
    
       <div className="App-chatroom">

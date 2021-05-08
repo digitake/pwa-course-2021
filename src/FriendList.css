@@ -11,11 +11,11 @@
   
   .FriendList-header {
     flex:28;
-    font-size: 25px;
+    font-size: 30px;
     background-image: url(BG_Moblie_Top.png);
     background-position: center;
     text-align: center;
-    color: cornsilk;
+    color: rgb(0, 0, 0);
     
   }
 
@@ -24,11 +24,53 @@
     font-size: 10px;
   }
   
-  .FriendList-Contact-info {
-    background-color: rgb(255, 255, 255);
-    padding: 300px 0;
-    border-style: groove;
+  .FriendList-HeadersInside {
+    padding: 100px 0;
+    background-color: rgb(0, 0, 0);
   }
+  
+  .FriendList-Contact-info {
+    background-color: rgb(248, 237, 245);
+    background-image: url(FL1.png);
+    padding: 40px 0;
+    border-style: groove;
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+  .FriendList-Contact-info1 {
+    background-color: rgb(222, 244, 248);
+    background-image: url(FL2.png);
+    padding: 40px 0;
+    border-style: groove;
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+  .FriendList-Contact-info2 {
+    background-color: rgb(248, 237, 245);
+    background-image: url(FL3.png);
+    padding: 40px 0;
+    border-style: groove;
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+  .FriendList-Contact-info3 {
+    background-color: rgb(222, 244, 248);
+    background-image: url(FL4.png);
+    padding: 40px 0;
+    border-style: groove;
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+  .FriendList-Contact-info4 {
+    background-color: rgb(248, 237, 245);
+    background-image: url(FL5.png);
+    padding: 40px 0;
+    border-style: groove;
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+
+  
   
   .FriendList-chatroom {
     flex: 12;

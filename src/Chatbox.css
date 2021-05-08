@@ -12,7 +12,7 @@
   .Chatbox{
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(shiba.png);
+    background-image: url(BG_MEOW.png);
     background-size: contain;
 }
 }
@@ -20,7 +20,7 @@
   .Chatbox{
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(shiba.png);
+    background-image: url(BG_MEOW.png);
     background-repeat: repeat;
 }
 }
@@ -32,21 +32,8 @@
 }
 
 
-.Chatbox-header {
-  flex: 1;
-  background-color: #7ff8fc;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
-}
-
 .Chatbox-chatroom {
   flex: 12;
-  display: flex;
-  flex-direction: column;
 }
 
 .Chatbox-chatroom-text {
@@ -87,7 +74,7 @@
   .Chatbox{
     background-repeat: center;
     background-position: center;
-    background-image: url(shiba.png);
+    background-image: url(BG_MEOW.png);
     background-size: contain;
   }
 
@@ -129,7 +116,7 @@
   .Chatbox{
     background-repeat: repeat;
     background-position: center;
-    background-image: url(Jesus.png);
+    background-image: url(BG_MEOW.png);
     background-size: contain;
   }
 
@@ -149,7 +136,7 @@
   .Chatbox{
     background-repeat: repeat;
     background-position: center;
-    background-image: url(sea.png);
+    background-image: url(BG_MEOW.png);
     background-size: cover;
   }
 

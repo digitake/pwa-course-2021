@@ -24,7 +24,7 @@ function App({children}) {
                </image>
              </Link>
 
-             <Link to = "/App">
+             <Link to = "/Chatbox">
                <image>
                <img src ="buttonMenu.png"/>
                </image>

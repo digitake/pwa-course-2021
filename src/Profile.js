@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import NormalPage from './NormalPage';
 
 function Profile() {
+
+  
     return (
         <NormalPage>
         <div className ="Profile">

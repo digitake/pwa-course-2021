@@ -38,7 +38,7 @@ function Router()
               <Shop />
             </Route>
             <Route path = "/">
-              <Chatbox />
+              <Login />
             </Route>
         </Switch>
      </BrowserRouter> 

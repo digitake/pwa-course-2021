@@ -11,6 +11,7 @@ self.addEventListener("install",(event) => {
             return cache.addAll([
                 '/',
                 '/index.html'
+    //การบ้านเพิ่มส่วนนี้เพื่อจัดเก็บแคช
             ]);
         })
     );

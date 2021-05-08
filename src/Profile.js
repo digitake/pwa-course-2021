@@ -6,7 +6,8 @@ function  Profile() {
     return(
         <App>
         <div class="center">
-        <body><img src={pro}/>
+        <body>
+        <img src={pro}  />
                 <p align="center">
                     <h1>
                     Name

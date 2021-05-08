@@ -13,7 +13,7 @@ function AddFriend() {
                     <h1>Add Friend 
                         <Link to="/"><button> Go to Chatroom </button></Link>
                     </h1>
-                    
+
                     <h2>-----Id-----</h2>
 
                     <button>

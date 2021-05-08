@@ -58,7 +58,7 @@ function Chatbox() {
           return <div className="App-chatroom-text">
 
             <div>
-              {x.sender+"pigleg:"}
+              {x.sender+";"}
             </div>
             <div>
               {x.message}

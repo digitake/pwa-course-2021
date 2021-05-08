@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "nottae12-pwa"
+    "default": "nottae12-pwa",
+    "https://nottae12-pwa-default-rtdb.firebaseio.com/": "chatapp-b5a54"
   }
 }

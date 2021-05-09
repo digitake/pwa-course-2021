@@ -30,7 +30,6 @@
 
 .App-content {
   flex: 12;
-  
 }
 
 .App-chatroom-text {
@@ -62,6 +61,7 @@
   align-items: center;
   display: flex;
 }
+
 
 
 

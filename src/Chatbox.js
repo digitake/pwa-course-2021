@@ -66,14 +66,14 @@ function Chatbox() {
 
   return (
       <App>
-    <div className="App">
-    <input type="text" className="App-textbox-input" value={chatroom} onChange={onRoomChange} />
-    <input type="text" className="App-textbox-input" value={name} onChange={onNameChange} />
-      <div className="App-chatroom">
+    <div className="Chat">
+    <input type="text" className="Chat-textbox-input" value={chatroom} onChange={onRoomChange} />
+    <input type="text" className="Chat-textbox-input" value={name} onChange={onNameChange} />
+      <div className="Chat-chatroom">
         {
 
           lines.map(x =>{
-            return <div className="App-chatroom-text">
+            return <div className="Chat-chatroom-text">
                 <div>
                   {x.sender+":"}
                 </div>
@@ -88,9 +88,9 @@ function Chatbox() {
         }
 
       </div>
-      <div className="App-textbox">
-        <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
-        <div className="App-textbox-send" onClick={onSend} >ส่ง</div>
+      <div className="Chat-textbox">
+        <input type="text" className="Chat-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
+        <div className="Chat-textbox-send" onClick={onSend} >ส่ง</div>
 
       </div>
     </div>

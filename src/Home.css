@@ -9,22 +9,152 @@
 }
 
 @media (min-width: 768px) {
+  
   .Home {
     background-color: rgb(207, 238, 250);
   }
   .Home-header1{
-      background-position: center;
+    background-position: center;
   }
   .Home-header2{
     background-position: center;
   }
   .Home-header3{
-      background-position: center;
+    background-position: center;
   }
   .Home-chats{
-      background-position: center;
+    background-position: center;
+  }
+  Seachingbox.element.style {
+    width: 400px;
+  }
+  
+
+  .Home-chats-room1{
+    flex: 1;
+    display: flex;
+  }
+
+  .Home-chats-room1-pic{
+    flex-direction: column;
+    background-image: url("design/Home/Home\ UI\ PC-test.png");
+    background-position: right;
+    background-size: 25%;
+    background-repeat: no-repeat;
+}
+
+.Home-chats-room1-name{
+  flex-direction: column;
+  font-size: 30px;
+}
+
+.Home-chats-room1-message{
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.Home-chats-room1-time{
+  flex-direction: column;
+  font-size: 30px;
+}
+
+  .Home-chats-room2{
+    background-image: url("design/Home/Home\ UI\ PC-07.png");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.Home-chats-room3{
+  background-image: url("design/Home/Home\ UI\ PC-08.png");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.Home-chats-room4{
+  background-image: url("design/Home/Home\ UI\ PC-09.png");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.Home-chats-room5{
+  background-image: url("design/Home/Home\ UI\ PC-10.png");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+}
+
+@media (max-width: 768px) {
+ 
+
+  .Home-chats-room1{
+    flex: 1;
+  }
+  
+  SeachingBox.element.style {
+    width: 140px;
+  }
+
+  .Home-chats-room1-pic{
+    flex-direction: column;
+    background-image: url("design/Home/Home\ UI\ PC-test.png");
+    background-position: right;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.Home-chats-room1-name{
+  flex-direction: column;
+  font-size: 30px;
+}
+
+.Home-chats-room1-message{
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.Home-chats-room1-time{
+  flex-direction: column;
+  font-size: 20px;
+}
+  
+
+  .Home-chats-room2{
+    background-image: url("design/Home/Home\ UI-02.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-color: rgb(207, 238, 250);
+  }
+
+  .Home-chats-room3{
+    background-image: url("design/Home/Home\ UI-03.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-color: rgb(207, 238, 250);
+  }
+
+  .Home-chats-room4{
+    background-image: url("design/Home/Home\ UI-04.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-color: rgb(207, 238, 250);
+  }
+  .Home-chats-room5{
+    background-image: url("design/Home/Home\ UI-05.png");
+    background-color: rgb(207, 238, 250);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    
   }
 }
+
 
 .Home-header {
 background-color: rgb(255, 255, 255);
@@ -39,9 +169,8 @@ display: flex;
 }
 
 .Home-header1 {
-background-image: url("design/profile-icon.png");
-background-size: 50px;
-background-position: center;
+
+background-position: left;
 background-repeat: no-repeat;
 flex: 1;
 height: 100%;
@@ -51,8 +180,7 @@ align-items: center;
 display: flex;
 }
 .Home-header2 {
-background-image: url("design/Logo_ChiCHi-04.png");
-background-size: 65px;
+background-image: url("design/Home/Home\ Icon-04.png");
 background-position: center;
 background-repeat: no-repeat;
 flex: 1;
@@ -64,8 +192,7 @@ display: flex;
 }
 
 .Home-header3 {
-background-image: url("design/calendar-icon.png");
-background-size: 50px;
+background-image: url("design/Home/Home\ Icon-02.png");
 background-position: center;
 background-repeat: no-repeat;
 flex: 1;
@@ -77,21 +204,91 @@ display: flex;
 }
 
 .Home-chats {
-color: rgb(182, 234, 255);
-flex: 12;
+flex: 8;
 }
 
-.Home-chats-room {
-  background-image: url("design/chats-pic.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.Home-chats-room1 {
   flex: 1;
-  height: 100%;
-  vertical-align: middle;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px 0%;
+}
+
+.Home-chats-room1-pic{
+  flex: 1;
+  display: flex;
+}
+
+.Home-chats-room1-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Home-chats-room1-name{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-weight: bold;
+  color:rgb(0, 54, 124)
+}
+
+.Home-chats-room1-message{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color:rgb(65, 65, 65)
+}
+
+.Home-chats-room1-time{
+  flex: 1;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+  font-weight: bold;
+  color:rgb(151, 151, 151)
+}
+
+.Home-chats-room2 {
+    flex: 1;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 15px 0%;
+  }
+
+.Home-chats-room3 {
+  flex: 1;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0%;
+}
+
+.Home-chats-room4 {
+  flex: 1;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0%;
+}
+
+.Home-chats-room5 {
+  flex: 1;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0%;
+    
 }
 
 .Home-menu {
@@ -104,8 +301,7 @@ display: flex;
 color: rgb(228, 222, 222);
 }
 .Home-menu1 {
-background-image: url("design/Logo_ChiCHi-04.png");
-background-size: 65px;
+background-image: url("design/Home/Home\ Icon-05.png");
 background-position: center;
 background-repeat: no-repeat;
 flex: 1;
@@ -116,7 +312,7 @@ align-items: center;
 display: flex;
 }
 .Home-menu2 {
-background-image: url("design/Design\ Chi\ CHi\ App-03.png");
+background-image: url("design/Home/Home\ Icon-06.png");
 background-position: center;
 background-repeat: no-repeat;
 flex: 1;
@@ -126,9 +322,19 @@ justify-content: center;
 align-items: center;
 display: flex;
 }
+.Home-menu3 {
+  background-image: url("design/Home/Home\ Icon-03.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  }
 
 .Home-menu3 {
-  background-image: url("design/Design\ Chi\ CHi\ App-04.png");
   background-position: center;
   background-repeat: no-repeat;
   flex: 1;
@@ -139,15 +345,3 @@ display: flex;
   display: flex;
 }
 
-.Home-menu4 {
-  background-image: url("design/game-icon.png");
-  background-size: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex: 1;
-  height: 100%;
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}

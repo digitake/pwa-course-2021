@@ -1,4 +1,4 @@
-.Profile {
+.Music {
     background-color: rgb(207, 238, 250);
     display: flex;
     flex-direction: column;
@@ -8,77 +8,58 @@
     margin: auto;
   }
   
-  @media (max-width: 768px) {  
-    .Profile {
+  @media (max-width: 768px) {
+  
+    .Music {
       background-color: rgb(207, 238, 250);
     }
-    .Profile-header1{
+    .Music-header1{
       background-size: 50%;
       background-color: rgb(255, 255, 255);
       background-position: left;
     }
-    .Profile-header3{
+    .Music-header3{
       background-size: 50%;
       background-color: rgb(255, 255, 255);
       background-position: right;
     }
-    .Profile-chatroom{
+    .Music-chatroom{
       flex-direction: column;
-    }
-    .Profile-textbox-send2{
       background-size: 90%;
     }
-
-    .Profile-chatroom2{
+    .Music-chatroom1{
       flex-direction: column;
+      background-size: 80%;
     }
-
-    .Profile-info{
-      
+    .Music-chatroom2{
       flex-direction: column;
+      background-size: 80%;
     }
   }
 
   @media (min-width: 1600px) {
-    .Profile-header1{
-      background-size: 10%;
+    
+    .Music-chatroom{
+      background-size: 25%;
     }
-    .Profile-header3{
-      background-size: 10%;
+    .Music-chatroom1{
+      background-size: 20%;
     }
-    .Profile-chatroom{
-      flex-direction: row;
-    }
-    .Profile-chatroom1{
-      background-size: 90%;
-    }
-
-    .Profile-chatroom2{
-      background-size: 70%;
-      flex-direction: column;
-    }
-
-    .Profile-info{
-      flex-direction: column;
-
-    }
-
-    .Profile-textbox-send2{
-      background-size: 40%;
+    .Music-chatroom2{
+      background-size: 25%;
     }
   }
-
   
-  .Profile-logo {
+  .Music-logo {
     height: 40vmin;
     pointer-events: none;
   }
   
-  .Profile-header {
+  .Music-header {
     background-color: rgb(255, 255, 255);
     background-position: center;
     background-repeat: no-repeat;
-    flex: 0.5;
+    flex: 1;
     height: 100%;
     vertical-align: middle;
     justify-content: center;
@@ -86,9 +67,8 @@
     display: flex;
   }
   
-  .Profile-header1 {
-    background-image: url("design/Profile/profile-back.png");
-    
+  .Music-header1 {
+    background-image: url(design/Music/Music\ UI-02.png);
     background-position: left;
     background-repeat: no-repeat;
     flex: 1;
@@ -97,25 +77,22 @@
     justify-content: center;
     align-items: center;
     display: flex;
-  
   }
   
-  .Profile-header2 {
+  .Music-header2 {
     background-image: url();
     background-position: center;
     background-repeat: no-repeat;
-    flex: 1;
+    flex: 2;
     height: 100%;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
     display: flex;
-  
   }
   
-  .Profile-header3 {
-    background-image: url("design/Profile/profile-next-05.png");
-    
+  .Music-header3 {
+    background-image: url(design/Music/Music\ UI-03.png);
     background-position: right;
     background-repeat: no-repeat;
     flex: 1;
@@ -126,40 +103,38 @@
     display: flex;
   }
   
-  .Profile-chatroom{
-    flex: 6;
-    display: flex;
-
-  }
-  .Profile-chatroom1 {
-    background-image: url("design/Profile/Profile.png");
-    background-color: #afe5fa;
+  .Music-chatroom {
+    background-image: url(design/Music/Music\ UI-04.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
     flex: 1;
     display: flex;
   }
-
-  .Profile-chatroom2 {
-    
-    background-color:white;
+  .Music-chatroom1 {
+    background-image: url(design/Music/Music\ UI-01.png);
     background-repeat: no-repeat;
-    background-position: center;
-    
+    background-position: top;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    flex: 3;
+    display: flex;
+  }
+  .Music-chatroom2 {
+    background-image: url(design/Music/Music\ UI-05.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
     display: flex;
   }
 
-
-  
-  .Profile-chatroom-text {
+  .Music-chatroom-text {
     margin: 8px;
     background-color: rgb(108, 165, 250);
     background-size: 30%;
@@ -167,7 +142,7 @@
     font-size: 30px;
   }
   
-  .Profile-textbox {
+  .Music-textbox {
     flex: 1;
     background-color: rgb(255, 255, 255);
     background-position: right;
@@ -177,28 +152,39 @@
     color: rgb(228, 222, 222);
   }
   
-  .Profile-textbox-input {
+  .Music-textbox-input {
     flex: 4;
     height: 100%;
     box-sizing: border-box;
     color: rgb(6, 87, 119);
   }
   
-  .Profile-textbox-send {
-    
+  .Music-textbox-send {
+    background-image: url(design/Music/Music\ UI-06.png);
+    background-position: center;
+    background-repeat: no-repeat;
     flex: 1;
-    
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
   
-  
-  .Profile-textbox-send1 {
-    
+  .Music-textbox-send1 {
+    background-image: url(design/Music/Music\ UI-07.png);
+    background-position: center;
+    background-repeat: no-repeat;
     flex: 1;
-    
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
   
-  .Profile-textbox-send2 {
-    background-image: url("design/logo192.png");
+  .Music-textbox-send2 {
+    background-image: url(design/Music/Music\ UI-08.png);
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -209,18 +195,6 @@
     display: flex;
   }
 
-  .Profile-textbox-send3 {
-    
-    flex: 1;
-   
-  }
-
-  .Profile-textbox-send4 {
-   
-    flex: 1;
-    
-  }
-  
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}

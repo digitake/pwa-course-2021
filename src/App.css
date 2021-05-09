@@ -6,6 +6,40 @@
   text-align: center;
   height: 100%;
   margin: auto;
+  /* background-image: url(coo.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .App {
+    width:100%;
+    height:90%;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(207, 238, 250);
+
+  max-width: 400px;
+  height: 100%;
+  margin: auto;
+  background:rgb(207, 238, 250);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+}
+
+@media (max-width: 768px) {
+  .App {
+    width:100%;
+    height:100%;
+    background-image: rgb(255, 255, 255);
+    background-size: 210%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
 }
 .App-logo {
   height: 40vmin;
@@ -21,6 +55,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+
 }
 .App-header1 {
   background-image: url(design/App\ Content-01.png);
@@ -43,6 +78,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  
 }
 .App-header3 {
   background-image: url(design/App\ Content-02.png);
@@ -54,10 +90,13 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  
 }
 .App-content{
-  color: rgb(182, 234, 255);
   flex: 12;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
 }
 .App-chatroom-text {
   margin: 8px;
@@ -76,7 +115,7 @@
   color: rgb(228, 222, 222);
 }
 .App-textbox-input {
-  flex: 4;
+  flex: 10;
   height: 100%;
   box-sizing: border-box;
   color: rgb(6, 87, 119);

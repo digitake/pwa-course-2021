@@ -1,18 +1,19 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './Profile.css';
-
+import App from './App';
 
 
 function Profile(){
 
   return (
+    <App>
     <div className="Profile">
       
       <div className="Profile-header">
 
       <div className="Profile-header1" >
-      <Link className={"Profile-header1"} to="/home"/>
+      <Link className={"Profile-header1"} to="/"/>
       </div>
       
       <div className="Profile-header2" ></div>
@@ -20,11 +21,21 @@ function Profile(){
         
     </div>
       
-      <div className ="Profile-chatroom"></div>
-      <div className = "Profile-chatroom1"></div>
+      <div className ="Profile-chatroom">
+      <div className = "Profile-chatroom1">
+      </div>
+      <div className = "Profile-chatroom2">
+        <div className = "Profile-info"> Sebrina Vince</div>
+        <div className = "Profile-info">#designhours</div>
+        <div className = "Profile-info">@Sebrina</div>
+        <div className = "Profile-info">Graphic Designer</div>
+        <div className = "Profile-info">Contact me </div>
+        <div className = "Profile-info">+65 548869483</div>
+        
+      </div>
+      </div>
       
-
-
+  
       <div className="Profile-textbox">
         
 
@@ -39,7 +50,7 @@ function Profile(){
 
       </div>
     </div>
-    
+    </App>
   );
   
 }

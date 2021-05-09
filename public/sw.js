@@ -6,7 +6,17 @@ self.addEventListener('install', event => {
         caches.open('chatapp-v3').then(cache => {
             return cache.addAll([
                 '/',
-                '/index.html'
+                '/index.html',
+                'chat.png',
+                'cool5.png',
+                'cool4.png',
+                'favicon.ico',
+                'logo192.png',
+                'logo512.png',
+                'friend.png',
+                'logo.png',
+                'statusOnline.png',
+                'statusOffline.png'
             ]);
         })
 

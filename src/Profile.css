@@ -28,6 +28,15 @@
     .Profile-textbox-send2{
       background-size: 90%;
     }
+
+    .Profile-chatroom2{
+      flex-direction: column;
+    }
+
+    .Profile-info{
+      
+      flex-direction: column;
+    }
   }
 
   @media (min-width: 1600px) {
@@ -46,6 +55,12 @@
 
     .Profile-chatroom2{
       background-size: 70%;
+      flex-direction: column;
+    }
+
+    .Profile-info{
+      flex-direction: column;
+
     }
 
     .Profile-textbox-send2{
@@ -117,10 +132,11 @@
 
   }
   .Profile-chatroom1 {
-    background-image: url("design/Profile/login-profile.png");
+    background-image: url("design/Profile/Profile.png");
+    background-color: #afe5fa;
     background-repeat: no-repeat;
     background-position: center;
-    
+    background-size: 80%;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
@@ -129,8 +145,8 @@
   }
 
   .Profile-chatroom2 {
-    background-image: url("design/Profile/profile-welcome.png");
     
+    background-color:white;
     background-repeat: no-repeat;
     background-position: center;
     

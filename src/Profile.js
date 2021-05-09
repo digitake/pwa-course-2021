@@ -22,8 +22,17 @@ function Profile(){
     </div>
       
       <div className ="Profile-chatroom">
-      <div className = "Profile-chatroom1"></div>
-      <div className = "Profile-chatroom2"></div>
+      <div className = "Profile-chatroom1">
+      </div>
+      <div className = "Profile-chatroom2">
+        <div className = "Profile-info"> Sebrina Vince</div>
+        <div className = "Profile-info">#designhours</div>
+        <div className = "Profile-info">@Sebrina</div>
+        <div className = "Profile-info">Graphic Designer</div>
+        <div className = "Profile-info">Contact me </div>
+        <div className = "Profile-info">+65 548869483</div>
+        
+      </div>
       </div>
       
   

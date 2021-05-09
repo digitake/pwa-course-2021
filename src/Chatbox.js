@@ -1,17 +1,25 @@
 import './Chatbox.css';
-import {useState} from 'react';
+import {useState , useEffect} from 'react';
 import App from './App';
 
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
+
+  useEffect (() => {
+    alert("Total lines = ", + lines.length);
+  }, [lines]);
   
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
   const onSend = () =>{
-    setLines([...lines, text]);
+    setLines([...lines, {
+      sender : "Me",
+      message: text,
+      timestamp: (new Date())
+      }]);
     setText("");
   };
 
@@ -28,7 +36,17 @@ function Chatbox() {
         {
           lines.map(x => {
             return <div className="App-chatroom-text">
-              {x}
+              <div className= "App-chatroom-text-sender">
+              {x.sender+": "}
+              </div>
+              <div className= "App-chatroom-text-massage">
+                <div>
+                {x.message}
+                </div>
+                <div>
+                {x.timestamp.toLocaleString()}
+              </div>
+              </div>
               </div>
           })
         }

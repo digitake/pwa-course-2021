@@ -1,7 +1,8 @@
 .Home
 {
+    display: flex;
+    flex-direction: column;
     background-image:url(logo.png) ;
-    max-width: 1920px;
     background-repeat: no-repeat;
     background-position: center;
     background-color:#ffe2ae;
@@ -13,6 +14,8 @@
     margin:2px ;
     display: flex;
     justify-content: flex-end;
+    height: 40;
+    width: 40;
 }
     
     
@@ -23,7 +26,7 @@
     .Home
     {
       background-image: url(logo.png);
-      background-size: cover;
+      background-size: 300px;
     }
 }
       

@@ -43,10 +43,18 @@
 
     .EWallet-moneytop {
       flex: 1;
+      background-image: url("design/E-Wallet/backgroundtop1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 90%;
     }
     .EWallet-moneybottom {
       flex: 1;
       flex-direction: row;
+      background-image: url("design/E-Wallet/backgroundtop1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 80%;
     }
 
     .EWallet-moneytopleft {
@@ -175,6 +183,7 @@
   .EWallet-moneytop {
     flex: 1;
     display: flex;
+
   }
   .EWallet-moneytopleft {
     flex: 1;
@@ -245,53 +254,53 @@
     flex: 1;
     display: flex;
     margin: 10px 0%;
-    background-image: url("design/E-Wallet/stickericon.png");
+    background-image: url("design/E-Wallet/stickericonfix.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 80%;
   }
 
   .EWallet-Button2 {
     flex: 1;
     display: flex;
     margin: 10px 0%;
-    background-image: url("design/E-Wallet/shopicon.png");
+    background-image: url("design/E-Wallet/shopiconfix.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 80%;
   }
   .EWallet-Button3 {
     flex: 1;
     display: flex;
     margin: 10px 0%;
-    background-image: url("design/E-Wallet/foodicon.png");
+    background-image: url("design/E-Wallet/foodiconfix.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 80%;
   }
   .EWallet-Button4 {
     flex: 1;
     display: flex;
-    background-image: url("design/E-Wallet/payicon.png");
+    background-image: url("design/E-Wallet/payiconfix.png");
     background-repeat: no-repeat;
     background-position: center ;
-    background-size: 50%;
+    background-size: 80%;
   }
   .EWallet-Button5 {
     flex: 1;
     display: flex;
-    background-image: url("design/E-Wallet/pointicon.png");
+    background-image: url("design/E-Wallet/pointiconfix.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 80%;
   }
   .EWallet-Button6 {
     flex: 1;
     display: flex;
-    background-image: url("design/E-Wallet/giftshopicon.png");
+    background-image: url("design/E-Wallet/giftshopiconfix.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 80%;
   }
   
   

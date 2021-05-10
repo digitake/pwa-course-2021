@@ -37,6 +37,53 @@
 
     .EWallet-money {
       flex: 1;
+      flex-direction: column;
+    }
+
+    .EWallet-moneytop {
+      flex: 1;
+    }
+    .EWallet-moneybottom {
+      flex: 1;
+      flex-direction: row;
+    }
+
+    .EWallet-moneytopleft {
+      background-image: url("design/E-Wallet/cashicon.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 50%;
+    }
+    .EWallet-moneytopmid {
+      background-image: url("design/E-Wallet/qr-code.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 25%;
+    }
+    .EWallet-moneytopright {
+      background-image: url("design/E-Wallet/qr-code-scan.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 25%;
+    }
+  
+    .EWallet-moneybottomleft {
+      background-image: url("design/E-Wallet/topupicon.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 50%;
+    }
+    .EWallet-moneybottommid {
+      background-image: url("design/E-Wallet/billicon.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 50%;
+    }
+    .EWallet-moneybottomright {
+      background-image: url("design/E-Wallet/mycardicon.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 50%;
     }
     
     .EWallet-Menu {
@@ -113,15 +160,51 @@
 
   
   .EWallet-money {
-    background-image: url("design/E-Wallet/balance.jpg");
+    background-image: url("design/E-Wallet/ewalletnew.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: 90%;
     justify-content: center;
     align-items: stretch;
     display: flex;
   }
-  
+
+  .EWallet-moneytop {
+    flex: 1;
+    display: flex;
+  }
+  .EWallet-moneytopleft {
+    flex: 1;
+    display: flex;
+  }
+  .EWallet-moneytopmid {
+    flex: 1;
+    display: flex;
+  }
+  .EWallet-moneytopright {
+    flex: 1;
+    display: flex;
+  }
+
+
+
+  .EWallet-moneybottom {
+    flex: 1;
+    display: flex;
+  }
+  .EWallet-moneybottomleft {
+    flex: 1;
+    display: flex;
+  }
+  .EWallet-moneybottommid {
+    flex: 1;
+    display: flex;
+  }
+  .EWallet-moneybottomright {
+    flex: 1;
+    display: flex;
+  }
+
   .EWallet-Menu {
     flex: 2;
     display: flex;
@@ -157,7 +240,7 @@
     flex: 1;
     display: flex;
     margin: 10px 0%;
-    background-image: url("design/E-Wallet/icon.jpg");
+    background-image: url("design/E-Wallet/stickericon.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 50%;
@@ -167,7 +250,7 @@
     flex: 1;
     display: flex;
     margin: 10px 0%;
-    background-image: url("design/E-Wallet/icon2.jpg");
+    background-image: url("design/E-Wallet/shopicon.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 50%;
@@ -176,7 +259,7 @@
     flex: 1;
     display: flex;
     margin: 10px 0%;
-    background-image: url("design/E-Wallet/icon3.jpg");
+    background-image: url("design/E-Wallet/foodicon.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 50%;
@@ -184,7 +267,7 @@
   .EWallet-Button4 {
     flex: 1;
     display: flex;
-    background-image: url("design/E-Wallet/icon4.jpg");
+    background-image: url("design/E-Wallet/payicon.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 50%;
@@ -192,7 +275,7 @@
   .EWallet-Button5 {
     flex: 1;
     display: flex;
-    background-image: url("design/E-Wallet/icon5.jpg");
+    background-image: url("design/E-Wallet/pointicon.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 50%;
@@ -200,7 +283,7 @@
   .EWallet-Button6 {
     flex: 1;
     display: flex;
-    background-image: url("design/E-Wallet/icon6.jpg");
+    background-image: url("design/E-Wallet/giftshopicon.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 50%;

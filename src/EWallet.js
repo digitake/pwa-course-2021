@@ -19,7 +19,20 @@ function EWallet() {
       </div>
     
       <div className="EWallet-content">
-        <div className="EWallet-money" > </div>
+        <div className="EWallet-money" > 
+        <div className="EWallet-moneytop" >
+        <div className="EWallet-moneytopleft" ></div>
+        <div className="EWallet-moneytopmid" ></div>
+        <div className="EWallet-moneytopright" ></div>
+        </div>
+        <div className="EWallet-moneybottom" >
+        <div className="EWallet-moneybottomleft" ></div>
+        <div className="EWallet-moneybottommid" ></div>
+        <div className="EWallet-moneybottomright" ></div>
+        </div>
+        </div>
+
+
         <div className="EWallet-Menu" >
           <div className="EWallet-Menu1" >
             <div className="EWallet-Menu-inside" >

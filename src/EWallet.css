@@ -36,6 +36,7 @@
     }
 
     .EWallet-money {
+    
       flex: 1;
       flex-direction: column;
     }
@@ -51,13 +52,14 @@
     .EWallet-moneytopleft {
       background-image: url("design/E-Wallet/cashicon.png");
       background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: 50%;
+      background-position: right bottom;
+      background-size: 70%;
     }
     .EWallet-moneytopmid {
       background-image: url("design/E-Wallet/qr-code.png");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position:right;
+      
       background-size: 25%;
     }
     .EWallet-moneytopright {
@@ -70,19 +72,19 @@
     .EWallet-moneybottomleft {
       background-image: url("design/E-Wallet/topupicon.png");
       background-repeat: no-repeat;
-      background-position: top;
+      background-position: center right;
       background-size: 50%;
     }
     .EWallet-moneybottommid {
       background-image: url("design/E-Wallet/billicon.png");
       background-repeat: no-repeat;
-      background-position: top;
+      background-position: center;
       background-size: 50%;
     }
     .EWallet-moneybottomright {
       background-image: url("design/E-Wallet/mycardicon.png");
       background-repeat: no-repeat;
-      background-position: top;
+      background-position: center left;
       background-size: 50%;
     }
     
@@ -160,7 +162,8 @@
 
   
   .EWallet-money {
-    background-image: url("design/E-Wallet/ewalletnew.jpg");
+    background-color: white;
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;
@@ -206,6 +209,7 @@
   }
 
   .EWallet-Menu {
+    
     flex: 2;
     display: flex;
   }
@@ -227,6 +231,7 @@
   }
 
   .EWallet-Menu1 {
+    
     flex: 1;
     display: flex;
   }
@@ -242,7 +247,7 @@
     margin: 10px 0%;
     background-image: url("design/E-Wallet/stickericon.png");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: 50%;
   }
 
@@ -252,7 +257,7 @@
     margin: 10px 0%;
     background-image: url("design/E-Wallet/shopicon.png");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: 50%;
   }
   .EWallet-Button3 {
@@ -261,7 +266,7 @@
     margin: 10px 0%;
     background-image: url("design/E-Wallet/foodicon.png");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: 50%;
   }
   .EWallet-Button4 {
@@ -269,7 +274,7 @@
     display: flex;
     background-image: url("design/E-Wallet/payicon.png");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center ;
     background-size: 50%;
   }
   .EWallet-Button5 {
@@ -277,7 +282,7 @@
     display: flex;
     background-image: url("design/E-Wallet/pointicon.png");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: 50%;
   }
   .EWallet-Button6 {
@@ -285,7 +290,7 @@
     display: flex;
     background-image: url("design/E-Wallet/giftshopicon.png");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: 50%;
   }
   

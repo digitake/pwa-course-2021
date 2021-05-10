@@ -11,6 +11,7 @@
   @media (max-width: 768px) {
   
     .Calendar {
+      height: 100%;
       background-color: rgb(207, 238, 250);
     }
     .Calendar-header1{
@@ -26,11 +27,13 @@
     .Calendar-chatroom{
       flex-direction: column; 
     }
-
-   
   }
   
-  @media (min-width: 1600px) {
+  @media (min-width: 769px) {
+    .Calendar {
+      height: 100%;
+      background-color: rgb(207, 238, 250);
+    }
      .Calendar-chatroom{
       flex-direction: row;
      }
@@ -47,7 +50,7 @@
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
-    height: 100%;
+    height: 10%;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
@@ -91,7 +94,7 @@
   }
   
   .Calendar-chatroom {
-  
+    height: 80%;
     flex: 6;
     display: flex;
     
@@ -135,6 +138,7 @@
     background-color: rgb(255, 255, 255);
     background-position: right;
     justify-content: center;
+    height: 10%;
     align-items: stretch;
     display: flex;
     color: rgb(228, 222, 222);

@@ -5,7 +5,6 @@ import Add from './image/users_1.png'
 import Chat from './image/chat.png'
 import Home from './image/home.png'
 import User from './image/user.png'
-import Settings from './image/settings.png'
 import AddF from './image/add.png'
 
 function App({children}) {

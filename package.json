@@ -1,5 +1,5 @@
 {
-  "name": "pwa-course-2021",
+  "name": "chatclub-pwa-course",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,5 +38,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "โปรเจ็คประกอบการเรียน Progressive Web Applications",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klongkwan/pwa-course-2021.git"
+  },
+  "keywords": [
+    "github987654321"
+  ],
+  "author": "klongkwan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klongkwan/pwa-course-2021/issues"
+  },
+  "homepage": "https://github.com/klongkwan/pwa-course-2021#readme"
 }

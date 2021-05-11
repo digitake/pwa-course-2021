@@ -12,6 +12,7 @@ import addfriendphoto from './image/addfriend.png'
 
 function HomePage() {
     return (
+        <div className="App-header">
         <App>
         <div>
 
@@ -33,6 +34,7 @@ function HomePage() {
             
         </div>
         </App>
+        </div>
     )
 };
 

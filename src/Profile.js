@@ -1,9 +1,11 @@
 import App from './App';
 import pro from './123.jpg';
+import './App.css';
 
 function  Profile() {
 
     return(
+        <div className="App-header">
         <App>
         <div class="center">
         <body>
@@ -19,8 +21,9 @@ function  Profile() {
             </body>
         </div>
         </App>
+        </div>
     )
     
-}
+};
 
 export default Profile;

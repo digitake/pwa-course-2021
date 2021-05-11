@@ -6,8 +6,6 @@
   max-width: auto;
   height: 100%;
   margin: auto;
-  
-
 
 }
 
@@ -20,11 +18,10 @@
   flex: 1;
   background-color: #2645f8;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 0, 0);
+  color: rgb(117, 117, 117);
 }
 
 .App-content {
@@ -42,7 +39,7 @@
 
 .App-textbox {
   flex: 0.5;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(87, 87, 87);
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -51,7 +48,6 @@
   max-width: auto;
   height: 100%;
   margin: auto;
-  background-image: url(origin.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -60,11 +56,10 @@
   flex: 1;
   background-color: #535353;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
 }
   
 .App-content {
@@ -82,7 +77,7 @@
   
 .App-textbox {
   flex: 0.5;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(92, 92, 92);
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -108,8 +103,8 @@
   .App {
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #ff0000;
-    background-image: url(bg.jpg);
+    background-color: #6e6e6e;
+    
 
   }
   .App-textbox {

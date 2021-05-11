@@ -7,6 +7,7 @@ const chatroomRaf = firebase.database().ref('chatroom-1');
 
 
 function Chatbox() {
+  
 
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
@@ -47,7 +48,7 @@ function Chatbox() {
   };
     
   return (
-
+    <div className="App-header">
     <App>
 
       <div className="App col-6">
@@ -85,8 +86,9 @@ function Chatbox() {
     </div>
 
     </App>
-
+    </div>
   );
+  
 }
 
 export default Chatbox;

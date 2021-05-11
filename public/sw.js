@@ -10,7 +10,13 @@ self.addEventListener("install", (event) => {
 
             return cache.addAll([
                 '/',
-                '/index.html'
+                '/index.html',
+                'coo.jpg',
+                'favicon.ico',
+                'Logo192.png',
+                'Logo512.png',
+                'manifest.json',
+                'robots.txt'
             ]);
 
         })

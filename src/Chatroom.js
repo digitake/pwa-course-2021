@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 function Chatroom() {
 return(
 
+    <div className="App-header">
     <div>
         Chatroom
 
@@ -12,7 +13,7 @@ return(
         </Link>
         
     </div>
-    
+    </div>
     )
 };
 

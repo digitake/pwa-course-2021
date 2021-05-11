@@ -50,9 +50,7 @@ function Chatbox() {
   return (
     <div className="App-header">
     <App>
-
       <div className="App col-6">
-
       <div className="App-chatroom">
       {
         lines.map(x => {
@@ -67,7 +65,6 @@ function Chatbox() {
             <div>
               {x.timestamp.toLocaleString()}
             </div>
-
             </div>
         })
       }

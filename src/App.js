@@ -1,6 +1,12 @@
 import './App.css';
 
 import { Link } from 'react-router-dom';
+import Add from './image/users_1.png'
+import Chat from './image/chat.png'
+import Home from './image/home.png'
+import User from './image/user.png'
+import Settings from './image/settings.png'
+import AddF from './image/add.png'
 
 function App({children}) {
   return (
@@ -10,23 +16,33 @@ function App({children}) {
       <div className="App-header">
 
         <Link to="/friend-list">
-          <button> Friend List </button>
+        <div align>
+        <img src={Add} border="3" width="50" height="51"/>
+        </div>
         </Link>
 
         <Link to="/profile">
-          <button> Profile </button>
+        <div align>
+        <img src={User} border="3" width="50" height="51"/>
+        </div>
         </Link>
 
         <Link to="/addfriend">
-          <button> AddFriend </button>
+        <div align>
+        <img src={AddF} border="3"width="50" height="51" />
+        </div>
         </Link>
         
         <Link to="/">
-          <button> Chatbox </button>
+        <div align>
+        <img src={Chat} border="3" width="50" height="51"/>
+        </div>
         </Link>
 
         <Link to="/Home-page">
-          <button> Home Page </button>
+        <div align>
+        <img src={Home} border="3"width="50" height="51" />
+        </div>
         </Link>
 
       </div>

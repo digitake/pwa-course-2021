@@ -1,12 +1,13 @@
 import './Chatbox.css';
 import {useEffect, useState} from 'react';
 import App from './App';
-import firebase from './FirebaseConfig';
+import firebase from './firebaseConfig';
 
 const chatroomRaf = firebase.database().ref('chatroom-1');
 
 
 function Chatbox() {
+  
 
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
@@ -32,7 +33,7 @@ function Chatbox() {
   const onSend = () =>{
 
     chatroomRaf.push({
-      sender: "Kwan",
+      sender: "Arm",
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
   });
@@ -47,7 +48,7 @@ function Chatbox() {
   };
     
   return (
-
+    <div className="App-header">
     <App>
 
       <div className="App col-6">
@@ -85,7 +86,7 @@ function Chatbox() {
     </div>
 
     </App>
-
+    </div>
   );
 }
 

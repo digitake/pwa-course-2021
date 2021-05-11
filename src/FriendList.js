@@ -5,6 +5,7 @@ import App from './App';
 function FriendList() {
 
     return (
+        <div className="App-header">
         <App>
 
             <div>
@@ -16,8 +17,9 @@ function FriendList() {
                 </Link>
                 
             </div>
-
+            
         </App>
+        </div>
     )
 };
 

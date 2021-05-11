@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-var firebaseConfig = {
+var FirebaseConfig = {
   apiKey: "AIzaSyCbjQzVy0U48HO4hSujzoRct8HsExIEXdI",
   authDomain: "nottae12-pwa.firebaseapp.com",
   databaseURL: "https://nottae12-pwa-default-rtdb.firebaseio.com",
@@ -10,7 +10,7 @@ var firebaseConfig = {
   appId: "1:1091765849068:web:f0f9db3a27623d0dffcec9"
 };
 
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(FirebaseConfig);
 
 
   export default firebase;

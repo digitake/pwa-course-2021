@@ -8,6 +8,8 @@
   max-width: auto;
   height: 100%;
   
+
+
 }
 
 .App-logo {
@@ -17,12 +19,13 @@
 
 .App-header {
   flex: 1;
-  background-color: #747474;
+  background-color: #535353;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(87, 87, 87);
+  color: rgb(255, 0, 0);
 }
 
 .App-chatroom {
@@ -68,7 +71,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: #535353;
-    
+    background-image: url(bg.jpg);
 
   }
   .App-textbox {

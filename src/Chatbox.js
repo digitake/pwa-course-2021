@@ -1,5 +1,5 @@
 import './Chatbox.css';
-import {useEffect, useState} from 'react';
+import {useEffect, useState, useRef} from 'react';
 import App from './App';
 import firebase from './FirebaseConfig';
 
@@ -11,6 +11,10 @@ function Chatbox() {
 
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
+  const messagesEndRef = useRef(null);
+  const scrollToBottom =() => {
+    messagesEndRef.current?.scrollInToView({ behavior: "smooth"})
+  }
 
   useEffect(() => {
 
@@ -23,8 +27,10 @@ function Chatbox() {
         timestamp: new Date(x.timestamp)
       }])
     });
+    scrollToBottom()
 
   }, []);
+  scrollToBottom();
   
   const onTextChange = (event) => {
     setText(event.target.value);

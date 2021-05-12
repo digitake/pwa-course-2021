@@ -1,26 +1,44 @@
+var CACHE_NAME = 'my-chatapp-v2';
+var urlsToCache = [
+'/',
+'/index.html',
+'/logo192.png'
+];
 
-self.addEventListener('install' , event =>{
+self.addEventListener('install', function(event) {
     console.log("[sw] Service worker is installing... v2")
+    // Perform install steps
+event.waitUntil(
+    caches.open(CACHE_NAME)
+    .then(function(cache) {
+        console.log('Opened cache');
+        return cache.addAll(urlsToCache);
+    })
+);
+});
 
-    event.waitUntil(
-        caches.open(' chatapp-v2').then( cache => {
-            return cache.addAll([
-                '/',
-                '/index.html',
-                '/logo192.png'
-            ]);
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+    caches.match(event.request).then(function(response) {
+        // Cache hit - return response
+        if (response) {
+            console.log("Intercept with cache", res);
+            return response;
+        }
+        return fetch(event.request).then(
+            function(response) {
+            // Check if we received a valid response
+            if(!response || response.status !== 200 || response.type !== 'basic') {
+                return response;
+            }
+            var responseToCache = response.clone();
+            caches.open(CACHE_NAME)
+                .then(function(cache) {
+                cache.put(event.request, responseToCache);
+                });
+            return response;
+            }
+        );
         })
     );
-});
-self.addEventListener('fetch', event =>{
-    // check file
-    caches.match(event.request.url).then(res => {
-        if(res){
-            console.log("Intercept with cache", res);
-            // has file => push it
-            return res;
-        }
-        // no file => push internet
-        return fetch(event.request);
-    })
 });

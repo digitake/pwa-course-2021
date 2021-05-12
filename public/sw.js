@@ -8,7 +8,14 @@ self.addEventListener("install", (event) => {
 
             return caches.addAll([
                 '/',
-                '/index.html'
+                '/index.html',
+                '/public/favicon.ico',
+                '/src/back_button.png',
+                '/src/background_01.gif',
+                '/src/Chatbutton.png',
+                '/src/friendList_button.png',
+                '/src/icon2.png',
+                '/src/shop_button.png'
             ]);
         })
 

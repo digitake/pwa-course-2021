@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-import back from './image/back.png';
 
 function Chatroom() {
 return(

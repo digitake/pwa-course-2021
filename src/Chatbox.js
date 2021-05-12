@@ -1,57 +1,42 @@
 import './Chatbox.css';
 import {useEffect, useState} from 'react';
 import App from './App';
-
 import firebase from './FirebaseConfig';
 
-var chatroomRef;
+const chatroomRaf = firebase.database().ref('chatroom-1');
+
 
 function Chatbox() {
 
   const [text, setText] = useState("");
-
   const [lines, setLines] = useState([]);
 
-  const [name, setName] = useState("MyName")
-  
-  const [chatroom, setChatroom] = useState("chatroom")
-
   useEffect(() => {
-    setLines(_=>[])
-    chatroomRef = firebase.database().ref(chatroom);
-    chatroomRef.on('child_added', (snapshot) =>{
+
+    chatroomRaf.on('child_added', snapshot =>{
       let x = snapshot.val();
 
-      setLines(lines => [...lines, {
+      setLines(line => [...line, {
         sender: x.sender,
         message: x.message,
         timestamp: new Date(x.timestamp)
       }])
     });
 
-    return () =>{
-      chatroomRef.off("child_added")
-    };
-  }, [chatroom]);
-  
-  const onRoomChange = (event) => {
-    setChatroom(event.target.value);
-  }
+  }, []);
   
   const onTextChange = (event) => {
     setText(event.target.value);
   };
-
-  const onNameChange = (event) => {
-    setName(event.target.value);
-  };
   
   const onSend = () =>{
-    chatroomRef.push({
-      sender: name,
+
+    chatroomRaf.push({
+      sender: "Peet",
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
-    })
+  });
+
     setText("");
   };
   
@@ -66,23 +51,23 @@ function Chatbox() {
     <App>
 
       <div className="App col-6">
-        <input type="text" className="App-textbox-input" value={chatroom} onChange={onRoomChange}/>
-        <input type="text" className="App-textbox-input" value={name} onChange={onNameChange}/>
+
       <div className="App-chatroom">
       {
         lines.map(x => {
           return <div className="App-chatroom-text">
+
             <div>
-              {x.sender+":"}
+              {x.sender+";"}
             </div>
             <div>
               {x.message}
             </div>
             <div>
-              {x.timestamp.toLocaleTimeString()}
-            </div>
+              {x.timestamp.toLocaleString()}
             </div>
 
+            </div>
         })
       }
       </div>
@@ -105,8 +90,3 @@ function Chatbox() {
 }
 
 export default Chatbox;
-
-
-
-
-  

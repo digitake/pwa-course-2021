@@ -1,6 +1,6 @@
 
 import './Chatbox.css'
-import {useState,useEffect} from 'react'
+import {useState,useEffect, useRef} from 'react'
 import App from './App';
 import firebase from './firebaseConfig';
 var chatroomRefs;
@@ -10,6 +10,10 @@ function Chatbox() {
   const [lines,setLines] = useState([]);
   const [name,setname] = useState("");
   const [chatroom,setchatroom] = useState("chatroom");
+  const messagesEndRef = useRef(null);
+  const scrollToBottom = ()=>{
+    messagesEndRef.current?.scrollIntoView({behavior: "smooth"})
+  }
   useEffect(()=>{
     setLines(_=>[])
     chatroomRefs= firebase.database().ref(chatroom)
@@ -20,7 +24,9 @@ function Chatbox() {
         massage: x.massage,
         timestamp: new Date(x.timestamp)
       }]);
+      scrollToBottom()
     })
+    scrollToBottom();
     return()=>{
       chatroomRefs.off('child_added')
     };
@@ -51,14 +57,14 @@ function Chatbox() {
     }
   }
   return (
-      <App>
-          <div className="App">
+  <App>
+    <div className="App">
       <div className="App-header">
         Cat Chat
       </div>
       <div className="App-chatroom">
       
-      <div className="App-chatroom-text">
+      <div className="Center">
       <button type="submit" className="App-textbox-input" value={chatroom} onClick={onRoomone}>Chatroom1</button>
       <button type="submit" className="App-textbox-input" value={chatroom} onClick={onRoomtwo}>Chatroom2</button>
       <input type="text" className="App-textbox-input" value={name} onChange={onNameChange}/>
@@ -73,7 +79,7 @@ function Chatbox() {
         <div className="App-chatroom-text">
           Good Luck Meaow ^^ 
         </div>
-        <div className="App-chatroom">
+        <div className="">
           {
           lines.map(x => {
           return <div className="App-chatroom-text">                 
@@ -85,16 +91,16 @@ function Chatbox() {
                     )      
           }  
         </div>
+        <div ref={messagesEndRef}/>
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
         <div className="App-textbox-send" onClick={onSend}>
           ส่ง
-          </div>
+       </div>
       </div>
     </div>
-    </App>
+  </App>
   );
 }
-
 export default Chatbox;

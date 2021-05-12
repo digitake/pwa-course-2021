@@ -2,7 +2,10 @@ var CACHE_NAME = 'my-chatapp-v2';
 var urlsToCache = [
 '/',
 '/index.html',
-'/logo192.png'
+'/logo192.png',
+'/index.css',
+'/App.css',
+'/Chatbox.css'
 ];
 
 self.addEventListener('install', function(event) {

@@ -9,11 +9,11 @@ function  MainPage() {
         <div>
 
             <body>
-        <Link to="/profiles">
+           <Link to="/profiless">
                 <img src={main} width="200" border="5"  />
-        </Link>
+           </Link>
 
-        <center><img src={pro} width="200" border="5" align="top" /></center>
+           <center><img src={pro} width="200" border="5" align="top" /></center>
                 <p align="center">
                     <h1>
                     Name
@@ -23,9 +23,9 @@ function  MainPage() {
                     </h1>
                 </p>
             </body>
-        
+           
         </div>
     ) 
-}
-
-export default MainPage;
+ }
+ 
+ export default MainPage;

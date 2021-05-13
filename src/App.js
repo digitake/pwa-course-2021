@@ -7,28 +7,30 @@ function App({children}) {
     <div className="App">
       <div className="App-header">
 
-        <Link to="addfriend">
-          <button>
-            Go to AddFriend
-          </button>
-        </Link>
-        <Link to="friend">
-          <button>
-            Go to Friend
-          </button>
+      <Link to="chatbox">
+        <p>
+          <img src="chatlogo.png" width="30%" height="50%"/>
+          </p>   
         </Link>
 
         <Link to="profile">
-          <button>
-            Go to Profile
-          </button>
+        <p>
+          <img src="homelogo.png" width="30%" height="50%"/>
+          </p>   
         </Link>
 
-        <Link to="/">
-          <button>
-            Go to Chatbox
-          </button>
+        <Link to="addfriend">
+        <p>
+          <img src="friendlogo.png" width="30%" height="50%"/>
+          </p>   
         </Link>
+
+        <Link to="friendlist">
+        <p>
+          <img src="userlogo.png" width="30%" height="50%"/>
+          </p>
+        </Link>
+
       </div>
         <div className="App-content">
           {children}

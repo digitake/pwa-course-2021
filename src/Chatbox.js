@@ -12,6 +12,7 @@ function Chatbox() {
   // ["-้กดกด","กกกกก","กกกหกดหกดหกด"]
   // [{sender: "Mon", message: "skldfsjdlkfsd", timestamp: 12387687437424}, {sender: "Mon", message: "slkdjfsdlkfline2", timestamp: 123434234}]
 
+  
   useEffect(() => {
     chatroomRef.on('child_added', snapshot => {
       let x = snapshot.val();
@@ -31,7 +32,9 @@ function Chatbox() {
   const onSend = () =>{
     //push mesaage to firebase server
     chatroomRef.push({
+
       sender: "นุ่น : ",
+
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
     });
@@ -53,6 +56,7 @@ function Chatbox() {
                     return <div className="App-chatroom-text">
                             {x.sender}
                             {x.message}
+
                         </div>
                     })
                 }

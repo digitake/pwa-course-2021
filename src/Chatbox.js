@@ -60,7 +60,7 @@ function Chatbox() {
                 lines.map(x => {
                     return <div className="App-chatroom-text">
     
-                      <img src="dog.jpg"  width= "20%" height="10%"/>{x.sender}
+                      <img src="dog.jpg"  width= "10%" height="10%"/>{x.sender}
                             {x.message}
 
 

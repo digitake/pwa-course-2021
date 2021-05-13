@@ -6,7 +6,13 @@ function App({children}) {
   return (
 
     <div className="App">
+      <div className="App-content">
+          {children}
+
+
+          </div>
       <div className="App-header">
+        
       <Link to="chatbox">
         <p>
           <img src="chatlogo.png" width="30%" height="50%"/>
@@ -33,11 +39,7 @@ function App({children}) {
         </Link>
 
       </div>
-        <div className="App-content">
-          {children}
-
-
-          </div>
+        
           
   </div>
   )}

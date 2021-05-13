@@ -5,7 +5,7 @@
   justify-content: center;
   text-align: center;
 
-  max-width: 500px;
+  max-width: 440px;
   height: 90%;
   margin: auto;
   background-size: 100%;
@@ -22,7 +22,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgb(245, 220, 234);
-
+    max-width: 440px;
   
 }
 
@@ -37,10 +37,11 @@
 }
 
 .App-header {
+  
   flex: 1;
   width:100%;
   height:100%;
-  max-width: 421px;
+  max-width: 423px;
   background-color: rgb(137, 202, 191);
   display: flex;
   flex-direction:row;
@@ -76,7 +77,8 @@ h1 {
   width: 50%;
   height: 30%;
   padding: 2px 110px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+   /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */

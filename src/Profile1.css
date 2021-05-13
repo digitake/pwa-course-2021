@@ -36,3 +36,16 @@
     color: #6e5146;
     font-size: 35px;
 }
+
+@media (max-width: 600px)
+{
+  .Profilename{
+    font-size: 30px;
+    margin-left: 5px;
+  }
+
+  .Profileinfo{
+    font-size: 25px;
+    margin-left: 5px;
+  }
+}

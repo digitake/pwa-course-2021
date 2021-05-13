@@ -1,4 +1,4 @@
-.App {
+.Chat {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,50 +8,47 @@
   margin: auto;
   /*background-image: url(cool1.jpg);*/
   background-position: center;
-  background-repeat: no-repeat;
-  background-color: black;
-
 }
 
 
-.App-logo {
+.Chat-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
 
-.App-chatroom {
+.Chat-chatroom {
   flex: 12;
   background-image: url(iconbur30.png);
    background-position: center;
    background-repeat: no-repeat;
    background-color: #ffe2ae;
-   
 }
 
-.App-chatroom-text {
+.Chat-chatroom-text {
   margin: 8px;
-  color : #ffffff;
+  background-color: #fbf1d5;
+  color : #6e5146;
   font-size: 20px;
 }
 
-.App-textbox {
+.Chat-textbox {
   flex: 1;
-  background-color: rgb(224, 220, 220);
+  background-color: rgb(255, 116, 116);
   justify-content: center;
   align-items: stretch;
   display: flex;
 }
 
-.App-textbox-input {
-  flex: 10;
+.Chat-textbox-input {
+  flex: 5;
   height: 100%;
   box-sizing: border-box;
   font-size: x-large;
 }
 
-.App-textbox-send {
-  flex: 1;
+.Chat-textbox-send {
+  flex: 0.5;
   height: 100%;
   vertical-align: middle;
   justify-content: center;
@@ -59,9 +56,21 @@
   display: flex;
 }
 
-@media (max-width: 800px){
-  .App-chatroom{
-    background-image: url(iconbur30.png);
-    background-size: cover ;
-  }
+
+@media (max-width: 600px) {
+
+    .Chat-chatroom{
+      background-size: 300px;
+    }
 }
+
+
+@media (max-width: 1000px)
+{
+  .Chat-chatroom{
+    background-size: 500px;
+  }
+
+}
+
+    

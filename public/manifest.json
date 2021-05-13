@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-=======
 {
   "short_name": "Tang Tee",
-  "name": "Create React App Sample",
+  "name": "Tang Tee Application with PWA ",
   "icons": [
     {
       "src": "favicon.ico",
@@ -25,4 +23,4 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
->>>>>>> 2402876fed2ffb983cd8bb9bd2b903dee22ef3d7
+

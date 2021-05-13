@@ -1,0 +1,36 @@
+.fullscreen{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    max-width: 480px;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    flex: 1;
+    background-color: rgb(245, 220, 234);
+    background-size: 100%;
+    background-image: url(bgst.png);
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 404px 961px) {
+    .fullscreen {
+      width:100%;
+      height:100%;
+      max-width: 480px;
+      justify-content: center;
+      align-items: center;
+      background-image: rgb(245, 220, 234);
+      background-size: contain;
+      background-image: url(bgst.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 250px 120px;
+  }

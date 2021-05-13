@@ -9,7 +9,7 @@ const chatroomRef = firebase.database().ref('chatroom-1');
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
-  const [name, setname] = useState("พ่อ Tenz :"); 
+  const [name, setname] = useState(""); 
  
 
   useEffect(() => {
@@ -36,7 +36,8 @@ function Chatbox() {
     //push mesaage to firebase server
     chatroomRef.push({
 
-      sender: name,
+      sender: "Hahahaha : ",
+
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
     });
@@ -52,13 +53,15 @@ function Chatbox() {
   return (
     <App>
         <div className="App">
-          <input type="text" value={name} onChange={onNameChange}/>
+          
             <div className="App-chatroom">
                 {
                 lines.map(x => {
                     return <div className="App-chatroom-text">
                             {x.sender}
                             {x.message}
+
+
                         </div>
                     })
                 }

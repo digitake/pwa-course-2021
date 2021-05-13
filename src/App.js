@@ -5,6 +5,9 @@ function App({children}) {
 
   return (
     <div className="App">
+              <div className="App-content">
+          {children}
+        </div>
       <div className="App-header">
 
       <Link to="chatbox">
@@ -18,7 +21,7 @@ function App({children}) {
           <img src="homelogo.png" width="30%" height="50%"/>
           </p>   
         </Link>
-        
+
         <Link to="friend">
         <p>
           <img src="friendlogo.png" width="30%" height="50%"/>
@@ -32,9 +35,7 @@ function App({children}) {
         </Link>
 
       </div>
-        <div className="App-content">
-          {children}
-        </div>
+
     </div>
   );
 }

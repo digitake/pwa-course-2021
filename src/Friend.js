@@ -10,10 +10,39 @@ function Friend(){
 
             <p></p>
 
-        <img src="hi.jpg" width="100" height="100" align= "middle" /> <b>tana</b>
+        <div className="name-width-full">
+            <img src="max.png" width="100" height="100" align= "middle" />     
+            
+          <b>Domemy</b>
+        </div>
         <hr></hr>
+        <div className="name-width-full">
+            <img src="mark.png" width="100" height="100" align= "middle" />     
+            
+          <b>Domemy</b>
+        </div>
+        <hr></hr>
+        <div className="name-width-full">
+            <img src="tin.png" width="100" height="100" align= "middle" />     
+            
+          <b>Tinny</b>
+        </div>
+        <hr></hr>
+        <div className="name-width-full">
+            <img src="mon.png" width="100" height="100" align= "middle" />     
+            
+          <b>Tinny</b>
+        </div>
+        <hr></hr>
+        <div className="name-width-full">
+            <img src="folk.png" width="100" height="100" align= "middle" />     
+            
+          <b>Tinny</b>
+        </div>
+        <hr></hr>
+
+
         <p></p>
-        <img src="https://cdn.discordapp.com/attachments/643322471247904775/840998300291039242/hi.jpg" width="100" height="100" alt= "Maincoon" align= "middle"/> <b>tana</b><hr></hr>
         <div>
             <Link to="addfriend">
                 <p>

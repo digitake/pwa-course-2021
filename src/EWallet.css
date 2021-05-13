@@ -211,7 +211,7 @@
   }
   
   .EWallet-header2 {
-    background-image: url(design/E-Wallet/ewallet.png);
+    
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
@@ -221,6 +221,8 @@
     align-items: center;
     display: flex;
     font-weight: bold;
+    font-size: 24px;
+    color:rgb(19, 84, 170);
   
   }
   

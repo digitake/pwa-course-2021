@@ -25,12 +25,12 @@ function Profile(){
       <div className = "Profile-chatroom1">
       </div>
       <div className = "Profile-chatroom2">
-        <div className = "Profile-info"> Sebrina Vince</div>
-        <div className = "Profile-info">#designhours</div>
-        <div className = "Profile-info">@Sebrina</div>
-        <div className = "Profile-info">Graphic Designer</div>
-        <div className = "Profile-info">Contact me </div>
-        <div className = "Profile-info">+65 548869483</div>
+        <div className = "Profile-info-1">Sebrina Vince</div>
+        <div className = "Profile-info-2">#designhours</div>
+        <div className = "Profile-info-3">@Sebrina</div>
+        <div className = "Profile-info-4">Graphic Designer</div>
+        <div className = "Profile-info-5">Contact me </div>
+        <div className = "Profile-info-6">+65 548869483</div>
         
       </div>
       </div>

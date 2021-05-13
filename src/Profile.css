@@ -34,12 +34,23 @@
     }
 
     .Profile-info{
-      
+      background-position: top center;
       flex-direction: column;
+    }
+
+    .Profile-info-1{
+      font-size: 40px;
+      color:rgb(9, 59, 126)
+    }
+
+    .Profile-info-5{
+      margin-top: 10px;
+      font-size: 28px;
+      color:rgb(9, 59, 126)
     }
   }
 
-  @media (min-width: 1600px) {
+  @media (min-width: 768px) {
     .Profile-header1{
       background-size: 10%;
     }
@@ -60,7 +71,17 @@
 
     .Profile-info{
       flex-direction: column;
+    }
 
+    .Profile-info-1{
+      font-size: 50px;
+      color:rgb(9, 59, 126)
+    }
+
+    .Profile-info-5{
+      margin-top: 10px;
+      font-size: 28px;
+      color:rgb(9, 59, 126)
     }
 
     .Profile-textbox-send2{
@@ -113,18 +134,7 @@
   
   }
   
-  .Profile-header3 {
-    background-image: url("design/Profile/profile-next-05.png");
-    
-    background-position: right;
-    background-repeat: no-repeat;
-    flex: 1;
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
+  
   
   .Profile-chatroom{
     flex: 6;
@@ -157,6 +167,15 @@
     display: flex;
   }
 
+  .Profile-info-1{
+    display: flex;
+    font-weight: bold;
+  }
+
+  .Profile-info-5{
+    display: flex;
+    font-weight: bold;
+  }
 
   
   .Profile-chatroom-text {

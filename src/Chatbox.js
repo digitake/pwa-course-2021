@@ -1,38 +1,59 @@
 import './Chatbox.css';
 import {useEffect, useState} from 'react';
 import App from './App';
-
 import firebase from './firebaseConfig';
 
-const chatroomRef = firebase.database().ref('chatroom-2');
+
+var chatroomRef;
 
 function Chatbox() {
+
   const [text, setText] = useState("");
-  const [lines, setLines] = useState([]);
+  const [lines, setLines] = useState([]);  
+  const [name, setName] = useState("Myname");
+  const [chatroom, setChatroom] = useState("chatroom");
 
   useEffect(() => {
-    chatroomRef.on('child_added' , snapshot =>{
-      let x = snapshot.val();
+    
+    setLines(_=>[])
+    chatroomRef = firebase.database().ref(chatroom);
+    chatroomRef.on('child_added', (snapshot) => {
+      let item = snapshot.val();
 
-      setLines(line => [...line, {
-        sender: x.sender,
-        message: x.message,
-        timestamp: new Date(x.timestamp)
-      }])
-    });
+      setLines(l => [
+        ...l, 
+        {
+        sender: item.sender,
+        message: item.message,
+        timestamp: new Date(item.timestamp)
+      }]);
+    })
 
-  }, []);
-  
+  return ()=> {
+    chatroomRef.on('child_added')
+  };
+}, [chatroom]);
+
+const onRoomChange = (event) => {
+  setChatroom(event.target.value);
+}
+
   const onTextChange = (event) => {
     setText(event.target.value);
   };
 
+  const onNameChange = (event) => {
+    setName(event.target.value);
+  }
+
   const onSend = () =>{
-    chatroomRef.push({
-      sender: "K",
+    const newMsg = {
+      sender: name,
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
-    });
+    };
+
+    chatroomRef.push(newMsg);
     
     setText("");
   };
@@ -41,36 +62,43 @@ function Chatbox() {
     if (event.which === 13) {
       onSend();
     }
-  }
+  };
+
 
 
   return (
     <App>
-    <div className="App">    
-      <div className="App-chatroom">   
-        {
-          lines.map(x => {
-            return <div className="App-chatroom-text">
-              <div>
-                {x.sender+":"}
+      <div className="App">  
+
+      <input type="text" value={chatroom} onChange={onRoomChange}/>
+
+      <input type="text" value={name} onChange={onNameChange}/>
+        <div className="App-chatroom">   
+          {
+            lines.map(x => {
+              return <div className="App-chatroom-text">
+                <div className="App-chatroom-sender">
+                  {x.sender + ":>"}
                 </div>
-                <div>
-                  {x.message}
+                <div className ="App-chatroom-message">
+                  <div>
+                    {x.message}
                   </div>
                   <div>
-                  {x.timestamp.toTimeString()}
-                    </div>
-                    </div>                    
+                  {x.timestamp.toLocaleString()}
+                </div>
+              </div>      
+            </div>              
           })
         }
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-Input" 
-        value={text} onChange={onTextChange} onKeyPress={KeyPress}/>
+            value={text} onChange={onTextChange} onKeyPress={KeyPress}/>
 
         <div className="App-textbox-send" onClick={onSend}>Send</div>
       </div>
-    </div>
+      </div>
     </App>
   );
 }

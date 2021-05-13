@@ -1,13 +1,15 @@
 import App from './App';
 import pro from './123.jpg';
+import { Link } from 'react-router-dom';
 
 function  Profile() {
 
     return(
+        <div className="App-header">
         <App>
         <div class="center">
         <body>
-        <img src={pro}  />
+        <img src={pro}  width="350" height="350"/>
                 <p align="center">
                     <h1>
                     Name
@@ -19,6 +21,7 @@ function  Profile() {
             </body>
         </div>
         </App>
+        </div>
     )
     
 }

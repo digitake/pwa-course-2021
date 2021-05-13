@@ -40,7 +40,6 @@
 
 .App-textbox {
   flex: 0.5;
-  background-color: rgb(255, 0, 0);
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -48,20 +47,18 @@
   text-align: center;
   max-width: auto;
   height: 100%;
-  margin: auto;
-  background-image: url(origin.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 .App-header {
   
   flex: 1;
-  background-color: #535353;
+  background-color: #dca7ff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
 }
   
 .App-content {
@@ -79,7 +76,7 @@
   
 .App-textbox {
   flex: 0.5;
-  background-color: rgb(255, 0, 0);
+  
   justify-content: center;
   align-items: stretch;
   display: flex;
@@ -105,8 +102,7 @@
   .App {
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #ff0000;
-    background-image: url(bg.jpg);
+  
 
   }
   .App-textbox {

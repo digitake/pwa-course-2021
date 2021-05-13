@@ -33,7 +33,7 @@ function Chatbox() {
   const onSend = () =>{
 
     chatroomRaf.push({
-      sender: "Kwan",
+      sender: "Tae",
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
   });

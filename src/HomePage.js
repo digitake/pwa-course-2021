@@ -1,35 +1,34 @@
+import './App.css';
+
 import { Link } from 'react-router-dom';
-
-import App from './App';
-
-import FriendListphoto from './image/FriendListphoto.png'
-import chatroomphoto from './image/chatroomphoto.png'
-import profilephoto from './image/profilephoto.png'
-import addfriendphoto from './image/addfriend.png'
+import friendlist from './image/FriendListphoto.png';
+import profile from './image/profilephoto.png';
+import addfriend from './image/addfriend.png';
+import chat from './image/chat.png';
 
 function HomePage() {
     return (
-        <App>
+        
         <div>
+        <Link to="/friend-list">
+        <img src={friendlist} border="1"  width="100" height="100"/>
+        </Link>
 
-            <Link to="/friend-list">
-                <img src={FriendListphoto} width="400" />
-            </Link>
+        <Link to="/profile">
+        <img src={profile} border="1"  width="100" height="100" />
+        </Link>
 
-            <Link to="/">
-                <img src={chatroomphoto} width="400" />
-            </Link>
-
-            <Link to="/profile">
-                <img src={profilephoto} width="400" />
-            </Link>
-
-            <Link to="/add-friend">
-                <img src={addfriendphoto} width="400" />
-            </Link>
+        <Link to="/addfriend">
+        <img src={addfriend} border="1"  width="100" height="100"/>
+        </Link>
+        
+        <Link to="/">
+        <img src={chat} border="1"  width="100" height="100"/>
+        </Link>
             
         </div>
-        </App>
+       
+        
     )
 };
 

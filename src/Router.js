@@ -3,8 +3,8 @@ import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import Profile from "./Profile";
 import Home from "./Home";
-import Addfriend from "./Addfriend";
 import Friend from "./Friend";
+import AddFriend from "./AddFirend";
 
 function Router(){
 
@@ -15,7 +15,7 @@ function Router(){
                     <Profile/>
                 </Route>
                 <Route path="/addfriend">
-                    <Addfriend/>
+                    <AddFriend/>
                 </Route>
                 <Route path="/friend">
                     <Friend/>

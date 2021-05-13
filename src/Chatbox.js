@@ -11,6 +11,7 @@ function Chatbox() {
   const [lines, setLines] = useState([]);
   const [name, setname] = useState(""); 
  
+ 
 
   useEffect(() => {
     chatroomRef.on('child_added', snapshot => {
@@ -36,7 +37,7 @@ function Chatbox() {
     //push mesaage to firebase server
     chatroomRef.push({
 
-      sender: "Hahahaha : ",
+      sender: "Destiny : ",
 
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
@@ -58,7 +59,8 @@ function Chatbox() {
                 {
                 lines.map(x => {
                     return <div className="App-chatroom-text">
-                            {x.sender}
+    
+                      <img src="dog.jpg"  width= "20%" height="10%"/>{x.sender}
                             {x.message}
 
 
@@ -67,6 +69,7 @@ function Chatbox() {
                 }
             </div>
         <div className="App-textbox">
+          
             <input type="text" className="App-textbox-input" 
             value={text} onChange={onTextChange} onKeyPress={keyPress}/>
 

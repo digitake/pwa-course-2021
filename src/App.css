@@ -23,13 +23,7 @@
     background-position: center;
     background-color: rgb(245, 220, 234);
 
-  max-width: 400px;
-  height: 100%;
-  margin: auto;
-  background:rgb(245, 220, 234);
-  background-size: 200%;
-  background-repeat: no-repeat;
-  background-position: center;
+  
 }
 
 
@@ -146,13 +140,7 @@ select {
   border-radius: 4px;
   background-color: #f1f1f1;
 }
-img {
-  border-radius: 50%;
-  background: url(เณรเชน.jpg);
-  background-size: 160% ;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 .button {
   background-color: #f84040;
   border: none;

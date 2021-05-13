@@ -8,8 +8,6 @@ function Home(){
             <Link to="main">
             <img src="logoHOme.png" />
             </Link>
-            
-
         </div>
     
     )

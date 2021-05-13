@@ -4,6 +4,7 @@ import FriendList from './FriendList';
 import Chatbox from './Chatbox';
 import Profile from './Profile';
 import AddFriend from './AddFriend';
+import Friend from './Friend';
 
 function Router() {
     
@@ -13,8 +14,11 @@ function Router() {
             <Route path="/profile">
                     <Profile />
                 </Route>
-                <Route path="/friend-list">
+                <Route path="/addfriend">
                     <AddFriend />
+                </Route>
+                <Route path="/friend">
+                    <Friend />
                 </Route>
                 <Route path="/">
                     <Chatbox />

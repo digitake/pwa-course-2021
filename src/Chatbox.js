@@ -31,7 +31,7 @@ function Chatbox() {
   const onSend = () =>{
     //push mesaage to firebase server
     chatroomRef.push({
-      sender: "Mark : ",
+      sender: "นุ่น : ",
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
     });

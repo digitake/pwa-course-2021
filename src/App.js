@@ -7,9 +7,14 @@ function App({children}) {
     <div className="App">
       <div className="App-header">
 
-        <Link to="friend-list">
+        <Link to="addfriend">
           <button>
-            Go to FriendList
+            Go to AddFriend
+          </button>
+        </Link>
+        <Link to="friend">
+          <button>
+            Go to Friend
           </button>
         </Link>
 

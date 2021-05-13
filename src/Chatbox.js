@@ -14,6 +14,8 @@ function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
+  const [name, setName] = useState("MyName");
+
   useEffect(() => {
      chatroomRef.on('child_added', snapshot => {
        let x = snapshot.val();
@@ -32,7 +34,7 @@ function Chatbox() {
 
   const onSendHandler = () => {
     chatroomRef.push({
-      sender: "Me:",
+      sender: name,
       message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
     })
@@ -56,14 +58,11 @@ function Chatbox() {
 
           lines.map(x => {
             return <div className="App-chatroom-text">
-                <div>
-                  {(x.sender)}
+                <div className="App-chatbox-time">
+                  {(x.sender + " - " + x.timestamp.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}))}
                 </div>
-                <div>              
+                <div className="App-chatbox">              
                   {x.message}
-                </div>
-                <div>
-                  {x.timestamp.toLocaleDateString()}
                 </div>
               </div>
           })

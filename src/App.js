@@ -8,19 +8,19 @@ function App({children}) {
       <div className="App-header">
       <Link to="chatbox">
           <button>
-          Go to Chatbox
+          Chat
           </button>
         </Link>
 
         <Link to="/">
           <button>
-          Go to Home
+          Home
           </button>
         </Link>
 
         <Link to="friendlist">
           <button>
-            Go to chen
+            Chen
           </button>
         </Link>
 

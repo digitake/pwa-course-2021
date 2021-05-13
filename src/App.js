@@ -8,13 +8,13 @@ function App({children}) {
       <div className="App-header">
       <Link to="chatbox">
           <button>
-          Chat
+            Chat
           </button>
         </Link>
 
         <Link to="/">
           <button>
-          Home
+            Homie
           </button>
         </Link>
 

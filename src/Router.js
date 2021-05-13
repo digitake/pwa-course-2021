@@ -2,6 +2,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import Profile from "./Profile";
+import Home from "./Home";
+import Addfriend from "./Addfriend";
 
 function Router(){
 
@@ -10,12 +12,18 @@ function Router(){
             <Switch>
                 <Route path="/profile">
                     <Profile/>
+                </Route>
+                <Route path="/addfriend">
+                    <Addfriend/>
+                </Route>
+                <Route path="/friendlist">
+                    <FriendList/>
                 </Route>   
                 <Route path="/chatbox">
                     <Chatbox />
                 </Route>
                 <Route path='/'>
-                    <FriendList />          
+                    <Home />          
                 </Route>   
             </Switch>
         </BrowserRouter>    

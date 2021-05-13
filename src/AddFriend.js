@@ -17,9 +17,10 @@ function AddFriend() {
 
                     <button>
                         My ID is : 12234253537
-                    </button>
+                    </button><br /><br />
 
-                    <h3><img src={Qr}  width="100" height="100"/>&nbsp;&nbsp; <img src={camera}  width="100" height="100"/></h3>
+                    <button><h3><img src={Qr}border="1"  width="100" height="100"/></h3></button>&nbsp;&nbsp;&nbsp;
+                    <button><h3><img src={camera}  width="100" height="100"/></h3></button>
 
                 </body>
                 

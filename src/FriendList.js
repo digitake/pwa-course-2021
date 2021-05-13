@@ -10,7 +10,7 @@ function FriendList() {
                 <div>Friend List</div>
                 <body>
 
-                    <h2>NAMEA</h2>
+                    <h2>NAMEA</h2> 
 
                     <h2>NAMEB</h2>
 

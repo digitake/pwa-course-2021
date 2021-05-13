@@ -4,7 +4,6 @@ import friendlist from './image/FriendListphoto.png';
 import profile from './image/profilephoto.png';
 import addfriend from './image/addfriend.png';
 import chat from './image/chat.png';
-import home from './image/home.png';
 
 function App({children}) {
   return (
@@ -29,10 +28,7 @@ function App({children}) {
         <img src={chat}   width="70" height="70" />&nbsp;&nbsp;&nbsp;
         </Link>
 
-        <Link to="/Home-page">
-        <img src={home}  width="70" height="70" />&nbsp;&nbsp;&nbsp;
-        </Link>
-
+       
       </div>
 
       <div className="App-content">

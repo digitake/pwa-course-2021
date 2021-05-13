@@ -1,5 +1,6 @@
 import App from './App';
-
+import camera from './image/camera.png';
+import Qr from './image/Qr.jpg';
 function AddFriend() {
     return (
         <App>
@@ -10,13 +11,15 @@ function AddFriend() {
 
                     <h1>Add Friend </h1>
 
-                    <h2>-----Id-----</h2>
+                    <form>
+                    <textarea  name="address" cols="20" rows="1"></textarea>
+                    </form>
 
                     <button>
                         My ID is : 12234253537
                     </button>
 
-                    <h3>-----QR-----  -----camara-----</h3>
+                    <h3><img src={Qr}  width="100" height="100"/>&nbsp;&nbsp; <img src={camera}  width="100" height="100"/></h3>
 
                 </body>
                 

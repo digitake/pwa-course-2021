@@ -3,7 +3,7 @@ import Chatbox from './Chatbox' ;
 import FriendList from './FriendList' ;
 import Profile from './Profile' ;
 import AddFriend from './AddFriend' ;
-import Home from './Home' ;
+
 
 function Router() {
     return(
@@ -27,9 +27,7 @@ function Router() {
                     <Chatbox />
                 </Route>
 
-                <Route path="/Home">
-                    <Home />
-                </Route>
+        
                 
             </Switch>
 

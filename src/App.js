@@ -18,8 +18,8 @@ function App({children}) {
           <img src="homelogo.png" width="30%" height="50%"/>
           </p>   
         </Link>
-
-        <Link to="addfriend">
+        
+        <Link to="friend">
         <p>
           <img src="friendlogo.png" width="30%" height="50%"/>
           </p>   

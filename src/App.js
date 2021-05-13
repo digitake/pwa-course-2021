@@ -7,21 +7,28 @@ function App({children}) {
     <div className="App">
       <div className="App-header">
       <Link to="chatbox">
-          <button>
-            Chat
-          </button>
+
+        <p>
+          <img src="chatlogo.png" width="30%" height="50%"/>
+          </p>   
         </Link>
 
-        <Link to="/">
-          <button>
-            Homie
-          </button>
+        <Link to="main">
+        <p>
+          <img src="homelogo.png" width="30%" height="50%"/>
+          </p>   
+        </Link>
+
+        <Link to="addfriend">
+        <p>
+          <img src="friendlogo.png" width="30%" height="50%"/>
+          </p>   
         </Link>
 
         <Link to="friendlist">
-          <button>
-            Chen
-          </button>
+        <p>
+          <img src="userlogo.png" width="30%" height="50%"/>
+          </p>
         </Link>
 
       </div>
@@ -31,5 +38,4 @@ function App({children}) {
     </div>
   );
 }
-
 export default App;

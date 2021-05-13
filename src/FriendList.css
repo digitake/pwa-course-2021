@@ -11,7 +11,7 @@
 }
 
 .FriendList-Header{
-    margin-top:30;
+    margin-top: 1px;
     margin-left: 50px;
     margin-right: 5px;
     width: 95%;
@@ -27,5 +27,5 @@
 }
 
 .FriendList1{
-    margin: 10px;
+    margin: 20px;
 }

@@ -11,21 +11,21 @@ function Home() {
                 <div className ="link">
                 <Link to = "/chatbox">
                 <button>
-                    <img src ={Chatbutton} alt="" width="70" height="70"></img>
+                    <img src ={Chatbutton} alt="" width="40" height="40"></img>
                 </button>
                 </Link>
         </div>
         <div className ="link">
             <Link to ="/friend-list">
             <button>
-                <img src ={Friendbutton} alt="" width = "70" height = "70"></img>
+                <img src ={Friendbutton} alt="" width = "40" height = "40"></img>
             </button>
             </Link> 
         </div>
         <div className ="link">
             <Link to ="/profile1">
                 <button>
-                    <img src ={profile} alt="" width = "70" height = "70"></img>
+                    <img src ={profile} alt="" width = "40" height = "40"></img>
                 </button>
             </Link>
         </div>

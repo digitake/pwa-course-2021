@@ -1,5 +1,4 @@
 import './App.css';
-
 import { Link } from 'react-router-dom';
 import friendlist from './image/FriendListphoto.png';
 import profile from './image/profilephoto.png';
@@ -22,7 +21,7 @@ function App({children}) {
         <img src={profile}  width="70" height="70" />&nbsp;&nbsp;&nbsp;
         </Link>
 
-        <Link to="/addfriend">
+        <Link to="/add-friend">
         <img src={addfriend}  width="70" height="70" />&nbsp;&nbsp;&nbsp;
         </Link>
         

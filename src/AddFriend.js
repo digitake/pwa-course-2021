@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import App from './App';
 
 function AddFriend() {
@@ -10,9 +8,7 @@ function AddFriend() {
 
                 <body>
 
-                    <h1>Add Friend 
-                        <Link to="/"><button> Go to Chatroom </button></Link>
-                    </h1>
+                    <h1>Add Friend </h1>
 
                     <h2>-----Id-----</h2>
 

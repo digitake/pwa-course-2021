@@ -1,7 +1,8 @@
+
 import App from './App';
 import pro from './image/123.jpg';
 
-function  Profile() {
+function Home() {
 
     return(
         <div className="App-header">
@@ -22,7 +23,6 @@ function  Profile() {
         </App>
         </div>
     )
-    
-}
+};
 
-export default Profile;
+export default Home;

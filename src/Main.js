@@ -1,13 +1,14 @@
 import App from './App';
+import './Main.css';
 
-function Profile(){
+function Main(){
     return(
         <App>
             <div>
-                My Profile
+                Main
             </div>
         </App>
     )
 }
 
-export default Profile;
+export default Main;

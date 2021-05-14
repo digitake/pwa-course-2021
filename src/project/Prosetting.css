@@ -1,83 +1,244 @@
-.Prosetting {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    max-width: 600px;
-    height: 87%;
-    margin: auto;
-    background-color: rgb(31, 103, 211);
-}
-
-.Prosetting-header {
+.fullscreen-prosetting {
     flex: 1;
     display: flex;
-    flex-direction: row;
-    align-items: inherit;
-    justify-content: inherit;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(23, 96, 207);
+  }
+
+.header-prosetting {
+    flex: 0.05;
+    background-color: rgb(25, 97, 208);
+    display: flex;
 }
 
-.Prosetting-Bg{
-    flex: 12;
+.content-prosetting {
+    background-color: rgb(230, 224, 252);
+    flex: 0.93;
+    display: flex;
+    flex-direction: column;
+}
+    
+.footer-prosetting {
+    flex: 0.02;
+    background-color: rgb(230, 224, 252);
+}
+
+.header-content-prosetting {
+    flex: 0.2;
+    background-color: rgb(25, 97, 208);
+    display: flex;
+}
+
+.content-content-prosetting {
+    flex: 0.8;
+    background-color: rgb(230, 224, 252);
     display: flex;
     flex-direction: column;
 }
 
-.Prosetting-ProUi{
-    flex: 0.3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+.backfriend-prosetting {
+    margin-top: 17px;
+    margin-left: 17px;
 }
 
-.Prosetting-InterUi{
-    flex: 0.35;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.Setting-menu-prosetting {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 850px;
+    margin-top: 17px;
 }
 
-.Prosetting-Text {
-    margin-top:-10%;
-    margin-right:-20%;
+.wall-profile-prosetting {
+    margin-left: 650px;
+    margin-top: 10px;
 }
 
-.Prosetting-Icon-Back {
-    margin: auto;
-    margin-left: -1400%;
+input[type=N-profile], select {
+    width: 300px;
+    height: 50px;
+    margin-top: 65px;
+    margin-left: 70px;
+    padding: 12px 60px;
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 20px;
 }
 
-.Prosetting-Pro{
-    margin: auto;
+.block-menu-prosetting-1 {
+    margin-top: 1px;
 }
 
-.Prosetting-User {
-    margin: auto;
+.Account-menu-prosetting {
+    margin-top: -90px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.Prosetting-Account {
-    margin:auto;
-    margin-bottom: -0.7%;
+.gogomenu-prosetting {
+    margin-left: 1850px;
+    margin-top: -90px;
 }
 
-.Prosetting-Laug {
-    margin:auto;
-    margin-bottom: -0.7%;
+.block-menu-prosetting-2 {
+    margin-top: 15px;
 }
 
-.Prosetting-Support {
-    margin:auto;
-    margin-bottom: -0.7%;
+.Language-menu-prosetting {
+    margin-top: -90px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.Prosetting-Not {
-    margin:auto;
-    margin-bottom: -0.7%;
+.Support-menu-prosetting {
+    margin-top: -90px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.Prosetting-Logout {
-    margin:auto;
-    margin-bottom: -10%;
+.Notification-menu-prosetting {
+    margin-top: -90px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.About-menu-prosetting {
+    margin-top: -90px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Logout-menu-prosetting {
+    margin-top: -90px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media(max-width: 1000px){
+    .fullscreen-prosetting {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      height: 100%;
+      background-color: rgb(23, 96, 207);
+    }
+}
+
+@media(max-width: 1000px){
+    .Setting-menu-prosetting {
+        margin-left:  200px;
+    }
+}
+
+@media(max-width: 1000px){
+    .wall-profile-prosetting img {
+        margin-left: -500px;
+        margin-top: 20px;
+        width: 120px;
+        height: 120px;
+    }   
+}
+
+@media(max-width: 1000px){
+    input[type=N-profile], select {
+        width: 35%;
+        height: 40px;
+        padding: 12px 20px;
+        margin-left: -370px;
+        margin-top: 70px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;  
+    }
+}
+
+@media(max-width: 1000px){
+    .block-menu-prosetting-1 img {
+        height: 105px;
+        width: 600px;
+    }  
+}
+    
+@media(max-width: 1000px){
+    .Account-menu-prosetting {
+        margin-top: -75px;
+        margin-left: 50px;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media(max-width: 1000px){
+    .gogomenu-prosetting img {
+        width: 45px;
+        height: 45px;
+        margin-left: -1300px;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 1000px){
+    .block-menu-prosetting-2 img {
+        height: 105px;
+        width: 600px;
+        margin-top: 12px;
+    }  
+}
+
+@media(max-width: 1000px){
+    .Language-menu-prosetting {
+        margin-top: -75px;
+        margin-left: 50px;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media(max-width: 1000px){
+    .Support-menu-prosetting {
+        margin-top: -75px;
+        margin-left: 50px;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media(max-width: 1000px){
+    .Notification-menu-prosetting {
+        margin-top: -75px;
+        margin-left: 50px;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media(max-width: 1000px){
+    .About-menu-prosetting {
+        margin-top: -75px;
+        margin-left: 50px;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media(max-width: 1000px){
+    .Logout-menu-prosetting {
+        margin-top: -75px;
+        margin-left: 50px;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+    }
 }

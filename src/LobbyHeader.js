@@ -26,9 +26,8 @@ function LobbyHeader({children}) {
                     </tr>
                 </table>
                 <div className="RoomName">
-
                 </div>
-
+                
             </div>
             <div className="App-Content">
                 {children}

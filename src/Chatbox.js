@@ -54,13 +54,13 @@ function ChatBox({ children }) {
 
     return (
         <LobbyHeader>
-        <div className="App col-12">
+    <div className="App col-12">
             <input type="text" placeholder="Please Input Your Name" value={name} onChange={onNameChange}/> 
                     <div className="App-chatroom">
                         {
                             lines.map(x => {
                                 return <div className="App-chatroom-text">
-                                    <div className="profile-read-pruek"></div>
+                                    <div className="user"></div>
                                     <div className="App-textPosition">
                                         {x.sender + " : "}
                                         {x.message}
@@ -85,6 +85,7 @@ function ChatBox({ children }) {
             </div>
         </div>
         </LobbyHeader>
+
     );
 }
 

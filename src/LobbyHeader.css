@@ -36,6 +36,7 @@ display: flex;
 
 .App-Content{
   flex: 12;
+  position: sticky;
   overflow: auto;
 }
 
@@ -54,7 +55,15 @@ display: flex;
   margin: 5px;
 }
 
+.user {
 
+  background-image: url(User_Icon.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  margin: 5px;
+}
 
 .profile-read-pruek {
 
@@ -64,7 +73,6 @@ display: flex;
   background-repeat: no-repeat;
   border-radius: 50px;
   margin: 5px;
-
 }
 
 .profile-read-phai {
@@ -75,11 +83,7 @@ display: flex;
   background-repeat: no-repeat;
   border-radius: 50px;
   margin: 5px;
-
-
 }
-
-
 
 .profile-read-ju-on {
   margin-left: 30px;

@@ -62,9 +62,13 @@
     flex-direction: column;
 =======
     flex-direction: row;
+<<<<<<< HEAD
 >>>>>>> 5a5c7bd7829e358da49de8bd8efe51769efdf865
 =======
 >>>>>>> ArunsawadBoonthus-main
+=======
+    justify-content: space-around;
+>>>>>>> 0afc5c99e8a7f3b4da440620756989bc8266d703
   }
   
   .App-textbox {

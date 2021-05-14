@@ -43,12 +43,13 @@
 }
 
 .ShopPage-header {
-    flex: auto;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #242424;
-    margin: 10px;
+    margin: 20px;
+    font-family: Itim;
 }
 
 .ShopPage-Category {
@@ -61,10 +62,23 @@
 }
 
 .ShopPage-button {
-    flex: 1;
-    font-size: 15px;
-    /* color: #E9E87F; */
-    margin: 1%;
+    background-color: #e9e77f00;
+    border: 2px solid #e9e77f00;
+    border-radius: 6px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    font-family: Itim;
+}
+
+.ShopPage-button:hover{
+    background-color:#242424;
+  color: white;
 }
 
 .ShopPage-body {
@@ -78,3 +92,8 @@
     flex: 0.3;
     flex-direction: column;
 }
+ .ShopPage-button1{
+    margin-left: 16px;
+    margin-right: 16px; 
+    size: 40%;
+ }

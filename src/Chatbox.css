@@ -10,7 +10,7 @@
    text-align: center;
    max-width: 400px;
    height: 100%;
-   margin: auto;
+   margin: auto;  
  }
  .Friend
  {
@@ -46,13 +46,15 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: rgb(255, 255, 255);
+    overflow: auto;
   }
   .App-chatroom-text {
-    margin: 8px;
+    margin: 25px;
+    margin-left: 50%;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 20px;
-    display: flex;
+    display:flex;
     flex-direction: column;
   }
   /*Friend Zone scene*/
@@ -112,9 +114,11 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: rgb(0, 0, 0);
+    overflow: auto;
   }
   .App-chatroom-text {
-    margin: 8px;
+    margin: 25px;
+    margin-left: 50%;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 20px;
@@ -176,10 +180,12 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: rgb(255, 255, 255);
+    overflow: auto;
   }
  
   .App-chatroom-text {
-    margin: 8px;
+    margin: 25px;
+    margin-left: 50%;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 20px;
@@ -251,13 +257,7 @@
 
 /************************BASS OF APP TEXT BOX AND LINK*********************************
 ***************************************************************************************/
-.App-textbox {
-  flex: 1;
-  background-color: rgb(119, 44, 44);
-  justify-content: center;
-  align-items: stretch;
-  display: flex;
-}
+
 
 .App-textbox-input {
   flex: 5;
@@ -271,9 +271,20 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  overflow: auto;
 }
 .link-button
 {
    color: cornsilk;
 }
+.Center {
+  margin: 25px;
+  background-color: rgb(77, 77, 77);
+  color : rgb(255, 255, 255);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
 

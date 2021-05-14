@@ -1,6 +1,10 @@
 {
   "short_name": "ChiCHi App",
+<<<<<<< HEAD
   "name": "Demo ChiCHi App",
+=======
+  "name": "ChiCHi App Demo",
+>>>>>>> 8b5db0b92e44a9750c0c0ffe7d02a1ca88efe0c8
   "icons": [
     {
       "src": "favicon.ico",

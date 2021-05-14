@@ -277,3 +277,270 @@
   margin-left: 0px;
   margin-top: 10px;
 }
+
+@media(max-width: 1000px){
+  .fullscreen-prochatroom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 100%;
+    background-color: rgb(23, 96, 207);
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-name-kanata {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-kanata {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-name-fubuki {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-fubuki {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-name-suisei {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-suisei {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-name-noel {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-noel {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-name-rushia {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-rushia {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-name-group1 {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-group1 {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-name-group2 {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-group2 {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .block01-prochatroom {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .block02-prochatroom {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .block03-prochatroom {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .block04-prochatroom {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .block05-prochatroom {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .block06-prochatroom {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .block07-prochatroom {
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-prochatroom {
+    display: none;
+  }
+}
+
+
+@media(max-width: 1000px){
+  .last-chat-friendlist-kanata img {
+    margin-left: 550px;
+    margin-top: -5px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-friendlist-fubuki img {
+    margin-left: 465px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-friendlist-suisei img {
+    margin-left: 464px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-friendlist-noel img {
+    margin-left: 464px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-friendlist-rushia img {
+    margin-left: 464px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-friendlist-group1 img {
+    margin-left: 464px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media(max-width: 1000px){
+  .last-chat-friendlist-group2 img {
+    margin-left: 464px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media(max-width: 1000px){
+  .go-back-prochatroom img {
+    width: 35px;
+    height: 35px;
+    margin-top: -50px;
+    margin-left: 15px;
+  }
+}
+
+@media(max-width: 1000px){
+  .header-prochatroom {
+    width: 90px;
+  }
+}
+
+@media(max-width: 1000px){
+  .chatroom-friend-icon  {
+    margin-top: -750px;
+    margin-left: 100px;
+  }
+}
+
+@media(max-width: 1000px){
+  .chatroom-friend-name-pekora {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -710px;
+    margin-left: 30px;
+  }
+}
+
+@media(max-width: 1000px){
+  .lock-prochatroom img{
+    display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .content-content-prochatroom {
+    background-color: rgb(162, 197, 250);
+    overflow: auto;
+    width: 510px;
+    max-height: 790px;
+    margin-left: 90px;
+    margin-top: -740px;
+  }
+}
+
+@media(max-width: 1000px){
+  .textbox-input {
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 430px;
+    height: 50%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+}
+
+@media(max-width: 1000px){
+  .textbox-send img {
+    margin-left: -80px;
+  }
+}

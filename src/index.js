@@ -17,6 +17,7 @@ ReactDOM.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
+<<<<<<< HEAD
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js')
   .then(function(registration) {
@@ -27,3 +28,19 @@ if ('serviceWorker' in navigator) {
 
   })
 }
+=======
+if('serviceWorker' in navigator){
+  
+  navigator.serviceWorker.register('sw.js')
+  .then(function(registration){
+
+    console.log('Registation successfull, scope is:', registration.scope);
+
+  }).catch(function(error){
+    
+    console.log('Service worker regustration failed, error', error);
+
+  })
+
+}
+>>>>>>> 8b5db0b92e44a9750c0c0ffe7d02a1ca88efe0c8

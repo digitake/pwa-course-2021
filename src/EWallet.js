@@ -13,13 +13,26 @@ function EWallet() {
       <div className="EWallet-header1" >
       <Link className={"EWallet-header1"} to="/"/>
       </div>
-      <div className="EWallet-header2" ></div>
+      <div className="EWallet-header2" >E-Wallet</div>
       <div className="EWallet-header3" ></div>  
 
       </div>
     
       <div className="EWallet-content">
-        <div className="EWallet-money" > </div>
+        <div className="EWallet-money" > 
+        <div className="EWallet-moneytop" >
+        <div className="EWallet-moneytopleft" ></div>
+        <div className="EWallet-moneytopmid" ></div>
+        <div className="EWallet-moneytopright" ></div>
+        </div>
+        <div className="EWallet-moneybottom" >
+        <div className="EWallet-moneybottomleft" ></div>
+        <div className="EWallet-moneybottommid" ></div>
+        <div className="EWallet-moneybottomright" ></div>
+        </div>
+        </div>
+
+
         <div className="EWallet-Menu" >
           <div className="EWallet-Menu1" >
             <div className="EWallet-Menu-inside" >

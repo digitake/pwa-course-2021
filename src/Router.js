@@ -6,6 +6,7 @@ import EWallet from './EWallet';
 import Chatbox from './Chatbox';
 import Music from './Music';
 import App from './App';
+import Searching from './Searching';
 
 /** FriendList*/
 
@@ -16,6 +17,9 @@ function Router(){
             <Switch>
                 <Route path="/profile">
                     <Profile />
+                </Route>
+                <Route path="/searching">
+                    <Searching />
                 </Route>
                 <Route path="/e-wallet">
                     <EWallet />

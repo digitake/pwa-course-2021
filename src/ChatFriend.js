@@ -28,7 +28,7 @@ function ChatFriend() {
 
   const onSend = () => {
     chatFriendRef.push({
-      sender: "Me",
+      sender: "WIN",
       message: text,
       timeStamp: firebase.database.ServerValue.TIMESTAMP
 

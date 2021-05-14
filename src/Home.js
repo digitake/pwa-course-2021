@@ -4,7 +4,7 @@ import Mogu from './Mogu.png';
 import Friend from './Friend.PNG';
 import Group from './Group.PNG';
 import Store from './Store.PNG';
-
+import IconProfile from './IconProfile.jpg';
 
 function Home() {
     return(
@@ -20,6 +20,18 @@ function Home() {
 
 </div>
 <div className="App-middle-home">
+
+<div className="App-pic-home" > 
+               <Link to="/profile" >
+               <img src={IconProfile}/>
+               </Link> 
+               <div className="App-text-left">
+                Profile
+                        
+            </div>
+            <div>
+                
+            </div>
 
 <div className="App-pic-home" > 
                <Link to="/pap-friendList" >
@@ -51,7 +63,7 @@ function Home() {
                <div className="App-text-left">
                 Store
             </div>
-
+            </div>
 
                 </div> 
     </div>

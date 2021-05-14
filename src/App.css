@@ -218,7 +218,21 @@
 }
 
 
+.App-middle-home-profile {
+  flex: 10;
+  background-color: rgb(247, 218, 132);
 
+
+
+}
+
+.App-pic-home-logo {
+
+  height: 150px;
+   width: 150px;
+  background-color: rgb(255, 115, 0);
+
+}
 
 
 

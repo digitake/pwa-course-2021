@@ -5,13 +5,13 @@ import {Link} from 'react-router-dom'
 
 function LoginPage() {
 
-  const [text, setText] = useState("")
-
+  const [text , setText] = useState("")
 
   const onTextChange = (event) => {
     setText(event.target.value);
 
   };
+
 
     return(
 
@@ -23,8 +23,16 @@ function LoginPage() {
              </Link>
             </div> 
 
+            <div className="Logo">
+                <img src = "icon-256x256.png" alt = ""/>
+            </div>
+
             <div className="Login-text-bar">
             <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} placeholder="Username" />
+            </div>
+
+            <div className="Login-text-bar">
+            <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} placeholder="Password" />
             </div>
 
             <div className = "SingIn" >
@@ -36,4 +44,5 @@ function LoginPage() {
         </div>
     )
 }
-export default LoginPage;
+export default LoginPage ;
+

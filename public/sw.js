@@ -14,7 +14,8 @@ self.addEventListener('install', event => {
     );
 });
 self.addEventListener('fetch', event =>{
-    caches.match(event.request.url).then(res => {
+    caches.match(event.request.url)
+    .then(res => {
         if(res) {
             console.log("Intercept with cache", res);
             return res;

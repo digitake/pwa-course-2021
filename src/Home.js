@@ -23,7 +23,9 @@ function Home(){
         </div>
         <div className="Home-chats">
             <div className="Home-chats-room1">
-              <div className="Home-chats-room1-pic"></div>
+              <div className="Home-chats-room1-pic">
+                <Link className={"Home-chats-room1-pic"} to="/chatbox"/>
+              </div>
               <div className="Home-chats-room1-info">
                 <div className="Home-chats-room1-name">
                   Zonefez

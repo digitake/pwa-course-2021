@@ -64,9 +64,15 @@ function Chatbox(){
           lines.map(x =>{
             return <div className="Chatbox-chatroom-text">
               <div>
-               {x.sender+ ": "}
+              <div className="Chatbox-chatroom-text2">
+               <p>{x.sender+ ": "}</p>
+               </div>
+               <div className="Chatbox-chatroom-text1">
                {x.message+ " "}
-               {x.timestamp.toLocaleString()}
+               </div>
+               <div className="Chatbox-chatroom-text3">
+               <h1>{x.timestamp.toLocaleString()}</h1>
+               </div>
              </div>
             </div>
           })

@@ -19,30 +19,36 @@ function Menu(){
             <div className="col-3 col-s-3 Menu-box">
                 <div className=" Menu-column">
                 <div className=" Menu-row">
+                    <Link to = "/MangoSetting">
                     <button>
-                        <img src="mango-192.png" class ="responsive"/>
+                        <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
                         <h2>Mango setting</h2>
                     </button>
+                    </Link>
+                    <Link to = "/AccountSetting">
                     <button>
-                        <img src="mango-192.png" class ="responsive"/>
+                        <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
                         <h2>Account setting</h2>
                     </button>
+                    </Link>
+                    <Link to ="/FriendSetting">
                     <button>
-                        <img src="mango-192.png" class ="responsive"/>
+                        <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
                         <h2>Friend setting</h2>
                     </button>
+                    </Link>
                 </div>
                 <div className="Menu-row">
                     <button>
-                        <img src="mango-192.png" class ="responsive"/>
+                        <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
                         <h2>Advance setting</h2>
                     </button>
                     <button>
-                        <img src="mango-192.png" class ="responsive"/>
+                        <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
                         <h2>Notifications setting</h2>
                     </button>
                     <button>
-                        <img src="mango-192.png" class ="responsive"/>
+                        <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
                         <h2>Game setting</h2>
                     </button>
                 </div>

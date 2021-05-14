@@ -22,7 +22,12 @@ function FriendList(){
         </div>
         <p> 
         </p>
+
         <p href="#" class="accordion">Education</p>
+
+
+        <button class="accordion">Education</button>
+
         <div class="panel">
             <p>โรงเรียนนานาชาติวัดเชิงหวาย</p>
             <p>โรงเรียนวัดบ้านหนองประดู่</p>
@@ -47,6 +52,7 @@ function FriendList(){
         <p></p>
         <a href="#" class="button">SHARE MY PROFILE</a>
      
+
     </App>     
     );
 };

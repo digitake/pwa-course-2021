@@ -24,7 +24,6 @@ th {
   color: white;
 }
 
-
 .App-header {
 display: flex; 
   flex: 1;
@@ -36,7 +35,6 @@ display: flex;
 
 .App-Content{
   flex: 12;
-  position: sticky;
   overflow: auto;
 }
 
@@ -62,6 +60,8 @@ display: flex;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50px;
+  width: 70px;
+  height: 70px;
   margin: 5px;
 }
 
@@ -222,3 +222,5 @@ display: flex;
   }
   
 }
+
+/*Message form 1620701795 Give Me A SenPai*/

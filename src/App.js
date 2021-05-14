@@ -11,7 +11,7 @@ function App({children}) {
              <div className="App-logo Button">
              <Link to ="/menu">
               <image>
-              <img src ="down32.png" align ="right" class="menubutton"/>
+              <img src ="setting32.png" align ="right" class="menubutton"/>
               </image>
              </Link>  
              <div className="Flex-Container">

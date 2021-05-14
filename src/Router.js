@@ -2,15 +2,16 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Chatbox  from "./Chatbox";
 import FriendList from "./FriendList";
+import Login from "./Login";
+//Menu
 import Menu from "./MenuPage/Menu";
 import MangoSetting from "./MenuPage/MangoSetting";
 import AccountSetting from "./MenuPage/AccountSetting";
-
 import FriendSetting from "./MenuPage/FriendSetting";
 import AdvanceSetting from "./MenuPage/AdvanceSetting";
 import NotificationSetting from "./MenuPage/NotificationSetting";
 import GameSetting from "./MenuPage/GameSetting";
-
+//Profile
 import Profile from "./ProfilePage/Profile";
 import Post from "./ProfilePage/Post";
 import Friend from "./ProfilePage/Friend";
@@ -81,6 +82,10 @@ function Router()  {
 
             <Route path="/menu">
               <Menu />
+            </Route>
+
+            <Route path="/Login">
+              <Login />
             </Route>
 
             <Route path="/Mangosetting">

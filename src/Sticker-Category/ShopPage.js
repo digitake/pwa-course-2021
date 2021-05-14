@@ -12,59 +12,41 @@ function ShopPage({children}){
             <div className="ShopPage-head">
                 <div className="ShopPage-header">
                     Sticker Shop
-                    <div className="SopPage-button">
+                    <div className="ShopPage-button1">
                         <Link to="/friend-list">
-                        <img src ="back-32.png" align= "Left" />
+                        <img src ="back-32.png" align= "Left"/>
                         </Link>
                     </div>
                 </div>
 
                 <div className="ShopPage-Category">
-                    <div className="ShopPage-button">
                         <Link to ="/HotStickersList">
-                                Hot!
+                        <button class="ShopPage-button">Hot!</button>
                         </Link>
-                    </div>
-                    <div className="ShopPage-button">
+                    
                         <Link to ="/NewStickersList">
-                             New stickers
+                        <button class="ShopPage-button">New stickers</button>
                         </Link>
-                    </div>
-                    <div className="ShopPage-button">
+                   
                         <Link to ="/EffectStickersList">
-                        
-                            Effect stickers
-                        
+                        <button class="ShopPage-button">Effect stickers</button>
                         </Link>
-                    </div>
-                    <div className="ShopPage-button">
+                   
                         <Link to="/AnimatedStickersList">
-                        
-                            Animated stickers
-                        
+                        <button class="ShopPage-button">Animated stickers</button>
                         </Link>  
-                    </div>
-                    <div className="ShopPage-button">
+                    
                         <Link to ="/CuteStickersList">
-                        
-                            Cute
-                        
+                        <button class="ShopPage-button">Cute</button>
                         </Link>      
-                    </div>
-                    <div className="ShopPage-button">
+    
                         <Link to="/CoolStickersList">
-
-                        Cool
-
+                        <button class="ShopPage-button">Cool</button>
                         </Link>  
-                    </div>
-                    <div className="ShopPage-button">                        
+
                         <Link to="/WarnAndFuzzyStickerList">
-
-                        Warm&Fuzzy
-
+                        <button class="ShopPage-button">Warm&Fuzzy</button>
                         </Link> 
-                    </div>
                 </div>
             </div>
             <div className="ShopPage-body">

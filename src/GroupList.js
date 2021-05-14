@@ -23,7 +23,7 @@ Group2
 
 <div className="App-PapFriendList-body">
 
-<Link to="/group-chat">
+<Link to="/GroupChat2">
    <img src={Groupchat1}/>
               </Link>
    </div>

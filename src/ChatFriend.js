@@ -4,7 +4,7 @@ import HeaderOfChat from './HeaderOfChat';
 import firebase from './firebaseConfig';
 
 var chatroomRef;
-var EnterYourFriendName ="Enter Your Friend Name To Private Chat";
+var EnterYourFriendName ="Enter Your Private Chatroom Name ";
 var EnterYourName ="Enter Your Name";
 
 

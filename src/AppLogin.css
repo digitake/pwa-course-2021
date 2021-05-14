@@ -19,8 +19,7 @@
     }
     
     .Login-text-bar{
-        display:flex;
-        
+        display: flex;
     
     }
 
@@ -85,6 +84,12 @@
         background-position: center;
         background-color: #2D2C67;
         
+    }
+
+    .Login-text-bar{
+        
+        display: flex;
+    
     }
 
     .AppLogin{

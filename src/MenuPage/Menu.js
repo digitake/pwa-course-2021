@@ -9,7 +9,7 @@ function Menu(){
             <div className="Menu-header">
                 <div className="Menu-Back-Button">
                     Menu
-                <Link to = "/">
+                <Link to = "/profile">
                 <img src= "Back-32.png" align ="left"/>
                 </Link>
                 </div>

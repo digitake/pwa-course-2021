@@ -7,7 +7,6 @@ import logo2 from './LoginIcon.png'
 
 var chatroomRef;
 
-
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
@@ -37,11 +36,9 @@ function Chatbox() {
   const onTextChange = (event) =>{
     setText(event.target.value);
   };
-
-  const onNameChange = (event) =>{
+  const onNameChange = (event) => {
     setName(event.target.value);
   }
-
   const onSend = () =>{
     chatroomRef.push({
       sender: name,

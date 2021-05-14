@@ -29,15 +29,15 @@
     .Menu{
   
       background-color:  #242424; 
-      width: 50%;
+      width: 100%;
     }
   }
 
   .Menu-Back-Button{
     
-    padding-left: 10px ;
+    padding-left: 30px;
   }
-
+  
   @media (min-width: 320px){
     .Menu-header{
       flex: 1;
@@ -66,27 +66,18 @@
   @media (min-width: 320px) { 
   }
   .Menu-row{
-    flex: 1;
+    flex: 10;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
     
     }
-  
-  @media (min-width: 320px){
-  }
-  .SettingName{
-    flex: 1;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-size-adjust: 30px;
-  }  
 
   .responsive {
-    width: 100%;
+    width: 50%;
     max-width: 600px;
+    max-height: 800px;
     height: auto;
     }  
 

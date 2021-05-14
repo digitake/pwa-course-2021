@@ -7,8 +7,6 @@ function MangoSetting(){
     return(
         <div className="col-6 col-s-9 Menu">
             <div className="Menu-header">
-                <div className ="space-box">
-                </div>
                 <div className="Menu-Back-Button">
                     MangoSetting
                 <Link to = "/menu">

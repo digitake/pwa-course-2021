@@ -1,6 +1,6 @@
 
 self.addEventListener('install' , event =>{
-    console.log("[SW] Service worker is installing . . .v3")3
+    console.log("[SW] Service worker is installing . . .v3")
 
     event.waitUntil(
         caches.open('chatapp-v3').then ( Cache => {

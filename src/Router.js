@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch, Route}   from 'react-router-dom'
 import App from './App'
-import Register from './Rigister'
+import Register from './Register'
 import RegisterNextStep from './RegisterNextStep'
 import LoginApp from './LoginApp'
 import LoginPage from './LoginPage'

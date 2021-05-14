@@ -20,6 +20,8 @@ function SettingPage() {
                  <div className = "Header-text"/>
                     Settings
             </div>
+
+            <div></div>
            
             <div className = "OptionSetting">
 

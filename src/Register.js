@@ -4,6 +4,8 @@ import {Link} from 'react-router-dom'
 
 function Register(){
     return(
+        <>
+    
     <div className = "Register">
 
         <div className = "Undo">
@@ -11,20 +13,26 @@ function Register(){
                 <img src = "Union.png"  alt = ""/>
              </Link>
         </div>
+    
+       
 
         <div className = "Register-Logo"/>
 
         <div className = "Register-singIn"/>
+        
+        <div>
 
-        <div className = "RegisterNextStep">
-
+            
             <Link to = "/RegisterNextStep">
                 <img src = "ButtonNext.png" alt = "" /> 
             </Link>
 
         </div>
 
+        <div className = "Register-textRegister"/>
+
     </div>
+    </>
     )
 }
 export default Register;

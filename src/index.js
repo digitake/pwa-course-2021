@@ -5,6 +5,7 @@ import Router from './Router';
 import reportWebVitals from './reportWebVitals';
 
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Router />
@@ -17,15 +18,14 @@ ReactDOM.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').then(function(registration) {
 
-      console.log('Registration successful, scope is:',registration.scope);
-      
-    }).catch(function(error) {
+if('serviceWorker' in navigator)
+{
+  navigator.serviceWorker.register('sw.js')
+  .then(function(registeration){
+    console.log('Registeration successfull, scope is :',registeration.scope);
 
-      console.log('Service worker registration failed, error',error);
-
-    })
-  
+  }).catch(function(error){
+    console.log('Service Worker register failed, error' ,error);
+  })
 }

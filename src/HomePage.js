@@ -10,9 +10,7 @@ function HomePage({children}) {
         <div class="flex-container"/>
         <div className = "HomePageInfo-topBar">
             <p>     .     </p>
-            <input type="text" Search="search" placeholder="Search"/>
-            <a href="#" className="btn btn-info">
-            <span class="glyphicon glyphicon-search" aria-hidden="true"></span> lo </a>
+            <input type="text" Search="search" placeholder="Search" className = "HomePageInfo-topBar-search"/>
             <div className = "HomePageInfo-topBar-profile"/>
         </div>
                 
@@ -24,39 +22,41 @@ function HomePage({children}) {
 
         </div>
            
+           
 
         <div className = "ToolBar">
 
             <div className = "pandding">
 
                 <Link to = "/Chatroom">
-                <img src = "ChatBoxBar.Png" alt = "" />
+                <img src = "ChatBoxBar.Png" alt  = "ChatBoxBar.Png" />
                 </Link>
             </div>
 
             <div className = "pandding" >
 
                 <Link to = "/GroupChatRoom">
-                    <img src = "GroupChat.Png" alt = "" />
+                    <img src = "GroupChat.Png"  alt = "GroupChat.Png" />
                 </Link>
             </div>
 
-            <div className = "HomePageButton">
+            <div className = "HomePageInfo-topBar-HomePageButton">
 
                 <Link to = "/HomePage">
-                <img src = "Home.png" alt = "" />
+                <img src = "Home.png" alt = "Home.png"/>
                 </Link> 
             </div>
+
             <div className = "pandding">
 
                 <Link to = "/PrivatePage">
-                    <img src = "Private.Png" alt = "" />
+                    <img src = "Private.Png" alt = "Private.Png" />
                 </Link>
             </div>
             <div className = "pandding">
 
                 <Link to = "/SettingPage">
-                    <img src = "SettingBar.Png" alt = "" />
+                    <img src = "SettingBar.Png" alt = "SettingBar.Png" />
                 </Link>
             </div>
         

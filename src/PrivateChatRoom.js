@@ -63,7 +63,8 @@ const changeName = (event) => {
       <div className="App-textbox">
         <button class="btn"><FiPlusCircle/></button>
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} placeholder="Type a message" />
-        <button className="App-textbox-send" button onClick={onSend}><FiSend/>Send</button>
+        <button className="App-textbox-send" button onClick = {onSend} ><FiSend/>Send</button>
+        
       </div>
   </div>
 

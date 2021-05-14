@@ -1,5 +1,9 @@
 {
   "projects": {
+<<<<<<< HEAD
+    "default": "work-in-class-e399f"
+=======
     "default": "chat-app-test001"
+>>>>>>> f918d3e0b82615f2126b93c7456b6be43f6cec5d
   }
 }

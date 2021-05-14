@@ -11,6 +11,8 @@ function HomePage({children}) {
         <div className = "HomePageInfo-topBar">
             <p>     .     </p>
             <input type="text" Search="search" placeholder="Search"/>
+            <a href="#" className="btn btn-info">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span> lo </a>
             <div className = "HomePageInfo-topBar-profile"/>
         </div>
                 

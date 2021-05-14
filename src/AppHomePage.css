@@ -46,6 +46,15 @@
         
     }
 
+    .HomePageInfo-btn btn-info{
+        background-color: #140236;
+        flex: end;
+        border: none;
+        padding: 15px 15px;
+        font-size: 15px;
+        background-image: url(/src/AppchatUpdate/loupe.png);
+    }
+
     input{
         font-family: inherit;
         width: 90%;

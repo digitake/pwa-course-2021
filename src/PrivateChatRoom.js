@@ -11,6 +11,7 @@ function PrivateChatRoom() {
 
   const [text, setText] = useState("")
   const [lines, setLines] = useState([]);
+  const [name,setName] = useState("")
   
   useEffect (() => {
     chatroomRef.on('child_added', snapshot => {
@@ -26,7 +27,7 @@ function PrivateChatRoom() {
 
 const onSend = () => {
   chatroomRef.push({
-    sender: "9",
+    sender: name,
     message: text,
     timestamp: firebase.database.ServerValue.TIMESTAMP
   });
@@ -38,12 +39,15 @@ const onTextChange = (event) => {
   setText(event.target.value);
 
 };
+const changeName = (event) => {
+  setName(event.target.value);
+};
 
 
   return (
       <Headerchat>
     <div className="AppPrivate">
-
+    <input type="name" className="Change-name" value={name} onChange={changeName} placeholder="Change name here" />
       <div className="App-chatroom">
       {
         lines.map(x =>{

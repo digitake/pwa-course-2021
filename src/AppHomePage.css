@@ -4,10 +4,8 @@
     width: 28.54px;
     height: 23.84px;
     left: 14px;
-    top: 77px;
-    
+    top: 77px;  
 }
-
 
 @media (max-width: 1279px ) 
 {
@@ -88,7 +86,6 @@
         background-image: url(/src/AppchatUpdate/Rectangle.png);
         
     }
-    
     .HomePageInfo-backgroun-Botchat{
     
         display: flex;
@@ -100,7 +97,6 @@
     }
     .ToolBar
     {
-
         display: flex;
         flex: 12;
         flex-direction: row;
@@ -113,7 +109,6 @@
         height: 60px; 
         
     }
-
     .pandding
     {
 
@@ -121,7 +116,6 @@
     }
 
 }
-
 @media (min-width: 1280px) 
 {
     .HomePageInfo{
@@ -131,9 +125,8 @@
         flex-direction: column;
         background-color: #505396;
     }
-    
-    .HomePageInfo-topBar{   
-
+    .HomePageInfo-topBar
+    {   
         display: flex;
         align-items: center;
         justify-content: center;
@@ -141,10 +134,8 @@
         height: 83px;
         flex-direction: row;
     }
-    
 
     .HomePageInfo-search{
-
         display: flex;
         margin-left: 24px;
         margin-top: 30px ;
@@ -154,7 +145,6 @@
         height: 100%;
         
     }
-
     .HomePageInfo-topBar-profile
     {   
         display: flex;
@@ -184,7 +174,6 @@
         width: 241px;
         height: 69px;
     }
-
     .ToolBar
     {
         display: flex;
@@ -195,12 +184,8 @@
         height: 65px; 
         background-color: #140236;
     }
-
     .pandding
     {  
         margin: 24px;
     }
-
-
-
 }

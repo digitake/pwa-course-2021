@@ -13,7 +13,7 @@ function ChatBox({children}) {
 
     const [lines, setLines] = useState([]);
 
-    const [name, setName] = useState("");
+    const [name, setName] = useState("Guest");
 
 
     // () => {} same as function() {}  --lambda notation
@@ -74,7 +74,6 @@ function ChatBox({children}) {
                     }
                 </div>
                 {children}
-                
                 {/*ChatBar Input*/}
                 <div className="App-textbox">
                     <div className="App-Botton col-1">

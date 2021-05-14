@@ -36,13 +36,15 @@
 
 .App-chatroom {
     flex: 12;
+    display: flex;
+    flex-direction: inherit;
     background-image: url(BGapp.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-scrolling: auto;
     overflow: auto;
-
+    scroll-behavior: smooth;
+    overflow-scrolling: auto;
 }
 
 .App-namebox {
@@ -71,11 +73,8 @@
 }
 
 .App-textbox {
-    background-color: rgb(253, 4, 4);
-    /*justify-content: center;*/
-    /*align-items: stretch;*/
     display: flex;
-    overflow: inherit;
+    overflow: no-display;
 }
 
 .App-textbox-input {

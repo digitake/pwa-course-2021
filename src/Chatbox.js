@@ -1,77 +1,72 @@
-
 import './Chatbox.css'
-import {useState,useEffect} from 'react'
+import {useState,useEffect, useRef} from 'react'
 import App from './App';
 import firebase from './firebaseConfig';
-const chatroomRef = firebase.database().ref('chatroom-1');
-
-var chatroomRef;
-
+var chatroomRefs;
 function Chatbox() {
+
   const [text,setText] = useState("");
   const [lines,setLines] = useState([]);
-  const [name, setName] = useState("MyName");
-  const [chatroom, setChatroom] = useState("chatroom");
-
+  const [name,setname] = useState("");
+  const [chatroom,setchatroom] = useState("chatroom");
+  const messagesEndRef = useRef(null);
+  const scrollToBottom = ()=>{
+    messagesEndRef.current?.scrollIntoView({behavior: "smooth"})
+  }
   useEffect(()=>{
     setLines(_=>[])
-    chatroomRef = firebase.database().ref(chatroom);
-    chatroomRef.on('child_added',(snapshot) =>{
+    chatroomRefs= firebase.database().ref(chatroom)
+    chatroomRefs.on('child_added',(snapshot) =>{
       let x= snapshot.val();
-
-      setLines(l =>[
-        ...l,
-        {
-         sender: x.sender,
-         massage: x.massage,
-         timestamp: new Date(x.timestamp)
-      }])
-    });
-
-    return () => {
-      chatroomRef.off('child_added')
-    }
+      setLines(l =>[...l,{
+        sender: x.sender,
+        massage: x.massage,
+        timestamp: new Date(x.timestamp)
+      }]);
+      scrollToBottom()
+    })
+    scrollToBottom();
+    return()=>{
+      chatroomRefs.off('child_added')
+    };
   },[chatroom]);
-
-  const onRoomChange = (event) => {
-    setChatroom(event.target.value);
-  }
-
   const onTextChange = (event) => {
     setText(event.target.value);
   };
-
   const onNameChange = (event) => {
-    setName(event.target.value);
-  }
-
+    setname(event.target.value);
+  };
+  const onRoomone = () => {
+    setchatroom("sdsd");
+  };
+  const onRoomtwo = () => {
+    setchatroom("chatroom");
+  };
   const onSend =() =>{
-    chatroomRef.push({
+    chatroomRefs.push({
       sender : name,
       massage : text,
       timestamp : firebase.database.ServerValue.TIMESTAMP
     });
     setText("");
   };
-
   const keyPress = (event) =>  {
     if(event.which===13){
       onSend();
     }
   }
   return (
-      <App>
-          <div className="App">
-
-            <input type="text" value={chatroom} onChange={onRoomChange}/>
-
-            <input type="text" value={name} onChange={onNameChange}/>
-
+  <App>
+    <div className="App">
       <div className="App-header">
         Cat Chat
       </div>
       <div className="App-chatroom">
-      <div className="App-chatroom-text">
+      
+      <div className="Center">
+      <button type="submit" className="App-textbox-input" value={chatroom} onClick={onRoomone}>Chatroom1</button>
+      <button type="submit" className="App-textbox-input" value={chatroom} onClick={onRoomtwo}>Chatroom2</button>
+      <input type="text" className="App-textbox-input" value={name} onChange={onNameChange}/>
           Hello Welcome!!
         </div>
         <div className="App-chatroom-text">
@@ -83,29 +78,34 @@ function Chatbox() {
         <div className="App-chatroom-text">
           Good Luck Meaow ^^ 
         </div>
-        <div className="App-chatroom">
+        <div className="">
           {
-
           lines.map(x => {
-          return <div className="App-chatroom-text">                 
+          return <div className="App-chatroom-text">
+                  <div className="App-message">                 
                   {x.sender+" : "}
+                  </div>
+                  <div className="App-message">
                   {x.massage +" "}
+                  </div>
+                  <div className="App-message">
                   {x.timestamp.toLocaleString()}
+                  </div>
                   </div>                  
                         }
                     )      
           }  
         </div>
+        <div ref={messagesEndRef}/>
       </div>
       <div className="App-textbox">
         <input type="text" className="App-textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
         <div className="App-textbox-send" onClick={onSend}>
           ส่ง
-          </div>
+       </div>
       </div>
     </div>
-    </App>
+  </App>
   );
 }
-
 export default Chatbox;

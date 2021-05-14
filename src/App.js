@@ -35,7 +35,6 @@ function App({children}) {
         </Link>
 
       </div>
-
     </div>
   );
 }

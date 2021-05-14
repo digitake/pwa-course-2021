@@ -10,7 +10,11 @@ self.addEventListener("install",(event) => {
             
             return cache.addAll([
                 '/',
-                '/index.html'
+                '/index.html',
+                '/PrivateChatRoom.js',
+                '/public/icon-192x192.png',
+                '/public/icon-256x256.png',
+                '/public/icon-512x512.png'
     //การบ้านเพิ่มส่วนนี้เพื่อจัดเก็บแคช
             ]);
         })

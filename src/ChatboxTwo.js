@@ -3,12 +3,12 @@ import {Link} from 'react-router-dom';
 import{useState, useEffect }from 'react';
 import './App.css';
 import App from './App';
-import firebase from './firebaseConfig.js'; //ดึง config มาเตรียมใช้งาน
+import firebase from './firebaseConfig.js'; 
 
-const chatroomRef = firebase.database().ref('chatroom-1')
+const chatroomRef = firebase.database().ref('chatroom-2')
 
-function Chatbox(){
-
+function ChatboxTwo(){
+    
     const [text, setText] = useState("")
     const [lines, setLines] = useState([]);
 
@@ -87,7 +87,7 @@ function Chatbox(){
       </div>
     </div>
   </App>
-    );
+);
 }
 
-export default Chatbox;
+export default ChatboxTwo;

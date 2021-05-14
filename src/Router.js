@@ -1,6 +1,8 @@
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Chatbox  from "./Chatbox";
+import ChatboxTwo from "./ChatboxTwo";
+import ChatboxThree from "./ChatboxThree";
 import FriendList from "./FriendList";
 import Login from "./Login";
 //Menu
@@ -184,6 +186,14 @@ function Router()  {
               <Chatbox />
             </Route>
 
+            <Route path="/ChatboxTwo">
+              <ChatboxTwo />
+            </Route>
+
+            <Route path="/ChatboxThree">
+              <ChatboxThree />
+            </Route>
+
             <Route path="/HotStickersList">
               <HotStickersList />
             </Route>
@@ -327,11 +337,6 @@ function Router()  {
             <Route path="/">
               <Login />
             </Route>
-
-            <Route path="/Chatbox">
-              <Chatbox />
-            </Route>
-
           
         </Switch>
         </BrowserRouter>

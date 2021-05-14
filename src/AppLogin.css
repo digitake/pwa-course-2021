@@ -2,9 +2,11 @@
 @media (max-width : 1279px) {
 
     .LogoApp{
+
         display: flex;
         align-items: flex-start;
         justify-content: center;
+
         margin: auto;
         width: 100%;
         height: 100%;
@@ -16,6 +18,12 @@
       
     }
     
+    .Login-text-bar{
+        display:flex;
+        
+    
+    }
+
     .AppLogin{
 
         align-self: flex-end;
@@ -39,13 +47,13 @@
     .Login{
 
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
-        height: 825px;
-        margin: auto;
-        background-repeat: no-repeat;
-        background-image: url(/src/AppchatUpdate/Log\ In.png);
+        height: 100%;
+        background-color: #2D2C67;
+
     }
 
     .Undo{
@@ -80,16 +88,11 @@
     }
 
     .AppLogin{
-
-        
-        margin-top: 450px;
-        
+        margin-top: 450px;    
     }
     
     .AppRegister{
-
-        margin-top: 10px;
-        
+        margin-top: 10px;  
     }
 
 
@@ -119,9 +122,7 @@
         align-items: center;
         width: 808px;
         height: 209px;
-        background-image: url(/src/AppchatUpdate/GroupLoginButton.png);
-        background-repeat: no-repeat ;
-
+      
     }
 
     .Undo{

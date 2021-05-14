@@ -1,5 +1,4 @@
 .Chatbox {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -81,13 +80,55 @@
   
   .Chatbox-chatroom {
     flex: 12;
-    
   }
   
   
   .Chatbox-chatroom-text {
     margin: 8px;
+    background-color: #ebe99e00;
+    font-family: Itim;
+    border-radius: 6px;
+    text-align: left;
+    width: 50%;
+  }
+
+  .Chatbox-chatroom-text1 {
+    margin: 8px;
     background-color: #ebe99e;
+    font-family: Itim;
+    border-radius: 6px;
+    text-align: left;
+    height: 50px;
+    width: auto;
+  }
+  
+  p {
+    font-size: 20px;
+    }
+  h1 {
+      font-size: 12px;
+  }
+
+  .Chatbox-chatroom-text2 {
+    margin: 8px;
+    background-color: #ebe99e00;
+    font-family: Itim;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    text-align: left;
+    width: auto;
+  }
+
+  .Chatbox-chatroom-text3 {
+    margin: 8px;
+    background-color: #ebe99e00;
+    font-family: Itim;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    text-align: right;
+    width: auto;
   }
   
   .Chatbox-textbox {

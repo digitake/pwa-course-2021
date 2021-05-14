@@ -36,7 +36,7 @@ function App({children}) {
                </image>
              </Link>
 
-             <Link to = "/game-page">
+             <Link to = "/Game">
                <image>
                <img src ="buttonGame.png"/>
                </image>

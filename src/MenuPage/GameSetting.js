@@ -1,16 +1,13 @@
 import { Link } from "react-router-dom";
-import './FriendSetting.css';
-import{useState}from 'react'
+import './GameSetting.css';
 <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 
-function FriendSetting(){
+function GameSetting(){
     return(
         <div className="col-6 col-s-9 Menu">
             <div className="Menu-header">
-                <div className ="space-box">
-                </div>
                 <div className="Menu-Back-Button">
-                    FriendSetting
+                    GameSetting
                 <Link to = "/menu">
                 <img src= "Back-32.png" align ="left"/>
                 </Link>
@@ -24,4 +21,4 @@ function FriendSetting(){
 };
 
 
-export default FriendSetting;
+export default GameSetting;

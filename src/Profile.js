@@ -1,5 +1,4 @@
 import './App.css';
-import { Link } from 'react-router-dom';
 import Content from './Content'
 
 function MainProfile() {
@@ -13,9 +12,9 @@ function MainProfile() {
             </div>
             <div className = "profilemid">
                 <div className ="framepic">
-                <Link to="/" className="profilepic">
+              
                     <img src= "armprofile.jpg" alt = "plus.png" width="190px" height="190px"/> 
-                </Link>
+             
                 
                 </div>
                 <div className = "profilename">
@@ -23,7 +22,7 @@ function MainProfile() {
                 </div>
 
                 <div className ="profileinfo">
-                    
+         
                 <textarea>Edit...</textarea>
                 </div>
 

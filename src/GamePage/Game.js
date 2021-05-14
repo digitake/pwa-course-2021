@@ -16,7 +16,7 @@ function Game(){
              <button class="Game-Button">Push the box</button>
              </Link>
              <Link to = "/Game02">
-             <button class="Game-Button">Shooting star</button>
+             <button class="Game-Button">Mars shooter</button>
              </Link>
              <Link to = "/Game03">
              <button class="Game-Button">Found in space</button>

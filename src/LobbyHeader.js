@@ -1,6 +1,7 @@
 import './LobbyHeader.css';
 import {Link} from "react-router-dom";
 
+
 function LobbyHeader({children}) {
     return (
         <div className="App col-12">
@@ -27,7 +28,6 @@ function LobbyHeader({children}) {
                 </table>
                 <div className="RoomName">
                 </div>
-                
             </div>
             <div className="App-Content">
                 {children}
@@ -35,5 +35,5 @@ function LobbyHeader({children}) {
         </div>
     );
 }
-
+//Message form 1620701795 Give Me A SenPai
 export default LobbyHeader;

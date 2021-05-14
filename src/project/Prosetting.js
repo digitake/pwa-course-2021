@@ -1,40 +1,111 @@
 import './Prosetting.css';
 import { Link } from 'react-router-dom'
-import Layoutsetting from './Layoutsetting';
 
 function Prosetting() {
     return(
-        <Layoutsetting>
-            <div className= "Prosetting-ProUi">
-                <div>
-                    <img className="Prosetting-Pro" src="/Project/Prosetting/Setting_Pro.png" alt = "/Project/Prosetting/Setting_Pro.png" width="70px" height="70px" />
+        <div className = "fullscreen-prosetting">
+
+            <div className = "header-prosetting">
+
+                <div className = "backfriend-prosetting">
+                    <img src="/Project/Profriend/3Line.png" alt="/Project/Profriend/3Line.png" 
+                    width ="45px" height="45px" />
                 </div>
-                <div>
-                    <img className="Prosetting-User" src="/Project/Prosetting/Setting_Username.png" alt = "/Project/Prosetting/Setting_Username.png" width="200px" height="60px"  />
-                </div>
+
+                <h1 className = "Setting-menu-prosetting">Setting</h1>
+                
             </div>
-            <div className ="Prosetting-InterUi">
-                <div>
-                    <Link to="/Profile">
-                        <img className="Prosetting-Account" src="/Project/Prosetting/Setting_Account.png" alt = "/Project/Prosetting/Setting_Account.png" width="600px" height="80px" />
-                    </Link>
+
+            <div className = "content-prosetting">
+
+                <div className = "header-content-prosetting">
+
+                    <div className = "wall-profile-prosetting">
+                        <img src="/Project/Prosetting/Setting_Pro.png" alt="/Project/Prosetting/Setting_Pro.png" 
+                        width ="150px" height="150px" />
+                    </div>
+
+                    <input type="N-profile" id="nameprofile-prosetting" name="username-profile-prosetting" placeholder="       Ayame"/>
+
                 </div>
-                <div>
-                    <img className="Prosetting-Laug" src="/Project/Prosetting/Setting_Laug.png" alt = "/Project/Prosetting/Setting_Laug.png" width="600px" height="80px" />
+
+                <div className = "content-content-prosetting">
+
+                    <div className = "block-menu-prosetting-1">
+                        <img src="/Project/Prosetting/setting-block.png" alt="/Project/Prosetting/setting-block.png" 
+                        width ="1920px" height="110px" /> 
+                        <h1 className ="Account-menu-prosetting">Account</h1>
+                    </div>  
+
+                    <div className ="gogomenu-prosetting">
+                        <img src="/Project/Prosetting/go-menu.png" alt="/Project/Prosetting/go-menu.png" 
+                        width ="70px" height="70px" /> 
+                    </div>
+
+                    <div className = "block-menu-prosetting-2">
+                        <img src="/Project/Prosetting/setting-block.png" alt="/Project/Prosetting/setting-block.png" 
+                        width ="1920px" height="110px" /> 
+                        <h1 className ="Language-menu-prosetting">Language</h1>                        
+                    </div>  
+
+                    <div className ="gogomenu-prosetting">
+                        <img src="/Project/Prosetting/go-menu.png" alt="/Project/Prosetting/go-menu.png" 
+                        width ="70px" height="70px" /> 
+                    </div>
+
+                    <div className = "block-menu-prosetting-2">
+                        <img src="/Project/Prosetting/setting-block.png" alt="/Project/Prosetting/setting-block.png" 
+                        width ="1920px" height="110px" /> 
+                        <h1 className ="Support-menu-prosetting">Support</h1>                        
+                    </div>  
+
+                    <div className ="gogomenu-prosetting">
+                        <img src="/Project/Prosetting/go-menu.png" alt="/Project/Prosetting/go-menu.png" 
+                        width ="70px" height="70px" /> 
+                    </div>
+
+                    <div className = "block-menu-prosetting-2">
+                        <img src="/Project/Prosetting/setting-block.png" alt="/Project/Prosetting/setting-block.png" 
+                        width ="1920px" height="110px" /> 
+                        <h1 className ="Notification-menu-prosetting">Notification</h1>                        
+                    </div>  
+                    
+                    <div className ="gogomenu-prosetting">
+                        <img src="/Project/Prosetting/go-menu.png" alt="/Project/Prosetting/go-menu.png" 
+                        width ="70px" height="70px" /> 
+                    </div>
+
+                    <div className = "block-menu-prosetting-2">
+                        <img src="/Project/Prosetting/setting-block.png" alt="/Project/Prosetting/setting-block.png" 
+                        width ="1920px" height="110px" /> 
+                        <h1 className ="About-menu-prosetting">About</h1>                        
+                    </div>  
+                    
+                    <div className ="gogomenu-prosetting">
+                        <img src="/Project/Prosetting/go-menu.png" alt="/Project/Prosetting/go-menu.png" 
+                        width ="70px" height="70px" /> 
+                    </div>
+
+                    <div className = "block-menu-prosetting-2">
+                        <img src="/Project/Prosetting/setting-block.png" alt="/Project/Prosetting/setting-block.png" 
+                        width ="1920px" height="110px" /> 
+                        <h1 className ="Logout-menu-prosetting">Log out</h1>                        
+                    </div>  
+                    
+                    <div className ="gogomenu-prosetting">
+                        <img src="/Project/Prosetting/go-menu.png" alt="/Project/Prosetting/go-menu.png" 
+                        width ="70px" height="70px" /> 
+                    </div>
+
                 </div>
-                <div>
-                    <img className="Prosetting-Support" src="/Project/Prosetting/Setting_Support.png" alt = "/Project/Prosetting/Setting_Support.png" width="600px" height="80px" />
-                </div>
-                <div>
-                    <img className="Prosetting-Not" src="/Project/Prosetting/Setting_Notifications.png" alt = "/Project/Prosetting/Setting_Notifications.png" width="600px" height="80px" />
-                </div>
-                <div>
-                    <Link to="/Prologin">
-                        <img className="Prosetting-Logout" src="/Project/Prosetting/Setting_Logout.png" alt = "/Project/Prosetting/Setting_Logout.png" width="600px" height="80px" />
-                    </Link>
-                </div>
+
             </div>
-        </Layoutsetting>
+
+            <div className = "footer-prosetting">
+
+            </div>
+
+        </div>
     );
 }
 

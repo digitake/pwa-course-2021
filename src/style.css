@@ -1,56 +1,46 @@
-body{
+.background{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #34495e;
+  background: #242424;
+  background-image: url(mango.png);
+  background-position:center; 
 }
+
+
 .box{
   width: 300px;
-  padding: 40px;
+  padding:60px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: #191919;
+  background: #FECC48;
   text-align: center;
+  font-size:40px;
+    color:#242424;
+    font-weight:bold;
 }
-.box h1{
+.boxh1{
   color: white;
   text-transform: uppercase;
   font-weight: 500;
 }
-.box input[type = "text"],.box input[type = "password"]{
+.boxinput{
   border:0;
-  background: none;
+  background: #E9E87F;
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #3498db;
+  border: 2px solid #242424;
   padding: 14px 10px;
   width: 200px;
   outline: none;
   color: white;
   border-radius: 24px;
   transition: 0.25s;
+  font-size:15px;
+    color:#242424;
+    font-weight:bold;
 }
-.box input[type = "text"]:focus,.box input[type = "password"]:focus{
-  width: 280px;
-  border-color: #2ecc71;
-}
-.box input[type = "submit"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #2ecc71;
-  padding: 14px 40px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-  cursor: pointer;
-}
-.box input[type = "submit"]:hover{
-  background: #2ecc71;
-}
+

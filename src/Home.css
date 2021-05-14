@@ -37,9 +37,9 @@
 
   .Home-chats-room1-pic{
     flex-direction: column;
-    background-image: url("design/Home/Home\ UI\ PC-test.png");
+    background-image: url("design/Home/Home\ UI\ PC-06.png");
     background-position: right;
-    background-size: 25%;
+    background-size: 23%;
     background-repeat: no-repeat;
 }
 
@@ -100,7 +100,7 @@
 
   .Home-chats-room1-pic{
     flex-direction: column;
-    background-image: url("design/Home/Home\ UI\ PC-test.png");
+    background-image: url("design/Home/Home\ UI\ PC-06.png");
     background-position: right;
     background-size: 80%;
     background-repeat: no-repeat;

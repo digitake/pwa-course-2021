@@ -47,6 +47,10 @@ self.addEventListener("install",(event)=>{
                 '/Project/Proregister/passwordText.jpg',
                 '/Project/Proregister/registerComplete.jpg',
                 '/Project/Proregister/usernameText.jpg',
+                '/Project/Prosetting/go-menu.png',
+                '/Project/Prosetting/Setting_Pro.png',
+                '/Project/Prosetting/setting-block.png'
+                
             ]);
         })
     );

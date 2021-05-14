@@ -8,8 +8,10 @@ function Prosetting() {
             <div className = "header-prosetting">
 
                 <div className = "backfriend-prosetting">
-                    <img src="/Project/Profriend/3Line.png" alt="/Project/Profriend/3Line.png" 
-                    width ="45px" height="45px" />
+                    <Link to="Profriend">
+                        <img src="/Project/Profriend/3Line.png" alt="/Project/Profriend/3Line.png" 
+                        width ="45px" height="45px" />
+                    </Link>
                 </div>
 
                 <h1 className = "Setting-menu-prosetting">Setting</h1>

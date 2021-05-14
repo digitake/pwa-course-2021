@@ -13,7 +13,7 @@ function Page4Drawling() {
           D r a w z y
           <img src={Logo}></img>
         <div className="PageDrawing-botton">
-          <Link to="/App">
+          <Link to="/Chatbox">
           <img src={ChatLogo}></img>
           </Link>
           <div></div>

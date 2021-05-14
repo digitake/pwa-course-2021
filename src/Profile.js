@@ -1,5 +1,4 @@
 import './App.css';
-import { Link } from 'react-router-dom';
 import Content from './Content'
 
 function MainProfile() {
@@ -11,24 +10,20 @@ function MainProfile() {
             <div className = "profilehead">
 
             </div>
-            
             <div className = "profilemid">
                 <div className ="framepic">
-                <Link to="/" className="profilepic">
+              
                     <img src= "armprofile.jpg" alt = "plus.png" width="190px" height="190px"/> 
-                </Link>
+             
                 
                 </div>
                 <div className = "profilename">
-                    [Arm NAJA]
+                <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
                 </div>
 
                 <div className ="profileinfo">
-                    
-                    ผมชอบแมวมากเลยครับ
-                    <p>แล้วผมก็ขายอาหารงูด้วย</p>
-                    <p>และผมก็ชอบหมาของขนุน</p>
-                   
+         
+                <textarea>Edit...</textarea>
                 </div>
 
                 <div className = "profilespinhis">

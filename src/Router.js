@@ -1,5 +1,6 @@
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Login from "./Login";
 import Chatbox  from "./Chatbox";
 import FriendList from "./FriendList";
 import Menu from "./MenuPage/Menu";
@@ -252,7 +253,7 @@ function Router()  {
             </Route>
 
             <Route path="/">
-              <Chatbox />
+              <Login />
             </Route>
 
             

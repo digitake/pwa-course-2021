@@ -1,3 +1,4 @@
+
 //ทดลองดูว่า Service Worker install สำเร็จไหม
 
 self.addEventListener("install", (event) =>{
@@ -18,6 +19,7 @@ self.addEventListener("install", (event) =>{
 
     );
 });
+
 
 
 self.addEventListener('fecth', (event) =>{

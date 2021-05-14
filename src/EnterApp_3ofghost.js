@@ -17,4 +17,5 @@ function LoadingScene_EnterApp(){
     );
 };
 
+// Message form 1620701795 Give Me A SenPai
 export default LoadingScene_EnterApp;

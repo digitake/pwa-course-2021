@@ -60,8 +60,10 @@
   }
   
   .Chatbox-content{
+
     flex: 0.95;
     
+
   }
   
   .Back-Button{
@@ -136,7 +138,9 @@
     justify-content: center;
     align-items: stretch;
     display: flex;
+
     padding: 0.5%;
+
   }
   
   .Chatbox-textbox-input {

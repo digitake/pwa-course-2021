@@ -79,7 +79,7 @@ function ChatBox({children}) {
                 <div className="App-textbox">
                     <div className="App-Botton col-1">
                         <Link to="/LobbySetting">
-                            <div className="App-inButtonBar "> Setting</div>
+                            <div className="App-inButtonBar "> Setting </div>
                         </Link>
                     </div>
                     <input type="text" placeholder="Type Ready to Start!" className="App-textbox-input col-11"

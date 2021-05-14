@@ -6,6 +6,7 @@ import firebase from './firebaseConfig';
 
 var chatroomRef;
 
+
 function Chatbox() {
 
   const [text, setText] = useState("");
@@ -14,21 +15,21 @@ function Chatbox() {
   const [chatroom, setChatroom] = useState("chatroom");
 
   useEffect(() => {
+
+  }, [chatroom]);
     
+
+  useEffect(() => {
     setLines(_=>[])
     chatroomRef = firebase.database().ref(chatroom);
     chatroomRef.on('child_added', (snapshot) => {
       let item = snapshot.val();
-
-      setLines(l => [
-        ...l, 
-        {
+      setLines(line => [...line,{
         sender: item.sender,
         message: item.message,
         timestamp: new Date(item.timestamp)
-      }]);
+      }])
     })
-
   return ()=> {
     chatroomRef.on('child_added')
   };

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 
 function Profile({children}){
+
     return(
     <App>
     <div className="Profile">
@@ -18,7 +19,7 @@ function Profile({children}){
          <img src ="Profile-img.png"/>
          </div>
          
-         <h2>Rimuru Tempest</h2>
+         Rimuru Tempest
         </div>
 
         <div className="Profile-Box-Button">

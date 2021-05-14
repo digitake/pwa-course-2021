@@ -6,11 +6,11 @@ function App({children}) {
   return (
     <div className="App col-6">
       <div className="App-header">
-        <div className="App-logo">
+             <div className="App-logo">
 
-        </div>
+             </div>
 
-        <div className="App-logo Button">
+             <div className="App-logo Button">
 
              <Link to = "/profile">
                <image>
@@ -42,17 +42,18 @@ function App({children}) {
                </image>
              </Link>
 
-            <Link to ="/menu">
+             <Link to ="/menu">
               <image>
               <img src ="down32.png" align ="right"/>
               </image>
-            </Link>  
-        </div>
+             </Link>  
+             </div>
       </div>
 
-      <div className="App-content">
+        <div className="App-content">
         {children}
-      </div>
+        </div>
+
       </div>
     );
 };

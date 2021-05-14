@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
-import './AccountSetting.css';
-import{useState}from 'react'
+import './NotificationSetting.css';
 <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 
-function AccountSetting(){
+function NotificationSetting(){
     return(
         <div className="col-6 col-s-9 Menu">
             <div className="Menu-header">
                 <div className="Menu-Back-Button">
-                    AccountSetting
+                    NotificationSetting
                 <Link to = "/menu">
                 <img src= "Back-32.png" align ="left"/>
                 </Link>
@@ -22,4 +21,4 @@ function AccountSetting(){
 };
 
 
-export default AccountSetting;
+export default NotificationSetting;

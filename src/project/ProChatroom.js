@@ -21,9 +21,6 @@ useEffect(()=>{
     }])
     
   })
-
-  
-  
 },[]);    
 
 const onTextChange = (event)=>{
@@ -187,25 +184,19 @@ const onSend =() => {
             })
           }
           </div>
-
         </div>
-
         <div className ="fotter-content-prochatroom" >
-
           <div className ="plus-prochatroom">
               <img src ="/Project/Prochatroom/plus.jpg" alt="/Project/Prochatroom/plus.jpg" 
             width="70px" height="70px"/>
           </div>
-
           <div className="textbox">
             <input type="text" className="textbox-input" value={text} onChange={onTextChange} onKeyPress={keyPress}/>
             <div className="textbox-send"onClick={onSend}><img src= "/Project/Prochatroom/send.png" alt = "/Project/Prochatroom/send.png" 
             width="50px" height="50px"/>
             </div>
           </div>
-
         </div>
-
       </div>
 
     </div>

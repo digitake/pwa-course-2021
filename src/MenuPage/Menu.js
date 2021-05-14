@@ -7,8 +7,6 @@ function Menu(){
     return(
         <div className="col-6 col-s-9 Menu">
             <div className="Menu-header">
-                <div className ="space-box">
-                </div>
                 <div className="Menu-Back-Button">
                     Menu
                 <Link to = "/">
@@ -22,35 +20,53 @@ function Menu(){
                     <Link to = "/MangoSetting">
                     <button>
                         <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
-                        <h2>Mango setting</h2>
+                        <div className = "SettingName">
+                        <h3>Mango setting</h3>
+                        </div>
                     </button>
                     </Link>
                     <Link to = "/AccountSetting">
                     <button>
                         <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
-                        <h2>Account setting</h2>
+                        <div className = "SettingName">
+                        <h3>Account setting</h3>
+                        </div>
                     </button>
                     </Link>
                     <Link to ="/FriendSetting">
                     <button>
                         <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
-                        <h2>Friend setting</h2>
+                        <div className = "SettingName">
+                        <h3>Friend setting</h3>
+                        </div>
                     </button>
                     </Link>
                 </div>
                 <div className="Menu-row">
+                    <Link to ="/AdvanceSetting">
                     <button>
                         <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
-                        <h2>Advance setting</h2>
+                        <div className = "SettingName">
+                        <h3>Advance setting</h3>
+                        </div>
                     </button>
+                    </Link>
+                    <Link to ="NotificationSetting">
                     <button>
                         <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
-                        <h2>Notifications setting</h2>
+                        <div className = "SettingName">
+                        <h3>Notification Setting </h3>
+                        </div>
                     </button>
+                    </Link>
+                    <Link to = "GameSetting">
                     <button>
                         <img src="mango-192.png" width="150px" height = "150px" class ="responsive"/>
-                        <h2>Game setting</h2>
+                        <div className = "SettingName">
+                        <h3>Game setting </h3>
+                        </div>
                     </button>
+                    </Link>
                 </div>
                 </div>
             </div> 

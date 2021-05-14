@@ -1,12 +1,14 @@
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Login from "./Login";
 import Chatbox  from "./Chatbox";
 import FriendList from "./FriendList";
 import Menu from "./MenuPage/Menu";
 import MangoSetting from "./MenuPage/MangoSetting";
 import AccountSetting from "./MenuPage/AccountSetting";
-import FriendSetting from "./FriendSetting";
+import FriendSetting from "./MenuPage/FriendSetting";
+import AdvanceSetting from "./MenuPage/AdvanceSetting";
+import NotificationSetting from "./MenuPage/NotificationSetting";
+import GameSetting from "./MenuPage/GameSetting";
 import Profile from "./ProfilePage/Profile";
 import Post from "./ProfilePage/Post";
 import Friend from "./ProfilePage/Friend";
@@ -82,6 +84,18 @@ function Router()  {
 
             <Route path="/FriendSetting">
               <FriendSetting />
+            </Route>
+
+            <Route path="/AdvanceSetting">
+              <AdvanceSetting />
+            </Route>
+
+            <Route path="/NotificationSetting">
+              <NotificationSetting />
+            </Route>
+
+            <Route path="/GameSetting">
+              <GameSetting />
             </Route>
 
             <Route path="/profile">
@@ -253,7 +267,7 @@ function Router()  {
             </Route>
 
             <Route path="/">
-              <Login />
+              <Chatbox />
             </Route>
 
             

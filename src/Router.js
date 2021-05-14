@@ -328,10 +328,6 @@ function Router()  {
               <Login />
             </Route>
 
-            <Route path="/Chatbox">
-              <Chatbox />
-            </Route>
-
           
         </Switch>
         </BrowserRouter>

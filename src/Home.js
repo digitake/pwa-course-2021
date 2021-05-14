@@ -30,11 +30,20 @@ function Home() {
 
             </div>
             <div>
+            <div className="App-test">
+
+</div>
+<div className="App-test">
+
+</div>
+<div className="App-test">
+
+</div>
 
             </div>
 
 <div className="App-pic-home" > 
-               <Link to="/pap-friendList" >
+               <Link to="/chat-friend" >
                <img src={Friend}/>
                </Link> 
                <div className="App-text-left">

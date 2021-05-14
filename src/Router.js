@@ -84,10 +84,6 @@ function Router()  {
               <Menu />
             </Route>
 
-            <Route path="/Login">
-              <Login />
-            </Route>
-
             <Route path="/Mangosetting">
               <MangoSetting />
             </Route>
@@ -329,10 +325,14 @@ function Router()  {
             </Route>
 
             <Route path="/">
+              <Login />
+            </Route>
+
+            <Route path="/Chatbox">
               <Chatbox />
             </Route>
 
-            
+          
         </Switch>
         </BrowserRouter>
 

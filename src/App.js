@@ -5,9 +5,11 @@ function App({children}) {
 
   return (
     <div className="App">
+      <div className="App-content">
+          {children}
+        </div>
       <div className="App-header">
       <Link to="chatbox">
-
         <p>
           <img src="chatlogo.png" width="30%" height="50%"/>
           </p>   
@@ -19,7 +21,7 @@ function App({children}) {
           </p>   
         </Link>
 
-        <Link to="addfriend">
+        <Link to="friend">
         <p>
           <img src="friendlogo.png" width="30%" height="50%"/>
           </p>   
@@ -32,10 +34,9 @@ function App({children}) {
         </Link>
 
       </div>
-        <div className="App-content">
-          {children}
-        </div>
+        
     </div>
   );
 }
+
 export default App;

@@ -1,9 +1,10 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Chatbox from './Chatbox';
 import FriendList from './FriendList';
+import Main from "./Main";
 import Home from "./Home";
-import Addfriend from "./Addfriend";
-import Main from './Main';
+import AddFriend from "./AddFriend";
+import Friend from "./Friend";
 
 function Router(){
 
@@ -14,19 +15,22 @@ function Router(){
                     <Main/>
                 </Route>
                 <Route path="/addfriend">
-                    <Addfriend/>
+                    <AddFriend/>
+                </Route>
+                <Route path="/friend">
+                    <Friend/>
                 </Route>
                 <Route path="/friendlist">
                     <FriendList/>
-                </Route>   
+                </Route>
                 <Route path="/chatbox">
                     <Chatbox />
                 </Route>
                 <Route path='/'>
-                    <Home />          
-                </Route>   
+                    <Home />
+                </Route>
             </Switch>
-        </BrowserRouter>    
+        </BrowserRouter>
     );
 };
 

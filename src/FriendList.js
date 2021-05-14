@@ -22,32 +22,32 @@ function FriendList(){
         </div>
         <p> 
         </p>
-        <button class="accordion">Education</button>
+        <p href="#" class="accordion">Education</p>
         <div class="panel">
             <p>โรงเรียนนานาชาติวัดเชิงหวาย</p>
             <p>โรงเรียนวัดบ้านหนองประดู่</p>
             <p>มหาลัยบางระจัน</p>
-            
+
         </div>
 
-        <button class="accordion">Experience</button>
+        <p class="accordion">Experience</p>
         <div class="panel">
             <p>ชกมวย : ชนะ 150 แพ้ 0</p>
             <p>แข่งระดับโลกทุกรายการ</p>
             <p>เป็นตัวแทนระดับชาติไปสู้กับพระเจ้า</p>
         </div>
 
-        <button class="accordion">Skills</button>
+        <p class="accordion">Skills</p>
         <div class="panel">
             <p>เก่งทุกด้านบนโลก</p>
             <p>EQ : 50,000,000</p>
             <p>IQ : 50,000,000</p>
         </div>
-        
+
         <p></p>
         <a href="#" class="button">SHARE MY PROFILE</a>
-     
-    </App>     
+
+    </App>
     );
 };
 

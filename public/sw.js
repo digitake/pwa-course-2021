@@ -1,29 +1,38 @@
-self.addEventListener("install", (event) => {
-    console.log("[SW] Service Worker is installing...v1.1");
+
+//ทดลองดูว่า Service Worker install สำเร็จไหม
+
+self.addEventListener("install", (event) =>{
+    console.log("[SW] Service Worker is installing... v1.2")
 
     event.waitUntil(
-        caches.open('Mango Chat').then((cache) => {
+
+        caches.open('chatapp-v1.2')
+
+        .then((cache) => {
 
             return cache.addAll([
                 '/',
                 '/index.html'
             ]);
+            
         })
+
     );
 });
 
-self.addEventListener('fetch', (event) => {
 
-    caches.match(event.request.url)
+
+self.addEventListener('fecth', (event) =>{
+
+    caches.match (event.request)
     .then(res => {
+        
         if(res) {
-          console.log("Intercept with cache", res);
-          return res
+            console.log("Intercept with cache", res);
+            return res
         }
-  
+        
         return fetch(event.request);
-      }
-    )
-  
-  });
-  
+    })
+    
+});

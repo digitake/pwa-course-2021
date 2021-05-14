@@ -1,18 +1,17 @@
 import './style.css';
-import App from './App';
 import { Link } from "react-router-dom";
 
 
 function Login(){
     return(
 
-        <div className = "body">
+        <div className = "background">
            
              <div className = "box">
                 Mango Talk
                 <Link to= "/profile">
                 <div className = "boxinput">
-                    LOING
+                    LOGIN
                 </div>
                 </Link>
               </div>

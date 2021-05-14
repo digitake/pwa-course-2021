@@ -29,34 +29,34 @@ function HomePage({children}) {
             <div className = "pandding">
 
                 <Link to = "/Chatroom">
-                <img src = "ChatBoxBar.Png" alt = "" />
+                <img src = "ChatBoxBar.Png" />
                 </Link>
             </div>
 
             <div className = "pandding" >
 
                 <Link to = "/GroupChatRoom">
-                    <img src = "GroupChat.Png" alt = "" />
+                    <img src = "GroupChat.Png" />
                 </Link>
             </div>
 
             <div className = "HomePageInfo-topBar-HomePageButton">
 
                 <Link to = "/HomePage">
-                <img src = "Home.png" alt = "" />
+                <img src = "Home.png" />
                 </Link> 
             </div>
 
             <div className = "pandding">
 
                 <Link to = "/PrivatePage">
-                    <img src = "Private.Png" alt = "" />
+                    <img src = "Private.Png"  />
                 </Link>
             </div>
             <div className = "pandding">
 
                 <Link to = "/SettingPage">
-                    <img src = "SettingBar.Png" alt = "" />
+                    <img src = "SettingBar.Png" />
                 </Link>
             </div>
         

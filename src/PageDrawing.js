@@ -3,7 +3,7 @@ import './PageDrawing.css';
 import drawing from './Drawing_Icon.png';
 import Logo from './Logo.png'
 import ChatLogo from './Cahat_Icon.png'
-import ToolLogo from './ToolIcon.png'
+import Toolicon from './ToolIcon.png'
 
 function Page4Drawling() {
   return (

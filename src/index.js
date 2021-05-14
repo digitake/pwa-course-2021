@@ -18,13 +18,13 @@ reportWebVitals();
 
 
 if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('sw.js').then(x =>{
+
+  navigator.serviceWorker.register('sw.js').then(x => {
 
     console.log("Service worker is register successfully");
 
-  } ).catch(err => {
-
-    console.log("Service worker registration error", err);
+  }).catch(err => {
     
+    console.log("Service worker registration error",err);
   })
 }

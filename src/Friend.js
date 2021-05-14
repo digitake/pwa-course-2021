@@ -13,31 +13,31 @@ function Friend(){
         <div className="name-width-full">
             <img src="max.png" width="100" height="100" align= "middle" />     
             
-          <b>Domemy</b>
+          <b>ใหญ่ยาวสะท้านพิภพ</b>
         </div>
         <hr></hr>
         <div className="name-width-full">
             <img src="mark.png" width="100" height="100" align= "middle" />     
             
-          <b>Domemy</b>
+          <b>น้าเดช</b>
         </div>
         <hr></hr>
         <div className="name-width-full">
             <img src="tin.png" width="100" height="100" align= "middle" />     
             
-          <b>Tinny</b>
+          <b>คาสโนวาบอย</b>
         </div>
         <hr></hr>
         <div className="name-width-full">
             <img src="mon.png" width="100" height="100" align= "middle" />     
             
-          <b>Tinny</b>
+          <b>มหาเทพ007</b>
         </div>
         <hr></hr>
         <div className="name-width-full">
             <img src="folk.png" width="100" height="100" align= "middle" />     
             
-          <b>Tinny</b>
+          <b>โฟคเทพซ่า</b>
         </div>
         <hr></hr>
 

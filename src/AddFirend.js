@@ -25,7 +25,7 @@ function AddFriend(){
              <div class="flip-card-back">
                 <h1>Dome</h1> 
                 <p>มือมีดพระนคร</p> 
-                <p>ชอบกินไอตินไผ่ทอง</p>
+                <p>ชอบกินไอติมไผ่ทอง</p>
             </div>
         </div>
         </div>

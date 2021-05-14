@@ -32,7 +32,7 @@ function FriendList(){
                 </Link>
                 </div>
                 <div className= "Chat-Button">
-                <Link to = "/chatboxB" >
+                <Link to = "/ChatboxTwo" >
                     <img src = "buttonChat.png" />
                 </Link>
                 </div>
@@ -45,7 +45,7 @@ function FriendList(){
               </Link>
             </div>
               <div className= "Chat-Button">
-              <Link to = "/chatbox3" >
+              <Link to = "/ChatboxThree" >
                  <img src = "buttonChat.png" />
               </Link>
              </div>

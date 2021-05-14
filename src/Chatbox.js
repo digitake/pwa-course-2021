@@ -8,7 +8,7 @@ function Chatbox() {
 
   const [text,setText] = useState("");
   const [lines,setLines] = useState([]);
-  const [name,setname] = useState("");
+  const [name,setname] = useState("Type your name");
   const [chatroom,setchatroom] = useState("chatroom");
   const messagesEndRef = useRef(null);
   const scrollToBottom = ()=>{
@@ -60,14 +60,17 @@ function Chatbox() {
   <App>
     <div className="App">
       <div className="App-header">
-        Cat Chat
+           Cat Chat
+        <div className = "Chatroom-select">
+        <button type="submit" className="Chatroom-select-button" value={chatroom} onClick={onRoomone}>Chatroom1</button>
+        <button type="submit" className="Chatroom-select-button" value={chatroom} onClick={onRoomtwo}>Chatroom2</button>
+        <input type="text" className="Chatroom-select-button" value={name} onChange={onNameChange}></input>
+          </div>
       </div>
       <div className="App-chatroom">
       
       <div className="Center">
-      <button type="submit" className="App-textbox-input" value={chatroom} onClick={onRoomone}>Chatroom1</button>
-      <button type="submit" className="App-textbox-input" value={chatroom} onClick={onRoomtwo}>Chatroom2</button>
-      <input type="text" className="App-textbox-input" value={name} onChange={onNameChange}/>
+      
           Hello Welcome!!
         </div>
         <div className="App-chatroom-text">
@@ -82,10 +85,16 @@ function Chatbox() {
         <div className="">
           {
           lines.map(x => {
-          return <div className="App-chatroom-text">                 
-                  {x.sender+" : "}
+          return <div className="App-chatroom-text">
+                  <div className="App-name">                 
+                  {x.sender+" "}
+                  </div>
+                  <div className="App-message">
                   {x.massage +" "}
+                  </div>
+                  <div className="App-time">
                   {x.timestamp.toLocaleString()}
+                  </div>
                   </div>                  
                         }
                     )      

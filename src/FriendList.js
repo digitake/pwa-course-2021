@@ -23,7 +23,11 @@ function FriendList(){
         <p> 
         </p>
 
+        <p href="#" class="accordion">Education</p>
+
+
         <button class="accordion">Education</button>
+
         <div class="panel">
             <p>โรงเรียนนานาชาติวัดเชิงหวาย</p>
             <p>โรงเรียนวัดบ้านหนองประดู่</p>
@@ -31,14 +35,14 @@ function FriendList(){
             
         </div>
 
-        <button class="accordion">Experience</button>
+        <p class="accordion">Experience</p>
         <div class="panel">
             <p>ชกมวย : ชนะ 150 แพ้ 0</p>
             <p>แข่งระดับโลกทุกรายการ</p>
             <p>เป็นตัวแทนระดับชาติไปสู้กับพระเจ้า</p>
         </div>
 
-        <button class="accordion">Skills</button>
+        <p class="accordion">Skills</p>
         <div class="panel">
             <p>เก่งทุกด้านบนโลก</p>
             <p>EQ : 50,000,000</p>

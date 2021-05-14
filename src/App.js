@@ -9,8 +9,12 @@ function App({children}) {
       <div className="App-content">
           {children}
 
+        </div>
+
+
 
           </div>
+
       <div className="App-header">
         
       <Link to="chatbox">
@@ -40,7 +44,10 @@ function App({children}) {
 
       </div>
         
-          
-  </div>
-  )}
-  export default App;
+
+    </div>
+  );
+}
+
+export default App;
+

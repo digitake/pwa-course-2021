@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 
 import firebase from './firebaseConfig'; 
 
-const chatroomRef = firebase.database().ref('chatroom-1');
+const chatroomRef = firebase.database().ref('chatroom-2');
 
 function DarkChat() {
     
@@ -17,7 +17,7 @@ function DarkChat() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
-  const[name, setName] = useState("Myname");
+  const[name, setName] = useState("UNKNOW");
 
   useEffect(() =>{
     chatroomRef.on('child_added', snapshot => {

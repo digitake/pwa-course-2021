@@ -16,7 +16,7 @@ function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
-  const[name, setName] = useState("Myname");
+  const[name, setName] = useState("ELIJA");
 
   useEffect(() =>{
     chatroomRef.on('child_added', snapshot => {

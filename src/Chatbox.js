@@ -14,34 +14,34 @@ function Chatbox() {
 //render
 
   return (
-      
+
         <div className="App">
 
 
 <div className="App-header-home">
 
-           
+
             <div className="App-pic-home" > 
                <Link to="/home" >
                <img src={HomeIcon}/>
                </Link> 
-               
+
                 <Link to="/home" >
-               
-               </Link>  
+
+               </Link>
                <div className="App-text-left">
                 Go to home
-                        
+
             </div>
-            
+
             </div>
-               
-</div>
 
 </div>
 
-   
-   
+</div>
+
+
+
   );
 }
 

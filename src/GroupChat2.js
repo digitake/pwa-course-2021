@@ -5,15 +5,14 @@ import firebase from './firebaseConfig';
 
 var chatroomRef;
 var EnterYourName ="Enter Your Name";
-
-function GroupChat() {
+function GroupChat2() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
 
                                    //Set Name
   const [name, setName] = useState(" ");
                                   //Set ChatRoom
-  const [chatroom, setChatroom] = useState("ChatRoom");
+  const [chatroom, setChatroom] = useState("ChatRoom2");
 
 
   useEffect(() => {
@@ -112,4 +111,4 @@ const onSend = () => {
     </HeaderOfChat>
   );
 }
-export default GroupChat;
+export default GroupChat2;

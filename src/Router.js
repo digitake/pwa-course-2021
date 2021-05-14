@@ -16,6 +16,7 @@ import Success from './Success1';
 import HeadOfApp from './HeadOfApp';
 import HeaderOfChat from './HeaderOfChat';
 import FlexShow from './FlexShow';
+import GroupChat2 from './GroupChat2';
 
 
 function Router(){
@@ -27,6 +28,10 @@ function Router(){
        <Route path="/chatbox">
            <Chatbox/>
        </Route>
+       <Route path="/GroupChat2">
+           <GroupChat2/>
+       </Route>
+
 
    <Route path = "/Flexshow">
     <FlexShow/>

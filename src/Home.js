@@ -12,7 +12,7 @@ function Home() {
         <div className="App">
 
 
-         <div className="App-header-home">
+         <div className="App-header">
          Home 
 
      </div>

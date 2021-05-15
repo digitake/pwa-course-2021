@@ -9,7 +9,7 @@ function FriendSetting(){
                 <div className="Menu-Back-Button">
                     FriendSetting
                 <Link to = "/menu">
-                <img src= "Back-32.png" align ="left"/>
+                <img src= "back-32.png" align ="left"/>
                 </Link>
                 </div>
             </div>    

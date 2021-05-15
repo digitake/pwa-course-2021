@@ -6,7 +6,7 @@ self.addEventListener('install',event =>{
        caches.open('chatapp-v1').then(caches=>{
            return caches.addAll([
             '/',
-            '/index.html','faviconioc','manifest.json'
+            '/index.html','faviconioc','manifest.json','/faviconioc','/manifest.json','111.png','cat-2.jpg','cat-3.jpg','catLogo.png','Chat.png','animal_background.gif'
             ]);
         })
 

@@ -73,7 +73,7 @@ const [name, setName] = useState("MyName")
           <i class="fas fa-images"></i>
           <i class="fas fa-camera"></i>
         </div>
-
+        
         <div className="App-textbox">
           <input type="text" className="App-textbox-input"
             value={text} onChange={onTextChange} onKeyPress={keyPress} />

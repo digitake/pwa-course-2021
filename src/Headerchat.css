@@ -8,20 +8,15 @@
   margin: auto;
   background-color: #2e1f74;
 }
-
 @media (min-width: 961px){
   .AppPrivate{
     max-width: 100%;
   }
-@media (min-width: 860px){
-.AppPrivate{
-  max-width: 100%;
-}  
-  
-.header{
-    background-color: #3d14f5;
-    height: flex;
-  }
+    }
+  .header{
+      background-color: #3d14f5;
+      height: flex;
+    }
   .chatname a{
   color: #fff;
   text-decoration: none;
@@ -39,100 +34,31 @@
   padding: right;
   }
   .menu{
-    display: flex;
-    list-style-type: none;
-  }
-  .menu li {
-    padding-right: 1rem;
-  }
-  .menu li a{
-    text-decoration: none;
-    color: #fff;
-  }
-  .mobile-menu{
-    display: none;
-  }
-@media (max-width: 859px){
- .AppPrivate {
-   width: 414px;  
- }
- .mobile-menu{
- display: block;
- color: #fff;
- font-size: 1.5rem;
- }
- .header{
-  padding: 0 1rem;
- }
- .menu {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: -10px;
-  right: 80px;
-  width: 13%;
-  transition: 0.5s ease;
-  opacity: 0;
- }
- .menu.active{
-  background: rgb(0, 0, 0);
-  opacity: 1;
-  align-content: center;
-  transition: 0.5s ease;
-  }
-  }
-  .App-chatroom 
-  {
-    flex: 12;
-    overflow: auto;
-  }
-
-  .chatname{
-    justify-content: space-around;
-  }
-
-  .header-content{
-  display: flex;
-  justify-content: space-between;
-  height: flex;
-  align-items: center;
-  padding: right;
-  }
-
-  .menu{
-    display: flex;
-    list-style-type: none;
+      display: flex;
+      list-style-type: none;
     }
   .menu li {
     padding-right: 1rem;
   }
-
   .menu li a{
     text-decoration: none;
     color: #fff;
   }
-
   .mobile-menu{
     display: none;
   }
-
   @media (min-width: 414px) and (max-width: 960px){
   .AppPrivate {
     max-width:100%;
   }
-
   .mobile-menu{
   display: block;
   color: #fff;
   font-size: 1.5rem;
   }
-
   .header{
     padding: 0 1rem;
   }
-
   .menu {
     width: 100%;
     height: auto;
@@ -145,12 +71,9 @@
     opacity: 0;
     border-radius: 3px 3px 3px 3px;
   }
-
   .menu.active{
     background: rgb(0, 0, 0);
     opacity: 1;
     align-content: center;
   }
-}     
-}
-}
+      }

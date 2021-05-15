@@ -9,7 +9,7 @@ function NotificationSetting(){
                 <div className="Menu-Back-Button">
                     NotificationSetting
                 <Link to = "/menu">
-                <img src= "Back-32.png" align ="left"/>
+                <img src= "back-32.png" align ="left"/>
                 </Link>
                 </div>
             </div>    

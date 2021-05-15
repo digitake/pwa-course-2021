@@ -59,7 +59,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100;
+  width: 100%;
 }
 
 .App-content{
@@ -177,4 +177,23 @@
       justify-content: flex-start;
     }
     
+  }
+
+  .App-Button{
+    background-color: #e9e77f00;
+    border: 2px solid #e9e77f00;
+    border-radius: 6px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Itim;
+  }
+  
+  .App-Button:hover{
+    background-color:#fecd48;
+    color: black;
   }

@@ -11,6 +11,7 @@ function FriendList(){
             <div className= "FriendList-header">
                Friend List
             </div>
+            
             <div className= "FriendList-boby">
                  สมชาย
                 <div className= "profile-icon">

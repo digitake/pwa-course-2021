@@ -4,7 +4,7 @@
   "icons": [
     {
 
-      "src": "maskable_icon_x72.png",
+      "src": "mango-64.png",
       "type": "image/png",
       "sizes": "72x72 64x64 32x32 24x24 16x16",
       "purpose" : "any maskable"
@@ -12,7 +12,7 @@
       
     },
     {
-      "src": "maskable_icon_x192.png",
+      "src": "mango-192.png",
 
       "type": "image/png",
       "sizes": "192x192",
@@ -20,7 +20,7 @@
     },
     {
 
-      "src": "maskable_icon_x512.png",
+      "src": "mango-512.png",
 
       "type": "image/png",
       "sizes": "512x512",

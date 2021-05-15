@@ -59,6 +59,9 @@ function Chatbox() {
   return (
   <App>
     <div className="App">
+      <div className="Calender">
+      <iframe title="calender" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FBangkok&amp;src=YXNyaWluLmJyZnBiQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Y2xhc3Nyb29tMTE3Mjc1MDc4MzQ4NTYyOTg5NDA0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Y2xhc3Nyb29tMTE0ODgxODAzODg3MTk2NDg0OTkyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Y2xhc3Nyb29tMTE4MjYwNjQ2ODIwMTk5MTQ5NTAzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Y2xhc3Nyb29tMTAzMzQ3NDg4NzExMDAxMDg3NDM3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=dGgudGgjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237986CB&amp;color=%237986CB&amp;color=%23004d40&amp;color=%23a52714&amp;color=%23b80672&amp;color=%233e2723&amp;color=%237986CB"  width="800" height="600"  scrolling="no"></iframe>
+        </div>
       <div className="App-header">
            Cat Chat
         <div className = "Chatroom-select">

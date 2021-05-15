@@ -9,46 +9,33 @@ self.addEventListener("install", (event) =>{
             return cache.addAll([
                 '/',
                 '/index.html',
-                '/friend-list',
-                '/menu',
-                '/Mangosetting',
-                '/AccountSetting',
-                '/FriendSetting',
-                '/AdvanceSetting',
-                '/NotificationSetting',
-                '/GameSetting',
-                '/profile',
-                '/Post',
-                '/Friend',
-                '/Image',
-                '/Video',
-                '/Game',
-                '/Chatbox',
-                '/Profile.png',
-                '/mango-64.png',
-                '/mango-192.png',
-                '/mango-512.png',
-                '/mango.png',
-                '/mango64.png',
-                '/profile-250.png',
-                '/back-32.png',
-                '/Profile-img.png'
+                'Profile.png',
+                'mango-64.png',
+                'mango-192.png',
+                'mango-512.png',
+                'mango.png',
+                'mango64.png',
+                'profile-250.png',
+                'back-32.png',
+                'Profile-img.png',
+                'manifest.json',
+                'favicon.ico'
             ]);    
         })
     );
 });
 
-self.addEventListener('fecth', (event) =>{
 
-    caches.match (event.request)
-    .then(res => {
-        
-        if(res) {
-            console.log("Intercept with cache", res);
-            return res
+self.addEventListener('fetch', function(event) {
+    event.respondWith(async function() {
+       try{
+         var res = await fetch(event.request);
+         var cache = await caches.open('cache');
+         cache.put(event.request.url, res.clone());
+         return res;
+       }
+       catch(error){
+         return caches.match(event.request);
         }
-        
-        return fetch(event.request);
-    })
-    
-});
+      }());
+  });

@@ -12,13 +12,13 @@
 @media (min-width: 768px) {
 
     .StickerPage-header {
-        margin-left: 5%;
-        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .StickerPage-body {
-        margin-left: 5%;
-        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .StickerPage-details-sticker-row {
@@ -50,6 +50,7 @@
     justify-content: center;
     color: #242424;
     margin: 10px;
+
 }
 
 .StickerPage-Category {
@@ -58,6 +59,7 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 5px;
+
 }
 
 .StickerPage-bottle {

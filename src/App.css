@@ -44,7 +44,14 @@
   }
 }
 
-
+.App-logo-row{
+  flex : 0.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 50px;
+  background-color: #FECC48;
+}
 
 .App-header {
   flex: 1;
@@ -52,6 +59,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100;
 }
 
 .App-content{
@@ -59,12 +67,6 @@
   overflow: auto; /* ถ้า content ยาวเกินจะแสดง scrollbar อัตโนมัติ */
 }
 
-.Back-Button{
-  background-image: url(mango.png);
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .Menu-button {
   text-align: right;
@@ -138,3 +140,41 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.menubutton{
+  padding-top: 20px;
+}
+
+.imagesize{
+  width: 150px;
+  }  
+
+@media (max-width : 425){
+    .imagesize{
+      size: 150px;
+    }
+  }
+
+  .Flex-Container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+  }  
+
+  .Flex-Container > div {
+   
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  @media (max-width : 425px) {
+    .Flex-Container{
+      justify-content: flex-start;
+    }
+    
+  }

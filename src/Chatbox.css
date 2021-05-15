@@ -9,8 +9,9 @@
    justify-content: center;
    text-align: center;
    max-width: 400px;
-   height: 100%;
-   margin: auto;  
+   margin: auto; 
+   height: 100%; 
+   width: 100%;
  }
  .Friend
  {
@@ -32,30 +33,85 @@
 @media (min-width: 500px){
   .App{
     max-width:100%;
+    max-height: 100%;
     background-image: url(funny-cat.jpeg);
     background-position:top center;
     background-size: 1000px;
     background-repeat: no-repeat;
+    height: 100%; 
+   width: 100%;
   }
   .App-header{
-    flex: 1;
     background-color: #000000;
+    flex: 1;
+    padding-left: 1%;
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: calc(15px + 2vmin);
     color: rgb(255, 255, 255);
     overflow: auto;
+    position: fixed;
+    width: 100%;
+    top: 54px;
+  }
+  .Calender{
+    position: fixed;
+    width: 45%;
+  }
+  .Chatroom-select {
+    flex: 1;
+    margin-left: 1%;
+    display: flex;
+    flex-direction:row;
+    size: 5%;
+  }
+  .Chatroom-select-button {
+    flex: auto;
+    background-color: #000000;
+    font-size: 20px;
+    padding: 1%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
   .App-chatroom-text {
     margin: 25px;
-    margin-left: 50%;
+    margin-left: 60%;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 20px;
     display:flex;
-    flex-direction: column;
+    flex-direction:row;
+  }
+  .App-name {
+    flex-direction:row;
+    display:flex;
+    margin-left: 90%;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 20px;
+    
+  }
+  .App-time {
+    flex-direction:row;
+    display:flex;
+    margin-left: 90%;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 10px;
+    
+  }
+  .App-message {
+    flex-direction:row;
+    margin-left: 2%;
+    background-color: rgb(77, 77, 77);
+    color : rgb(255, 255, 255);
+    font-size: 20px;
+    display:flex;
   }
   /*Friend Zone scene*/
   .Friend{
@@ -104,21 +160,49 @@
     background-position:top center;
     background-size: 1500px;
     background-repeat: no-repeat;
+    height: 100%; 
+    width: 100%;
   }
   .App-header {
-    flex: 1;
     background-color: #ffee00;
+    flex: 1;
+    padding-left: 1%;
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: rgb(0, 0, 0);
+    font-size: calc(15px + 2vmin);
+    color: rgb(255, 255, 255);
     overflow: auto;
+    position: fixed;
+    width: 100%;
+    top: 54px;
+  }
+  .Calender{
+    position: fixed;
+    width: 45%;
+  }
+  .Chatroom-select {
+    flex: 1;
+    margin-left: 1%;
+    display: flex;
+    flex-direction:row;
+    size: 5%;
+  }
+  .Chatroom-select-button {
+    flex: auto;
+    background-color: #000000;
+    font-size: 20px;
+    padding: 1%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
   .App-chatroom-text {
     margin: 25px;
-    margin-left: 50%;
+    margin-left: 60%;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 20px;
@@ -166,26 +250,53 @@
 @media (min-width: 1500px){
   .App{
     max-width:100%;
+    max-height: 100%;
     background-image: url(cat-3.jpg);
     background-position:top center;
-    background-size: 2000px;
+    background-size: 100%;
     background-repeat: no-repeat;
+    overflow:scroll;
   }
   .App-header {
-    flex: 1;
     background-color: #0ac76f;
+    flex: 1;
+    padding-left: 1%;
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: calc(15px + 2vmin);
     color: rgb(255, 255, 255);
     overflow: auto;
+    position: fixed;
+    width: 100%;
+    top: 54px;
+  }
+  .Calender{
+    position: fixed;
+    left: 15px;
+  }
+  .Chatroom-select {
+    flex: 1;
+    margin-left: 1%;
+    display: flex;
+    flex-direction:row;
+    size: 5%;
+  }
+  .Chatroom-select-button {
+    flex: auto;
+    background-color: #000000;
+    font-size: 20px;
+    padding: 1%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
  
   .App-chatroom-text {
     margin: 25px;
-    margin-left: 50%;
+    margin-left: 60%;
     background-color: rgb(77, 77, 77);
     color : rgb(255, 255, 255);
     font-size: 20px;
@@ -279,12 +390,14 @@
 }
 .Center {
   margin: 25px;
+  margin-top: 3.5%;
   background-color: rgb(77, 77, 77);
   color : rgb(255, 255, 255);
   font-size: 20px;
   display: flex;
   flex-direction: column;
 }
+
 
 
 

@@ -9,10 +9,10 @@ const chatroomRef = firebase.database().ref('chatroom-1');
 function Chatbox() {
   const [text, setText] = useState("");
   const [lines, setLines] = useState([]);
-  // ["-้กดกด","กกกกก","กกกหกดหกดหกด"]
-  // [{sender: "Mon", message: "skldfsjdlkfsd", timestamp: 12387687437424}, {sender: "Mon", message: "slkdjfsdlkfline2", timestamp: 123434234}]
+  const [name, setname] = useState(""); 
+ 
+ 
 
-  
   useEffect(() => {
     chatroomRef.on('child_added', snapshot => {
       let x = snapshot.val();
@@ -29,16 +29,22 @@ function Chatbox() {
     setText(event.target.value);
   };
 
+  const onNameChange = (event) => {
+    setname(event.target.value);
+  }
+
   const onSend = () =>{
     //push mesaage to firebase server
     chatroomRef.push({
 
-      sender: "นุ่น : ",
+      sender: "หนอน : ",
 
       message: text,
+      
       timestamp: firebase.database.ServerValue.TIMESTAMP
     });
     setText("");
+    
   };
 
   const keyPress = (event) => {
@@ -50,27 +56,37 @@ function Chatbox() {
   return (
     <App>
         <div className="App">
+          
             <div className="App-chatroom">
                 {
                 lines.map(x => {
                     return <div className="App-chatroom-text">
-                            {x.sender}
+                      
+                      
+                      <img src="logoHOme.png"  width= "10%" height="10%" />
+                      
+                      {x.sender}
                             {x.message}
-
+                            
                         </div>
                     })
+                    
                 }
+                
             </div>
+          
+            
         <div className="App-textbox">
+          
             <input type="text" className="App-textbox-input" 
             value={text} onChange={onTextChange} onKeyPress={keyPress}/>
 
-            <div className="App-textbox-send" onClick={onSend}>Send!</div>
+            <div className="App-textbox-send" onClick={onSend}> <img src="send.png"  width= "40%" height="80%" /></div>
             </div>
         </div>
+
     </App>
   );
 }
 
 export default Chatbox;
-

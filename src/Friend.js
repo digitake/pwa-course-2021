@@ -11,32 +11,41 @@ function Friend(){
             <p></p>
 
         <div className="name-width-full">
-            <img src="max.png" width="100" height="100" align= "middle" />     
-            
+            <Link to="chatbox">
+                <img src="max.png" width="100" height="100" align= "middle" />
+            </Link>               
           <b>ใหญ่ยาวสะท้านพิภพ</b>
         </div>
         <hr></hr>
         <div className="name-width-full">
-            <img src="mark.png" width="100" height="100" align= "middle" />     
-            
+        <Link to="chatbox">
+                <img src="Mark.png" width="100" height="100" align= "middle" />
+            </Link> 
+
           <b>น้าเดช</b>
         </div>
         <hr></hr>
         <div className="name-width-full">
-            <img src="tin.png" width="100" height="100" align= "middle" />     
-            
+        <Link to="chatbox">
+                <img src="tin.png" width="100" height="100" align= "middle" />
+            </Link> 
+
           <b>คาสโนวาบอย</b>
         </div>
         <hr></hr>
         <div className="name-width-full">
-            <img src="mon.png" width="100" height="100" align= "middle" />     
-            
+        <Link to="chatbox">
+                <img src="Mon.png" width="100" height="100" align= "middle" />
+            </Link> 
+
           <b>มหาเทพ007</b>
         </div>
         <hr></hr>
         <div className="name-width-full">
-            <img src="folk.png" width="100" height="100" align= "middle" />     
-            
+        <Link to="chatbox">
+                <img src="folk.png" width="100" height="100" align= "middle" />
+            </Link> 
+
           <b>โฟคเทพซ่า</b>
         </div>
         <hr></hr>
@@ -51,10 +60,10 @@ function Friend(){
             </Link>
             </div>
 
-       
+
         </App>
-    
-    
+
+
     )
 }
 

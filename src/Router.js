@@ -3,6 +3,7 @@ import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import Profile from "./Profile";
 import Home from "./Home";
+import Main from "./Main";
 import Friend from "./Friend";
 import AddFriend from "./AddFirend";
 
@@ -11,9 +12,10 @@ function Router(){
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/profile">
-                    <Profile/>
+            <Route path="/main">
+                    <Main/>
                 </Route>
+
                 <Route path="/addfriend">
                     <AddFriend/>
                 </Route>
@@ -23,6 +25,7 @@ function Router(){
                 <Route path="/friendlist">
                     <FriendList/>
                 </Route>   
+
                 <Route path="/chatbox">
                     <Chatbox />
                 </Route>

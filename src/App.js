@@ -5,18 +5,17 @@ function App({children}) {
 
   return (
     <div className="App">
-              <div className="App-content">
+      <div className="App-content">
           {children}
         </div>
       <div className="App-header">
-
       <Link to="chatbox">
         <p>
           <img src="chatlogo.png" width="30%" height="50%"/>
           </p>   
         </Link>
 
-        <Link to="profile">
+        <Link to="main">
         <p>
           <img src="homelogo.png" width="30%" height="50%"/>
           </p>   
@@ -35,6 +34,7 @@ function App({children}) {
         </Link>
 
       </div>
+        
     </div>
   );
 }

@@ -1,13 +1,13 @@
 import App from './App';
-import { Link } from 'react-router-dom';
+
 
 
 function AddFriend(){
     return(
         <App>
 
-                       
-        
+
+
             <p></p>
             <input type="text" placeholder="Search.." name="search2"></input>
             <select id="country" name="country">
@@ -16,7 +16,7 @@ function AddFriend(){
             </select>
 
             <p></p>
-            
+
             <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -32,17 +32,13 @@ function AddFriend(){
             <p></p>
             <b>โดมหนุ่มเกาหลีกับสังกะสีคู่ใจ</b>
             <p></p>
-            <a href="#" class="button">+AddFirend</a>
-          
+            <a href="#" class="button">+AddFriend</a>
 
-            
+
+
         </App>
-        
+
     )
 }
-
-
-
-
 
 export default AddFriend;

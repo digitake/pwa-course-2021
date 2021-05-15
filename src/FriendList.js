@@ -1,4 +1,5 @@
 import './App.css';
+import './Chatbox.css';
 import App from './App';
 function  FriendList() {
   

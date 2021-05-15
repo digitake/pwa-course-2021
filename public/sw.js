@@ -32,7 +32,10 @@ self.addEventListener("install", (event) =>{
                 '/mango64.png',
                 '/profile-250.png',
                 '/back-32.png',
-                '/Profile-img.png'
+                '/Profile-img.png',
+                '/maskable_icon_x72.png',
+                '/maskable_icon_x192.png',
+                '/maskable_icon_x512.png'
             ]);    
         })
     );

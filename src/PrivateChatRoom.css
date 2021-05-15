@@ -14,7 +14,7 @@
     max-width:100%;
   }
 }
-@media (min-width: 860px) {
+@media (min-width: 950px) {
 .AppPrivate {
     max-width:100%;
   }
@@ -75,8 +75,8 @@
   grid: flex;
   border: none; 
   color: white;
-  padding: 8px 5px; /* Some padding */
-  font-size: 15px; /* Set a font size */
+  padding: 8px 5px; /* Some padding /
+  font-size: 15px; / Set a font size */
 }
 .btn:hover{
   color:RoyalBlue;

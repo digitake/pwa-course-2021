@@ -42,7 +42,7 @@ function Chatbox() {
   const onSend = () =>{
     chatroomRef.push({
       sender: name,
-      Message: text,
+      message: text,
       timestamp: firebase.database.ServerValue.TIMESTAMP
     });
     setText("");
@@ -67,7 +67,7 @@ function Chatbox() {
                             {x.sender+":>"}
                           </div>
                           <div className="App-chatroom-message">
-                            {x.Message}
+                            {x.message}
                           </div>
                           <div>
                               {x.timestamp.toLocaleString()}

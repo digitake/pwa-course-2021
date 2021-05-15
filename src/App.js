@@ -11,9 +11,6 @@ function App({children}) {
         <Link to="/friend-list" className="App-header-button">
                 <img src={logo2}/>
               </Link>
-        <Link to="/Profile" className="App-header-button">
-                  <img src={logo3}/>
-              </Link>
         <Link to="/Chatbox" className="App-header-button">
                 <img src={logo1}/>
         </Link>

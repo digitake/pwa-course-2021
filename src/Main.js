@@ -17,7 +17,7 @@ function Main(){
                 </div>
                 <p></p>
                 
-                <input type="text" placeholder="Search.." name="search2"></input>
+                <input type="text" name="search2"></input> <button>Search</button>
 
                 <p></p>
                 <div className="friendlistcontent">

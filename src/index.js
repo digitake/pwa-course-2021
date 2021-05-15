@@ -24,7 +24,7 @@ if('serviceWorker' in navigator){
     console.log("Service worker is register successfully");
 
   }).catch(err => {
-
+    
     console.log("Service worker registration error",err);
   })
 }

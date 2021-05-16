@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Chatbox from './Chatbox';
 import FriendList from './FriendList';
@@ -35,3 +36,4 @@ function Router(){
 };
 
 export default Router;
+

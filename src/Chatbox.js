@@ -37,7 +37,8 @@ function Chatbox() {
     //push mesaage to firebase server
     chatroomRef.push({
 
-      sender: "หนอน : ",
+
+      sender: "Destiny : ",
 
       message: text,
       
@@ -53,6 +54,8 @@ function Chatbox() {
     }
   };
 
+  
+
   return (
     <App>
         <div className="App">
@@ -61,13 +64,13 @@ function Chatbox() {
                 {
                 lines.map(x => {
                     return <div className="App-chatroom-text">
-                      
-                      
-                      <img src="logoHOme.png"  width= "10%" height="10%" />
-                      
-                      {x.sender}
+
+    
+                      <img src="dog.jpg"  width= "10%" height="10%"/>{x.sender}
                             {x.message}
-                            
+
+
+
                         </div>
                     })
                     
@@ -81,7 +84,9 @@ function Chatbox() {
             <input type="text" className="App-textbox-input" 
             value={text} onChange={onTextChange} onKeyPress={keyPress}/>
 
+
             <div className="App-textbox-send" onClick={onSend}> <img src="send.png"  width= "40%" height="80%" /></div>
+
             </div>
         </div>
 

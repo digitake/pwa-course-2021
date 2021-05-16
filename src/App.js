@@ -4,11 +4,17 @@ import { Link } from 'react-router-dom';
 function App({children}) {
 
   return (
+
     <div className="App">
       <div className="App-content">
           {children}
-        </div>
+
+
+          </div>
+
+
       <div className="App-header">
+        
       <Link to="chatbox">
         <p>
           <img src="chatlogo.png" width="30%" height="50%"/>
@@ -31,12 +37,16 @@ function App({children}) {
         <p>
           <img src="userlogo.png" width="30%" height="50%"/>
           </p>
+
         </Link>
 
       </div>
         
+
     </div>
   );
 }
 
+
 export default App;
+

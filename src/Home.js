@@ -5,7 +5,7 @@ import './Home.css';
 function Home(){
     return(
         <div className="fullscreen">
-            <Link to="profile">
+            <Link to="main">
             <img src="logoHOme.png" />
             </Link>
             

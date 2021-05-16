@@ -1,9 +1,9 @@
 {
-  "short_name": "flash App",
-  "name": "Create React App Sample",
+  "short_name": "Straweberry",
+  "name": "Strawberry",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "Strawberry",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },

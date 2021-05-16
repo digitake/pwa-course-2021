@@ -37,12 +37,15 @@ function Chatbox() {
     //push mesaage to firebase server
     chatroomRef.push({
 
+
       sender: "Destiny : ",
 
       message: text,
+      
       timestamp: firebase.database.ServerValue.TIMESTAMP
     });
     setText("");
+    
   };
 
   const keyPress = (event) => {
@@ -61,23 +64,32 @@ function Chatbox() {
                 {
                 lines.map(x => {
                     return <div className="App-chatroom-text">
+
     
                       <img src="dog.jpg"  width= "10%" height="10%"/>{x.sender}
                             {x.message}
 
 
+
                         </div>
                     })
+                    
                 }
+                
             </div>
+          
+            
         <div className="App-textbox">
           
             <input type="text" className="App-textbox-input" 
             value={text} onChange={onTextChange} onKeyPress={keyPress}/>
 
-            <div className="App-textbox-send" onClick={onSend}>Send!</div>
+
+            <div className="App-textbox-send" onClick={onSend}> <img src="send.png"  width= "40%" height="80%" /></div>
+
             </div>
         </div>
+
     </App>
   );
 }

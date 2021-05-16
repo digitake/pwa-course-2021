@@ -1,0 +1,13 @@
+h2 {
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #494949;
+  }
+
+
+.name-width-full {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}

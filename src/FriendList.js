@@ -23,16 +23,14 @@ function FriendList(){
         <p> 
         </p>
 
+
         <p href="#" class="accordion">Education</p>
-
-
-        <button class="accordion">Education</button>
 
         <div class="panel">
             <p>โรงเรียนนานาชาติวัดเชิงหวาย</p>
             <p>โรงเรียนวัดบ้านหนองประดู่</p>
             <p>มหาลัยบางระจัน</p>
-            
+
         </div>
 
         <p class="accordion">Experience</p>
@@ -48,12 +46,12 @@ function FriendList(){
             <p>EQ : 50,000,000</p>
             <p>IQ : 50,000,000</p>
         </div>
-        
+
         <p></p>
         <a href="#" class="button">SHARE MY PROFILE</a>
-     
 
-    </App>     
+    </App>
+
     );
 };
 

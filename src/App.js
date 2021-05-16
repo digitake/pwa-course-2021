@@ -9,11 +9,9 @@ function App({children}) {
       <div className="App-content">
           {children}
 
-        </div>
-
-
 
           </div>
+
 
       <div className="App-header">
         
@@ -23,13 +21,13 @@ function App({children}) {
           </p>   
         </Link>
 
-        <Link to="profile">
+        <Link to="main">
         <p>
           <img src="homelogo.png" width="30%" height="50%"/>
           </p>   
         </Link>
 
-        <Link to="addfriend">
+        <Link to="friend">
         <p>
           <img src="friendlogo.png" width="30%" height="50%"/>
           </p>   
@@ -48,6 +46,7 @@ function App({children}) {
     </div>
   );
 }
+
 
 export default App;
 

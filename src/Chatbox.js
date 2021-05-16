@@ -37,7 +37,7 @@ function Chatbox() {
     //push mesaage to firebase server
     chatroomRef.push({
 
-      sender: "หนอน : ",
+      sender: "โฟค : ",
 
       message: text,
       
